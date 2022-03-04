@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>MaterialX - ShaderGen and MaterialXView</title>
+    
+    <link rel="icon" href="faviconMX.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style/rst.css" type="text/css">
+    <link rel="stylesheet" href="style/default.css" type="text/css">
+    <link rel="stylesheet" href="style/flavor.css" type="text/css">
+    <link rel="stylesheet" href="style/renderman-university.css" type="text/css">
+    <style>
+    #mainContentContainer {
+        left: 15px;
+        margin-left: 255px;
+    }
+    ul.creatorFooterNav {
+        margin-left: 250px;
+    }
+    .navigation {
+        background-color: #272727;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .footer-Confluence {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .footer-Confluence hr.footer {
+        display: block;
+        margin-left: -10px;
+        width: 100%;
+    }
+    .footer-Confluence img {
+        margin-bottom: 0;
+        max-width: none;
+    }
+    .copyrightFooter {
+        font-size: 9px;
+        margin-top: 25px;
+        text-align: center;
+        float: none;
+    }
+    .copyrightFooter a {
+	color: #666666;
+    }
+    .copyrightFooter a:hover {
+	color: #fff;
+    }
+    table.warningMacro, table.noteMacro {
+        margin: 20px 0 20px 0;
+    }
+    </style>
+</head>
+<body>
+
+  <div class="navigation">
+    <br>
+    <div class="quickLinks">
+      <div>
+	<a href="index.html"><img alt="<MaterialX Logo>" src="images/MaterialXLogoSmallA.png"></a>
+      </div>
+      <ul>
+	<li>
+	  <a href="Specification.html">Specification</a>
+          <ul>
+            <li>
+              <a href="assets/MaterialX.v1.38.Spec.pdf">MaterialX Spec PDF (v1.38)</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="assets/MaterialX.v1.38.PBRSpec.pdf">Physically Based Shading Nodes</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="assets/MaterialX.v1.38.Supplement.pdf">Supplemental Notes PDF</a>
+            </li>
+          </ul>
+	  <ul>
+	    <li>
+	      <a href="Specification.html#RevisionHistory">Specification Revision History</a>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+      <ul>
+	<li>
+	  Rendering and Tools
+	  <ul>
+	    <li>
+	      <a href="ShaderGen.html#ShaderGen">ShaderGen</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="ShaderGen.html#Viewer">MaterialX Viewer</a>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+      <ul>
+	<li>
+	  Support
+	  <ul>
+	    <li>
+	      <a href="SampleFiles.html">Example MaterialX Files</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="FAQ.html">Frequently-Asked Questions</a>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+      <ul>
+	<li>
+	  <a href="DeveloperReference.html">Developer Reference</a>
+	  <ul>
+	    <li>
+	      <a href="docs/api/index.html">Developer Guide</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">Test Suite Examples</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/python/Scripts">Python Code Examples</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="DiscForum.html">Discussion Forums</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="LogoImages.html">Official Logo Image Files</a>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+      <ul>
+	<li>
+	  <a href="ThirdPartySupport.html">Third-Party MaterialX Support</a>
+	  <ul>
+	    <li>
+	      <a href="ThirdPartySupport.html#Shaders-OSL">Standard Node OSL Shaders</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="ThirdPartySupport.html#Substance">Substance Designer Plugin</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="ThirdPartySupport.html#Arnold">Arnold MaterialX Operator</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="ThirdPartySupport.html#USDMaterialX">USD + MaterialX (Pixar)</a>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+      <ul>
+	<li>
+	  <a href="Contributing.html">Contributing to MaterialX</a>
+	  <ul>
+	    <li>
+	      <a href="Contributing.html#HowTo">How To Contribute</a>
+	    </li>
+	  </ul>
+	  <ul>
+	    <li>
+	      <a href="Contributing.html#Contributors">Current Contributors</a>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+      <ul>
+	<li>
+	  <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE">License</a>
+	</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="document">
+    <h1 class="title">
+      <span id="title-text">
+	MaterialX
+      </span>
+    </h1>
+
+    <div id="mainContentContainer">
+      <div class="fullWidth headerColor">
+	<div class="center">
+	  <div id="mainSiteNavigation">
+	    <ul class="creatorMainNav floatRight" id="menu">
+	      <li class="">
+		<a href="index.html">Home</a>
+	      </li>
+	      <li class="">
+		<a target="_blank" href="docs/api/index.html">Developer Guide</a>
+	      </li>
+	      <li class="">
+		<a target="_blank" href="Specification.html">Specification</a>
+	      </li>
+	      <li class="">
+		<a href="Help.html">Help</a>
+	      </li>
+	      <li class="">
+	        <a class="blueButton" style="font-size:14px" href="https://github.com/AcademySoftwareFoundation/MaterialX">GitHub</a>
+	      </li>
+	      <a class="iconButton" href="https://twitter.com/MaterialXCG" style="float:right">
+		<img src="images/Twitter_Logo_Gray_sm.png" width=20 height=20>
+	      </a>
+	    </ul>
+	  </div>
+	</div>
+      </div>
+
+<!-- Page Title ---------------------------------------------------------------------- -->
+      <div class="clearBoth"></div>
+      <h1 class="articleContentTitle">ShaderGen and MaterialXView</h1>
+      <div class="clearBoth"></div>
+      <hr>
+<!-- --------------------------------------------------------------------------------- -->
+
+      <div class="clearBoth"></div>
+	<div class="coursewareBackground">
+	  <div class="topicLeftData-MainData">
+
+<!-- Page Content -------------------------------------------------------------------- -->
+
+<h2 id="ShaderGen"><strong>ShaderGen</strong></h2>
+<p>
+<strong>ShaderGen</strong> is a dynamic shader generation system that can build
+and compile complete OSL or GLSL shaders from MaterialX nodegraphs.
+A key component of ShaderGen is a set of
+<a href="assets/MaterialX.v1.38.PBRSpec.pdf">Physically Based Shading nodes</a>,
+which can be used in conjunction with
+Standard Library nodes to create complex layered energy-conserving surface,
+volume and emissive shaders for offline or realtime/viewport rendering.
+</p>
+<p>
+For much more information about ShaderGen components and how ShaderGen works,
+please see the
+<a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGeneration</a>
+page on the MaterialX GitHub.
+</p>
+
+<h2 id="Viewer"><strong>MaterialX Viewer</strong></h2>
+<p>
+Complementing ShaderGen is a simple standalone
+<a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/Viewer.md">Viewer application</a>
+for MaterialX content.  <strong>MaterialXView</strong> uses ShaderGen with a
+NanoGUI interface to build
+GLSL shaders of MaterialX nodegraphs, which can be bound with a selected
+MaterialX material and applied to geometry defined in .obj format; standard
+geometries including a sphere, teapot and cutaway shaderball object are included
+in the distribution, as are a number of example materials based on the
+<a href="https://github.com/Autodesk/standard-surface/blob/master/reference/standard_surface.mtlx">StandardSurface</a>
+shader.
+</p>
+
+<!-- --------------------------------------------------------------------------------- -->
+
+	</div>
+      </div>
+    </div> 
+
+    <div class="clearBoth"></div>
+    <div class="center">
+      <br>
+    </div>
+
+    <div class="clearBoth"></div>
+    <div class="center">
+      <div class="copyrightFooter">
+	<p>
+	<a href="" style="color: #666666">TERMS OF USE</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="" style="color: #666666">PRIVACY POLICY</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="" style="color: #666666">LEGAL NOTICES</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="" style="color: #666666">CHILDREN’S ONLINE PRIVACY POLICY</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="" style="color: #666666">YOUR CALIFORNIA PRIVACY POLICY</a>
+      </div>
+    </div>
+  </div>
+
+</body></html>
