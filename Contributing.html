@@ -1,55 +1,65 @@
 ﻿<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>MaterialX - Contributing</title>
-    
-    <link rel="icon" href="faviconMX.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style/rst.css" type="text/css">
-    <link rel="stylesheet" href="style/default.css" type="text/css">
-    <link rel="stylesheet" href="style/flavor.css" type="text/css">
-    <link rel="stylesheet" href="style/renderman-university.css" type="text/css">
-    <style>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>MaterialX - Contributing</title>
+
+  <link rel="icon" href="faviconMX.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style/rst.css" type="text/css">
+  <link rel="stylesheet" href="style/default.css" type="text/css">
+  <link rel="stylesheet" href="style/flavor.css" type="text/css">
+  <link rel="stylesheet" href="style/renderman-university.css" type="text/css">
+  <style>
     #mainContentContainer {
-        left: 15px;
-        margin-left: 255px;
+      left: 15px;
+      margin-left: 255px;
     }
+
     ul.creatorFooterNav {
-        margin-left: 250px;
+      margin-left: 250px;
     }
+
     .navigation {
-        background-color: #272727;
-        margin-top: 10px;
-        margin-left: 10px;
+      background-color: #272727;
+      margin-top: 10px;
+      margin-left: 10px;
     }
+
     .footer-Confluence {
-        text-align: center;
-        margin-top: 15px;
+      text-align: center;
+      margin-top: 15px;
     }
-    .footer-Confluence hr.footer {
+
+      .footer-Confluence hr.footer {
         display: block;
         margin-left: -10px;
         width: 100%;
-    }
-    .footer-Confluence img {
+      }
+
+      .footer-Confluence img {
         margin-bottom: 0;
         max-width: none;
-    }
+      }
+
     .copyrightFooter {
-        font-size: 9px;
-        margin-top: 25px;
-        text-align: center;
-        float: none;
+      font-size: 9px;
+      margin-top: 25px;
+      text-align: center;
+      float: none;
     }
-    .copyrightFooter a {
-	color: #666666;
-    }
-    .copyrightFooter a:hover {
-	color: #fff;
-    }
+
+      .copyrightFooter a {
+        color: #666666;
+      }
+
+        .copyrightFooter a:hover {
+          color: #fff;
+        }
+
     table.warningMacro, table.noteMacro {
-        margin: 20px 0 20px 0;
+      margin: 20px 0 20px 0;
     }
-    </style>
+  </style>
 </head>
 <body>
 
@@ -57,11 +67,11 @@
     <br>
     <div class="quickLinks">
       <div>
-	<a href="index.html"><img alt="<MaterialX Logo>" src="images/MaterialXLogoSmallA.png"></a>
+        <a href="index.html"><img alt="<MaterialX Logo>" src="images/MaterialXLogoSmallA.png"></a>
       </div>
       <ul>
-	<li>
-	  <a href="Specification.html">Specification</a>
+        <li>
+          <a href="Specification.html">Specification</a>
           <ul>
             <li>
               <a href="assets/MaterialX.v1.38.Spec.pdf">MaterialX Spec PDF (v1.38)</a>
@@ -77,117 +87,117 @@
               <a href="assets/MaterialX.v1.38.Supplement.pdf">Supplemental Notes PDF</a>
             </li>
           </ul>
-	  <ul>
-	    <li>
-	      <a href="Specification.html#RevisionHistory">Specification Revision History</a>
-	    </li>
-	  </ul>
-	</li>
+          <ul>
+            <li>
+              <a href="Specification.html#RevisionHistory">Specification Revision History</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul>
-	<li>
-	  Rendering and Tools
-	  <ul>
-	    <li>
-	      <a href="ShaderGen.html#ShaderGen">ShaderGen</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="ShaderGen.html#Viewer">MaterialX Viewer</a>
-	    </li>
-	  </ul>
-	</li>
+        <li>
+          Rendering and Tools
+          <ul>
+            <li>
+              <a href="ShaderGen.html#ShaderGen">ShaderGen</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="ShaderGen.html#Viewer">MaterialX Viewer</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul>
-	<li>
-	  Support
-	  <ul>
-	    <li>
-	      <a href="SampleFiles.html">Example MaterialX Files</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="FAQ.html">Frequently-Asked Questions</a>
-	    </li>
-	  </ul>
-	</li>
+        <li>
+          Support
+          <ul>
+            <li>
+              <a href="SampleFiles.html">Example MaterialX Files</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="FAQ.html">Frequently-Asked Questions</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul>
-	<li>
-	  <a href="DeveloperReference.html">Developer Reference</a>
-	  <ul>
-	    <li>
-	      <a href="docs/api/index.html">Developer Guide</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">Test Suite Examples</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/python/Scripts">Python Code Examples</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="DiscForum.html">Discussion Forums</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="LogoImages.html">Official Logo Image Files</a>
-	    </li>
-	  </ul>
-	</li>
+        <li>
+          <a href="DeveloperReference.html">Developer Reference</a>
+          <ul>
+            <li>
+              <a href="docs/api/index.html">Developer Guide</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">Test Suite Examples</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/python/Scripts">Python Code Examples</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="DiscForum.html">Discussion Forums</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="LogoImages.html">Official Logo Image Files</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul>
-	<li>
-	  <a href="ThirdPartySupport.html">Third-Party MaterialX Support</a>
-	  <ul>
-	    <li>
-	      <a href="ThirdPartySupport.html#Shaders-OSL">Standard Node OSL Shaders</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="ThirdPartySupport.html#Substance">Substance Designer Plugin</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="ThirdPartySupport.html#Arnold">Arnold MaterialX Operator</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="ThirdPartySupport.html#USDMaterialX">USD + MaterialX (Pixar)</a>
-	    </li>
-	  </ul>
-	</li>
+        <li>
+          <a href="ThirdPartySupport.html">Third-Party MaterialX Support</a>
+          <ul>
+            <li>
+              <a href="ThirdPartySupport.html#Shaders-OSL">Standard Node OSL Shaders</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="ThirdPartySupport.html#Substance">Substance Designer Plugin</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="ThirdPartySupport.html#Arnold">Arnold MaterialX Operator</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="ThirdPartySupport.html#USDMaterialX">USD + MaterialX (Pixar)</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul>
-	<li>
-	  <a href="Contributing.html">Contributing to MaterialX</a>
-	  <ul>
-	    <li>
-	      <a href="Contributing.html#HowTo">How To Contribute</a>
-	    </li>
-	  </ul>
-	  <ul>
-	    <li>
-	      <a href="Contributing.html#Contributors">Current Contributors</a>
-	    </li>
-	  </ul>
-	</li>
+        <li>
+          <a href="Contributing.html">Contributing to MaterialX</a>
+          <ul>
+            <li>
+              <a href="Contributing.html#HowTo">How To Contribute</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="Contributing.html#Contributors">Current Contributors</a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <ul>
-	<li>
-	  <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE">License</a>
-	</li>
+        <li>
+          <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE">License</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -195,216 +205,227 @@
   <div class="document">
     <h1 class="title">
       <span id="title-text">
-	MaterialX
+        MaterialX
       </span>
     </h1>
 
     <div id="mainContentContainer">
       <div class="fullWidth headerColor">
-	<div class="center">
-	  <div id="mainSiteNavigation">
-	    <ul class="creatorMainNav floatRight" id="menu">
-	      <li class="">
-		<a href="index.html">Home</a>
-	      </li>
-	      <li class="">
-		<a target="_blank" href="docs/api/index.html">Developer Guide</a>
-	      </li>
-	      <li class="">
-		<a target="_blank" href="Specification.html">Specification</a>
-	      </li>
-	      <li class="">
-		<a href="Help.html">Help</a>
-	      </li>
-	      <li class="">
-	        <a class="blueButton" style="font-size:14px" href="https://github.com/AcademySoftwareFoundation/MaterialX">GitHub</a>
-	      </li>
-	      <a class="iconButton" href="https://twitter.com/MaterialXCG" style="float:right">
-		<img src="images/Twitter_Logo_Gray_sm.png" width=20 height=20>
-	      </a>
-	    </ul>
-	  </div>
-	</div>
+        <div class="center">
+          <div id="mainSiteNavigation">
+            <ul class="creatorMainNav floatRight" id="menu">
+              <li class="">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="">
+                <a target="_blank" href="docs/api/index.html">Developer Guide</a>
+              </li>
+              <li class="">
+                <a target="_blank" href="Specification.html">Specification</a>
+              </li>
+              <li class="">
+                <a href="Help.html">Help</a>
+              </li>
+              <li class="">
+                <a class="blueButton" style="font-size:14px" href="https://github.com/AcademySoftwareFoundation/MaterialX">GitHub</a>
+              </li>
+              <a class="iconButton" href="https://twitter.com/MaterialXCG" style="float:right">
+                <img src="images/Twitter_Logo_Gray_sm.png" width=20 height=20>
+              </a>
+            </ul>
+          </div>
+        </div>
       </div>
 
-<!-- Page Title ---------------------------------------------------------------------- -->
+      <!-- Page Title ---------------------------------------------------------------------- -->
       <div class="clearBoth"></div>
       <h1 class="articleContentTitle">Contributing to MaterialX</h1>
       <div class="clearBoth"></div>
       <hr>
-<!-- --------------------------------------------------------------------------------- -->
+      <!-- --------------------------------------------------------------------------------- -->
 
       <div class="clearBoth"></div>
-	<div class="coursewareBackground">
-	  <div class="topicLeftData-MainData">
+      <div class="coursewareBackground">
+        <div class="topicLeftData-MainData">
 
-<!-- Page Content -------------------------------------------------------------------- -->
+          <!-- Page Content -------------------------------------------------------------------- -->
 
-<div class="toc-macro rbtoc1493707654934">
-<ul class="toc-indentation">
-  <li><a href="#HowTo">How to Contribute</a></li>
-  <li><a href="#Contributors">MaterialX Authors, Developers and Contributors</a></li>
-</ul>
-</div>
+          <div class="toc-macro rbtoc1493707654934">
+            <ul class="toc-indentation">
+              <li><a href="#HowTo">How to Contribute</a></li>
+              <li><a href="#Contributors">MaterialX Authors, Developers and Contributors</a></li>
+            </ul>
+          </div>
 
-<br>
-<h2 id="HowTo"><strong>How to Contribute</strong></h2>
-<h3>Contributor License Agreement</h3>
-<p>Before contributing code to MaterialX, we ask that you sign a Contributor License Agreement
-(CLA).  There are two possible CLAs available for download:
-<ol>
-  <li><a href="assets/Lucasfilm-MaterialX_CLA-Corp.pdf">Lucasfilm-MaterialX_CLA-Corp.pdf</a>: please sign this one for corporate use</li>
-  <li><a href="assets/Lucasfilm-MaterialX_CLA-Individual.pdf">Lucasfilm-MaterialX_CLA-Individual.pdf</a>: please sign this one if you're an individual contributor</li>
-</ol>
-<p>&nbsp;</p>
-<p>Once your CLA is signed, send it to <a href="mailto:contributors@materialx.org">contributors@materialx.org</a>
-(please include your GitHub username) and wait for confirmation that we've received
-it.  After that, you can submit pull requests.</p>
-<p>&nbsp;</p>
+          <br>
+          <h2 id="HowTo"><strong>How to Contribute</strong></h2>
+          <h3>Contributor License Agreement</h3>
+          <p>
+            Before contributing code to MaterialX, we ask that you sign a Contributor License Agreement
+            (CLA).  There are two possible CLAs available for download:
+            <ol>
+              <li><a href="assets/Lucasfilm-MaterialX_CLA-Corp.pdf">Lucasfilm-MaterialX_CLA-Corp.pdf</a>: please sign this one for corporate use</li>
+              <li><a href="assets/Lucasfilm-MaterialX_CLA-Individual.pdf">Lucasfilm-MaterialX_CLA-Individual.pdf</a>: please sign this one if you're an individual contributor</li>
+            </ol>
+          <p>&nbsp;</p>
+          <p>
+            Once your CLA is signed, send it to <a href="mailto:contributors@materialx.org">contributors@materialx.org</a>
+            (please include your GitHub username) and wait for confirmation that we've received
+            it.  After that, you can submit pull requests.
+          </p>
+          <p>&nbsp;</p>
 
-<h3>Contribution Workflow</h3>
-<p>Before you begin working on a bug fix or new feature, post an issue on GitHub to let folks know
-about the feature or bug that you found, and mention that you intend to work on it.  That way,
-if someone else is working on a similar project, you can collaborate, or you can get early
-feedback which can sometimes save time.</p>
-<p>&nbsp;</p>
-<p>When you do begin your work, create a fork into your own private repository and work from there.</p>
-<p>&nbsp;</p>
-<p>Full instructions on how to contribute may be found in the CONTRIBUTE.md file at the root
-of the materialx git repository.</p>
-<br>&nbsp;</br>
+          <h3>Contribution Workflow</h3>
+          <p>
+            Before you begin working on a bug fix or new feature, post an issue on GitHub to let folks know
+            about the feature or bug that you found, and mention that you intend to work on it.  That way,
+            if someone else is working on a similar project, you can collaborate, or you can get early
+            feedback which can sometimes save time.
+          </p>
+          <p>&nbsp;</p>
+          <p>When you do begin your work, create a fork into your own private repository and work from there.</p>
+          <p>&nbsp;</p>
+          <p>
+            Full instructions on how to contribute may be found in the CONTRIBUTE.md file at the root
+            of the materialx git repository.
+          </p>
+          <br>&nbsp;</br>
 
-<br>
-<h2 id="Contributors"><strong>MaterialX Authors, Developers and Contributors</strong></h2>
-<p>
-The MaterialX project originated at Lucasfilm in 2012, and was developed as a collaboration between
-<a href="http://www.ilm.com/">Industrial Light & Magic</a> and the
-<a href="http://www.ilmxlab.com/">Lucasfilm Advanced Development Group</a>, with contributions from
-<a href="https://www.autodesk.com/">Autodesk</a>,
-<a href="https://www.pixar.com/">Pixar</a>,
-<a href="https://www.foundry.com/">The Foundry</a>, and the
-<a href="https://github.com/imageworks/OpenShadingLanguage/">Open Shading Language</a> team.
-</p>
+          <br>
+          <h2 id="Contributors"><strong>MaterialX Authors, Developers and Contributors</strong></h2>
+          <p>
+            The MaterialX project originated at Lucasfilm in 2012, and was developed as a collaboration between
+            <a href="http://www.ilm.com/">Industrial Light & Magic</a> and the
+            <a href="http://www.ilmxlab.com/">Lucasfilm Advanced Development Group</a>, with contributions from
+            <a href="https://www.autodesk.com/">Autodesk</a>,
+            <a href="https://www.pixar.com/">Pixar</a>,
+            <a href="https://www.foundry.com/">The Foundry</a>, and the
+            <a href="https://github.com/imageworks/OpenShadingLanguage/">Open Shading Language</a> team.
+          </p>
 
-<h3>MaterialX Specification:</h3>
-<ul>
-  <li><strong>Doug Smythe</strong> - Industrial Light & Magic</li>
-  <li><strong>Jonathan Stone</strong> - Lucasfilm Advanced Development Group</li>
-</ul>
+          <h3>MaterialX Specification:</h3>
+          <ul>
+            <li><strong>Doug Smythe</strong> - Industrial Light & Magic</li>
+            <li><strong>Jonathan Stone</strong> - Lucasfilm Advanced Development Group</li>
+          </ul>
 
-<h3>Lead Developer:</h3>
-<ul>
-  <li><strong>Jonathan Stone</strong> - Lucasfilm Advanced Development Group</li>
-</ul>
+          <h3>Lead Developer:</h3>
+          <ul>
+            <li><strong>Jonathan Stone</strong> - Lucasfilm Advanced Development Group</li>
+          </ul>
 
-<h3>Additional Developers:</h3>
-<ul>
-  <li style="font-size:15px"><strong>Autodesk:</strong></li>
-  <ul>
-    <li><strong>Niklas Harrysson</strong></li>
-    <li><strong>Bernard Kwok</strong></li>
-    <li><strong>Ashwin Bhat</strong></li>
-    <li><strong>Jonathan Feldstein</strong></li>
-  </ul>
-  <li style="font-size:15px"><strong>Adobe:</strong></li>
-  <ul>
-    <li><strong>David Larsson</strong></li>
-  </ul>
-  <li style="font-size:15px"><strong>Nvidia:</strong></li>
-  <ul>
-    <li><strong>Lutz Kettner</strong></li>
-    <li><strong>Jan Jordan</strong></li>
-  </ul>
-  <li style="font-size:15px"><strong>Lucasfilm:</strong></li>
-  <ul>
-    <li><strong>Madeleine Yip</strong></li>
-    <li><strong>Will Muto</strong></li>
-    <li><strong>David Bullock</strong></li>
-    <li><strong>Andrew Meshekoff</strong></li>
-    <li><strong>Masuo Suzuki</strong></li>
-  </ul>
-  <li style="font-size:15px"><strong>Open Shading Language</strong></li>
-  <ul>
-    <li><strong>Larry Gritz</strong></li>
-    <li><strong>Derek Haase</strong></li>
-    <li><strong>Adam Martinez</strong></li>
-  </ul>
-</ul>
+          <h3>Additional Developers:</h3>
+          <ul>
+            <li style="font-size:15px"><strong>Autodesk:</strong></li>
+            <ul>
+              <li><strong>Niklas Harrysson</strong></li>
+              <li><strong>Bernard Kwok</strong></li>
+              <li><strong>Ashwin Bhat</strong></li>
+              <li><strong>Jonathan Feldstein</strong></li>
+            </ul>
+            <li style="font-size:15px"><strong>Adobe:</strong></li>
+            <ul>
+              <li><strong>David Larsson</strong></li>
+            </ul>
+            <li style="font-size:15px"><strong>Nvidia:</strong></li>
+            <ul>
+              <li><strong>Lutz Kettner</strong></li>
+              <li><strong>Jan Jordan</strong></li>
+            </ul>
+            <li style="font-size:15px"><strong>Lucasfilm:</strong></li>
+            <ul>
+              <li><strong>Madeleine Yip</strong></li>
+              <li><strong>Will Muto</strong></li>
+              <li><strong>David Bullock</strong></li>
+              <li><strong>Andrew Meshekoff</strong></li>
+              <li><strong>Masuo Suzuki</strong></li>
+            </ul>
+            <li style="font-size:15px"><strong>Open Shading Language</strong></li>
+            <ul>
+              <li><strong>Larry Gritz</strong></li>
+              <li><strong>Derek Haase</strong></li>
+              <li><strong>Adam Martinez</strong></li>
+            </ul>
+          </ul>
 
-<h3>Additional Contributions:</h3>
-<br>
-<style type="text/css">
-.creditsClass {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    margin: 0;
-}
-</style>
-<div id="ContributorBlock" class="creditsClass">
-<style type="text/css">
-p { margin: 0 !important;}
-</style>
-<p>Eric Bourque</p>
-<p>Alister Chowdhury</p>
-<p>Dieter De Baets</p>
-<p>Haarm-Pieter Duiker</p>
-<p>Laura Evangelista</p>
-<p>Adam Ferrall-Nunge</p>
-<p>Sebastian Grassia</p>
-<p>Jack Greasley</p>
-<p>Ben Grimes</p>
-<p>Örn Gunnarsson</p>
-<p>Naty Hoffman</p>
-<p>Malcolm Humphreys</p>
-<p>Yoon Bae Kim</p>
-<p>Matt Koehler</p>
-<p>Matthew Lausch</p>
-<p>Anders Lindqvist</p>
-<p>Karen Lucknavalai</p>
-<p>Olivier Maury</p>
-<p>Andre Mazzone</p>
-<p>Nikola Milosevic</p>
-<p>Robert Molholm</p>
-<p>Bekah Noulles</p>
-<p>Tauni Oxborrow</p>
-<p>Davide Pesare</p>
-<p>Nick Porcino</p>
-<p>Indy Ray</p>
-<p>Kai Rohmer</p>
-<p>Rachel Rose</p>
-<p>Brian Savery</p>
-<p>Chris Schoeneman</p>
-<p>Matthias Sharfenberg</p>
-<p>Kirk Shimano</p>
-<p>Kevin Wooley</p>
-</div>
+          <h3>Additional Contributions:</h3>
+          <br>
+          <style type="text/css">
+            .creditsClass {
+              -webkit-column-count: 3; /* Chrome, Safari, Opera */
+              -moz-column-count: 3; /* Firefox */
+              column-count: 3;
+              margin: 0;
+            }
+          </style>
+          <div id="ContributorBlock" class="creditsClass">
+            <style type="text/css">
+              p {
+                margin: 0 !important;
+              }
+            </style>
+            <p>Eric Bourque</p>
+            <p>Alister Chowdhury</p>
+            <p>Dieter De Baets</p>
+            <p>Haarm-Pieter Duiker</p>
+            <p>Laura Evangelista</p>
+            <p>Adam Ferrall-Nunge</p>
+            <p>Sebastian Grassia</p>
+            <p>Jack Greasley</p>
+            <p>Ben Grimes</p>
+            <p>Örn Gunnarsson</p>
+            <p>Naty Hoffman</p>
+            <p>Malcolm Humphreys</p>
+            <p>Yoon Bae Kim</p>
+            <p>Matt Koehler</p>
+            <p>Matthew Lausch</p>
+            <p>Anders Lindqvist</p>
+            <p>Karen Lucknavalai</p>
+            <p>Olivier Maury</p>
+            <p>Andre Mazzone</p>
+            <p>Nikola Milosevic</p>
+            <p>Robert Molholm</p>
+            <p>Bekah Noulles</p>
+            <p>Tauni Oxborrow</p>
+            <p>Davide Pesare</p>
+            <p>Nick Porcino</p>
+            <p>Indy Ray</p>
+            <p>Kai Rohmer</p>
+            <p>Rachel Rose</p>
+            <p>Brian Savery</p>
+            <p>Chris Schoeneman</p>
+            <p>Matthias Sharfenberg</p>
+            <p>Kirk Shimano</p>
+            <p>Kevin Wooley</p>
+          </div>
 
-<h3>Special Thanks To:</h3>
-<br>
-<div id="ContributorBlock" class="creditsClass">
-<style type="text/css">
-p { margin: 0 !important;}
-</style>
-<p>Rob Bredow</p>
-<p>David Brickhill</p>
-<p>Francois Chardavoine</p>
-<p>Roger Cordes</p>
-<p>John Gaeta</p>
-<p>Andrew Grant</p>
-<p>Ed Hanway</p>
-<p>Polly Ing</p>
-<p>Hilmar Koch</p>
-<p>Hayden Landis</p>
-<p>Kim Libreri</p>
-<p>Guido Quaroni</p>
-</div>
+          <h3>Special Thanks To:</h3>
+          <br>
+          <div id="ContributorBlock" class="creditsClass">
+            <style type="text/css">
+              p {
+                margin: 0 !important;
+              }
+            </style>
+            <p>Rob Bredow</p>
+            <p>David Brickhill</p>
+            <p>Francois Chardavoine</p>
+            <p>Roger Cordes</p>
+            <p>John Gaeta</p>
+            <p>Andrew Grant</p>
+            <p>Ed Hanway</p>
+            <p>Polly Ing</p>
+            <p>Hilmar Koch</p>
+            <p>Hayden Landis</p>
+            <p>Kim Libreri</p>
+            <p>Guido Quaroni</p>
+          </div>
 
-<!-- --------------------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------------------- -->
 
-	</div>
+        </div>
       </div>
-    </div> 
+    </div>
 
     <div class="clearBoth"></div>
     <div class="center">
@@ -414,18 +435,19 @@ p { margin: 0 !important;}
     <div class="clearBoth"></div>
     <div class="center">
       <div class="copyrightFooter">
-	<p>
-	<a href="" style="color: #666666">TERMS OF USE</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="" style="color: #666666">PRIVACY POLICY</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="" style="color: #666666">LEGAL NOTICES</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="" style="color: #666666">CHILDREN’S ONLINE PRIVACY POLICY</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="" style="color: #666666">YOUR CALIFORNIA PRIVACY POLICY</a>
+        <p>
+          <a href="" style="color: #666666">TERMS OF USE</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" style="color: #666666">PRIVACY POLICY</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" style="color: #666666">LEGAL NOTICES</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" style="color: #666666">CHILDREN’S ONLINE PRIVACY POLICY</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" style="color: #666666">YOUR CALIFORNIA PRIVACY POLICY</a>
       </div>
     </div>
   </div>
 
-</body></html>
+</body>
+</html>
