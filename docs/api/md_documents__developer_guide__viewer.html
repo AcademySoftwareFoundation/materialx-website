@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -70,11 +70,9 @@ $(function() {
 <h2><a class="anchor" id="autotoc_md22"></a>
 Example Images</h2>
 <p float="left"><b>Figure 1:</b> Procedural and uniform materials in the MaterialX viewer </p>
-<p><img src="/documents/Images/MaterialXView_Marble.png" alt="" width="213" class="inline"/> <img src="/documents/Images/MaterialXView_Copper.png" alt="" width="213" class="inline"/> <img src="/documents/Images/MaterialXView_Plastic.png" alt="" width="213" class="inline"/> <img src="/documents/Images/MaterialXView_Carpaint.png" alt="" width="213" class="inline"/> </p>
+<p><img src="/documents/Images/MaterialXView_Marble.png" alt="" width="248" class="inline"/> <img src="/documents/Images/MaterialXView_Copper.png" alt="" width="248" class="inline"/> <img src="/documents/Images/MaterialXView_Plastic.png" alt="" width="248" class="inline"/> <img src="/documents/Images/MaterialXView_Carpaint.png" alt="" width="248" class="inline"/> </p>
 <p float="left"><b>Figure 2:</b> Textured, color-space-managed materials in the MaterialX viewer </p>
-<p><img src="/documents/Images/MaterialXView_TiledBrass.png" alt="" width="430" class="inline"/> <img src="/documents/Images/MaterialXView_TiledWood.png" alt="" width="430" class="inline"/> </p>
-<p float="left"><b>Figure 3:</b> Droid character materials in the MaterialX viewer. © &amp; TM Lucasfilm Ltd. Used with permission. </p>
-<p><img src="/documents/Images/MaterialXView_BB8.png" alt="" width="430" class="inline"/> <img src="/documents/Images/MaterialXView_R2D2.png" alt="" width="430" class="inline"/> </p>
+<p><img src="/documents/Images/MaterialXView_TiledBrass.png" alt="" width="500" class="inline"/> <img src="/documents/Images/MaterialXView_TiledWood.png" alt="" width="500" class="inline"/> </p>
 <h1><a class="anchor" id="autotoc_md23"></a>
 Building The MaterialX Viewer</h1>
 <p>Select the <code>MATERIALX_BUILD_VIEWER</code> option in CMake to build the MaterialX Viewer. Installation will copy the <b>MaterialXView</b> executable to a <code>/bin</code> directory within the selected install folder.</p>
@@ -145,8 +143,7 @@ Command-Line Options</h2>
 <li><code>--screenHeight [INTEGER]</code> : Specify the height of the screen image in pixels (defaults to 960)</li>
 <li><code>--screenColor [VECTOR3]</code> : Specify the background color of the viewer as three comma-separated floats (defaults to 0.3,0.3,0.32)</li>
 <li><code>--captureFilename [FILENAME]</code> : Specify the filename to which the first rendered frame should be written</li>
-<li><code>--msaa [INTEGER]</code> : Specify the multisampling count for screen anti-aliasing (defaults to 0)</li>
-<li><code>--refresh [INTEGER]</code> : Specify the refresh period for the viewer in milliseconds (defaults to 50, set to -1 to disable)</li>
+<li><code>--refresh [FLOAT]</code> : Specify the refresh period for the viewer in milliseconds (defaults to 50, set to -1 to disable)</li>
 <li><code>--remap [TOKEN1:TOKEN2]</code> : Specify the remapping from one token to another when MaterialX document is loaded</li>
 <li><code>--skip [NAME]</code> : Specify to skip elements matching the given name attribute</li>
 <li><code>--terminator [STRING]</code> : Specify to enforce the given terminator string for file prefixes</li>

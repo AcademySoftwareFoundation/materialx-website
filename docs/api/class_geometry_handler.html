@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -97,10 +97,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometry</b> (cons
 <tr class="memitem:a0247be9940cc9fc7e5b8050bae4d59ca"><td class="memItemLeft" align="right" valign="top"><a id="a0247be9940cc9fc7e5b8050bae4d59ca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>getGeometry</b> (<a class="el" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> &amp;meshes, const string &amp;location)</td></tr>
 <tr class="separator:a0247be9940cc9fc7e5b8050bae4d59ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555b027bdaec3a310560e4a84cb1e729"><td class="memItemLeft" align="right" valign="top"><a id="a555b027bdaec3a310560e4a84cb1e729"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_handler.html#a555b027bdaec3a310560e4a84cb1e729">loadGeometry</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath)</td></tr>
-<tr class="memdesc:a555b027bdaec3a310560e4a84cb1e729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load geometry from a given location. <br /></td></tr>
-<tr class="separator:a555b027bdaec3a310560e4a84cb1e729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08003c39a417ac5ae5fcf1acbc99b314"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_handler.html#a08003c39a417ac5ae5fcf1acbc99b314">loadGeometry</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath, bool texcoordVerticalFlip=false)</td></tr>
+<tr class="memdesc:a08003c39a417ac5ae5fcf1acbc99b314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load geometry from a given location.  <a href="class_geometry_handler.html#a08003c39a417ac5ae5fcf1acbc99b314">More...</a><br /></td></tr>
+<tr class="separator:a08003c39a417ac5ae5fcf1acbc99b314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb74790634dd9cebefc3d04553f7a850"><td class="memItemLeft" align="right" valign="top"><a id="afb74790634dd9cebefc3d04553f7a850"></a>
 const <a class="el" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_handler.html#afb74790634dd9cebefc3d04553f7a850">getMeshes</a> () const</td></tr>
 <tr class="memdesc:afb74790634dd9cebefc3d04553f7a850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of meshes. <br /></td></tr>
@@ -197,6 +196,43 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the first mesh in our list containing the given partition. </p>
 <p>If no matching mesh is found, then nullptr is returned. </p>
+
+</div>
+</div>
+<a id="a08003c39a417ac5ae5fcf1acbc99b314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08003c39a417ac5ae5fcf1acbc99b314">&#9670;&nbsp;</a></span>loadGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool loadGeometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_file_path.html">FilePath</a> &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>texcoordVerticalFlip</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load geometry from a given location. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Path to geometry </td></tr>
+    <tr><td class="paramname">texcoordVerticalFlip</td><td>Flip texture coordinates in V. Default is to not flip. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

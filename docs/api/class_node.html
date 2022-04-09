@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -141,9 +141,13 @@ vector&lt; <a class="el" href="_interface_8h.html#a57dddade70e342db2f2fd54903763
 ConstNodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aac1cbd806d5d4d42c38b7477d5d7ecdb">getDeclaration</a> (const string &amp;target=EMPTY_STRING) const override</td></tr>
 <tr class="memdesc:aac1cbd806d5d4d42c38b7477d5d7ecdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first declaration of this interface, optionally filtered by the given target name. <br /></td></tr>
 <tr class="separator:aac1cbd806d5d4d42c38b7477d5d7ecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a3aa0da857bb6500223ce5c8fcb023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#ac315f2ce45a6f66e1828ba67a8155aa1">InputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ae3a3aa0da857bb6500223ce5c8fcb023">addInputFromNodeDef</a> (const string &amp;name)</td></tr>
-<tr class="memdesc:ae3a3aa0da857bb6500223ce5c8fcb023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an input based on the corresponding input for the associated node definition.  <a href="class_node.html#ae3a3aa0da857bb6500223ce5c8fcb023">More...</a><br /></td></tr>
-<tr class="separator:ae3a3aa0da857bb6500223ce5c8fcb023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81560e54b3786a94d3f69228d9c7558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#ac315f2ce45a6f66e1828ba67a8155aa1">InputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#ab81560e54b3786a94d3f69228d9c7558">addInputFromNodeDef</a> (const string &amp;inputName)</td></tr>
+<tr class="memdesc:ab81560e54b3786a94d3f69228d9c7558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an input based on the corresponding input for the associated node definition.  <a href="class_node.html#ab81560e54b3786a94d3f69228d9c7558">More...</a><br /></td></tr>
+<tr class="separator:ab81560e54b3786a94d3f69228d9c7558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3d67ce5137e0ea06ce6e45d256221f"><td class="memItemLeft" align="right" valign="top"><a id="a8a3d67ce5137e0ea06ce6e45d256221f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a8a3d67ce5137e0ea06ce6e45d256221f">addInputsFromNodeDef</a> ()</td></tr>
+<tr class="memdesc:a8a3d67ce5137e0ea06ce6e45d256221f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add inputs based on the corresponding associated node definition. <br /></td></tr>
+<tr class="separator:a8a3d67ce5137e0ea06ce6e45d256221f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Validation</div></td></tr>
 <tr class="memitem:a488dfe5fda981fdd4f948b278b24e84e"><td class="memItemLeft" align="right" valign="top"><a id="a488dfe5fda981fdd4f948b278b24e84e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a488dfe5fda981fdd4f948b278b24e84e">validate</a> (string *message=nullptr) const override</td></tr>
@@ -759,8 +763,8 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 <div class="textblock"><p>A node element within a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> or <a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a>. </p>
 <p>A <a class="el" href="class_node.html" title="A node element within a NodeGraph or Document.">Node</a> represents an instance of a <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> within a graph, and its <a class="el" href="class_input.html" title="An input element within a Node or NodeDef.">Input</a> elements apply specific values and connections to that instance. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3a3aa0da857bb6500223ce5c8fcb023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a3aa0da857bb6500223ce5c8fcb023">&#9670;&nbsp;</a></span>addInputFromNodeDef()</h2>
+<a id="ab81560e54b3786a94d3f69228d9c7558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81560e54b3786a94d3f69228d9c7558">&#9670;&nbsp;</a></span>addInputFromNodeDef()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -769,7 +773,7 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
           <td class="memname"><a class="el" href="_interface_8h.html#ac315f2ce45a6f66e1828ba67a8155aa1">InputPtr</a> addInputFromNodeDef </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>inputName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -85,6 +85,9 @@ $(function() {
 </li>
 <li>generateTangents()
 : <a class="el" href="class_mesh.html#a30ad2855b424dafed47dd639cc7af151">Mesh</a>
+</li>
+<li>generateTextureCoordinates()
+: <a class="el" href="class_mesh.html#a0f2ad1acf5823395690ba5f65eaa6d3d">Mesh</a>
 </li>
 <li>GeomPath()
 : <a class="el" href="class_geom_path.html#aab02c595055f2e104054b467680371c4">GeomPath</a>
@@ -432,8 +435,8 @@ $(function() {
 <li>getEnvRadianceMap()
 : <a class="el" href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">LightHandler</a>
 </li>
-<li>getEnvSamples()
-: <a class="el" href="class_light_handler.html#ae118615b03dbc3df9f6b3c5fe3259498">LightHandler</a>
+<li>getEnvSampleCount()
+: <a class="el" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">LightHandler</a>
 </li>
 <li>getExcludeGeom()
 : <a class="el" href="class_collection.html#ac8ca0ed4ee75cd59ad7cd2e0707adef3">Collection</a>
@@ -482,8 +485,8 @@ $(function() {
 <li>getFloatPrecision()
 : <a class="el" href="class_value.html#aec58c12cde5fef2018cedad576f2add0">Value</a>
 </li>
-<li>getFrameBuffer()
-: <a class="el" href="class_glsl_renderer.html#a0c79cee9b6017b0894e9882d6d08e25b">GlslRenderer</a>
+<li>getFramebuffer()
+: <a class="el" href="class_glsl_renderer.html#a44338f0b0bd8c761ddc4225e3ca71dbc">GlslRenderer</a>
 </li>
 <li>getFullName()
 : <a class="el" href="class_shader_port.html#a46e808dea0a8a02e4c000dca0ecd3b1f">ShaderPort</a>
@@ -770,7 +773,7 @@ $(function() {
 </li>
 <li>getNode()
 : <a class="el" href="class_graph_element.html#acdf88cff211ae5f6cc359089ffced060">GraphElement</a>
-, <a class="el" href="class_shader_graph.html#a33fdebe5ceb81362fd6239689980c0a0">ShaderGraph</a>
+, <a class="el" href="class_shader_graph.html#a24fe483dd6a904345824d5e93d8b1fc4">ShaderGraph</a>
 , <a class="el" href="class_shader_port.html#a5f87980538b483a39cb3f14e8eced162">ShaderPort</a>
 </li>
 <li>getNodeDef()
@@ -827,7 +830,7 @@ $(function() {
 : <a class="el" href="class_texture_baker.html#a94332391e121d85064a1a05fcc1dcd80">TextureBaker</a>
 </li>
 <li>getOptions()
-: <a class="el" href="class_gen_context.html#a4804a09a8826d03b005ceedaa5213622">GenContext</a>
+: <a class="el" href="class_gen_context.html#a14e400f3a66cfa3dacb0dc110ea241b3">GenContext</a>
 </li>
 <li>getOutput()
 : <a class="el" href="class_interface_element.html#a078660da3a0c5b652a28f3e31e414199">InterfaceElement</a>
@@ -865,7 +868,7 @@ $(function() {
 : <a class="el" href="class_syntax.html#af537066cbc74363bd281a33e98f00735">Syntax</a>
 </li>
 <li>getParent()
-: <a class="el" href="class_element.html#af69c34f7be572f3008369d4bcbe7d1a5">Element</a>
+: <a class="el" href="class_element.html#ad6704447112330b4191ecb62159b8da8">Element</a>
 , <a class="el" href="class_shader_node.html#a03884a644102bd7030332efb0540aa46">ShaderNode</a>
 </li>
 <li>getParentPath()
@@ -956,7 +959,7 @@ $(function() {
 : <a class="el" href="class_image.html#a92145244ee03acedfbb18fe13ea0c88a">Image</a>
 </li>
 <li>getRoot()
-: <a class="el" href="class_element.html#ab8d51ac16028b6ec7f53147a4ca3250d">Element</a>
+: <a class="el" href="class_element.html#a76fc0e1e25b02ac5e811b96c7c1284ea">Element</a>
 </li>
 <li>getRowStride()
 : <a class="el" href="class_image.html#ae1d31dfb4185951dd3d49bbb549ee2f2">Image</a>
@@ -1025,7 +1028,7 @@ $(function() {
 : <a class="el" href="class_glsl_program.html#aa336098c9541df10509a1cc2b5a09608">GlslProgram</a>
 </li>
 <li>getStream()
-: <a class="el" href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">Mesh</a>
+: <a class="el" href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">Mesh</a>
 </li>
 <li>getStride()
 : <a class="el" href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">MeshStream</a>
@@ -1074,6 +1077,12 @@ $(function() {
 </li>
 <li>getTextureFilenameTemplate()
 : <a class="el" href="class_texture_baker.html#af8dbb33bcc4a6cabd1580f3191c7a333">TextureBaker</a>
+</li>
+<li>getTextureSpaceMax()
+: <a class="el" href="class_texture_baker.html#a87ac4a21de6329d841ba28d6cdb9b00a">TextureBaker</a>
+</li>
+<li>getTextureSpaceMin()
+: <a class="el" href="class_texture_baker.html#aacf3cc352288c03e3ddd46c646a8fae1">TextureBaker</a>
 </li>
 <li>getToken()
 : <a class="el" href="class_geom_info.html#a1ceb4a5d253156a62b158c0515f6e7e0">GeomInfo</a>
@@ -1220,13 +1229,13 @@ $(function() {
 : <a class="el" href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">GenContext</a>
 </li>
 <li>getValue()
-: <a class="el" href="class_aggregate_type_syntax.html#a140c929f14914216e67f1f47cae19d46">AggregateTypeSyntax</a>
+: <a class="el" href="class_aggregate_type_syntax.html#aef9599a7d8ad65a2115cc12285a2cdc8">AggregateTypeSyntax</a>
 , <a class="el" href="class_attribute_def.html#a0fd2c4d512f27d9cfa1714259edfd6db">AttributeDef</a>
 , <a class="el" href="class_scalar_type_syntax.html#a140c929f14914216e67f1f47cae19d46">ScalarTypeSyntax</a>
 , <a class="el" href="class_shader_port.html#a0fd2c4d512f27d9cfa1714259edfd6db">ShaderPort</a>
 , <a class="el" href="class_string_type_syntax.html#a140c929f14914216e67f1f47cae19d46">StringTypeSyntax</a>
 , <a class="el" href="class_syntax.html#a54bc51937e25ef019575391072ad4a7b">Syntax</a>
-, <a class="el" href="class_type_syntax.html#a1f2b8b8544c9b109363d46b802f33858">TypeSyntax</a>
+, <a class="el" href="class_type_syntax.html#a9223197eff3f075007a178dc366f1cce">TypeSyntax</a>
 , <a class="el" href="class_value_element.html#a0fd2c4d512f27d9cfa1714259edfd6db">ValueElement</a>
 </li>
 <li>getValueElement()

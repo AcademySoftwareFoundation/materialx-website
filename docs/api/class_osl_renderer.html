@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -123,9 +123,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a14e7d55d94b8109ff447088fdb9810e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#a14e7d55d94b8109ff447088fdb9810e0">setOslCompilerExecutable</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;executableFilePath)</td></tr>
 <tr class="memdesc:a14e7d55d94b8109ff447088fdb9810e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the OSL executable.  <a href="class_osl_renderer.html#a14e7d55d94b8109ff447088fdb9810e0">More...</a><br /></td></tr>
 <tr class="separator:a14e7d55d94b8109ff447088fdb9810e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ce6e998fb3089fb617a83a8418f215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#ab1ce6e998fb3089fb617a83a8418f215">setOslIncludePath</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;dirPath)</td></tr>
-<tr class="memdesc:ab1ce6e998fb3089fb617a83a8418f215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the search locations for OSL include files.  <a href="class_osl_renderer.html#ab1ce6e998fb3089fb617a83a8418f215">More...</a><br /></td></tr>
-<tr class="separator:ab1ce6e998fb3089fb617a83a8418f215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa631c6fb1c651fefacd578fe9556628d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#aa631c6fb1c651fefacd578fe9556628d">setOslIncludePath</a> (const <a class="el" href="class_file_search_path.html">FileSearchPath</a> &amp;dirPath)</td></tr>
+<tr class="memdesc:aa631c6fb1c651fefacd578fe9556628d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the search locations for OSL include files.  <a href="class_osl_renderer.html#aa631c6fb1c651fefacd578fe9556628d">More...</a><br /></td></tr>
+<tr class="separator:aa631c6fb1c651fefacd578fe9556628d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae07f1df598b85d7b1a246274af3b3553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#ae07f1df598b85d7b1a246274af3b3553">setOslOutputFilePath</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;dirPath)</td></tr>
 <tr class="memdesc:ae07f1df598b85d7b1a246274af3b3553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the location where compiled OSL files will reside.  <a href="class_osl_renderer.html#ae07f1df598b85d7b1a246274af3b3553">More...</a><br /></td></tr>
 <tr class="separator:ae07f1df598b85d7b1a246274af3b3553"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +156,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:adbbb4fb74630a04aa1690a467bcf840b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#adbbb4fb74630a04aa1690a467bcf840b">useTestRender</a> (bool useTestRender)</td></tr>
 <tr class="memdesc:adbbb4fb74630a04aa1690a467bcf840b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to toggle to either use testrender or testshade during render validation By default testshade is used.  <a href="class_osl_renderer.html#adbbb4fb74630a04aa1690a467bcf840b">More...</a><br /></td></tr>
 <tr class="separator:adbbb4fb74630a04aa1690a467bcf840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e1df03b0d936cf50e864c0440efce8"><td class="memItemLeft" align="right" valign="top"><a id="a51e1df03b0d936cf50e864c0440efce8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#a51e1df03b0d936cf50e864c0440efce8">setRaysPerPixelLit</a> (int rays)</td></tr>
+<tr class="memdesc:a51e1df03b0d936cf50e864c0440efce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of rays per pixel to be used for lit surfaces. <br /></td></tr>
+<tr class="separator:a51e1df03b0d936cf50e864c0440efce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2621cbb7f3f3f2f576af19a9b9094530"><td class="memItemLeft" align="right" valign="top"><a id="a2621cbb7f3f3f2f576af19a9b9094530"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#a2621cbb7f3f3f2f576af19a9b9094530">setRaysPerPixelUnlit</a> (int rays)</td></tr>
+<tr class="memdesc:a2621cbb7f3f3f2f576af19a9b9094530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of rays per pixel to be used for unlit surfaces. <br /></td></tr>
+<tr class="separator:a2621cbb7f3f3f2f576af19a9b9094530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb7f5ff653103f341c88b5a34de41dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#a6eb7f5ff653103f341c88b5a34de41dd">compileOSL</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;oslFilePath)</td></tr>
 <tr class="memdesc:a6eb7f5ff653103f341c88b5a34de41dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile OSL code stored in a file.  <a href="class_osl_renderer.html#a6eb7f5ff653103f341c88b5a34de41dd">More...</a><br /></td></tr>
 <tr class="separator:a6eb7f5ff653103f341c88b5a34de41dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,7 +358,7 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 </div><div class="memdoc">
 
 <p>Create OSL program based on an input shader. </p>
-<p>A valid executable and include path must be specified before calling this method. <a class="el" href="class_osl_renderer.html#a14e7d55d94b8109ff447088fdb9810e0" title="Set the path to the OSL executable.">setOslCompilerExecutable()</a>, and <a class="el" href="class_osl_renderer.html#ab1ce6e998fb3089fb617a83a8418f215" title="Set the search locations for OSL include files.">setOslIncludePath()</a>.</p>
+<p>A valid executable and include path must be specified before calling this method. <a class="el" href="class_osl_renderer.html#a14e7d55d94b8109ff447088fdb9810e0" title="Set the path to the OSL executable.">setOslCompilerExecutable()</a>, and <a class="el" href="class_osl_renderer.html#aa631c6fb1c651fefacd578fe9556628d" title="Set the search locations for OSL include files.">setOslIncludePath()</a>.</p>
 <p>Additionally <a class="el" href="class_osl_renderer.html#ae07f1df598b85d7b1a246274af3b3553" title="Set the location where compiled OSL files will reside.">setOslOutputFilePath()</a> should be set to allow for output of .osl and .oso files to the appropriate path location to be used as input for render validation.</p>
 <p>If render validation is not required, then the same temporary name will be used for all shaders validated using this method. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -539,8 +547,8 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 
 </div>
 </div>
-<a id="ab1ce6e998fb3089fb617a83a8418f215"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1ce6e998fb3089fb617a83a8418f215">&#9670;&nbsp;</a></span>setOslIncludePath()</h2>
+<a id="aa631c6fb1c651fefacd578fe9556628d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa631c6fb1c651fefacd578fe9556628d">&#9670;&nbsp;</a></span>setOslIncludePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,7 +559,7 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
         <tr>
           <td class="memname">void setOslIncludePath </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_file_path.html">FilePath</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_file_search_path.html">FileSearchPath</a> &amp;&#160;</td>
           <td class="paramname"><em>dirPath</em></td><td>)</td>
           <td></td>
         </tr>
