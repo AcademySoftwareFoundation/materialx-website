@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -247,9 +247,6 @@ static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class
 <tr class="memitem:af3501eb204b8ed2219f2d2406bbd1c32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#af3501eb204b8ed2219f2d2406bbd1c32">createRotationZ</a> (float angle)</td></tr>
 <tr class="memdesc:af3501eb204b8ed2219f2d2406bbd1c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a rotation matrix about the Z-axis.  <a href="class_matrix44.html#af3501eb204b8ed2219f2d2406bbd1c32">More...</a><br /></td></tr>
 <tr class="separator:af3501eb204b8ed2219f2d2406bbd1c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4eb14a7442ed0e5d5525cd154916bee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ab4eb14a7442ed0e5d5525cd154916bee">createRotation</a> (const <a class="el" href="class_quaternion.html">Quaternion</a> &amp;quaternion)</td></tr>
-<tr class="memdesc:ab4eb14a7442ed0e5d5525cd154916bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a rotation matrix using a quaternion whose imaginary component is in the the supplied vectors xyz, and whose real component is in the fourth component, w.  <a href="class_matrix44.html#ab4eb14a7442ed0e5d5525cd154916bee">More...</a><br /></td></tr>
-<tr class="separator:ab4eb14a7442ed0e5d5525cd154916bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -281,40 +278,6 @@ std::array&lt; RowArray, N &gt;&#160;</td><td class="memItemRight" valign="botto
 <div class="textblock"><p>A 4x4 matrix of floating-point values. </p>
 <p>Vector transformation methods follow the row-vector convention, with matrix-vector multiplication computed as v' = vM. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab4eb14a7442ed0e5d5525cd154916bee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4eb14a7442ed0e5d5525cd154916bee">&#9670;&nbsp;</a></span>createRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_matrix44.html">Matrix44</a> createRotation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_quaternion.html">Quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>quaternion</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a rotation matrix using a quaternion whose imaginary component is in the the supplied vectors xyz, and whose real component is in the fourth component, w. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quaternion</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a7bb319a047a1b9756b2b2bd7aa4d5da7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bb319a047a1b9756b2b2bd7aa4d5da7">&#9670;&nbsp;</a></span>createRotationX()</h2>
 

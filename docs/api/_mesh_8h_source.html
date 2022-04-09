@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -397,32 +397,34 @@ $(function() {
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">return</span> _partitions[partIndex];</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    }</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateNormals(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTangents(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> normalStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> texcoordStream);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">void</span> mergePartitions();</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">void</span> splitByUdims();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTextureCoordinates(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateNormals(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTangents(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> normalStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> texcoordStream);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">string</span> _name;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordtype">string</span> _sourceUri;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _minimumBounds;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _maximumBounds;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _sphereCenter;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordtype">float</span> _sphereRadius;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">void</span> mergePartitions();</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">void</span> splitByUdims();</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordtype">string</span> _name;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordtype">string</span> _sourceUri;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a> _streams;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordtype">size_t</span> _vertexCount;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    vector&lt;MeshPartitionPtr&gt; _partitions;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;};</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _minimumBounds;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _maximumBounds;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _sphereCenter;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">float</span> _sphereRadius;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a> _streams;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">size_t</span> _vertexCount;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    vector&lt;MeshPartitionPtr&gt; _partitions;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;};</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_mesh_stream_html_adda4d487448aea1c68d96087438fae8b"><div class="ttname"><a href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">MeshStream::resize</a></div><div class="ttdeci">void resize(size_t elementCount)</div><div class="ttdoc">Resize data to an given number of elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:62</div></div>
 <div class="ttc" id="a_mesh_8h_html_a172addb5cf2c028c609c258b623de350"><div class="ttname"><a href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a></div><div class="ttdeci">vector&lt; MeshStreamPtr &gt; MeshStreamList</div><div class="ttdoc">List of mesh streams.</div><div class="ttdef"><b>Definition:</b> Mesh.h:26</div></div>
@@ -436,7 +438,7 @@ $(function() {
 <div class="ttc" id="aclass_mesh_partition_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">MeshPartition::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:170</div></div>
 <div class="ttc" id="aclass_mesh_html_a397054093aca067747fc9bf15c46b748"><div class="ttname"><a href="class_mesh.html#a397054093aca067747fc9bf15c46b748">Mesh::hasSourceUri</a></div><div class="ttdeci">bool hasSourceUri() const</div><div class="ttdoc">Return true if this mesh has a source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:256</div></div>
 <div class="ttc" id="aclass_mesh_html_af975e4199b3b66e24586f2b8c55e0e63"><div class="ttname"><a href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">Mesh::getSourceUri</a></div><div class="ttdeci">const string &amp; getSourceUri() const</div><div class="ttdoc">Return the mesh's source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:262</div></div>
-<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:680</div></div>
+<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:641</div></div>
 <div class="ttc" id="aclass_vector3_html"><div class="ttname"><a href="class_vector3.html">Vector3</a></div><div class="ttdoc">A vector of three floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:303</div></div>
 <div class="ttc" id="aclass_mesh_partition_html_a830b7e463d5111102921c3159f8f138e"><div class="ttname"><a href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">MeshPartition::resize</a></div><div class="ttdeci">void resize(size_t indexCount)</div><div class="ttdoc">Resize data to the given number of indices.</div><div class="ttdef"><b>Definition:</b> Mesh.h:158</div></div>
 <div class="ttc" id="aclass_mesh_html_acfa76e5ef184d2c25dcbdf890c7308d7"><div class="ttname"><a href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">Mesh::getSphereCenter</a></div><div class="ttdeci">const Vector3 &amp; getSphereCenter() const</div><div class="ttdoc">Return center of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:358</div></div>
@@ -446,7 +448,7 @@ $(function() {
 <div class="ttc" id="aclass_mesh_stream_html_a9612a2af81d0dcb1d8588f36ebfbc928"><div class="ttname"><a href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">MeshStream::setStride</a></div><div class="ttdeci">void setStride(unsigned int stride)</div><div class="ttdoc">Set stride between elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:116</div></div>
 <div class="ttc" id="aclass_mesh_html"><div class="ttname"><a href="class_mesh.html">Mesh</a></div><div class="ttdoc">Container for mesh data.</div><div class="ttdef"><b>Definition:</b> Mesh.h:232</div></div>
 <div class="ttc" id="aclass_mesh_partition_html_a50ac4672725828ffa8543531b02c01e1"><div class="ttname"><a href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">MeshPartition::addSourceName</a></div><div class="ttdeci">void addSourceName(const string &amp;val)</div><div class="ttdoc">Add a source name, representing a partition that was processed to generate this one.</div><div class="ttdef"><b>Definition:</b> Mesh.h:177</div></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:60</div></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:61</div></div>
 <div class="ttc" id="aclass_mesh_partition_html_a7f6ea930d1621f2637512b741d08612c"><div class="ttname"><a href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">MeshPartition::getIndices</a></div><div class="ttdeci">MeshIndexBuffer &amp; getIndices()</div><div class="ttdoc">Return indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:190</div></div>
 <div class="ttc" id="aclass_mesh_partition_html_a67113a614ef1797e9bc9651695a6a0e5"><div class="ttname"><a href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">MeshPartition::getSourceNames</a></div><div class="ttdeci">const StringSet &amp; getSourceNames() const</div><div class="ttdoc">Return the vector of source names, representing all partitions that were processed to generate this o...</div><div class="ttdef"><b>Definition:</b> Mesh.h:184</div></div>
 <div class="ttc" id="a_mesh_8h_html_aa1fa294260f159ae030e6bb7ecac3490"><div class="ttname"><a href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a></div><div class="ttdeci">shared_ptr&lt; class MeshPartition &gt; MeshPartitionPtr</div><div class="ttdoc">Shared pointer to a mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:137</div></div>

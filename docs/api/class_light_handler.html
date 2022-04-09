@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -128,14 +128,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">getAlbedoTable</a> () const</td></tr>
 <tr class="memdesc:ae4acca0bdcfe167d2dc6582a83ce64c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the directional albedo table. <br /></td></tr>
 <tr class="separator:ae4acca0bdcfe167d2dc6582a83ce64c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7adcfd0310650847c733f0cbc372146"><td class="memItemLeft" align="right" valign="top"><a id="aa7adcfd0310650847c733f0cbc372146"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_handler.html#aa7adcfd0310650847c733f0cbc372146">setEnvSamples</a> (int samples)</td></tr>
-<tr class="memdesc:aa7adcfd0310650847c733f0cbc372146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of environment lighting samples. <br /></td></tr>
-<tr class="separator:aa7adcfd0310650847c733f0cbc372146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae118615b03dbc3df9f6b3c5fe3259498"><td class="memItemLeft" align="right" valign="top"><a id="ae118615b03dbc3df9f6b3c5fe3259498"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_handler.html#ae118615b03dbc3df9f6b3c5fe3259498">getEnvSamples</a> () const</td></tr>
-<tr class="memdesc:ae118615b03dbc3df9f6b3c5fe3259498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of environment lighting samples. <br /></td></tr>
-<tr class="separator:ae118615b03dbc3df9f6b3c5fe3259498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d92e14b6ee56e8ac974d4c1ccf126bd"><td class="memItemLeft" align="right" valign="top"><a id="a5d92e14b6ee56e8ac974d4c1ccf126bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">setEnvSampleCount</a> (int count)</td></tr>
+<tr class="memdesc:a5d92e14b6ee56e8ac974d4c1ccf126bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the environment lighting sample count. <br /></td></tr>
+<tr class="separator:a5d92e14b6ee56e8ac974d4c1ccf126bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646c767d68b690b498395ead46a04792"><td class="memItemLeft" align="right" valign="top"><a id="a646c767d68b690b498395ead46a04792"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">getEnvSampleCount</a> () const</td></tr>
+<tr class="memdesc:a646c767d68b690b498395ead46a04792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the environment lighting sample count. <br /></td></tr>
+<tr class="separator:a646c767d68b690b498395ead46a04792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Light Sources</div></td></tr>
 <tr class="memitem:aa43f40c8ff2b26c17797a7de19909a0e"><td class="memItemLeft" align="right" valign="top"><a id="aa43f40c8ff2b26c17797a7de19909a0e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_handler.html#aa43f40c8ff2b26c17797a7de19909a0e">addLightSource</a> (<a class="el" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> node)</td></tr>
@@ -196,9 +196,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_indirectLighting</b>
 <tr class="memitem:aecddadebde9c862477cee96ef383e888"><td class="memItemLeft" align="right" valign="top"><a id="aecddadebde9c862477cee96ef383e888"></a>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_albedoTable</b></td></tr>
 <tr class="separator:aecddadebde9c862477cee96ef383e888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa75e9bd66f7718932ff2baa0fa87c243"><td class="memItemLeft" align="right" valign="top"><a id="aa75e9bd66f7718932ff2baa0fa87c243"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_envSamples</b></td></tr>
-<tr class="separator:aa75e9bd66f7718932ff2baa0fa87c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ccb69a44d02dc64080494083459fd6"><td class="memItemLeft" align="right" valign="top"><a id="a44ccb69a44d02dc64080494083459fd6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_envSampleCount</b></td></tr>
+<tr class="separator:a44ccb69a44d02dc64080494083459fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f781d0d696473c52cc185327f49d83"><td class="memItemLeft" align="right" valign="top"><a id="ac8f781d0d696473c52cc185327f49d83"></a>
 vector&lt; <a class="el" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_lightSources</b></td></tr>
 <tr class="separator:ac8f781d0d696473c52cc185327f49d83"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -81,7 +81,8 @@ Inheritance diagram for GeometryLoader:</div>
  <div class="center">
   <img src="class_geometry_loader.png" usemap="#GeometryLoader_map" alt=""/>
   <map id="GeometryLoader_map" name="GeometryLoader_map">
-<area href="class_tiny_obj_loader.html" title="Wrapper for geometry loader to read in OBJ files using the TinyObj library." alt="TinyObjLoader" shape="rect" coords="0,56,106,80"/>
+<area href="class_cgltf_loader.html" title="Wrapper for loader to read in GLTF files using the Cgltf library." alt="CgltfLoader" shape="rect" coords="0,56,106,80"/>
+<area href="class_tiny_obj_loader.html" title="Wrapper for geometry loader to read in OBJ files using the TinyObj library." alt="TinyObjLoader" shape="rect" coords="116,56,222,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -90,9 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aefdef5139e48a371f2194f250011df2f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_loader.html#aefdef5139e48a371f2194f250011df2f">supportedExtensions</a> () const</td></tr>
 <tr class="memdesc:aefdef5139e48a371f2194f250011df2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of supported extensions.  <a href="class_geometry_loader.html#aefdef5139e48a371f2194f250011df2f">More...</a><br /></td></tr>
 <tr class="separator:aefdef5139e48a371f2194f250011df2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de6ef8ba9657c921396a18d90130c1f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_loader.html#a3de6ef8ba9657c921396a18d90130c1f">load</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath, <a class="el" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> &amp;meshList)=0</td></tr>
-<tr class="memdesc:a3de6ef8ba9657c921396a18d90130c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load geometry from disk.  <a href="class_geometry_loader.html#a3de6ef8ba9657c921396a18d90130c1f">More...</a><br /></td></tr>
-<tr class="separator:a3de6ef8ba9657c921396a18d90130c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5870c37bc25e02f53bc1e6ee35b1b770"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_loader.html#a5870c37bc25e02f53bc1e6ee35b1b770">load</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath, <a class="el" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> &amp;meshList, bool texcoordVerticalFlip=false)=0</td></tr>
+<tr class="memdesc:a5870c37bc25e02f53bc1e6ee35b1b770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load geometry from disk.  <a href="class_geometry_loader.html#a5870c37bc25e02f53bc1e6ee35b1b770">More...</a><br /></td></tr>
+<tr class="separator:a5870c37bc25e02f53bc1e6ee35b1b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -104,8 +105,8 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Base class representing a geometry loader. </p>
 <p>A loader can be associated with one or more file extensions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3de6ef8ba9657c921396a18d90130c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3de6ef8ba9657c921396a18d90130c1f">&#9670;&nbsp;</a></span>load()</h2>
+<a id="a5870c37bc25e02f53bc1e6ee35b1b770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5870c37bc25e02f53bc1e6ee35b1b770">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +124,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> &amp;&#160;</td>
-          <td class="paramname"><em>meshList</em>&#160;</td>
+          <td class="paramname"><em>meshList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>texcoordVerticalFlip</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -143,12 +150,13 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">filePath</td><td>Path to file to load </td></tr>
     <tr><td class="paramname">meshList</td><td>List of meshes to update </td></tr>
+    <tr><td class="paramname">texcoordVerticalFlip</td><td>Flip texture coordinates in V when loading </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if load was successful </dd></dl>
 
-<p>Implemented in <a class="el" href="class_tiny_obj_loader.html#ad389c8798b250a79e16e7188b80c0fe4">TinyObjLoader</a>.</p>
+<p>Implemented in <a class="el" href="class_tiny_obj_loader.html#a0e93b9ebde3f7c8e3f697908af0ca6f9">TinyObjLoader</a>, and <a class="el" href="class_cgltf_loader.html#a0e93b9ebde3f7c8e3f697908af0ca6f9">CgltfLoader</a>.</p>
 
 </div>
 </div>

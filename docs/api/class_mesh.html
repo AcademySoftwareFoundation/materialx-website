@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -163,6 +163,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">getPartition</a> (size_t partIndex) const</td></tr>
 <tr class="memdesc:a71083e12c0242a05b6e1601f2a6e97f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to a mesh partition. <br /></td></tr>
 <tr class="separator:a71083e12c0242a05b6e1601f2a6e97f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2ad1acf5823395690ba5f65eaa6d3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a0f2ad1acf5823395690ba5f65eaa6d3d">generateTextureCoordinates</a> (<a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream)</td></tr>
+<tr class="memdesc:a0f2ad1acf5823395690ba5f65eaa6d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create texture coordinates from the given positions.  <a href="class_mesh.html#a0f2ad1acf5823395690ba5f65eaa6d3d">More...</a><br /></td></tr>
+<tr class="separator:a0f2ad1acf5823395690ba5f65eaa6d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94dcd17494409de1662dd94e04e4e1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a94dcd17494409de1662dd94e04e4e1c7">generateNormals</a> (<a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream)</td></tr>
 <tr class="memdesc:a94dcd17494409de1662dd94e04e4e1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate face normals from the given positions.  <a href="class_mesh.html#a94dcd17494409de1662dd94e04e4e1c7">More...</a><br /></td></tr>
 <tr class="separator:a94dcd17494409de1662dd94e04e4e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,6 +260,33 @@ static <a class="el" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">Mesh
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The generated tangent stream, on success; otherwise, a null pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a0f2ad1acf5823395690ba5f65eaa6d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2ad1acf5823395690ba5f65eaa6d3d">&#9670;&nbsp;</a></span>generateTextureCoordinates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTextureCoordinates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td>
+          <td class="paramname"><em>positionStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create texture coordinates from the given positions. </p>
+<p>The texture coordinates are all initialize to a zero value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">positionStream</td><td><a class="el" href="class_input.html" title="An input element within a Node or NodeDef.">Input</a> position stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated texture coordinate stream </dd></dl>
 
 </div>
 </div>

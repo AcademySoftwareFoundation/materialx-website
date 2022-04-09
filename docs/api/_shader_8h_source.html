@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.3</span>
+   &#160;<span id="projectnumber">1.38.4</span>
    </div>
   </td>
  </tr>
@@ -138,23 +138,25 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_shader.html#a427c58bff8cb8e218750b662d3298d9a">   95</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_shader.html#a427c58bff8cb8e218750b662d3298d9a">hasClassification</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _graph-&gt;hasClassification(c); }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_shader.html#a36fda7a51691e09ed6ccdb90f85a44d8">   98</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_shader.html#a36fda7a51691e09ed6ccdb90f85a44d8">getSourceCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; stage = Stage::PIXEL)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getStage(stage).getSourceCode(); }</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_shader.html#a12c620cb0274f11d4b8d66dbe4ee818a">   98</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_shader.html#a12c620cb0274f11d4b8d66dbe4ee818a">setSourceCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; code, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; stage = Stage::PIXEL) { getStage(stage).setSourceCode(code); }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">protected</span>: </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87">ShaderStagePtr</a> createStage(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="_syntax_8h.html#a78ad254c2375f3480df1cc24bc63b561">ConstSyntaxPtr</a> syntax);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">string</span> _name;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="_shader_graph_8h.html#aaf78e54f0325edc6ce48bbbfdc196416">ShaderGraphPtr</a> _graph;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::unordered_map&lt;string, ShaderStagePtr&gt; _stagesMap;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    vector&lt;ShaderStage*&gt; _stages;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::unordered_map&lt;string, ValuePtr&gt; _attributeMap;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_shader_generator.html">ShaderGenerator</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_shader.html#a36fda7a51691e09ed6ccdb90f85a44d8">  101</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_shader.html#a36fda7a51691e09ed6ccdb90f85a44d8">getSourceCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; stage = Stage::PIXEL)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getStage(stage).getSourceCode(); }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87">ShaderStagePtr</a> createStage(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="_syntax_8h.html#a78ad254c2375f3480df1cc24bc63b561">ConstSyntaxPtr</a> syntax);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">string</span> _name;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="_shader_graph_8h.html#aaf78e54f0325edc6ce48bbbfdc196416">ShaderGraphPtr</a> _graph;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::unordered_map&lt;string, ShaderStagePtr&gt; _stagesMap;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    vector&lt;ShaderStage*&gt; _stages;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::unordered_map&lt;string, ValuePtr&gt; _attributeMap;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_shader_generator.html">ShaderGenerator</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_shader_html_a8ded5d90e4cd2bc8854ed46b4c41e52e"><div class="ttname"><a href="class_shader.html#a8ded5d90e4cd2bc8854ed46b4c41e52e">Shader::~Shader</a></div><div class="ttdeci">virtual ~Shader()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> Shader.h:39</div></div>
 <div class="ttc" id="aclass_shader_html_a9a39e201be855f23a2efde8d5b94ed6d"><div class="ttname"><a href="class_shader.html#a9a39e201be855f23a2efde8d5b94ed6d">Shader::setAttribute</a></div><div class="ttdeci">void setAttribute(const string &amp;attrib, ValuePtr value)</div><div class="ttdoc">Set a value attribute on the shader.</div><div class="ttdef"><b>Definition:</b> Shader.h:77</div></div>
@@ -162,10 +164,11 @@ $(function() {
 <div class="ttc" id="aclass_shader_html_a3560d1a22271c9afbf9c323149f0e183"><div class="ttname"><a href="class_shader.html#a3560d1a22271c9afbf9c323149f0e183">Shader::numStages</a></div><div class="ttdeci">size_t numStages() const</div><div class="ttdoc">Return the number of shader stages for this shader.</div><div class="ttdef"><b>Definition:</b> Shader.h:45</div></div>
 <div class="ttc" id="aclass_shader_html_ae937c30e5241baea5ae003e2e2bc3f32"><div class="ttname"><a href="class_shader.html#ae937c30e5241baea5ae003e2e2bc3f32">Shader::hasAttribute</a></div><div class="ttdeci">bool hasAttribute(const string &amp;attrib) const</div><div class="ttdoc">Return true if the shader has a given named attribute.</div><div class="ttdef"><b>Definition:</b> Shader.h:63</div></div>
 <div class="ttc" id="a_gen_options_8h_html"><div class="ttname"><a href="_gen_options_8h.html">GenOptions.h</a></div><div class="ttdoc">Shader generation options class.</div></div>
-<div class="ttc" id="aclass_shader_html_a36fda7a51691e09ed6ccdb90f85a44d8"><div class="ttname"><a href="class_shader.html#a36fda7a51691e09ed6ccdb90f85a44d8">Shader::getSourceCode</a></div><div class="ttdeci">const string &amp; getSourceCode(const string &amp;stage=Stage::PIXEL) const</div><div class="ttdoc">Return the final shader source code for a given shader stage.</div><div class="ttdef"><b>Definition:</b> Shader.h:98</div></div>
+<div class="ttc" id="aclass_shader_html_a36fda7a51691e09ed6ccdb90f85a44d8"><div class="ttname"><a href="class_shader.html#a36fda7a51691e09ed6ccdb90f85a44d8">Shader::getSourceCode</a></div><div class="ttdeci">const string &amp; getSourceCode(const string &amp;stage=Stage::PIXEL) const</div><div class="ttdoc">Return the shader source code for a given shader stage.</div><div class="ttdef"><b>Definition:</b> Shader.h:101</div></div>
 <div class="ttc" id="a_syntax_8h_html_a78ad254c2375f3480df1cc24bc63b561"><div class="ttname"><a href="_syntax_8h.html#a78ad254c2375f3480df1cc24bc63b561">ConstSyntaxPtr</a></div><div class="ttdeci">shared_ptr&lt; const Syntax &gt; ConstSyntaxPtr</div><div class="ttdoc">Shared pointer to a constant Syntax.</div><div class="ttdef"><b>Definition:</b> Syntax.h:28</div></div>
 <div class="ttc" id="aclass_shader_generator_html"><div class="ttname"><a href="class_shader_generator.html">ShaderGenerator</a></div><div class="ttdoc">Base class for shader generators All third-party shader generators should derive from this class.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.h:29</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_export_8h_html"><div class="ttname"><a href="_material_x_gen_shader_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
+<div class="ttc" id="aclass_shader_html_a12c620cb0274f11d4b8d66dbe4ee818a"><div class="ttname"><a href="class_shader.html#a12c620cb0274f11d4b8d66dbe4ee818a">Shader::setSourceCode</a></div><div class="ttdeci">void setSourceCode(const string &amp;code, const string &amp;stage=Stage::PIXEL)</div><div class="ttdoc">Set the shader source code for a given shader stage.</div><div class="ttdef"><b>Definition:</b> Shader.h:98</div></div>
 <div class="ttc" id="a_value_8h_html_a57c93cd6caa19a5d742033c09715b200"><div class="ttname"><a href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a></div><div class="ttdeci">shared_ptr&lt; Value &gt; ValuePtr</div><div class="ttdoc">A shared pointer to a Value.</div><div class="ttdef"><b>Definition:</b> Value.h:29</div></div>
 <div class="ttc" id="aclass_shader_html_a427c58bff8cb8e218750b662d3298d9a"><div class="ttname"><a href="class_shader.html#a427c58bff8cb8e218750b662d3298d9a">Shader::hasClassification</a></div><div class="ttdeci">bool hasClassification(unsigned int c) const</div><div class="ttdoc">Return true if this shader matches the given classification.</div><div class="ttdef"><b>Definition:</b> Shader.h:95</div></div>
 <div class="ttc" id="aclass_shader_graph_html"><div class="ttname"><a href="class_shader_graph.html">ShaderGraph</a></div><div class="ttdoc">Class representing a graph (DAG) for shader generation.</div><div class="ttdef"><b>Definition:</b> ShaderGraph.h:44</div></div>
