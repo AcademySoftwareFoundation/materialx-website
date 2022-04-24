@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -159,22 +159,32 @@
           <a href="ThirdPartySupport.html">Third-Party MaterialX Support</a>
           <ul>
             <li>
-              <a href="ThirdPartySupport.html#Shaders-OSL">Standard Node OSL Shaders</a>
+              <a href="ThirdPartySupport.html#USD">Pixar USD</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="ThirdPartySupport.html#Substance">Substance Designer Plugin</a>
+              <a href="ThirdPartySupport.html#Houdini">SideFX Houdini</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="ThirdPartySupport.html#Arnold">Arnold MaterialX Operator</a>
+              <a href="ThirdPartySupport.html#Clarisse">Isotropix Clarisse</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="ThirdPartySupport.html#USDMaterialX">USD + MaterialX (Pixar)</a>
+              <a href="ThirdPartySupport.html#Maya">Autodesk Maya</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="ThirdPartySupport.html#RenderMan">Pixar RenderMan</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="ThirdPartySupport.html#Arnold">Autodesk Arnold</a>
             </li>
           </ul>
         </li>
@@ -250,81 +260,57 @@
 
           <!-- Page Content -------------------------------------------------------------------- -->
 
+          <h2 id="USD"><strong>Pixar USD</strong></h2>
           <p>
-            A number of third-party systems and packages support MaterialX, or are working to add support
-            for MaterialX in the future.  We will add descriptions to the list below as these efforts are
-            made public.
-          </p>
-          <div class="toc-macro rbtoc1493707654934">
-            <ul class="toc-indentation">
-              <li><a href="#Shaders-OSL">MaterialX Standard Node OSL Shaders</a></li>
-              <li><a href="#Substance">Substance Designer MaterialX Plugin</a></li>
-              <li><a href="#Arnold">MaterialX Operator in Arnold</a></li>
-              <li><a href="#USDMaterialX">USD / MaterialX (Pixar)</a></li>
-            </ul>
-          </div>
-
-          <br>
-          <h2 id="Shaders-OSL"><strong>MaterialX Standard Node OSL Shaders</strong></h2>
-          <p>
-            The MaterialX specification expects material node operators to have the exact same
-            mathematical behavior regardless of which context or package they're evaluated in.
-            To remove any interpretation ambiguity in how operators should be computed,
-            OSL code has been provided for most MaterialX nodes and is included with the
-            <a href="https://github.com/AcademySoftwareFoundation/MaterialX">MaterialX distribution</a>.
-            Many thanks to Adam Martinez and Derek Haase for this contribution.
+            Pixar's Universal Scene Description (USD) supports MaterialX through a dedicated <a href="https://graphics.pixar.com/usd/release/api/usd_mtlx_page_front.html">UsdMtlx</a> library, enabling the referencing of MaterialX documents and composition of MaterialX content in USD stages.
+            <br><br>
+            The USD Hydra rendering framework supports MaterialX in HdStorm and HdPrman, using <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGen</a> to generate GLSL and OSL shaders from MaterialX graphs on demand.
+            <br><br>
+            Additional details on MaterialX support in USD Hydra may be found in the slides from the MaterialX session at <a href="https://www.materialx.org/assets/ASWF_OSD2021_MaterialX_slides_final.pdf">ASWF Open Source Days 2021</a>.
+            <br><br>
+            USD version <a href="https://github.com/PixarAnimationStudios/USD/blob/release/CHANGELOG.md#2205---2022-04-22">22.05</a> introduced support for texture baking through UsdBakeMaterialX, multi-output MaterialX nodes, and MaterialX namespaces.
           </p>
 
-          <br>
-          <h2 id="Substance"><strong>Substance Designer MaterialX Plugin</strong></h2>
+          <h2 id="Houdini"><strong>SideFX Houdini</strong></h2>
           <p>
-            The Substance team at Adobe has released a
-            <a href="https://share.substance3d.com/libraries/6111">plugin for Substance Designer 2020.1</a>
-            to build procedural texture shaders and StandardSurface-based surface shaders in
-            Substance Designer and export as MaterialX files.  Note that this plugin is still Beta software
-            and may not be ready for production use.
-          </p><p>
-            They have also posted a
-            <a href="https://www.youtube.com/watch?v=bduf3TWmeMY">Getting Started with MaterialX in Substance Designer</a>
-            video on YouTube.
+            SideFX supports MaterialX in <a href="https://www.sidefx.com/docs/houdini/solaris/materialx.html">Houdini 19.0</a>, including the authoring and exporting of MaterialX graphs through the Solaris framework, and rendering of MaterialX content in Karma CPU/XPU.
+            <br><br>
+            <a href="https://www.sidefx.com/tutorials/karma-a-beautiful-game/">Karma, A Beautiful Game</a> by Moeen Sayed provides a useful tutorial on look development in Houdini/Solaris, including an overview of using MaterialX to construct surface and volume materials.
+            <br><br>
+            Additional details on MaterialX support in Houdini/Solaris may be found in the slides from the MaterialX session at <a href="https://www.materialx.org/assets/ASWF_OSD2021_MaterialX_slides_final.pdf">ASWF Open Source Days 2021</a>.
           </p>
 
-          <br>
-          <h2 id="Arnold"><strong>MaterialX Operator in Arnold</strong></h2>
+          <h2 id="Clarisse"><strong>Isotropix Clarisse</strong></h2>
           <p>
-            Arnold has a
-            <a href="https://docs.arnoldrenderer.com/display/A5AFMUG/MaterialX">MaterialX Operator</a> node, which can be used to apply
-            materials, property assignments, visibility from a MaterialX Look file.
-            The Arnold MaterialX operator works in all DCCs that Arnold supports.
+            Isotropix provides early support for MaterialX in <a href="https://www.isotropix.com/products/angie">Clarisse 5.5</a> and the Angie renderer, which may be accessed by the community in a preview build.
+            <br><br>
+            Additional details on MaterialX in Clarisse may be found in this <a href="https://www.isotropix.com/learn/tutorials/angie-early-access-lookdeving-with-materialx">tutorial series</a> from Isotropix.
           </p>
 
-          <br>
-          <h2 id="USDMaterialX"><strong>USD / MaterialX (Pixar)</strong></h2>
+          <h2 id="Maya"><strong>Autodesk Maya</strong></h2>
           <p>
-            Lucasfilm and Pixar are working toward full compatibility between MaterialX and
-            <a href="https://graphics.pixar.com/usd/docs/Introduction-to-USD.html">USD</a>, so that
-            MaterialX node graphs and assignments can be fully encoded in USD within the
-            <a href="https://graphics.pixar.com/usd/docs/api/usd_shade_page_front.html">USDShade</a> schema.
-            This allows systems to take advantage of USD scene composition features for
-            MaterialX-compliant networks via direct references to .mtlx files within USD files
-            and automatic on-the-fly conversion of supported content in MaterialX documents to
-            USDShade.
+            Autodesk provides early support for MaterialX in Maya through the <a href="https://github.com/Autodesk/maya-usd/blob/dev/doc/MaterialX.md">MayaUSD</a> plug-in, building upon the native support for MaterialX in USD.
+            <br><br>
+            Additional details on MaterialX support in Maya may be found in the slides from the MaterialX session at <a href="https://www.materialx.org/assets/ASWF_OSD2021_MaterialX_slides_final.pdf">ASWF Open Source Days 2021</a>.
           </p>
+
+          <h2 id="RenderMan"><strong>Pixar RenderMan</strong></h2>
           <p>
-            USD currently supports direct references to MaterialX .mtlx files within USD
-            scenes, with supported content automatically translated to UsdShade, although
-            rendering of MaterialX networks within Hydra is not yet supported.
+            Pixar provides early support for MaterialX in RenderMan 24.2, rendering MaterialX pattern nodes through USD HdPrman, and rendering Physically Based Shading features through a custom implementation of the <a href="https://rmanwiki.pixar.com/display/REN24/MaterialX+Lama">MaterialX Lama</a> nodes.
+            <br><br>
+            Additional details on MaterialX Lama may be found in this <a href="https://www.youtube.com/playlist?list=PLBozb72i61yw_Wu5olAGPRmzjjYb5seEj">tutorial series</a> from Pixar.
+          </p>
+
+          <h2 id="Arnold"><strong>Autodesk Arnold</strong></h2>
+          <p>
+            Autodesk provides early support for MaterialX in <a href="https://docs.arnoldrenderer.com/display/A5NodeRef/materialx/">Arnold 5</a>, allowing MaterialX documents to be referenced and rendered through a custom MaterialX operator.
+            <br><br>
+            MaterialX content can be exported from Arnold implementations in tools such as <a href="https://docs.arnoldrenderer.com/display/A5AFMUG/Working+With+MaterialX">Maya</a> and <a href="https://docs.arnoldrenderer.com/display/A5AFCUG/Material+Export">Cinema 4D</a>.
           </p>
 
           <!-- --------------------------------------------------------------------------------- -->
 
         </div>
-      </div>
-      <h4 style="font-size:14px">MaterialX was developed in collaboration with:</h4>
-      <br>
-      <div style="margin-left: 150px">
-        <a href="https://www.autodesk.com" style="padding:60px"><img alt="<Autodesk Logo>" src="images/partner-logo-2.png"></a>
-        <a href="https://www.foundry.com" style="padding:60px"><img alt="<Foundry Logo>" src="images/partner-logo-1.png"></a>
       </div>
     </div>
 
