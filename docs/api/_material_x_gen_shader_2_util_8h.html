@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a58c36facc6cf425cf781483cb2dd7628"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a58c36facc6cf425cf781483cb2dd7628">isTransparentSurface</a> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> element, const string &amp;target=EMPTY_STRING)</td></tr>
-<tr class="memdesc:a58c36facc6cf425cf781483cb2dd7628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given element is a surface shader with the potential of beeing transparent.  <a href="_material_x_gen_shader_2_util_8h.html#a58c36facc6cf425cf781483cb2dd7628">More...</a><br /></td></tr>
+<tr class="memdesc:a58c36facc6cf425cf781483cb2dd7628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given element is a surface shader with the potential of being transparent.  <a href="_material_x_gen_shader_2_util_8h.html#a58c36facc6cf425cf781483cb2dd7628">More...</a><br /></td></tr>
 <tr class="separator:a58c36facc6cf425cf781483cb2dd7628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c25218899400c1974e1751e26abc656"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a9c25218899400c1974e1751e26abc656">mapValueToColor</a> (<a class="el" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a> value, <a class="el" href="class_color4.html">Color4</a> &amp;color)</td></tr>
 <tr class="memdesc:a9c25218899400c1974e1751e26abc656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value to a four channel color if it is of the appropriate type.  <a href="_material_x_gen_shader_2_util_8h.html#a9c25218899400c1974e1751e26abc656">More...</a><br /></td></tr>
@@ -357,7 +357,7 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><a clas
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if the given element is a surface shader with the potential of beeing transparent. </p>
+<p>Returns true if the given element is a surface shader with the potential of being transparent. </p>
 <p>This can be used by <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader generators to determine if a shader will require transparency handling.</p>
 <p>Note: This function will check some common cases for how a surface shader can be transparent. It is not covering all possible cases for how transparency can be done and target applications might need to do additional checks to track transparency correctly. For example, custom surface shader nodes implemented in source code will not be tracked by this function and transprency for such nodes must be tracked separately by the target application. </p>
 

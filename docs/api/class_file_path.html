@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -162,6 +162,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_path.html#ab7e2630c6dc961361c1151af1bdb8d42">operator[]</a> (size_t index) const</td></tr>
 <tr class="memdesc:ab7e2630c6dc961361c1151af1bdb8d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the const string at the given index. <br /></td></tr>
 <tr class="separator:ab7e2630c6dc961361c1151af1bdb8d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37c91bf6419930734cef1ea43a08392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_path.html#ad37c91bf6419930734cef1ea43a08392">getNormalized</a> () const</td></tr>
+<tr class="memdesc:ad37c91bf6419930734cef1ea43a08392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a normalized version of the given path, collapsing current path and parent path references so that 'a/.  <a href="class_file_path.html#ad37c91bf6419930734cef1ea43a08392">More...</a><br /></td></tr>
+<tr class="separator:ad37c91bf6419930734cef1ea43a08392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">File System Operations</div></td></tr>
 <tr class="memitem:aa7d8623150e6d43ab4bf7493aa8cbc1a"><td class="memItemLeft" align="right" valign="top"><a id="aa7d8623150e6d43ab4bf7493aa8cbc1a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_path.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">exists</a> () const</td></tr>
@@ -202,6 +205,26 @@ static <a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A generic file path, supporting both syntactic and file system operations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad37c91bf6419930734cef1ea43a08392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37c91bf6419930734cef1ea43a08392">&#9670;&nbsp;</a></span>getNormalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_file_path.html">FilePath</a> getNormalized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a normalized version of the given path, collapsing current path and parent path references so that 'a/. </p>
+<p>/b' and 'c/../d/../a/b' become 'a/b'. </p>
+
+</div>
+</div>
 <a id="ac0795c0b04789e2dc86d30750c9a6fb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0795c0b04789e2dc86d30750c9a6fb8">&#9670;&nbsp;</a></span>getParentPath()</h2>
 

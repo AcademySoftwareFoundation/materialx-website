@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -115,8 +115,8 @@ $(function() {
 <li>setChildIndex()
 : <a class="el" href="class_element.html#a2d6a89f958d6a74f8c7d969eb17a9ee1">Element</a>
 </li>
-<li>setClearColor()
-: <a class="el" href="class_glsl_renderer.html#a4c47061865958ae0f92792ec43cd8511">GlslRenderer</a>
+<li>setClassification()
+: <a class="el" href="class_shader_node.html#aaff2b296bfd256f979797f81b500f390">ShaderNode</a>
 </li>
 <li>setClosureParams()
 : <a class="el" href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">ClosureContext</a>
@@ -149,9 +149,9 @@ $(function() {
 : <a class="el" href="class_node.html#a2405c6a1d9ed30c2e4d3beee06627f65">Node</a>
 </li>
 <li>setConnectedOutput()
-: <a class="el" href="class_input.html#aa9187d2363cb6e7690613fafb11624bc">Input</a>
-, <a class="el" href="class_interface_element.html#aae1163986c5577f66d5962fd929949db">InterfaceElement</a>
+: <a class="el" href="class_interface_element.html#aae1163986c5577f66d5962fd929949db">InterfaceElement</a>
 , <a class="el" href="class_node.html#aae1163986c5577f66d5962fd929949db">Node</a>
+, <a class="el" href="class_port_element.html#aa9187d2363cb6e7690613fafb11624bc">PortElement</a>
 </li>
 <li>setContainsElements()
 : <a class="el" href="class_backdrop.html#ae1207ca20b25aad43dfd304060b99117">Backdrop</a>
@@ -451,6 +451,12 @@ $(function() {
 <li>setRaysPerPixelUnlit()
 : <a class="el" href="class_osl_renderer.html#a2621cbb7f3f3f2f576af19a9b9094530">OslRenderer</a>
 </li>
+<li>setRefractionColor()
+: <a class="el" href="class_light_handler.html#ac5f1717ab8529108ab4a3d7e41f7b0c3">LightHandler</a>
+</li>
+<li>setRefractionEnv()
+: <a class="el" href="class_light_handler.html#ad8f0261d960ea166327ed7c353d7a9a1">LightHandler</a>
+</li>
 <li>setResourceBuffer()
 : <a class="el" href="class_image.html#a9e832f8021daaf4606efca6c739b33df">Image</a>
 </li>
@@ -459,6 +465,9 @@ $(function() {
 </li>
 <li>setResourceId()
 : <a class="el" href="class_image.html#aa43e3576670459b48e6fa6c0662a22bd">Image</a>
+</li>
+<li>setScreenColor()
+: <a class="el" href="class_glsl_renderer.html#a0745ea64ae33fcf5c7dabf093cb46c51">GlslRenderer</a>
 </li>
 <li>setSearchPath()
 : <a class="el" href="class_image_handler.html#a949dfc48d0a6ed903276b74799ee0314">ImageHandler</a>
@@ -557,7 +566,7 @@ $(function() {
 : <a class="el" href="class_string_resolver.html#a623d70198cdf67587762e3479124b967">StringResolver</a>
 </li>
 <li>setValue()
-: <a class="el" href="class_attribute_def.html#ab5d0750437e1e90d2cf003a29cfaa204">AttributeDef</a>
+: <a class="el" href="class_attribute_def.html#a787ea4b9707694fab45230846396403e">AttributeDef</a>
 , <a class="el" href="class_shader_port.html#ae0964dd48f6a283b75fe958c10036414">ShaderPort</a>
 , <a class="el" href="class_value_element.html#ab5d0750437e1e90d2cf003a29cfaa204">ValueElement</a>
 </li>
@@ -648,6 +657,9 @@ $(function() {
 </li>
 <li>splitByUdims()
 : <a class="el" href="class_mesh.html#a3d34848007882ec3f36cf8bd2748bf50">Mesh</a>
+</li>
+<li>srgbToLinear()
+: <a class="el" href="class_color3.html#a53ed2feb13db0bc560e327a77cc79903">Color3</a>
 </li>
 <li>startTimer()
 : <a class="el" href="class_scoped_timer.html#aec53975ffc59ffaf3080db21af0d2f6e">ScopedTimer</a>

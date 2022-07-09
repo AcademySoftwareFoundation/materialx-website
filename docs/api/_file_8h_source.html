@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -220,178 +220,180 @@ $(function() {
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> _vec[index];</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="class_file_path.html">FilePath</a> getNormalized() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">bool</span> exists() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">bool</span> isDirectory() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    FilePathVec getFilesInDirectory(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; extension) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    FilePathVec getSubDirectories() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">void</span> createDirectory() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">bool</span> setCurrentPath();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_file_path.html">FilePath</a> getCurrentPath();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_file_path.html">FilePath</a> getModulePath();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> _vec;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    Type _type;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;};</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="class_file_search_path.html">  214</a></span>&#160;<span class="keyword">class </span>MX_FORMAT_API <a class="code" href="class_file_search_path.html">FileSearchPath</a></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">using</span> Iterator = FilePathVec::iterator;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">using</span> ConstIterator = FilePathVec::const_iterator;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">bool</span> exists() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">bool</span> isDirectory() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    FilePathVec getFilesInDirectory(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; extension) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    FilePathVec getSubDirectories() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> createDirectory() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">bool</span> setCurrentPath();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_file_path.html">FilePath</a> getCurrentPath();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_file_path.html">FilePath</a> getModulePath();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> _vec;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    Type _type;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;};</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="class_file_search_path.html">  218</a></span>&#160;<span class="keyword">class </span>MX_FORMAT_API <a class="code" href="class_file_search_path.html">FileSearchPath</a></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="class_file_search_path.html">FileSearchPath</a>()</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    ~<a class="code" href="class_file_search_path.html">FileSearchPath</a>() { }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a7b558bb553f2bb18e4f66901c3be429b">  231</a></span>&#160;    <a class="code" href="class_file_search_path.html#a7b558bb553f2bb18e4f66901c3be429b">FileSearchPath</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; searchPath, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sep = PATH_LIST_SEPARATOR)</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; path : <a class="code" href="_material_x_core_2_util_8h.html#af38a232ad00117fa61f1704064446851">splitString</a>(searchPath, sep))</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">if</span> (!path.empty())</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                append(<a class="code" href="class_file_path.html">FilePath</a>(path));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="class_file_search_path.html#ad7e2b8f83ab0185e9d5869b5109921a2">  243</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_file_search_path.html#ad7e2b8f83ab0185e9d5869b5109921a2">asString</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sep = PATH_LIST_SEPARATOR)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">string</span> str;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _paths.size(); i++)</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            str += _paths[i];</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keywordflow">if</span> (i + 1 &lt; _paths.size())</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                str += sep;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> str;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="class_file_search_path.html#af4a8d79ec983e2e69944257345a69b39">  258</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#af4a8d79ec983e2e69944257345a69b39">append</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        _paths.push_back(path);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a5c6c685eacbcc63c7e2348ff09a139e1">  264</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#a5c6c685eacbcc63c7e2348ff09a139e1">append</a>(<span class="keyword">const</span> <a class="code" href="class_file_search_path.html">FileSearchPath</a>&amp; searchPath)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path : searchPath)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            _paths.push_back(path);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">  273</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">prepend</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path)</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        _paths.insert(_paths.begin(), path);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="class_file_search_path.html#ac8bb3912a3ce86b15842e79d0b421204">  279</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>()</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        _paths.clear();</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">  285</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">size</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> _paths.size();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="class_file_search_path.html#acf82f9b2937375c7b1cf3dccb3df3312">  291</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_file_search_path.html#acf82f9b2937375c7b1cf3dccb3df3312">isEmpty</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">return</span> _paths.empty();</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a486ee74bdd17773e12d94527bce5f8cd">  297</a></span>&#160;    <a class="code" href="class_file_path.html">FilePath</a>&amp; <a class="code" href="class_file_search_path.html#a486ee74bdd17773e12d94527bce5f8cd">operator[]</a>(<span class="keywordtype">size_t</span> index)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">return</span> _paths[index];</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="class_file_search_path.html#aa3bbae764dfc5addcd276a620bfd3d2d">  303</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; <a class="code" href="class_file_search_path.html#aa3bbae764dfc5addcd276a620bfd3d2d">operator[]</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">return</span> _paths[index];</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">  312</a></span>&#160;    <a class="code" href="class_file_path.html">FilePath</a> <a class="code" href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">find</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; filename)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">if</span> (_paths.empty() || filename.<a class="code" href="class_file_path.html#acf82f9b2937375c7b1cf3dccb3df3312">isEmpty</a>())</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">return</span> filename;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">if</span> (!filename.<a class="code" href="class_file_path.html#a0a2c3a267729afe8318117770f72a69a">isAbsolute</a>())</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">using</span> Iterator = FilePathVec::iterator;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">using</span> ConstIterator = FilePathVec::const_iterator;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="class_file_search_path.html">FileSearchPath</a>()</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    ~<a class="code" href="class_file_search_path.html">FileSearchPath</a>() { }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a7b558bb553f2bb18e4f66901c3be429b">  235</a></span>&#160;    <a class="code" href="class_file_search_path.html#a7b558bb553f2bb18e4f66901c3be429b">FileSearchPath</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; searchPath, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sep = PATH_LIST_SEPARATOR)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; path : <a class="code" href="_material_x_core_2_util_8h.html#af38a232ad00117fa61f1704064446851">splitString</a>(searchPath, sep))</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">if</span> (!path.empty())</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                append(<a class="code" href="class_file_path.html">FilePath</a>(path));</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="class_file_search_path.html#ad7e2b8f83ab0185e9d5869b5109921a2">  247</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_file_search_path.html#ad7e2b8f83ab0185e9d5869b5109921a2">asString</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sep = PATH_LIST_SEPARATOR)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordtype">string</span> str;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _paths.size(); i++)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            str += _paths[i];</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">if</span> (i + 1 &lt; _paths.size())</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                str += sep;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="class_file_search_path.html#af4a8d79ec983e2e69944257345a69b39">  262</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#af4a8d79ec983e2e69944257345a69b39">append</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        _paths.push_back(path);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a5c6c685eacbcc63c7e2348ff09a139e1">  268</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#a5c6c685eacbcc63c7e2348ff09a139e1">append</a>(<span class="keyword">const</span> <a class="code" href="class_file_search_path.html">FileSearchPath</a>&amp; searchPath)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path : searchPath)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            _paths.push_back(path);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">  277</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">prepend</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        _paths.insert(_paths.begin(), path);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="class_file_search_path.html#ac8bb3912a3ce86b15842e79d0b421204">  283</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_file_search_path.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a>()</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        _paths.clear();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">  289</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">size</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">return</span> _paths.size();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="class_file_search_path.html#acf82f9b2937375c7b1cf3dccb3df3312">  295</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_file_search_path.html#acf82f9b2937375c7b1cf3dccb3df3312">isEmpty</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> _paths.empty();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="class_file_search_path.html#a486ee74bdd17773e12d94527bce5f8cd">  301</a></span>&#160;    <a class="code" href="class_file_path.html">FilePath</a>&amp; <a class="code" href="class_file_search_path.html#a486ee74bdd17773e12d94527bce5f8cd">operator[]</a>(<span class="keywordtype">size_t</span> index)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">return</span> _paths[index];</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="class_file_search_path.html#aa3bbae764dfc5addcd276a620bfd3d2d">  307</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; <a class="code" href="class_file_search_path.html#aa3bbae764dfc5addcd276a620bfd3d2d">operator[]</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">return</span> _paths[index];</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">  316</a></span>&#160;    <a class="code" href="class_file_path.html">FilePath</a> <a class="code" href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">find</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; filename)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">if</span> (_paths.empty() || filename.<a class="code" href="class_file_path.html#acf82f9b2937375c7b1cf3dccb3df3312">isEmpty</a>())</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path : _paths)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                <a class="code" href="class_file_path.html">FilePath</a> combined = path / filename;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">if</span> (combined.<a class="code" href="class_file_path.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">exists</a>())</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                    <span class="keywordflow">return</span> combined;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                }</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            }</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">return</span> filename;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    Iterator begin() { <span class="keywordflow">return</span> _paths.begin(); }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    ConstIterator begin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _paths.begin(); }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    Iterator end() { <span class="keywordflow">return</span> _paths.end(); }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    ConstIterator end()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _paths.end(); }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    FilePathVec _paths;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;};</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <span class="keywordflow">return</span> filename;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">if</span> (!filename.<a class="code" href="class_file_path.html#a0a2c3a267729afe8318117770f72a69a">isAbsolute</a>())</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path : _paths)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <a class="code" href="class_file_path.html">FilePath</a> combined = path / filename;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">if</span> (combined.<a class="code" href="class_file_path.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">exists</a>())</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                    <span class="keywordflow">return</span> combined;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">return</span> filename;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    Iterator begin() { <span class="keywordflow">return</span> _paths.begin(); }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    ConstIterator begin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _paths.begin(); }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    Iterator end() { <span class="keywordflow">return</span> _paths.end(); }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    ConstIterator end()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _paths.end(); }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;MX_FORMAT_API <a class="code" href="class_file_search_path.html">FileSearchPath</a> <a class="code" href="_file_8h.html#a940cd96352a8010d5c802269dafc5772">getEnvironmentPath</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sep = PATH_LIST_SEPARATOR);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    FilePathVec _paths;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;};</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;MX_FORMAT_API <a class="code" href="class_file_search_path.html">FileSearchPath</a> <a class="code" href="_file_8h.html#a940cd96352a8010d5c802269dafc5772">getEnvironmentPath</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sep = PATH_LIST_SEPARATOR);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_file_search_path_html_a486ee74bdd17773e12d94527bce5f8cd"><div class="ttname"><a href="class_file_search_path.html#a486ee74bdd17773e12d94527bce5f8cd">FileSearchPath::operator[]</a></div><div class="ttdeci">FilePath &amp; operator[](size_t index)</div><div class="ttdoc">Return the path at the given index.</div><div class="ttdef"><b>Definition:</b> File.h:297</div></div>
+<div class="ttc" id="aclass_file_search_path_html_a486ee74bdd17773e12d94527bce5f8cd"><div class="ttname"><a href="class_file_search_path.html#a486ee74bdd17773e12d94527bce5f8cd">FileSearchPath::operator[]</a></div><div class="ttdeci">FilePath &amp; operator[](size_t index)</div><div class="ttdoc">Return the path at the given index.</div><div class="ttdef"><b>Definition:</b> File.h:301</div></div>
 <div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:57</div></div>
 <div class="ttc" id="aclass_file_path_html_ac830f66d0b9597ad93c3242f145d87d0"><div class="ttname"><a href="class_file_path.html#ac830f66d0b9597ad93c3242f145d87d0">FilePath::operator[]</a></div><div class="ttdeci">string operator[](size_t index)</div><div class="ttdoc">Return the string at the given index.</div><div class="ttdef"><b>Definition:</b> File.h:165</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html"><div class="ttname"><a href="_material_x_core_2_util_8h.html">Util.h</a></div><div class="ttdoc">Utility methods.</div></div>
 <div class="ttc" id="aclass_file_path_html_a0a2c3a267729afe8318117770f72a69a"><div class="ttname"><a href="class_file_path.html#a0a2c3a267729afe8318117770f72a69a">FilePath::isAbsolute</a></div><div class="ttdeci">bool isAbsolute() const</div><div class="ttdoc">Return true if the given path is absolute.</div><div class="ttdef"><b>Definition:</b> File.h:98</div></div>
-<div class="ttc" id="aclass_file_search_path_html_a5c6c685eacbcc63c7e2348ff09a139e1"><div class="ttname"><a href="class_file_search_path.html#a5c6c685eacbcc63c7e2348ff09a139e1">FileSearchPath::append</a></div><div class="ttdeci">void append(const FileSearchPath &amp;searchPath)</div><div class="ttdoc">Append the given search path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:264</div></div>
+<div class="ttc" id="aclass_file_search_path_html_a5c6c685eacbcc63c7e2348ff09a139e1"><div class="ttname"><a href="class_file_search_path.html#a5c6c685eacbcc63c7e2348ff09a139e1">FileSearchPath::append</a></div><div class="ttdeci">void append(const FileSearchPath &amp;searchPath)</div><div class="ttdoc">Append the given search path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:268</div></div>
 <div class="ttc" id="aclass_file_path_html_a26bc0d0806c3b5b9a97c4e3b172b101f"><div class="ttname"><a href="class_file_path.html#a26bc0d0806c3b5b9a97c4e3b172b101f">FilePath::removeExtension</a></div><div class="ttdeci">void removeExtension()</div><div class="ttdoc">Remove the file extension, if any, from the given path.</div><div class="ttdef"><b>Definition:</b> File.h:141</div></div>
 <div class="ttc" id="aclass_file_path_html_a2865d3b8be45c3abc19a38cdc0ac291d"><div class="ttname"><a href="class_file_path.html#a2865d3b8be45c3abc19a38cdc0ac291d">FilePath::addExtension</a></div><div class="ttdeci">void addExtension(const string &amp;ext)</div><div class="ttdoc">Add a file extension to the given path.</div><div class="ttdef"><b>Definition:</b> File.h:135</div></div>
-<div class="ttc" id="aclass_file_search_path_html_a7b558bb553f2bb18e4f66901c3be429b"><div class="ttname"><a href="class_file_search_path.html#a7b558bb553f2bb18e4f66901c3be429b">FileSearchPath::FileSearchPath</a></div><div class="ttdeci">FileSearchPath(const string &amp;searchPath, const string &amp;sep=PATH_LIST_SEPARATOR)</div><div class="ttdoc">Construct a search path from a string.</div><div class="ttdef"><b>Definition:</b> File.h:231</div></div>
+<div class="ttc" id="aclass_file_search_path_html_a7b558bb553f2bb18e4f66901c3be429b"><div class="ttname"><a href="class_file_search_path.html#a7b558bb553f2bb18e4f66901c3be429b">FileSearchPath::FileSearchPath</a></div><div class="ttdeci">FileSearchPath(const string &amp;searchPath, const string &amp;sep=PATH_LIST_SEPARATOR)</div><div class="ttdoc">Construct a search path from a string.</div><div class="ttdef"><b>Definition:</b> File.h:235</div></div>
 <div class="ttc" id="a_material_x_format_2_export_8h_html"><div class="ttname"><a href="_material_x_format_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
-<div class="ttc" id="aclass_file_search_path_html_ad7e2b8f83ab0185e9d5869b5109921a2"><div class="ttname"><a href="class_file_search_path.html#ad7e2b8f83ab0185e9d5869b5109921a2">FileSearchPath::asString</a></div><div class="ttdeci">string asString(const string &amp;sep=PATH_LIST_SEPARATOR) const</div><div class="ttdoc">Convert this sequence to a string using the given separator.</div><div class="ttdef"><b>Definition:</b> File.h:243</div></div>
+<div class="ttc" id="aclass_file_search_path_html_ad7e2b8f83ab0185e9d5869b5109921a2"><div class="ttname"><a href="class_file_search_path.html#ad7e2b8f83ab0185e9d5869b5109921a2">FileSearchPath::asString</a></div><div class="ttdeci">string asString(const string &amp;sep=PATH_LIST_SEPARATOR) const</div><div class="ttdoc">Convert this sequence to a string using the given separator.</div><div class="ttdef"><b>Definition:</b> File.h:247</div></div>
 <div class="ttc" id="aclass_file_path_html_a54db3ec84b58de3d1a88b20000e0ccfd"><div class="ttname"><a href="class_file_path.html#a54db3ec84b58de3d1a88b20000e0ccfd">FilePath::FilePath</a></div><div class="ttdeci">FilePath(const char *str)</div><div class="ttdoc">Construct a path from a C-style string.</div><div class="ttdef"><b>Definition:</b> File.h:74</div></div>
 <div class="ttc" id="aclass_file_path_html_a62b6d9a4b9239e9a65f49af326c80a4b"><div class="ttname"><a href="class_file_path.html#a62b6d9a4b9239e9a65f49af326c80a4b">FilePath::FilePath</a></div><div class="ttdeci">FilePath(const string &amp;str)</div><div class="ttdoc">Construct a path from a standard string.</div><div class="ttdef"><b>Definition:</b> File.h:68</div></div>
-<div class="ttc" id="aclass_file_search_path_html_a71f4171407ccd125be077a7aa3711772"><div class="ttname"><a href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">FileSearchPath::prepend</a></div><div class="ttdeci">void prepend(const FilePath &amp;path)</div><div class="ttdoc">Prepend the given path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:273</div></div>
-<div class="ttc" id="aclass_file_search_path_html_af4a8d79ec983e2e69944257345a69b39"><div class="ttname"><a href="class_file_search_path.html#af4a8d79ec983e2e69944257345a69b39">FileSearchPath::append</a></div><div class="ttdeci">void append(const FilePath &amp;path)</div><div class="ttdoc">Append the given path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:258</div></div>
+<div class="ttc" id="aclass_file_search_path_html_a71f4171407ccd125be077a7aa3711772"><div class="ttname"><a href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">FileSearchPath::prepend</a></div><div class="ttdeci">void prepend(const FilePath &amp;path)</div><div class="ttdoc">Prepend the given path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:277</div></div>
+<div class="ttc" id="aclass_file_search_path_html_af4a8d79ec983e2e69944257345a69b39"><div class="ttname"><a href="class_file_search_path.html#af4a8d79ec983e2e69944257345a69b39">FileSearchPath::append</a></div><div class="ttdeci">void append(const FilePath &amp;path)</div><div class="ttdoc">Append the given path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:262</div></div>
 <div class="ttc" id="aclass_file_path_html"><div class="ttname"><a href="class_file_path.html">FilePath</a></div><div class="ttdoc">A generic file path, supporting both syntactic and file system operations.</div><div class="ttdef"><b>Definition:</b> File.h:27</div></div>
 <div class="ttc" id="aclass_file_path_html_add7b335b884d2c3308d94befd42e7585"><div class="ttname"><a href="class_file_path.html#add7b335b884d2c3308d94befd42e7585">FilePath::getBaseName</a></div><div class="ttdeci">const string &amp; getBaseName() const</div><div class="ttdoc">Return the base name of the given path, with leading directory information removed.</div><div class="ttdef"><b>Definition:</b> File.h:105</div></div>
-<div class="ttc" id="aclass_file_search_path_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_file_search_path.html#ac8bb3912a3ce86b15842e79d0b421204">FileSearchPath::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear all paths from the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:279</div></div>
+<div class="ttc" id="aclass_file_search_path_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_file_search_path.html#ac8bb3912a3ce86b15842e79d0b421204">FileSearchPath::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear all paths from the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:283</div></div>
 <div class="ttc" id="aclass_file_path_html_ab7e2630c6dc961361c1151af1bdb8d42"><div class="ttname"><a href="class_file_path.html#ab7e2630c6dc961361c1151af1bdb8d42">FilePath::operator[]</a></div><div class="ttdeci">const string &amp; operator[](size_t index) const</div><div class="ttdoc">Return the const string at the given index.</div><div class="ttdef"><b>Definition:</b> File.h:171</div></div>
-<div class="ttc" id="aclass_file_search_path_html_a259cb5a711406a8c3e5d937eb9350cca"><div class="ttname"><a href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">FileSearchPath::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Return the number of paths in the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:285</div></div>
+<div class="ttc" id="aclass_file_search_path_html_a259cb5a711406a8c3e5d937eb9350cca"><div class="ttname"><a href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">FileSearchPath::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Return the number of paths in the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:289</div></div>
 <div class="ttc" id="aclass_file_path_html_ac0795c0b04789e2dc86d30750c9a6fb8"><div class="ttname"><a href="class_file_path.html#ac0795c0b04789e2dc86d30750c9a6fb8">FilePath::getParentPath</a></div><div class="ttdeci">FilePath getParentPath() const</div><div class="ttdoc">Return the parent directory of the given path, if any.</div><div class="ttdef"><b>Definition:</b> File.h:116</div></div>
 <div class="ttc" id="aclass_file_path_html_ad4c5216c33fe6a9b223b3971a642e535"><div class="ttname"><a href="class_file_path.html#ad4c5216c33fe6a9b223b3971a642e535">FilePath::getExtension</a></div><div class="ttdeci">string getExtension() const</div><div class="ttdoc">Return the file extension of the given path.</div><div class="ttdef"><b>Definition:</b> File.h:127</div></div>
-<div class="ttc" id="aclass_file_search_path_html_ad1e0e3b26a0ad87fdadd0f43aa444a98"><div class="ttname"><a href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">FileSearchPath::find</a></div><div class="ttdeci">FilePath find(const FilePath &amp;filename) const</div><div class="ttdoc">Given an input filename, iterate through each path in this sequence, returning the first combined pat...</div><div class="ttdef"><b>Definition:</b> File.h:312</div></div>
-<div class="ttc" id="a_file_8h_html_a940cd96352a8010d5c802269dafc5772"><div class="ttname"><a href="_file_8h.html#a940cd96352a8010d5c802269dafc5772">getEnvironmentPath</a></div><div class="ttdeci">MX_FORMAT_API FileSearchPath getEnvironmentPath(const string &amp;sep=PATH_LIST_SEPARATOR)</div><div class="ttdoc">Return a FileSearchPath object from search path environment variable.</div><div class="ttdef"><b>Definition:</b> File.cpp:352</div></div>
+<div class="ttc" id="aclass_file_search_path_html_ad1e0e3b26a0ad87fdadd0f43aa444a98"><div class="ttname"><a href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">FileSearchPath::find</a></div><div class="ttdeci">FilePath find(const FilePath &amp;filename) const</div><div class="ttdoc">Given an input filename, iterate through each path in this sequence, returning the first combined pat...</div><div class="ttdef"><b>Definition:</b> File.h:316</div></div>
+<div class="ttc" id="a_file_8h_html_a940cd96352a8010d5c802269dafc5772"><div class="ttname"><a href="_file_8h.html#a940cd96352a8010d5c802269dafc5772">getEnvironmentPath</a></div><div class="ttdeci">MX_FORMAT_API FileSearchPath getEnvironmentPath(const string &amp;sep=PATH_LIST_SEPARATOR)</div><div class="ttdoc">Return a FileSearchPath object from search path environment variable.</div><div class="ttdef"><b>Definition:</b> File.cpp:374</div></div>
 <div class="ttc" id="aclass_file_path_html_acf82f9b2937375c7b1cf3dccb3df3312"><div class="ttname"><a href="class_file_path.html#acf82f9b2937375c7b1cf3dccb3df3312">FilePath::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Return true if the given path is empty.</div><div class="ttdef"><b>Definition:</b> File.h:92</div></div>
-<div class="ttc" id="aclass_file_path_html_aa7d8623150e6d43ab4bf7493aa8cbc1a"><div class="ttname"><a href="class_file_path.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">FilePath::exists</a></div><div class="ttdeci">bool exists() const</div><div class="ttdoc">Return true if the given path exists on the file system.</div><div class="ttdef"><b>Definition:</b> File.cpp:133</div></div>
-<div class="ttc" id="aclass_file_search_path_html_aa3bbae764dfc5addcd276a620bfd3d2d"><div class="ttname"><a href="class_file_search_path.html#aa3bbae764dfc5addcd276a620bfd3d2d">FileSearchPath::operator[]</a></div><div class="ttdeci">const FilePath &amp; operator[](size_t index) const</div><div class="ttdoc">Return the const path at the given index.</div><div class="ttdef"><b>Definition:</b> File.h:303</div></div>
+<div class="ttc" id="aclass_file_path_html_aa7d8623150e6d43ab4bf7493aa8cbc1a"><div class="ttname"><a href="class_file_path.html#aa7d8623150e6d43ab4bf7493aa8cbc1a">FilePath::exists</a></div><div class="ttdeci">bool exists() const</div><div class="ttdoc">Return true if the given path exists on the file system.</div><div class="ttdef"><b>Definition:</b> File.cpp:156</div></div>
+<div class="ttc" id="aclass_file_search_path_html_aa3bbae764dfc5addcd276a620bfd3d2d"><div class="ttname"><a href="class_file_search_path.html#aa3bbae764dfc5addcd276a620bfd3d2d">FileSearchPath::operator[]</a></div><div class="ttdeci">const FilePath &amp; operator[](size_t index) const</div><div class="ttdoc">Return the const path at the given index.</div><div class="ttdef"><b>Definition:</b> File.h:307</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html_af38a232ad00117fa61f1704064446851"><div class="ttname"><a href="_material_x_core_2_util_8h.html#af38a232ad00117fa61f1704064446851">splitString</a></div><div class="ttdeci">MX_CORE_API StringVec splitString(const string &amp;str, const string &amp;sep)</div><div class="ttdoc">Split a string into a vector of substrings using the given set of separator characters.</div><div class="ttdef"><b>Definition:</b> Util.cpp:77</div></div>
-<div class="ttc" id="aclass_file_search_path_html_acf82f9b2937375c7b1cf3dccb3df3312"><div class="ttname"><a href="class_file_search_path.html#acf82f9b2937375c7b1cf3dccb3df3312">FileSearchPath::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Return true if the search path is empty.</div><div class="ttdef"><b>Definition:</b> File.h:291</div></div>
+<div class="ttc" id="aclass_file_search_path_html_acf82f9b2937375c7b1cf3dccb3df3312"><div class="ttname"><a href="class_file_search_path.html#acf82f9b2937375c7b1cf3dccb3df3312">FileSearchPath::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Return true if the search path is empty.</div><div class="ttdef"><b>Definition:</b> File.h:295</div></div>
 <div class="ttc" id="aclass_file_path_html_a259cb5a711406a8c3e5d937eb9350cca"><div class="ttname"><a href="class_file_path.html#a259cb5a711406a8c3e5d937eb9350cca">FilePath::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Return the number of strings in the path.</div><div class="ttdef"><b>Definition:</b> File.h:159</div></div>
-<div class="ttc" id="aclass_file_search_path_html"><div class="ttname"><a href="class_file_search_path.html">FileSearchPath</a></div><div class="ttdoc">A sequence of file paths, which may be queried to find the first instance of a given filename on the ...</div><div class="ttdef"><b>Definition:</b> File.h:215</div></div>
+<div class="ttc" id="aclass_file_search_path_html"><div class="ttname"><a href="class_file_search_path.html">FileSearchPath</a></div><div class="ttdoc">A sequence of file paths, which may be queried to find the first instance of a given filename on the ...</div><div class="ttdef"><b>Definition:</b> File.h:219</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

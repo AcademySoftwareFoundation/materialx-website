@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 : <a class="el" href="class_glsl_shader_generator.html#a37d9ab6e09bf6d2b00b6fa15ac6ec41a">GlslShaderGenerator</a>
 , <a class="el" href="class_mdl_shader_generator.html#a37d9ab6e09bf6d2b00b6fa15ac6ec41a">MdlShaderGenerator</a>
 , <a class="el" href="class_osl_shader_generator.html#a37d9ab6e09bf6d2b00b6fa15ac6ec41a">OslShaderGenerator</a>
-, <a class="el" href="class_shader_generator.html#acb322a19250e851ca2d47eac1148850b">ShaderGenerator</a>
+, <a class="el" href="class_shader_generator.html#afb80d56ca28c16103bcb569527857196">ShaderGenerator</a>
 </li>
 <li>generateNormals()
 : <a class="el" href="class_mesh.html#a94dcd17494409de1662dd94e04e4e1c7">Mesh</a>
@@ -270,6 +270,9 @@ $(function() {
 <li>getChildrenOfType()
 : <a class="el" href="class_element.html#a1f4a5578119b8279ece5d5313070e0a9">Element</a>
 </li>
+<li>getClassification()
+: <a class="el" href="class_shader_node.html#aad3c8bdc0a8e965b7f31dc8e3054f2e1">ShaderNode</a>
+</li>
 <li>getClosureContext()
 : <a class="el" href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">GenContext</a>
 </li>
@@ -319,9 +322,9 @@ $(function() {
 : <a class="el" href="class_node.html#aa873330673c8bdc044d9272712a66dfa">Node</a>
 </li>
 <li>getConnectedOutput()
-: <a class="el" href="class_input.html#ae9f3f2d759cb17ee4092d3e6c9b07c70">Input</a>
-, <a class="el" href="class_interface_element.html#a83346b1cd09131ea863e8e24a1ba8f60">InterfaceElement</a>
+: <a class="el" href="class_interface_element.html#a83346b1cd09131ea863e8e24a1ba8f60">InterfaceElement</a>
 , <a class="el" href="class_node.html#a83346b1cd09131ea863e8e24a1ba8f60">Node</a>
+, <a class="el" href="class_port_element.html#ae9f3f2d759cb17ee4092d3e6c9b07c70">PortElement</a>
 </li>
 <li>getConnectedSibling()
 : <a class="el" href="class_shader_input.html#adbfef6a5130d6c20132f723afc0b1a38">ShaderInput</a>
@@ -621,6 +624,7 @@ $(function() {
 <li>getInputQualifier()
 : <a class="el" href="class_glsl_syntax.html#ac887e07798e104e0c3075ee008e3166d">GlslSyntax</a>
 , <a class="el" href="class_syntax.html#a0faaea1f9f82623dc72b80a86df218fe">Syntax</a>
+, <a class="el" href="class_vk_syntax.html#ac887e07798e104e0c3075ee008e3166d">VkSyntax</a>
 </li>
 <li>getInputs()
 : <a class="el" href="class_interface_element.html#ac87c51e58282189978a8a03c004a2223">InterfaceElement</a>
@@ -773,7 +777,7 @@ $(function() {
 </li>
 <li>getNode()
 : <a class="el" href="class_graph_element.html#acdf88cff211ae5f6cc359089ffced060">GraphElement</a>
-, <a class="el" href="class_shader_graph.html#a24fe483dd6a904345824d5e93d8b1fc4">ShaderGraph</a>
+, <a class="el" href="class_shader_graph.html#a33fdebe5ceb81362fd6239689980c0a0">ShaderGraph</a>
 , <a class="el" href="class_shader_port.html#a5f87980538b483a39cb3f14e8eced162">ShaderPort</a>
 </li>
 <li>getNodeDef()
@@ -824,13 +828,14 @@ $(function() {
 : <a class="el" href="class_node_def.html#a05141adb4b66feb99ababa04295c144c">NodeDef</a>
 </li>
 <li>getNormalized()
-: <a class="el" href="class_vector_n.html#a967e47f5c99947e4736cc530bd84b646">VectorN&lt; V, S, N &gt;</a>
+: <a class="el" href="class_file_path.html#ad37c91bf6419930734cef1ea43a08392">FilePath</a>
+, <a class="el" href="class_vector_n.html#a967e47f5c99947e4736cc530bd84b646">VectorN&lt; V, S, N &gt;</a>
 </li>
 <li>getOptimizeConstants()
 : <a class="el" href="class_texture_baker.html#a94332391e121d85064a1a05fcc1dcd80">TextureBaker</a>
 </li>
 <li>getOptions()
-: <a class="el" href="class_gen_context.html#a14e400f3a66cfa3dacb0dc110ea241b3">GenContext</a>
+: <a class="el" href="class_gen_context.html#a4804a09a8826d03b005ceedaa5213622">GenContext</a>
 </li>
 <li>getOutput()
 : <a class="el" href="class_interface_element.html#a078660da3a0c5b652a28f3e31e414199">InterfaceElement</a>
@@ -868,7 +873,7 @@ $(function() {
 : <a class="el" href="class_syntax.html#af537066cbc74363bd281a33e98f00735">Syntax</a>
 </li>
 <li>getParent()
-: <a class="el" href="class_element.html#ad6704447112330b4191ecb62159b8da8">Element</a>
+: <a class="el" href="class_element.html#af69c34f7be572f3008369d4bcbe7d1a5">Element</a>
 , <a class="el" href="class_shader_node.html#a03884a644102bd7030332efb0540aa46">ShaderNode</a>
 </li>
 <li>getParentPath()
@@ -939,6 +944,12 @@ $(function() {
 <li>getReferencedSourceUris()
 : <a class="el" href="class_document.html#a60ab7699c6fee79d58174e1b1575dae2">Document</a>
 </li>
+<li>getRefractionColor()
+: <a class="el" href="class_light_handler.html#a2226244837d6872550b51aa4d37ee3de">LightHandler</a>
+</li>
+<li>getRefractionEnv()
+: <a class="el" href="class_light_handler.html#a6b99f45e74b4257797e77598c8b1edbb">LightHandler</a>
+</li>
 <li>getReservedWords()
 : <a class="el" href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">GenContext</a>
 , <a class="el" href="class_syntax.html#a8c3682d90cfe08f8c3a485fef9bb03f6">Syntax</a>
@@ -959,7 +970,7 @@ $(function() {
 : <a class="el" href="class_image.html#a92145244ee03acedfbb18fe13ea0c88a">Image</a>
 </li>
 <li>getRoot()
-: <a class="el" href="class_element.html#a76fc0e1e25b02ac5e811b96c7c1284ea">Element</a>
+: <a class="el" href="class_element.html#ab8d51ac16028b6ec7f53147a4ca3250d">Element</a>
 </li>
 <li>getRowStride()
 : <a class="el" href="class_image.html#ae1d31dfb4185951dd3d49bbb549ee2f2">Image</a>
@@ -970,11 +981,14 @@ $(function() {
 <li>getScopeInfo()
 : <a class="el" href="class_shader_node.html#a31d0ae34bf710703a9c4715535cec6f5">ShaderNode</a>
 </li>
+<li>getScreenColor()
+: <a class="el" href="class_glsl_renderer.html#a046c34244ea1c162712419a2132e734b">GlslRenderer</a>
+</li>
 <li>getSearchPath()
 : <a class="el" href="class_image_handler.html#a6c5c90e703aa625c4dc6223579be015b">ImageHandler</a>
 </li>
 <li>getSelf()
-: <a class="el" href="class_element.html#ad2199ab64803856cfa4c3e2c5058fa02">Element</a>
+: <a class="el" href="class_element.html#a132bbbebb1a1fbc5c2c1b1b13a31dfbb">Element</a>
 , <a class="el" href="class_gen_user_data.html#aa4ec200b9de954ea8def66dd4cbe584f">GenUserData</a>
 , <a class="el" href="class_shader_port.html#a5b0ad644ee32804fe3ee45e26eb5cb04">ShaderPort</a>
 </li>
@@ -1028,7 +1042,7 @@ $(function() {
 : <a class="el" href="class_glsl_program.html#aa336098c9541df10509a1cc2b5a09608">GlslProgram</a>
 </li>
 <li>getStream()
-: <a class="el" href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">Mesh</a>
+: <a class="el" href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">Mesh</a>
 </li>
 <li>getStride()
 : <a class="el" href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">MeshStream</a>
@@ -1062,9 +1076,10 @@ $(function() {
 , <a class="el" href="class_light_shader_node_glsl.html#a0b6a1a7ea1d88588b6f49a1005f1c2ab">LightShaderNodeGlsl</a>
 , <a class="el" href="class_mdl_shader_generator.html#aa1df766b0a58c51ec77a6df9cf52ed3a">MdlShaderGenerator</a>
 , <a class="el" href="class_osl_shader_generator.html#aa1df766b0a58c51ec77a6df9cf52ed3a">OslShaderGenerator</a>
-, <a class="el" href="class_shader_generator.html#a388ea8a2394137fe449fd74e10b1ca87">ShaderGenerator</a>
+, <a class="el" href="class_shader_generator.html#abd6b259212ab43ac5298cc8e687f86f4">ShaderGenerator</a>
 , <a class="el" href="class_shader_node_impl.html#abd6b259212ab43ac5298cc8e687f86f4">ShaderNodeImpl</a>
 , <a class="el" href="class_surface_shader_node_glsl.html#a0b6a1a7ea1d88588b6f49a1005f1c2ab">SurfaceShaderNodeGlsl</a>
+, <a class="el" href="class_vk_shader_generator.html#aa1df766b0a58c51ec77a6df9cf52ed3a">VkShaderGenerator</a>
 </li>
 <li>getTargetDef()
 : <a class="el" href="class_document.html#a23da50b062b806923e692e6dded23b85">Document</a>
@@ -1143,7 +1158,7 @@ $(function() {
 : <a class="el" href="class_syntax.html#a2182e6d2be2326d762494a59b00a09b1">Syntax</a>
 </li>
 <li>getUniformBlock()
-: <a class="el" href="class_shader_stage.html#ac619b3675afe7f00c62d9eaca68de7ea">ShaderStage</a>
+: <a class="el" href="class_shader_stage.html#aaf261e7e00325ee4025e42da46fa03c2">ShaderStage</a>
 </li>
 <li>getUniformBlocks()
 : <a class="el" href="class_shader_stage.html#ae2c728b9ff19296f51581abd8c1d3d42">ShaderStage</a>
@@ -1234,8 +1249,8 @@ $(function() {
 , <a class="el" href="class_scalar_type_syntax.html#a140c929f14914216e67f1f47cae19d46">ScalarTypeSyntax</a>
 , <a class="el" href="class_shader_port.html#a0fd2c4d512f27d9cfa1714259edfd6db">ShaderPort</a>
 , <a class="el" href="class_string_type_syntax.html#a140c929f14914216e67f1f47cae19d46">StringTypeSyntax</a>
-, <a class="el" href="class_syntax.html#a54bc51937e25ef019575391072ad4a7b">Syntax</a>
-, <a class="el" href="class_type_syntax.html#a9223197eff3f075007a178dc366f1cce">TypeSyntax</a>
+, <a class="el" href="class_syntax.html#af1db383f350afd37ff5c13e512734250">Syntax</a>
+, <a class="el" href="class_type_syntax.html#a14922964d35be8b09b24bfdf4e1c4f6f">TypeSyntax</a>
 , <a class="el" href="class_value_element.html#a0fd2c4d512f27d9cfa1714259edfd6db">ValueElement</a>
 </li>
 <li>getValueElement()
@@ -1285,6 +1300,7 @@ $(function() {
 <li>getVersion()
 : <a class="el" href="class_essl_shader_generator.html#a0233154d126105b2fc23ba2fa07f1f86">EsslShaderGenerator</a>
 , <a class="el" href="class_glsl_shader_generator.html#a3fb8715945dead61fa8ac3ec3ce8085e">GlslShaderGenerator</a>
+, <a class="el" href="class_vk_shader_generator.html#a0233154d126105b2fc23ba2fa07f1f86">VkShaderGenerator</a>
 </li>
 <li>getVersionIntegers()
 : <a class="el" href="class_document.html#aa8649ed50a288976cc49b274327b3ba1">Document</a>
@@ -1297,8 +1313,9 @@ $(function() {
 : <a class="el" href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">Mesh</a>
 </li>
 <li>getVertexDataPrefix()
-: <a class="el" href="class_essl_shader_generator.html#a261bdffec362d947e24807662dc2b93a">EsslShaderGenerator</a>
-, <a class="el" href="class_glsl_shader_generator.html#a33c89493d1a7cdab1eceaa7d572164e7">GlslShaderGenerator</a>
+: <a class="el" href="class_essl_shader_generator.html#a77076efa2108759f613354ae2b0edc36">EsslShaderGenerator</a>
+, <a class="el" href="class_glsl_shader_generator.html#a77d92e15d82a8676b36582e5d723af2a">GlslShaderGenerator</a>
+, <a class="el" href="class_vk_shader_generator.html#a77076efa2108759f613354ae2b0edc36">VkShaderGenerator</a>
 </li>
 <li>getViewDirection()
 : <a class="el" href="class_camera.html#a98fb8b13643f8a6a58e27fb4d1c88462">Camera</a>

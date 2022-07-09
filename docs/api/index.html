@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -70,9 +70,10 @@ $(function() {
 <h2><a class="anchor" id="autotoc_md0"></a>
 Quick Start for Developers</h2>
 <ul>
-<li>Download the latest version of the <a href="https://cmake.org">CMake</a> build system.</li>
+<li>Download the latest version of the <a href="https://cmake.org/">CMake</a> build system.</li>
 <li>Point CMake to the root of the MaterialX library and generate C++ projects for your platform and compiler.</li>
 <li>Select the <code>MATERIALX_BUILD_PYTHON</code> option to build Python bindings.</li>
+<li>Select the <code>MATERIALX_BUILD_VIEWER</code> option to build the MaterialX viewer.</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Supported Platforms</h2>
@@ -84,15 +85,23 @@ Supported Platforms</h2>
 </ul>
 <p>The Python bindings for MaterialX are based on <a href="https://github.com/pybind/pybind11">PyBind11</a>, and support Python versions 2.7 and 3.x.</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
-Building MaterialX C++</h2>
+Building MaterialX</h2>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Building MaterialX C++</h3>
 <p>The MaterialX C++ libraries are automatically included when building MaterialX through CMake.</p>
-<p>Additional options for the generation of MaterialX C++ include the following:</p>
+<p>To enable OpenImageIO support in MaterialX builds, the following additional options may be used:</p>
 <ul>
-<li><code>MATERIALX_BUILD_OIIO</code>: Requests that MaterialXRender be built with OpenImageIO instead of stb_image, extending the set of supported image formats.</li>
+<li><code>MATERIALX_BUILD_OIIO</code>: Requests that MaterialXRender be built with OpenImageIO in addition to stb_image, extending the set of supported image formats.</li>
 <li><code>MATERIALX_OIIO_DIR</code>: Path to the root folder of an OpenImageIO installation. If MATERIALX_BUILD_OIIO has been enabled, then this option may be used to select which installation is used.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Building MaterialX Python</h2>
+<p>To enable Open Shading Language compiler and render validation in MaterialX builds, the following additional options may be used:</p>
+<ul>
+<li><code>MATERIALX_OSL_BINARY_OSLC</code>: Path to the OSL compiler binary (e.g. <code>oslc.exe</code>).</li>
+<li><code>MATERIALX_OSL_BINARY_TESTRENDER</code>: Path to the OSL test render binary (e.g. <code>testrender.exe</code>).</li>
+<li><code>MATERIALX_OSL_INCLUDE_PATH</code>: Path to the OSL shader include folder, which contains headers such as <code>stdosl.h</code>.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Building MaterialX Python</h3>
 <p>By default, the <code>MATERIALX_BUILD_PYTHON</code> option will use the active version of Python in the developer's path. To select a specific version of Python, use one or more of the following advanced options:</p>
 <ul>
 <li><code>MATERIALX_PYTHON_VERSION</code>: Python version to be used in building the MaterialX Python package (e.g. <code>2.7</code>)</li>
@@ -103,16 +112,20 @@ Building MaterialX Python</h2>
 <li><code>MATERIALX_PYTHON_OCIO_DIR</code>: Path to a folder containing the default OCIO configuration to be packaged with MaterialX Python. The recommended OpenColorIO configuration for MaterialX is <a href="https://github.com/colour-science/OpenColorIO-Configs/tree/feature/aces-1.2-config/aces_1.2">ACES 1.2</a>.</li>
 <li><code>MATERIALX_PYTHON_PYBIND11_DIR</code>: Path to a folder containing the PyBind11 source to be used in building MaterialX Python. Defaults to the included PyBind11 source.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Building The MaterialX Viewer</h2>
+<h3><a class="anchor" id="autotoc_md5"></a>
+Building The MaterialX Viewer</h3>
 <p>Select the <code>MATERIALX_BUILD_VIEWER</code> option to build the MaterialX Viewer. Installation will copy the <b>MaterialXView</b> executable to a <code>bin/</code> directory within the selected install folder.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
-Building API Documentation</h2>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Building API Documentation</h3>
 <p>To generate HTML documentation for the MaterialX C++ API, make sure a version of <a href="https://www.doxygen.org/">Doxygen</a> is on your path, and select the advanced option <code>MATERIALX_BUILD_DOCS</code> in CMake. This option will add a target named <code>MaterialXDocs</code> to your project, which can be built as an independent step from your development environment.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Installing MaterialX</h2>
 <p>Building the <code>install</code> target of your project will install the MaterialX C++ and Python libraries to the folder specified by the <code>CMAKE_INSTALL_PREFIX</code> setting, and will install MaterialX Python as a third-party library in your Python environment. Installation of MaterialX Python as a third-party library can be disabled by setting <code>MATERIALX_INSTALL_PYTHON</code> to <code>OFF</code>.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
+MaterialX Versioning</h2>
+<p>The MaterialX codebase uses a modified semantic versioning system where the <em>major</em> and <em>minor</em> versions match that of the corresponding MaterialX <a href="https://www.materialx.org/Specification.html">specification</a>, and the <em>build</em> version represents engineering advances within that specification version. MaterialX documents are similarly marked with the specification version they were authored in, and they are valid to load into any MaterialX codebase with an equal or higher specification version.</p>
+<p>Upgrading of MaterialX documents from earlier versions is handled at import time by the <a class="el" href="class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc" title="Upgrade the content of this document from earlier supported versions to the library version.">Document::upgradeVersion</a> method, which applies the syntax and node interface upgrades that have occurred in previous specification revisions. This allows the syntax conventions of MaterialX and the names and interfaces of nodes to evolve over time, without invalidating documents from earlier versions.</p>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Additional Links</h2>
 <ul>
 <li>The main <a href="http://www.materialx.org">MaterialX website</a> provides background on the project's history, industry collaborations, and recent presentations.</li>

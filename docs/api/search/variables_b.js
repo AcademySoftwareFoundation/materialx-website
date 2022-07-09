@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['newline_3045',['NEWLINE',['../class_syntax.html#a7f7320e227a9834a211e5785e1b86092',1,'Syntax']]]
+  ['material_3097',['MATERIAL',['../class_shader_node_1_1_classification.html#ad2c95d3ffccd7a9de0b2e25a07b0c204',1,'ShaderNode::Classification']]]
 ];

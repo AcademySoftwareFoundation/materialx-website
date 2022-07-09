@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="class_glsl_program.html">GlslProgram</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#a362d8d3eb99c54484115d45e71ae5af1">addStage</a>(const string &amp;stage, const string &amp;sourcCode)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#ae5a000c9d72750562b9f638a49bbcc13">addStage</a>(const string &amp;stage, const string &amp;sourceCode)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#a16873539a1053d46eebcbf393002ff6b">bind</a>()</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#a3d42b22f17c4d374e383751e4be63589">bindAttribute</a>(const GlslProgram::InputMap &amp;inputs, MeshPtr mesh)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#aa649a852cddc7f0ae3a99247afb63572">bindLighting</a>(LightHandlerPtr lightHandler, ImageHandlerPtr imageHandler)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
@@ -86,8 +86,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#a42c52a16587dbe3844629c8f55aeb35a">clearStages</a>()</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#a61c3f40233709d131928ede35fd2738c">create</a>()</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>deleteProgram</b>() (defined in <a class="el" href="class_glsl_program.html">GlslProgram</a>)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_glsl_program.html#ac4f70ddfe06c043f156065928632b639">findInputs</a>(const std::string &amp;variable, const InputMap &amp;variableList, InputMap &amp;foundList, bool exactMatch)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>findUniformValue</b>(const std::string &amp;uniformName, const InputMap &amp;uniformList) (defined in <a class="el" href="class_glsl_program.html">GlslProgram</a>)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_glsl_program.html#ac17047c72a071d5e80e7f75b9f6d7e16">findInputs</a>(const string &amp;variable, const InputMap &amp;variableList, InputMap &amp;foundList, bool exactMatch)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>findUniformValue</b>(const string &amp;uniformName, const InputMap &amp;uniformList) (defined in <a class="el" href="class_glsl_program.html">GlslProgram</a>)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#aa99234cf529fa8702f81e7ee53507c62">getAttributesList</a>()</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#ac39734916bcc47f5efc0952c9b0704c6">getShader</a>() const</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#aa336098c9541df10509a1cc2b5a09608">getStageSourceCode</a>(const string &amp;stage) const</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
@@ -95,7 +95,7 @@ $(function() {
   <tr bgcolor="#f0f0f0"><td class="entry"><b>GlslProgram</b>() (defined in <a class="el" href="class_glsl_program.html">GlslProgram</a>)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#a0d2a4023e3da20fb86c2c80f72428cc8">hasActiveAttributes</a>() const</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#aee8ebf749ad8864e44f349065c7136d1">hasUniform</a>(const string &amp;name)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#ad1cca1039048caa27932ab592f4ae286">InputMap</a> typedef</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_glsl_program.html#a4220644552da44fee09012ccf581816e">InputMap</a> typedef</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#a0b3f0c577a3258f59848e6fcb7ce379e">InputPtr</a> typedef</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>mapTypeToOpenGLType</b>(const TypeDesc *type) (defined in <a class="el" href="class_glsl_program.html">GlslProgram</a>)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_glsl_program.html#a0be42eddee921e547942ed564cd6aa2e">printAttributes</a>(std::ostream &amp;outputStream)</td><td class="entry"><a class="el" href="class_glsl_program.html">GlslProgram</a></td><td class="entry"></td></tr>

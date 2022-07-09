@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -185,19 +185,21 @@ $(function() {
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> write(<a class="code" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>(<span class="keyword">const</span> <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>() { }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">bool</span> convertToUnit(<a class="code" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; unitType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; targetUnit);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="_unit_8h.html#ad7b5c21180d095c1d8d0c090540a7319">UnitConverterPtrMap</a> _unitConverters;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>(<span class="keyword">const</span> <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>() { }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_unit_converter_registry.html">UnitConverterRegistry</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="_unit_8h.html#ad7b5c21180d095c1d8d0c090540a7319">UnitConverterPtrMap</a> _unitConverters;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;};</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_unit_converter_html_a7b95ba2ed550873f3b5bd02209ca3279"><div class="ttname"><a href="class_unit_converter.html#a7b95ba2ed550873f3b5bd02209ca3279">UnitConverter::convert</a></div><div class="ttdeci">virtual Vector4 convert(const Vector4 &amp;input, const string &amp;inputUnit, const string &amp;outputUnit) const =0</div><div class="ttdoc">Convert a given value in a given unit to a desired unit.</div></div>
 <div class="ttc" id="aclass_unit_converter_html_a29d05d7e98f060fbb8b3ee36b4a4409f"><div class="ttname"><a href="class_unit_converter.html#a29d05d7e98f060fbb8b3ee36b4a4409f">UnitConverter::convert</a></div><div class="ttdeci">virtual Vector3 convert(const Vector3 &amp;input, const string &amp;inputUnit, const string &amp;outputUnit) const =0</div><div class="ttdoc">Convert a given value in a given unit to a desired unit.</div></div>

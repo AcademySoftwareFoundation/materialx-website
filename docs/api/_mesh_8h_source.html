@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -102,387 +102,388 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">string</span> COLOR_ATTRIBUTE;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">string</span> GEOMETRY_PROPERTY_ATTRIBUTE;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> STRIDE_3D = 3;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> STRIDE_2D = 2;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DEFAULT_STRIDE = STRIDE_3D;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_mesh_stream.html">MeshStream</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index) :</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _name(name),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        _type(type),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        _index(index),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        _stride(DEFAULT_STRIDE)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ~<a class="code" href="class_mesh_stream.html">MeshStream</a>() { }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">   56</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code" href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">create</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index = 0)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;MeshStream&gt;(name, type, index);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">resize</a>(<span class="keywordtype">size_t</span> elementCount)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        _data.resize(elementCount * (<span class="keywordtype">size_t</span>) _stride);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a3f243e0db82d28663cf78eddb22e3d8f">   68</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh_stream.html#a3f243e0db82d28663cf78eddb22e3d8f">getName</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> _name;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a46f1d2f034c2da3381919644638e6431">   74</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh_stream.html#a46f1d2f034c2da3381919644638e6431">getType</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> _type;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a762de91e7869ca544ff034b99fc2e0a6">   80</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_mesh_stream.html#a762de91e7869ca544ff034b99fc2e0a6">getIndex</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> _index;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a4ef1735dac19f56fd9c5faf2f0d040d0">   86</a></span>&#160;    <a class="code" href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a>&amp; <a class="code" href="class_mesh_stream.html#a4ef1735dac19f56fd9c5faf2f0d040d0">getData</a>()</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> _data;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#ae5be6f197f39c924060187c4e3fa88ea">   92</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a>&amp; <a class="code" href="class_mesh_stream.html#ae5be6f197f39c924060187c4e3fa88ea">getData</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> _data;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Return the typed element at the given index</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; T&amp; getElement(<span class="keywordtype">size_t</span> index)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>T*<span class="keyword">&gt;</span>(getData().data())[index];</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// Return the typed element at the given index</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">const</span> T&amp; getElement(<span class="keywordtype">size_t</span> index)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>T*<span class="keyword">&gt;</span>(getData().data())[index];</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">  110</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">getStride</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> _stride;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">  116</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">setStride</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> stride)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        _stride = stride;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">size_t</span> getSize()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> _data.size();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> transform(<span class="keyword">const</span> <a class="code" href="class_matrix44.html">Matrix44</a> &amp;matrix);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">string</span> _name;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">string</span> _type;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _index;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a> _data;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _stride;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">  137</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> = shared_ptr&lt;class MeshPartition&gt;;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_mesh_partition.html">  142</a></span>&#160;<span class="keyword">class </span>MX_RENDER_API <a class="code" href="class_mesh_partition.html">MeshPartition</a></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="class_mesh_partition.html">MeshPartition</a>() :</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        _faceCount(0)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    ~<a class="code" href="class_mesh_partition.html">MeshPartition</a>() { }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">  152</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> <a class="code" href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">create</a>()</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;MeshPartition&gt;();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">  158</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">resize</a>(<span class="keywordtype">size_t</span> indexCount)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        _indices.resize(indexCount);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#af2960d3af5374392230c909fea3a38f1">  164</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#af2960d3af5374392230c909fea3a38f1">setName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; val)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        _name = val;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">  170</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">getName</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> _name;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">  177</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">addSourceName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; val)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        _sourceNames.insert(val);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">  184</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; <a class="code" href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">getSourceNames</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">return</span> _sourceNames;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">  190</a></span>&#160;    <a class="code" href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a>&amp; <a class="code" href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">getIndices</a>()</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> _indices;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#abfe738ca1feadbb86e512cc7ea69b93b">  196</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a>&amp; <a class="code" href="class_mesh_partition.html#abfe738ca1feadbb86e512cc7ea69b93b">getIndices</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> _indices;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#aa26e370d99a09c33f3f759c4bc52800e">  202</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_mesh_partition.html#aa26e370d99a09c33f3f759c4bc52800e">getFaceCount</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> _faceCount;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">  208</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">setFaceCount</a>(<span class="keywordtype">size_t</span> val)</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        _faceCount = val;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">string</span> _name;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> _sourceNames;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a> _indices;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">size_t</span> _faceCount;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;};</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">  221</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> = shared_ptr&lt;class Mesh&gt;;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">  224</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> = vector&lt;MeshPtr&gt;;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="_mesh_8h.html#a979acf17f65d96ab20ef8e9a6ee66a5c">  227</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#a979acf17f65d96ab20ef8e9a6ee66a5c">MeshMap</a> = std::unordered_map&lt;string, MeshPtr&gt;;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="class_mesh.html">  231</a></span>&#160;<span class="keyword">class </span>MX_RENDER_API <a class="code" href="class_mesh.html">Mesh</a></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;{</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="class_mesh.html">Mesh</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    ~<a class="code" href="class_mesh.html">Mesh</a>() { }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_mesh.html#a0a59954b402882e839278d2f546349fa">  238</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> <a class="code" href="class_mesh.html#a0a59954b402882e839278d2f546349fa">create</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;Mesh&gt;(name);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="class_mesh.html#a3f243e0db82d28663cf78eddb22e3d8f">  244</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh.html#a3f243e0db82d28663cf78eddb22e3d8f">getName</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span> _name;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="class_mesh.html#aef46b1e7ee01394390dea79b8c975f67">  250</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#aef46b1e7ee01394390dea79b8c975f67">setSourceUri</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sourceUri)</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        _sourceUri = sourceUri;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_mesh.html#a397054093aca067747fc9bf15c46b748">  256</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mesh.html#a397054093aca067747fc9bf15c46b748">hasSourceUri</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> !_sourceUri.empty();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">  262</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">getSourceUri</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">return</span> _sourceUri;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">  270</a></span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code" href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">getStream</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; stream : _streams)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">if</span> (stream-&gt;getName() == name)</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="keywordflow">return</span> stream;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>();</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">  286</a></span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code" href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">getStream</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; stream : _streams)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">if</span> (stream-&gt;getType() == type &amp;&amp;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                stream-&gt;getIndex() == index)</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">return</span> stream;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>();</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea">  300</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea">addStream</a>(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> stream)</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        _streams.push_back(stream);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="class_mesh.html#ad3cfda2c97894481c3512217eefc0519">  306</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#ad3cfda2c97894481c3512217eefc0519">removeStream</a>(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> stream)</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keyword">auto</span> it = std::find(_streams.begin(), _streams.end(), stream);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">if</span> (it != _streams.end())</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            _streams.erase(it);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="class_mesh.html#ae6f7503a57ee0e3ece69020c9d77ca34">  316</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#ae6f7503a57ee0e3ece69020c9d77ca34">setVertexCount</a>(<span class="keywordtype">size_t</span> val)</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        _vertexCount = val;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">  322</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">getVertexCount</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">return</span> _vertexCount;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">  328</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">setMinimumBounds</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; val)</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        _minimumBounds = val;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="class_mesh.html#a8d1a7084327c5a431308ed435d4daefb">  334</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; <a class="code" href="class_mesh.html#a8d1a7084327c5a431308ed435d4daefb">getMinimumBounds</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> _minimumBounds;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">  340</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">setMaximumBounds</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; v)</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        _maximumBounds = v;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="class_mesh.html#a0a3c0ea6a9dab6e7372e47f8a470c65f">  346</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; <a class="code" href="class_mesh.html#a0a3c0ea6a9dab6e7372e47f8a470c65f">getMaximumBounds</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">return</span> _maximumBounds;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="class_mesh.html#a3285969e0a49152d35b1df1126082fcb">  352</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a3285969e0a49152d35b1df1126082fcb">setSphereCenter</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; val)</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        _sphereCenter = val;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">  358</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; <a class="code" href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">getSphereCenter</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">return</span> _sphereCenter;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="class_mesh.html#a620bca64d8edb4a689346c6ebf6ddf2b">  364</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a620bca64d8edb4a689346c6ebf6ddf2b">setSphereRadius</a>(<span class="keywordtype">float</span> val)</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        _sphereRadius = val;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="class_mesh.html#a8268dcea80c70561d6a2bfed77e37246">  370</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_mesh.html#a8268dcea80c70561d6a2bfed77e37246">getSphereRadius</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">return</span> _sphereRadius;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">  376</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">getPartitionCount</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">return</span> _partitions.size();</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    }</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7">  382</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7">addPartition</a>(<a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> partition)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        _partitions.push_back(partition);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">  388</a></span>&#160;    <a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> <a class="code" href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">getPartition</a>(<span class="keywordtype">size_t</span> partIndex)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">return</span> _partitions[partIndex];</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTextureCoordinates(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateNormals(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTangents(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> normalStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> texcoordStream);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">void</span> mergePartitions();</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">void</span> splitByUdims();</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordtype">string</span> _name;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordtype">string</span> _sourceUri;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _minimumBounds;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _maximumBounds;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _sphereCenter;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">float</span> _sphereRadius;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a> _streams;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordtype">size_t</span> _vertexCount;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    vector&lt;MeshPartitionPtr&gt; _partitions;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;};</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> STRIDE_2D = 2;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> STRIDE_3D = 3;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> STRIDE_4D = 4;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DEFAULT_STRIDE = STRIDE_3D;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_mesh_stream.html">MeshStream</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index) :</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        _name(name),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        _type(type),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        _index(index),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        _stride(DEFAULT_STRIDE)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ~<a class="code" href="class_mesh_stream.html">MeshStream</a>() { }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">   57</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code" href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">create</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index = 0)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;MeshStream&gt;(name, type, index);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">   63</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">resize</a>(<span class="keywordtype">size_t</span> elementCount)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        _data.resize(elementCount * (<span class="keywordtype">size_t</span>) _stride);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a3f243e0db82d28663cf78eddb22e3d8f">   69</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh_stream.html#a3f243e0db82d28663cf78eddb22e3d8f">getName</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> _name;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a46f1d2f034c2da3381919644638e6431">   75</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh_stream.html#a46f1d2f034c2da3381919644638e6431">getType</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> _type;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a762de91e7869ca544ff034b99fc2e0a6">   81</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_mesh_stream.html#a762de91e7869ca544ff034b99fc2e0a6">getIndex</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> _index;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a4ef1735dac19f56fd9c5faf2f0d040d0">   87</a></span>&#160;    <a class="code" href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a>&amp; <a class="code" href="class_mesh_stream.html#a4ef1735dac19f56fd9c5faf2f0d040d0">getData</a>()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> _data;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#ae5be6f197f39c924060187c4e3fa88ea">   93</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a>&amp; <a class="code" href="class_mesh_stream.html#ae5be6f197f39c924060187c4e3fa88ea">getData</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> _data;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Return the typed element at the given index</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; T&amp; getElement(<span class="keywordtype">size_t</span> index)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>T*<span class="keyword">&gt;</span>(getData().data())[index];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Return the typed element at the given index</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">const</span> T&amp; getElement(<span class="keywordtype">size_t</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>T*<span class="keyword">&gt;</span>(getData().data())[index];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">  111</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">getStride</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> _stride;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">  117</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">setStride</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> stride)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        _stride = stride;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">size_t</span> getSize()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> _data.size();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> transform(<span class="keyword">const</span> <a class="code" href="class_matrix44.html">Matrix44</a> &amp;matrix);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">string</span> _name;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">string</span> _type;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _index;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a> _data;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _stride;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">  138</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> = shared_ptr&lt;class MeshPartition&gt;;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_mesh_partition.html">  143</a></span>&#160;<span class="keyword">class </span>MX_RENDER_API <a class="code" href="class_mesh_partition.html">MeshPartition</a></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="class_mesh_partition.html">MeshPartition</a>() :</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        _faceCount(0)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    ~<a class="code" href="class_mesh_partition.html">MeshPartition</a>() { }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">  153</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> <a class="code" href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">create</a>()</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;MeshPartition&gt;();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">  159</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">resize</a>(<span class="keywordtype">size_t</span> indexCount)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        _indices.resize(indexCount);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#af2960d3af5374392230c909fea3a38f1">  165</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#af2960d3af5374392230c909fea3a38f1">setName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; val)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        _name = val;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">  171</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">getName</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> _name;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">  178</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">addSourceName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; val)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        _sourceNames.insert(val);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">  185</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; <a class="code" href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">getSourceNames</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> _sourceNames;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">  191</a></span>&#160;    <a class="code" href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a>&amp; <a class="code" href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">getIndices</a>()</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> _indices;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#abfe738ca1feadbb86e512cc7ea69b93b">  197</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a>&amp; <a class="code" href="class_mesh_partition.html#abfe738ca1feadbb86e512cc7ea69b93b">getIndices</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">return</span> _indices;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#aa26e370d99a09c33f3f759c4bc52800e">  203</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_mesh_partition.html#aa26e370d99a09c33f3f759c4bc52800e">getFaceCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">return</span> _faceCount;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">  209</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">setFaceCount</a>(<span class="keywordtype">size_t</span> val)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        _faceCount = val;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">string</span> _name;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> _sourceNames;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a> _indices;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">size_t</span> _faceCount;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;};</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">  222</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> = shared_ptr&lt;class Mesh&gt;;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">  225</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a> = vector&lt;MeshPtr&gt;;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="_mesh_8h.html#a979acf17f65d96ab20ef8e9a6ee66a5c">  228</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_mesh_8h.html#a979acf17f65d96ab20ef8e9a6ee66a5c">MeshMap</a> = std::unordered_map&lt;string, MeshPtr&gt;;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="class_mesh.html">  232</a></span>&#160;<span class="keyword">class </span>MX_RENDER_API <a class="code" href="class_mesh.html">Mesh</a></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="class_mesh.html">Mesh</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    ~<a class="code" href="class_mesh.html">Mesh</a>() { }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="class_mesh.html#a0a59954b402882e839278d2f546349fa">  239</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> <a class="code" href="class_mesh.html#a0a59954b402882e839278d2f546349fa">create</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> std::make_shared&lt;Mesh&gt;(name);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="class_mesh.html#a3f243e0db82d28663cf78eddb22e3d8f">  245</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh.html#a3f243e0db82d28663cf78eddb22e3d8f">getName</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> _name;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="class_mesh.html#aef46b1e7ee01394390dea79b8c975f67">  251</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#aef46b1e7ee01394390dea79b8c975f67">setSourceUri</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sourceUri)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        _sourceUri = sourceUri;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="class_mesh.html#a397054093aca067747fc9bf15c46b748">  257</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_mesh.html#a397054093aca067747fc9bf15c46b748">hasSourceUri</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> !_sourceUri.empty();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">  263</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">getSourceUri</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> _sourceUri;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">  271</a></span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code" href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">getStream</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; stream : _streams)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keywordflow">if</span> (stream-&gt;getName() == name)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="keywordflow">return</span> stream;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">  287</a></span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code" href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">getStream</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; stream : _streams)</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">if</span> (stream-&gt;getType() == type &amp;&amp;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                stream-&gt;getIndex() == index)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                <span class="keywordflow">return</span> stream;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea">  301</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea">addStream</a>(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> stream)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        _streams.push_back(stream);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="class_mesh.html#ad3cfda2c97894481c3512217eefc0519">  307</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#ad3cfda2c97894481c3512217eefc0519">removeStream</a>(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> stream)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keyword">auto</span> it = std::find(_streams.begin(), _streams.end(), stream);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">if</span> (it != _streams.end())</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            _streams.erase(it);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="class_mesh.html#ae6f7503a57ee0e3ece69020c9d77ca34">  317</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#ae6f7503a57ee0e3ece69020c9d77ca34">setVertexCount</a>(<span class="keywordtype">size_t</span> val)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        _vertexCount = val;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">  323</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">getVertexCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> _vertexCount;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">  329</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">setMinimumBounds</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; val)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        _minimumBounds = val;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="class_mesh.html#a8d1a7084327c5a431308ed435d4daefb">  335</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; <a class="code" href="class_mesh.html#a8d1a7084327c5a431308ed435d4daefb">getMinimumBounds</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">return</span> _minimumBounds;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">  341</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">setMaximumBounds</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; v)</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        _maximumBounds = v;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="class_mesh.html#a0a3c0ea6a9dab6e7372e47f8a470c65f">  347</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; <a class="code" href="class_mesh.html#a0a3c0ea6a9dab6e7372e47f8a470c65f">getMaximumBounds</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">return</span> _maximumBounds;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="class_mesh.html#a3285969e0a49152d35b1df1126082fcb">  353</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a3285969e0a49152d35b1df1126082fcb">setSphereCenter</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; val)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        _sphereCenter = val;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">  359</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_vector3.html">Vector3</a>&amp; <a class="code" href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">getSphereCenter</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> _sphereCenter;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="class_mesh.html#a620bca64d8edb4a689346c6ebf6ddf2b">  365</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a620bca64d8edb4a689346c6ebf6ddf2b">setSphereRadius</a>(<span class="keywordtype">float</span> val)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        _sphereRadius = val;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="class_mesh.html#a8268dcea80c70561d6a2bfed77e37246">  371</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_mesh.html#a8268dcea80c70561d6a2bfed77e37246">getSphereRadius</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> _sphereRadius;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">  377</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">getPartitionCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">return</span> _partitions.size();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7">  383</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7">addPartition</a>(<a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> partition)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        _partitions.push_back(partition);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">  389</a></span>&#160;    <a class="code" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> <a class="code" href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">getPartition</a>(<span class="keywordtype">size_t</span> partIndex)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">return</span> _partitions[partIndex];</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTextureCoordinates(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateNormals(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateTangents(<a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> normalStream, <a class="code" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> texcoordStream);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordtype">void</span> mergePartitions();</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordtype">void</span> splitByUdims();</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordtype">string</span> _name;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordtype">string</span> _sourceUri;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _minimumBounds;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _maximumBounds;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="class_vector3.html">Vector3</a> _sphereCenter;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">float</span> _sphereRadius;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <a class="code" href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a> _streams;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">size_t</span> _vertexCount;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    vector&lt;MeshPartitionPtr&gt; _partitions;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;};</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_mesh_stream_html_adda4d487448aea1c68d96087438fae8b"><div class="ttname"><a href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">MeshStream::resize</a></div><div class="ttdeci">void resize(size_t elementCount)</div><div class="ttdoc">Resize data to an given number of elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:62</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_adda4d487448aea1c68d96087438fae8b"><div class="ttname"><a href="class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b">MeshStream::resize</a></div><div class="ttdeci">void resize(size_t elementCount)</div><div class="ttdoc">Resize data to an given number of elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:63</div></div>
 <div class="ttc" id="a_mesh_8h_html_a172addb5cf2c028c609c258b623de350"><div class="ttname"><a href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a></div><div class="ttdeci">vector&lt; MeshStreamPtr &gt; MeshStreamList</div><div class="ttdoc">List of mesh streams.</div><div class="ttdef"><b>Definition:</b> Mesh.h:26</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_a8aa9256457c27fccb23e38ce0b9b32bc"><div class="ttname"><a href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">MeshStream::getStride</a></div><div class="ttdeci">unsigned int getStride() const</div><div class="ttdoc">Get stride between elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:110</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_aa26e370d99a09c33f3f759c4bc52800e"><div class="ttname"><a href="class_mesh_partition.html#aa26e370d99a09c33f3f759c4bc52800e">MeshPartition::getFaceCount</a></div><div class="ttdeci">size_t getFaceCount() const</div><div class="ttdoc">Return number of faces.</div><div class="ttdef"><b>Definition:</b> Mesh.h:202</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_a4ef1735dac19f56fd9c5faf2f0d040d0"><div class="ttname"><a href="class_mesh_stream.html#a4ef1735dac19f56fd9c5faf2f0d040d0">MeshStream::getData</a></div><div class="ttdeci">MeshFloatBuffer &amp; getData()</div><div class="ttdoc">Return the raw float vector.</div><div class="ttdef"><b>Definition:</b> Mesh.h:86</div></div>
-<div class="ttc" id="aclass_mesh_html_a71083e12c0242a05b6e1601f2a6e97f6"><div class="ttname"><a href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">Mesh::getPartition</a></div><div class="ttdeci">MeshPartitionPtr getPartition(size_t partIndex) const</div><div class="ttdoc">Return a reference to a mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:388</div></div>
-<div class="ttc" id="aclass_mesh_html_aa71e3512a6899f14a6f3bc8d8dd9e6ea"><div class="ttname"><a href="class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea">Mesh::addStream</a></div><div class="ttdeci">void addStream(MeshStreamPtr stream)</div><div class="ttdoc">Add a mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:300</div></div>
-<div class="ttc" id="aclass_mesh_html_a620bca64d8edb4a689346c6ebf6ddf2b"><div class="ttname"><a href="class_mesh.html#a620bca64d8edb4a689346c6ebf6ddf2b">Mesh::setSphereRadius</a></div><div class="ttdeci">void setSphereRadius(float val)</div><div class="ttdoc">Set radius of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:364</div></div>
-<div class="ttc" id="a_mesh_8h_html_abb4e7a16c06b8c5ac1ad3b0ea8cd0330"><div class="ttname"><a href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a></div><div class="ttdeci">shared_ptr&lt; class Mesh &gt; MeshPtr</div><div class="ttdoc">Shared pointer to a mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:221</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">MeshPartition::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:170</div></div>
-<div class="ttc" id="aclass_mesh_html_a397054093aca067747fc9bf15c46b748"><div class="ttname"><a href="class_mesh.html#a397054093aca067747fc9bf15c46b748">Mesh::hasSourceUri</a></div><div class="ttdeci">bool hasSourceUri() const</div><div class="ttdoc">Return true if this mesh has a source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:256</div></div>
-<div class="ttc" id="aclass_mesh_html_af975e4199b3b66e24586f2b8c55e0e63"><div class="ttname"><a href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">Mesh::getSourceUri</a></div><div class="ttdeci">const string &amp; getSourceUri() const</div><div class="ttdoc">Return the mesh's source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:262</div></div>
-<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:641</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_a8aa9256457c27fccb23e38ce0b9b32bc"><div class="ttname"><a href="class_mesh_stream.html#a8aa9256457c27fccb23e38ce0b9b32bc">MeshStream::getStride</a></div><div class="ttdeci">unsigned int getStride() const</div><div class="ttdoc">Get stride between elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:111</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_aa26e370d99a09c33f3f759c4bc52800e"><div class="ttname"><a href="class_mesh_partition.html#aa26e370d99a09c33f3f759c4bc52800e">MeshPartition::getFaceCount</a></div><div class="ttdeci">size_t getFaceCount() const</div><div class="ttdoc">Return number of faces.</div><div class="ttdef"><b>Definition:</b> Mesh.h:203</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_a4ef1735dac19f56fd9c5faf2f0d040d0"><div class="ttname"><a href="class_mesh_stream.html#a4ef1735dac19f56fd9c5faf2f0d040d0">MeshStream::getData</a></div><div class="ttdeci">MeshFloatBuffer &amp; getData()</div><div class="ttdoc">Return the raw float vector.</div><div class="ttdef"><b>Definition:</b> Mesh.h:87</div></div>
+<div class="ttc" id="aclass_mesh_html_a71083e12c0242a05b6e1601f2a6e97f6"><div class="ttname"><a href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">Mesh::getPartition</a></div><div class="ttdeci">MeshPartitionPtr getPartition(size_t partIndex) const</div><div class="ttdoc">Return a reference to a mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:389</div></div>
+<div class="ttc" id="aclass_mesh_html_aa71e3512a6899f14a6f3bc8d8dd9e6ea"><div class="ttname"><a href="class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea">Mesh::addStream</a></div><div class="ttdeci">void addStream(MeshStreamPtr stream)</div><div class="ttdoc">Add a mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:301</div></div>
+<div class="ttc" id="aclass_mesh_html_a620bca64d8edb4a689346c6ebf6ddf2b"><div class="ttname"><a href="class_mesh.html#a620bca64d8edb4a689346c6ebf6ddf2b">Mesh::setSphereRadius</a></div><div class="ttdeci">void setSphereRadius(float val)</div><div class="ttdoc">Set radius of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:365</div></div>
+<div class="ttc" id="a_mesh_8h_html_abb4e7a16c06b8c5ac1ad3b0ea8cd0330"><div class="ttname"><a href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a></div><div class="ttdeci">shared_ptr&lt; class Mesh &gt; MeshPtr</div><div class="ttdoc">Shared pointer to a mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:222</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh_partition.html#a3f243e0db82d28663cf78eddb22e3d8f">MeshPartition::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:171</div></div>
+<div class="ttc" id="aclass_mesh_html_a397054093aca067747fc9bf15c46b748"><div class="ttname"><a href="class_mesh.html#a397054093aca067747fc9bf15c46b748">Mesh::hasSourceUri</a></div><div class="ttdeci">bool hasSourceUri() const</div><div class="ttdoc">Return true if this mesh has a source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:257</div></div>
+<div class="ttc" id="aclass_mesh_html_af975e4199b3b66e24586f2b8c55e0e63"><div class="ttname"><a href="class_mesh.html#af975e4199b3b66e24586f2b8c55e0e63">Mesh::getSourceUri</a></div><div class="ttdeci">const string &amp; getSourceUri() const</div><div class="ttdoc">Return the mesh's source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:263</div></div>
+<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:649</div></div>
 <div class="ttc" id="aclass_vector3_html"><div class="ttname"><a href="class_vector3.html">Vector3</a></div><div class="ttdoc">A vector of three floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:303</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_a830b7e463d5111102921c3159f8f138e"><div class="ttname"><a href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">MeshPartition::resize</a></div><div class="ttdeci">void resize(size_t indexCount)</div><div class="ttdoc">Resize data to the given number of indices.</div><div class="ttdef"><b>Definition:</b> Mesh.h:158</div></div>
-<div class="ttc" id="aclass_mesh_html_acfa76e5ef184d2c25dcbdf890c7308d7"><div class="ttname"><a href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">Mesh::getSphereCenter</a></div><div class="ttdeci">const Vector3 &amp; getSphereCenter() const</div><div class="ttdoc">Return center of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:358</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh_stream.html#a3f243e0db82d28663cf78eddb22e3d8f">MeshStream::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Get stream name.</div><div class="ttdef"><b>Definition:</b> Mesh.h:68</div></div>
-<div class="ttc" id="aclass_mesh_html_a3285969e0a49152d35b1df1126082fcb"><div class="ttname"><a href="class_mesh.html#a3285969e0a49152d35b1df1126082fcb">Mesh::setSphereCenter</a></div><div class="ttdeci">void setSphereCenter(const Vector3 &amp;val)</div><div class="ttdoc">Set center of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:352</div></div>
-<div class="ttc" id="aclass_mesh_html_ae6f7503a57ee0e3ece69020c9d77ca34"><div class="ttname"><a href="class_mesh.html#ae6f7503a57ee0e3ece69020c9d77ca34">Mesh::setVertexCount</a></div><div class="ttdeci">void setVertexCount(size_t val)</div><div class="ttdoc">Set vertex count.</div><div class="ttdef"><b>Definition:</b> Mesh.h:316</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_a9612a2af81d0dcb1d8588f36ebfbc928"><div class="ttname"><a href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">MeshStream::setStride</a></div><div class="ttdeci">void setStride(unsigned int stride)</div><div class="ttdoc">Set stride between elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:116</div></div>
-<div class="ttc" id="aclass_mesh_html"><div class="ttname"><a href="class_mesh.html">Mesh</a></div><div class="ttdoc">Container for mesh data.</div><div class="ttdef"><b>Definition:</b> Mesh.h:232</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_a50ac4672725828ffa8543531b02c01e1"><div class="ttname"><a href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">MeshPartition::addSourceName</a></div><div class="ttdeci">void addSourceName(const string &amp;val)</div><div class="ttdoc">Add a source name, representing a partition that was processed to generate this one.</div><div class="ttdef"><b>Definition:</b> Mesh.h:177</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_a830b7e463d5111102921c3159f8f138e"><div class="ttname"><a href="class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e">MeshPartition::resize</a></div><div class="ttdeci">void resize(size_t indexCount)</div><div class="ttdoc">Resize data to the given number of indices.</div><div class="ttdef"><b>Definition:</b> Mesh.h:159</div></div>
+<div class="ttc" id="aclass_mesh_html_acfa76e5ef184d2c25dcbdf890c7308d7"><div class="ttname"><a href="class_mesh.html#acfa76e5ef184d2c25dcbdf890c7308d7">Mesh::getSphereCenter</a></div><div class="ttdeci">const Vector3 &amp; getSphereCenter() const</div><div class="ttdoc">Return center of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:359</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh_stream.html#a3f243e0db82d28663cf78eddb22e3d8f">MeshStream::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Get stream name.</div><div class="ttdef"><b>Definition:</b> Mesh.h:69</div></div>
+<div class="ttc" id="aclass_mesh_html_a3285969e0a49152d35b1df1126082fcb"><div class="ttname"><a href="class_mesh.html#a3285969e0a49152d35b1df1126082fcb">Mesh::setSphereCenter</a></div><div class="ttdeci">void setSphereCenter(const Vector3 &amp;val)</div><div class="ttdoc">Set center of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:353</div></div>
+<div class="ttc" id="aclass_mesh_html_ae6f7503a57ee0e3ece69020c9d77ca34"><div class="ttname"><a href="class_mesh.html#ae6f7503a57ee0e3ece69020c9d77ca34">Mesh::setVertexCount</a></div><div class="ttdeci">void setVertexCount(size_t val)</div><div class="ttdoc">Set vertex count.</div><div class="ttdef"><b>Definition:</b> Mesh.h:317</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_a9612a2af81d0dcb1d8588f36ebfbc928"><div class="ttname"><a href="class_mesh_stream.html#a9612a2af81d0dcb1d8588f36ebfbc928">MeshStream::setStride</a></div><div class="ttdeci">void setStride(unsigned int stride)</div><div class="ttdoc">Set stride between elements.</div><div class="ttdef"><b>Definition:</b> Mesh.h:117</div></div>
+<div class="ttc" id="aclass_mesh_html"><div class="ttname"><a href="class_mesh.html">Mesh</a></div><div class="ttdoc">Container for mesh data.</div><div class="ttdef"><b>Definition:</b> Mesh.h:233</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_a50ac4672725828ffa8543531b02c01e1"><div class="ttname"><a href="class_mesh_partition.html#a50ac4672725828ffa8543531b02c01e1">MeshPartition::addSourceName</a></div><div class="ttdeci">void addSourceName(const string &amp;val)</div><div class="ttdoc">Add a source name, representing a partition that was processed to generate this one.</div><div class="ttdef"><b>Definition:</b> Mesh.h:178</div></div>
 <div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:61</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_a7f6ea930d1621f2637512b741d08612c"><div class="ttname"><a href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">MeshPartition::getIndices</a></div><div class="ttdeci">MeshIndexBuffer &amp; getIndices()</div><div class="ttdoc">Return indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:190</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_a67113a614ef1797e9bc9651695a6a0e5"><div class="ttname"><a href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">MeshPartition::getSourceNames</a></div><div class="ttdeci">const StringSet &amp; getSourceNames() const</div><div class="ttdoc">Return the vector of source names, representing all partitions that were processed to generate this o...</div><div class="ttdef"><b>Definition:</b> Mesh.h:184</div></div>
-<div class="ttc" id="a_mesh_8h_html_aa1fa294260f159ae030e6bb7ecac3490"><div class="ttname"><a href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a></div><div class="ttdeci">shared_ptr&lt; class MeshPartition &gt; MeshPartitionPtr</div><div class="ttdoc">Shared pointer to a mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:137</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_a7f6ea930d1621f2637512b741d08612c"><div class="ttname"><a href="class_mesh_partition.html#a7f6ea930d1621f2637512b741d08612c">MeshPartition::getIndices</a></div><div class="ttdeci">MeshIndexBuffer &amp; getIndices()</div><div class="ttdoc">Return indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:191</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_a67113a614ef1797e9bc9651695a6a0e5"><div class="ttname"><a href="class_mesh_partition.html#a67113a614ef1797e9bc9651695a6a0e5">MeshPartition::getSourceNames</a></div><div class="ttdeci">const StringSet &amp; getSourceNames() const</div><div class="ttdoc">Return the vector of source names, representing all partitions that were processed to generate this o...</div><div class="ttdef"><b>Definition:</b> Mesh.h:185</div></div>
+<div class="ttc" id="a_mesh_8h_html_aa1fa294260f159ae030e6bb7ecac3490"><div class="ttname"><a href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a></div><div class="ttdeci">shared_ptr&lt; class MeshPartition &gt; MeshPartitionPtr</div><div class="ttdoc">Shared pointer to a mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:138</div></div>
 <div class="ttc" id="a_material_x_render_2_export_8h_html"><div class="ttname"><a href="_material_x_render_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
-<div class="ttc" id="aclass_mesh_html_a8268dcea80c70561d6a2bfed77e37246"><div class="ttname"><a href="class_mesh.html#a8268dcea80c70561d6a2bfed77e37246">Mesh::getSphereRadius</a></div><div class="ttdeci">float getSphereRadius() const</div><div class="ttdoc">Return radius of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:370</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_ae5be6f197f39c924060187c4e3fa88ea"><div class="ttname"><a href="class_mesh_stream.html#ae5be6f197f39c924060187c4e3fa88ea">MeshStream::getData</a></div><div class="ttdeci">const MeshFloatBuffer &amp; getData() const</div><div class="ttdoc">Return the raw float vector.</div><div class="ttdef"><b>Definition:</b> Mesh.h:92</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_add64e59aa55af0e414d2b5b856e711cd"><div class="ttname"><a href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">MeshStream::create</a></div><div class="ttdeci">static MeshStreamPtr create(const string &amp;name, const string &amp;type, unsigned int index=0)</div><div class="ttdoc">Create a new mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:56</div></div>
-<div class="ttc" id="aclass_mesh_html_a5781e47dddf47e1894b4ced494ca803b"><div class="ttname"><a href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">Mesh::getStream</a></div><div class="ttdeci">MeshStreamPtr getStream(const string &amp;name) const</div><div class="ttdoc">Get a mesh stream by name.</div><div class="ttdef"><b>Definition:</b> Mesh.h:270</div></div>
-<div class="ttc" id="aclass_mesh_html_a24a4e01af898769244e11a4f94ca8fd0"><div class="ttname"><a href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">Mesh::getVertexCount</a></div><div class="ttdeci">size_t getVertexCount() const</div><div class="ttdoc">Get vertex count.</div><div class="ttdef"><b>Definition:</b> Mesh.h:322</div></div>
-<div class="ttc" id="aclass_mesh_html_a0a3c0ea6a9dab6e7372e47f8a470c65f"><div class="ttname"><a href="class_mesh.html#a0a3c0ea6a9dab6e7372e47f8a470c65f">Mesh::getMaximumBounds</a></div><div class="ttdeci">const Vector3 &amp; getMaximumBounds() const</div><div class="ttdoc">Return the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:346</div></div>
-<div class="ttc" id="a_mesh_8h_html_a979acf17f65d96ab20ef8e9a6ee66a5c"><div class="ttname"><a href="_mesh_8h.html#a979acf17f65d96ab20ef8e9a6ee66a5c">MeshMap</a></div><div class="ttdeci">std::unordered_map&lt; string, MeshPtr &gt; MeshMap</div><div class="ttdoc">Map from names to meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.h:227</div></div>
+<div class="ttc" id="aclass_mesh_html_a8268dcea80c70561d6a2bfed77e37246"><div class="ttname"><a href="class_mesh.html#a8268dcea80c70561d6a2bfed77e37246">Mesh::getSphereRadius</a></div><div class="ttdeci">float getSphereRadius() const</div><div class="ttdoc">Return radius of the bounding sphere.</div><div class="ttdef"><b>Definition:</b> Mesh.h:371</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_ae5be6f197f39c924060187c4e3fa88ea"><div class="ttname"><a href="class_mesh_stream.html#ae5be6f197f39c924060187c4e3fa88ea">MeshStream::getData</a></div><div class="ttdeci">const MeshFloatBuffer &amp; getData() const</div><div class="ttdoc">Return the raw float vector.</div><div class="ttdef"><b>Definition:</b> Mesh.h:93</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_add64e59aa55af0e414d2b5b856e711cd"><div class="ttname"><a href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">MeshStream::create</a></div><div class="ttdeci">static MeshStreamPtr create(const string &amp;name, const string &amp;type, unsigned int index=0)</div><div class="ttdoc">Create a new mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:57</div></div>
+<div class="ttc" id="aclass_mesh_html_a5781e47dddf47e1894b4ced494ca803b"><div class="ttname"><a href="class_mesh.html#a5781e47dddf47e1894b4ced494ca803b">Mesh::getStream</a></div><div class="ttdeci">MeshStreamPtr getStream(const string &amp;name) const</div><div class="ttdoc">Get a mesh stream by name.</div><div class="ttdef"><b>Definition:</b> Mesh.h:271</div></div>
+<div class="ttc" id="aclass_mesh_html_a24a4e01af898769244e11a4f94ca8fd0"><div class="ttname"><a href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">Mesh::getVertexCount</a></div><div class="ttdeci">size_t getVertexCount() const</div><div class="ttdoc">Get vertex count.</div><div class="ttdef"><b>Definition:</b> Mesh.h:323</div></div>
+<div class="ttc" id="aclass_mesh_html_a0a3c0ea6a9dab6e7372e47f8a470c65f"><div class="ttname"><a href="class_mesh.html#a0a3c0ea6a9dab6e7372e47f8a470c65f">Mesh::getMaximumBounds</a></div><div class="ttdeci">const Vector3 &amp; getMaximumBounds() const</div><div class="ttdoc">Return the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:347</div></div>
+<div class="ttc" id="a_mesh_8h_html_a979acf17f65d96ab20ef8e9a6ee66a5c"><div class="ttname"><a href="_mesh_8h.html#a979acf17f65d96ab20ef8e9a6ee66a5c">MeshMap</a></div><div class="ttdeci">std::unordered_map&lt; string, MeshPtr &gt; MeshMap</div><div class="ttdoc">Map from names to meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.h:228</div></div>
 <div class="ttc" id="a_mesh_8h_html_a1b8b5809d7094de22d1b8ac46a729153"><div class="ttname"><a href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a></div><div class="ttdeci">shared_ptr&lt; class MeshStream &gt; MeshStreamPtr</div><div class="ttdoc">Shared pointer to a mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:23</div></div>
 <div class="ttc" id="a_mesh_8h_html_ab8b3cbd1e72964e757dd71a5342afb61"><div class="ttname"><a href="_mesh_8h.html#ab8b3cbd1e72964e757dd71a5342afb61">MeshIndexBuffer</a></div><div class="ttdeci">vector&lt; uint32_t &gt; MeshIndexBuffer</div><div class="ttdoc">Geometry index buffer.</div><div class="ttdef"><b>Definition:</b> Mesh.h:18</div></div>
-<div class="ttc" id="aclass_mesh_html_a4bcd6582bf323ea1458486a3729b45a7"><div class="ttname"><a href="class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7">Mesh::addPartition</a></div><div class="ttdeci">void addPartition(MeshPartitionPtr partition)</div><div class="ttdoc">Add a partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:382</div></div>
+<div class="ttc" id="aclass_mesh_html_a4bcd6582bf323ea1458486a3729b45a7"><div class="ttname"><a href="class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7">Mesh::addPartition</a></div><div class="ttdeci">void addPartition(MeshPartitionPtr partition)</div><div class="ttdoc">Add a partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:383</div></div>
 <div class="ttc" id="a_material_x_core_2_types_8h_html"><div class="ttname"><a href="_material_x_core_2_types_8h.html">Types.h</a></div><div class="ttdoc">Data type classes.</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_a9392c0e113aa087d7f730c7edb1096cd"><div class="ttname"><a href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">MeshPartition::setFaceCount</a></div><div class="ttdeci">void setFaceCount(size_t val)</div><div class="ttdoc">Set face count.</div><div class="ttdef"><b>Definition:</b> Mesh.h:208</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_a9392c0e113aa087d7f730c7edb1096cd"><div class="ttname"><a href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">MeshPartition::setFaceCount</a></div><div class="ttdeci">void setFaceCount(size_t val)</div><div class="ttdoc">Set face count.</div><div class="ttdef"><b>Definition:</b> Mesh.h:209</div></div>
 <div class="ttc" id="aclass_mesh_stream_html"><div class="ttname"><a href="class_mesh_stream.html">MeshStream</a></div><div class="ttdoc">Class to represent a mesh data stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:31</div></div>
-<div class="ttc" id="aclass_mesh_html_a1623f4bcd587a6c2cc681bc7c5648113"><div class="ttname"><a href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">Mesh::setMinimumBounds</a></div><div class="ttdeci">void setMinimumBounds(const Vector3 &amp;val)</div><div class="ttdoc">Set the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:328</div></div>
-<div class="ttc" id="aclass_mesh_html_a0a59954b402882e839278d2f546349fa"><div class="ttname"><a href="class_mesh.html#a0a59954b402882e839278d2f546349fa">Mesh::create</a></div><div class="ttdeci">static MeshPtr create(const string &amp;name)</div><div class="ttdoc">Create a new mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:238</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_acd181e4ec276ec4fa154e131f70ea85b"><div class="ttname"><a href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">MeshPartition::create</a></div><div class="ttdeci">static MeshPartitionPtr create()</div><div class="ttdoc">Create a new mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:152</div></div>
-<div class="ttc" id="aclass_mesh_html_a94f4abe9fa5ea3cb8c279a4accf3a46a"><div class="ttname"><a href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">Mesh::setMaximumBounds</a></div><div class="ttdeci">void setMaximumBounds(const Vector3 &amp;v)</div><div class="ttdoc">Set the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:340</div></div>
-<div class="ttc" id="aclass_mesh_html_aef46b1e7ee01394390dea79b8c975f67"><div class="ttname"><a href="class_mesh.html#aef46b1e7ee01394390dea79b8c975f67">Mesh::setSourceUri</a></div><div class="ttdeci">void setSourceUri(const string &amp;sourceUri)</div><div class="ttdoc">Set the mesh's source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:250</div></div>
-<div class="ttc" id="aclass_mesh_partition_html"><div class="ttname"><a href="class_mesh_partition.html">MeshPartition</a></div><div class="ttdoc">Class that describes a sub-region of a mesh using vertex indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:143</div></div>
-<div class="ttc" id="aclass_mesh_html_a8d1a7084327c5a431308ed435d4daefb"><div class="ttname"><a href="class_mesh.html#a8d1a7084327c5a431308ed435d4daefb">Mesh::getMinimumBounds</a></div><div class="ttdeci">const Vector3 &amp; getMinimumBounds() const</div><div class="ttdoc">Return the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:334</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_a46f1d2f034c2da3381919644638e6431"><div class="ttname"><a href="class_mesh_stream.html#a46f1d2f034c2da3381919644638e6431">MeshStream::getType</a></div><div class="ttdeci">const string &amp; getType() const</div><div class="ttdoc">Get stream attribute name.</div><div class="ttdef"><b>Definition:</b> Mesh.h:74</div></div>
-<div class="ttc" id="a_mesh_8h_html_a7297ea58d827e292178a77980cc7d262"><div class="ttname"><a href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a></div><div class="ttdeci">vector&lt; MeshPtr &gt; MeshList</div><div class="ttdoc">List of meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.h:224</div></div>
-<div class="ttc" id="aclass_mesh_html_ad3cfda2c97894481c3512217eefc0519"><div class="ttname"><a href="class_mesh.html#ad3cfda2c97894481c3512217eefc0519">Mesh::removeStream</a></div><div class="ttdeci">void removeStream(MeshStreamPtr stream)</div><div class="ttdoc">Remove a mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:306</div></div>
-<div class="ttc" id="aclass_mesh_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh.html#a3f243e0db82d28663cf78eddb22e3d8f">Mesh::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:244</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_af2960d3af5374392230c909fea3a38f1"><div class="ttname"><a href="class_mesh_partition.html#af2960d3af5374392230c909fea3a38f1">MeshPartition::setName</a></div><div class="ttdeci">void setName(const string &amp;val)</div><div class="ttdoc">Set the name of this partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:164</div></div>
-<div class="ttc" id="aclass_mesh_partition_html_abfe738ca1feadbb86e512cc7ea69b93b"><div class="ttname"><a href="class_mesh_partition.html#abfe738ca1feadbb86e512cc7ea69b93b">MeshPartition::getIndices</a></div><div class="ttdeci">const MeshIndexBuffer &amp; getIndices() const</div><div class="ttdoc">Return indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:196</div></div>
+<div class="ttc" id="aclass_mesh_html_a1623f4bcd587a6c2cc681bc7c5648113"><div class="ttname"><a href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">Mesh::setMinimumBounds</a></div><div class="ttdeci">void setMinimumBounds(const Vector3 &amp;val)</div><div class="ttdoc">Set the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:329</div></div>
+<div class="ttc" id="aclass_mesh_html_a0a59954b402882e839278d2f546349fa"><div class="ttname"><a href="class_mesh.html#a0a59954b402882e839278d2f546349fa">Mesh::create</a></div><div class="ttdeci">static MeshPtr create(const string &amp;name)</div><div class="ttdoc">Create a new mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:239</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_acd181e4ec276ec4fa154e131f70ea85b"><div class="ttname"><a href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">MeshPartition::create</a></div><div class="ttdeci">static MeshPartitionPtr create()</div><div class="ttdoc">Create a new mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:153</div></div>
+<div class="ttc" id="aclass_mesh_html_a94f4abe9fa5ea3cb8c279a4accf3a46a"><div class="ttname"><a href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">Mesh::setMaximumBounds</a></div><div class="ttdeci">void setMaximumBounds(const Vector3 &amp;v)</div><div class="ttdoc">Set the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:341</div></div>
+<div class="ttc" id="aclass_mesh_html_aef46b1e7ee01394390dea79b8c975f67"><div class="ttname"><a href="class_mesh.html#aef46b1e7ee01394390dea79b8c975f67">Mesh::setSourceUri</a></div><div class="ttdeci">void setSourceUri(const string &amp;sourceUri)</div><div class="ttdoc">Set the mesh's source URI.</div><div class="ttdef"><b>Definition:</b> Mesh.h:251</div></div>
+<div class="ttc" id="aclass_mesh_partition_html"><div class="ttname"><a href="class_mesh_partition.html">MeshPartition</a></div><div class="ttdoc">Class that describes a sub-region of a mesh using vertex indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:144</div></div>
+<div class="ttc" id="aclass_mesh_html_a8d1a7084327c5a431308ed435d4daefb"><div class="ttname"><a href="class_mesh.html#a8d1a7084327c5a431308ed435d4daefb">Mesh::getMinimumBounds</a></div><div class="ttdeci">const Vector3 &amp; getMinimumBounds() const</div><div class="ttdoc">Return the minimum bounds for the geometry.</div><div class="ttdef"><b>Definition:</b> Mesh.h:335</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_a46f1d2f034c2da3381919644638e6431"><div class="ttname"><a href="class_mesh_stream.html#a46f1d2f034c2da3381919644638e6431">MeshStream::getType</a></div><div class="ttdeci">const string &amp; getType() const</div><div class="ttdoc">Get stream attribute name.</div><div class="ttdef"><b>Definition:</b> Mesh.h:75</div></div>
+<div class="ttc" id="a_mesh_8h_html_a7297ea58d827e292178a77980cc7d262"><div class="ttname"><a href="_mesh_8h.html#a7297ea58d827e292178a77980cc7d262">MeshList</a></div><div class="ttdeci">vector&lt; MeshPtr &gt; MeshList</div><div class="ttdoc">List of meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.h:225</div></div>
+<div class="ttc" id="aclass_mesh_html_ad3cfda2c97894481c3512217eefc0519"><div class="ttname"><a href="class_mesh.html#ad3cfda2c97894481c3512217eefc0519">Mesh::removeStream</a></div><div class="ttdeci">void removeStream(MeshStreamPtr stream)</div><div class="ttdoc">Remove a mesh stream.</div><div class="ttdef"><b>Definition:</b> Mesh.h:307</div></div>
+<div class="ttc" id="aclass_mesh_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_mesh.html#a3f243e0db82d28663cf78eddb22e3d8f">Mesh::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:245</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_af2960d3af5374392230c909fea3a38f1"><div class="ttname"><a href="class_mesh_partition.html#af2960d3af5374392230c909fea3a38f1">MeshPartition::setName</a></div><div class="ttdeci">void setName(const string &amp;val)</div><div class="ttdoc">Set the name of this partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:165</div></div>
+<div class="ttc" id="aclass_mesh_partition_html_abfe738ca1feadbb86e512cc7ea69b93b"><div class="ttname"><a href="class_mesh_partition.html#abfe738ca1feadbb86e512cc7ea69b93b">MeshPartition::getIndices</a></div><div class="ttdeci">const MeshIndexBuffer &amp; getIndices() const</div><div class="ttdoc">Return indexing.</div><div class="ttdef"><b>Definition:</b> Mesh.h:197</div></div>
 <div class="ttc" id="a_mesh_8h_html_a60f48b3bc31035b278ebaf1bf03a7562"><div class="ttname"><a href="_mesh_8h.html#a60f48b3bc31035b278ebaf1bf03a7562">MeshFloatBuffer</a></div><div class="ttdeci">vector&lt; float &gt; MeshFloatBuffer</div><div class="ttdoc">Float geometry buffer.</div><div class="ttdef"><b>Definition:</b> Mesh.h:20</div></div>
-<div class="ttc" id="aclass_mesh_html_ac9500bae136b73f920baebcf66a49c8f"><div class="ttname"><a href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">Mesh::getStream</a></div><div class="ttdeci">MeshStreamPtr getStream(const string &amp;type, unsigned int index) const</div><div class="ttdoc">Get a mesh stream by type and index.</div><div class="ttdef"><b>Definition:</b> Mesh.h:286</div></div>
-<div class="ttc" id="aclass_mesh_stream_html_a762de91e7869ca544ff034b99fc2e0a6"><div class="ttname"><a href="class_mesh_stream.html#a762de91e7869ca544ff034b99fc2e0a6">MeshStream::getIndex</a></div><div class="ttdeci">unsigned int getIndex() const</div><div class="ttdoc">Get stream index.</div><div class="ttdef"><b>Definition:</b> Mesh.h:80</div></div>
-<div class="ttc" id="aclass_mesh_html_aff307fa888fce4f40d537e8cc939a746"><div class="ttname"><a href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">Mesh::getPartitionCount</a></div><div class="ttdeci">size_t getPartitionCount() const</div><div class="ttdoc">Return the number of mesh partitions.</div><div class="ttdef"><b>Definition:</b> Mesh.h:376</div></div>
+<div class="ttc" id="aclass_mesh_html_ac9500bae136b73f920baebcf66a49c8f"><div class="ttname"><a href="class_mesh.html#ac9500bae136b73f920baebcf66a49c8f">Mesh::getStream</a></div><div class="ttdeci">MeshStreamPtr getStream(const string &amp;type, unsigned int index) const</div><div class="ttdoc">Get a mesh stream by type and index.</div><div class="ttdef"><b>Definition:</b> Mesh.h:287</div></div>
+<div class="ttc" id="aclass_mesh_stream_html_a762de91e7869ca544ff034b99fc2e0a6"><div class="ttname"><a href="class_mesh_stream.html#a762de91e7869ca544ff034b99fc2e0a6">MeshStream::getIndex</a></div><div class="ttdeci">unsigned int getIndex() const</div><div class="ttdoc">Get stream index.</div><div class="ttdef"><b>Definition:</b> Mesh.h:81</div></div>
+<div class="ttc" id="aclass_mesh_html_aff307fa888fce4f40d537e8cc939a746"><div class="ttname"><a href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">Mesh::getPartitionCount</a></div><div class="ttdeci">size_t getPartitionCount() const</div><div class="ttdoc">Return the number of mesh partitions.</div><div class="ttdef"><b>Definition:</b> Mesh.h:377</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

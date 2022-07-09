@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -144,6 +144,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_port_element.html#a15367c4567699b6d53c203bd19dea964">hasOutputString</a> () const</td></tr>
 <tr class="memdesc:a15367c4567699b6d53c203bd19dea964 inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this element has an output string. <br /></td></tr>
 <tr class="separator:a15367c4567699b6d53c203bd19dea964 inherit pub_methods_class_port_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9187d2363cb6e7690613fafb11624bc inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_port_element.html#aa9187d2363cb6e7690613fafb11624bc">setConnectedOutput</a> (<a class="el" href="_interface_8h.html#a1aeb143693a07b6c94c42c9c8caf4564">ConstOutputPtr</a> output)</td></tr>
+<tr class="memdesc:aa9187d2363cb6e7690613fafb11624bc inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output to which this input is connected.  <a href="class_port_element.html#aa9187d2363cb6e7690613fafb11624bc">More...</a><br /></td></tr>
+<tr class="separator:aa9187d2363cb6e7690613fafb11624bc inherit pub_methods_class_port_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f3f2d759cb17ee4092d3e6c9b07c70 inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top"><a id="ae9f3f2d759cb17ee4092d3e6c9b07c70"></a>
+virtual <a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_port_element.html#ae9f3f2d759cb17ee4092d3e6c9b07c70">getConnectedOutput</a> () const</td></tr>
+<tr class="memdesc:ae9f3f2d759cb17ee4092d3e6c9b07c70 inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output, if any, to which this input is connected. <br /></td></tr>
+<tr class="separator:ae9f3f2d759cb17ee4092d3e6c9b07c70 inherit pub_methods_class_port_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a5f5c087016a9cc79bcf0d8f7cfd34 inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top"><a id="a27a5f5c087016a9cc79bcf0d8f7cfd34"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_port_element.html#a27a5f5c087016a9cc79bcf0d8f7cfd34">getOutputString</a> () const</td></tr>
 <tr class="memdesc:a27a5f5c087016a9cc79bcf0d8f7cfd34 inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output string of this element. <br /></td></tr>
@@ -730,9 +737,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstDocumentPtr</b>
 <tr class="memitem:aa348c688347a0c3c94e98b01ae69bac4 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="aa348c688347a0c3c94e98b01ae69bac4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Element</b> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> parent, const string &amp;category, const string &amp;name)</td></tr>
 <tr class="separator:aa348c688347a0c3c94e98b01ae69bac4 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0305ce9b97a5b1583997e2c104bb5c68 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a0305ce9b97a5b1583997e2c104bb5c68"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>validateRequire</b> (bool expression, bool &amp;res, string *message, string errorDesc) const</td></tr>
-<tr class="separator:a0305ce9b97a5b1583997e2c104bb5c68 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29be0f37e94f5769a47c58b6d89e7cf inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="ab29be0f37e94f5769a47c58b6d89e7cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>validateRequire</b> (bool expression, bool &amp;res, string *message, const string &amp;errorDesc) const</td></tr>
+<tr class="separator:ab29be0f37e94f5769a47c58b6d89e7cf inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab674cf7e59de530547a42177824f0388 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="ab674cf7e59de530547a42177824f0388"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>registerChildElement</b> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> child)</td></tr>
 <tr class="separator:ab674cf7e59de530547a42177824f0388 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>

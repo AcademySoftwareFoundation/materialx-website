@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['windowwrapper_1838',['WindowWrapper',['../class_window_wrapper.html',1,'']]]
+  ['windowwrapper_1870',['WindowWrapper',['../class_window_wrapper.html',1,'']]]
 ];

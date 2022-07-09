@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -88,15 +88,21 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> create();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; getMatrix(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; fromSpace, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; toSpace) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_transform_vector_node_glsl.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79">emitFunctionCall</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; getMatrix(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; fromSpace, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; toSpace) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_transform_vector_node_glsl_html_ac4f1d2a8bd6f81b7d7b2b58a3c7efa79"><div class="ttname"><a href="class_transform_vector_node_glsl.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79">TransformVectorNodeGlsl::emitFunctionCall</a></div><div class="ttdeci">void emitFunctionCall(const ShaderNode &amp;node, GenContext &amp;context, ShaderStage &amp;stage) const override</div><div class="ttdoc">Emit the function call or inline source code for given node instance in the given context.</div><div class="ttdef"><b>Definition:</b> TransformVectorNodeGlsl.cpp:33</div></div>
+<div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:28</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad155467af6091077f433b22feb6f2054"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderNodeImpl &gt; ShaderNodeImplPtr</div><div class="ttdoc">Shared pointer to a ShaderNodeImpl.</div><div class="ttdef"><b>Definition:</b> Library.h:40</div></div>
 <div class="ttc" id="aclass_transform_vector_node_glsl_html"><div class="ttname"><a href="class_transform_vector_node_glsl.html">TransformVectorNodeGlsl</a></div><div class="ttdoc">TransformVector node implementation for GLSL.</div><div class="ttdef"><b>Definition:</b> TransformVectorNodeGlsl.h:15</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:125</div></div>
+<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:324</div></div>
 <div class="ttc" id="aclass_transform_normal_node_glsl_html"><div class="ttname"><a href="class_transform_normal_node_glsl.html">TransformNormalNodeGlsl</a></div><div class="ttdoc">TransformNormal node implementation for GLSL.</div><div class="ttdef"><b>Definition:</b> TransformNormalNodeGlsl.h:15</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

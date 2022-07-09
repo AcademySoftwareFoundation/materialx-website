@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -85,9 +85,10 @@ Inheritance diagram for HwShaderGenerator:</div>
  <div class="center">
   <img src="class_hw_shader_generator.png" usemap="#HwShaderGenerator_map" alt=""/>
   <map id="HwShaderGenerator_map" name="HwShaderGenerator_map">
-<area href="class_shader_generator.html" title="Base class for shader generators All third-party shader generators should derive from this class." alt="ShaderGenerator" shape="rect" coords="0,0,133,24"/>
-<area href="class_glsl_shader_generator.html" title="Base class for GLSL (OpenGL Shading Language) code generation." alt="GlslShaderGenerator" shape="rect" coords="0,112,133,136"/>
+<area href="class_shader_generator.html" title="Base class for shader generators All third-party shader generators should derive from this class." alt="ShaderGenerator" shape="rect" coords="71,0,204,24"/>
+<area href="class_glsl_shader_generator.html" title="Base class for GLSL (OpenGL Shading Language) code generation." alt="GlslShaderGenerator" shape="rect" coords="71,112,204,136"/>
 <area href="class_essl_shader_generator.html" title="An ESSL (OpenGL ES Shading Language) shader generator" alt="EsslShaderGenerator" shape="rect" coords="0,168,133,192"/>
+<area href="class_vk_shader_generator.html" title="A Vulkan GLSL shader generator." alt="VkShaderGenerator" shape="rect" coords="143,168,276,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,14 +125,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#ab0bf95741f0a806c02f16f7cab73dd61">~ShaderGenerator</a> ()</td></tr>
 <tr class="memdesc:ab0bf95741f0a806c02f16f7cab73dd61 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:ab0bf95741f0a806c02f16f7cab73dd61 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388ea8a2394137fe449fd74e10b1ca87 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="a388ea8a2394137fe449fd74e10b1ca87"></a>
-virtual const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a388ea8a2394137fe449fd74e10b1ca87">getTarget</a> () const =0</td></tr>
-<tr class="memdesc:a388ea8a2394137fe449fd74e10b1ca87 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the target this generator is for. <br /></td></tr>
-<tr class="separator:a388ea8a2394137fe449fd74e10b1ca87 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb322a19250e851ca2d47eac1148850b inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="acb322a19250e851ca2d47eac1148850b"></a>
-virtual <a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#acb322a19250e851ca2d47eac1148850b">generate</a> (const string &amp;name, <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> element, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const =0</td></tr>
-<tr class="memdesc:acb322a19250e851ca2d47eac1148850b inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a shader starting from the given element, translating the element and all dependencies upstream into shader code. <br /></td></tr>
-<tr class="separator:acb322a19250e851ca2d47eac1148850b inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6b259212ab43ac5298cc8e687f86f4 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="abd6b259212ab43ac5298cc8e687f86f4"></a>
+virtual const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#abd6b259212ab43ac5298cc8e687f86f4">getTarget</a> () const</td></tr>
+<tr class="memdesc:abd6b259212ab43ac5298cc8e687f86f4 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the target this generator is for. <br /></td></tr>
+<tr class="separator:abd6b259212ab43ac5298cc8e687f86f4 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb80d56ca28c16103bcb569527857196 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="afb80d56ca28c16103bcb569527857196"></a>
+virtual <a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#afb80d56ca28c16103bcb569527857196">generate</a> (const string &amp;, <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>, <a class="el" href="class_gen_context.html">GenContext</a> &amp;) const</td></tr>
+<tr class="memdesc:afb80d56ca28c16103bcb569527857196 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a shader starting from the given element, translating the element and all dependencies upstream into shader code. <br /></td></tr>
+<tr class="separator:afb80d56ca28c16103bcb569527857196 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59b9ace67a32ac970293421a836e265 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="ad59b9ace67a32ac970293421a836e265"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#ad59b9ace67a32ac970293421a836e265">emitScopeBegin</a> (<a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, <a class="el" href="class_syntax.html#a8872c37f73c22239ccc7d871da2a4f8b">Syntax::Punctuation</a> punc=Syntax::CURLY_BRACKETS) const</td></tr>
 <tr class="memdesc:ad59b9ace67a32ac970293421a836e265 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a new scope using the given bracket type. <br /></td></tr>
@@ -164,13 +165,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a34039e7fa7b845d9244b11b5c2edc560">emitComment</a> (const string &amp;str, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
 <tr class="memdesc:a34039e7fa7b845d9244b11b5c2edc560 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a single line code comment. <br /></td></tr>
 <tr class="separator:a34039e7fa7b845d9244b11b5c2edc560 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af259c39f440881df62ecdc9b2f8f49d3 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="af259c39f440881df62ecdc9b2f8f49d3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#af259c39f440881df62ecdc9b2f8f49d3">emitBlock</a> (const string &amp;str, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
-<tr class="memdesc:af259c39f440881df62ecdc9b2f8f49d3 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a block of code. <br /></td></tr>
-<tr class="separator:af259c39f440881df62ecdc9b2f8f49d3 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03159e5889c2e1c01469ae82c4558db7 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a03159e5889c2e1c01469ae82c4558db7">emitInclude</a> (const string &amp;file, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
-<tr class="memdesc:a03159e5889c2e1c01469ae82c4558db7 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the contents of an include file.  <a href="class_shader_generator.html#a03159e5889c2e1c01469ae82c4558db7">More...</a><br /></td></tr>
-<tr class="separator:a03159e5889c2e1c01469ae82c4558db7 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a53a6134a063dd3c4cc077412d5f5b8 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="a5a53a6134a063dd3c4cc077412d5f5b8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a5a53a6134a063dd3c4cc077412d5f5b8">emitBlock</a> (const string &amp;str, const <a class="el" href="class_file_path.html">FilePath</a> &amp;sourceFilename, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
+<tr class="memdesc:a5a53a6134a063dd3c4cc077412d5f5b8 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a block of code. <br /></td></tr>
+<tr class="separator:a5a53a6134a063dd3c4cc077412d5f5b8 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53adb1097cdea7d6265b9ee357478ff inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#af53adb1097cdea7d6265b9ee357478ff">emitLibraryInclude</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filename, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
+<tr class="memdesc:af53adb1097cdea7d6265b9ee357478ff inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the contents of a standard library include file if not already present.  <a href="class_shader_generator.html#af53adb1097cdea7d6265b9ee357478ff">More...</a><br /></td></tr>
+<tr class="separator:af53adb1097cdea7d6265b9ee357478ff inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f60f77ac4e1fb481fd39778eb255eb7 inherit pub_methods_class_shader_generator"><td class="memTemplParams" colspan="2"><a id="a5f60f77ac4e1fb481fd39778eb255eb7"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5f60f77ac4e1fb481fd39778eb255eb7 inherit pub_methods_class_shader_generator"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a5f60f77ac4e1fb481fd39778eb255eb7">emitValue</a> (const T &amp;value, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>

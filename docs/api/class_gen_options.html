@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#a9571ff8d856076771bbe77c8af0177fe">addUpstreamDependencies</a></td></tr>
 <tr class="memdesc:a9571ff8d856076771bbe77c8af0177fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to include upstream dependencies for the element to generate a shader for. <br /></td></tr>
 <tr class="separator:a9571ff8d856076771bbe77c8af0177fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:added87e0a84aadf53c89317387c813ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#added87e0a84aadf53c89317387c813ac">libraryPrefix</a></td></tr>
+<tr class="memdesc:added87e0a84aadf53c89317387c813ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard library prefix, which will be applied to calls to emitLibraryInclude during code generation.  <a href="class_gen_options.html#added87e0a84aadf53c89317387c813ac">More...</a><br /></td></tr>
+<tr class="separator:added87e0a84aadf53c89317387c813ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9208729291bf20f854ef3d54f656b81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#aa9208729291bf20f854ef3d54f656b81">hwTransparency</a></td></tr>
 <tr class="memdesc:aa9208729291bf20f854ef3d54f656b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if transparency is needed or not for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shaders.  <a href="class_gen_options.html#aa9208729291bf20f854ef3d54f656b81">More...</a><br /></td></tr>
 <tr class="separator:aa9208729291bf20f854ef3d54f656b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,6 +108,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="_gen_options_8h.html#a2208b033c82de7580a5b87394810ea10">HwDirectionalAlbedoMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#aae62d2e2770b6880fd1801e5e07fcc11">hwDirectionalAlbedoMethod</a></td></tr>
 <tr class="memdesc:aae62d2e2770b6880fd1801e5e07fcc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the method to use for directional albedo evaluation for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets. <br /></td></tr>
 <tr class="separator:aae62d2e2770b6880fd1801e5e07fcc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c33039ae27c11415c55e87c4b16fd64"><td class="memItemLeft" align="right" valign="top"><a id="a8c33039ae27c11415c55e87c4b16fd64"></a>
+<a class="el" href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34">HwTransmissionRenderMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#a8c33039ae27c11415c55e87c4b16fd64">hwTransmissionRenderMethod</a></td></tr>
+<tr class="memdesc:a8c33039ae27c11415c55e87c4b16fd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the method to use for transmission rendering for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets. <br /></td></tr>
+<tr class="separator:a8c33039ae27c11415c55e87c4b16fd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cdafef42f84b8fa82cff70cfa59e06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06">hwWriteDepthMoments</a></td></tr>
 <tr class="memdesc:ac4cdafef42f84b8fa82cff70cfa59e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the writing of depth moments for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets.  <a href="class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06">More...</a><br /></td></tr>
 <tr class="separator:ac4cdafef42f84b8fa82cff70cfa59e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +271,23 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Enables the writing of depth moments for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets. </p>
 <p>Defaults to false. </p>
+
+</div>
+</div>
+<a id="added87e0a84aadf53c89317387c813ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#added87e0a84aadf53c89317387c813ac">&#9670;&nbsp;</a></span>libraryPrefix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_file_path.html">FilePath</a> libraryPrefix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The standard library prefix, which will be applied to calls to emitLibraryInclude during code generation. </p>
+<p>Defaults to "libraries". </p>
 
 </div>
 </div>

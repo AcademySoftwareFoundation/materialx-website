@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,18 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a03884a644102bd7030332efb0540aa46"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_shader_graph.html">ShaderGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node.html#a03884a644102bd7030332efb0540aa46">getParent</a> () const</td></tr>
 <tr class="memdesc:a03884a644102bd7030332efb0540aa46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the parent graph that owns this node.  <a href="class_shader_node.html#a03884a644102bd7030332efb0540aa46">More...</a><br /></td></tr>
 <tr class="separator:a03884a644102bd7030332efb0540aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff2b296bfd256f979797f81b500f390"><td class="memItemLeft" align="right" valign="top"><a id="aaff2b296bfd256f979797f81b500f390"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node.html#aaff2b296bfd256f979797f81b500f390">setClassification</a> (uint32_t c)</td></tr>
+<tr class="memdesc:aaff2b296bfd256f979797f81b500f390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set classification bits for this node, replacing any previous set bits. <br /></td></tr>
+<tr class="separator:aaff2b296bfd256f979797f81b500f390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3c8bdc0a8e965b7f31dc8e3054f2e1"><td class="memItemLeft" align="right" valign="top"><a id="aad3c8bdc0a8e965b7f31dc8e3054f2e1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node.html#aad3c8bdc0a8e965b7f31dc8e3054f2e1">getClassification</a> () const</td></tr>
+<tr class="memdesc:aad3c8bdc0a8e965b7f31dc8e3054f2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get classification bits set for this node. <br /></td></tr>
+<tr class="separator:aad3c8bdc0a8e965b7f31dc8e3054f2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b10edf8a4431c569dab0029b9889222"><td class="memItemLeft" align="right" valign="top"><a id="a5b10edf8a4431c569dab0029b9889222"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node.html#a5b10edf8a4431c569dab0029b9889222">addClassification</a> (uint32_t c)</td></tr>
+<tr class="memdesc:a5b10edf8a4431c569dab0029b9889222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add classification bits to this node. <br /></td></tr>
+<tr class="separator:a5b10edf8a4431c569dab0029b9889222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a33e8d9e0f2e1376740c5874ab7bfae"><td class="memItemLeft" align="right" valign="top"><a id="a5a33e8d9e0f2e1376740c5874ab7bfae"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node.html#a5a33e8d9e0f2e1376740c5874ab7bfae">hasClassification</a> (uint32_t c) const</td></tr>
 <tr class="memdesc:a5a33e8d9e0f2e1376740c5874ab7bfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this node matches the given classification. <br /></td></tr>
@@ -234,6 +246,9 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COMPAR
 <tr class="memitem:af9eb9cd3971339fd0f7c0a45631213b4"><td class="memItemLeft" align="right" valign="top"><a id="af9eb9cd3971339fd0f7c0a45631213b4"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SWITCH</b> = &quot;switch&quot;</td></tr>
 <tr class="separator:af9eb9cd3971339fd0f7c0a45631213b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83291bb4e5939eb0de30e62797098c32"><td class="memItemLeft" align="right" valign="top"><a id="a83291bb4e5939eb0de30e62797098c32"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SURFACESHADER</b> = &quot;surfaceshader&quot;</td></tr>
+<tr class="separator:a83291bb4e5939eb0de30e62797098c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d966324be1c616395f2a4c5abef8b25"><td class="memItemLeft" align="right" valign="top"><a id="a6d966324be1c616395f2a4c5abef8b25"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SCATTER_MODE</b> = &quot;scatter_mode&quot;</td></tr>
 <tr class="separator:a6d966324be1c616395f2a4c5abef8b25"><td class="memSeparator" colspan="2">&#160;</td></tr>

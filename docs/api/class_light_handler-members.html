@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -78,6 +78,8 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_lightIdMap</b> (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>_lightSources</b> (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_lightTransform</b> (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>_refractionColor</b> (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_refractionEnv</b> (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_light_handler.html#aa43f40c8ff2b26c17797a7de19909a0e">addLightSource</a>(NodePtr node)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#a21e4a09ad3436cb5784563363052989f">computeLightIdMap</a>(const vector&lt; NodePtr &gt; &amp;nodes)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">create</a>()</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
@@ -92,6 +94,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#ae7688623ac9ac75eff1e7138dcd12a12">getLightIdMap</a>() const</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_light_handler.html#a8216293377e5ee5e596049276b663c5b">getLightSources</a>() const</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">getLightTransform</a>() const</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_light_handler.html#a2226244837d6872550b51aa4d37ee3de">getRefractionColor</a>() const</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#a6b99f45e74b4257797e77598c8b1edbb">getRefractionEnv</a>() const</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>LightHandler</b>() (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#a76b3067128b46043cf202c5b13e53e4e">registerLights</a>(DocumentPtr doc, const vector&lt; NodePtr &gt; &amp;lights, GenContext &amp;context)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">setAlbedoTable</a>(ImagePtr table)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -102,6 +106,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">setIndirectLighting</a>(bool enable)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">setLightSources</a>(const vector&lt; NodePtr &gt; &amp;lights)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">setLightTransform</a>(const Matrix44 &amp;mat)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_light_handler.html#ac5f1717ab8529108ab4a3d7e41f7b0c3">setRefractionColor</a>(const Color3 &amp;color)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_light_handler.html#ad8f0261d960ea166327ed7c353d7a9a1">setRefractionEnv</a>(bool enable)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~LightHandler</b>() (defined in <a class="el" href="class_light_handler.html">LightHandler</a>)</td><td class="entry"><a class="el" href="class_light_handler.html">LightHandler</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->

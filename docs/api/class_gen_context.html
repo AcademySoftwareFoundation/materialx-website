@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -96,16 +96,16 @@ const <a class="el" href="class_gen_options.html">GenOptions</a> &amp;&#160;</td
 <tr class="separator:a14e400f3a66cfa3dacb0dc110ea241b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0173da6dfc475a565e6732c8dffc621d"><td class="memItemLeft" align="right" valign="top"><a id="a0173da6dfc475a565e6732c8dffc621d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">registerSourceCodeSearchPath</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;path)</td></tr>
-<tr class="memdesc:a0173da6dfc475a565e6732c8dffc621d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to the search path used for finding source code. <br /></td></tr>
+<tr class="memdesc:a0173da6dfc475a565e6732c8dffc621d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user search path for finding source code during code generation. <br /></td></tr>
 <tr class="separator:a0173da6dfc475a565e6732c8dffc621d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ca1ca82260906e351635a093040f16"><td class="memItemLeft" align="right" valign="top"><a id="ac6ca1ca82260906e351635a093040f16"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">registerSourceCodeSearchPath</a> (const <a class="el" href="class_file_search_path.html">FileSearchPath</a> &amp;path)</td></tr>
-<tr class="memdesc:ac6ca1ca82260906e351635a093040f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to the search path used for finding source code. <br /></td></tr>
+<tr class="memdesc:ac6ca1ca82260906e351635a093040f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user search path for finding source code during code generation. <br /></td></tr>
 <tr class="separator:ac6ca1ca82260906e351635a093040f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ac794bb28df2f0f4744de7e7b29388"><td class="memItemLeft" align="right" valign="top"><a id="ac0ac794bb28df2f0f4744de7e7b29388"></a>
-<a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_context.html#ac0ac794bb28df2f0f4744de7e7b29388">resolveSourceFile</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filename) const</td></tr>
-<tr class="memdesc:ac0ac794bb28df2f0f4744de7e7b29388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a file using the registered search paths. <br /></td></tr>
-<tr class="separator:ac0ac794bb28df2f0f4744de7e7b29388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd926e630abe9de5788394e28d1f37a"><td class="memItemLeft" align="right" valign="top"><a id="acfd926e630abe9de5788394e28d1f37a"></a>
+<a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_context.html#acfd926e630abe9de5788394e28d1f37a">resolveSourceFile</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filename, const <a class="el" href="class_file_path.html">FilePath</a> &amp;localPath) const</td></tr>
+<tr class="memdesc:acfd926e630abe9de5788394e28d1f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a source code filename, first checking the given local path then checking any file paths registered by the user. <br /></td></tr>
+<tr class="separator:acfd926e630abe9de5788394e28d1f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a1d28323e6757bd065e2da2c1f53e6"><td class="memItemLeft" align="right" valign="top"><a id="ab9a1d28323e6757bd065e2da2c1f53e6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">addReservedWords</a> (const <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> &amp;names)</td></tr>
 <tr class="memdesc:ab9a1d28323e6757bd065e2da2c1f53e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add reserved words that should not be used as identifiers during code generation. <br /></td></tr>

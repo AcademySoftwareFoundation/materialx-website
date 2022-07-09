@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -100,6 +100,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_converter_registry.html#a62421bd0cad28af545de07f41af53431">write</a> (<a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc) const</td></tr>
 <tr class="memdesc:a62421bd0cad28af545de07f41af53431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create unit definitions in a document based on registered converters. <br /></td></tr>
 <tr class="separator:a62421bd0cad28af545de07f41af53431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11612b3292e8a4d07179edbabd74e65c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_converter_registry.html#a11612b3292e8a4d07179edbabd74e65c">convertToUnit</a> (<a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, const string &amp;unitType, const string &amp;targetUnit)</td></tr>
+<tr class="memdesc:a11612b3292e8a4d07179edbabd74e65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert input values which have a source unit to a given target unit.  <a href="class_unit_converter_registry.html#a11612b3292e8a4d07179edbabd74e65c">More...</a><br /></td></tr>
+<tr class="separator:a11612b3292e8a4d07179edbabd74e65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -139,6 +142,43 @@ static <a class="el" href="_unit_8h.html#aac52e041716fa557ef3367f8af734339">Unit
 
 <p>Add a unit converter for a given <a class="el" href="class_unit_def.html" title="A unit definition element within a Document.">UnitDef</a>. </p>
 <p>Returns false if a converter has already been registered for the given <a class="el" href="class_unit_def.html" title="A unit definition element within a Document.">UnitDef</a> </p>
+
+</div>
+</div>
+<a id="a11612b3292e8a4d07179edbabd74e65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11612b3292e8a4d07179edbabd74e65c">&#9670;&nbsp;</a></span>convertToUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool convertToUnit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a>&#160;</td>
+          <td class="paramname"><em>doc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>unitType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>targetUnit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert input values which have a source unit to a given target unit. </p>
+<p>Returns if any unit conversion occured. </p>
 
 </div>
 </div>
