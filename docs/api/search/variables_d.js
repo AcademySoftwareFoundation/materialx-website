@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['parentxincludes_3047',['parentXIncludes',['../class_xml_read_options.html#ae02631d093bb6f80f7bd63e9fa76d25b',1,'XmlReadOptions']]],
-  ['path_3048',['path',['../struct_glsl_program_1_1_input.html#a46c20eb2a26abeb1e934cd66e1dd6484',1,'GlslProgram::Input']]]
+  ['osl_5fclosure_5fcolor_5fstring_3099',['OSL_CLOSURE_COLOR_STRING',['../class_osl_renderer.html#a959d2c4e26b6e9624c912dc15d0af3f4',1,'OslRenderer']]]
 ];

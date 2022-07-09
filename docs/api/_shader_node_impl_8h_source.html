@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -115,59 +115,61 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setValues(<span class="keyword">const</span> <a class="code" href="class_node.html">Node</a>&amp; node, <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; shaderNode, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> createVariables(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader.html">Shader</a>&amp; shader) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitFunctionDefinition(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addClassification(<a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> createVariables(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader.html">Shader</a>&amp; shader) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitFunctionCall(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitFunctionDefinition(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitOutputVariables(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitFunctionCall(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_shader_graph.html">ShaderGraph</a>* getGraph() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">   88</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">isEditable</a>(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>&amp; <span class="comment">/*input*/</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">   97</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">isEditable</a>(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderGraphInputSocket</a>&amp; <span class="comment">/*input*/</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="class_shader_node_impl.html">ShaderNodeImpl</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">string</span> _name;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">size_t</span> _hash;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_nop_node.html">  112</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_nop_node.html">NopNode</a> : <span class="keyword">public</span> <a class="code" href="class_shader_node_impl.html">ShaderNodeImpl</a></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">static</span> <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> create();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitOutputVariables(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_shader_graph.html">ShaderGraph</a>* getGraph() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">   91</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">isEditable</a>(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>&amp; <span class="comment">/*input*/</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">  100</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">isEditable</a>(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderGraphInputSocket</a>&amp; <span class="comment">/*input*/</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="class_shader_node_impl.html">ShaderNodeImpl</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">string</span> _name;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">size_t</span> _hash;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_nop_node.html">  115</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_nop_node.html">NopNode</a> : <span class="keyword">public</span> <a class="code" href="class_shader_node_impl.html">ShaderNodeImpl</a></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">static</span> <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> create();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_shader_output_html"><div class="ttname"><a href="class_shader_output.html">ShaderOutput</a></div><div class="ttdoc">An output on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:299</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html"><div class="ttname"><a href="_material_x_core_2_util_8h.html">Util.h</a></div><div class="ttdoc">Utility methods.</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_abd6b259212ab43ac5298cc8e687f86f4"><div class="ttname"><a href="class_shader_node_impl.html#abd6b259212ab43ac5298cc8e687f86f4">ShaderNodeImpl::getTarget</a></div><div class="ttdeci">virtual const string &amp; getTarget() const</div><div class="ttdoc">Return an identifier for the target used by this implementation.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:39</div></div>
 <div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:262</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html"><div class="ttname"><a href="class_shader_node_impl.html">ShaderNodeImpl</a></div><div class="ttdoc">Class handling the shader generation implementation for a node.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:31</div></div>
-<div class="ttc" id="aclass_nop_node_html"><div class="ttname"><a href="class_nop_node.html">NopNode</a></div><div class="ttdoc">A no operation node, to be used for organizational nodes that has no code to execute.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:113</div></div>
+<div class="ttc" id="aclass_nop_node_html"><div class="ttname"><a href="class_nop_node.html">NopNode</a></div><div class="ttdoc">A no operation node, to be used for organizational nodes that has no code to execute.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:116</div></div>
 <div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">A node element within a NodeGraph or Document.</div><div class="ttdef"><b>Definition:</b> Node.h:53</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_export_8h_html"><div class="ttname"><a href="_material_x_gen_shader_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:28</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_a3f243e0db82d28663cf78eddb22e3d8f"><div class="ttname"><a href="class_shader_node_impl.html#a3f243e0db82d28663cf78eddb22e3d8f">ShaderNodeImpl::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this implementation.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:47</div></div>
-<div class="ttc" id="aclass_shader_node_impl_html_a25185f82bde9fc2ddaf2310806d18b19"><div class="ttname"><a href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">ShaderNodeImpl::isEditable</a></div><div class="ttdeci">virtual bool isEditable(const ShaderInput &amp;) const</div><div class="ttdoc">Returns true if an input is editable by users.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:88</div></div>
+<div class="ttc" id="aclass_shader_node_impl_html_a25185f82bde9fc2ddaf2310806d18b19"><div class="ttname"><a href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">ShaderNodeImpl::isEditable</a></div><div class="ttdeci">virtual bool isEditable(const ShaderInput &amp;) const</div><div class="ttdoc">Returns true if an input is editable by users.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:91</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad155467af6091077f433b22feb6f2054"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderNodeImpl &gt; ShaderNodeImplPtr</div><div class="ttdoc">Shared pointer to a ShaderNodeImpl.</div><div class="ttdef"><b>Definition:</b> Library.h:40</div></div>
 <div class="ttc" id="aclass_shader_graph_html"><div class="ttname"><a href="class_shader_graph.html">ShaderGraph</a></div><div class="ttdoc">Class representing a graph (DAG) for shader generation.</div><div class="ttdef"><b>Definition:</b> ShaderGraph.h:44</div></div>
-<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:123</div></div>
-<div class="ttc" id="aclass_shader_node_impl_html_a43504fb4aff696d0f5722d8742b17e74"><div class="ttname"><a href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">ShaderNodeImpl::isEditable</a></div><div class="ttdeci">virtual bool isEditable(const ShaderGraphInputSocket &amp;) const</div><div class="ttdoc">Returns true if a graph input is accessible by users.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:97</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:125</div></div>
+<div class="ttc" id="aclass_shader_node_impl_html_a43504fb4aff696d0f5722d8742b17e74"><div class="ttname"><a href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">ShaderNodeImpl::isEditable</a></div><div class="ttdeci">virtual bool isEditable(const ShaderGraphInputSocket &amp;) const</div><div class="ttdoc">Returns true if a graph input is accessible by users.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:100</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html">Library.h</a></div><div class="ttdoc">Library-wide includes and types.</div></div>
 <div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:324</div></div>
 <div class="ttc" id="aclass_shader_html"><div class="ttname"><a href="class_shader.html">Shader</a></div><div class="ttdoc">Class containing all data needed during shader generation.</div><div class="ttdef"><b>Definition:</b> Shader.h:33</div></div>

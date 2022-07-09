@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -199,13 +199,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#aaaab8da205ba7e35bd053e5f70a7a439">addComment</a> (const string &amp;str)</td></tr>
 <tr class="memdesc:aaaab8da205ba7e35bd053e5f70a7a439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a single line code comment. <br /></td></tr>
 <tr class="separator:aaaab8da205ba7e35bd053e5f70a7a439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f682d7a9f3ec306395b91e7462f5ea4"><td class="memItemLeft" align="right" valign="top"><a id="a0f682d7a9f3ec306395b91e7462f5ea4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#a0f682d7a9f3ec306395b91e7462f5ea4">addBlock</a> (const string &amp;str, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a0f682d7a9f3ec306395b91e7462f5ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a block of code. <br /></td></tr>
-<tr class="separator:a0f682d7a9f3ec306395b91e7462f5ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1abcd7fe1911e9651e94578b051a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#abf1abcd7fe1911e9651e94578b051a22">addInclude</a> (const string &amp;file, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
-<tr class="memdesc:abf1abcd7fe1911e9651e94578b051a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the contents of an include file.  <a href="class_shader_stage.html#abf1abcd7fe1911e9651e94578b051a22">More...</a><br /></td></tr>
-<tr class="separator:abf1abcd7fe1911e9651e94578b051a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3bbb0f66f8bcd4002cbd453782a333"><td class="memItemLeft" align="right" valign="top"><a id="a1a3bbb0f66f8bcd4002cbd453782a333"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#a1a3bbb0f66f8bcd4002cbd453782a333">addBlock</a> (const string &amp;str, const <a class="el" href="class_file_path.html">FilePath</a> &amp;sourceFilename, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a1a3bbb0f66f8bcd4002cbd453782a333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a block of code. <br /></td></tr>
+<tr class="separator:a1a3bbb0f66f8bcd4002cbd453782a333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38680f1199bccbbf9046e7dc56fb14fd"><td class="memItemLeft" align="right" valign="top"><a id="a38680f1199bccbbf9046e7dc56fb14fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#a38680f1199bccbbf9046e7dc56fb14fd">addInclude</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;includeFilename, const <a class="el" href="class_file_path.html">FilePath</a> &amp;sourceFilename, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a38680f1199bccbbf9046e7dc56fb14fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the contents of an include file if not already present. <br /></td></tr>
+<tr class="separator:a38680f1199bccbbf9046e7dc56fb14fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11bd3a321abbdd6ddd27e01944da1e07"><td class="memTemplParams" colspan="2"><a id="a11bd3a321abbdd6ddd27e01944da1e07"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a11bd3a321abbdd6ddd27e01944da1e07"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#a11bd3a321abbdd6ddd27e01944da1e07">addValue</a> (const T &amp;value)</td></tr>
@@ -236,39 +237,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A shader stage, containing the state and resulting source code for the stage. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abf1abcd7fe1911e9651e94578b051a22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf1abcd7fe1911e9651e94578b051a22">&#9670;&nbsp;</a></span>addInclude()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void addInclude </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_gen_context.html">GenContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>context</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add the contents of an include file. </p>
-<p>Making sure it is only included once for the shader stage. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_shader_stage_8h_source.html">ShaderStage.h</a></li>
 <li>source/MaterialXGenShader/ShaderStage.cpp</li>
 </ul>

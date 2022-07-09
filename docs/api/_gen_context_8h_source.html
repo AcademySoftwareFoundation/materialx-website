@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -111,271 +111,265 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> _options;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">registerSourceCodeSearchPath</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        _sourceCodeSearchPath.append(path);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">registerSourceCodeSearchPath</a>(<span class="keyword">const</span> <a class="code" href="class_file_search_path.html">FileSearchPath</a>&amp; path)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        _sourceCodeSearchPath.append(path);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_gen_context.html#ac0ac794bb28df2f0f4744de7e7b29388">   64</a></span>&#160;    <a class="code" href="class_file_path.html">FilePath</a> <a class="code" href="class_gen_context.html#ac0ac794bb28df2f0f4744de7e7b29388">resolveSourceFile</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; filename)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> _sourceCodeSearchPath.find(filename);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">addReservedWords</a>(<span class="keyword">const</span> <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; names)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        _reservedWords.insert(names.begin(), names.end());</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">   78</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; <a class="code" href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">getReservedWords</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> _reservedWords;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> addNodeImplementation(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> impl);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> findNodeImplementation(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> getNodeImplementationNames(<a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; names);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> clearNodeImplementations();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_gen_context.html#a9e3f6c3deb838366dda7dc65296ce70f">   97</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#a9e3f6c3deb838366dda7dc65296ce70f">pushClosureContext</a>(<a class="code" href="class_closure_context.html">ClosureContext</a>* cct)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        _closureContexts.push_back(cct);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_gen_context.html#ab1541f227a08ef33665b8e3796c60ecc">  103</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#ab1541f227a08ef33665b8e3796c60ecc">popClosureContext</a>()</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (_closureContexts.size())</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            _closureContexts.pop_back();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">  112</a></span>&#160;    <a class="code" href="class_closure_context.html">ClosureContext</a>* <a class="code" href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">getClosureContext</a>()</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> _closureContexts.size() ? _closureContexts.back() : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_gen_context.html#abe445dca0e35adf621c544bf1d6058de">  119</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#abe445dca0e35adf621c544bf1d6058de">pushUserData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="_gen_user_data_8h.html#aa02f3e2ec19aa88a3beb4f49ddc0c75b">GenUserDataPtr</a> data)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">auto</span> it = _userData.find(name);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (it != _userData.end())</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            it-&gt;second.push_back(data);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            _userData[name] = { data };</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_gen_context.html#a60f6b201598c6b04fadce5ba3f71c7f1">  133</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#a60f6b201598c6b04fadce5ba3f71c7f1">popUserData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">auto</span> it = _userData.find(name);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (it != _userData.end())</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            it-&gt;second.pop_back();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> clearUserData();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">  148</a></span>&#160;    std::shared_ptr&lt;T&gt; <a class="code" href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">getUserData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">auto</span> it = _userData.find(name);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> it != _userData.end() &amp;&amp; !it-&gt;second.empty() ? it-&gt;second.back()-&gt;asA&lt;T&gt;() : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> addInputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>* input, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; suffix);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> removeInputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>* input);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> getInputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>* input, <span class="keywordtype">string</span>&amp; suffix) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> addOutputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderOutput</a>* output, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; suffix);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">void</span> removeOutputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderOutput</a>* output);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> getOutputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderOutput</a>* output, <span class="keywordtype">string</span>&amp; suffix) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="class_gen_context.html">GenContext</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">registerSourceCodeSearchPath</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; path)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        _sourceCodeSearchPath.append(path);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">registerSourceCodeSearchPath</a>(<span class="keyword">const</span> <a class="code" href="class_file_search_path.html">FileSearchPath</a>&amp; path)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        _sourceCodeSearchPath.append(path);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_gen_context.html#acfd926e630abe9de5788394e28d1f37a">   67</a></span>&#160;    <a class="code" href="class_file_path.html">FilePath</a> <a class="code" href="class_gen_context.html#acfd926e630abe9de5788394e28d1f37a">resolveSourceFile</a>(<span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; filename, <span class="keyword">const</span> <a class="code" href="class_file_path.html">FilePath</a>&amp; localPath)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_file_search_path.html">FileSearchPath</a> searchPath = _sourceCodeSearchPath;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (!localPath.<a class="code" href="class_file_path.html#acf82f9b2937375c7b1cf3dccb3df3312">isEmpty</a>())</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            searchPath.<a class="code" href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">prepend</a>(localPath);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> searchPath.<a class="code" href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">find</a>(filename).<a class="code" href="class_file_path.html#ad37c91bf6419930734cef1ea43a08392">getNormalized</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">addReservedWords</a>(<span class="keyword">const</span> <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; names)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        _reservedWords.insert(names.begin(), names.end());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">   86</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; <a class="code" href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">getReservedWords</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> _reservedWords;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> addNodeImplementation(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> impl);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> findNodeImplementation(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> getNodeImplementationNames(<a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&amp; names);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> clearNodeImplementations();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_gen_context.html#a9e3f6c3deb838366dda7dc65296ce70f">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#a9e3f6c3deb838366dda7dc65296ce70f">pushClosureContext</a>(<a class="code" href="class_closure_context.html">ClosureContext</a>* cct)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        _closureContexts.push_back(cct);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_gen_context.html#ab1541f227a08ef33665b8e3796c60ecc">  111</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#ab1541f227a08ef33665b8e3796c60ecc">popClosureContext</a>()</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (_closureContexts.size())</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            _closureContexts.pop_back();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">  120</a></span>&#160;    <a class="code" href="class_closure_context.html">ClosureContext</a>* <a class="code" href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">getClosureContext</a>()</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> _closureContexts.size() ? _closureContexts.back() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_gen_context.html#abe445dca0e35adf621c544bf1d6058de">  127</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#abe445dca0e35adf621c544bf1d6058de">pushUserData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="_gen_user_data_8h.html#aa02f3e2ec19aa88a3beb4f49ddc0c75b">GenUserDataPtr</a> data)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">auto</span> it = _userData.find(name);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (it != _userData.end())</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            it-&gt;second.push_back(data);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            _userData[name] = { data };</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_gen_context.html#a60f6b201598c6b04fadce5ba3f71c7f1">  141</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gen_context.html#a60f6b201598c6b04fadce5ba3f71c7f1">popUserData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">auto</span> it = _userData.find(name);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (it != _userData.end())</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            it-&gt;second.pop_back();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> clearUserData();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">  156</a></span>&#160;    std::shared_ptr&lt;T&gt; <a class="code" href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">getUserData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">auto</span> it = _userData.find(name);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> it != _userData.end() &amp;&amp; !it-&gt;second.empty() ? it-&gt;second.back()-&gt;asA&lt;T&gt;() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> addInputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>* input, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; suffix);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> removeInputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>* input);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">void</span> getInputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_input.html">ShaderInput</a>* input, <span class="keywordtype">string</span>&amp; suffix) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> addOutputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderOutput</a>* output, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; suffix);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">void</span> removeOutputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderOutput</a>* output);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// Shader generator.</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad3fdf02a384c4aa2f7b3036c08040eaf">ShaderGeneratorPtr</a> _sg;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// Generation options.</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="class_gen_options.html">GenOptions</a> _options;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Search path for finding source files.</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="class_file_search_path.html">FileSearchPath</a> _sourceCodeSearchPath;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// Set of globally reserved words.</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> _reservedWords;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">// Cached shader node implementations.</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">void</span> getOutputSuffix(<span class="keyword">const</span> <a class="code" href="class_shader_output.html">ShaderOutput</a>* output, <span class="keywordtype">string</span>&amp; suffix) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="class_gen_context.html">GenContext</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="_material_x_gen_shader_2_library_8h.html#ad3fdf02a384c4aa2f7b3036c08040eaf">ShaderGeneratorPtr</a> _sg;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="class_gen_options.html">GenOptions</a> _options;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="class_file_search_path.html">FileSearchPath</a> _sourceCodeSearchPath;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> _reservedWords;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::unordered_map&lt;string, ShaderNodeImplPtr&gt; _nodeImpls;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">// User data</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::unordered_map&lt;string, vector&lt;GenUserDataPtr&gt;&gt; _userData;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    std::unordered_map&lt;string, vector&lt;GenUserDataPtr&gt;&gt; _userData;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    std::unordered_map&lt;const ShaderInput*, string&gt; _inputSuffix;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::unordered_map&lt;const ShaderOutput*, string&gt; _outputSuffix;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// List of input suffixes</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    std::unordered_map&lt;const ShaderInput*, string&gt; _inputSuffix;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    vector&lt;ClosureContext*&gt; _closureContexts;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;};</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// List of output suffixes</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    std::unordered_map&lt;const ShaderOutput*, string&gt; _outputSuffix;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// Contexts for closure evaluation.</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    vector&lt;ClosureContext*&gt; _closureContexts;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;};</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="class_closure_context.html">  219</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_closure_context.html">ClosureContext</a></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;{</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">  225</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a> = std::pair&lt;const TypeDesc*, string&gt;;</div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">  227</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a> = vector&lt;Argument&gt;;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">  230</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a> = std::unordered_map&lt;string, const ShaderInput*&gt;;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="class_closure_context.html#a789ff7e46633c880bcfe623e7db857b9">  233</a></span>&#160;    <a class="code" href="class_closure_context.html#a789ff7e46633c880bcfe623e7db857b9">ClosureContext</a>(<span class="keywordtype">int</span> type = 0) : _type(type) {}</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">  236</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _type; }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="class_closure_context.html#aabadec75619badbae96d4db72246a688">  239</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_closure_context.html#aabadec75619badbae96d4db72246a688">addArgument</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType, <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a>&amp; arg)</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        _arguments[nodeType].push_back(arg);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="class_closure_context.html">  212</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_closure_context.html">ClosureContext</a></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">  218</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a> = std::pair&lt;const TypeDesc*, string&gt;;</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">  220</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a> = vector&lt;Argument&gt;;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">  223</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a> = std::unordered_map&lt;string, const ShaderInput*&gt;;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="class_closure_context.html#a789ff7e46633c880bcfe623e7db857b9">  226</a></span>&#160;    <a class="code" href="class_closure_context.html#a789ff7e46633c880bcfe623e7db857b9">ClosureContext</a>(<span class="keywordtype">int</span> type = 0) : _type(type) {}</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">  229</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">getType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _type; }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="class_closure_context.html#aabadec75619badbae96d4db72246a688">  232</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_closure_context.html#aabadec75619badbae96d4db72246a688">addArgument</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType, <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a>&amp; arg)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        _arguments[nodeType].push_back(arg);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_closure_context.html#a694051d1c5c867354cfe087dea847f0a">  238</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a>&amp; <a class="code" href="class_closure_context.html#a694051d1c5c867354cfe087dea847f0a">getArguments</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keyword">auto</span> it = _arguments.find(nodeType);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> it != _arguments.end() ? it-&gt;second : EMPTY_ARGUMENTS;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="class_closure_context.html#a694051d1c5c867354cfe087dea847f0a">  245</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a>&amp; <a class="code" href="class_closure_context.html#a694051d1c5c867354cfe087dea847f0a">getArguments</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keyword">auto</span> it = _arguments.find(nodeType);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> it != _arguments.end() ? it-&gt;second : EMPTY_ARGUMENTS;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">  252</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">setSuffix</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; suffix)</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        _suffix[nodeType] = suffix;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">  245</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">setSuffix</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; suffix)</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        _suffix[nodeType] = suffix;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="class_closure_context.html#a07dd13a92ffc1cc0e7a891b27085ed51">  251</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_closure_context.html#a07dd13a92ffc1cc0e7a891b27085ed51">getSuffix</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keyword">auto</span> it = _suffix.find(nodeType);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> it != _suffix.end() ? it-&gt;second : EMPTY_STRING;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="class_closure_context.html#a07dd13a92ffc1cc0e7a891b27085ed51">  258</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_closure_context.html#a07dd13a92ffc1cc0e7a891b27085ed51">getSuffix</a>(<span class="keyword">const</span> <a class="code" href="class_type_desc.html">TypeDesc</a>* nodeType)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keyword">auto</span> it = _suffix.find(nodeType);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> it != _suffix.end() ? it-&gt;second : EMPTY_STRING;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">  265</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">setClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* closure, <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a>* params)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (params)</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            _params[closure] = params;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            _params.erase(closure);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="class_closure_context.html#a2615d132e50ff9b69b7310c1cce085fa">  279</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a>* <a class="code" href="class_closure_context.html#a2615d132e50ff9b69b7310c1cce085fa">getClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* closure)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keyword">auto</span> it = _params.find(closure);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">return</span> it != _params.end() ? it-&gt;second : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> _type;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    std::unordered_map&lt;const TypeDesc*, Arguments&gt; _arguments;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::unordered_map&lt;const TypeDesc*, string&gt; _suffix;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    std::unordered_map&lt;const ShaderNode*, const ClosureParams*&gt; _params;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Arguments EMPTY_ARGUMENTS;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;};</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="class_scoped_set_closure_params.html">  296</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;{</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureContext::ClosureParams</a>* params, <span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* node, <a class="code" href="class_closure_context.html">ClosureContext</a>* cct);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* fromNode, <span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* toNode, <a class="code" href="class_closure_context.html">ClosureContext</a>* cct);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    ~<a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a>();</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <a class="code" href="class_closure_context.html">ClosureContext</a>* _cct;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* _node;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureContext::ClosureParams</a>* _oldParams;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;};</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">  258</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">setClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* closure, <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a>* params)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">if</span> (params)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            _params[closure] = params;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            _params.erase(closure);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="class_closure_context.html#a2615d132e50ff9b69b7310c1cce085fa">  272</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a>* <a class="code" href="class_closure_context.html#a2615d132e50ff9b69b7310c1cce085fa">getClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* closure)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keyword">auto</span> it = _params.find(closure);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> it != _params.end() ? it-&gt;second : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> _type;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    std::unordered_map&lt;const TypeDesc*, Arguments&gt; _arguments;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    std::unordered_map&lt;const TypeDesc*, string&gt; _suffix;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    std::unordered_map&lt;const ShaderNode*, const ClosureParams*&gt; _params;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Arguments EMPTY_ARGUMENTS;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;};</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="class_scoped_set_closure_params.html">  289</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureContext::ClosureParams</a>* params, <span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* node, <a class="code" href="class_closure_context.html">ClosureContext</a>* cct);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a>(<span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* fromNode, <span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* toNode, <a class="code" href="class_closure_context.html">ClosureContext</a>* cct);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    ~<a class="code" href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a>();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="class_closure_context.html">ClosureContext</a>* _cct;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_shader_node.html">ShaderNode</a>* _node;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureContext::ClosureParams</a>* _oldParams;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;};</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="class_scoped_set_variable_name.html">  308</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_scoped_set_variable_name.html">ScopedSetVariableName</a></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <a class="code" href="class_scoped_set_variable_name.html">ScopedSetVariableName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="class_shader_port.html">ShaderPort</a>* port);</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="class_scoped_set_variable_name.html">  315</a></span>&#160;<span class="keyword">class </span>MX_GENSHADER_API <a class="code" href="class_scoped_set_variable_name.html">ScopedSetVariableName</a></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <a class="code" href="class_scoped_set_variable_name.html">ScopedSetVariableName</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code" href="class_shader_port.html">ShaderPort</a>* port);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    ~<a class="code" href="class_scoped_set_variable_name.html">ScopedSetVariableName</a>();</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    ~<a class="code" href="class_scoped_set_variable_name.html">ScopedSetVariableName</a>();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="class_shader_port.html">ShaderPort</a>* _port;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">string</span> _oldName;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;};</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;MATERIALX_NAMESPACE_END</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="class_shader_port.html">ShaderPort</a>* _port;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">string</span> _oldName;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;};</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#endif // MATERIALX_GENCONTEXT_H</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#endif // MATERIALX_GENCONTEXT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_shader_output_html"><div class="ttname"><a href="class_shader_output.html">ShaderOutput</a></div><div class="ttdoc">An output on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:299</div></div>
-<div class="ttc" id="aclass_gen_context_html_a9021de789af4ef5c2f7de31305b765b7"><div class="ttname"><a href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">GenContext::getUserData</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; getUserData(const string &amp;name)</div><div class="ttdoc">Return user data with given name, or nullptr if no data is found.</div><div class="ttdef"><b>Definition:</b> GenContext.h:148</div></div>
+<div class="ttc" id="aclass_gen_context_html_a9021de789af4ef5c2f7de31305b765b7"><div class="ttname"><a href="class_gen_context.html#a9021de789af4ef5c2f7de31305b765b7">GenContext::getUserData</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; getUserData(const string &amp;name)</div><div class="ttdoc">Return user data with given name, or nullptr if no data is found.</div><div class="ttdef"><b>Definition:</b> GenContext.h:156</div></div>
 <div class="ttc" id="a_gen_user_data_8h_html_aa02f3e2ec19aa88a3beb4f49ddc0c75b"><div class="ttname"><a href="_gen_user_data_8h.html#aa02f3e2ec19aa88a3beb4f49ddc0c75b">GenUserDataPtr</a></div><div class="ttdeci">std::shared_ptr&lt; GenUserData &gt; GenUserDataPtr</div><div class="ttdoc">Shared pointer to a GenUserData.</div><div class="ttdef"><b>Definition:</b> GenUserData.h:19</div></div>
-<div class="ttc" id="aclass_scoped_set_variable_name_html"><div class="ttname"><a href="class_scoped_set_variable_name.html">ScopedSetVariableName</a></div><div class="ttdoc">A RAII class for overriding port variable names.</div><div class="ttdef"><b>Definition:</b> GenContext.h:316</div></div>
-<div class="ttc" id="aclass_closure_context_html_ab2ae8cbbd10277bded7b4285e3c2579f"><div class="ttname"><a href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">ClosureContext::Argument</a></div><div class="ttdeci">std::pair&lt; const TypeDesc *, string &gt; Argument</div><div class="ttdoc">An extra argument for closure functions.</div><div class="ttdef"><b>Definition:</b> GenContext.h:225</div></div>
+<div class="ttc" id="aclass_scoped_set_variable_name_html"><div class="ttname"><a href="class_scoped_set_variable_name.html">ScopedSetVariableName</a></div><div class="ttdoc">A RAII class for overriding port variable names.</div><div class="ttdef"><b>Definition:</b> GenContext.h:309</div></div>
+<div class="ttc" id="aclass_closure_context_html_ab2ae8cbbd10277bded7b4285e3c2579f"><div class="ttname"><a href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">ClosureContext::Argument</a></div><div class="ttdeci">std::pair&lt; const TypeDesc *, string &gt; Argument</div><div class="ttdoc">An extra argument for closure functions.</div><div class="ttdef"><b>Definition:</b> GenContext.h:218</div></div>
 <div class="ttc" id="a_file_8h_html"><div class="ttname"><a href="_file_8h.html">File.h</a></div><div class="ttdoc">Cross-platform support for file and search paths.</div></div>
 <div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:262</div></div>
-<div class="ttc" id="aclass_closure_context_html_ad332f75a3b947cd7df5f1a4857b431f0"><div class="ttname"><a href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">ClosureContext::getType</a></div><div class="ttdeci">int getType() const</div><div class="ttdoc">Return the identifier for this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:236</div></div>
-<div class="ttc" id="aclass_closure_context_html"><div class="ttname"><a href="class_closure_context.html">ClosureContext</a></div><div class="ttdoc">Class representing a context for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:220</div></div>
-<div class="ttc" id="aclass_gen_context_html_a60f6b201598c6b04fadce5ba3f71c7f1"><div class="ttname"><a href="class_gen_context.html#a60f6b201598c6b04fadce5ba3f71c7f1">GenContext::popUserData</a></div><div class="ttdeci">void popUserData(const string &amp;name)</div><div class="ttdoc">Remove user data from the context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:133</div></div>
-<div class="ttc" id="aclass_closure_context_html_a450df945e64d54112df9528138b0ab21"><div class="ttname"><a href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">ClosureContext::Arguments</a></div><div class="ttdeci">vector&lt; Argument &gt; Arguments</div><div class="ttdoc">An array of arguments.</div><div class="ttdef"><b>Definition:</b> GenContext.h:227</div></div>
-<div class="ttc" id="aclass_scoped_set_closure_params_html"><div class="ttname"><a href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a></div><div class="ttdoc">A RAII class for setting extra parameters for closure evaluation, stored in the closure context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:297</div></div>
-<div class="ttc" id="aclass_gen_context_html_ab9a1d28323e6757bd065e2da2c1f53e6"><div class="ttname"><a href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">GenContext::addReservedWords</a></div><div class="ttdeci">void addReservedWords(const StringSet &amp;names)</div><div class="ttdoc">Add reserved words that should not be used as identifiers during code generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:71</div></div>
-<div class="ttc" id="aclass_gen_context_html_a9e3f6c3deb838366dda7dc65296ce70f"><div class="ttname"><a href="class_gen_context.html#a9e3f6c3deb838366dda7dc65296ce70f">GenContext::pushClosureContext</a></div><div class="ttdeci">void pushClosureContext(ClosureContext *cct)</div><div class="ttdoc">Push a new closure context to use for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:97</div></div>
+<div class="ttc" id="aclass_closure_context_html_ad332f75a3b947cd7df5f1a4857b431f0"><div class="ttname"><a href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">ClosureContext::getType</a></div><div class="ttdeci">int getType() const</div><div class="ttdoc">Return the identifier for this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:229</div></div>
+<div class="ttc" id="aclass_closure_context_html"><div class="ttname"><a href="class_closure_context.html">ClosureContext</a></div><div class="ttdoc">Class representing a context for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:213</div></div>
+<div class="ttc" id="aclass_gen_context_html_a60f6b201598c6b04fadce5ba3f71c7f1"><div class="ttname"><a href="class_gen_context.html#a60f6b201598c6b04fadce5ba3f71c7f1">GenContext::popUserData</a></div><div class="ttdeci">void popUserData(const string &amp;name)</div><div class="ttdoc">Remove user data from the context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:141</div></div>
+<div class="ttc" id="aclass_closure_context_html_a450df945e64d54112df9528138b0ab21"><div class="ttname"><a href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">ClosureContext::Arguments</a></div><div class="ttdeci">vector&lt; Argument &gt; Arguments</div><div class="ttdoc">An array of arguments.</div><div class="ttdef"><b>Definition:</b> GenContext.h:220</div></div>
+<div class="ttc" id="aclass_scoped_set_closure_params_html"><div class="ttname"><a href="class_scoped_set_closure_params.html">ScopedSetClosureParams</a></div><div class="ttdoc">A RAII class for setting extra parameters for closure evaluation, stored in the closure context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:290</div></div>
+<div class="ttc" id="aclass_gen_context_html_ab9a1d28323e6757bd065e2da2c1f53e6"><div class="ttname"><a href="class_gen_context.html#ab9a1d28323e6757bd065e2da2c1f53e6">GenContext::addReservedWords</a></div><div class="ttdeci">void addReservedWords(const StringSet &amp;names)</div><div class="ttdoc">Add reserved words that should not be used as identifiers during code generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:79</div></div>
+<div class="ttc" id="aclass_gen_context_html_a9e3f6c3deb838366dda7dc65296ce70f"><div class="ttname"><a href="class_gen_context.html#a9e3f6c3deb838366dda7dc65296ce70f">GenContext::pushClosureContext</a></div><div class="ttdeci">void pushClosureContext(ClosureContext *cct)</div><div class="ttdoc">Push a new closure context to use for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:105</div></div>
 <div class="ttc" id="a_gen_options_8h_html"><div class="ttname"><a href="_gen_options_8h.html">GenOptions.h</a></div><div class="ttdoc">Shader generation options class.</div></div>
-<div class="ttc" id="aclass_closure_context_html_a694051d1c5c867354cfe087dea847f0a"><div class="ttname"><a href="class_closure_context.html#a694051d1c5c867354cfe087dea847f0a">ClosureContext::getArguments</a></div><div class="ttdeci">const Arguments &amp; getArguments(const TypeDesc *nodeType) const</div><div class="ttdoc">Return a list of extra argument to be used for the given node in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:245</div></div>
+<div class="ttc" id="aclass_closure_context_html_a694051d1c5c867354cfe087dea847f0a"><div class="ttname"><a href="class_closure_context.html#a694051d1c5c867354cfe087dea847f0a">ClosureContext::getArguments</a></div><div class="ttdeci">const Arguments &amp; getArguments(const TypeDesc *nodeType) const</div><div class="ttdoc">Return a list of extra argument to be used for the given node in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:238</div></div>
 <div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:61</div></div>
-<div class="ttc" id="aclass_shader_generator_html"><div class="ttname"><a href="class_shader_generator.html">ShaderGenerator</a></div><div class="ttdoc">Base class for shader generators All third-party shader generators should derive from this class.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.h:29</div></div>
+<div class="ttc" id="aclass_shader_generator_html"><div class="ttname"><a href="class_shader_generator.html">ShaderGenerator</a></div><div class="ttdoc">Base class for shader generators All third-party shader generators should derive from this class.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.h:31</div></div>
+<div class="ttc" id="aclass_file_search_path_html_a71f4171407ccd125be077a7aa3711772"><div class="ttname"><a href="class_file_search_path.html#a71f4171407ccd125be077a7aa3711772">FileSearchPath::prepend</a></div><div class="ttdeci">void prepend(const FilePath &amp;path)</div><div class="ttdoc">Prepend the given path to the sequence.</div><div class="ttdef"><b>Definition:</b> File.h:277</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad3fdf02a384c4aa2f7b3036c08040eaf"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad3fdf02a384c4aa2f7b3036c08040eaf">ShaderGeneratorPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderGenerator &gt; ShaderGeneratorPtr</div><div class="ttdoc">Shared pointer to a ShaderGenerator.</div><div class="ttdef"><b>Definition:</b> Library.h:38</div></div>
-<div class="ttc" id="aclass_gen_context_html_ac0ac794bb28df2f0f4744de7e7b29388"><div class="ttname"><a href="class_gen_context.html#ac0ac794bb28df2f0f4744de7e7b29388">GenContext::resolveSourceFile</a></div><div class="ttdeci">FilePath resolveSourceFile(const FilePath &amp;filename) const</div><div class="ttdoc">Resolve a file using the registered search paths.</div><div class="ttdef"><b>Definition:</b> GenContext.h:64</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_export_8h_html"><div class="ttname"><a href="_material_x_gen_shader_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
-<div class="ttc" id="aclass_closure_context_html_a0eaf625fc4b194f3288de9f30e4f5c75"><div class="ttname"><a href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">ClosureContext::setClosureParams</a></div><div class="ttdeci">void setClosureParams(const ShaderNode *closure, const ClosureParams *params)</div><div class="ttdoc">Set extra parameters to use for evaluating a closure.</div><div class="ttdef"><b>Definition:</b> GenContext.h:265</div></div>
-<div class="ttc" id="aclass_gen_options_html"><div class="ttname"><a href="class_gen_options.html">GenOptions</a></div><div class="ttdoc">Class holding options to configure shader generation.</div><div class="ttdef"><b>Definition:</b> GenOptions.h:64</div></div>
+<div class="ttc" id="aclass_closure_context_html_a0eaf625fc4b194f3288de9f30e4f5c75"><div class="ttname"><a href="class_closure_context.html#a0eaf625fc4b194f3288de9f30e4f5c75">ClosureContext::setClosureParams</a></div><div class="ttdeci">void setClosureParams(const ShaderNode *closure, const ClosureParams *params)</div><div class="ttdoc">Set extra parameters to use for evaluating a closure.</div><div class="ttdef"><b>Definition:</b> GenContext.h:258</div></div>
+<div class="ttc" id="aclass_gen_options_html"><div class="ttname"><a href="class_gen_options.html">GenOptions</a></div><div class="ttdoc">Class holding options to configure shader generation.</div><div class="ttdef"><b>Definition:</b> GenOptions.h:76</div></div>
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:28</div></div>
+<div class="ttc" id="aclass_file_path_html_ad37c91bf6419930734cef1ea43a08392"><div class="ttname"><a href="class_file_path.html#ad37c91bf6419930734cef1ea43a08392">FilePath::getNormalized</a></div><div class="ttdeci">FilePath getNormalized() const</div><div class="ttdoc">Return a normalized version of the given path, collapsing current path and parent path references so ...</div><div class="ttdef"><b>Definition:</b> File.cpp:136</div></div>
 <div class="ttc" id="aclass_file_path_html"><div class="ttname"><a href="class_file_path.html">FilePath</a></div><div class="ttdoc">A generic file path, supporting both syntactic and file system operations.</div><div class="ttdef"><b>Definition:</b> File.h:27</div></div>
-<div class="ttc" id="aclass_gen_context_html_ab1541f227a08ef33665b8e3796c60ecc"><div class="ttname"><a href="class_gen_context.html#ab1541f227a08ef33665b8e3796c60ecc">GenContext::popClosureContext</a></div><div class="ttdeci">void popClosureContext()</div><div class="ttdoc">Pop the current closure context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:103</div></div>
+<div class="ttc" id="aclass_gen_context_html_ab1541f227a08ef33665b8e3796c60ecc"><div class="ttname"><a href="class_gen_context.html#ab1541f227a08ef33665b8e3796c60ecc">GenContext::popClosureContext</a></div><div class="ttdeci">void popClosureContext()</div><div class="ttdoc">Pop the current closure context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:111</div></div>
 <div class="ttc" id="a_gen_user_data_8h_html"><div class="ttname"><a href="_gen_user_data_8h.html">GenUserData.h</a></div><div class="ttdoc">User data base class for shader generation.</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad155467af6091077f433b22feb6f2054"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderNodeImpl &gt; ShaderNodeImplPtr</div><div class="ttdoc">Shared pointer to a ShaderNodeImpl.</div><div class="ttdef"><b>Definition:</b> Library.h:40</div></div>
-<div class="ttc" id="aclass_gen_context_html_a8c3682d90cfe08f8c3a485fef9bb03f6"><div class="ttname"><a href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">GenContext::getReservedWords</a></div><div class="ttdeci">const StringSet &amp; getReservedWords() const</div><div class="ttdoc">Return the set of reserved words that should not be used as identifiers during code generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:78</div></div>
-<div class="ttc" id="aclass_closure_context_html_a2615d132e50ff9b69b7310c1cce085fa"><div class="ttname"><a href="class_closure_context.html#a2615d132e50ff9b69b7310c1cce085fa">ClosureContext::getClosureParams</a></div><div class="ttdeci">const ClosureParams * getClosureParams(const ShaderNode *closure) const</div><div class="ttdoc">Return extra parameters to use for evaluating a closure.</div><div class="ttdef"><b>Definition:</b> GenContext.h:279</div></div>
-<div class="ttc" id="aclass_gen_context_html_a0173da6dfc475a565e6732c8dffc621d"><div class="ttname"><a href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">GenContext::registerSourceCodeSearchPath</a></div><div class="ttdeci">void registerSourceCodeSearchPath(const FilePath &amp;path)</div><div class="ttdoc">Add to the search path used for finding source code.</div><div class="ttdef"><b>Definition:</b> GenContext.h:52</div></div>
-<div class="ttc" id="aclass_gen_context_html_ac6ca1ca82260906e351635a093040f16"><div class="ttname"><a href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">GenContext::registerSourceCodeSearchPath</a></div><div class="ttdeci">void registerSourceCodeSearchPath(const FileSearchPath &amp;path)</div><div class="ttdoc">Add to the search path used for finding source code.</div><div class="ttdef"><b>Definition:</b> GenContext.h:58</div></div>
-<div class="ttc" id="aclass_gen_context_html_a19c15a3fc69bd0a9b4380cd712537fa0"><div class="ttname"><a href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">GenContext::getClosureContext</a></div><div class="ttdeci">ClosureContext * getClosureContext()</div><div class="ttdoc">Return the current closure context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:112</div></div>
-<div class="ttc" id="aclass_closure_context_html_a789ff7e46633c880bcfe623e7db857b9"><div class="ttname"><a href="class_closure_context.html#a789ff7e46633c880bcfe623e7db857b9">ClosureContext::ClosureContext</a></div><div class="ttdeci">ClosureContext(int type=0)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> GenContext.h:233</div></div>
+<div class="ttc" id="aclass_gen_context_html_a8c3682d90cfe08f8c3a485fef9bb03f6"><div class="ttname"><a href="class_gen_context.html#a8c3682d90cfe08f8c3a485fef9bb03f6">GenContext::getReservedWords</a></div><div class="ttdeci">const StringSet &amp; getReservedWords() const</div><div class="ttdoc">Return the set of reserved words that should not be used as identifiers during code generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:86</div></div>
+<div class="ttc" id="aclass_closure_context_html_a2615d132e50ff9b69b7310c1cce085fa"><div class="ttname"><a href="class_closure_context.html#a2615d132e50ff9b69b7310c1cce085fa">ClosureContext::getClosureParams</a></div><div class="ttdeci">const ClosureParams * getClosureParams(const ShaderNode *closure) const</div><div class="ttdoc">Return extra parameters to use for evaluating a closure.</div><div class="ttdef"><b>Definition:</b> GenContext.h:272</div></div>
+<div class="ttc" id="aclass_gen_context_html_a0173da6dfc475a565e6732c8dffc621d"><div class="ttname"><a href="class_gen_context.html#a0173da6dfc475a565e6732c8dffc621d">GenContext::registerSourceCodeSearchPath</a></div><div class="ttdeci">void registerSourceCodeSearchPath(const FilePath &amp;path)</div><div class="ttdoc">Register a user search path for finding source code during code generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:53</div></div>
+<div class="ttc" id="aclass_gen_context_html_ac6ca1ca82260906e351635a093040f16"><div class="ttname"><a href="class_gen_context.html#ac6ca1ca82260906e351635a093040f16">GenContext::registerSourceCodeSearchPath</a></div><div class="ttdeci">void registerSourceCodeSearchPath(const FileSearchPath &amp;path)</div><div class="ttdoc">Register a user search path for finding source code during code generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:60</div></div>
+<div class="ttc" id="aclass_gen_context_html_acfd926e630abe9de5788394e28d1f37a"><div class="ttname"><a href="class_gen_context.html#acfd926e630abe9de5788394e28d1f37a">GenContext::resolveSourceFile</a></div><div class="ttdeci">FilePath resolveSourceFile(const FilePath &amp;filename, const FilePath &amp;localPath) const</div><div class="ttdoc">Resolve a source code filename, first checking the given local path then checking any file paths regi...</div><div class="ttdef"><b>Definition:</b> GenContext.h:67</div></div>
+<div class="ttc" id="aclass_gen_context_html_a19c15a3fc69bd0a9b4380cd712537fa0"><div class="ttname"><a href="class_gen_context.html#a19c15a3fc69bd0a9b4380cd712537fa0">GenContext::getClosureContext</a></div><div class="ttdeci">ClosureContext * getClosureContext()</div><div class="ttdoc">Return the current closure context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:120</div></div>
+<div class="ttc" id="aclass_file_search_path_html_ad1e0e3b26a0ad87fdadd0f43aa444a98"><div class="ttname"><a href="class_file_search_path.html#ad1e0e3b26a0ad87fdadd0f43aa444a98">FileSearchPath::find</a></div><div class="ttdeci">FilePath find(const FilePath &amp;filename) const</div><div class="ttdoc">Given an input filename, iterate through each path in this sequence, returning the first combined pat...</div><div class="ttdef"><b>Definition:</b> File.h:316</div></div>
+<div class="ttc" id="aclass_closure_context_html_a789ff7e46633c880bcfe623e7db857b9"><div class="ttname"><a href="class_closure_context.html#a789ff7e46633c880bcfe623e7db857b9">ClosureContext::ClosureContext</a></div><div class="ttdeci">ClosureContext(int type=0)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> GenContext.h:226</div></div>
 <div class="ttc" id="aclass_gen_context_html_a4804a09a8826d03b005ceedaa5213622"><div class="ttname"><a href="class_gen_context.html#a4804a09a8826d03b005ceedaa5213622">GenContext::getOptions</a></div><div class="ttdeci">GenOptions &amp; getOptions()</div><div class="ttdoc">Return shader generation options.</div><div class="ttdef"><b>Definition:</b> GenContext.h:40</div></div>
 <div class="ttc" id="aclass_gen_context_html_a14e400f3a66cfa3dacb0dc110ea241b3"><div class="ttname"><a href="class_gen_context.html#a14e400f3a66cfa3dacb0dc110ea241b3">GenContext::getOptions</a></div><div class="ttdeci">const GenOptions &amp; getOptions() const</div><div class="ttdoc">Return shader generation options.</div><div class="ttdef"><b>Definition:</b> GenContext.h:46</div></div>
+<div class="ttc" id="aclass_file_path_html_acf82f9b2937375c7b1cf3dccb3df3312"><div class="ttname"><a href="class_file_path.html#acf82f9b2937375c7b1cf3dccb3df3312">FilePath::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Return true if the given path is empty.</div><div class="ttdef"><b>Definition:</b> File.h:92</div></div>
 <div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:324</div></div>
 <div class="ttc" id="aclass_shader_port_html"><div class="ttname"><a href="class_shader_port.html">ShaderPort</a></div><div class="ttdoc">An input or output port on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:124</div></div>
 <div class="ttc" id="aclass_type_desc_html"><div class="ttname"><a href="class_type_desc.html">TypeDesc</a></div><div class="ttdoc">A type descriptor for MaterialX data types.</div><div class="ttdef"><b>Definition:</b> TypeDesc.h:28</div></div>
-<div class="ttc" id="aclass_closure_context_html_ab8968f7855fdf9a1e6b3d826178e895d"><div class="ttname"><a href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureContext::ClosureParams</a></div><div class="ttdeci">std::unordered_map&lt; string, const ShaderInput * &gt; ClosureParams</div><div class="ttdoc">Extra parameters for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:230</div></div>
+<div class="ttc" id="aclass_closure_context_html_ab8968f7855fdf9a1e6b3d826178e895d"><div class="ttname"><a href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureContext::ClosureParams</a></div><div class="ttdeci">std::unordered_map&lt; string, const ShaderInput * &gt; ClosureParams</div><div class="ttdoc">Extra parameters for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:223</div></div>
 <div class="ttc" id="aclass_gen_context_html_a84a03784c3fac6a424496239031fa506"><div class="ttname"><a href="class_gen_context.html#a84a03784c3fac6a424496239031fa506">GenContext::getShaderGenerator</a></div><div class="ttdeci">ShaderGenerator &amp; getShaderGenerator()</div><div class="ttdoc">Return shader generatior.</div><div class="ttdef"><b>Definition:</b> GenContext.h:34</div></div>
 <div class="ttc" id="a_shader_node_8h_html"><div class="ttname"><a href="_shader_node_8h.html">ShaderNode.h</a></div><div class="ttdoc">Classes for nodes created during shader generation.</div></div>
-<div class="ttc" id="aclass_gen_context_html_abe445dca0e35adf621c544bf1d6058de"><div class="ttname"><a href="class_gen_context.html#abe445dca0e35adf621c544bf1d6058de">GenContext::pushUserData</a></div><div class="ttdeci">void pushUserData(const string &amp;name, GenUserDataPtr data)</div><div class="ttdoc">Add user data to the context to make it available during shader generator.</div><div class="ttdef"><b>Definition:</b> GenContext.h:119</div></div>
-<div class="ttc" id="aclass_closure_context_html_aabadec75619badbae96d4db72246a688"><div class="ttname"><a href="class_closure_context.html#aabadec75619badbae96d4db72246a688">ClosureContext::addArgument</a></div><div class="ttdeci">void addArgument(const TypeDesc *nodeType, const Argument &amp;arg)</div><div class="ttdoc">For the given node type add an extra argument to be used for the function in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:239</div></div>
-<div class="ttc" id="aclass_closure_context_html_a07dd13a92ffc1cc0e7a891b27085ed51"><div class="ttname"><a href="class_closure_context.html#a07dd13a92ffc1cc0e7a891b27085ed51">ClosureContext::getSuffix</a></div><div class="ttdeci">const string &amp; getSuffix(const TypeDesc *nodeType) const</div><div class="ttdoc">Return the function name suffix to be used for the given node in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:258</div></div>
-<div class="ttc" id="aclass_closure_context_html_a9d31d9e4e77558227fab16e8839539ea"><div class="ttname"><a href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">ClosureContext::setSuffix</a></div><div class="ttdeci">void setSuffix(const TypeDesc *nodeType, const string &amp;suffix)</div><div class="ttdoc">For the given node type set a function name suffix to be used for the function in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:252</div></div>
-<div class="ttc" id="aclass_file_search_path_html"><div class="ttname"><a href="class_file_search_path.html">FileSearchPath</a></div><div class="ttdoc">A sequence of file paths, which may be queried to find the first instance of a given filename on the ...</div><div class="ttdef"><b>Definition:</b> File.h:215</div></div>
+<div class="ttc" id="aclass_gen_context_html_abe445dca0e35adf621c544bf1d6058de"><div class="ttname"><a href="class_gen_context.html#abe445dca0e35adf621c544bf1d6058de">GenContext::pushUserData</a></div><div class="ttdeci">void pushUserData(const string &amp;name, GenUserDataPtr data)</div><div class="ttdoc">Add user data to the context to make it available during shader generator.</div><div class="ttdef"><b>Definition:</b> GenContext.h:127</div></div>
+<div class="ttc" id="aclass_closure_context_html_aabadec75619badbae96d4db72246a688"><div class="ttname"><a href="class_closure_context.html#aabadec75619badbae96d4db72246a688">ClosureContext::addArgument</a></div><div class="ttdeci">void addArgument(const TypeDesc *nodeType, const Argument &amp;arg)</div><div class="ttdoc">For the given node type add an extra argument to be used for the function in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:232</div></div>
+<div class="ttc" id="aclass_closure_context_html_a07dd13a92ffc1cc0e7a891b27085ed51"><div class="ttname"><a href="class_closure_context.html#a07dd13a92ffc1cc0e7a891b27085ed51">ClosureContext::getSuffix</a></div><div class="ttdeci">const string &amp; getSuffix(const TypeDesc *nodeType) const</div><div class="ttdoc">Return the function name suffix to be used for the given node in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:251</div></div>
+<div class="ttc" id="aclass_closure_context_html_a9d31d9e4e77558227fab16e8839539ea"><div class="ttname"><a href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">ClosureContext::setSuffix</a></div><div class="ttdeci">void setSuffix(const TypeDesc *nodeType, const string &amp;suffix)</div><div class="ttdoc">For the given node type set a function name suffix to be used for the function in this context.</div><div class="ttdef"><b>Definition:</b> GenContext.h:245</div></div>
+<div class="ttc" id="aclass_file_search_path_html"><div class="ttname"><a href="class_file_search_path.html">FileSearchPath</a></div><div class="ttdoc">A sequence of file paths, which may be queried to find the first instance of a given filename on the ...</div><div class="ttdef"><b>Definition:</b> File.h:219</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

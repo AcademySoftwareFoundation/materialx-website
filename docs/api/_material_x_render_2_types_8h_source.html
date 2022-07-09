@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -213,54 +213,57 @@ $(function() {
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">static</span> constexpr int32_t <span class="keyword">const</span> maxD = infC - maxC - 1;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">static</span> constexpr int32_t <span class="keyword">const</span> minD = minC - subC - 1;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">static</span> uint16_t toFloat16(<span class="keywordtype">float</span> value)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        Bits v, s;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        v.f = value;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        uint32_t sign = (uint32_t) (v.si &amp; signN);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        v.si ^= sign;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        sign &gt;&gt;= shiftSign; <span class="comment">// logical shift</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        s.si = mulN;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        s.si = (int32_t) (s.f * v.f); <span class="comment">// correct subnormals</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        v.si ^= (s.si ^ v.si) &amp; -(minN &gt; v.si);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        v.si ^= (infN ^ v.si) &amp; -((infN &gt; v.si) &amp; (v.si &gt; maxN));</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        v.si ^= (nanN ^ v.si) &amp; -((nanN &gt; v.si) &amp; (v.si &gt; infN));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        v.ui &gt;&gt;= shift; <span class="comment">// logical shift</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        v.si ^= ((v.si - maxD) ^ v.si) &amp; -(v.si &gt; maxC);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        v.si ^= ((v.si - minD) ^ v.si) &amp; -(v.si &gt; subC);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> (uint16_t) (v.ui | sign);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> toFloat32(uint16_t value)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        Bits v;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        v.ui = value;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        int32_t sign = v.si &amp; signC;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        v.si ^= sign;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        sign &lt;&lt;= shiftSign;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        v.si ^= ((v.si + minD) ^ v.si) &amp; -(v.si &gt; subC);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        v.si ^= ((v.si + maxD) ^ v.si) &amp; -(v.si &gt; maxC);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        Bits s;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        s.si = mulC;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        s.f *= float(v.si);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        int32_t mask = (norC &gt; v.si) ? -1 : 1;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        v.si &lt;&lt;= shift;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        v.si ^= (s.si ^ v.si) &amp; mask;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        v.si |= sign;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> v.f;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    uint16_t _data;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;};</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;MATERIALX_NAMESPACE_END</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">static</span> constexpr int32_t <span class="keyword">const</span> maxF = 0x7FFFFFBF; <span class="comment">// max int32 expressible as a flt32</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">static</span> uint16_t toFloat16(<span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        Bits v, s;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        v.f = value;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        uint32_t sign = (uint32_t) (v.si &amp; signN);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        v.si ^= sign;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        sign &gt;&gt;= shiftSign; <span class="comment">// logical shift</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        s.si = mulN;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        int32_t subN = (int32_t) std::min(s.f * v.f, (<span class="keywordtype">float</span>) maxF); <span class="comment">// correct subnormals</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        s.si = subN;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        v.si ^= (s.si ^ v.si) &amp; -(minN &gt; v.si);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        v.si ^= (infN ^ v.si) &amp; -((infN &gt; v.si) &amp; (v.si &gt; maxN));</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        v.si ^= (nanN ^ v.si) &amp; -((nanN &gt; v.si) &amp; (v.si &gt; infN));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        v.ui &gt;&gt;= shift; <span class="comment">// logical shift</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        v.si ^= ((v.si - maxD) ^ v.si) &amp; -(v.si &gt; maxC);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        v.si ^= ((v.si - minD) ^ v.si) &amp; -(v.si &gt; subC);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">return</span> (uint16_t) (v.ui | sign);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> toFloat32(uint16_t value)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        Bits v;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        v.ui = value;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        int32_t sign = v.si &amp; signC;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        v.si ^= sign;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        sign &lt;&lt;= shiftSign;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        v.si ^= ((v.si + minD) ^ v.si) &amp; -(v.si &gt; subC);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        v.si ^= ((v.si + maxD) ^ v.si) &amp; -(v.si &gt; maxC);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        Bits s;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        s.si = mulC;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        s.f *= float(v.si);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        int32_t mask = (norC &gt; v.si) ? -1 : 1;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        v.si &lt;&lt;= shift;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        v.si ^= (s.si ^ v.si) &amp; mask;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        v.si |= sign;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> v.f;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    uint16_t _data;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;MATERIALX_NAMESPACE_END</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_vector4d_html"><div class="ttname"><a href="class_vector4d.html">Vector4d</a></div><div class="ttdoc">A vector of four floating-point values (double-precision)</div><div class="ttdef"><b>Definition:</b> Types.h:75</div></div>
 <div class="ttc" id="aclass_quaternion_html"><div class="ttname"><a href="class_quaternion.html">Quaternion</a></div><div class="ttdoc">A quaternion vector.</div><div class="ttdef"><b>Definition:</b> Types.h:21</div></div>
-<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:641</div></div>
+<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:649</div></div>
 <div class="ttc" id="aclass_vector3_html"><div class="ttname"><a href="class_vector3.html">Vector3</a></div><div class="ttdoc">A vector of three floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:303</div></div>
 <div class="ttc" id="aclass_half_html"><div class="ttname"><a href="class_half.html">Half</a></div><div class="ttdoc">A lightweight 16-bit half-precision float class.</div><div class="ttdef"><b>Definition:</b> Types.h:102</div></div>
 <div class="ttc" id="aclass_vector_n_html_a967e47f5c99947e4736cc530bd84b646"><div class="ttname"><a href="class_vector_n.html#a967e47f5c99947e4736cc530bd84b646">VectorN::getNormalized</a></div><div class="ttdeci">V getNormalized() const</div><div class="ttdoc">Return a normalized vector.</div><div class="ttdef"><b>Definition:</b> Types.h:220</div></div>

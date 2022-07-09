@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -67,16 +67,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The MaterialX Viewer leverages shader generation to build GLSL shaders from MaterialX graphs, rendering the results using the NanoGUI framework. The standard set of pattern and physically-based shading nodes is supported, and libraries of custom nodes can be included as additional library paths.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Example Images</h2>
 <p float="left"><b>Figure 1:</b> Procedural and uniform materials in the MaterialX viewer </p>
 <p><img src="/documents/Images/MaterialXView_Marble.png" alt="" width="248" class="inline"/> <img src="/documents/Images/MaterialXView_Copper.png" alt="" width="248" class="inline"/> <img src="/documents/Images/MaterialXView_Plastic.png" alt="" width="248" class="inline"/> <img src="/documents/Images/MaterialXView_Carpaint.png" alt="" width="248" class="inline"/> </p>
 <p float="left"><b>Figure 2:</b> Textured, color-space-managed materials in the MaterialX viewer </p>
 <p><img src="/documents/Images/MaterialXView_TiledBrass.png" alt="" width="500" class="inline"/> <img src="/documents/Images/MaterialXView_TiledWood.png" alt="" width="500" class="inline"/> </p>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 Building The MaterialX Viewer</h1>
 <p>Select the <code>MATERIALX_BUILD_VIEWER</code> option in CMake to build the MaterialX Viewer. Installation will copy the <b>MaterialXView</b> executable to a <code>/bin</code> directory within the selected install folder.</p>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h2><a class="anchor" id="autotoc_md26"></a>
 Summary of Viewer Options</h2>
 <ol type="1">
 <li><b>Load <a class="el" href="class_mesh.html" title="Container for mesh data.">Mesh</a></b>: Load a new geometry in the OBJ format.</li>
@@ -85,24 +85,24 @@ Summary of Viewer Options</h2>
 <li><b><a class="el" href="class_property.html" title="A property element within a PropertySet.">Property</a> Editor</b>: View or edit properties of the current material.</li>
 <li><b>Advanced Settings</b> : Asset and rendering options.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md27"></a>
 Geometry</h2>
 <p>The default display geometry for the MaterialX viewer is the Arnold <a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> Ball, which was contributed to the MaterialX project by the Solid Angle team at Autodesk. To change the display geometry, click <code>Load <a class="el" href="class_mesh.html" title="Container for mesh data.">Mesh</a></code> and navigate to the <a href="../../resources/Geometry">Geometry</a> folder for additional models in the OBJ format.</p>
 <p>If a loaded geometry contains more than one geometric group, then a <code>Select Geometry</code> drop-down box will appear, allowing the user to select which group is active. The active geometric group will be used for subsequent actions such as material assignment and rendering property changes.</p>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Materials</h2>
 <p>To change the displayed material, click <code>Load Material</code> and navigate to the <a href="../../resources/Materials/Examples/StandardSurface">Materials/Examples/StandardSurface</a> or <a href="../../resources/Materials/Examples/UsdPreviewSurface">Materials/Examples/UsdPreviewSurface</a> folders, which contain a selection of example materials in the MTLX format.</p>
 <p>Once a material is loaded into the viewer, its parameters may be inspected and adjusted by clicking the <code><a class="el" href="class_property.html" title="A property element within a PropertySet.">Property</a> Editor</code> and scrolling through the list of parameters. An edited material may be saved to the file system by clicking <code>Save Material</code>.</p>
 <p>Multiple material documents can be combined in a single session by navigating to <code>Advanced Settings</code> and enabling <code>Merge Materials</code>. Loading new materials with this setting enabled will add them to the current material list, where they can be assigned to geometry via the <code>Assigned Material</code> drop-down box. Alternatively the <code>LEFT</code> and <code>RIGHT</code> arrows can be used to cycle through the list of available materials.</p>
 <p>If a material document containing <code>look</code> elements is loaded into the viewer, then any material assignments within the look will be applied to geometric groups that match the specified geometry strings. See <a href="../../resources/Materials/Examples/StandardSurface/standard_surface_look_brass_tiled.mtlx">standard_surface_look_brass_tiled.mtlx</a> for an example of a material document containing look elements.</p>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 Lighting</h2>
 <p>The default lighting environment for the viewer is the San Giuseppe Bridge environment from HDRI Haven. To load another environment into the viewer, click <code>Load Environment</code> and navigate to the <a href="../../resources/Lights">Lights</a> folder, or load any HDR environment in the latitude-longitude format. If the HDR file on disk has a companion MaterialX document with a matching name, then this document will be loaded as the direct lighting rig for the environment; otherwise only indirect lighting will be rendered. If the HDR file on disk has a companion image in an <code>irradiance</code> subfolder, then this image will be loaded as the diffuse convolution of the environment; otherwise, a diffuse convolution will be generated at load-time using spherical harmonics.</p>
 <p>Shadow maps from the primary directional light may be enabled with the <code>Shadow Map</code> option under <code>Advanced Settings</code>. Ambient occlusion, if available for the given geometry, may be enabled with the <code>Ambient Occlusion</code> option. The fidelity of environment lighting may be improved by increasing the value of <code>Environment Samples</code>, though this requires additional GPU resources and can affect the interactivity of the viewer.</p>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 Images</h2>
 <p>By default, the MaterialX viewer loads and saves image files using <code>stb_image</code>, which supports commmon 8-bit formats such as JPEG, PNG, TGA, and BMP, as well as the HDR format for high-dynamic-range images. If you need access to additional image formats such as EXR and TIFF, then the MaterialX viewer can be built with support for <code>OpenImageIO</code>. To build MaterialX with OpenImageIO, check the <code>MATERIALX_BUILD_OIIO</code> option in CMake, and specify the location of your OpenImageIO installation with the <code>MATERIALX_OIIO_DIR</code> option.</p>
-<h2><a class="anchor" id="autotoc_md29"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 Keyboard Shortcuts</h2>
 <ul>
 <li><code>R</code>: Reload the current material from file. Hold <code>SHIFT</code> to reload all standard libraries as well.</li>
@@ -122,7 +122,7 @@ Keyboard Shortcuts</h2>
 <li><code>+</code> : Zoom in with the camera.</li>
 <li><code>-</code> : Zoom out with the camera.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md30"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Command-Line Options</h2>
 <p>The following are common command-line options for MaterialXView, and a complete list can be displayed with the <code>--help</code> option.</p><ul>
 <li><code>--material [FILENAME]</code> : Specify the filename of the MTLX document to be displayed in the viewer</li>
@@ -131,8 +131,8 @@ Command-Line Options</h2>
 <li><code>--meshScale [FLOAT]</code> : Specify the uniform scale of the displayed mesh</li>
 <li><code>--cameraPosition [VECTOR3]</code> : Specify the position of the camera as three comma-separated floats (defaults to 0,0,5)</li>
 <li><code>--cameraTarget [VECTOR3]</code> : Specify the position of the camera target as three comma-separated floats (defaults to 0,0,0)</li>
-<li><code>--cameraViewAngle [FLOAT]</code> : Specify the view angle of the camera (defaults to 45)</li>
-<li><code>--cameraZoom [FLOAT]</code> : Specify the amount to zoom the camera. (defaults to 1.0)</li>
+<li><code>--cameraViewAngle [FLOAT]</code> : Specify the view angle of the camera, or zero for an orthographic projection (defaults to 45)</li>
+<li><code>--cameraZoom [FLOAT]</code> : Specify the zoom factor for the camera, implemented as a mesh scale multiplier (defaults to 1)</li>
 <li><code>--envRad [FILENAME]</code> : Specify the filename of the environment light to display, stored as HDR environment radiance in the latitude-longitude format</li>
 <li><code>--envMethod [INTEGER]</code> : Specify the environment lighting method (0 = filtered importance sampling, 1 = prefiltered environment maps, defaults to 0)</li>
 <li><code>--envSampleCount [INTEGER]</code> : Specify the environment sample count (defaults to 16)</li>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MaterialX
-   &#160;<span id="projectnumber">1.38.4</span>
+   &#160;<span id="projectnumber">1.38.5</span>
    </div>
   </td>
  </tr>
@@ -77,6 +77,7 @@ $(function() {
 <p><a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> generation options class.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_material_x_gen_shader_2_export_8h_source.html">MaterialXGenShader/Export.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_file_8h_source.html">MaterialXFormat/File.h</a>&gt;</code><br />
 </div>
 <p><a href="_gen_options_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -105,6 +106,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a2208b033c82de7580a5b87394810ea10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to use for directional albedo evaluation.  <a href="_gen_options_8h.html#a2208b033c82de7580a5b87394810ea10">More...</a><br /></td></tr>
 <tr class="separator:a2208b033c82de7580a5b87394810ea10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e48ff6b1f4ac9effc9fbd905d6ebb34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34">HwTransmissionRenderMethod</a> { <a class="el" href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34af9bd974d16270d645b24b4b2a2e7194d">TRANSMISSION_REFRACTION</a>, 
+<a class="el" href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34ad5f482243a55351cf86e004b6d1517e9">TRANSMISSION_OPACITY</a>
+ }</td></tr>
+<tr class="memdesc:a4e48ff6b1f4ac9effc9fbd905d6ebb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to use for transmission rendering.  <a href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34">More...</a><br /></td></tr>
+<tr class="separator:a4e48ff6b1f4ac9effc9fbd905d6ebb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> generation options class. </p>
@@ -152,6 +158,28 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a4c1521aef653481288f3b43dd601bbf3a70156d6af7c00ace4f2cc0fc7fde449f"></a>SPECULAR_ENVIRONMENT_FIS&#160;</td><td class="fielddoc"><p>Use Filtered Importance Sampling for specular environment/indirect lighting. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4c1521aef653481288f3b43dd601bbf3ad81dfde4525aa61706f784259e60663a"></a>SPECULAR_ENVIRONMENT_PREFILTER&#160;</td><td class="fielddoc"><p>Use pre-filtered environment maps for specular environment/indirect lighting. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4e48ff6b1f4ac9effc9fbd905d6ebb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e48ff6b1f4ac9effc9fbd905d6ebb34">&#9670;&nbsp;</a></span>HwTransmissionRenderMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34">HwTransmissionRenderMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to use for transmission rendering. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4e48ff6b1f4ac9effc9fbd905d6ebb34af9bd974d16270d645b24b4b2a2e7194d"></a>TRANSMISSION_REFRACTION&#160;</td><td class="fielddoc"><p>Use a refraction approximation for transmission rendering. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4e48ff6b1f4ac9effc9fbd905d6ebb34ad5f482243a55351cf86e004b6d1517e9"></a>TRANSMISSION_OPACITY&#160;</td><td class="fielddoc"><p>Use opacity for transmission rendering. </p>
 </td></tr>
 </table>
 
