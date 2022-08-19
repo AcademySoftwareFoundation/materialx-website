@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>MaterialX - Developer Reference</title>
+  <title>MaterialX - <a href="DeveloperReference.html">Developer Reference</a></title>
 
   <link rel="icon" href="faviconMX.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style/rst.css" type="text/css">
@@ -96,50 +96,45 @@
       </ul>
       <ul>
         <li>
-          Rendering and Tools
+          <a href="DeveloperReference.html">Developer Reference</a>
           <ul>
             <li>
-              <a href="ShaderGen.html#ShaderGen">ShaderGen</a>
+              <a href="DeveloperReference.html#DeveloperGuide">Developer Guide</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="ShaderGen.html#Viewer">MaterialX Viewer</a>
+              <a href="DeveloperReference.html#ExampleCode">Example Code</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="DeveloperReference.html#ExampleFiles">Example MaterialX Files</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="DeveloperReference.html#Discussion">Discussion Forum</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="DeveloperReference.html#LogoImages">MaterialX Logo Images</a>
             </li>
           </ul>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="DeveloperReference.html">Developer Reference</a>
+          <a href="Tools.html">Rendering and Tools</a>
           <ul>
             <li>
-              <a href="docs/api/index.html">Developer Guide</a>
+              <a href="Tools.html#ShaderGen">ShaderGen</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">Test Suite Examples</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/python/Scripts">Python Code Examples</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="SampleFiles.html">Example MaterialX Files</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="DiscForum.html">Discussion Forums</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="LogoImages.html">Official Logo Image Files</a>
+              <a href="Tools.html#Viewer">MaterialX Viewer</a>
             </li>
           </ul>
         </li>
@@ -224,9 +219,6 @@
                 <a target="_blank" href="Specification.html">Specification</a>
               </li>
               <li class="">
-                <a href="Help.html">Help</a>
-              </li>
-              <li class="">
                 <a class="blueButton" style="font-size:14px" href="https://github.com/AcademySoftwareFoundation/MaterialX">GitHub</a>
               </li>
               <a class="iconButton" href="https://twitter.com/MaterialXCG" style="float:right">
@@ -250,64 +242,68 @@
 
           <!-- Page Content -------------------------------------------------------------------- -->
 
-          <h2 id="DeveloperReference"><strong>Developer Reference Documentation</strong></h2>
+          <h2 id="DeveloperGuide"><strong>Developer Guide</strong></h2>
+          <p>
+            The <a href="docs/api/index.html">Developer Guide</a> contains an overview for building and installing MaterialX C++ and Python, along with detailed documentation for the <a href="docs/api/annotated.html">MaterialX C++ API</a>.
+          </p>
+
+          <h2 id="ExampleCode"><strong>Example Code</strong></h2>
+          <p>
+            The <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">MaterialX Unit Tests</a> are a validation suite for the MaterialX C++ libraries, and can provide a useful guide for coding patterns in MaterialX C++.
+          </p>
+          <p>
+            The <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/python/Scripts">Python Scripts Folder</a> contains a collection of standalone Python scripts that build upon the MaterialX Python API.
+          </p>
+
+          <h2 id="ExampleFiles"><strong>Example MaterialX Files</strong></h2>
+          <p>
+            The <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/resources/Materials/Examples">Example Materials</a> folder of the MaterialX distribution provides examples of uniform, procedural, and textured materials based on a variety of shading models:
+          </p>
+          <ul>
+            <li><a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/resources/Materials/Examples/StandardSurface">Standard Surface</a>, a shading model developed by Autodesk.</li>
+            <li><a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/resources/Materials/Examples/UsdPreviewSurface">UsdPreviewSurface</a>, a shading model developed by Pixar.</li>
+            <li><a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/resources/Materials/Examples/GltfPbr">glTF PBR</a>, a shading model developed by Khronos.</li>
+          </ul>
+          <p>
+            See the <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/libraries/bxdf">BxDF Libraries</a> folder for the MaterialX graph definitions of each of these shading models.
+          </p>
+          <p>
+            AMD maintains the <a href="https://matlib.gpuopen.com/main/materials/all">GPUOpen MaterialX Library</a>, providing a wide variety of MaterialX examples under a Creative Commons license.  The library is well-organized and searchable, with support for real-time preview, web API integration, and contributions from the community.
+          </p>
+
+          <h2 id="Discussion"><strong>Discussion Forum</strong></h2>
+          <p>
+            The official and best place to discuss MaterialX is on the
+            Academy Software Foundation's <strong>#materialx</strong> channel, at
+            <a href="http://academysoftwarefdn.slack.com/">http://academysoftwarefdn.slack.com/</a>.
+            This venue is appropriate for general questions, feature requests, and discussion of the MaterialX Project
+            as a whole.
+          </p>
+          <p>
+            To get an invite to join this Slack, please go to
+            <strong><a href="https://slack.aswf.io/">https://slack.aswf.io/</a></strong>.
+          </p>
+
+          <h2 id="LogoImages"><strong>MaterialX Logo Images</strong></h2>
+          <p>
+            A number of different high-resolution versions of the MaterialX Logo are available
+            for inclusion in application visuals and promotional materials for products using
+            or compatible with MaterialX:
+          </p>
           <ul>
             <li>
-              <a href="docs/api/index.html">Developer Guide (Doxygen)</a>
+              <a href="LogoImages/MaterialXLogo2K.png">MaterialXLogo2K.png</a>:
+              Logo with mask, 2048x1580 RGBA, 8-bit per channel, sRGB colorspace (699KB)
             </li>
             <li>
-              <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">Test Suite Examples</a>
+              <a href="LogoImages/MaterialXLogo2KBlack.png">MaterialXLogo2KBlack.png</a>:
+              Logo over black, 2048x1580 RGB, 8-bit per channel, sRGB colorspace (512KB)
             </li>
             <li>
-              Additional fully-functional
-              <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/python/Scripts">Python Code Examples</a>:
-              <ul>
-                <li>
-                  <strong>mxvalidate.py</strong>:
-                  Validate a .mtlx file and optionally print a detailed or very-detailed summary
-                  of its contents.
-                </li>
-                <li>
-                  <strong>genmdl.py</strong>:
-                  Generate implementation directory for mdl based on existing MaterialX nodedefs in stdlib.
-                </li>
-                <li>
-                  <strong>writenodegraphs.py</strong>:
-                  Generate the "NodeGraphs.mtlx" example file using the MaterialX API.
-                </li>
-                <li>
-                  <strong>writelooks.py</strong>:
-                  Generate the "Looks.mtlx" example file using the MaterialX API.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="https://groups.google.com/forum/#!forum/materialx">Discussion Forum (Google Groups)</a>
+              <a href="LogoImages/MaterialXLogo2KWhite.png">MaterialXLogo2KWhite.png</a>:
+              Logo over white, 2048x1580 RGB, 8-bit per channel, sRGB colorspace (531KB)
             </li>
           </ul>
-
-          <br>
-          <h2 id="MaterialXDistribution"><strong>In the MaterialX Distribution</strong></h2>
-          <p>The MaterialX Distribution currently includes:</p>
-          <ul>
-            <li>Cross-platform C++ source code for the library with C++ and Python bindings:</li>
-            <ul>
-              <li>Core MaterialX Library for MaterialX elements, graph generation and graph traversal</li>
-              <li>XML serialization and file accessor utilities</li>
-              <li>ShaderGen code generators and data for GLSL and OSL</li>
-              <li>The MaterialXRender hardware renderer</li>
-              <li>The MaterialXView viewer</li>
-              <li>Automated unit test suite</li>
-            </ul>
-            <li>CMake files supporting compilation on Windows (Microsoft Visual Studio 2015 or newer), Linux (GCC 4.8 or newer), or Mac OS X (Xcode/Clang 3.3 or newer)</li>
-            <li>Documentation, including the current specification and developer guides</li>
-            <li>Mtlx definition files and OSL source code for pattern and shader nodes</li>
-            <li>
-              Various resources for creating and rendering MaterialX content, including
-              XML syntax example files and example materials, images, and geometry.
-            </li>
-          </ul>
-
           <!-- --------------------------------------------------------------------------------- -->
 
         </div>
