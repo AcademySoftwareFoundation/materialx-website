@@ -9,10 +9,15 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -20,6 +25,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
    <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
    </div>
@@ -46,6 +52,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_material_x_core_2_types_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +90,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_546385a85e5c5093756c0a3e05b32458.html">MaterialXCore</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">Types.h</div></div>
 </div><!--header-->
@@ -501,155 +519,166 @@ $(function() {
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a0f5ef3117068c21eb9810c8556d92284">  535</a></span>    <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&amp; <a class="code hl_function" href="class_matrix_n.html#a0f5ef3117068c21eb9810c8556d92284">operator/=</a>(<span class="keyword">const</span> M&amp; rhs)</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    {</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        *<span class="keyword">this</span> *= rhs.<a class="code hl_function" href="class_matrix_n.html#a6cfe2b27f662654fbf44fe213c95f150">getInverse</a>();</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        *<span class="keyword">this</span> *= rhs.getInverse();</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    }</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a3aac9e3293e390cf5fe99eec2b056a1c">  542</a></span>    M <a class="code hl_function" href="class_matrix_n.html#a3aac9e3293e390cf5fe99eec2b056a1c">getTranspose</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno"><a class="line" href="class_matrix_n.html#ace774e95d463e4b75a34993c095698a0">  545</a></span>    S <a class="code hl_function" href="class_matrix_n.html#ace774e95d463e4b75a34993c095698a0">getDeterminant</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span> </div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a1395100e7fc058e2a2368ced1d4c3fbc">  548</a></span>    M <a class="code hl_function" href="class_matrix_n.html#a1395100e7fc058e2a2368ced1d4c3fbc">getAdjugate</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a6cfe2b27f662654fbf44fe213c95f150">  551</a></span>    M <a class="code hl_function" href="class_matrix_n.html#a6cfe2b27f662654fbf44fe213c95f150">getInverse</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_matrix_n.html#a1395100e7fc058e2a2368ced1d4c3fbc">getAdjugate</a>() / <a class="code hl_function" href="class_matrix_n.html#ace774e95d463e4b75a34993c095698a0">getDeterminant</a>();</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    }</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    Iterator begin() { <span class="keywordflow">return</span> _arr.begin(); }</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    ConstIterator begin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _arr.begin(); }</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    Iterator end() { <span class="keywordflow">return</span> _arr.end(); }</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    ConstIterator end()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _arr.end(); }</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno"><a class="line" href="class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d">  571</a></span>    S* <a class="code hl_function" href="class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d">data</a>() { <span class="keywordflow">return</span> _arr.front().data(); }</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    Iterator begin() { <span class="keywordflow">return</span> _arr.begin(); }</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    ConstIterator begin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _arr.begin(); }</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    Iterator end() { <span class="keywordflow">return</span> _arr.end(); }</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    ConstIterator end()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _arr.end(); }</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span> </div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno"><a class="line" href="class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d">  556</a></span>    S* <a class="code hl_function" href="class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d">data</a>() { <span class="keywordflow">return</span> _arr.front().data(); }</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca">  559</a></span>    <span class="keyword">const</span> S* <a class="code hl_function" href="class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _arr.front().data(); }</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a167df99524e53cd1d868474ed3077936">  566</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_matrix_n.html#a167df99524e53cd1d868474ed3077936">numRows</a>() { <span class="keywordflow">return</span> N; }</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611">  569</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611">numColumns</a>() { <span class="keywordflow">return</span> N; }</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca">  574</a></span>    <span class="keyword">const</span> S* <a class="code hl_function" href="class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _arr.front().data(); }</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a167df99524e53cd1d868474ed3077936">  581</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_matrix_n.html#a167df99524e53cd1d868474ed3077936">numRows</a>() { <span class="keywordflow">return</span> N; }</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno"><a class="line" href="class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611">  584</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611">numColumns</a>() { <span class="keywordflow">return</span> N; }</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    std::array&lt;RowArray, N&gt; _arr;</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>};</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno"><a class="line" href="class_matrix33.html">  597</a></span><span class="keyword">class </span>MX_CORE_API <a class="code hl_class" href="class_matrix33.html">Matrix33</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;Matrix33, float, 3&gt;</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>{</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    <span class="keyword">using </span><a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;<a class="code hl_class" href="class_matrix33.html">Matrix33</a>, float, 3&gt;<a class="code hl_class" href="class_matrix_n.html">::MatrixN</a>;</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a>(<span class="keywordtype">float</span> m00, <span class="keywordtype">float</span> m01, <span class="keywordtype">float</span> m02,</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>             <span class="keywordtype">float</span> m10, <span class="keywordtype">float</span> m11, <span class="keywordtype">float</span> m12,</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>             <span class="keywordtype">float</span> m20, <span class="keywordtype">float</span> m21, <span class="keywordtype">float</span> m22) :</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>(<a class="code hl_class" href="class_uninit.html">Uninit</a>{})</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    {</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        _arr = { m00, m01, m02,</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>                 m10, m11, m12,</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                 m20, m21, m22 };</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    }</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    std::array&lt;RowArray, N&gt; _arr;</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>};</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span> </div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno"><a class="line" href="class_matrix33.html">  582</a></span><span class="keyword">class </span>MX_CORE_API <a class="code hl_class" href="class_matrix33.html">Matrix33</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;Matrix33, float, 3&gt;</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>{</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="keyword">using </span><a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;<a class="code hl_class" href="class_matrix33.html">Matrix33</a>, float, 3&gt;<a class="code hl_class" href="class_matrix_n.html">::MatrixN</a>;</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a>(<span class="keywordtype">float</span> m00, <span class="keywordtype">float</span> m01, <span class="keywordtype">float</span> m02,</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>             <span class="keywordtype">float</span> m10, <span class="keywordtype">float</span> m11, <span class="keywordtype">float</span> m12,</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>             <span class="keywordtype">float</span> m20, <span class="keywordtype">float</span> m21, <span class="keywordtype">float</span> m22) :</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>(<a class="code hl_class" href="class_uninit.html">Uninit</a>{})</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    {</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        _arr = { m00, m01, m02,</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>                 m10, m11, m12,</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                 m20, m21, m22 };</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    }</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a> getTranspose() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    <span class="keywordtype">float</span> getDeterminant() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a> getAdjugate() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno"><a class="line" href="class_matrix33.html#a79404b7d59a3ce91e925cba129c24d3e">  610</a></span>    <a class="code hl_class" href="class_matrix33.html">Matrix33</a> <a class="code hl_function" href="class_matrix33.html#a79404b7d59a3ce91e925cba129c24d3e">getInverse</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        <span class="keywordflow">return</span> getAdjugate() / getDeterminant();</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    }</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> multiply(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span> </div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    <a class="code hl_class" href="class_vector2.html">Vector2</a> transformPoint(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <a class="code hl_class" href="class_vector2.html">Vector2</a> transformVector(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformNormal(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> createTranslation(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v);</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> createScale(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v);</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> createRotation(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> multiply(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    <a class="code hl_class" href="class_vector2.html">Vector2</a> transformPoint(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <a class="code hl_class" href="class_vector2.html">Vector2</a> transformVector(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformNormal(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> createTranslation(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v);</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> createScale(<span class="keyword">const</span> <a class="code hl_class" href="class_vector2.html">Vector2</a>&amp; v);</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> IDENTITY;</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>};</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> createRotation(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno"><a class="line" href="class_matrix44.html">  648</a></span><span class="keyword">class </span>MX_CORE_API <a class="code hl_class" href="class_matrix44.html">Matrix44</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;Matrix44, float, 4&gt;</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>{</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="keyword">using </span><a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;<a class="code hl_class" href="class_matrix44.html">Matrix44</a>, float, 4&gt;<a class="code hl_class" href="class_matrix_n.html">::MatrixN</a>;</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a>(<span class="keywordtype">float</span> m00, <span class="keywordtype">float</span> m01, <span class="keywordtype">float</span> m02, <span class="keywordtype">float</span> m03,</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>             <span class="keywordtype">float</span> m10, <span class="keywordtype">float</span> m11, <span class="keywordtype">float</span> m12, <span class="keywordtype">float</span> m13,</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>             <span class="keywordtype">float</span> m20, <span class="keywordtype">float</span> m21, <span class="keywordtype">float</span> m22, <span class="keywordtype">float</span> m23,</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>             <span class="keywordtype">float</span> m30, <span class="keywordtype">float</span> m31, <span class="keywordtype">float</span> m32, <span class="keywordtype">float</span> m33) :</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>(<a class="code hl_class" href="class_uninit.html">Uninit</a>{})</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    {</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        _arr = { m00, m01, m02, m03,</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                 m10, m11, m12, m13,</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>                 m20, m21, m22, m23,</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>                 m30, m31, m32, m33 };</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    }</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>    <a class="code hl_class" href="class_vector4.html">Vector4</a> multiply(<span class="keyword">const</span> <a class="code hl_class" href="class_vector4.html">Vector4</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformPoint(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformVector(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformNormal(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createTranslation(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v);</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createScale(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v);</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createRotationX(<span class="keywordtype">float</span> angle);</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createRotationY(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="class_matrix33.html">Matrix33</a> IDENTITY;</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>};</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="class_matrix44.html">  652</a></span><span class="keyword">class </span>MX_CORE_API <a class="code hl_class" href="class_matrix44.html">Matrix44</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;Matrix44, float, 4&gt;</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>{</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keyword">using </span><a class="code hl_class" href="class_matrix_n.html">MatrixN</a>&lt;<a class="code hl_class" href="class_matrix44.html">Matrix44</a>, float, 4&gt;<a class="code hl_class" href="class_matrix_n.html">::MatrixN</a>;</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a>(<span class="keywordtype">float</span> m00, <span class="keywordtype">float</span> m01, <span class="keywordtype">float</span> m02, <span class="keywordtype">float</span> m03,</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>             <span class="keywordtype">float</span> m10, <span class="keywordtype">float</span> m11, <span class="keywordtype">float</span> m12, <span class="keywordtype">float</span> m13,</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>             <span class="keywordtype">float</span> m20, <span class="keywordtype">float</span> m21, <span class="keywordtype">float</span> m22, <span class="keywordtype">float</span> m23,</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>             <span class="keywordtype">float</span> m30, <span class="keywordtype">float</span> m31, <span class="keywordtype">float</span> m32, <span class="keywordtype">float</span> m33) :</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>(<a class="code hl_class" href="class_uninit.html">Uninit</a>{})</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    {</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        _arr = { m00, m01, m02, m03,</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>                 m10, m11, m12, m13,</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                 m20, m21, m22, m23,</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>                 m30, m31, m32, m33 };</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    }</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> getTranspose() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    <span class="keywordtype">float</span> getDeterminant() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> getAdjugate() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno"><a class="line" href="class_matrix44.html#ab2a0b3f9a541ce2de40809be14f5d84c">  682</a></span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> <a class="code hl_function" href="class_matrix44.html#ab2a0b3f9a541ce2de40809be14f5d84c">getInverse</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        <span class="keywordflow">return</span> getAdjugate() / getDeterminant();</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    }</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    <a class="code hl_class" href="class_vector4.html">Vector4</a> multiply(<span class="keyword">const</span> <a class="code hl_class" href="class_vector4.html">Vector4</a>&amp; v) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createRotationZ(<span class="keywordtype">float</span> angle);</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformPoint(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformVector(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> IDENTITY;</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>};</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    <a class="code hl_class" href="class_vector3.html">Vector3</a> transformNormal(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span> </div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createTranslation(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v);</div>
 <div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createScale(<span class="keyword">const</span> <a class="code hl_class" href="class_vector3.html">Vector3</a>&amp; v);</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createRotationX(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createRotationY(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> createRotationZ(<span class="keywordtype">float</span> angle);</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span> </div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a> IDENTITY;</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>};</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_material_x_core_2_export_8h_html"><div class="ttname"><a href="_material_x_core_2_export_8h.html">Export.h</a></div><div class="ttdoc">Import and export declarations for the Core library.</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html"><div class="ttname"><a href="_material_x_core_2_util_8h.html">Util.h</a></div><div class="ttdoc">Utility methods.</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html_a959b58b3e0c330ed20a1594b18a05aeb"><div class="ttname"><a href="_material_x_core_2_util_8h.html#a959b58b3e0c330ed20a1594b18a05aeb">hashCombine</a></div><div class="ttdeci">void hashCombine(size_t &amp;seed, const T &amp;value)</div><div class="ttdoc">Combine the hash of a value with an existing seed.</div><div class="ttdef"><b>Definition:</b> Util.h:55</div></div>
 <div class="ttc" id="aclass_color3_html"><div class="ttname"><a href="class_color3.html">Color3</a></div><div class="ttdoc">A three-component color value.</div><div class="ttdef"><b>Definition:</b> Types.h:339</div></div>
 <div class="ttc" id="aclass_color4_html"><div class="ttname"><a href="class_color4.html">Color4</a></div><div class="ttdoc">A four-component color value.</div><div class="ttdef"><b>Definition:</b> Types.h:361</div></div>
-<div class="ttc" id="aclass_matrix33_html"><div class="ttname"><a href="class_matrix33.html">Matrix33</a></div><div class="ttdoc">A 3x3 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:598</div></div>
-<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:649</div></div>
+<div class="ttc" id="aclass_matrix33_html"><div class="ttname"><a href="class_matrix33.html">Matrix33</a></div><div class="ttdoc">A 3x3 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:583</div></div>
+<div class="ttc" id="aclass_matrix33_html_a79404b7d59a3ce91e925cba129c24d3e"><div class="ttname"><a href="class_matrix33.html#a79404b7d59a3ce91e925cba129c24d3e">Matrix33::getInverse</a></div><div class="ttdeci">Matrix33 getInverse() const</div><div class="ttdoc">Return the inverse of the matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:610</div></div>
+<div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:653</div></div>
+<div class="ttc" id="aclass_matrix44_html_ab2a0b3f9a541ce2de40809be14f5d84c"><div class="ttname"><a href="class_matrix44.html#ab2a0b3f9a541ce2de40809be14f5d84c">Matrix44::getInverse</a></div><div class="ttdeci">Matrix44 getInverse() const</div><div class="ttdoc">Return the inverse of the matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:682</div></div>
 <div class="ttc" id="aclass_matrix_base_html"><div class="ttname"><a href="class_matrix_base.html">MatrixBase</a></div><div class="ttdoc">The base class for square matrices of scalar values.</div><div class="ttdef"><b>Definition:</b> Types.h:373</div></div>
 <div class="ttc" id="aclass_matrix_n_html"><div class="ttname"><a href="class_matrix_n.html">MatrixN</a></div><div class="ttdoc">The class template for square matrices of scalar values.</div><div class="ttdef"><b>Definition:</b> Types.h:384</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a008dd04df506f8896dd3fa432bda0e3b"><div class="ttname"><a href="class_matrix_n.html#a008dd04df506f8896dd3fa432bda0e3b">MatrixN::operator/</a></div><div class="ttdeci">M operator/(const M &amp;rhs) const</div><div class="ttdoc">Divide the first matrix by the second (computed as the product of the first matrix and the inverse of...</div><div class="ttdef"><b>Definition:</b> Types.h:528</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a0310f575ff2f3fdd383016dfeebeda87"><div class="ttname"><a href="class_matrix_n.html#a0310f575ff2f3fdd383016dfeebeda87">MatrixN::operator/=</a></div><div class="ttdeci">MatrixN &amp; operator/=(S s)</div><div class="ttdoc">Component-wise division of a matrix by a scalar.</div><div class="ttdef"><b>Definition:</b> Types.h:498</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a0575e910925494211542e1816df4ad42"><div class="ttname"><a href="class_matrix_n.html#a0575e910925494211542e1816df4ad42">MatrixN::operator*=</a></div><div class="ttdeci">MatrixN &amp; operator*=(const M &amp;rhs)</div><div class="ttdoc">Compute the matrix product.</div><div class="ttdef"><b>Definition:</b> Types.h:520</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a0f5ef3117068c21eb9810c8556d92284"><div class="ttname"><a href="class_matrix_n.html#a0f5ef3117068c21eb9810c8556d92284">MatrixN::operator/=</a></div><div class="ttdeci">MatrixN &amp; operator/=(const M &amp;rhs)</div><div class="ttdoc">Divide the first matrix by the second (computed as the product of the first matrix and the inverse of...</div><div class="ttdef"><b>Definition:</b> Types.h:535</div></div>
-<div class="ttc" id="aclass_matrix_n_html_a1395100e7fc058e2a2368ced1d4c3fbc"><div class="ttname"><a href="class_matrix_n.html#a1395100e7fc058e2a2368ced1d4c3fbc">MatrixN::getAdjugate</a></div><div class="ttdeci">M getAdjugate() const</div><div class="ttdoc">Return the adjugate of the matrix.</div></div>
-<div class="ttc" id="aclass_matrix_n_html_a167df99524e53cd1d868474ed3077936"><div class="ttname"><a href="class_matrix_n.html#a167df99524e53cd1d868474ed3077936">MatrixN::numRows</a></div><div class="ttdeci">static constexpr size_t numRows()</div><div class="ttdoc">Return the number of rows in this matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:581</div></div>
+<div class="ttc" id="aclass_matrix_n_html_a167df99524e53cd1d868474ed3077936"><div class="ttname"><a href="class_matrix_n.html#a167df99524e53cd1d868474ed3077936">MatrixN::numRows</a></div><div class="ttdeci">static constexpr size_t numRows()</div><div class="ttdoc">Return the number of rows in this matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:566</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a1761bbaa9d4b553c8cfd129529f91e5f"><div class="ttname"><a href="class_matrix_n.html#a1761bbaa9d4b553c8cfd129529f91e5f">MatrixN::operator*=</a></div><div class="ttdeci">MatrixN &amp; operator*=(S s)</div><div class="ttdoc">Component-wise multiplication of a matrix and a scalar.</div><div class="ttdef"><b>Definition:</b> Types.h:481</div></div>
-<div class="ttc" id="aclass_matrix_n_html_a32912f0bceb526ab37f53105846ca4ca"><div class="ttname"><a href="class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca">MatrixN::data</a></div><div class="ttdeci">const S * data() const</div><div class="ttdoc">Return a const pointer to the underlying data array.</div><div class="ttdef"><b>Definition:</b> Types.h:574</div></div>
+<div class="ttc" id="aclass_matrix_n_html_a32912f0bceb526ab37f53105846ca4ca"><div class="ttname"><a href="class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca">MatrixN::data</a></div><div class="ttdeci">const S * data() const</div><div class="ttdoc">Return a const pointer to the underlying data array.</div><div class="ttdef"><b>Definition:</b> Types.h:559</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a32b410d11601f3e920eb17e23d20c3d6"><div class="ttname"><a href="class_matrix_n.html#a32b410d11601f3e920eb17e23d20c3d6">MatrixN::operator[]</a></div><div class="ttdeci">RowArray &amp; operator[](size_t i)</div><div class="ttdoc">Return the row array at the given index.</div><div class="ttdef"><b>Definition:</b> Types.h:427</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a35ab2108ffb16efdea462a42f25c6a03"><div class="ttname"><a href="class_matrix_n.html#a35ab2108ffb16efdea462a42f25c6a03">MatrixN::operator[]</a></div><div class="ttdeci">const RowArray &amp; operator[](size_t i) const</div><div class="ttdoc">Return the const row array at the given index.</div><div class="ttdef"><b>Definition:</b> Types.h:430</div></div>
-<div class="ttc" id="aclass_matrix_n_html_a3aac9e3293e390cf5fe99eec2b056a1c"><div class="ttname"><a href="class_matrix_n.html#a3aac9e3293e390cf5fe99eec2b056a1c">MatrixN::getTranspose</a></div><div class="ttdeci">M getTranspose() const</div><div class="ttdoc">Return the transpose of the matrix.</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a4fb7be2d26eafa3869d3f91acbf9a473"><div class="ttname"><a href="class_matrix_n.html#a4fb7be2d26eafa3869d3f91acbf9a473">MatrixN::operator-</a></div><div class="ttdeci">M operator-(const M &amp;rhs) const</div><div class="ttdoc">Component-wise subtraction of two matrices.</div><div class="ttdef"><b>Definition:</b> Types.h:454</div></div>
-<div class="ttc" id="aclass_matrix_n_html_a50e611a9a5a6a315320e0695b5f81611"><div class="ttname"><a href="class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611">MatrixN::numColumns</a></div><div class="ttdeci">static constexpr size_t numColumns()</div><div class="ttdoc">Return the number of columns in this matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:584</div></div>
-<div class="ttc" id="aclass_matrix_n_html_a6cfe2b27f662654fbf44fe213c95f150"><div class="ttname"><a href="class_matrix_n.html#a6cfe2b27f662654fbf44fe213c95f150">MatrixN::getInverse</a></div><div class="ttdeci">M getInverse() const</div><div class="ttdoc">Return the inverse of the matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:551</div></div>
+<div class="ttc" id="aclass_matrix_n_html_a50e611a9a5a6a315320e0695b5f81611"><div class="ttname"><a href="class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611">MatrixN::numColumns</a></div><div class="ttdeci">static constexpr size_t numColumns()</div><div class="ttdoc">Return the number of columns in this matrix.</div><div class="ttdef"><b>Definition:</b> Types.h:569</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a7b1157d5335f7c4c9984ccb406315d5d"><div class="ttname"><a href="class_matrix_n.html#a7b1157d5335f7c4c9984ccb406315d5d">MatrixN::operator+=</a></div><div class="ttdeci">MatrixN &amp; operator+=(const M &amp;rhs)</div><div class="ttdoc">Component-wise addition of two matrices.</div><div class="ttdef"><b>Definition:</b> Types.h:447</div></div>
 <div class="ttc" id="aclass_matrix_n_html_a7be5c9f241438aae5b11b8bb28571ce9"><div class="ttname"><a href="class_matrix_n.html#a7be5c9f241438aae5b11b8bb28571ce9">MatrixN::operator+</a></div><div class="ttdeci">M operator+(const M &amp;rhs) const</div><div class="ttdoc">Component-wise addition of two matrices.</div><div class="ttdef"><b>Definition:</b> Types.h:437</div></div>
 <div class="ttc" id="aclass_matrix_n_html_aa02ddbd3fd998a322ca9c00cee229ae9"><div class="ttname"><a href="class_matrix_n.html#aa02ddbd3fd998a322ca9c00cee229ae9">MatrixN::operator/</a></div><div class="ttdeci">M operator/(S s) const</div><div class="ttdoc">Component-wise division of a matrix by a scalar.</div><div class="ttdef"><b>Definition:</b> Types.h:488</div></div>
 <div class="ttc" id="aclass_matrix_n_html_aa5e7472444988ff96304a805800b3aef"><div class="ttname"><a href="class_matrix_n.html#aa5e7472444988ff96304a805800b3aef">MatrixN::operator==</a></div><div class="ttdeci">bool operator==(const M &amp;rhs) const</div><div class="ttdoc">Return true if the given matrix is identical to this one.</div><div class="ttdef"><b>Definition:</b> Types.h:400</div></div>
 <div class="ttc" id="aclass_matrix_n_html_ab92acdf66663bd4d94e55a2fe5be770b"><div class="ttname"><a href="class_matrix_n.html#ab92acdf66663bd4d94e55a2fe5be770b">MatrixN::operator-=</a></div><div class="ttdeci">MatrixN &amp; operator-=(const M &amp;rhs)</div><div class="ttdoc">Component-wise subtraction of two matrices.</div><div class="ttdef"><b>Definition:</b> Types.h:464</div></div>
 <div class="ttc" id="aclass_matrix_n_html_acb3269cab2e5733574f2bf6fe3ed34bc"><div class="ttname"><a href="class_matrix_n.html#acb3269cab2e5733574f2bf6fe3ed34bc">MatrixN::operator*</a></div><div class="ttdeci">M operator*(S s) const</div><div class="ttdoc">Component-wise multiplication of a matrix and a scalar.</div><div class="ttdef"><b>Definition:</b> Types.h:471</div></div>
-<div class="ttc" id="aclass_matrix_n_html_ace774e95d463e4b75a34993c095698a0"><div class="ttname"><a href="class_matrix_n.html#ace774e95d463e4b75a34993c095698a0">MatrixN::getDeterminant</a></div><div class="ttdeci">S getDeterminant() const</div><div class="ttdoc">Return the determinant of the matrix.</div></div>
 <div class="ttc" id="aclass_matrix_n_html_ad6cfeb185d097d6eb46f7f631fcc62a7"><div class="ttname"><a href="class_matrix_n.html#ad6cfeb185d097d6eb46f7f631fcc62a7">MatrixN::operator*</a></div><div class="ttdeci">M operator*(const M &amp;rhs) const</div><div class="ttdoc">Compute the matrix product.</div><div class="ttdef"><b>Definition:</b> Types.h:509</div></div>
 <div class="ttc" id="aclass_matrix_n_html_ad819ff12718523a68905e51bece323f9"><div class="ttname"><a href="class_matrix_n.html#ad819ff12718523a68905e51bece323f9">MatrixN::operator!=</a></div><div class="ttdeci">bool operator!=(const M &amp;rhs) const</div><div class="ttdoc">Return true if the given matrix differs from this one.</div><div class="ttdef"><b>Definition:</b> Types.h:403</div></div>
-<div class="ttc" id="aclass_matrix_n_html_ae341cb79cc0b09dec878b95aad41a54d"><div class="ttname"><a href="class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d">MatrixN::data</a></div><div class="ttdeci">S * data()</div><div class="ttdoc">Return a pointer to the underlying data array.</div><div class="ttdef"><b>Definition:</b> Types.h:571</div></div>
+<div class="ttc" id="aclass_matrix_n_html_ae341cb79cc0b09dec878b95aad41a54d"><div class="ttname"><a href="class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d">MatrixN::data</a></div><div class="ttdeci">S * data()</div><div class="ttdoc">Return a pointer to the underlying data array.</div><div class="ttdef"><b>Definition:</b> Types.h:556</div></div>
 <div class="ttc" id="aclass_matrix_n_html_af8d4631b8857376ba8f7855b81a3144c"><div class="ttname"><a href="class_matrix_n.html#af8d4631b8857376ba8f7855b81a3144c">MatrixN::isEquivalent</a></div><div class="ttdeci">bool isEquivalent(const M &amp;rhs, S tolerance) const</div><div class="ttdoc">Return true if the given matrix is equivalent to this one within a given floating-point tolerance.</div><div class="ttdef"><b>Definition:</b> Types.h:407</div></div>
 <div class="ttc" id="aclass_uninit_html"><div class="ttname"><a href="class_uninit.html">Uninit</a></div><div class="ttdoc">A tag class for constructing vectors and matrices without initialization.</div><div class="ttdef"><b>Definition:</b> Types.h:45</div></div>
 <div class="ttc" id="aclass_vector2_html"><div class="ttname"><a href="class_vector2.html">Vector2</a></div><div class="ttdoc">A vector of two floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:283</div></div>
@@ -685,9 +714,13 @@ $(function() {
 <div class="ttc" id="aclass_vector_n_html_ad9052fd134ab37865ccf64af03fb2cee"><div class="ttname"><a href="class_vector_n.html#ad9052fd134ab37865ccf64af03fb2cee">VectorN::operator/=</a></div><div class="ttdeci">VectorN &amp; operator/=(S s)</div><div class="ttdoc">Component-wise division of a vector by a scalar.</div><div class="ttdef"><b>Definition:</b> Types.h:190</div></div>
 <div class="ttc" id="aclass_vector_n_html_ae341cb79cc0b09dec878b95aad41a54d"><div class="ttname"><a href="class_vector_n.html#ae341cb79cc0b09dec878b95aad41a54d">VectorN::data</a></div><div class="ttdeci">S * data()</div><div class="ttdoc">Return a pointer to the underlying data array.</div><div class="ttdef"><b>Definition:</b> Types.h:249</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_546385a85e5c5093756c0a3e05b32458.html">MaterialXCore</a></li><li class="navelem"><a class="el" href="_material_x_core_2_types_8h.html">Types.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>
