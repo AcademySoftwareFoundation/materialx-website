@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "acfhps",
   8: "dst",
   9: "m",
-  10: "ms"
+  10: "m"
 };
 
 var indexSectionNames =

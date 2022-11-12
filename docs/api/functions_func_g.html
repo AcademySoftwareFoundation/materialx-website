@@ -9,10 +9,15 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -20,6 +25,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
    <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
    </div>
@@ -47,6 +53,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_func_g.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -101,7 +123,7 @@ $(function() {
 <li>getActiveValueElements()&#160;:&#160;<a class="el" href="class_interface_element.html#a4b86e40bf3aabdefebb58948cfd22054">InterfaceElement</a></li>
 <li>getActiveVariantAssigns()&#160;:&#160;<a class="el" href="class_look.html#add58e3e9b3e89f9fecddd29138283926">Look</a>, <a class="el" href="class_material_assign.html#add58e3e9b3e89f9fecddd29138283926">MaterialAssign</a></li>
 <li>getActiveVisibilities()&#160;:&#160;<a class="el" href="class_look.html#a565592a732439acfe775f476b50db055">Look</a></li>
-<li>getAdjugate()&#160;:&#160;<a class="el" href="class_matrix_n.html#a1395100e7fc058e2a2368ced1d4c3fbc">MatrixN&lt; M, S, N &gt;</a></li>
+<li>getAdjugate()&#160;:&#160;<a class="el" href="class_matrix33.html#a502ae31f142298a465f556a59fbeb392">Matrix33</a>, <a class="el" href="class_matrix44.html#a7c789efb1c5b714a58e310b5021fa27c">Matrix44</a></li>
 <li>getAlbedoTable()&#160;:&#160;<a class="el" href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">LightHandler</a></li>
 <li>getAllMetadata()&#160;:&#160;<a class="el" href="class_shader_metadata_registry.html#a870d428b2684daec3b889f4ccc71836e">ShaderMetadataRegistry</a></li>
 <li>getAncestorOfType()&#160;:&#160;<a class="el" href="class_element.html#a2b7c3245679764450e6311a36e8ef25c">Element</a></li>
@@ -169,7 +191,7 @@ $(function() {
 <li>getDefaultVersion()&#160;:&#160;<a class="el" href="class_interface_element.html#ab871613032696392b4c1282c6b9c8580">InterfaceElement</a></li>
 <li>getDepthTexture()&#160;:&#160;<a class="el" href="class_g_l_framebuffer.html#ae6e42be0faee4c8015309a3f1dc00cfa">GLFramebuffer</a></li>
 <li>getDescendant()&#160;:&#160;<a class="el" href="class_element.html#aac5271edba891cb82555096452322315">Element</a></li>
-<li>getDeterminant()&#160;:&#160;<a class="el" href="class_matrix_n.html#ace774e95d463e4b75a34993c095698a0">MatrixN&lt; M, S, N &gt;</a></li>
+<li>getDeterminant()&#160;:&#160;<a class="el" href="class_matrix33.html#aa404ce7bec2ef19b97442d14df27f9c3">Matrix33</a>, <a class="el" href="class_matrix44.html#aa404ce7bec2ef19b97442d14df27f9c3">Matrix44</a></li>
 <li>getDirectLighting()&#160;:&#160;<a class="el" href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">LightHandler</a></li>
 <li>getDistanceUnit()&#160;:&#160;<a class="el" href="class_texture_baker.html#a951bfb01d011deecb7071de98be65630">TextureBaker</a></li>
 <li>getDocString()&#160;:&#160;<a class="el" href="class_element.html#af33c96c3425324d8248216ae73a7e958">Element</a></li>
@@ -250,7 +272,7 @@ $(function() {
 <li>getInterfaceName()&#160;:&#160;<a class="el" href="class_value_element.html#aecbb79f052141a6a55596759ad28f811">ValueElement</a></li>
 <li>getInvalidImage()&#160;:&#160;<a class="el" href="class_image_handler.html#aafb45a048cf56681f63c7dcc5750dfb3">ImageHandler</a></li>
 <li>getInvalidTokens()&#160;:&#160;<a class="el" href="class_syntax.html#a4384dc197efa4f9c7424648baeb45572">Syntax</a></li>
-<li>getInverse()&#160;:&#160;<a class="el" href="class_matrix_n.html#a6cfe2b27f662654fbf44fe213c95f150">MatrixN&lt; M, S, N &gt;</a></li>
+<li>getInverse()&#160;:&#160;<a class="el" href="class_matrix33.html#a79404b7d59a3ce91e925cba129c24d3e">Matrix33</a>, <a class="el" href="class_matrix44.html#ab2a0b3f9a541ce2de40809be14f5d84c">Matrix44</a></li>
 <li>getIsUniform()&#160;:&#160;<a class="el" href="class_value_element.html#a9e11f973dfcfb1d8ea1ba78eaa510966">ValueElement</a></li>
 <li>getLightHandler()&#160;:&#160;<a class="el" href="class_shader_renderer.html#ad0c9ba5c953949d7d75e780e2bf0e785">ShaderRenderer</a></li>
 <li>getLightIdMap()&#160;:&#160;<a class="el" href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">LightHandler</a></li>
@@ -383,7 +405,7 @@ $(function() {
 <li>getTokens()&#160;:&#160;<a class="el" href="class_geom_info.html#a42dfd9db55d1bd880e523f392675f290">GeomInfo</a>, <a class="el" href="class_interface_element.html#a42dfd9db55d1bd880e523f392675f290">InterfaceElement</a></li>
 <li>getTokenSubstitutions()&#160;:&#160;<a class="el" href="class_shader_generator.html#a438b6cb63f40152962b5f2fc4e90c210">ShaderGenerator</a></li>
 <li>getTokenValue()&#160;:&#160;<a class="el" href="class_interface_element.html#aac1df427314bfdeeae803f9be6e68e2e">InterfaceElement</a></li>
-<li>getTranspose()&#160;:&#160;<a class="el" href="class_matrix_n.html#a3aac9e3293e390cf5fe99eec2b056a1c">MatrixN&lt; M, S, N &gt;</a></li>
+<li>getTranspose()&#160;:&#160;<a class="el" href="class_matrix33.html#af60a28e16ab2c404322b42aa4896cdd4">Matrix33</a>, <a class="el" href="class_matrix44.html#abc673da809b7b160885cd03ce76c1b95">Matrix44</a></li>
 <li>getType()&#160;:&#160;<a class="el" href="class_closure_context.html#ad332f75a3b947cd7df5f1a4857b431f0">ClosureContext</a>, <a class="el" href="class_mesh_stream.html#a849c7607b53e2bc3dece989e17572717">MeshStream</a>, <a class="el" href="class_node_def.html#a86065934c526cda248f48793f5532d48">NodeDef</a>, <a class="el" href="class_shader_port.html#a0ec3d6d0be9592135bf6211c1506a6e3">ShaderPort</a>, <a class="el" href="class_typed_element.html#a0979fcf7744a4493118de2d8cfe30c12">TypedElement</a></li>
 <li>getTypeAlias()&#160;:&#160;<a class="el" href="class_syntax.html#acdd14f88523683d8fd3c19e599137350">Syntax</a>, <a class="el" href="class_type_syntax.html#a6b2ffd95b5d334c7a9205f713f92decd">TypeSyntax</a></li>
 <li>getTypedAttribute()&#160;:&#160;<a class="el" href="class_element.html#a9c45f515aa286617eb038a5d69dda466">Element</a></li>
@@ -454,9 +476,12 @@ $(function() {
 <li>getZeroImage()&#160;:&#160;<a class="el" href="class_image_handler.html#aca94c1c8c643a7635a9a20e6903acd63">ImageHandler</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>
