@@ -164,6 +164,11 @@
           </ul>
           <ul>
             <li>
+              <a href="ThirdPartySupport.html#Unreal">Unreal Engine</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
               <a href="ThirdPartySupport.html#RenderMan">Pixar RenderMan</a>
             </li>
           </ul>
@@ -251,11 +256,13 @@
             Additional details on MaterialX support in USD Hydra may be found in the slides from the MaterialX session at <a href="https://www.materialx.org/assets/ASWF_OSD2021_MaterialX_slides_final.pdf">ASWF Open Source Days 2021</a>.
             <br><br>
             USD version <a href="https://github.com/PixarAnimationStudios/USD/blob/release/CHANGELOG.md#2205---2022-04-22">22.05</a> introduced support for texture baking through UsdBakeMaterialX, multi-output MaterialX nodes, and MaterialX namespaces.
+            <br><br>
+            USD version <a href="https://github.com/PixarAnimationStudios/USD/blob/release/CHANGELOG.md#2211---2022-10-21">22.11</a> introduced support for custom MaterialX nodes with local definitions and caching of MaterialX documents in HdStorm.
           </p>
 
           <h2 id="Houdini"><strong>SideFX Houdini</strong></h2>
           <p>
-            SideFX supports MaterialX in <a href="https://www.sidefx.com/docs/houdini/solaris/materialx.html">Houdini 19.0</a> and newer, including the authoring and exporting of MaterialX graphs through the Solaris framework, and rendering of MaterialX content in Karma CPU/XPU.
+            SideFX supports MaterialX in <a href="https://www.sidefx.com/docs/houdini/solaris/materialx.html">Houdini 19</a>, including the authoring and exporting of MaterialX graphs through the Solaris framework, and rendering of MaterialX content in Karma CPU/XPU.
             <br><br>
             <a href="https://www.sidefx.com/tutorials/karma-a-beautiful-game/">Karma, A Beautiful Game</a> by Moeen Sayed provides a useful tutorial on look development in Houdini/Solaris, including an overview of using MaterialX to construct surface and volume materials.
             <br><br>
@@ -264,7 +271,7 @@
 
           <h2 id="Clarisse"><strong>Isotropix Clarisse</strong></h2>
           <p>
-            Isotropix supports MaterialX in <a href="https://www.isotropix.com/products/angie">Clarisse 5.5</a> and the Angie renderer, which may be accessed by the community in a preview build.
+            Isotropix supports MaterialX in <a href="https://clarissewiki.com/5.5_early_access/angie-materialx.html">Clarisse 5.5</a> and the Angie renderer, which may be accessed by the community in a preview build.
             <br><br>
             Additional details on MaterialX support in Clarisse may be found in the slides from the MaterialX and OSL session at <a href="https://www.materialx.org/assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf">ASWF Open Source Days 2022</a>.
           </p>
@@ -276,18 +283,25 @@
             Additional details on MaterialX support in Maya may be found in the slides from the MaterialX and OSL session at <a href="https://www.materialx.org/assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf">ASWF Open Source Days 2022</a>.
           </p>
 
+          <h2 id="Unreal"><strong>Unreal Engine</strong></h2>
+          <p>
+            Epic Games provides early support for MaterialX in <a href="https://docs.unrealengine.com/5.1/en-US/unreal-engine-5.1-release-notes/">Unreal Engine 5.1</a>, allowing the import of MaterialX documents based on the Standard Surface shading model.
+            <br><br>
+            For now, only standalone MaterialX files are supported, but Epic plans to integrate MaterialX import with USD in a future release.
+          </p>
+
           <h2 id="RenderMan"><strong>Pixar RenderMan</strong></h2>
           <p>
-            Pixar provides early support for MaterialX in RenderMan 24.2, rendering MaterialX pattern nodes through USD HdPrman, and rendering Physically Based Shading features through a custom implementation of the <a href="https://rmanwiki.pixar.com/display/REN24/MaterialX+Lama">MaterialX Lama</a> nodes.
+            Pixar provides early support for MaterialX in RenderMan 24, rendering MaterialX pattern nodes through USD HdPrman, and rendering Physically Based Shading features through a custom implementation of the <a href="https://rmanwiki.pixar.com/display/REN24/MaterialX+Lama">MaterialX Lama</a> nodes.
             <br><br>
             Additional details on MaterialX Lama may be found in this <a href="https://www.youtube.com/playlist?list=PLBozb72i61ywUiXPHA3nUgD9_9_b3phGW">tutorial series</a> from Pixar.
           </p>
 
           <h2 id="Arnold"><strong>Autodesk Arnold</strong></h2>
           <p>
-            Autodesk provides early support for MaterialX in <a href="https://docs.arnoldrenderer.com/display/A5NodeRef/materialx/">Arnold 5</a> and newer, allowing MaterialX documents to be referenced and rendered through a custom MaterialX operator.
+            Autodesk provides early support for MaterialX in <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_user_guide_ac_operators_ac_operators_materialx_html">Arnold 5</a> and newer, allowing MaterialX documents to be referenced and rendered through a custom MaterialX operator.
             <br><br>
-            MaterialX content can be exported from Arnold implementations in tools such as <a href="https://docs.arnoldrenderer.com/display/A5AFMUG/Working+With+MaterialX">Maya</a> and <a href="https://docs.arnoldrenderer.com/display/A5AFCUG/Material+Export">Cinema 4D</a>.
+            MaterialX content can be exported from Arnold implementations in tools such as <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_for_maya_lookdev_am_Working_With_MaterialX_html">Maya</a> and <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_for_cinema_4d_ci_Utilities_ci_Material_Export_html">Cinema 4D</a>.
             <br><br>
             Additional details on MaterialX support in Arnold may be found in the slides from the MaterialX and OSL session at <a href="https://www.materialx.org/assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf">ASWF Open Source Days 2022</a>.
           </p>
