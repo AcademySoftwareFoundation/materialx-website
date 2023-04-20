@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -125,8 +125,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a83ebd34f66b06c1dd472d0d87f0d5121"><td class="memItemLeft" align="right" valign="top"><a id="a83ebd34f66b06c1dd472d0d87f0d5121" name="a83ebd34f66b06c1dd472d0d87f0d5121"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BEGIN_SHADER_STAGE</b>(stage,  name)&#160;&#160;&#160;if (stage.getName() == name) {</td></tr>
+<tr class="memitem:adee365a3e6224921e64e0e4c6c0d07ec"><td class="memItemLeft" align="right" valign="top"><a id="adee365a3e6224921e64e0e4c6c0d07ec" name="adee365a3e6224921e64e0e4c6c0d07ec"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFINE_SHADER_STAGE</b>(stage,  name)&#160;&#160;&#160;if (stage.getName() == name)</td></tr>
+<tr class="separator:adee365a3e6224921e64e0e4c6c0d07ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ebd34f66b06c1dd472d0d87f0d5121"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shader_stage_8h.html#a83ebd34f66b06c1dd472d0d87f0d5121">BEGIN_SHADER_STAGE</a>(stage,  name)</td></tr>
 <tr class="separator:a83ebd34f66b06c1dd472d0d87f0d5121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a13ea65cc77c203936e27e24c92306"><td class="memItemLeft" align="right" valign="top"><a id="a76a13ea65cc77c203936e27e24c92306" name="a76a13ea65cc77c203936e27e24c92306"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>END_SHADER_STAGE</b>(stage,  name)&#160;&#160;&#160;}</td></tr>
@@ -176,7 +178,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addStageConnector</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class related to holding information for shader stages. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a83ebd34f66b06c1dd472d0d87f0d5121" name="a83ebd34f66b06c1dd472d0d87f0d5121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ebd34f66b06c1dd472d0d87f0d5121">&#9670;&#160;</a></span>BEGIN_SHADER_STAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BEGIN_SHADER_STAGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">stage, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (stage.getName() == name)        \</div>
+<div class="line">    {</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

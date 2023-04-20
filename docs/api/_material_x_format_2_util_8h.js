@@ -1,6 +1,7 @@
 var _material_x_format_2_util_8h =
 [
     [ "flattenFilenames", "_material_x_format_2_util_8h.html#a5cfe4ec5bfe85af0ee8ebb3dbdcc50d4", null ],
+    [ "getDefaultDataSearchPath", "_material_x_format_2_util_8h.html#abae3d6647e5a0c5ff37a3e8f04004a3d", null ],
     [ "getSourceSearchPath", "_material_x_format_2_util_8h.html#ac87275baae8d20eeec76bca60fd5af6e", null ],
     [ "getSubdirectories", "_material_x_format_2_util_8h.html#a3b454a1ca1307ea78d9437d4727200a9", null ],
     [ "loadDocuments", "_material_x_format_2_util_8h.html#a7a8f2a039a2d0f4db163ef9c074c47ef", null ],

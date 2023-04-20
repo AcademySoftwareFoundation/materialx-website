@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -240,6 +240,10 @@ const <a class="el" href="class_syntax.html">Syntax</a> &amp;&#160;</td><td clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>registerImplementation</b> (const string &amp;name, CreatorFunction&lt; <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &gt; creator)</td></tr>
 <tr class="memdesc:a4ed43e2321e4895662d0f48bac040047 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a shader node implementation for a given implementation element name. <br /></td></tr>
 <tr class="separator:a4ed43e2321e4895662d0f48bac040047 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c94b06c11301938d05dd015cf2801c inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="a48c94b06c11301938d05dd015cf2801c" name="a48c94b06c11301938d05dd015cf2801c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerImplementation</b> (const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> &amp;nameVec, CreatorFunction&lt; <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &gt; creator)</td></tr>
+<tr class="memdesc:a48c94b06c11301938d05dd015cf2801c inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a shader node implementation for a given set of implementation element names. <br /></td></tr>
+<tr class="separator:a48c94b06c11301938d05dd015cf2801c inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042cb49474a379e4be44b0e1b2ca3885 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="a042cb49474a379e4be44b0e1b2ca3885" name="a042cb49474a379e4be44b0e1b2ca3885"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>implementationRegistered</b> (const string &amp;name) const</td></tr>
 <tr class="memdesc:a042cb49474a379e4be44b0e1b2ca3885 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a shader node implementation has been registered for a given implementation element name. <br /></td></tr>
@@ -283,6 +287,9 @@ Static Public Attributes</h2></td></tr>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TARGET</b> = &quot;genmdl&quot;</td></tr>
 <tr class="memdesc:a335fb1f3614f3f8d3834451b76d5bc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier for this generator target. <br /></td></tr>
 <tr class="separator:a335fb1f3614f3f8d3834451b76d5bc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900975144591faadec7de232ec8d78b1"><td class="memItemLeft" align="right" valign="top">static const std::unordered_map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_shader_generator.html#a900975144591faadec7de232ec8d78b1">GEOMPROP_DEFINITIONS</a></td></tr>
+<tr class="memdesc:a900975144591faadec7de232ec8d78b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of code snippets for geomprops in MDL.  <a href="class_mdl_shader_generator.html#a900975144591faadec7de232ec8d78b1">More...</a><br /></td></tr>
+<tr class="separator:a900975144591faadec7de232ec8d78b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -495,6 +502,44 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE
 <p>Return the result of an upstream connection or value for an input. </p>
 
 <p>Reimplemented from <a class="el" href="class_shader_generator.html#a0aa5ec4123c378519a11d3347c04ff27">ShaderGenerator</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a900975144591faadec7de232ec8d78b1" name="a900975144591faadec7de232ec8d78b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900975144591faadec7de232ec8d78b1">&#9670;&#160;</a></span>GEOMPROP_DEFINITIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unordered_map&lt; string, string &gt; GEOMPROP_DEFINITIONS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">{</div>
+<div class="line">    { <span class="stringliteral">&quot;Pobject&quot;</span>, <span class="stringliteral">&quot;state::transform_point(state::coordinate_internal, state::coordinate_object, state::position())&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Pworld&quot;</span>, <span class="stringliteral">&quot;state::transform_point(state::coordinate_internal, state::coordinate_world, state::position())&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Nobject&quot;</span>, <span class="stringliteral">&quot;state::transform_normal(state::coordinate_internal, state::coordinate_object, state::normal())&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Nworld&quot;</span>, <span class="stringliteral">&quot;state::transform_normal(state::coordinate_internal, state::coordinate_world, state::normal())&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Tobject&quot;</span>, <span class="stringliteral">&quot;state::transform_vector(state::coordinate_internal, state::coordinate_object, state::texture_tangent_u(0))&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Tworld&quot;</span>, <span class="stringliteral">&quot;state::transform_vector(state::coordinate_internal, state::coordinate_world, state::texture_tangent_u(0))&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Bobject&quot;</span>, <span class="stringliteral">&quot;state::transform_vector(state::coordinate_internal, state::coordinate_object, state::texture_tangent_v(0))&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Bworld&quot;</span>, <span class="stringliteral">&quot;state::transform_vector(state::coordinate_internal, state::coordinate_world, state::texture_tangent_v(0))&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;UV0&quot;</span>, <span class="stringliteral">&quot;float2(state::texture_coordinate(0).x, state::texture_coordinate(0).y)&quot;</span> },</div>
+<div class="line">    { <span class="stringliteral">&quot;Vworld&quot;</span>, <span class="stringliteral">&quot;state::direction()&quot;</span> }</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Map of code snippets for geomprops in MDL. </p>
 
 </div>
 </div>

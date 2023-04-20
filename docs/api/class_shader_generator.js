@@ -38,6 +38,7 @@ var class_shader_generator =
     [ "getUpstreamResult", "class_shader_generator.html#a0aa5ec4123c378519a11d3347c04ff27", null ],
     [ "implementationRegistered", "class_shader_generator.html#a042cb49474a379e4be44b0e1b2ca3885", null ],
     [ "registerImplementation", "class_shader_generator.html#a4ed43e2321e4895662d0f48bac040047", null ],
+    [ "registerImplementation", "class_shader_generator.html#a48c94b06c11301938d05dd015cf2801c", null ],
     [ "registerShaderMetadata", "class_shader_generator.html#a162d6c647771262ef97d86aa733a63f6", null ],
     [ "replaceTokens", "class_shader_generator.html#a663144aa41a020a475995e499fe55e2c", null ],
     [ "setColorManagementSystem", "class_shader_generator.html#a9dd00850974336bacd09779e1f8d1c64", null ],

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_material_x_gen_shader_2_library_8h_so
 </div><!--header-->
 <div class="contents">
 <a href="_material_x_gen_shader_2_library_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2017 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_GENSHADERLIBRARY_H</span></div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_material_x_gen_shader_2_library_8h_so
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">   40</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> = shared_ptr&lt;ShaderNodeImpl&gt;;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_material_x_gen_shader_2_library_8h.html#a584387091f0ae77a55c6e32641ec22df">   42</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_gen_shader_2_library_8h.html#a584387091f0ae77a55c6e32641ec22df">GenContextPtr</a> = shared_ptr&lt;GenContext&gt;;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">using </span>CreatorFunction = shared_ptr&lt;T&gt;(*)();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">using </span>CreatorFunction = shared_ptr&lt;T&gt; (*)();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>MATERIALX_NAMESPACE_END</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -140,17 +140,17 @@ $(document).ready(function(){initNavTree('_material_x_gen_shader_2_library_8h_so
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_aacf806ba1ec54c669c300f0edafbb127"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#aacf806ba1ec54c669c300f0edafbb127">StringStream</a></div><div class="ttdeci">std::stringstream StringStream</div><div class="ttdoc">A string stream.</div><div class="ttdef"><b>Definition:</b> Library.h:31</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad155467af6091077f433b22feb6f2054"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderNodeImpl &gt; ShaderNodeImplPtr</div><div class="ttdoc">Shared pointer to a ShaderNodeImpl.</div><div class="ttdef"><b>Definition:</b> Library.h:40</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad3fdf02a384c4aa2f7b3036c08040eaf"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad3fdf02a384c4aa2f7b3036c08040eaf">ShaderGeneratorPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderGenerator &gt; ShaderGeneratorPtr</div><div class="ttdoc">Shared pointer to a ShaderGenerator.</div><div class="ttdef"><b>Definition:</b> Library.h:38</div></div>
-<div class="ttc" id="aclass_closure_context_html"><div class="ttname"><a href="class_closure_context.html">ClosureContext</a></div><div class="ttdoc">Class representing a context for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:230</div></div>
+<div class="ttc" id="aclass_closure_context_html"><div class="ttname"><a href="class_closure_context.html">ClosureContext</a></div><div class="ttdoc">Class representing a context for closure evaluation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:229</div></div>
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:31</div></div>
 <div class="ttc" id="aclass_gen_options_html"><div class="ttname"><a href="class_gen_options.html">GenOptions</a></div><div class="ttdoc">Class holding options to configure shader generation.</div><div class="ttdef"><b>Definition:</b> GenOptions.h:76</div></div>
 <div class="ttc" id="aclass_shader_generator_html"><div class="ttname"><a href="class_shader_generator.html">ShaderGenerator</a></div><div class="ttdoc">Base class for shader generators All third-party shader generators should derive from this class.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.h:31</div></div>
 <div class="ttc" id="aclass_shader_graph_html"><div class="ttname"><a href="class_shader_graph.html">ShaderGraph</a></div><div class="ttdoc">Class representing a graph (DAG) for shader generation.</div><div class="ttdef"><b>Definition:</b> ShaderGraph.h:44</div></div>
 <div class="ttc" id="aclass_shader_html"><div class="ttname"><a href="class_shader.html">Shader</a></div><div class="ttdoc">Class containing all data needed during shader generation.</div><div class="ttdef"><b>Definition:</b> Shader.h:33</div></div>
-<div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:262</div></div>
-<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:324</div></div>
+<div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:261</div></div>
+<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:323</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html"><div class="ttname"><a href="class_shader_node_impl.html">ShaderNodeImpl</a></div><div class="ttdoc">Class handling the shader generation implementation for a node.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:31</div></div>
-<div class="ttc" id="aclass_shader_output_html"><div class="ttname"><a href="class_shader_output.html">ShaderOutput</a></div><div class="ttdoc">An output on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:299</div></div>
-<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:125</div></div>
+<div class="ttc" id="aclass_shader_output_html"><div class="ttname"><a href="class_shader_output.html">ShaderOutput</a></div><div class="ttdoc">An output on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:298</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:132</div></div>
 <div class="ttc" id="aclass_type_desc_html"><div class="ttname"><a href="class_type_desc.html">TypeDesc</a></div><div class="ttdoc">A type descriptor for MaterialX data types.</div><div class="ttdef"><b>Definition:</b> TypeDesc.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

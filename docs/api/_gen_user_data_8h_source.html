@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_gen_user_data_8h_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <a href="_gen_user_data_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2017 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_GENUSERDATA_H</span></div>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('_gen_user_data_8h_source.html',''); in
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_gen_user_data.html">~GenUserData</a>() { }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_gen_user_data.html#aa4ec200b9de954ea8def66dd4cbe584f">   32</a></span>    <a class="code hl_typedef" href="_gen_user_data_8h.html#aa02f3e2ec19aa88a3beb4f49ddc0c75b">GenUserDataPtr</a> <a class="code hl_function" href="class_gen_user_data.html#aa4ec200b9de954ea8def66dd4cbe584f">getSelf</a>()</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> shared_from_this();</div>
@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('_gen_user_data_8h_source.html',''); in
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> shared_from_this();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_gen_user_data.html#a912f10573eb78142f093ebf18b2fe279">   44</a></span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; shared_ptr&lt;T&gt; <a class="code hl_function" href="class_gen_user_data.html#a912f10573eb78142f093ebf18b2fe279">asA</a>()</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_gen_user_data.html#a912f10573eb78142f093ebf18b2fe279">   44</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; shared_ptr&lt;T&gt; <a class="code hl_function" href="class_gen_user_data.html#a912f10573eb78142f093ebf18b2fe279">asA</a>()</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> std::dynamic_pointer_cast&lt;T&gt;(getSelf());</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_gen_user_data.html#a4a75e5097ae472310f67ebdd9e5114ae">   50</a></span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; shared_ptr&lt;const T&gt; <a class="code hl_function" href="class_gen_user_data.html#a4a75e5097ae472310f67ebdd9e5114ae">asA</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_gen_user_data.html#a4a75e5097ae472310f67ebdd9e5114ae">   50</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; shared_ptr&lt;const T&gt; <a class="code hl_function" href="class_gen_user_data.html#a4a75e5097ae472310f67ebdd9e5114ae">asA</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> std::dynamic_pointer_cast&lt;const T&gt;(getSelf());</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>

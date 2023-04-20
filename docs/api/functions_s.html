@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -104,9 +104,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setApplicationVariableHandler()&#160;:&#160;<a class="el" href="class_gen_context.html#a0de1d4bdb2f05a67f37869ac0e85f190">GenContext</a></li>
 <li>setAttribute()&#160;:&#160;<a class="el" href="class_element.html#a566ced73d6b7141d375b0ee3cb02fed8">Element</a>, <a class="el" href="class_shader.html#a9a39e201be855f23a2efde8d5b94ed6d">Shader</a></li>
 <li>setAttrName()&#160;:&#160;<a class="el" href="class_attribute_def.html#a1067be1935c379e1920078e1b3af2d8d">AttributeDef</a></li>
-<li>setAverageImages()&#160;:&#160;<a class="el" href="class_texture_baker.html#a6b7ead5274d68c9b1bb3428464ea0f16">TextureBaker</a></li>
-<li>setBakedGeomInfoName()&#160;:&#160;<a class="el" href="class_texture_baker.html#a020db31f640e5a85a7048ab6bb89b45d">TextureBaker</a></li>
-<li>setBakedGraphName()&#160;:&#160;<a class="el" href="class_texture_baker.html#a021b3f34704dbed2a2b9fdfbf6406e06">TextureBaker</a></li>
+<li>setAverageImages()&#160;:&#160;<a class="el" href="class_texture_baker.html#a6b7ead5274d68c9b1bb3428464ea0f16">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
+<li>setBakedGeomInfoName()&#160;:&#160;<a class="el" href="class_texture_baker.html#a020db31f640e5a85a7048ab6bb89b45d">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
+<li>setBakedGraphName()&#160;:&#160;<a class="el" href="class_texture_baker.html#a021b3f34704dbed2a2b9fdfbf6406e06">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setBindInput()&#160;:&#160;<a class="el" href="class_shader_port.html#a8206e65f7303b61d13acd792308c14b7">ShaderPort</a></li>
 <li>setCamera()&#160;:&#160;<a class="el" href="class_shader_renderer.html#a9c2e8e0337e1287af217bb358f03cd57">ShaderRenderer</a></li>
 <li>setCategory()&#160;:&#160;<a class="el" href="class_element.html#a9ecebb73976c16497a12e456664dccb8">Element</a></li>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setCollectionString()&#160;:&#160;<a class="el" href="class_geom_element.html#ad7e3d60e55385f643c836a0bcc07b3fd">GeomElement</a>, <a class="el" href="class_property_assign.html#ad7e3d60e55385f643c836a0bcc07b3fd">PropertyAssign</a></li>
 <li>setColorManagementConfig()&#160;:&#160;<a class="el" href="class_document.html#a6a3d23f8644a0bb5ca7c33fb33709478">Document</a></li>
 <li>setColorManagementSystem()&#160;:&#160;<a class="el" href="class_document.html#a27beb9fb8232d1261118a16fc0f2a5ca">Document</a>, <a class="el" href="class_shader_generator.html#a9dd00850974336bacd09779e1f8d1c64">ShaderGenerator</a></li>
-<li>setColorSpace()&#160;:&#160;<a class="el" href="class_element.html#a46d8ab8a6e9bdd1152ab122c76459d57">Element</a>, <a class="el" href="class_shader_port.html#a4606d38ff5cf52099200a2cc0dc81140">ShaderPort</a>, <a class="el" href="class_texture_baker.html#a46d8ab8a6e9bdd1152ab122c76459d57">TextureBaker</a></li>
+<li>setColorSpace()&#160;:&#160;<a class="el" href="class_element.html#a46d8ab8a6e9bdd1152ab122c76459d57">Element</a>, <a class="el" href="class_shader_port.html#a4606d38ff5cf52099200a2cc0dc81140">ShaderPort</a>, <a class="el" href="class_texture_baker.html#a46d8ab8a6e9bdd1152ab122c76459d57">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setConnectedNode()&#160;:&#160;<a class="el" href="class_node.html#aadadda2e802727c536a3e613fcb3741f">Node</a>, <a class="el" href="class_port_element.html#abbee2e182534e0734c3097a01e997a71">PortElement</a></li>
 <li>setConnectedNodeName()&#160;:&#160;<a class="el" href="class_node.html#a2405c6a1d9ed30c2e4d3beee06627f65">Node</a></li>
 <li>setConnectedOutput()&#160;:&#160;<a class="el" href="class_interface_element.html#aae1163986c5577f66d5962fd929949db">InterfaceElement</a>, <a class="el" href="class_node.html#aae1163986c5577f66d5962fd929949db">Node</a>, <a class="el" href="class_port_element.html#aa9187d2363cb6e7690613fafb11624bc">PortElement</a></li>
@@ -130,8 +130,10 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setDefaultGeomPropString()&#160;:&#160;<a class="el" href="class_input.html#a4912b330c84e9a39a40ce27272f2e4ec">Input</a></li>
 <li>setDefaultVersion()&#160;:&#160;<a class="el" href="class_interface_element.html#adb110c0d17d7053a34c48778ea94d114">InterfaceElement</a></li>
 <li>setDirectLighting()&#160;:&#160;<a class="el" href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">LightHandler</a></li>
-<li>setDistanceUnit()&#160;:&#160;<a class="el" href="class_texture_baker.html#a332b30c8625b967b47773b9558e7b03d">TextureBaker</a></li>
+<li>setDistanceUnit()&#160;:&#160;<a class="el" href="class_texture_baker.html#a332b30c8625b967b47773b9558e7b03d">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setDocString()&#160;:&#160;<a class="el" href="class_element.html#a1ad3f2f814e821778c532cf0de1a2b2e">Element</a></li>
+<li>setDocument()&#160;:&#160;<a class="el" href="class_shader_material.html#a36264447fc9dd1634bb7a8a7ba6b3996">ShaderMaterial</a></li>
+<li>setElement()&#160;:&#160;<a class="el" href="class_shader_material.html#a5fc4b43c20d370dd81ca2e4817ba1abe">ShaderMaterial</a></li>
 <li>setElements()&#160;:&#160;<a class="el" href="class_attribute_def.html#ac0a4cb898d2e011f626f21e61d88d335">AttributeDef</a></li>
 <li>setEmitted()&#160;:&#160;<a class="el" href="class_shader_port.html#ad1fe7b3dad9351c61553da545ccb2f81">ShaderPort</a></li>
 <li>setEncodeSrgb()&#160;:&#160;<a class="el" href="class_g_l_framebuffer.html#a308db73303630397eac88ea5ae160e99">GLFramebuffer</a></li>
@@ -142,12 +144,12 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setExcludeGeom()&#160;:&#160;<a class="el" href="class_collection.html#a1e89edac28a6087fb287f6fb5d1356a1">Collection</a></li>
 <li>setExclusive()&#160;:&#160;<a class="el" href="class_material_assign.html#a5a40daf368be3004fe8c8af1f4e8bb40">MaterialAssign</a></li>
 <li>setExportable()&#160;:&#160;<a class="el" href="class_attribute_def.html#a9ae2c0014ecedc93bbbefd180bfd3ae9">AttributeDef</a></li>
-<li>setExtension()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8f8c32172bb54262c02fbf1e83d5b5ae">TextureBaker</a></li>
+<li>setExtension()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8f8c32172bb54262c02fbf1e83d5b5ae">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setFaceCount()&#160;:&#160;<a class="el" href="class_mesh_partition.html#a9392c0e113aa087d7f730c7edb1096cd">MeshPartition</a></li>
 <li>setFile()&#160;:&#160;<a class="el" href="class_implementation.html#af0a09fc1c7538cf0dbfd259abb81d6f8">Implementation</a></li>
 <li>setFilenameResolver()&#160;:&#160;<a class="el" href="class_image_handler.html#adde06e8e2239ae086610442809f4c9b0">ImageHandler</a></li>
 <li>setFilenameSubstitution()&#160;:&#160;<a class="el" href="class_string_resolver.html#a3076e47390c5e6eb9e22b5df4d483118">StringResolver</a></li>
-<li>setFilenameTemplateVarOverride()&#160;:&#160;<a class="el" href="class_texture_baker.html#a155b2d34bf2c49362429d5805b9c14be">TextureBaker</a></li>
+<li>setFilenameTemplateVarOverride()&#160;:&#160;<a class="el" href="class_texture_baker.html#a155b2d34bf2c49362429d5805b9c14be">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setFilePrefix()&#160;:&#160;<a class="el" href="class_element.html#a4d78b7a25061cfbc9bfe7f3e5a428fcb">Element</a>, <a class="el" href="class_string_resolver.html#ae177ae9a2170982d69364d714279d4ed">StringResolver</a></li>
 <li>setFlag()&#160;:&#160;<a class="el" href="class_shader_port.html#a104146e1221a3602d3fd1b2c97b908a5">ShaderPort</a></li>
 <li>setFlags()&#160;:&#160;<a class="el" href="class_shader_port.html#a5a436f8fdab39bddbf545356dd06bb10">ShaderPort</a></li>
@@ -161,7 +163,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setGeomPrefix()&#160;:&#160;<a class="el" href="class_element.html#acd9250f8a7631e244ef00c14806e74e1">Element</a>, <a class="el" href="class_string_resolver.html#af0d0761975f80e817eff0cd07f75248f">StringResolver</a></li>
 <li>setGeomProp()&#160;:&#160;<a class="el" href="class_geom_prop_def.html#a3b903fc31dd3827a6d832cde79142807">GeomPropDef</a>, <a class="el" href="class_shader_port.html#a71083731cf3dda3e7934daf3c5275e01">ShaderPort</a></li>
 <li>setGeomPropValue()&#160;:&#160;<a class="el" href="class_geom_info.html#adb2835263dfdd9d62beed3d02080fb57">GeomInfo</a></li>
-<li>setHashImageNames()&#160;:&#160;<a class="el" href="class_texture_baker.html#a92f51d2935b024ac430b8a57e85b5078">TextureBaker</a></li>
+<li>setHashImageNames()&#160;:&#160;<a class="el" href="class_texture_baker.html#a92f51d2935b024ac430b8a57e85b5078">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setHeight()&#160;:&#160;<a class="el" href="class_backdrop.html#a1cae8173a27f7a029a6610975b5e5cbc">Backdrop</a></li>
 <li>setImageHandler()&#160;:&#160;<a class="el" href="class_shader_renderer.html#a1e44744fcfec42866ef5405ba0482ac9">ShaderRenderer</a></li>
 <li>setImplementationName()&#160;:&#160;<a class="el" href="class_value_element.html#ad849744b3aec3bcb99dac5b1c2c915fc">ValueElement</a></li>
@@ -182,6 +184,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setLightTransform()&#160;:&#160;<a class="el" href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">LightHandler</a></li>
 <li>setLooks()&#160;:&#160;<a class="el" href="class_look_group.html#a160607e87ebfcba95d99cb287708ff34">LookGroup</a></li>
 <li>setMaterial()&#160;:&#160;<a class="el" href="class_material_assign.html#a5a85d4be9860b366ebbb0b1da67c6ee1">MaterialAssign</a></li>
+<li>setMaterialNode()&#160;:&#160;<a class="el" href="class_shader_material.html#adf8a728348c18f6ca5af11668c4f2780">ShaderMaterial</a></li>
 <li>setMaximumBounds()&#160;:&#160;<a class="el" href="class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a">Mesh</a></li>
 <li>setMetadata()&#160;:&#160;<a class="el" href="class_shader_node.html#a4edbd087c8f4f6c298b168f54ab007ef">ShaderNode</a>, <a class="el" href="class_shader_port.html#a4edbd087c8f4f6c298b168f54ab007ef">ShaderPort</a></li>
 <li>setMinimumBounds()&#160;:&#160;<a class="el" href="class_mesh.html#a1623f4bcd587a6c2cc681bc7c5648113">Mesh</a></li>
@@ -194,7 +197,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setNodeGroup()&#160;:&#160;<a class="el" href="class_node_def.html#afde29d399ed2d8ccfd56394843ba6977">NodeDef</a></li>
 <li>setNodeName()&#160;:&#160;<a class="el" href="class_port_element.html#ab7b6e67fcc55760969c842dbfb66973d">PortElement</a></li>
 <li>setNodeString()&#160;:&#160;<a class="el" href="class_node_def.html#a288476d98fef116fb80ea88a723b4df8">NodeDef</a></li>
-<li>setOptimizeConstants()&#160;:&#160;<a class="el" href="class_texture_baker.html#a77c3c0076377003271788a2c318d128f">TextureBaker</a></li>
+<li>setOptimizeConstants()&#160;:&#160;<a class="el" href="class_texture_baker.html#a77c3c0076377003271788a2c318d128f">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setOslCompilerExecutable()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a14e7d55d94b8109ff447088fdb9810e0">OslRenderer</a></li>
 <li>setOslIncludePath()&#160;:&#160;<a class="el" href="class_osl_renderer.html#aa631c6fb1c651fefacd578fe9556628d">OslRenderer</a></li>
 <li>setOslOutputFilePath()&#160;:&#160;<a class="el" href="class_osl_renderer.html#ae07f1df598b85d7b1a246274af3b3553">OslRenderer</a></li>
@@ -204,8 +207,8 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setOslTestRenderSceneTemplateFile()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a0906dca52d3d8da2c7144b04baf7a528">OslRenderer</a></li>
 <li>setOslTestShadeExecutable()&#160;:&#160;<a class="el" href="class_osl_renderer.html#ae96fa769f28ebe996524e760728d6592">OslRenderer</a></li>
 <li>setOslUtilityOSOPath()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a11b548f7ef017e4acab675f5329f2252">OslRenderer</a></li>
-<li>setOutputImagePath()&#160;:&#160;<a class="el" href="class_texture_baker.html#a56d7028fda0473220882f3aaef076119">TextureBaker</a></li>
-<li>setOutputStream()&#160;:&#160;<a class="el" href="class_texture_baker.html#a493cf1e93c60e943ad36a796cf0d3729">TextureBaker</a></li>
+<li>setOutputImagePath()&#160;:&#160;<a class="el" href="class_texture_baker.html#a56d7028fda0473220882f3aaef076119">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
+<li>setOutputStream()&#160;:&#160;<a class="el" href="class_texture_baker.html#a493cf1e93c60e943ad36a796cf0d3729">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setOutputString()&#160;:&#160;<a class="el" href="class_port_element.html#abcccd88c75479a2e9c9a1fac17d94cde">PortElement</a></li>
 <li>setPath()&#160;:&#160;<a class="el" href="class_shader_port.html#a1e93035005b7b6fce646dc2916ce6799">ShaderPort</a></li>
 <li>setProjectionMatrix()&#160;:&#160;<a class="el" href="class_camera.html#a11761977ffed423fc431ae0e9c5b69c9">Camera</a></li>
@@ -218,8 +221,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setPruneSubtree()&#160;:&#160;<a class="el" href="class_tree_iterator.html#ac76c1b1b436bbedbee57faf49f2ad711">TreeIterator</a></li>
 <li>setRaysPerPixelLit()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a51e1df03b0d936cf50e864c0440efce8">OslRenderer</a></li>
 <li>setRaysPerPixelUnlit()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a2621cbb7f3f3f2f576af19a9b9094530">OslRenderer</a></li>
-<li>setRefractionColor()&#160;:&#160;<a class="el" href="class_light_handler.html#ac5f1717ab8529108ab4a3d7e41f7b0c3">LightHandler</a></li>
-<li>setRefractionEnv()&#160;:&#160;<a class="el" href="class_light_handler.html#ad8f0261d960ea166327ed7c353d7a9a1">LightHandler</a></li>
+<li>setRefractionTwoSided()&#160;:&#160;<a class="el" href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">LightHandler</a></li>
 <li>setResourceBuffer()&#160;:&#160;<a class="el" href="class_image.html#a9e832f8021daaf4606efca6c739b33df">Image</a></li>
 <li>setResourceBufferDeallocator()&#160;:&#160;<a class="el" href="class_image.html#a0dd32ea0648c504b098e7edf20118d43">Image</a></li>
 <li>setResourceId()&#160;:&#160;<a class="el" href="class_image.html#aa43e3576670459b48e6fa6c0662a22bd">Image</a></li>
@@ -238,12 +240,13 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setSuffix()&#160;:&#160;<a class="el" href="class_closure_context.html#a9d31d9e4e77558227fab16e8839539ea">ClosureContext</a></li>
 <li>setTarget()&#160;:&#160;<a class="el" href="class_interface_element.html#ace922602d85c45bd8cbffc85a8f62fc1">InterfaceElement</a></li>
 <li>setTexelColor()&#160;:&#160;<a class="el" href="class_image.html#a036e5f72a3637976c551cb729caa1df9">Image</a></li>
-<li>setTextureFilenameTemplate()&#160;:&#160;<a class="el" href="class_texture_baker.html#ad99db25b1a740400569f32488188be89">TextureBaker</a></li>
-<li>setTextureSpaceMax()&#160;:&#160;<a class="el" href="class_texture_baker.html#a18d82d419cc5b4e5e59f0638cc9a0b74">TextureBaker</a></li>
-<li>setTextureSpaceMin()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8f61662dea7de5224d8edc61b55d7e91">TextureBaker</a></li>
+<li>setTextureFilenameTemplate()&#160;:&#160;<a class="el" href="class_texture_baker.html#ad99db25b1a740400569f32488188be89">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
+<li>setTextureSpaceMax()&#160;:&#160;<a class="el" href="class_texture_baker.html#a18d82d419cc5b4e5e59f0638cc9a0b74">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
+<li>setTextureSpaceMin()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8f61662dea7de5224d8edc61b55d7e91">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setTokenValue()&#160;:&#160;<a class="el" href="class_geom_info.html#a843ffd0cb42cb7b724f99cf84c8c9747">GeomInfo</a>, <a class="el" href="class_interface_element.html#a843ffd0cb42cb7b724f99cf84c8c9747">InterfaceElement</a></li>
 <li>setType()&#160;:&#160;<a class="el" href="class_shader_port.html#aa034fcb94e236a66a05c091108af944c">ShaderPort</a>, <a class="el" href="class_typed_element.html#aafc7b3e0e653e15f2434a4e7d15cc7cf">TypedElement</a></li>
 <li>setTypedAttribute()&#160;:&#160;<a class="el" href="class_element.html#a7e3b94404f0ff4726bcbcd2200548abf">Element</a></li>
+<li>setUdim()&#160;:&#160;<a class="el" href="class_shader_material.html#a0be7e96d767d7c96a29fddeb28837849">ShaderMaterial</a></li>
 <li>setUdimString()&#160;:&#160;<a class="el" href="class_string_resolver.html#ae773342e622e2fb07da1f67a24cdeae1">StringResolver</a></li>
 <li>setUniform()&#160;:&#160;<a class="el" href="class_shader_port.html#a95a7626cf92b5038a3007016c2a4c3d8">ShaderPort</a></li>
 <li>setUniformColor()&#160;:&#160;<a class="el" href="class_image.html#a663fceef4c4fe38b88334723a2da5a1b">Image</a></li>
@@ -251,7 +254,7 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>setUnitConverterRegistry()&#160;:&#160;<a class="el" href="class_unit_system.html#af33863a97fc2eae09920c8f3e01d1910">UnitSystem</a></li>
 <li>setUnitSystem()&#160;:&#160;<a class="el" href="class_shader_generator.html#a4abdc66250a9833e3847cf4091760497">ShaderGenerator</a></li>
 <li>setUnitType()&#160;:&#160;<a class="el" href="class_unit_def.html#a433f5f207148c49028d9a24a8e188582">UnitDef</a>, <a class="el" href="class_value_element.html#ac71340909e5ddc5e5243af209f56bd4d">ValueElement</a></li>
-<li>setupUnitSystem()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8096fff75acf9765ca632edaf88cc517">TextureBaker</a></li>
+<li>setupUnitSystem()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8096fff75acf9765ca632edaf88cc517">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setUvTileString()&#160;:&#160;<a class="el" href="class_string_resolver.html#a623d70198cdf67587762e3479124b967">StringResolver</a></li>
 <li>setValue()&#160;:&#160;<a class="el" href="class_attribute_def.html#ab5d0750437e1e90d2cf003a29cfaa204">AttributeDef</a>, <a class="el" href="class_shader_port.html#ae0964dd48f6a283b75fe958c10036414">ShaderPort</a>, <a class="el" href="class_value_element.html#ab5d0750437e1e90d2cf003a29cfaa204">ValueElement</a></li>
 <li>setValues()&#160;:&#160;<a class="el" href="class_hw_image_node.html#ab53921168e9fe1dc2f4f2dc13380ec67">HwImageNode</a>, <a class="el" href="class_shader_node_impl.html#a2e48989a129d6d02494bd4eae63626d4">ShaderNodeImpl</a></li>

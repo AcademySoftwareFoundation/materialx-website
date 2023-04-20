@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ Inheritance diagram for GlslShaderGenerator:</div>
   <map id="GlslShaderGenerator_map" name="GlslShaderGenerator_map">
 <area href="class_hw_shader_generator.html" title="Base class for shader generators targeting HW rendering." alt="HwShaderGenerator" shape="rect" coords="71,56,204,80"/>
 <area href="class_shader_generator.html" title="Base class for shader generators All third-party shader generators should derive from this class." alt="ShaderGenerator" shape="rect" coords="71,0,204,24"/>
-<area href="class_essl_shader_generator.html" title="An ESSL (OpenGL ES Shading Language) shader generator" alt="EsslShaderGenerator" shape="rect" coords="0,168,133,192"/>
+<area href="class_essl_shader_generator.html" title="An ESSL (OpenGL ES Shading Language) shader generator." alt="EsslShaderGenerator" shape="rect" coords="0,168,133,192"/>
 <area href="class_vk_shader_generator.html" title="A Vulkan GLSL shader generator." alt="VkShaderGenerator" shape="rect" coords="143,168,276,192"/>
   </map>
 </div></div>
@@ -262,6 +262,10 @@ const <a class="el" href="class_syntax.html">Syntax</a> &amp;&#160;</td><td clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>registerImplementation</b> (const string &amp;name, CreatorFunction&lt; <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &gt; creator)</td></tr>
 <tr class="memdesc:a4ed43e2321e4895662d0f48bac040047 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a shader node implementation for a given implementation element name. <br /></td></tr>
 <tr class="separator:a4ed43e2321e4895662d0f48bac040047 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c94b06c11301938d05dd015cf2801c inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="a48c94b06c11301938d05dd015cf2801c" name="a48c94b06c11301938d05dd015cf2801c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerImplementation</b> (const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> &amp;nameVec, CreatorFunction&lt; <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &gt; creator)</td></tr>
+<tr class="memdesc:a48c94b06c11301938d05dd015cf2801c inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a shader node implementation for a given set of implementation element names. <br /></td></tr>
+<tr class="separator:a48c94b06c11301938d05dd015cf2801c inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a042cb49474a379e4be44b0e1b2ca3885 inherit pub_methods_class_shader_generator"><td class="memItemLeft" align="right" valign="top"><a id="a042cb49474a379e4be44b0e1b2ca3885" name="a042cb49474a379e4be44b0e1b2ca3885"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>implementationRegistered</b> (const string &amp;name) const</td></tr>
 <tr class="memdesc:a042cb49474a379e4be44b0e1b2ca3885 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a shader node implementation has been registered for a given implementation element name. <br /></td></tr>

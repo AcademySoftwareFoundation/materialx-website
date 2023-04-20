@@ -6,5 +6,6 @@ var searchData=
   ['loadgeometry_3',['loadGeometry',['../class_geometry_handler.html#a08003c39a417ac5ae5fcf1acbc99b314',1,'GeometryHandler']]],
   ['loadimage_4',['loadImage',['../class_image_loader.html#ae64002ecf4c680bfc7f14d11a8b4af77',1,'ImageLoader::loadImage()'],['../class_oiio_image_loader.html#a842261f58c0d7ff3aa65c3f39e52b7b4',1,'OiioImageLoader::loadImage()'],['../class_stb_image_loader.html#a842261f58c0d7ff3aa65c3f39e52b7b4',1,'StbImageLoader::loadImage()']]],
   ['loadlibraries_5',['loadLibraries',['../_material_x_format_2_util_8h.html#a4445f3ea975126ebd2773f8f47d30eaa',1,'Util.cpp']]],
-  ['loadlibrary_6',['loadLibrary',['../class_color_management_system.html#afe8c92ac9c05ccabf6b11679d2610fca',1,'ColorManagementSystem::loadLibrary()'],['../class_unit_system.html#afe8c92ac9c05ccabf6b11679d2610fca',1,'UnitSystem::loadLibrary()'],['../_material_x_format_2_util_8h.html#a708ef290205f8b23c0f6eacc1ee83934',1,'loadLibrary():&#160;Util.cpp']]]
+  ['loadlibrary_6',['loadLibrary',['../class_color_management_system.html#afe8c92ac9c05ccabf6b11679d2610fca',1,'ColorManagementSystem::loadLibrary()'],['../class_unit_system.html#afe8c92ac9c05ccabf6b11679d2610fca',1,'UnitSystem::loadLibrary()'],['../_material_x_format_2_util_8h.html#a708ef290205f8b23c0f6eacc1ee83934',1,'loadLibrary():&#160;Util.cpp']]],
+  ['loadsource_7',['loadSource',['../class_shader_material.html#a5a2623e4e7d4dd73fdc2b56bdb569550',1,'ShaderMaterial::loadSource()'],['../class_glsl_material.html#a51f34589e65df6ac9f7b6cb6d22a2e3e',1,'GlslMaterial::loadSource()']]]
 ];

@@ -34,5 +34,6 @@ var class_texture_baker =
     [ "setTextureFilenameTemplate", "class_texture_baker.html#ad99db25b1a740400569f32488188be89", null ],
     [ "setTextureSpaceMax", "class_texture_baker.html#a18d82d419cc5b4e5e59f0638cc9a0b74", null ],
     [ "setTextureSpaceMin", "class_texture_baker.html#a8f61662dea7de5224d8edc61b55d7e91", null ],
-    [ "setupUnitSystem", "class_texture_baker.html#a8096fff75acf9765ca632edaf88cc517", null ]
+    [ "setupUnitSystem", "class_texture_baker.html#a8096fff75acf9765ca632edaf88cc517", null ],
+    [ "writeDocumentPerMaterial", "class_texture_baker.html#aa233ae3372405905278f0c6f87651274", null ]
 ];

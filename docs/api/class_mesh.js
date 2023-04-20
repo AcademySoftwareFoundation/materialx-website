@@ -2,6 +2,7 @@ var class_mesh =
 [
     [ "addPartition", "class_mesh.html#a4bcd6582bf323ea1458486a3729b45a7", null ],
     [ "addStream", "class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea", null ],
+    [ "generateBitangents", "class_mesh.html#a1535e201dc1c5a0c1eb3b46c90696014", null ],
     [ "generateNormals", "class_mesh.html#a94dcd17494409de1662dd94e04e4e1c7", null ],
     [ "generateTangents", "class_mesh.html#a30ad2855b424dafed47dd639cc7af151", null ],
     [ "generateTextureCoordinates", "class_mesh.html#a0f2ad1acf5823395690ba5f65eaa6d3d", null ],

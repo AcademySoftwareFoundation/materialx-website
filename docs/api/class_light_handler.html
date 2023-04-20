@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -156,22 +156,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnvSampleCount</b>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnvSampleCount</b> () const</td></tr>
 <tr class="memdesc:a646c767d68b690b498395ead46a04792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the environment lighting sample count. <br /></td></tr>
 <tr class="separator:a646c767d68b690b498395ead46a04792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8f0261d960ea166327ed7c353d7a9a1"><td class="memItemLeft" align="right" valign="top"><a id="ad8f0261d960ea166327ed7c353d7a9a1" name="ad8f0261d960ea166327ed7c353d7a9a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRefractionEnv</b> (bool enable)</td></tr>
-<tr class="memdesc:ad8f0261d960ea166327ed7c353d7a9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set environment visibility in refractions. <br /></td></tr>
-<tr class="separator:ad8f0261d960ea166327ed7c353d7a9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b99f45e74b4257797e77598c8b1edbb"><td class="memItemLeft" align="right" valign="top"><a id="a6b99f45e74b4257797e77598c8b1edbb" name="a6b99f45e74b4257797e77598c8b1edbb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getRefractionEnv</b> () const</td></tr>
-<tr class="memdesc:a6b99f45e74b4257797e77598c8b1edbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return environment visibility in refractions. <br /></td></tr>
-<tr class="separator:a6b99f45e74b4257797e77598c8b1edbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5f1717ab8529108ab4a3d7e41f7b0c3"><td class="memItemLeft" align="right" valign="top"><a id="ac5f1717ab8529108ab4a3d7e41f7b0c3" name="ac5f1717ab8529108ab4a3d7e41f7b0c3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRefractionColor</b> (const <a class="el" href="class_color3.html">Color3</a> &amp;color)</td></tr>
-<tr class="memdesc:ac5f1717ab8529108ab4a3d7e41f7b0c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the uniform refraction color. <br /></td></tr>
-<tr class="separator:ac5f1717ab8529108ab4a3d7e41f7b0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2226244837d6872550b51aa4d37ee3de"><td class="memItemLeft" align="right" valign="top"><a id="a2226244837d6872550b51aa4d37ee3de" name="a2226244837d6872550b51aa4d37ee3de"></a>
-<a class="el" href="class_color3.html">Color3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getRefractionColor</b> () const</td></tr>
-<tr class="memdesc:a2226244837d6872550b51aa4d37ee3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the uniform refraction color. <br /></td></tr>
-<tr class="separator:a2226244837d6872550b51aa4d37ee3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed297fee194a2edad52ce0dc53616d9c"><td class="memItemLeft" align="right" valign="top"><a id="aed297fee194a2edad52ce0dc53616d9c" name="aed297fee194a2edad52ce0dc53616d9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRefractionTwoSided</b> (bool enable)</td></tr>
+<tr class="memdesc:aed297fee194a2edad52ce0dc53616d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the two-sided refraction property. <br /></td></tr>
+<tr class="separator:aed297fee194a2edad52ce0dc53616d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79a4ecedccff396989ce48a77b57c78"><td class="memItemLeft" align="right" valign="top"><a id="af79a4ecedccff396989ce48a77b57c78" name="af79a4ecedccff396989ce48a77b57c78"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getRefractionTwoSided</b> () const</td></tr>
+<tr class="memdesc:af79a4ecedccff396989ce48a77b57c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the two-sided refraction property. <br /></td></tr>
+<tr class="separator:af79a4ecedccff396989ce48a77b57c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Albedo Table</div></td></tr>
 <tr class="memitem:a94c0201f8d11bf0797f7c742ffab3caa"><td class="memItemLeft" align="right" valign="top"><a id="a94c0201f8d11bf0797f7c742ffab3caa" name="a94c0201f8d11bf0797f7c742ffab3caa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlbedoTable</b> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> table)</td></tr>
@@ -241,12 +233,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_indirectLighting</b>
 <tr class="memitem:a44ccb69a44d02dc64080494083459fd6"><td class="memItemLeft" align="right" valign="top"><a id="a44ccb69a44d02dc64080494083459fd6" name="a44ccb69a44d02dc64080494083459fd6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>_envSampleCount</b></td></tr>
 <tr class="separator:a44ccb69a44d02dc64080494083459fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0af6eac1df40a569abe14d97d270ba"><td class="memItemLeft" align="right" valign="top"><a id="abf0af6eac1df40a569abe14d97d270ba" name="abf0af6eac1df40a569abe14d97d270ba"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_refractionEnv</b></td></tr>
-<tr class="separator:abf0af6eac1df40a569abe14d97d270ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03c8b1aa6fbc1be68fc17bb048ff152d"><td class="memItemLeft" align="right" valign="top"><a id="a03c8b1aa6fbc1be68fc17bb048ff152d" name="a03c8b1aa6fbc1be68fc17bb048ff152d"></a>
-<a class="el" href="class_color3.html">Color3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_refractionColor</b></td></tr>
-<tr class="separator:a03c8b1aa6fbc1be68fc17bb048ff152d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca02eb27f6246e3b39e569b116f674b5"><td class="memItemLeft" align="right" valign="top"><a id="aca02eb27f6246e3b39e569b116f674b5" name="aca02eb27f6246e3b39e569b116f674b5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_refractionTwoSided</b></td></tr>
+<tr class="separator:aca02eb27f6246e3b39e569b116f674b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecddadebde9c862477cee96ef383e888"><td class="memItemLeft" align="right" valign="top"><a id="aecddadebde9c862477cee96ef383e888" name="aecddadebde9c862477cee96ef383e888"></a>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_albedoTable</b></td></tr>
 <tr class="separator:aecddadebde9c862477cee96ef383e888"><td class="memSeparator" colspan="2">&#160;</td></tr>

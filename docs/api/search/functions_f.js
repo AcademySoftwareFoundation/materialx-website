@@ -7,7 +7,7 @@ var searchData=
   ['readfromxmlstring_4',['readFromXmlString',['../_xml_io_8h.html#a4184cf926eeb7bbe3842326a6d58e258',1,'XmlIo.cpp']]],
   ['referencedconditionally_5',['referencedConditionally',['../class_shader_node.html#ada7c3e5b0027a8b79a5384d878cd7924',1,'ShaderNode']]],
   ['registerclass_6',['registerClass',['../class_factory.html#a4fc9e1dd932295714245eae0496ca647',1,'Factory']]],
-  ['registerimplementation_7',['registerImplementation',['../class_shader_generator.html#a4ed43e2321e4895662d0f48bac040047',1,'ShaderGenerator']]],
+  ['registerimplementation_7',['registerImplementation',['../class_shader_generator.html#a4ed43e2321e4895662d0f48bac040047',1,'ShaderGenerator::registerImplementation(const string &amp;name, CreatorFunction&lt; ShaderNodeImpl &gt; creator)'],['../class_shader_generator.html#a48c94b06c11301938d05dd015cf2801c',1,'ShaderGenerator::registerImplementation(const StringVec &amp;nameVec, CreatorFunction&lt; ShaderNodeImpl &gt; creator)']]],
   ['registerinvalidtokens_8',['registerInvalidTokens',['../class_syntax.html#aa13ef66037fd6ad119d6189fed46970e',1,'Syntax']]],
   ['registerlights_9',['registerLights',['../class_light_handler.html#a76b3067128b46043cf202c5b13e53e4e',1,'LightHandler']]],
   ['registerreservedwords_10',['registerReservedWords',['../class_syntax.html#a564278d6f8c89c0b3e2daf1cb8f64a55',1,'Syntax']]],
@@ -68,7 +68,8 @@ var searchData=
   ['replacetokens_65',['replaceTokens',['../class_shader_generator.html#a663144aa41a020a475995e499fe55e2c',1,'ShaderGenerator']]],
   ['requiresimplementation_66',['requiresImplementation',['../_material_x_gen_shader_2_util_8h.html#ab2df37324d0c5ec96cc078863599a232',1,'Util.cpp']]],
   ['requireslighting_67',['requiresLighting',['../class_glsl_shader_generator.html#a7ebd263224a0a494f6b2e3fc07171efc',1,'GlslShaderGenerator']]],
-  ['resize_68',['resize',['../class_g_l_framebuffer.html#a041ed7a4c79b17203735c61a6ff90b6e',1,'GLFramebuffer::resize()'],['../class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b',1,'MeshStream::resize()'],['../class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e',1,'MeshPartition::resize()']]],
-  ['resolve_69',['resolve',['../class_string_resolver.html#ab41a363fcc5a10bc7228d460c1572c87',1,'StringResolver']]],
-  ['resolvesourcefile_70',['resolveSourceFile',['../class_gen_context.html#acfd926e630abe9de5788394e28d1f37a',1,'GenContext']]]
+  ['reserve_68',['reserve',['../class_mesh_stream.html#a7ad704b638e068e218dbfd624beaeb0f',1,'MeshStream']]],
+  ['resize_69',['resize',['../class_mesh_stream.html#adda4d487448aea1c68d96087438fae8b',1,'MeshStream::resize()'],['../class_mesh_partition.html#a830b7e463d5111102921c3159f8f138e',1,'MeshPartition::resize()']]],
+  ['resolve_70',['resolve',['../class_string_resolver.html#ab41a363fcc5a10bc7228d460c1572c87',1,'StringResolver']]],
+  ['resolvesourcefile_71',['resolveSourceFile',['../class_gen_context.html#acfd926e630abe9de5788394e28d1f37a',1,'GenContext']]]
 ];

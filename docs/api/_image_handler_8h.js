@@ -1,6 +1,7 @@
 var _image_handler_8h =
 [
     [ "ImageSamplingProperties", "class_image_sampling_properties.html", "class_image_sampling_properties" ],
+    [ "ImageSamplingKeyHasher", "struct_image_sampling_key_hasher.html", null ],
     [ "ImageLoader", "class_image_loader.html", "class_image_loader" ],
     [ "ImageHandler", "class_image_handler.html", "class_image_handler" ],
     [ "ImageHandlerPtr", "_image_handler_8h.html#a766e76b780d617bb4795f795be8a3b3c", null ],
