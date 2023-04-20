@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_shader_node_impl_8h_source.html','');
 </div><!--header-->
 <div class="contents">
 <a href="_shader_node_impl_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2017 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_SHADERNODEIMPL_H</span></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_shader_node_impl_8h_source.html','');
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_nop_node.html">  115</a></span><span class="keyword">class </span>MX_GENSHADER_API <a class="code hl_class" href="class_nop_node.html">NopNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_shader_node_impl.html">ShaderNodeImpl</a></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>{</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_shader_node_impl_8h.html#af9b23189c1dadf97b46796164ac42a78">ShaderNodeImplPtr</a> create();</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>};</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
@@ -189,16 +189,16 @@ $(document).ready(function(){initNavTree('_shader_node_impl_8h_source.html','');
 <div class="ttc" id="aclass_nop_node_html"><div class="ttname"><a href="class_nop_node.html">NopNode</a></div><div class="ttdoc">A no operation node, to be used for organizational nodes that has no code to execute.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:116</div></div>
 <div class="ttc" id="aclass_shader_graph_html"><div class="ttname"><a href="class_shader_graph.html">ShaderGraph</a></div><div class="ttdoc">Class representing a graph (DAG) for shader generation.</div><div class="ttdef"><b>Definition:</b> ShaderGraph.h:44</div></div>
 <div class="ttc" id="aclass_shader_html"><div class="ttname"><a href="class_shader.html">Shader</a></div><div class="ttdoc">Class containing all data needed during shader generation.</div><div class="ttdef"><b>Definition:</b> Shader.h:33</div></div>
-<div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:262</div></div>
-<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:324</div></div>
+<div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:261</div></div>
+<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:323</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html"><div class="ttname"><a href="class_shader_node_impl.html">ShaderNodeImpl</a></div><div class="ttdoc">Class handling the shader generation implementation for a node.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:31</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_a25185f82bde9fc2ddaf2310806d18b19"><div class="ttname"><a href="class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19">ShaderNodeImpl::isEditable</a></div><div class="ttdeci">virtual bool isEditable(const ShaderInput &amp;) const</div><div class="ttdoc">Returns true if an input is editable by users.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:91</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_a43504fb4aff696d0f5722d8742b17e74"><div class="ttname"><a href="class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74">ShaderNodeImpl::isEditable</a></div><div class="ttdeci">virtual bool isEditable(const ShaderGraphInputSocket &amp;) const</div><div class="ttdoc">Returns true if a graph input is accessible by users.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:100</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_a43f65f5d191c125b0b52028fdbf0f364"><div class="ttname"><a href="class_shader_node_impl.html#a43f65f5d191c125b0b52028fdbf0f364">ShaderNodeImpl::getName</a></div><div class="ttdeci">const string &amp; getName() const</div><div class="ttdoc">Return the name of this implementation.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:47</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_a692cb100c22c74ebc3dc7feb2ba4f145"><div class="ttname"><a href="class_shader_node_impl.html#a692cb100c22c74ebc3dc7feb2ba4f145">ShaderNodeImpl::getTarget</a></div><div class="ttdeci">virtual const string &amp; getTarget() const</div><div class="ttdoc">Return an identifier for the target used by this implementation.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:39</div></div>
 <div class="ttc" id="aclass_shader_node_impl_html_a9d1812e6d521ee14f24fd693c16b7996"><div class="ttname"><a href="class_shader_node_impl.html#a9d1812e6d521ee14f24fd693c16b7996">ShaderNodeImpl::getHash</a></div><div class="ttdeci">size_t getHash() const</div><div class="ttdoc">Return a hash for this implementation.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.h:56</div></div>
-<div class="ttc" id="aclass_shader_output_html"><div class="ttname"><a href="class_shader_output.html">ShaderOutput</a></div><div class="ttdoc">An output on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:299</div></div>
-<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:125</div></div>
+<div class="ttc" id="aclass_shader_output_html"><div class="ttname"><a href="class_shader_output.html">ShaderOutput</a></div><div class="ttdoc">An output on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:298</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:132</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

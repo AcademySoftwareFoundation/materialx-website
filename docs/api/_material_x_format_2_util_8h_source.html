@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_material_x_format_2_util_8h_source.ht
 </div><!--header-->
 <div class="contents">
 <a href="_material_x_format_2_util_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2017 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_FORMAT_UTIL_H</span></div>
@@ -141,9 +141,11 @@ $(document).ready(function(){initNavTree('_material_x_format_2_util_8h_source.ht
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>MX_FORMAT_API <a class="code hl_class" href="class_file_search_path.html">FileSearchPath</a> <a class="code hl_function" href="_material_x_format_2_util_8h.html#ac87275baae8d20eeec76bca60fd5af6e">getSourceSearchPath</a>(<a class="code hl_typedef" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>MATERIALX_NAMESPACE_END</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>MX_FORMAT_API <a class="code hl_class" href="class_file_search_path.html">FileSearchPath</a> <a class="code hl_function" href="_material_x_format_2_util_8h.html#abae3d6647e5a0c5ff37a3e8f04004a3d">getDefaultDataSearchPath</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_document_8h_html"><div class="ttname"><a href="_document_8h.html">Document.h</a></div><div class="ttdoc">The top-level Document class.</div></div>
 <div class="ttc" id="a_document_8h_html_a54a924ef0dee4ee2de25d1c9a172c652"><div class="ttname"><a href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a></div><div class="ttdeci">shared_ptr&lt; const Document &gt; ConstDocumentPtr</div><div class="ttdoc">A shared pointer to a const Document.</div><div class="ttdef"><b>Definition:</b> Document.h:24</div></div>
 <div class="ttc" id="a_document_8h_html_af7c96a4988168273c63f2f297721adcc"><div class="ttname"><a href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a></div><div class="ttdeci">shared_ptr&lt; Document &gt; DocumentPtr</div><div class="ttdoc">A shared pointer to a Document.</div><div class="ttdef"><b>Definition:</b> Document.h:22</div></div>
@@ -159,6 +161,7 @@ $(document).ready(function(){initNavTree('_material_x_format_2_util_8h_source.ht
 <div class="ttc" id="a_material_x_format_2_util_8h_html_a5cfe4ec5bfe85af0ee8ebb3dbdcc50d4"><div class="ttname"><a href="_material_x_format_2_util_8h.html#a5cfe4ec5bfe85af0ee8ebb3dbdcc50d4">flattenFilenames</a></div><div class="ttdeci">MX_FORMAT_API void flattenFilenames(DocumentPtr doc, const FileSearchPath &amp;searchPath=FileSearchPath(), StringResolverPtr customResolver=nullptr)</div><div class="ttdoc">Flatten all filenames in the given document, applying string resolvers at the scope of each element a...</div><div class="ttdef"><b>Definition:</b> Util.cpp:142</div></div>
 <div class="ttc" id="a_material_x_format_2_util_8h_html_a708ef290205f8b23c0f6eacc1ee83934"><div class="ttname"><a href="_material_x_format_2_util_8h.html#a708ef290205f8b23c0f6eacc1ee83934">loadLibrary</a></div><div class="ttdeci">MX_FORMAT_API void loadLibrary(const FilePath &amp;file, DocumentPtr doc, const FileSearchPath &amp;searchPath=FileSearchPath(), const XmlReadOptions *readOptions=nullptr)</div><div class="ttdoc">Load a given MaterialX library into a document.</div><div class="ttdef"><b>Definition:</b> Util.cpp:76</div></div>
 <div class="ttc" id="a_material_x_format_2_util_8h_html_a7a8f2a039a2d0f4db163ef9c074c47ef"><div class="ttname"><a href="_material_x_format_2_util_8h.html#a7a8f2a039a2d0f4db163ef9c074c47ef">loadDocuments</a></div><div class="ttdeci">MX_FORMAT_API void loadDocuments(const FilePath &amp;rootPath, const FileSearchPath &amp;searchPath, const StringSet &amp;skipFiles, const StringSet &amp;includeFiles, vector&lt; DocumentPtr &gt; &amp;documents, StringVec &amp;documentsPaths, const XmlReadOptions *readOptions=nullptr, StringVec *errors=nullptr)</div><div class="ttdoc">Scans for all documents under a root path and returns documents which can be loaded.</div><div class="ttdef"><b>Definition:</b> Util.cpp:43</div></div>
+<div class="ttc" id="a_material_x_format_2_util_8h_html_abae3d6647e5a0c5ff37a3e8f04004a3d"><div class="ttname"><a href="_material_x_format_2_util_8h.html#abae3d6647e5a0c5ff37a3e8f04004a3d">getDefaultDataSearchPath</a></div><div class="ttdeci">MX_FORMAT_API FileSearchPath getDefaultDataSearchPath()</div><div class="ttdoc">Return a file search path to the default data library folder.</div><div class="ttdef"><b>Definition:</b> Util.cpp:225</div></div>
 <div class="ttc" id="a_material_x_format_2_util_8h_html_abfff660702ced84d1c1341bc7aca6b93"><div class="ttname"><a href="_material_x_format_2_util_8h.html#abfff660702ced84d1c1341bc7aca6b93">readFile</a></div><div class="ttdeci">MATERIALX_NAMESPACE_BEGIN MX_FORMAT_API string readFile(const FilePath &amp;file)</div><div class="ttdoc">Read the given file and return a string containing its contents; if the read is not successful,...</div><div class="ttdef"><b>Definition:</b> Util.cpp:14</div></div>
 <div class="ttc" id="a_material_x_format_2_util_8h_html_ac87275baae8d20eeec76bca60fd5af6e"><div class="ttname"><a href="_material_x_format_2_util_8h.html#ac87275baae8d20eeec76bca60fd5af6e">getSourceSearchPath</a></div><div class="ttdeci">MX_FORMAT_API FileSearchPath getSourceSearchPath(ConstDocumentPtr doc)</div><div class="ttdoc">Return a file search path containing the parent folder of each source URI in the given document.</div><div class="ttdef"><b>Definition:</b> Util.cpp:204</div></div>
 <div class="ttc" id="a_xml_io_8h_html"><div class="ttname"><a href="_xml_io_8h.html">XmlIo.h</a></div><div class="ttdoc">Support for the MTLX file format.</div></div>

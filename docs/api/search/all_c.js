@@ -44,6 +44,7 @@ var searchData=
   ['meshstreamlist_41',['MeshStreamList',['../_mesh_8h.html#a172addb5cf2c028c609c258b623de350',1,'Mesh.h']]],
   ['meshstreamptr_42',['MeshStreamPtr',['../_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153',1,'Mesh.h']]],
   ['modifyinterfacename_43',['modifyInterfaceName',['../class_node_graph.html#ac2c20a4ba0f1735f946149dab0172cd5',1,'NodeGraph']]],
-  ['multiply_44',['multiply',['../class_matrix33.html#ae5b80d6f256a424670ba627ddfda2c65',1,'Matrix33::multiply()'],['../class_matrix44.html#a0cbfa719fc9dd23f5bcbe034cae7054b',1,'Matrix44::multiply()']]],
-  ['mx_5fcore_5fextern_5ftemplate_45',['MX_CORE_EXTERN_TEMPLATE',['../_value_8h.html#a5651cd9cfffdd7b2eedecb9cae351bcd',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; int &gt;):&#160;Value.h'],['../_value_8h.html#a3b1b38cc458d542510e56796c1a3d665',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; IntVec &gt;):&#160;Value.h'],['../_value_8h.html#a30d1be85fbfc0907195371516c38ec14',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; long &gt;):&#160;Value.h']]]
+  ['modifyuniform_44',['modifyUniform',['../class_shader_material.html#a9687f12f129f1cdbbcb75c344281eebd',1,'ShaderMaterial::modifyUniform()'],['../class_glsl_material.html#a6d151bdeff0d54a5538a38ae6066bfd8',1,'GlslMaterial::modifyUniform()']]],
+  ['multiply_45',['multiply',['../class_matrix33.html#ae5b80d6f256a424670ba627ddfda2c65',1,'Matrix33::multiply()'],['../class_matrix44.html#a0cbfa719fc9dd23f5bcbe034cae7054b',1,'Matrix44::multiply()']]],
+  ['mx_5fcore_5fextern_5ftemplate_46',['MX_CORE_EXTERN_TEMPLATE',['../_value_8h.html#a5651cd9cfffdd7b2eedecb9cae351bcd',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; int &gt;):&#160;Value.h'],['../_value_8h.html#a3b1b38cc458d542510e56796c1a3d665',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; IntVec &gt;):&#160;Value.h'],['../_value_8h.html#a30d1be85fbfc0907195371516c38ec14',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; long &gt;):&#160;Value.h']]]
 ];

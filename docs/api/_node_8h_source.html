@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_node_8h_source.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <a href="_node_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2017 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_NODE_H</span></div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('_node_8h_source.html',''); initResizab
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        removeChildOfType&lt;Backdrop&gt;(name);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    }</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordtype">void</span> flattenSubgraphs(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; target = EMPTY_STRING, NodePredicate filter = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    vector&lt;ElementPtr&gt; topologicalSort() <span class="keyword">const</span>;</div>
@@ -449,9 +449,9 @@ $(document).ready(function(){initNavTree('_node_8h_source.html',''); initResizab
 <div class="ttc" id="aclass_graph_element_html_afe7f6f78b3bc3d6348e034c626e97d93"><div class="ttname"><a href="class_graph_element.html#afe7f6f78b3bc3d6348e034c626e97d93">GraphElement::getNodesOfType</a></div><div class="ttdeci">vector&lt; NodePtr &gt; getNodesOfType(const string &amp;nodeType) const</div><div class="ttdoc">Return a vector of nodes in the graph which have a given type.</div><div class="ttdef"><b>Definition:</b> Node.h:235</div></div>
 <div class="ttc" id="aclass_interface_element_html"><div class="ttname"><a href="class_interface_element.html">InterfaceElement</a></div><div class="ttdoc">The base class for interface elements such as Node, NodeDef, and NodeGraph.</div><div class="ttdef"><b>Definition:</b> Interface.h:318</div></div>
 <div class="ttc" id="aclass_interface_element_html_a24839addc5223dc2534fe5d687df9786"><div class="ttname"><a href="class_interface_element.html#a24839addc5223dc2534fe5d687df9786">InterfaceElement::getInputCount</a></div><div class="ttdeci">size_t getInputCount() const</div><div class="ttdoc">Return the number of Input elements.</div><div class="ttdef"><b>Definition:</b> Interface.h:387</div></div>
-<div class="ttc" id="aclass_interface_element_html_a4978e020a466cca80d0e7a233979529a"><div class="ttname"><a href="class_interface_element.html#a4978e020a466cca80d0e7a233979529a">InterfaceElement::getDeclaration</a></div><div class="ttdeci">virtual ConstInterfaceElementPtr getDeclaration(const string &amp;target=EMPTY_STRING) const</div><div class="ttdoc">Return the first declaration of this interface, optionally filtered by the given target name.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:608</div></div>
-<div class="ttc" id="aclass_interface_element_html_a83346b1cd09131ea863e8e24a1ba8f60"><div class="ttname"><a href="class_interface_element.html#a83346b1cd09131ea863e8e24a1ba8f60">InterfaceElement::getConnectedOutput</a></div><div class="ttdeci">OutputPtr getConnectedOutput(const string &amp;inputName) const</div><div class="ttdoc">Return the output connected to the given input.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:464</div></div>
-<div class="ttc" id="aclass_interface_element_html_aae1163986c5577f66d5962fd929949db"><div class="ttname"><a href="class_interface_element.html#aae1163986c5577f66d5962fd929949db">InterfaceElement::setConnectedOutput</a></div><div class="ttdeci">void setConnectedOutput(const string &amp;inputName, OutputPtr output)</div><div class="ttdoc">Set the output to which the given input is connected, creating a child input if needed.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:450</div></div>
+<div class="ttc" id="aclass_interface_element_html_a4978e020a466cca80d0e7a233979529a"><div class="ttname"><a href="class_interface_element.html#a4978e020a466cca80d0e7a233979529a">InterfaceElement::getDeclaration</a></div><div class="ttdeci">virtual ConstInterfaceElementPtr getDeclaration(const string &amp;target=EMPTY_STRING) const</div><div class="ttdoc">Return the first declaration of this interface, optionally filtered by the given target name.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:609</div></div>
+<div class="ttc" id="aclass_interface_element_html_a83346b1cd09131ea863e8e24a1ba8f60"><div class="ttname"><a href="class_interface_element.html#a83346b1cd09131ea863e8e24a1ba8f60">InterfaceElement::getConnectedOutput</a></div><div class="ttdeci">OutputPtr getConnectedOutput(const string &amp;inputName) const</div><div class="ttdoc">Return the output connected to the given input.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:465</div></div>
+<div class="ttc" id="aclass_interface_element_html_aae1163986c5577f66d5962fd929949db"><div class="ttname"><a href="class_interface_element.html#aae1163986c5577f66d5962fd929949db">InterfaceElement::setConnectedOutput</a></div><div class="ttdeci">void setConnectedOutput(const string &amp;inputName, OutputPtr output)</div><div class="ttdoc">Set the output to which the given input is connected, creating a child input if needed.</div><div class="ttdef"><b>Definition:</b> Interface.cpp:451</div></div>
 <div class="ttc" id="aclass_node_graph_html"><div class="ttname"><a href="class_node_graph.html">NodeGraph</a></div><div class="ttdoc">A node graph element within a Document.</div><div class="ttdef"><b>Definition:</b> Node.h:332</div></div>
 <div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdoc">A node element within a NodeGraph or Document.</div><div class="ttdef"><b>Definition:</b> Node.h:53</div></div>
 <div class="ttc" id="aclass_node_html_a574f2438d501100d4fe72c81a4995d18"><div class="ttname"><a href="class_node.html#a574f2438d501100d4fe72c81a4995d18">Node::getImplementation</a></div><div class="ttdeci">InterfaceElementPtr getImplementation(const string &amp;target=EMPTY_STRING) const</div><div class="ttdoc">Return the first implementation for this node, optionally filtered by the given target and language n...</div><div class="ttdef"><b>Definition:</b> Node.h:117</div></div>

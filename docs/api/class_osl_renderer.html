@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -122,9 +122,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~OslRenderer</b> (
 <tr class="memdesc:a1e188f158e55e76b29923800458d9a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a1e188f158e55e76b29923800458d9a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setup</div></td></tr>
-<tr class="memitem:a371caef26098f2a15df9fbee047b58f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#a371caef26098f2a15df9fbee047b58f2">initialize</a> () override</td></tr>
-<tr class="memdesc:a371caef26098f2a15df9fbee047b58f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal initialization required for program validation and rendering.  <a href="class_osl_renderer.html#a371caef26098f2a15df9fbee047b58f2">More...</a><br /></td></tr>
-<tr class="separator:a371caef26098f2a15df9fbee047b58f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84497ccac2904d94ab058449adc39a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#af84497ccac2904d94ab058449adc39a5">initialize</a> (<a class="el" href="_shader_renderer_8h.html#a97d8cbf4b4599bd4f406c31778652920">RenderContextHandle</a> renderContextHandle=nullptr) override</td></tr>
+<tr class="memdesc:af84497ccac2904d94ab058449adc39a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal initialization required for program validation and rendering.  <a href="class_osl_renderer.html#af84497ccac2904d94ab058449adc39a5">More...</a><br /></td></tr>
+<tr class="separator:af84497ccac2904d94ab058449adc39a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Rendering</div></td></tr>
 <tr class="memitem:a4245723b5c4bf16becb60c50d56e8b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_osl_renderer.html#a4245723b5c4bf16becb60c50d56e8b56">createProgram</a> (<a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a> shader) override</td></tr>
 <tr class="memdesc:a4245723b5c4bf16becb60c50d56e8b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create OSL program based on an input shader.  <a href="class_osl_renderer.html#a4245723b5c4bf16becb60c50d56e8b56">More...</a><br /></td></tr>
@@ -423,12 +423,12 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_shader_renderer.html#abf19a57f294712a52b0c881b1e7cd848">ShaderRenderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_shader_renderer.html#a990f5887d2593101173ee8f50d3d7231">ShaderRenderer</a>.</p>
 
 </div>
 </div>
-<a id="a371caef26098f2a15df9fbee047b58f2" name="a371caef26098f2a15df9fbee047b58f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a371caef26098f2a15df9fbee047b58f2">&#9670;&#160;</a></span>initialize()</h2>
+<a id="af84497ccac2904d94ab058449adc39a5" name="af84497ccac2904d94ab058449adc39a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84497ccac2904d94ab058449adc39a5">&#9670;&#160;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +439,8 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
         <tr>
           <td class="memname">void initialize </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_shader_renderer_8h.html#a97d8cbf4b4599bd4f406c31778652920">RenderContextHandle</a>&#160;</td>
+          <td class="paramname"><em>renderContextHandle</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -453,7 +454,7 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 <p>Internal initialization required for program validation and rendering. </p>
 <p >An exception is thrown on failure. The exception will contain a list of initialization errors. </p>
 
-<p>Reimplemented from <a class="el" href="class_shader_renderer.html#a6365dca5a7d8ddb694726a53b55a4c27">ShaderRenderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_shader_renderer.html#af7d87da9473bbb7edeaed5aa87228fc1">ShaderRenderer</a>.</p>
 
 </div>
 </div>

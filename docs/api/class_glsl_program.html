@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -130,14 +130,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~GlslProgram</b> (
 <tr class="memitem:aa336098c9541df10509a1cc2b5a09608"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_program.html#aa336098c9541df10509a1cc2b5a09608">getStageSourceCode</a> (const string &amp;stage) const</td></tr>
 <tr class="memdesc:aa336098c9541df10509a1cc2b5a09608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get source code string for a given stage.  <a href="class_glsl_program.html#aa336098c9541df10509a1cc2b5a09608">More...</a><br /></td></tr>
 <tr class="separator:aa336098c9541df10509a1cc2b5a09608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c52a16587dbe3844629c8f55aeb35a"><td class="memItemLeft" align="right" valign="top"><a id="a42c52a16587dbe3844629c8f55aeb35a" name="a42c52a16587dbe3844629c8f55aeb35a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearStages</b> ()</td></tr>
-<tr class="memdesc:a42c52a16587dbe3844629c8f55aeb35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear out any existing stages. <br /></td></tr>
-<tr class="separator:a42c52a16587dbe3844629c8f55aeb35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39734916bcc47f5efc0952c9b0704c6"><td class="memItemLeft" align="right" valign="top"><a id="ac39734916bcc47f5efc0952c9b0704c6" name="ac39734916bcc47f5efc0952c9b0704c6"></a>
 <a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getShader</b> () const</td></tr>
 <tr class="memdesc:ac39734916bcc47f5efc0952c9b0704c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shader, if any, used to generate this program. <br /></td></tr>
 <tr class="separator:ac39734916bcc47f5efc0952c9b0704c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Program building</div></td></tr>
+<tr class="memitem:a7740c7ab195c03ac140f1f75f633470f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_program.html#a7740c7ab195c03ac140f1f75f633470f">build</a> ()</td></tr>
+<tr class="memdesc:a7740c7ab195c03ac140f1f75f633470f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build shader program data from the source code set for each shader stage.  <a href="class_glsl_program.html#a7740c7ab195c03ac140f1f75f633470f">More...</a><br /></td></tr>
+<tr class="separator:a7740c7ab195c03ac140f1f75f633470f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b92178bdeaaa8b01b5069856b2e0e7"><td class="memItemLeft" align="right" valign="top"><a id="a21b92178bdeaaa8b01b5069856b2e0e7" name="a21b92178bdeaaa8b01b5069856b2e0e7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasBuiltData</b> ()</td></tr>
+<tr class="memdesc:a21b92178bdeaaa8b01b5069856b2e0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if built shader program data is present. <br /></td></tr>
+<tr class="separator:a21b92178bdeaaa8b01b5069856b2e0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c1947114d670fc537f9ad2b262770e"><td class="memItemLeft" align="right" valign="top"><a id="a20c1947114d670fc537f9ad2b262770e" name="a20c1947114d670fc537f9ad2b262770e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearBuiltData</b> ()</td></tr>
+<tr class="separator:a20c1947114d670fc537f9ad2b262770e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Program activation</div></td></tr>
 <tr class="memitem:a16873539a1053d46eebcbf393002ff6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_program.html#a16873539a1053d46eebcbf393002ff6b">bind</a> ()</td></tr>
 <tr class="memdesc:a16873539a1053d46eebcbf393002ff6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the program.  <a href="class_glsl_program.html#a16873539a1053d46eebcbf393002ff6b">More...</a><br /></td></tr>
@@ -223,18 +230,12 @@ const <a class="el" href="class_glsl_program.html#a4220644552da44fee09012ccf5818
 <tr class="memitem:a4a0d99a7e96aad1c55e1a854df6ccb3a"><td class="memItemLeft" align="right" valign="top"><a id="a4a0d99a7e96aad1c55e1a854df6ccb3a" name="a4a0d99a7e96aad1c55e1a854df6ccb3a"></a>
 const <a class="el" href="class_glsl_program.html#a4220644552da44fee09012ccf581816e">InputMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>updateAttributesList</b> ()</td></tr>
 <tr class="separator:a4a0d99a7e96aad1c55e1a854df6ccb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a170fea7428a4050914edab074fef3abb"><td class="memItemLeft" align="right" valign="top"><a id="a170fea7428a4050914edab074fef3abb" name="a170fea7428a4050914edab074fef3abb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearInputLists</b> ()</td></tr>
-<tr class="separator:a170fea7428a4050914edab074fef3abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf61a30c5d777e8a0eb08e948253194b"><td class="memItemLeft" align="right" valign="top"><a id="acf61a30c5d777e8a0eb08e948253194b" name="acf61a30c5d777e8a0eb08e948253194b"></a>
 <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUniformValue</b> (const string &amp;uniformName, const <a class="el" href="class_glsl_program.html#a4220644552da44fee09012ccf581816e">InputMap</a> &amp;uniformList)</td></tr>
 <tr class="separator:acf61a30c5d777e8a0eb08e948253194b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac391b386c92e0bbbbd07c3a94d8fcf7b"><td class="memItemLeft" align="right" valign="top"><a id="ac391b386c92e0bbbbd07c3a94d8fcf7b" name="ac391b386c92e0bbbbd07c3a94d8fcf7b"></a>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bindTexture</b> (unsigned int uniformType, int uniformLocation, const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath, <a class="el" href="_image_handler_8h.html#a766e76b780d617bb4795f795be8a3b3c">ImageHandlerPtr</a> imageHandler, const <a class="el" href="class_image_sampling_properties.html">ImageSamplingProperties</a> &amp;imageProperties)</td></tr>
 <tr class="separator:ac391b386c92e0bbbbd07c3a94d8fcf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc77e4a61719d0eada9210a356c1670"><td class="memItemLeft" align="right" valign="top"><a id="a3cc77e4a61719d0eada9210a356c1670" name="a3cc77e4a61719d0eada9210a356c1670"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteProgram</b> ()</td></tr>
-<tr class="separator:a3cc77e4a61719d0eada9210a356c1670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3556d8ce9ea9f24c16d9b2a8a0154bc3"><td class="memItemLeft" align="right" valign="top"><a id="a3556d8ce9ea9f24c16d9b2a8a0154bc3" name="a3556d8ce9ea9f24c16d9b2a8a0154bc3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bindUniformLocation</b> (int location, <a class="el" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a> value)</td></tr>
 <tr class="separator:a3556d8ce9ea9f24c16d9b2a8a0154bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +246,7 @@ Static Protected Member Functions</h2></td></tr>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>mapTypeToOpenGLType</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type)</td></tr>
 <tr class="separator:a092330e096b1f108d9bc12cd4d129b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Program validation and introspection</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Program introspection</h2></td></tr>
 <tr class="memitem:a0b3f0c577a3258f59848e6fcb7ce379e"><td class="memItemLeft" align="right" valign="top"><a id="a0b3f0c577a3258f59848e6fcb7ce379e" name="a0b3f0c577a3258f59848e6fcb7ce379e"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>InputPtr</b> = std::shared_ptr&lt; <a class="el" href="struct_glsl_program_1_1_input.html">Input</a> &gt;</td></tr>
 <tr class="memdesc:a0b3f0c577a3258f59848e6fcb7ce379e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program input structure shared pointer type. <br /></td></tr>
@@ -254,9 +255,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>InputPtr</b> = std::
 using&#160;</td><td class="memItemRight" valign="bottom"><b>InputMap</b> = std::unordered_map&lt; string, <a class="el" href="class_glsl_program.html#a0b3f0c577a3258f59848e6fcb7ce379e">InputPtr</a> &gt;</td></tr>
 <tr class="memdesc:a4220644552da44fee09012ccf581816e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program input shaded pointer map type. <br /></td></tr>
 <tr class="separator:a4220644552da44fee09012ccf581816e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75a4f87f6bbcccbf84ebaed54618bf5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_program.html#ab75a4f87f6bbcccbf84ebaed54618bf5">build</a> ()</td></tr>
-<tr class="memdesc:ab75a4f87f6bbcccbf84ebaed54618bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the shader program from stages specified An exception is thrown if the program cannot be created.  <a href="class_glsl_program.html#ab75a4f87f6bbcccbf84ebaed54618bf5">More...</a><br /></td></tr>
-<tr class="separator:ab75a4f87f6bbcccbf84ebaed54618bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73cb7649d2592d529eed2e4e3b3f23f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_glsl_program.html#a4220644552da44fee09012ccf581816e">InputMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_program.html#a73cb7649d2592d529eed2e4e3b3f23f3">getUniformsList</a> ()</td></tr>
 <tr class="memdesc:a73cb7649d2592d529eed2e4e3b3f23f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of program input uniforms.  <a href="class_glsl_program.html#a73cb7649d2592d529eed2e4e3b3f23f3">More...</a><br /></td></tr>
 <tr class="separator:a73cb7649d2592d529eed2e4e3b3f23f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,14 +363,14 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>InputMap</b> = std::
 
 </div>
 </div>
-<a id="ab75a4f87f6bbcccbf84ebaed54618bf5" name="ab75a4f87f6bbcccbf84ebaed54618bf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab75a4f87f6bbcccbf84ebaed54618bf5">&#9670;&#160;</a></span>build()</h2>
+<a id="a7740c7ab195c03ac140f1f75f633470f" name="a7740c7ab195c03ac140f1f75f633470f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7740c7ab195c03ac140f1f75f633470f">&#9670;&#160;</a></span>build()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int build </td>
+          <td class="memname">void build </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -380,8 +378,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>InputMap</b> = std::
       </table>
 </div><div class="memdoc">
 
-<p>Create the shader program from stages specified An exception is thrown if the program cannot be created. </p>
-<p >The exception will contain a list of program creation errors. </p><dl class="section return"><dt>Returns</dt><dd>Program identifier. </dd></dl>
+<p>Build shader program data from the source code set for each shader stage. </p>
+<p >An exception is thrown if the program cannot be built. The exception will contain a list of compilation errors. </p>
 
 </div>
 </div>

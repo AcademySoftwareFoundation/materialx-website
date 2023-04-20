@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -200,6 +200,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addPartition</b> (<a 
 <tr class="memitem:a30ad2855b424dafed47dd639cc7af151"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a30ad2855b424dafed47dd639cc7af151">generateTangents</a> (<a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> positionStream, <a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> normalStream, <a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> texcoordStream)</td></tr>
 <tr class="memdesc:a30ad2855b424dafed47dd639cc7af151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate tangents from the given positions, normals, and texture coordinates.  <a href="class_mesh.html#a30ad2855b424dafed47dd639cc7af151">More...</a><br /></td></tr>
 <tr class="separator:a30ad2855b424dafed47dd639cc7af151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1535e201dc1c5a0c1eb3b46c90696014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh.html#a1535e201dc1c5a0c1eb3b46c90696014">generateBitangents</a> (<a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> normalStream, <a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> tangentStream)</td></tr>
+<tr class="memdesc:a1535e201dc1c5a0c1eb3b46c90696014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate bitangents from the given normals and tangents.  <a href="class_mesh.html#a1535e201dc1c5a0c1eb3b46c90696014">More...</a><br /></td></tr>
+<tr class="separator:a1535e201dc1c5a0c1eb3b46c90696014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d1ac3c75800955a9a2219e653038b4b"><td class="memItemLeft" align="right" valign="top"><a id="a9d1ac3c75800955a9a2219e653038b4b" name="a9d1ac3c75800955a9a2219e653038b4b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mergePartitions</b> ()</td></tr>
 <tr class="memdesc:a9d1ac3c75800955a9a2219e653038b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge all mesh partitions into one. <br /></td></tr>
@@ -219,6 +222,44 @@ static <a class="el" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">Mesh
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Container for mesh data. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1535e201dc1c5a0c1eb3b46c90696014" name="a1535e201dc1c5a0c1eb3b46c90696014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1535e201dc1c5a0c1eb3b46c90696014">&#9670;&#160;</a></span>generateBitangents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> generateBitangents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td>
+          <td class="paramname"><em>normalStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a>&#160;</td>
+          <td class="paramname"><em>tangentStream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate bitangents from the given normals and tangents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalStream</td><td><a class="el" href="class_input.html" title="An input element within a Node or NodeDef.">Input</a> normal stream </td></tr>
+    <tr><td class="paramname">tangentStream</td><td><a class="el" href="class_input.html" title="An input element within a Node or NodeDef.">Input</a> tangent stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated bitangent stream, on success; otherwise, a null pointer. </dd></dl>
+
+</div>
+</div>
 <a id="a94dcd17494409de1662dd94e04e4e1c7" name="a94dcd17494409de1662dd94e04e4e1c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94dcd17494409de1662dd94e04e4e1c7">&#9670;&#160;</a></span>generateNormals()</h2>
 

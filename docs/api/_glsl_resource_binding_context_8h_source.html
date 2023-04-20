@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_glsl_resource_binding_context_8h_sour
 </div><!--header-->
 <div class="contents">
 <a href="_glsl_resource_binding_context_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2020 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_GLSLRESOURCEBINDING_H</span></div>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('_glsl_resource_binding_context_8h_sour
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="class_glsl_resource_binding_context.html">GlslResourceBindingContext</a>(<span class="keywordtype">size_t</span> uniformBindingLocation, <span class="keywordtype">size_t</span> samplerBindingLocation);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_glsl_resource_binding_context_8h.html#a1d8ec87932540d627d8ffc7723f9fe81">GlslResourceBindingContextPtr</a> create(</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">size_t</span> uniformBindingLocation=0, <span class="keywordtype">size_t</span> samplerBindingLocation=0)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">size_t</span> uniformBindingLocation = 0, <span class="keywordtype">size_t</span> samplerBindingLocation = 0)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> std::make_shared&lt;GlslResourceBindingContext&gt;(</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            uniformBindingLocation, samplerBindingLocation);</div>
@@ -172,8 +172,8 @@ $(document).ready(function(){initNavTree('_glsl_resource_binding_context_8h_sour
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:31</div></div>
 <div class="ttc" id="aclass_glsl_resource_binding_context_html"><div class="ttname"><a href="class_glsl_resource_binding_context.html">GlslResourceBindingContext</a></div><div class="ttdoc">Class representing a resource binding for Glsl shader resources.</div><div class="ttdef"><b>Definition:</b> GlslResourceBindingContext.h:24</div></div>
 <div class="ttc" id="aclass_hw_resource_binding_context_html"><div class="ttname"><a href="class_hw_resource_binding_context.html">HwResourceBindingContext</a></div><div class="ttdoc">Class representing a context for resource binding for hardware resources.</div><div class="ttdef"><b>Definition:</b> HwShaderGenerator.h:342</div></div>
-<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:125</div></div>
-<div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:54</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:132</div></div>
+<div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

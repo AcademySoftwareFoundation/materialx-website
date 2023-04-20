@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_mdl_shader_generator_8h_source.html',
 </div><!--header-->
 <div class="contents">
 <a href="_mdl_shader_generator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2020 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_MDLSHADERGENERATOR_H</span></div>
@@ -128,24 +128,28 @@ $(document).ready(function(){initNavTree('_mdl_shader_generator_8h_source.html',
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_mdl_shader_generator.html#a335fb1f3614f3f8d3834451b76d5bc11">   45</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_mdl_shader_generator.html#a335fb1f3614f3f8d3834451b76d5bc11">TARGET</a>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Create and initialize a new MDL shader for shader generation.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_typedef" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a> createShader(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code hl_typedef" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> element, <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Emit a block of shader inputs.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> emitShaderInputs(<span class="keyword">const</span> <a class="code hl_class" href="class_variable_block.html">VariableBlock</a>&amp; inputs, <a class="code hl_class" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">namespace </span>MDL</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Identifiers for MDL variable blocks</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">extern</span> MX_GENMDL_API <span class="keyword">const</span> <span class="keywordtype">string</span> INPUTS;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">extern</span> MX_GENMDL_API <span class="keyword">const</span> <span class="keywordtype">string</span> OUTPUTS;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>MATERIALX_NAMESPACE_END</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_mdl_shader_generator.html#a900975144591faadec7de232ec8d78b1">   48</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;string, string&gt; <a class="code hl_variable" href="class_mdl_shader_generator.html#a900975144591faadec7de232ec8d78b1">GEOMPROP_DEFINITIONS</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Create and initialize a new MDL shader for shader generation.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_typedef" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a> createShader(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <a class="code hl_typedef" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> element, <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Emit a block of shader inputs.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> emitShaderInputs(<span class="keyword">const</span> <a class="code hl_class" href="class_variable_block.html">VariableBlock</a>&amp; inputs, <a class="code hl_class" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">namespace </span>MDL</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// Identifiers for MDL variable blocks</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">extern</span> MX_GENMDL_API <span class="keyword">const</span> <span class="keywordtype">string</span> INPUTS;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">extern</span> MX_GENMDL_API <span class="keyword">const</span> <span class="keywordtype">string</span> OUTPUTS;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <span class="comment">// namespace MDL</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_element_8h_html_a74d91fb8b93d96837a7c900a3f0bb426"><div class="ttname"><a href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a></div><div class="ttdeci">shared_ptr&lt; Element &gt; ElementPtr</div><div class="ttdoc">A shared pointer to an Element.</div><div class="ttdef"><b>Definition:</b> Element.h:30</div></div>
 <div class="ttc" id="a_material_x_gen_mdl_2_export_8h_html"><div class="ttname"><a href="_material_x_gen_mdl_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_aacd664a62bf16fc6a92b1d619ad2c031"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a></div><div class="ttdeci">shared_ptr&lt; Shader &gt; ShaderPtr</div><div class="ttdoc">Shared pointer to a Shader.</div><div class="ttdef"><b>Definition:</b> Library.h:34</div></div>
@@ -157,14 +161,15 @@ $(document).ready(function(){initNavTree('_mdl_shader_generator_8h_source.html',
 <div class="ttc" id="aclass_mdl_shader_generator_html"><div class="ttname"><a href="class_mdl_shader_generator.html">MdlShaderGenerator</a></div><div class="ttdoc">Shader generator for MDL (Material Definition Language).</div><div class="ttdef"><b>Definition:</b> MdlShaderGenerator.h:24</div></div>
 <div class="ttc" id="aclass_mdl_shader_generator_html_a0b6a1a7ea1d88588b6f49a1005f1c2ab"><div class="ttname"><a href="class_mdl_shader_generator.html#a0b6a1a7ea1d88588b6f49a1005f1c2ab">MdlShaderGenerator::getTarget</a></div><div class="ttdeci">const string &amp; getTarget() const override</div><div class="ttdoc">Return a unique identifier for the target this generator is for.</div><div class="ttdef"><b>Definition:</b> MdlShaderGenerator.h:31</div></div>
 <div class="ttc" id="aclass_mdl_shader_generator_html_a335fb1f3614f3f8d3834451b76d5bc11"><div class="ttname"><a href="class_mdl_shader_generator.html#a335fb1f3614f3f8d3834451b76d5bc11">MdlShaderGenerator::TARGET</a></div><div class="ttdeci">static const string TARGET</div><div class="ttdoc">Unique identifier for this generator target.</div><div class="ttdef"><b>Definition:</b> MdlShaderGenerator.h:45</div></div>
+<div class="ttc" id="aclass_mdl_shader_generator_html_a900975144591faadec7de232ec8d78b1"><div class="ttname"><a href="class_mdl_shader_generator.html#a900975144591faadec7de232ec8d78b1">MdlShaderGenerator::GEOMPROP_DEFINITIONS</a></div><div class="ttdeci">static const std::unordered_map&lt; string, string &gt; GEOMPROP_DEFINITIONS</div><div class="ttdoc">Map of code snippets for geomprops in MDL.</div><div class="ttdef"><b>Definition:</b> MdlShaderGenerator.h:48</div></div>
 <div class="ttc" id="aclass_node_def_html"><div class="ttname"><a href="class_node_def.html">NodeDef</a></div><div class="ttdoc">A node definition element within a Document.</div><div class="ttdef"><b>Definition:</b> Definition.h:82</div></div>
 <div class="ttc" id="aclass_shader_generator_html"><div class="ttname"><a href="class_shader_generator.html">ShaderGenerator</a></div><div class="ttdoc">Base class for shader generators All third-party shader generators should derive from this class.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.h:31</div></div>
-<div class="ttc" id="aclass_shader_generator_html_a0aa5ec4123c378519a11d3347c04ff27"><div class="ttname"><a href="class_shader_generator.html#a0aa5ec4123c378519a11d3347c04ff27">ShaderGenerator::getUpstreamResult</a></div><div class="ttdeci">virtual string getUpstreamResult(const ShaderInput *input, GenContext &amp;context) const</div><div class="ttdoc">Return the result of an upstream connection or value for an input.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.cpp:246</div></div>
-<div class="ttc" id="aclass_shader_generator_html_a17e67b8b40539fa81c3beb16c5a2e0e3"><div class="ttname"><a href="class_shader_generator.html#a17e67b8b40539fa81c3beb16c5a2e0e3">ShaderGenerator::getImplementation</a></div><div class="ttdeci">virtual ShaderNodeImplPtr getImplementation(const NodeDef &amp;nodedef, GenContext &amp;context) const</div><div class="ttdoc">Return a registered shader node implementation for the given nodedef.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.cpp:280</div></div>
+<div class="ttc" id="aclass_shader_generator_html_a0aa5ec4123c378519a11d3347c04ff27"><div class="ttname"><a href="class_shader_generator.html#a0aa5ec4123c378519a11d3347c04ff27">ShaderGenerator::getUpstreamResult</a></div><div class="ttdeci">virtual string getUpstreamResult(const ShaderInput *input, GenContext &amp;context) const</div><div class="ttdoc">Return the result of an upstream connection or value for an input.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.cpp:247</div></div>
+<div class="ttc" id="aclass_shader_generator_html_a17e67b8b40539fa81c3beb16c5a2e0e3"><div class="ttname"><a href="class_shader_generator.html#a17e67b8b40539fa81c3beb16c5a2e0e3">ShaderGenerator::getImplementation</a></div><div class="ttdeci">virtual ShaderNodeImplPtr getImplementation(const NodeDef &amp;nodedef, GenContext &amp;context) const</div><div class="ttdoc">Return a registered shader node implementation for the given nodedef.</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.cpp:289</div></div>
 <div class="ttc" id="aclass_shader_generator_html_afb80d56ca28c16103bcb569527857196"><div class="ttname"><a href="class_shader_generator.html#afb80d56ca28c16103bcb569527857196">ShaderGenerator::generate</a></div><div class="ttdeci">virtual ShaderPtr generate(const string &amp;, ElementPtr, GenContext &amp;) const</div><div class="ttdoc">Generate a shader starting from the given element, translating the element and all dependencies upstr...</div><div class="ttdef"><b>Definition:</b> ShaderGenerator.h:44</div></div>
-<div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:262</div></div>
-<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:125</div></div>
-<div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:54</div></div>
+<div class="ttc" id="aclass_shader_input_html"><div class="ttname"><a href="class_shader_input.html">ShaderInput</a></div><div class="ttdoc">An input on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:261</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:132</div></div>
+<div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

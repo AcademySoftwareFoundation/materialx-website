@@ -13,8 +13,7 @@ var class_light_handler =
     [ "getLightIdMap", "class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d", null ],
     [ "getLightSources", "class_light_handler.html#a5377397716900040cd22d27ce97b1e63", null ],
     [ "getLightTransform", "class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12", null ],
-    [ "getRefractionColor", "class_light_handler.html#a2226244837d6872550b51aa4d37ee3de", null ],
-    [ "getRefractionEnv", "class_light_handler.html#a6b99f45e74b4257797e77598c8b1edbb", null ],
+    [ "getRefractionTwoSided", "class_light_handler.html#af79a4ecedccff396989ce48a77b57c78", null ],
     [ "registerLights", "class_light_handler.html#a76b3067128b46043cf202c5b13e53e4e", null ],
     [ "setAlbedoTable", "class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa", null ],
     [ "setDirectLighting", "class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7", null ],
@@ -24,6 +23,5 @@ var class_light_handler =
     [ "setIndirectLighting", "class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b", null ],
     [ "setLightSources", "class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b", null ],
     [ "setLightTransform", "class_light_handler.html#a7daad11991e6853d9956feec94a479bd", null ],
-    [ "setRefractionColor", "class_light_handler.html#ac5f1717ab8529108ab4a3d7e41f7b0c3", null ],
-    [ "setRefractionEnv", "class_light_handler.html#ad8f0261d960ea166327ed7c353d7a9a1", null ]
+    [ "setRefractionTwoSided", "class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c", null ]
 ];

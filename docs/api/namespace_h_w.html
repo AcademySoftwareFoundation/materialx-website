@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,9 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_IN_NORMAL</
 <tr class="memitem:a2e13d0f8a9ba5cfaaad9e299add32286"><td class="memItemLeft" align="right" valign="top"><a id="a2e13d0f8a9ba5cfaaad9e299add32286" name="a2e13d0f8a9ba5cfaaad9e299add32286"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_IN_TANGENT</b> = &quot;$inTangent&quot;</td></tr>
 <tr class="separator:a2e13d0f8a9ba5cfaaad9e299add32286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bfef9f40697ca35155003f5309c0a9"><td class="memItemLeft" align="right" valign="top"><a id="a49bfef9f40697ca35155003f5309c0a9" name="a49bfef9f40697ca35155003f5309c0a9"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_IN_BITANGENT</b> = &quot;$inBitangent&quot;</td></tr>
+<tr class="separator:a49bfef9f40697ca35155003f5309c0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c005117a74a9d39b7679bd1a4c2d78b"><td class="memItemLeft" align="right" valign="top"><a id="a5c005117a74a9d39b7679bd1a4c2d78b" name="a5c005117a74a9d39b7679bd1a4c2d78b"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_IN_TEXCOORD</b> = &quot;$inTexcoord&quot;</td></tr>
 <tr class="separator:a5c005117a74a9d39b7679bd1a4c2d78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,12 +235,9 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_ENV_RADIANC
 <tr class="memitem:ab28444632264c6aba0ea0a67f6e4f3ff"><td class="memItemLeft" align="right" valign="top"><a id="ab28444632264c6aba0ea0a67f6e4f3ff" name="ab28444632264c6aba0ea0a67f6e4f3ff"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_ENV_IRRADIANCE</b> = &quot;$envIrradiance&quot;</td></tr>
 <tr class="separator:ab28444632264c6aba0ea0a67f6e4f3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3cc223dd269e2145937588d6cd18abb"><td class="memItemLeft" align="right" valign="top"><a id="aa3cc223dd269e2145937588d6cd18abb" name="aa3cc223dd269e2145937588d6cd18abb"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_REFRACTION_ENV</b> = &quot;$refractionEnv&quot;</td></tr>
-<tr class="separator:aa3cc223dd269e2145937588d6cd18abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750fdc7300965b40087b00a18dba4723"><td class="memItemLeft" align="right" valign="top"><a id="a750fdc7300965b40087b00a18dba4723" name="a750fdc7300965b40087b00a18dba4723"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_REFRACTION_COLOR</b> = &quot;$refractionColor&quot;</td></tr>
-<tr class="separator:a750fdc7300965b40087b00a18dba4723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0135a542a25f69277aa924a2675531f5"><td class="memItemLeft" align="right" valign="top"><a id="a0135a542a25f69277aa924a2675531f5" name="a0135a542a25f69277aa924a2675531f5"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_REFRACTION_TWO_SIDED</b> = &quot;$refractionTwoSided&quot;</td></tr>
+<tr class="separator:a0135a542a25f69277aa924a2675531f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac50458827abf1d0fd13c53d8b8188f8b"><td class="memItemLeft" align="right" valign="top"><a id="ac50458827abf1d0fd13c53d8b8188f8b" name="ac50458827abf1d0fd13c53d8b8188f8b"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_ALBEDO_TABLE</b> = &quot;$albedoTable&quot;</td></tr>
 <tr class="separator:ac50458827abf1d0fd13c53d8b8188f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,6 +271,9 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>IN_NORMAL</b>
 <tr class="memitem:aa79910b13364c504567b6699c0d35211"><td class="memItemLeft" align="right" valign="top"><a id="aa79910b13364c504567b6699c0d35211" name="aa79910b13364c504567b6699c0d35211"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>IN_TANGENT</b> = &quot;i_tangent&quot;</td></tr>
 <tr class="separator:aa79910b13364c504567b6699c0d35211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17fa7168292e40ea54681b07d56d193"><td class="memItemLeft" align="right" valign="top"><a id="aa17fa7168292e40ea54681b07d56d193" name="aa17fa7168292e40ea54681b07d56d193"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>IN_BITANGENT</b> = &quot;i_bitangent&quot;</td></tr>
+<tr class="separator:aa17fa7168292e40ea54681b07d56d193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6665cbe90f58bd04801cd61a078ab43"><td class="memItemLeft" align="right" valign="top"><a id="ac6665cbe90f58bd04801cd61a078ab43" name="ac6665cbe90f58bd04801cd61a078ab43"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>IN_TEXCOORD</b> = &quot;i_texcoord&quot;</td></tr>
 <tr class="separator:ac6665cbe90f58bd04801cd61a078ab43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -391,12 +394,9 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>ENV_RADIANCE_
 <tr class="memitem:a8b3724f08d8fa59102443c3daea6df0a"><td class="memItemLeft" align="right" valign="top"><a id="a8b3724f08d8fa59102443c3daea6df0a" name="a8b3724f08d8fa59102443c3daea6df0a"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>ENV_IRRADIANCE</b> = &quot;u_envIrradiance&quot;</td></tr>
 <tr class="separator:a8b3724f08d8fa59102443c3daea6df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad50ec3a9ff510051d815317aca13abff"><td class="memItemLeft" align="right" valign="top"><a id="ad50ec3a9ff510051d815317aca13abff" name="ad50ec3a9ff510051d815317aca13abff"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>REFRACTION_ENV</b> = &quot;u_refractionEnv&quot;</td></tr>
-<tr class="separator:ad50ec3a9ff510051d815317aca13abff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1e69ba9e76edabc45c14cd4907d404"><td class="memItemLeft" align="right" valign="top"><a id="ace1e69ba9e76edabc45c14cd4907d404" name="ace1e69ba9e76edabc45c14cd4907d404"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>REFRACTION_COLOR</b> = &quot;u_refractionColor&quot;</td></tr>
-<tr class="separator:ace1e69ba9e76edabc45c14cd4907d404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7b5d3d4864bba92394011688643039"><td class="memItemLeft" align="right" valign="top"><a id="aee7b5d3d4864bba92394011688643039" name="aee7b5d3d4864bba92394011688643039"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>REFRACTION_TWO_SIDED</b> = &quot;u_refractionTwoSided&quot;</td></tr>
+<tr class="separator:aee7b5d3d4864bba92394011688643039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52287e1ec9ad13ed07782eca107fba04"><td class="memItemLeft" align="right" valign="top"><a id="a52287e1ec9ad13ed07782eca107fba04" name="a52287e1ec9ad13ed07782eca107fba04"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>ALBEDO_TABLE</b> = &quot;u_albedoTable&quot;</td></tr>
 <tr class="separator:a52287e1ec9ad13ed07782eca107fba04"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -110,9 +110,10 @@ Inheritance diagram for ShaderRenderer:</div>
  <div class="center">
   <img src="class_shader_renderer.png" usemap="#ShaderRenderer_map" alt=""/>
   <map id="ShaderRenderer_map" name="ShaderRenderer_map">
-<area href="class_glsl_renderer.html" title="Helper class for rendering generated GLSL code to produce images." alt="GlslRenderer" shape="rect" coords="0,56,106,80"/>
-<area href="class_osl_renderer.html" title="Helper class for rendering generated OSL code to produce images." alt="OslRenderer" shape="rect" coords="116,56,222,80"/>
-<area href="class_texture_baker.html" title="A helper class for baking procedural material content to textures." alt="TextureBaker" shape="rect" coords="0,112,106,136"/>
+<area href="class_glsl_renderer.html" title="Helper class for rendering generated GLSL code to produce images." alt="GlslRenderer" shape="rect" coords="0,56,313,80"/>
+<area href="class_osl_renderer.html" title="Helper class for rendering generated OSL code to produce images." alt="OslRenderer" shape="rect" coords="323,56,636,80"/>
+<area href="class_texture_baker.html" alt="TextureBaker&lt; GlslRenderer, GlslShaderGenerator &gt;" shape="rect" coords="0,112,313,136"/>
+<area href="class_texture_baker_glsl.html" title="An implementation of TextureBaker based on GLSL shader generation." alt="TextureBakerGlsl" shape="rect" coords="0,168,313,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -126,9 +127,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StageMap</b> = <a cl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setup</div></td></tr>
-<tr class="memitem:a6365dca5a7d8ddb694726a53b55a4c27"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a6365dca5a7d8ddb694726a53b55a4c27">initialize</a> ()</td></tr>
-<tr class="memdesc:a6365dca5a7d8ddb694726a53b55a4c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the renderer.  <a href="class_shader_renderer.html#a6365dca5a7d8ddb694726a53b55a4c27">More...</a><br /></td></tr>
-<tr class="separator:a6365dca5a7d8ddb694726a53b55a4c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d87da9473bbb7edeaed5aa87228fc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#af7d87da9473bbb7edeaed5aa87228fc1">initialize</a> (<a class="el" href="_shader_renderer_8h.html#a97d8cbf4b4599bd4f406c31778652920">RenderContextHandle</a>=nullptr)</td></tr>
+<tr class="memdesc:af7d87da9473bbb7edeaed5aa87228fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the renderer.  <a href="class_shader_renderer.html#af7d87da9473bbb7edeaed5aa87228fc1">More...</a><br /></td></tr>
+<tr class="separator:af7d87da9473bbb7edeaed5aa87228fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c2e8e0337e1287af217bb358f03cd57"><td class="memItemLeft" align="right" valign="top"><a id="a9c2e8e0337e1287af217bb358f03cd57" name="a9c2e8e0337e1287af217bb358f03cd57"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCamera</b> (CameraPtr camera)</td></tr>
 <tr class="memdesc:a9c2e8e0337e1287af217bb358f03cd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera. <br /></td></tr>
@@ -162,9 +163,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometryHandler</b
 <tr class="memdesc:a5772403c6508e08a79087561517b7075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the geometry handler. <br /></td></tr>
 <tr class="separator:a5772403c6508e08a79087561517b7075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Rendering</div></td></tr>
-<tr class="memitem:abf19a57f294712a52b0c881b1e7cd848"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#abf19a57f294712a52b0c881b1e7cd848">createProgram</a> (<a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a> shader)</td></tr>
-<tr class="memdesc:abf19a57f294712a52b0c881b1e7cd848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create program based on an input shader.  <a href="class_shader_renderer.html#abf19a57f294712a52b0c881b1e7cd848">More...</a><br /></td></tr>
-<tr class="separator:abf19a57f294712a52b0c881b1e7cd848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990f5887d2593101173ee8f50d3d7231"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a990f5887d2593101173ee8f50d3d7231">createProgram</a> (<a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a> shader)</td></tr>
+<tr class="memdesc:a990f5887d2593101173ee8f50d3d7231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create program based on an input shader.  <a href="class_shader_renderer.html#a990f5887d2593101173ee8f50d3d7231">More...</a><br /></td></tr>
+<tr class="separator:a990f5887d2593101173ee8f50d3d7231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27295956757e2dcec596955aad744b40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a27295956757e2dcec596955aad744b40">createProgram</a> (const <a class="el" href="class_shader_renderer.html#af02ee4d51c8927817002da896a473f5c">StageMap</a> &amp;stages)</td></tr>
 <tr class="memdesc:a27295956757e2dcec596955aad744b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create program based on shader stage source code.  <a href="class_shader_renderer.html#a27295956757e2dcec596955aad744b40">More...</a><br /></td></tr>
 <tr class="separator:a27295956757e2dcec596955aad744b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,8 +282,8 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 
 </div>
 </div>
-<a id="abf19a57f294712a52b0c881b1e7cd848" name="abf19a57f294712a52b0c881b1e7cd848"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf19a57f294712a52b0c881b1e7cd848">&#9670;&#160;</a></span>createProgram() <span class="overload">[2/2]</span></h2>
+<a id="a990f5887d2593101173ee8f50d3d7231" name="a990f5887d2593101173ee8f50d3d7231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990f5887d2593101173ee8f50d3d7231">&#9670;&#160;</a></span>createProgram() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +292,7 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MATERIALX_NAMESPACE_BEGIN void createProgram </td>
+          <td class="memname">void createProgram </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a>&#160;</td>
           <td class="paramname"><em>shader</em></td><td>)</td>
@@ -311,8 +312,8 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 
 </div>
 </div>
-<a id="a6365dca5a7d8ddb694726a53b55a4c27" name="a6365dca5a7d8ddb694726a53b55a4c27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6365dca5a7d8ddb694726a53b55a4c27">&#9670;&#160;</a></span>initialize()</h2>
+<a id="af7d87da9473bbb7edeaed5aa87228fc1" name="af7d87da9473bbb7edeaed5aa87228fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d87da9473bbb7edeaed5aa87228fc1">&#9670;&#160;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +324,8 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
         <tr>
           <td class="memname">virtual void initialize </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_shader_renderer_8h.html#a97d8cbf4b4599bd4f406c31778652920">RenderContextHandle</a>&#160;</td>
+          <td class="paramname"> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -336,7 +338,7 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 
 <p>Initialize the renderer. </p>
 
-<p>Reimplemented in <a class="el" href="class_glsl_renderer.html#a371caef26098f2a15df9fbee047b58f2">GlslRenderer</a>, and <a class="el" href="class_osl_renderer.html#a371caef26098f2a15df9fbee047b58f2">OslRenderer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_glsl_renderer.html#af84497ccac2904d94ab058449adc39a5">GlslRenderer</a>, and <a class="el" href="class_osl_renderer.html#af84497ccac2904d94ab058449adc39a5">OslRenderer</a>.</p>
 
 </div>
 </div>

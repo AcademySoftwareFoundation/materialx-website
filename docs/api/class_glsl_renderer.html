@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -110,21 +110,26 @@ Inheritance diagram for GlslRenderer:</div>
  <div class="center">
   <img src="class_glsl_renderer.png" usemap="#GlslRenderer_map" alt=""/>
   <map id="GlslRenderer_map" name="GlslRenderer_map">
-<area href="class_shader_renderer.html" title="Base class for renderers that generate shader code to produce images." alt="ShaderRenderer" shape="rect" coords="0,0,106,24"/>
-<area href="class_texture_baker.html" title="A helper class for baking procedural material content to textures." alt="TextureBaker" shape="rect" coords="0,112,106,136"/>
+<area href="class_shader_renderer.html" title="Base class for renderers that generate shader code to produce images." alt="ShaderRenderer" shape="rect" coords="0,0,313,24"/>
+<area href="class_texture_baker.html" alt="TextureBaker&lt; GlslRenderer, GlslShaderGenerator &gt;" shape="rect" coords="0,112,313,136"/>
+<area href="class_texture_baker_glsl.html" title="An implementation of TextureBaker based on GLSL shader generation." alt="TextureBakerGlsl" shape="rect" coords="0,168,313,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a99c49c8daca17b74124aaa59a97de27a"><td class="memItemLeft" align="right" valign="top"><a id="a99c49c8daca17b74124aaa59a97de27a" name="a99c49c8daca17b74124aaa59a97de27a"></a>
+<a class="el" href="_image_handler_8h.html#a766e76b780d617bb4795f795be8a3b3c">ImageHandlerPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createImageHandler</b> (<a class="el" href="_image_handler_8h.html#a616c3d5c892eb4c4f908c257b63e60cf">ImageLoaderPtr</a> imageLoader)</td></tr>
+<tr class="memdesc:a99c49c8daca17b74124aaa59a97de27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a texture handler for OpenGL textures. <br /></td></tr>
+<tr class="separator:a99c49c8daca17b74124aaa59a97de27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99e83e71ddf894e3384eb61861dc5ae"><td class="memItemLeft" align="right" valign="top"><a id="ae99e83e71ddf894e3384eb61861dc5ae" name="ae99e83e71ddf894e3384eb61861dc5ae"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~GlslRenderer</b> ()</td></tr>
 <tr class="memdesc:ae99e83e71ddf894e3384eb61861dc5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:ae99e83e71ddf894e3384eb61861dc5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setup</div></td></tr>
-<tr class="memitem:a371caef26098f2a15df9fbee047b58f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_renderer.html#a371caef26098f2a15df9fbee047b58f2">initialize</a> () override</td></tr>
-<tr class="memdesc:a371caef26098f2a15df9fbee047b58f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal initialization of stages and OpenGL constructs required for program validation and rendering.  <a href="class_glsl_renderer.html#a371caef26098f2a15df9fbee047b58f2">More...</a><br /></td></tr>
-<tr class="separator:a371caef26098f2a15df9fbee047b58f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84497ccac2904d94ab058449adc39a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_renderer.html#af84497ccac2904d94ab058449adc39a5">initialize</a> (<a class="el" href="_shader_renderer_8h.html#a97d8cbf4b4599bd4f406c31778652920">RenderContextHandle</a> renderContextHandle=nullptr) override</td></tr>
+<tr class="memdesc:af84497ccac2904d94ab058449adc39a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal initialization of stages and OpenGL constructs required for program validation and rendering.  <a href="class_glsl_renderer.html#af84497ccac2904d94ab058449adc39a5">More...</a><br /></td></tr>
+<tr class="separator:af84497ccac2904d94ab058449adc39a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Rendering</div></td></tr>
 <tr class="memitem:a4245723b5c4bf16becb60c50d56e8b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_renderer.html#a4245723b5c4bf16becb60c50d56e8b56">createProgram</a> (<a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a> shader) override</td></tr>
 <tr class="memdesc:a4245723b5c4bf16becb60c50d56e8b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create GLSL program based on an input shader.  <a href="class_glsl_renderer.html#a4245723b5c4bf16becb60c50d56e8b56">More...</a><br /></td></tr>
@@ -205,22 +210,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometryHandler</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c5fe1175ec7a05eb8fd66a8ca214099"><td class="memItemLeft" align="right" valign="top"><a id="a2c5fe1175ec7a05eb8fd66a8ca214099" name="a2c5fe1175ec7a05eb8fd66a8ca214099"></a>
+<tr class="memitem:ab8990096569610d142290fbdf3252c3e"><td class="memItemLeft" align="right" valign="top"><a id="ab8990096569610d142290fbdf3252c3e" name="ab8990096569610d142290fbdf3252c3e"></a>
 static <a class="el" href="_glsl_renderer_8h.html#a5aeafa0ebb43497ac6bd3b3ba2031f16">GlslRendererPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (unsigned int width=512, unsigned int height=512, Image::BaseType baseType=Image::BaseType::UINT8)</td></tr>
-<tr class="memdesc:a2c5fe1175ec7a05eb8fd66a8ca214099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a GLSL renderer instance. <br /></td></tr>
-<tr class="separator:a2c5fe1175ec7a05eb8fd66a8ca214099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ab8990096569610d142290fbdf3252c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a GLSL renderer instance. <br /></td></tr>
+<tr class="separator:ab8990096569610d142290fbdf3252c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9e3958c40a0b21bf21909f6a02b2c8ea"><td class="memItemLeft" align="right" valign="top"><a id="a9e3958c40a0b21bf21909f6a02b2c8ea" name="a9e3958c40a0b21bf21909f6a02b2c8ea"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GlslRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType)</td></tr>
 <tr class="separator:a9e3958c40a0b21bf21909f6a02b2c8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cdad395905ab871e89a354d86d5918b"><td class="memItemLeft" align="right" valign="top"><a id="a5cdad395905ab871e89a354d86d5918b" name="a5cdad395905ab871e89a354d86d5918b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateViewInformation</b> ()</td></tr>
-<tr class="separator:a5cdad395905ab871e89a354d86d5918b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f16147eac3859b9a6f634117311d852"><td class="memItemLeft" align="right" valign="top"><a id="a5f16147eac3859b9a6f634117311d852" name="a5f16147eac3859b9a6f634117311d852"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateWorldInformation</b> ()</td></tr>
-<tr class="separator:a5f16147eac3859b9a6f634117311d852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_shader_renderer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_shader_renderer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_shader_renderer.html">ShaderRenderer</a></td></tr>
 <tr class="memitem:a044c580237b606aed0d1c1f7de268706 inherit pro_methods_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a044c580237b606aed0d1c1f7de268706" name="a044c580237b606aed0d1c1f7de268706"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ShaderRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType)</td></tr>
@@ -364,12 +363,12 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_shader_renderer.html#abf19a57f294712a52b0c881b1e7cd848">ShaderRenderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_shader_renderer.html#a990f5887d2593101173ee8f50d3d7231">ShaderRenderer</a>.</p>
 
 </div>
 </div>
-<a id="a371caef26098f2a15df9fbee047b58f2" name="a371caef26098f2a15df9fbee047b58f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a371caef26098f2a15df9fbee047b58f2">&#9670;&#160;</a></span>initialize()</h2>
+<a id="af84497ccac2904d94ab058449adc39a5" name="af84497ccac2904d94ab058449adc39a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84497ccac2904d94ab058449adc39a5">&#9670;&#160;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +379,8 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
         <tr>
           <td class="memname">void initialize </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_shader_renderer_8h.html#a97d8cbf4b4599bd4f406c31778652920">RenderContextHandle</a>&#160;</td>
+          <td class="paramname"><em>renderContextHandle</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -392,9 +392,14 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 </div><div class="memdoc">
 
 <p>Internal initialization of stages and OpenGL constructs required for program validation and rendering. </p>
-<p >An exception is thrown on failure. The exception will contain a list of initialization errors. </p>
+<p >An exception is thrown on failure. The exception will contain a list of initialization errors. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderContextHandle</td><td>allows initializing the <a class="el" href="class_glsl_renderer.html" title="Helper class for rendering generated GLSL code to produce images.">GlslRenderer</a> with a Shared OpenGL Context </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented from <a class="el" href="class_shader_renderer.html#a6365dca5a7d8ddb694726a53b55a4c27">ShaderRenderer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_shader_renderer.html#af7d87da9473bbb7edeaed5aa87228fc1">ShaderRenderer</a>.</p>
 
 </div>
 </div>

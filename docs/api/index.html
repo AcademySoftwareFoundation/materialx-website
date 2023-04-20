@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -122,12 +122,7 @@ Building MaterialX C++</h3>
 <li><code>MATERIALX_BUILD_OIIO</code>: Requests that MaterialXRender be built with OpenImageIO in addition to stb_image, extending the set of supported image formats.</li>
 <li><code>MATERIALX_OIIO_DIR</code>: Path to the root folder of an OpenImageIO installation. If MATERIALX_BUILD_OIIO has been enabled, then this option may be used to select which installation is used.</li>
 </ul>
-<p >To enable Open Shading Language compiler and render validation in MaterialX builds, the following additional options may be used:</p>
-<ul>
-<li><code>MATERIALX_OSL_BINARY_OSLC</code>: Path to the OSL compiler binary (e.g. <code>oslc.exe</code>).</li>
-<li><code>MATERIALX_OSL_BINARY_TESTRENDER</code>: Path to the OSL test render binary (e.g. <code>testrender.exe</code>).</li>
-<li><code>MATERIALX_OSL_INCLUDE_PATH</code>: Path to the OSL shader include folder, which contains headers such as <code>stdosl.h</code>.</li>
-</ul>
+<p >See the <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/source/MaterialXTest">MaterialX Unit Tests</a> page for documentation on shader generation and render testing in GLSL, OSL, and MDL.</p>
 <h3><a class="anchor" id="autotoc_md5"></a>
 Building MaterialX Python</h3>
 <p >By default, the <code>MATERIALX_BUILD_PYTHON</code> option will use the active version of Python in the developer's path. To select a specific version of Python, use one or more of the following advanced options:</p>

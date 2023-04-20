@@ -6,7 +6,7 @@ var class_osl_renderer =
     [ "compileOSL", "class_osl_renderer.html#a6eb7f5ff653103f341c88b5a34de41dd", null ],
     [ "createProgram", "class_osl_renderer.html#aedc38339eda697f61c869b41e7ad4241", null ],
     [ "createProgram", "class_osl_renderer.html#a4245723b5c4bf16becb60c50d56e8b56", null ],
-    [ "initialize", "class_osl_renderer.html#a371caef26098f2a15df9fbee047b58f2", null ],
+    [ "initialize", "class_osl_renderer.html#af84497ccac2904d94ab058449adc39a5", null ],
     [ "render", "class_osl_renderer.html#aaa0c696f75f0e8d45ce5d0e31ff36c19", null ],
     [ "renderOSL", "class_osl_renderer.html#ac8763644e2a9fe9a7c0afb17ecc4f2b3", null ],
     [ "setEnvShaderParameterOverrides", "class_osl_renderer.html#ac994adfd018dbafa5dffcc6196e93879", null ],

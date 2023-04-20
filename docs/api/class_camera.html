@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -187,12 +187,20 @@ static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class
 <tr class="separator:a44a5772d9b7e0f0cb4e7da90608e5bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf26a2cea43eb5bc28b465d094faf195"><td class="memItemLeft" align="right" valign="top"><a id="aaf26a2cea43eb5bc28b465d094faf195" name="aaf26a2cea43eb5bc28b465d094faf195"></a>
 static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createPerspectiveMatrix</b> (float left, float right, float bottom, float top, float nearP, float farP)</td></tr>
-<tr class="memdesc:aaf26a2cea43eb5bc28b465d094faf195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a perpective projection matrix given a set of clip planes. <br /></td></tr>
+<tr class="memdesc:aaf26a2cea43eb5bc28b465d094faf195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a perpective projection matrix given a set of clip planes with [-1,1] projected Z. <br /></td></tr>
 <tr class="separator:aaf26a2cea43eb5bc28b465d094faf195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad07092e5e95493b38b186d5b2e64eaf"><td class="memItemLeft" align="right" valign="top"><a id="aad07092e5e95493b38b186d5b2e64eaf" name="aad07092e5e95493b38b186d5b2e64eaf"></a>
 static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createOrthographicMatrix</b> (float left, float right, float bottom, float top, float nearP, float farP)</td></tr>
-<tr class="memdesc:aad07092e5e95493b38b186d5b2e64eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an orthographic projection matrix given a set of clip planes. <br /></td></tr>
+<tr class="memdesc:aad07092e5e95493b38b186d5b2e64eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an orthographic projection matrix given a set of clip planes with [-1,1] projected Z. <br /></td></tr>
 <tr class="separator:aad07092e5e95493b38b186d5b2e64eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3c9bc5b5140a069bc979dd39bc6b4f"><td class="memItemLeft" align="right" valign="top"><a id="add3c9bc5b5140a069bc979dd39bc6b4f" name="add3c9bc5b5140a069bc979dd39bc6b4f"></a>
+static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createPerspectiveMatrixZP</b> (float left, float right, float bottom, float top, float nearP, float farP)</td></tr>
+<tr class="memdesc:add3c9bc5b5140a069bc979dd39bc6b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a perpective projection matrix given a set of clip planes with [0,1] projected Z. <br /></td></tr>
+<tr class="separator:add3c9bc5b5140a069bc979dd39bc6b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6b90056c48f63ce8bb0abd9172e2c4"><td class="memItemLeft" align="right" valign="top"><a id="a6a6b90056c48f63ce8bb0abd9172e2c4" name="a6a6b90056c48f63ce8bb0abd9172e2c4"></a>
+static <a class="el" href="class_matrix44.html">Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createOrthographicMatrixZP</b> (float left, float right, float bottom, float top, float nearP, float farP)</td></tr>
+<tr class="memdesc:a6a6b90056c48f63ce8bb0abd9172e2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an orthographic projection matrix given a set of clip planes with [0,1] projected Z. <br /></td></tr>
+<tr class="separator:a6a6b90056c48f63ce8bb0abd9172e2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9060dfa26a8717cf56d66dcc247b3049"><td class="memItemLeft" align="right" valign="top"><a id="a9060dfa26a8717cf56d66dcc247b3049" name="a9060dfa26a8717cf56d66dcc247b3049"></a>
 static <a class="el" href="class_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transformPointPerspective</b> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m, const <a class="el" href="class_vector3.html">Vector3</a> &amp;v)</td></tr>
 <tr class="memdesc:a9060dfa26a8717cf56d66dcc247b3049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a perspective transform to the given 3D point, performing a homogeneous divide on the transformed result. <br /></td></tr>

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('_color_management_system_8h_source.htm
 </div><!--header-->
 <div class="contents">
 <a href="_color_management_system_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM &amp; (c) 2017 Lucasfilm Entertainment Company Ltd. and Lucasfilm Ltd.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// All rights reserved.  See LICENSE.txt for license.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Copyright Contributors to the MaterialX Project</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MATERIALX_COLOR_MANAGEMENT_SYSTEM_H</span></div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('_color_management_system_8h_source.htm
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">string</span> targetSpace;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_type_desc.html">TypeDesc</a>* type;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_color_space_transform.html#af0fc5d54bd0a26dfe2a30ae00bfb948c">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_color_space_transform.html#af0fc5d54bd0a26dfe2a30ae00bfb948c">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_color_space_transform.html">ColorSpaceTransform</a> &amp;other)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_color_space_transform.html#af0fc5d54bd0a26dfe2a30ae00bfb948c">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_color_space_transform.html#af0fc5d54bd0a26dfe2a30ae00bfb948c">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_color_space_transform.html">ColorSpaceTransform</a>&amp; other)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> sourceSpace == other.sourceSpace &amp;&amp;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>               targetSpace == other.targetSpace &amp;&amp;</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('_color_management_system_8h_source.htm
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_class" href="class_color_management_system.html">ColorManagementSystem</a>();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_color_management_system.html#a2aeba28e792a933836a424444e292473">   72</a></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="_definition_8h.html#a51472e15bdd8dcfc7fd5fb3a10778a52">ImplementationPtr</a> <a class="code hl_function" href="class_color_management_system.html#a2aeba28e792a933836a424444e292473">getImplementation</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_color_space_transform.html">ColorSpaceTransform</a>&amp; transform) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">protected</span>:</div>

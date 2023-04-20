@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -193,6 +193,13 @@ const vector&lt; <a class="el" href="_shader_graph_8h.html#a2f7ea34d9ef6b6d3a66e
 <tr class="memitem:a398660dfa2c30b3286bfd5a85dc76726"><td class="memItemLeft" align="right" valign="top"><a id="a398660dfa2c30b3286bfd5a85dc76726" name="a398660dfa2c30b3286bfd5a85dc76726"></a>
 <a class="el" href="_shader_graph_8h.html#a2f7ea34d9ef6b6d3a66eafd990bad53c">ShaderGraphOutputSocket</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addOutputSocket</b> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type)</td></tr>
 <tr class="separator:a398660dfa2c30b3286bfd5a85dc76726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52d69682d886f136c4a5dfa673b444e"><td class="memItemLeft" align="right" valign="top"><a id="aa52d69682d886f136c4a5dfa673b444e" name="aa52d69682d886f136c4a5dfa673b444e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addDefaultGeomNode</b> (<a class="el" href="class_shader_input.html">ShaderInput</a> *input, const <a class="el" href="class_geom_prop_def.html">GeomPropDef</a> &amp;geomprop, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
+<tr class="memdesc:aa52d69682d886f136c4a5dfa673b444e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a default geometric node and connect to the given input. <br /></td></tr>
+<tr class="separator:aa52d69682d886f136c4a5dfa673b444e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9916644cded0ec59cd40e02046f63c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c">topologicalSort</a> ()</td></tr>
+<tr class="memdesc:a4f9916644cded0ec59cd40e02046f63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the nodes in topological order.  <a href="class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c">More...</a><br /></td></tr>
+<tr class="separator:a4f9916644cded0ec59cd40e02046f63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5b1af4a837282deb2d1e43729c7d01"><td class="memItemLeft" align="right" valign="top"><a id="a8e5b1af4a837282deb2d1e43729c7d01" name="a8e5b1af4a837282deb2d1e43729c7d01"></a>
 <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getIdentifierMap</b> ()</td></tr>
 <tr class="memdesc:a8e5b1af4a837282deb2d1e43729c7d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the map of unique identifiers used in the scope of this graph. <br /></td></tr>
@@ -357,10 +364,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addOutputSockets</b> 
 <tr class="memitem:aafa24fe4864dd515eead25b14d6af7f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_graph.html#aafa24fe4864dd515eead25b14d6af7f7">addUpstreamDependencies</a> (const <a class="el" href="class_element.html">Element</a> &amp;root, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:aafa24fe4864dd515eead25b14d6af7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverse from the given root element and add all dependencies upstream.  <a href="class_shader_graph.html#aafa24fe4864dd515eead25b14d6af7f7">More...</a><br /></td></tr>
 <tr class="separator:aafa24fe4864dd515eead25b14d6af7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa52d69682d886f136c4a5dfa673b444e"><td class="memItemLeft" align="right" valign="top"><a id="aa52d69682d886f136c4a5dfa673b444e" name="aa52d69682d886f136c4a5dfa673b444e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addDefaultGeomNode</b> (<a class="el" href="class_shader_input.html">ShaderInput</a> *input, const <a class="el" href="class_geom_prop_def.html">GeomPropDef</a> &amp;geomprop, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
-<tr class="memdesc:aa52d69682d886f136c4a5dfa673b444e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a default geometric node and connect to the given input. <br /></td></tr>
-<tr class="separator:aa52d69682d886f136c4a5dfa673b444e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a490333966f775a614fba6a4639430ddd"><td class="memItemLeft" align="right" valign="top"><a id="a490333966f775a614fba6a4639430ddd" name="a490333966f775a614fba6a4639430ddd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addColorTransformNode</b> (<a class="el" href="class_shader_input.html">ShaderInput</a> *input, const <a class="el" href="struct_color_space_transform.html">ColorSpaceTransform</a> &amp;transform, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a490333966f775a614fba6a4639430ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a color transform node and connect to the given input. <br /></td></tr>
@@ -389,9 +392,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>optimize</b> (<a clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bypass</b> (<a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_node.html">ShaderNode</a> *node, size_t inputIndex, size_t outputIndex=0)</td></tr>
 <tr class="memdesc:acca66968656109891960f3c6cd362767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypass a node for a particular input and output, effectively connecting the input's upstream connection with the output's downstream connections. <br /></td></tr>
 <tr class="separator:acca66968656109891960f3c6cd362767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9916644cded0ec59cd40e02046f63c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c">topologicalSort</a> ()</td></tr>
-<tr class="memdesc:a4f9916644cded0ec59cd40e02046f63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the nodes in topological order.  <a href="class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c">More...</a><br /></td></tr>
-<tr class="separator:a4f9916644cded0ec59cd40e02046f63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6ec1f20ba9f0aba27a69d5bf2138ed"><td class="memItemLeft" align="right" valign="top"><a id="a4d6ec1f20ba9f0aba27a69d5bf2138ed" name="a4d6ec1f20ba9f0aba27a69d5bf2138ed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateScopes</b> ()</td></tr>
 <tr class="memdesc:a4d6ec1f20ba9f0aba27a69d5bf2138ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate scopes for all nodes in the graph. <br /></td></tr>
@@ -490,6 +490,9 @@ static const <a class="el" href="_shader_node_8h.html#a63dacb92055290cf7cb319f65
 <tr class="memitem:ad409f84274060df46c9ce502f80d8248 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="ad409f84274060df46c9ce502f80d8248" name="ad409f84274060df46c9ce502f80d8248"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CONSTANT</b> = &quot;constant&quot;</td></tr>
 <tr class="separator:ad409f84274060df46c9ce502f80d8248 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e41be0628cd45c56cfe18c0a183842 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="af6e41be0628cd45c56cfe18c0a183842" name="af6e41be0628cd45c56cfe18c0a183842"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOT</b> = &quot;dot&quot;</td></tr>
+<tr class="separator:af6e41be0628cd45c56cfe18c0a183842 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ffbd7cecc6a9667d89689bad79ae899 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="a4ffbd7cecc6a9667d89689bad79ae899" name="a4ffbd7cecc6a9667d89689bad79ae899"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>IMAGE</b> = &quot;image&quot;</td></tr>
 <tr class="separator:a4ffbd7cecc6a9667d89689bad79ae899 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -751,9 +754,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOMET
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void topologicalSort </td>
@@ -762,11 +762,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOMET
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Sort the nodes in topological order. </p>

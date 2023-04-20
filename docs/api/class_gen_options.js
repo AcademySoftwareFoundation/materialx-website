@@ -5,6 +5,7 @@ var class_gen_options =
     [ "fileTextureVerticalFlip", "class_gen_options.html#a0e678dbfe9035f9eab6e27413b484428", null ],
     [ "hwAmbientOcclusion", "class_gen_options.html#a63eb9c37ddd4b152f4470c904f4e34a1", null ],
     [ "hwDirectionalAlbedoMethod", "class_gen_options.html#aae62d2e2770b6880fd1801e5e07fcc11", null ],
+    [ "hwImplicitBitangents", "class_gen_options.html#ac3490eaad9f81cf1a2f1c27f76e6322b", null ],
     [ "hwMaxActiveLightSources", "class_gen_options.html#a1f0d7fbda603b226d5c5ff0976147454", null ],
     [ "hwNormalizeUdimTexCoords", "class_gen_options.html#ac8f296ec52a0efd37966e1939d414e54", null ],
     [ "hwShadowMap", "class_gen_options.html#a6f32717e035b820d5950ea28c2e53cae", null ],

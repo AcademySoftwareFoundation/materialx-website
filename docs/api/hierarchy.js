@@ -1,7 +1,7 @@
 var hierarchy =
 [
-    [ "TextureBaker::BakedConstant", "class_texture_baker_1_1_baked_constant.html", null ],
-    [ "TextureBaker::BakedImage", "class_texture_baker_1_1_baked_image.html", null ],
+    [ "TextureBaker< Renderer, ShaderGen >::BakedConstant", "class_texture_baker_1_1_baked_constant.html", null ],
+    [ "TextureBaker< Renderer, ShaderGen >::BakedImage", "class_texture_baker_1_1_baked_image.html", null ],
     [ "Camera", "class_camera.html", null ],
     [ "ShaderNode::Classification", "class_shader_node_1_1_classification.html", null ],
     [ "ClosureContext", "class_closure_context.html", null ],
@@ -108,6 +108,7 @@ var hierarchy =
       [ "OiioImageLoader", "class_oiio_image_loader.html", null ],
       [ "StbImageLoader", "class_stb_image_loader.html", null ]
     ] ],
+    [ "ImageSamplingKeyHasher", "struct_image_sampling_key_hasher.html", null ],
     [ "ImageSamplingProperties", "class_image_sampling_properties.html", null ],
     [ "InheritanceIterator", "class_inheritance_iterator.html", null ],
     [ "GlslProgram::Input", "struct_glsl_program_1_1_input.html", null ],
@@ -124,6 +125,9 @@ var hierarchy =
     [ "Mesh", "class_mesh.html", null ],
     [ "MeshPartition", "class_mesh_partition.html", null ],
     [ "MeshStream", "class_mesh_stream.html", null ],
+    [ "Renderer", null, [
+      [ "TextureBaker< Renderer, ShaderGen >", "class_texture_baker.html", null ]
+    ] ],
     [ "ShaderStage::Scope", "struct_shader_stage_1_1_scope.html", null ],
     [ "ScopedFloatFormatting", "class_scoped_float_formatting.html", null ],
     [ "ScopedSetClosureParams", "class_scoped_set_closure_params.html", null ],
@@ -143,6 +147,9 @@ var hierarchy =
     ] ],
     [ "ShaderGraphEdge", "class_shader_graph_edge.html", null ],
     [ "ShaderGraphEdgeIterator", "class_shader_graph_edge_iterator.html", null ],
+    [ "ShaderMaterial", "class_shader_material.html", [
+      [ "GlslMaterial", "class_glsl_material.html", null ]
+    ] ],
     [ "ShaderMetadata", "struct_shader_metadata.html", null ],
     [ "ShaderNode", "class_shader_node.html", [
       [ "ShaderGraph", "class_shader_graph.html", null ]
@@ -185,11 +192,6 @@ var hierarchy =
         ] ],
         [ "UnlitSurfaceNodeGlsl", "class_unlit_surface_node_glsl.html", null ]
       ] ],
-      [ "IfNode", "class_if_node.html", [
-        [ "IfEqualNode", "class_if_equal_node.html", null ],
-        [ "IfGreaterEqNode", "class_if_greater_eq_node.html", null ],
-        [ "IfGreaterNode", "class_if_greater_node.html", null ]
-      ] ],
       [ "MaterialNode", "class_material_node.html", null ],
       [ "NopNode", "class_nop_node.html", null ],
       [ "SourceCodeNode", "class_source_code_node.html", [
@@ -204,12 +206,15 @@ var hierarchy =
     [ "ShaderPortFlag", "class_shader_port_flag.html", null ],
     [ "ShaderRenderer", "class_shader_renderer.html", [
       [ "GlslRenderer", "class_glsl_renderer.html", [
-        [ "TextureBaker", "class_texture_baker.html", null ]
+        [ "TextureBaker< GlslRenderer, GlslShaderGenerator >", "class_texture_baker.html", [
+          [ "TextureBakerGlsl", "class_texture_baker_glsl.html", null ]
+        ] ]
       ] ],
       [ "OslRenderer", "class_osl_renderer.html", null ]
     ] ],
     [ "ShaderStage", "class_shader_stage.html", null ],
     [ "ShaderTranslator", "class_shader_translator.html", null ],
+    [ "ShadowState", "class_shadow_state.html", null ],
     [ "ShCoeffs< C, B >", "class_sh_coeffs.html", null ],
     [ "SimpleWindow", "class_simple_window.html", null ],
     [ "StringResolver", "class_string_resolver.html", null ],

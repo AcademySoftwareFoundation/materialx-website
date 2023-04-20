@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -121,12 +121,12 @@ MX_GENSHADER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>requ
 MX_GENSHADER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>elementRequiresShading</b> (<a class="el" href="_element_8h.html#ab845a659381635f248f6975d0a984275">ConstTypedElementPtr</a> element)</td></tr>
 <tr class="memdesc:a50297b58aa6ebfab69e76f070eb7c929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a given element requires shading / lighting for rendering. <br /></td></tr>
 <tr class="separator:a50297b58aa6ebfab69e76f070eb7c929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5daf989d8c2b8cce95fe98a21bf03ae8"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a5daf989d8c2b8cce95fe98a21bf03ae8">findRenderableMaterialNodes</a> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc, vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;elements, bool includeReferencedGraphs, std::unordered_set&lt; <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> &gt; &amp;processedSources)</td></tr>
-<tr class="memdesc:a5daf989d8c2b8cce95fe98a21bf03ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find any material node elements which are renderable (have input shaders)  <a href="_material_x_gen_shader_2_util_8h.html#a5daf989d8c2b8cce95fe98a21bf03ae8">More...</a><br /></td></tr>
-<tr class="separator:a5daf989d8c2b8cce95fe98a21bf03ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2aa882c23d583eead016db28c46f18"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a7a2aa882c23d583eead016db28c46f18">findRenderableElements</a> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc, vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;elements, bool includeReferencedGraphs=false)</td></tr>
-<tr class="memdesc:a7a2aa882c23d583eead016db28c46f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find any elements which may be renderable from within a document.  <a href="_material_x_gen_shader_2_util_8h.html#a7a2aa882c23d583eead016db28c46f18">More...</a><br /></td></tr>
-<tr class="separator:a7a2aa882c23d583eead016db28c46f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56efc57038877b7a0d0e83d83d0fc234"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a56efc57038877b7a0d0e83d83d0fc234">findRenderableMaterialNodes</a> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc)</td></tr>
+<tr class="memdesc:a56efc57038877b7a0d0e83d83d0fc234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all renderable material nodes in the given document.  <a href="_material_x_gen_shader_2_util_8h.html#a56efc57038877b7a0d0e83d83d0fc234">More...</a><br /></td></tr>
+<tr class="separator:a56efc57038877b7a0d0e83d83d0fc234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff55990ef7f0deca8ea58f8e952c231a"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#aff55990ef7f0deca8ea58f8e952c231a">findRenderableElements</a> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc)</td></tr>
+<tr class="memdesc:aff55990ef7f0deca8ea58f8e952c231a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all renderable elements in the given document, including material nodes if present, or graph outputs of renderable types if no material nodes are found.  <a href="_material_x_gen_shader_2_util_8h.html#aff55990ef7f0deca8ea58f8e952c231a">More...</a><br /></td></tr>
+<tr class="separator:aff55990ef7f0deca8ea58f8e952c231a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95086b0f70f108e1ea74f0df5f1be520"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API <a class="el" href="_interface_8h.html#ac315f2ce45a6f66e1828ba67a8155aa1">InputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a95086b0f70f108e1ea74f0df5f1be520">getNodeDefInput</a> (<a class="el" href="_interface_8h.html#ac315f2ce45a6f66e1828ba67a8155aa1">InputPtr</a> nodeInput, const string &amp;target)</td></tr>
 <tr class="memdesc:a95086b0f70f108e1ea74f0df5f1be520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a node input, return the corresponding input within its matching nodedef.  <a href="_material_x_gen_shader_2_util_8h.html#a95086b0f70f108e1ea74f0df5f1be520">More...</a><br /></td></tr>
 <tr class="separator:a95086b0f70f108e1ea74f0df5f1be520"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +146,12 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>getU
 <tr class="memitem:a29b69da7c57e11315583dbf293bec3b7"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a29b69da7c57e11315583dbf293bec3b7">hasElementAttributes</a> (<a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a> output, const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> &amp;attributes)</td></tr>
 <tr class="memdesc:a29b69da7c57e11315583dbf293bec3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is are any value elements with a given set of attributes either on the starting node or any graph upsstream of that node.  <a href="_material_x_gen_shader_2_util_8h.html#a29b69da7c57e11315583dbf293bec3b7">More...</a><br /></td></tr>
 <tr class="separator:a29b69da7c57e11315583dbf293bec3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4883ce08584be69bd2ef12f67ac31ad6"><td class="memItemLeft" align="right" valign="top"><a id="a4883ce08584be69bd2ef12f67ac31ad6" name="a4883ce08584be69bd2ef12f67ac31ad6"></a>
+MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>findRenderableMaterialNodes</b> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc, vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;elements, bool, std::unordered_set&lt; <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4883ce08584be69bd2ef12f67ac31ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2aa882c23d583eead016db28c46f18"><td class="memItemLeft" align="right" valign="top"><a id="a7a2aa882c23d583eead016db28c46f18" name="a7a2aa882c23d583eead016db28c46f18"></a>
+MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>findRenderableElements</b> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc, vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;elements, bool includeReferencedGraphs=false)</td></tr>
+<tr class="separator:a7a2aa882c23d583eead016db28c46f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> generation utility methods. </p>
@@ -177,92 +183,57 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>getU
 
 </div>
 </div>
-<a id="a7a2aa882c23d583eead016db28c46f18" name="a7a2aa882c23d583eead016db28c46f18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a2aa882c23d583eead016db28c46f18">&#9670;&#160;</a></span>findRenderableElements()</h2>
+<a id="aff55990ef7f0deca8ea58f8e952c231a" name="aff55990ef7f0deca8ea58f8e952c231a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff55990ef7f0deca8ea58f8e952c231a">&#9670;&#160;</a></span>findRenderableElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MX_GENSHADER_API void findRenderableElements </td>
+          <td class="memname">MX_GENSHADER_API vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; findRenderableElements </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a>&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>elements</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeReferencedGraphs</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Find any elements which may be renderable from within a document. </p>
-<p >This includes all outputs on node graphs and shader references which are not part of any included library. Light shaders are not considered to be renderable. The option to include node graphs referened by shader references is disabled by default. </p>
-
-</div>
-</div>
-<a id="a5daf989d8c2b8cce95fe98a21bf03ae8" name="a5daf989d8c2b8cce95fe98a21bf03ae8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5daf989d8c2b8cce95fe98a21bf03ae8">&#9670;&#160;</a></span>findRenderableMaterialNodes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MX_GENSHADER_API void findRenderableMaterialNodes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a>&#160;</td>
-          <td class="paramname"><em>doc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>elements</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeReferencedGraphs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_set&lt; <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>processedSources</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Find any material node elements which are renderable (have input shaders) </p>
+<p>Find all renderable elements in the given document, including material nodes if present, or graph outputs of renderable types if no material nodes are found. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">doc</td><td><a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> to examine </td></tr>
-    <tr><td class="paramname">elements</td><td>List of renderable elements (returned) </td></tr>
-    <tr><td class="paramname">includeReferencedGraphs</td><td>Whether to check for outputs on referenced graphs </td></tr>
-    <tr><td class="paramname">processedSources</td><td>List of elements examined. <br  />
- </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of renderable elements </dd></dl>
+
+</div>
+</div>
+<a id="a56efc57038877b7a0d0e83d83d0fc234" name="a56efc57038877b7a0d0e83d83d0fc234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56efc57038877b7a0d0e83d83d0fc234">&#9670;&#160;</a></span>findRenderableMaterialNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MX_GENSHADER_API vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; findRenderableMaterialNodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a>&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find all renderable material nodes in the given document. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td><a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> to examine </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of renderable material nodes. </dd></dl>
 
 </div>
 </div>

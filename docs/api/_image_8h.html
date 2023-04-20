@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.6</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
    </div>
   </td>
  </tr>
@@ -139,6 +139,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ImagePair</b> = std:
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ImageBufferDeallocator</b> = std::function&lt; void(void *)&gt;</td></tr>
 <tr class="memdesc:a868cc87cd41404bf828fe38ebc78a675"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to perform image buffer deallocation. <br /></td></tr>
 <tr class="separator:a868cc87cd41404bf828fe38ebc78a675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53966b24b40a4480c04398575854a0c1"><td class="memItemLeft" align="right" valign="top"><a id="a53966b24b40a4480c04398575854a0c1" name="a53966b24b40a4480c04398575854a0c1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>UnsignedIntPair</b> = std::pair&lt; unsigned int, unsigned int &gt;</td></tr>
+<tr class="memdesc:a53966b24b40a4480c04398575854a0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pair of unsigned integers. <br /></td></tr>
+<tr class="separator:a53966b24b40a4480c04398575854a0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -150,10 +154,10 @@ MX_RENDER_API <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d5
 MX_RENDER_API <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createImageStrip</b> (const vector&lt; <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> &gt; &amp;imageVec)</td></tr>
 <tr class="memdesc:a9a2e44d700f25ea58e0a86d95489798c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a horizontal image strip from a vector of images with identical resolutions and formats. <br /></td></tr>
 <tr class="separator:a9a2e44d700f25ea58e0a86d95489798c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5397a511ea6049ca1c8516a5b65262fd"><td class="memItemLeft" align="right" valign="top"><a id="a5397a511ea6049ca1c8516a5b65262fd" name="a5397a511ea6049ca1c8516a5b65262fd"></a>
-MX_RENDER_API std::pair&lt; unsigned int, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxDimensions</b> (const vector&lt; <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> &gt; &amp;imageVec)</td></tr>
-<tr class="memdesc:a5397a511ea6049ca1c8516a5b65262fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the maximum width and height of all images in the given vector. <br /></td></tr>
-<tr class="separator:a5397a511ea6049ca1c8516a5b65262fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397d24421751bda7481762cf4d14df94"><td class="memItemLeft" align="right" valign="top"><a id="a397d24421751bda7481762cf4d14df94" name="a397d24421751bda7481762cf4d14df94"></a>
+MX_RENDER_API <a class="el" href="_image_8h.html#a53966b24b40a4480c04398575854a0c1">UnsignedIntPair</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxDimensions</b> (const vector&lt; <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> &gt; &amp;imageVec)</td></tr>
+<tr class="memdesc:a397d24421751bda7481762cf4d14df94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the maximum width and height of all images in the given vector. <br /></td></tr>
+<tr class="separator:a397d24421751bda7481762cf4d14df94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_image.html" title="Class representing an image in system memory.">Image</a> class. </p>
