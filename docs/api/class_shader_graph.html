@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -197,8 +197,9 @@ const vector&lt; <a class="el" href="_shader_graph_8h.html#a2f7ea34d9ef6b6d3a66e
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addDefaultGeomNode</b> (<a class="el" href="class_shader_input.html">ShaderInput</a> *input, const <a class="el" href="class_geom_prop_def.html">GeomPropDef</a> &amp;geomprop, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:aa52d69682d886f136c4a5dfa673b444e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a default geometric node and connect to the given input. <br /></td></tr>
 <tr class="separator:aa52d69682d886f136c4a5dfa673b444e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9916644cded0ec59cd40e02046f63c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c">topologicalSort</a> ()</td></tr>
-<tr class="memdesc:a4f9916644cded0ec59cd40e02046f63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the nodes in topological order.  <a href="class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c">More...</a><br /></td></tr>
+<tr class="memitem:a4f9916644cded0ec59cd40e02046f63c"><td class="memItemLeft" align="right" valign="top"><a id="a4f9916644cded0ec59cd40e02046f63c" name="a4f9916644cded0ec59cd40e02046f63c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>topologicalSort</b> ()</td></tr>
+<tr class="memdesc:a4f9916644cded0ec59cd40e02046f63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the nodes in topological order. <br /></td></tr>
 <tr class="separator:a4f9916644cded0ec59cd40e02046f63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5b1af4a837282deb2d1e43729c7d01"><td class="memItemLeft" align="right" valign="top"><a id="a8e5b1af4a837282deb2d1e43729c7d01" name="a8e5b1af4a837282deb2d1e43729c7d01"></a>
 <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getIdentifierMap</b> ()</td></tr>
@@ -239,18 +240,6 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName
 const <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getImplementation</b> () const</td></tr>
 <tr class="memdesc:ad483e283206e41d2dc3732dece1c1889 inherit pub_methods_class_shader_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the implementation used for this node. <br /></td></tr>
 <tr class="separator:ad483e283206e41d2dc3732dece1c1889 inherit pub_methods_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb50961495b7376fd3fbc13e13ab95f inherit pub_methods_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="afdb50961495b7376fd3fbc13e13ab95f" name="afdb50961495b7376fd3fbc13e13ab95f"></a>
-<a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getScopeInfo</b> ()</td></tr>
-<tr class="memdesc:afdb50961495b7376fd3fbc13e13ab95f inherit pub_methods_class_shader_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the scope info for this node. <br /></td></tr>
-<tr class="separator:afdb50961495b7376fd3fbc13e13ab95f inherit pub_methods_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac28358a9e40bce52ce694abd5b3db1fd inherit pub_methods_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="ac28358a9e40bce52ce694abd5b3db1fd" name="ac28358a9e40bce52ce694abd5b3db1fd"></a>
-const <a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getScopeInfo</b> () const</td></tr>
-<tr class="memdesc:ac28358a9e40bce52ce694abd5b3db1fd inherit pub_methods_class_shader_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the scope info for this node. <br /></td></tr>
-<tr class="separator:ac28358a9e40bce52ce694abd5b3db1fd inherit pub_methods_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7c3e5b0027a8b79a5384d878cd7924 inherit pub_methods_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="ada7c3e5b0027a8b79a5384d878cd7924" name="ada7c3e5b0027a8b79a5384d878cd7924"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>referencedConditionally</b> () const</td></tr>
-<tr class="memdesc:ada7c3e5b0027a8b79a5384d878cd7924 inherit pub_methods_class_shader_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this node is only referenced by a conditional. <br /></td></tr>
-<tr class="separator:ada7c3e5b0027a8b79a5384d878cd7924 inherit pub_methods_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6c953fcc052a153b7a537c80705058 inherit pub_methods_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="a6f6c953fcc052a153b7a537c80705058" name="a6f6c953fcc052a153b7a537c80705058"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (const <a class="el" href="class_node.html">Node</a> &amp;node, const <a class="el" href="class_node_def.html">NodeDef</a> &amp;nodeDef, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a6f6c953fcc052a153b7a537c80705058 inherit pub_methods_class_shader_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this shader node with all required data from the given node and nodedef. <br /></td></tr>
@@ -392,10 +381,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>optimize</b> (<a clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>bypass</b> (<a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_node.html">ShaderNode</a> *node, size_t inputIndex, size_t outputIndex=0)</td></tr>
 <tr class="memdesc:acca66968656109891960f3c6cd362767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypass a node for a particular input and output, effectively connecting the input's upstream connection with the output's downstream connections. <br /></td></tr>
 <tr class="separator:acca66968656109891960f3c6cd362767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6ec1f20ba9f0aba27a69d5bf2138ed"><td class="memItemLeft" align="right" valign="top"><a id="a4d6ec1f20ba9f0aba27a69d5bf2138ed" name="a4d6ec1f20ba9f0aba27a69d5bf2138ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateScopes</b> ()</td></tr>
-<tr class="memdesc:a4d6ec1f20ba9f0aba27a69d5bf2138ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate scopes for all nodes in the graph. <br /></td></tr>
-<tr class="separator:a4d6ec1f20ba9f0aba27a69d5bf2138ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c716ab663dfca2326c77c2ae2f45fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_graph.html#a3c716ab663dfca2326c77c2ae2f45fee">setVariableNames</a> (<a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a3c716ab663dfca2326c77c2ae2f45fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">For inputs and outputs in the graph set the variable names to be used in generated code.  <a href="class_shader_graph.html#a3c716ab663dfca2326c77c2ae2f45fee">More...</a><br /></td></tr>
 <tr class="separator:a3c716ab663dfca2326c77c2ae2f45fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,9 +462,6 @@ vector&lt; <a class="el" href="class_shader_output.html">ShaderOutput</a> * &gt;
 <tr class="memitem:ac16538baa1b6b076a019e1f94f377336 inherit pro_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="ac16538baa1b6b076a019e1f94f377336" name="ac16538baa1b6b076a019e1f94f377336"></a>
 ShaderMetadataVecPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_metadata</b></td></tr>
 <tr class="separator:ac16538baa1b6b076a019e1f94f377336 inherit pro_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26a5e8479662575dc59b26f158f1cb0 inherit pro_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="ae26a5e8479662575dc59b26f158f1cb0" name="ae26a5e8479662575dc59b26f158f1cb0"></a>
-<a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_scopeInfo</b></td></tr>
-<tr class="separator:ae26a5e8479662575dc59b26f158f1cb0 inherit pro_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -496,12 +478,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOT</b
 <tr class="memitem:a4ffbd7cecc6a9667d89689bad79ae899 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="a4ffbd7cecc6a9667d89689bad79ae899" name="a4ffbd7cecc6a9667d89689bad79ae899"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>IMAGE</b> = &quot;image&quot;</td></tr>
 <tr class="separator:a4ffbd7cecc6a9667d89689bad79ae899 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae469dbf8bbcd87befb014957ce6902e3 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="ae469dbf8bbcd87befb014957ce6902e3" name="ae469dbf8bbcd87befb014957ce6902e3"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARE</b> = &quot;compare&quot;</td></tr>
-<tr class="separator:ae469dbf8bbcd87befb014957ce6902e3 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9eb9cd3971339fd0f7c0a45631213b4 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="af9eb9cd3971339fd0f7c0a45631213b4" name="af9eb9cd3971339fd0f7c0a45631213b4"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SWITCH</b> = &quot;switch&quot;</td></tr>
-<tr class="separator:af9eb9cd3971339fd0f7c0a45631213b4 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83291bb4e5939eb0de30e62797098c32 inherit pub_static_attribs_class_shader_node"><td class="memItemLeft" align="right" valign="top"><a id="a83291bb4e5939eb0de30e62797098c32" name="a83291bb4e5939eb0de30e62797098c32"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SURFACESHADER</b> = &quot;surfaceshader&quot;</td></tr>
 <tr class="separator:a83291bb4e5939eb0de30e62797098c32 inherit pub_static_attribs_class_shader_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -746,31 +722,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOMET
 
 <p>For inputs and outputs in the graph set the variable names to be used in generated code. </p>
 <p >Making sure variable names are valid and unique to avoid name conflicts during shader generation. </p>
-
-</div>
-</div>
-<a id="a4f9916644cded0ec59cd40e02046f63c" name="a4f9916644cded0ec59cd40e02046f63c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f9916644cded0ec59cd40e02046f63c">&#9670;&#160;</a></span>topologicalSort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void topologicalSort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sort the nodes in topological order. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_exception_found_cycle.html" title="An exception that is thrown when a traversal call encounters a cycle.">ExceptionFoundCycle</a></td><td>if a cycle is encountered. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

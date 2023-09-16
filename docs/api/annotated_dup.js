@@ -105,6 +105,7 @@ var annotated_dup =
     [ "Mesh", "class_mesh.html", "class_mesh" ],
     [ "MeshPartition", "class_mesh_partition.html", "class_mesh_partition" ],
     [ "MeshStream", "class_mesh_stream.html", "class_mesh_stream" ],
+    [ "NewlineElement", "class_newline_element.html", null ],
     [ "Node", "class_node.html", "class_node" ],
     [ "NodeDef", "class_node_def.html", "class_node_def" ],
     [ "NodeGraph", "class_node_graph.html", "class_node_graph" ],

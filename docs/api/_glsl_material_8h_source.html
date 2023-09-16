@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -164,35 +164,32 @@ $(document).ready(function(){initNavTree('_glsl_material_8h_source.html',''); in
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                      <a class="code hl_typedef" href="_image_handler_8h.html#a766e76b780d617bb4795f795be8a3b3c">ImageHandlerPtr</a> imageHandler,</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                      <span class="keyword">const</span> <a class="code hl_class" href="class_shadow_state.html">ShadowState</a>&amp; shadowState) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#aee9966ee04ad48fb618ca3c8802602c0">bindUnits</a>(<a class="code hl_typedef" href="_unit_8h.html#aac52e041716fa557ef3367f8af734339">UnitConverterRegistryPtr</a>&amp; registry,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                   <span class="keyword">const</span> <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#a35bf4772663f679ee7604b72eaa6a005">bindMesh</a>(<a class="code hl_typedef" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> mesh) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shader_material.html#a8a9071e7ca6140afb58fa31c26eb9a74">bindPartition</a>(<a class="code hl_typedef" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> part) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e">drawPartition</a>(<a class="code hl_typedef" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> part) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#aa68dfcff0d814fa24dcc3e5668035bb7">unbindGeometry</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_class" href="class_variable_block.html">VariableBlock</a>* <a class="code hl_function" href="class_shader_material.html#a893f0783486179bceee6eebb68f70ff5">getPublicUniforms</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_class" href="class_shader_port.html">ShaderPort</a>* <a class="code hl_function" href="class_shader_material.html#acd2f449503e30f768c00b186817fef92">findUniform</a>(<span class="keyword">const</span> std::string&amp; path) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#a9687f12f129f1cdbbcb75c344281eebd">modifyUniform</a>(<span class="keyword">const</span> std::string&amp; path,</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                       <a class="code hl_typedef" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a> value,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                       std::string valueString = EMPTY_STRING) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> clearShader() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#a35bf4772663f679ee7604b72eaa6a005">bindMesh</a>(<a class="code hl_typedef" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> mesh) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shader_material.html#a8a9071e7ca6140afb58fa31c26eb9a74">bindPartition</a>(<a class="code hl_typedef" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> part) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e">drawPartition</a>(<a class="code hl_typedef" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> part) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#aa68dfcff0d814fa24dcc3e5668035bb7">unbindGeometry</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_class" href="class_variable_block.html">VariableBlock</a>* <a class="code hl_function" href="class_shader_material.html#a893f0783486179bceee6eebb68f70ff5">getPublicUniforms</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_class" href="class_shader_port.html">ShaderPort</a>* <a class="code hl_function" href="class_shader_material.html#acd2f449503e30f768c00b186817fef92">findUniform</a>(<span class="keyword">const</span> std::string&amp; path) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_material.html#a9687f12f129f1cdbbcb75c344281eebd">modifyUniform</a>(<span class="keyword">const</span> std::string&amp; path,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                       <a class="code hl_typedef" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a> value,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                       std::string valueString = EMPTY_STRING) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">void</span> clearShader() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    GlslProgramPtr _glProgram;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    GlslProgramPtr _glProgram;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>};</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>MATERIALX_NAMESPACE_END</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_glsl_program_8h_html"><div class="ttname"><a href="_glsl_program_8h.html">GlslProgram.h</a></div><div class="ttdoc">GLSL Program interfaces.</div></div>
 <div class="ttc" id="a_glsl_shader_generator_8h_html"><div class="ttname"><a href="_glsl_shader_generator_8h.html">GlslShaderGenerator.h</a></div><div class="ttdoc">GLSL shader generator.</div></div>
 <div class="ttc" id="a_image_8h_html_adb43ce077de07f031d0c6989de25d545"><div class="ttname"><a href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a></div><div class="ttdeci">shared_ptr&lt; Image &gt; ImagePtr</div><div class="ttdoc">A shared pointer to an image.</div><div class="ttdef"><b>Definition:</b> Image.h:23</div></div>
@@ -202,7 +199,6 @@ $(document).ready(function(){initNavTree('_glsl_material_8h_source.html',''); in
 <div class="ttc" id="a_mesh_8h_html_aa1fa294260f159ae030e6bb7ecac3490"><div class="ttname"><a href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a></div><div class="ttdeci">shared_ptr&lt; class MeshPartition &gt; MeshPartitionPtr</div><div class="ttdoc">Shared pointer to a mesh partition.</div><div class="ttdef"><b>Definition:</b> Mesh.h:146</div></div>
 <div class="ttc" id="a_mesh_8h_html_abb4e7a16c06b8c5ac1ad3b0ea8cd0330"><div class="ttname"><a href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a></div><div class="ttdeci">shared_ptr&lt; class Mesh &gt; MeshPtr</div><div class="ttdoc">Shared pointer to a mesh.</div><div class="ttdef"><b>Definition:</b> Mesh.h:230</div></div>
 <div class="ttc" id="a_shader_material_8h_html"><div class="ttname"><a href="_shader_material_8h.html">ShaderMaterial.h</a></div><div class="ttdoc">ShaderMaterial helper classes.</div></div>
-<div class="ttc" id="a_unit_8h_html_aac52e041716fa557ef3367f8af734339"><div class="ttname"><a href="_unit_8h.html#aac52e041716fa557ef3367f8af734339">UnitConverterRegistryPtr</a></div><div class="ttdeci">shared_ptr&lt; UnitConverterRegistry &gt; UnitConverterRegistryPtr</div><div class="ttdoc">A shared pointer to a UnitConverterRegistry.</div><div class="ttdef"><b>Definition:</b> Unit.h:33</div></div>
 <div class="ttc" id="a_unit_system_8h_html"><div class="ttname"><a href="_unit_system_8h.html">UnitSystem.h</a></div><div class="ttdoc">Unit system classes.</div></div>
 <div class="ttc" id="a_value_8h_html_a33a2ae59d2d48eab5a3a5233be8db2aa"><div class="ttname"><a href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a></div><div class="ttdeci">shared_ptr&lt; const Value &gt; ConstValuePtr</div><div class="ttdoc">A shared pointer to a const Value.</div><div class="ttdef"><b>Definition:</b> Value.h:31</div></div>
 <div class="ttc" id="aclass_file_path_html"><div class="ttname"><a href="class_file_path.html">FilePath</a></div><div class="ttdoc">A generic file path, supporting both syntactic and file system operations.</div><div class="ttdef"><b>Definition:</b> File.h:27</div></div>
@@ -228,7 +224,6 @@ $(document).ready(function(){initNavTree('_glsl_material_8h_source.html',''); in
 <div class="ttc" id="aclass_shader_material_html_aae201823123016581aa5df5ce18cca33"><div class="ttname"><a href="class_shader_material.html#aae201823123016581aa5df5ce18cca33">ShaderMaterial::bindImages</a></div><div class="ttdeci">virtual void bindImages(ImageHandlerPtr imageHandler, const FileSearchPath &amp;searchPath, bool enableMipmaps=true)=0</div><div class="ttdoc">Bind all images for this ShaderMaterial.</div></div>
 <div class="ttc" id="aclass_shader_material_html_acd2f449503e30f768c00b186817fef92"><div class="ttname"><a href="class_shader_material.html#acd2f449503e30f768c00b186817fef92">ShaderMaterial::findUniform</a></div><div class="ttdeci">virtual ShaderPort * findUniform(const std::string &amp;path) const =0</div><div class="ttdoc">Find a public uniform from its MaterialX path.</div></div>
 <div class="ttc" id="aclass_shader_material_html_aebc3322efdaf8245f620d84fd707ea7e"><div class="ttname"><a href="class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e">ShaderMaterial::drawPartition</a></div><div class="ttdeci">virtual void drawPartition(MeshPartitionPtr part) const =0</div><div class="ttdoc">Draw the given mesh partition.</div></div>
-<div class="ttc" id="aclass_shader_material_html_aee9966ee04ad48fb618ca3c8802602c0"><div class="ttname"><a href="class_shader_material.html#aee9966ee04ad48fb618ca3c8802602c0">ShaderMaterial::bindUnits</a></div><div class="ttdeci">virtual void bindUnits(UnitConverterRegistryPtr &amp;registry, const GenContext &amp;context)=0</div><div class="ttdoc">Bind units.</div></div>
 <div class="ttc" id="aclass_shader_port_html"><div class="ttname"><a href="class_shader_port.html">ShaderPort</a></div><div class="ttdoc">An input or output port on a ShaderNode.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:123</div></div>
 <div class="ttc" id="aclass_shadow_state_html"><div class="ttname"><a href="class_shadow_state.html">ShadowState</a></div><div class="ttdoc">Helper class representing shadow rendering state.</div><div class="ttdef"><b>Definition:</b> ShaderMaterial.h:29</div></div>
 <div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:61</div></div>

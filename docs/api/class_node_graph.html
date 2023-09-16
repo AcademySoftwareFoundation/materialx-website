@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -138,6 +138,11 @@ NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeDef</b> 
 <tr class="memitem:ac71149ba1c16720ad0af911777f40749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#a553d51f36a159c9f698eb8124ebc0c38">InterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node_graph.html#ac71149ba1c16720ad0af911777f40749">getImplementation</a> () const</td></tr>
 <tr class="memdesc:ac71149ba1c16720ad0af911777f40749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first implementation for this node graph.  <a href="class_node_graph.html#ac71149ba1c16720ad0af911777f40749">More...</a><br /></td></tr>
 <tr class="separator:ac71149ba1c16720ad0af911777f40749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Traversal</div></td></tr>
+<tr class="memitem:a0bd357f1c7499fb2e19467b2e6016c7c"><td class="memItemLeft" align="right" valign="top"><a id="a0bd357f1c7499fb2e19467b2e6016c7c" name="a0bd357f1c7499fb2e19467b2e6016c7c"></a>
+vector&lt; <a class="el" href="_interface_8h.html#a57dddade70e342db2f2fd54903763e53">PortElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDownstreamPorts</b> () const</td></tr>
+<tr class="memdesc:a0bd357f1c7499fb2e19467b2e6016c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of all downstream ports that connect to this graph, ordered by the names of the port elements. <br /></td></tr>
+<tr class="separator:a0bd357f1c7499fb2e19467b2e6016c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Utility</div></td></tr>
 <tr class="memitem:af3fb16a89afea8c1deeaf609d358524d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#a73652e942084f4d2a0584e1d742d02ad">ConstInterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node_graph.html#af3fb16a89afea8c1deeaf609d358524d">getDeclaration</a> (const string &amp;target=EMPTY_STRING) const override</td></tr>
 <tr class="memdesc:af3fb16a89afea8c1deeaf609d358524d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first declaration of this interface, optionally filtered by the given target name.  <a href="class_node_graph.html#af3fb16a89afea8c1deeaf609d358524d">More...</a><br /></td></tr>
@@ -206,8 +211,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>removeBackdrop</b> (c
 <tr class="memitem:a46aecf7b11bc8f5745946607afee70cc inherit pub_methods_class_graph_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_element.html#a46aecf7b11bc8f5745946607afee70cc">flattenSubgraphs</a> (const string &amp;target=EMPTY_STRING, NodePredicate filter=nullptr)</td></tr>
 <tr class="memdesc:a46aecf7b11bc8f5745946607afee70cc inherit pub_methods_class_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flatten all subgraphs at the root scope of this graph element, recursively replacing each graph-defined node with its equivalent node network.  <a href="class_graph_element.html#a46aecf7b11bc8f5745946607afee70cc">More...</a><br /></td></tr>
 <tr class="separator:a46aecf7b11bc8f5745946607afee70cc inherit pub_methods_class_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9420060ca77355eb5a5d0e3bc9b92a82 inherit pub_methods_class_graph_element"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_element.html#a9420060ca77355eb5a5d0e3bc9b92a82">topologicalSort</a> () const</td></tr>
-<tr class="memdesc:a9420060ca77355eb5a5d0e3bc9b92a82 inherit pub_methods_class_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of all children (nodes and outputs) sorted in topological order.  <a href="class_graph_element.html#a9420060ca77355eb5a5d0e3bc9b92a82">More...</a><br /></td></tr>
+<tr class="memitem:a9420060ca77355eb5a5d0e3bc9b92a82 inherit pub_methods_class_graph_element"><td class="memItemLeft" align="right" valign="top"><a id="a9420060ca77355eb5a5d0e3bc9b92a82" name="a9420060ca77355eb5a5d0e3bc9b92a82"></a>
+vector&lt; <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>topologicalSort</b> () const</td></tr>
+<tr class="memdesc:a9420060ca77355eb5a5d0e3bc9b92a82 inherit pub_methods_class_graph_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of all children (nodes and outputs) sorted in topological order. <br /></td></tr>
 <tr class="separator:a9420060ca77355eb5a5d0e3bc9b92a82 inherit pub_methods_class_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab806bd8269c2cca32d78f08c0ab562cb inherit pub_methods_class_graph_element"><td class="memItemLeft" align="right" valign="top"><a id="ab806bd8269c2cca32d78f08c0ab562cb" name="ab806bd8269c2cca32d78f08c0ab562cb"></a>
 <a class="el" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>addGeomNode</b> (<a class="el" href="_geom_8h.html#ad3657c356cd5831c9b60857940899b7e">ConstGeomPropDefPtr</a> geomPropDef, const string &amp;namePrefix)</td></tr>
@@ -377,6 +383,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultVersion</b>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultVersion</b> () const</td></tr>
 <tr class="memdesc:ab871613032696392b4c1282c6b9c8580 inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default version flag of this element. <br /></td></tr>
 <tr class="separator:ab871613032696392b4c1282c6b9c8580 inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">clearContent</a> () override</td></tr>
+<tr class="memdesc:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element.  <a href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">More...</a><br /></td></tr>
+<tr class="separator:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c3a553a753ec6bd9e340f051321b3c inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#aa0c3a553a753ec6bd9e340f051321b3c">hasExactInputMatch</a> (<a class="el" href="_interface_8h.html#a73652e942084f4d2a0584e1d742d02ad">ConstInterfaceElementPtr</a> declaration, string *message=nullptr) const</td></tr>
 <tr class="memdesc:aa0c3a553a753ec6bd9e340f051321b3c inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this instance has an exact input match with the given declaration, where each input of this the instance corresponds to a declaration input of the same name and type.  <a href="class_interface_element.html#aa0c3a553a753ec6bd9e340f051321b3c">More...</a><br /></td></tr>
 <tr class="separator:aa0c3a553a753ec6bd9e340f051321b3c inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -687,10 +696,6 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getActi
 <tr class="memitem:a7c9598aadf5bd08869adfabac2bc349a inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a7c9598aadf5bd08869adfabac2bc349a">copyContentFrom</a> (const <a class="el" href="_element_8h.html#a6cac15657c90466f204f7287c99f20cc">ConstElementPtr</a> &amp;source)</td></tr>
 <tr class="memdesc:a7c9598aadf5bd08869adfabac2bc349a inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all attributes and descendants from the given element to this one.  <a href="class_element.html#a7c9598aadf5bd08869adfabac2bc349a">More...</a><br /></td></tr>
 <tr class="separator:a7c9598aadf5bd08869adfabac2bc349a inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0761c8cf0283a7b44a7de06a5dac6e45 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a0761c8cf0283a7b44a7de06a5dac6e45" name="a0761c8cf0283a7b44a7de06a5dac6e45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearContent</b> ()</td></tr>
-<tr class="memdesc:a0761c8cf0283a7b44a7de06a5dac6e45 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element. <br /></td></tr>
-<tr class="separator:a0761c8cf0283a7b44a7de06a5dac6e45 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48b55f5719475fd16f1f36ea2239c50d inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a48b55f5719475fd16f1f36ea2239c50d" name="a48b55f5719475fd16f1f36ea2239c50d"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>createValidChildName</b> (string name) const</td></tr>
 <tr class="memdesc:a48b55f5719475fd16f1f36ea2239c50d inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using the input name as a starting point, modify it to create a valid, unique name for a child element. <br /></td></tr>

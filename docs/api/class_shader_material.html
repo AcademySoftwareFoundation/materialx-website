@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -190,9 +190,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasTransparency</b> (
 <tr class="memitem:a731d7f38ef190d13a76af501356182f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_material.html#a731d7f38ef190d13a76af501356182f9">bindLighting</a> (<a class="el" href="_light_handler_8h.html#a1c1719eed7a64c3017e70a78c0b809d7">LightHandlerPtr</a> lightHandler, <a class="el" href="_image_handler_8h.html#a766e76b780d617bb4795f795be8a3b3c">ImageHandlerPtr</a> imageHandler, const <a class="el" href="class_shadow_state.html">ShadowState</a> &amp;shadowState)=0</td></tr>
 <tr class="memdesc:a731d7f38ef190d13a76af501356182f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind lights to shader.  <a href="class_shader_material.html#a731d7f38ef190d13a76af501356182f9">More...</a><br /></td></tr>
 <tr class="separator:a731d7f38ef190d13a76af501356182f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9966ee04ad48fb618ca3c8802602c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_material.html#aee9966ee04ad48fb618ca3c8802602c0">bindUnits</a> (<a class="el" href="_unit_8h.html#aac52e041716fa557ef3367f8af734339">UnitConverterRegistryPtr</a> &amp;registry, const <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)=0</td></tr>
-<tr class="memdesc:aee9966ee04ad48fb618ca3c8802602c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind units.  <a href="class_shader_material.html#aee9966ee04ad48fb618ca3c8802602c0">More...</a><br /></td></tr>
-<tr class="separator:aee9966ee04ad48fb618ca3c8802602c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35bf4772663f679ee7604b72eaa6a005"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_material.html#a35bf4772663f679ee7604b72eaa6a005">bindMesh</a> (<a class="el" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> mesh)=0</td></tr>
 <tr class="memdesc:a35bf4772663f679ee7604b72eaa6a005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the given mesh to this <a class="el" href="class_shader_material.html" title="Abstract class for shader generation and rendering of a ShaderMaterial.">ShaderMaterial</a>.  <a href="class_shader_material.html#a35bf4772663f679ee7604b72eaa6a005">More...</a><br /></td></tr>
 <tr class="separator:a35bf4772663f679ee7604b72eaa6a005"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,46 +478,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_hasTransparency</b><
 <p>Bind shader. </p>
 
 <p>Implemented in <a class="el" href="class_glsl_material.html#acd2085a27883852894eeb5cd605257a3">GlslMaterial</a>.</p>
-
-</div>
-</div>
-<a id="aee9966ee04ad48fb618ca3c8802602c0" name="aee9966ee04ad48fb618ca3c8802602c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee9966ee04ad48fb618ca3c8802602c0">&#9670;&#160;</a></span>bindUnits()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bindUnits </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_unit_8h.html#aac52e041716fa557ef3367f8af734339">UnitConverterRegistryPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>registry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_gen_context.html">GenContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>context</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bind units. </p>
-
-<p>Implemented in <a class="el" href="class_glsl_material.html#aaaff1d70222f365674c8c872615c77d5">GlslMaterial</a>.</p>
 
 </div>
 </div>

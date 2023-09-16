@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shaderinterfacetype_0',['ShaderInterfaceType',['../_gen_options_8h.html#ab68648a72e3c567096e00206594168c9',1,'GenOptions.h']]]
+  ['punctuation_0',['Punctuation',['../class_syntax.html#a8872c37f73c22239ccc7d871da2a4f8b',1,'Syntax']]]
 ];

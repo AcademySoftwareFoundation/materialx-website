@@ -6,7 +6,6 @@ var class_glsl_material =
     [ "bindMesh", "class_glsl_material.html#aef4b6f9ea192a161079dc79dfe48f1d6", null ],
     [ "bindPartition", "class_glsl_material.html#a43984df2fcbc4a353886476b49ba1e82", null ],
     [ "bindShader", "class_glsl_material.html#acd2085a27883852894eeb5cd605257a3", null ],
-    [ "bindUnits", "class_glsl_material.html#aaaff1d70222f365674c8c872615c77d5", null ],
     [ "bindViewInformation", "class_glsl_material.html#a01b4d6a7dad79608f7b0f8f9b961e52d", null ],
     [ "copyShader", "class_glsl_material.html#aeea8e1c27e9905317610ec567460baf9", null ],
     [ "drawPartition", "class_glsl_material.html#ac944f0a603f46d866647f23aba74e058", null ],

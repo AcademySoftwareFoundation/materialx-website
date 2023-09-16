@@ -24,6 +24,7 @@ var hierarchy =
         ] ],
         [ "Look", "class_look.html", null ],
         [ "LookGroup", "class_look_group.html", null ],
+        [ "NewlineElement", "class_newline_element.html", null ],
         [ "PropertySet", "class_property_set.html", null ],
         [ "TypeDef", "class_type_def.html", null ],
         [ "TypedElement", "class_typed_element.html", [
@@ -133,7 +134,6 @@ var hierarchy =
     [ "ScopedSetClosureParams", "class_scoped_set_closure_params.html", null ],
     [ "ScopedSetVariableName", "class_scoped_set_variable_name.html", null ],
     [ "ScopedTimer", "class_scoped_timer.html", null ],
-    [ "ShaderNode::ScopeInfo", "struct_shader_node_1_1_scope_info.html", null ],
     [ "Shader", "class_shader.html", null ],
     [ "ShaderGenerator", "class_shader_generator.html", [
       [ "HwShaderGenerator", "class_hw_shader_generator.html", [

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -558,9 +558,9 @@ $(document).ready(function(){initNavTree('_material_x_core_2_types_8h_source.htm
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>             <span class="keywordtype">float</span> m20, <span class="keywordtype">float</span> m21, <span class="keywordtype">float</span> m22) :</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>(<a class="code hl_class" href="class_uninit.html">Uninit</a>{})</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    {</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        _arr = { m00, m01, m02,</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>                 m10, m11, m12,</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                 m20, m21, m22 };</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        _arr = { RowArray{ m00, m01, m02 },</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>                 RowArray{ m10, m11, m12 },</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                 RowArray{ m20, m21, m22 } };</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    }</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
@@ -606,10 +606,10 @@ $(document).ready(function(){initNavTree('_material_x_core_2_types_8h_source.htm
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>             <span class="keywordtype">float</span> m30, <span class="keywordtype">float</span> m31, <span class="keywordtype">float</span> m32, <span class="keywordtype">float</span> m33) :</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        <a class="code hl_class" href="class_matrix_n.html">MatrixN</a>(<a class="code hl_class" href="class_uninit.html">Uninit</a>{})</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>    {</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        _arr = { m00, m01, m02, m03,</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>                 m10, m11, m12, m13,</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                 m20, m21, m22, m23,</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>                 m30, m31, m32, m33 };</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        _arr = { RowArray{ m00, m01, m02, m03 },</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>                 RowArray{ m10, m11, m12, m13 },</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                 RowArray{ m20, m21, m22, m23 },</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>                 RowArray{ m30, m31, m32, m33 } };</div>
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    }</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
@@ -653,7 +653,7 @@ $(document).ready(function(){initNavTree('_material_x_core_2_types_8h_source.htm
 <div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_material_x_core_2_export_8h_html"><div class="ttname"><a href="_material_x_core_2_export_8h.html">Export.h</a></div><div class="ttdoc">Import and export declarations for the Core library.</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html"><div class="ttname"><a href="_material_x_core_2_util_8h.html">Util.h</a></div><div class="ttdoc">Utility methods.</div></div>
-<div class="ttc" id="a_material_x_core_2_util_8h_html_a959b58b3e0c330ed20a1594b18a05aeb"><div class="ttname"><a href="_material_x_core_2_util_8h.html#a959b58b3e0c330ed20a1594b18a05aeb">hashCombine</a></div><div class="ttdeci">void hashCombine(size_t &amp;seed, const T &amp;value)</div><div class="ttdoc">Combine the hash of a value with an existing seed.</div><div class="ttdef"><b>Definition:</b> Util.h:55</div></div>
+<div class="ttc" id="a_material_x_core_2_util_8h_html_a959b58b3e0c330ed20a1594b18a05aeb"><div class="ttname"><a href="_material_x_core_2_util_8h.html#a959b58b3e0c330ed20a1594b18a05aeb">hashCombine</a></div><div class="ttdeci">void hashCombine(size_t &amp;seed, const T &amp;value)</div><div class="ttdoc">Combine the hash of a value with an existing seed.</div><div class="ttdef"><b>Definition:</b> Util.h:58</div></div>
 <div class="ttc" id="aclass_color3_html"><div class="ttname"><a href="class_color3.html">Color3</a></div><div class="ttdoc">A three-component color value.</div><div class="ttdef"><b>Definition:</b> Types.h:342</div></div>
 <div class="ttc" id="aclass_color4_html"><div class="ttname"><a href="class_color4.html">Color4</a></div><div class="ttdoc">A four-component color value.</div><div class="ttdef"><b>Definition:</b> Types.h:364</div></div>
 <div class="ttc" id="aclass_matrix33_html"><div class="ttname"><a href="class_matrix33.html">Matrix33</a></div><div class="ttdoc">A 3x3 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:586</div></div>

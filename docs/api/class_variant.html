@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -284,6 +284,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultVersion</b>
 <tr class="memitem:a4978e020a466cca80d0e7a233979529a inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_interface_8h.html#a73652e942084f4d2a0584e1d742d02ad">ConstInterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#a4978e020a466cca80d0e7a233979529a">getDeclaration</a> (const string &amp;target=EMPTY_STRING) const</td></tr>
 <tr class="memdesc:a4978e020a466cca80d0e7a233979529a inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first declaration of this interface, optionally filtered by the given target name.  <a href="class_interface_element.html#a4978e020a466cca80d0e7a233979529a">More...</a><br /></td></tr>
 <tr class="separator:a4978e020a466cca80d0e7a233979529a inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">clearContent</a> () override</td></tr>
+<tr class="memdesc:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element.  <a href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">More...</a><br /></td></tr>
+<tr class="separator:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c3a553a753ec6bd9e340f051321b3c inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#aa0c3a553a753ec6bd9e340f051321b3c">hasExactInputMatch</a> (<a class="el" href="_interface_8h.html#a73652e942084f4d2a0584e1d742d02ad">ConstInterfaceElementPtr</a> declaration, string *message=nullptr) const</td></tr>
 <tr class="memdesc:aa0c3a553a753ec6bd9e340f051321b3c inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this instance has an exact input match with the given declaration, where each input of this the instance corresponds to a declaration input of the same name and type.  <a href="class_interface_element.html#aa0c3a553a753ec6bd9e340f051321b3c">More...</a><br /></td></tr>
 <tr class="separator:aa0c3a553a753ec6bd9e340f051321b3c inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -597,10 +600,6 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getActi
 <tr class="memitem:a7c9598aadf5bd08869adfabac2bc349a inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a7c9598aadf5bd08869adfabac2bc349a">copyContentFrom</a> (const <a class="el" href="_element_8h.html#a6cac15657c90466f204f7287c99f20cc">ConstElementPtr</a> &amp;source)</td></tr>
 <tr class="memdesc:a7c9598aadf5bd08869adfabac2bc349a inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all attributes and descendants from the given element to this one.  <a href="class_element.html#a7c9598aadf5bd08869adfabac2bc349a">More...</a><br /></td></tr>
 <tr class="separator:a7c9598aadf5bd08869adfabac2bc349a inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0761c8cf0283a7b44a7de06a5dac6e45 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a0761c8cf0283a7b44a7de06a5dac6e45" name="a0761c8cf0283a7b44a7de06a5dac6e45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearContent</b> ()</td></tr>
-<tr class="memdesc:a0761c8cf0283a7b44a7de06a5dac6e45 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element. <br /></td></tr>
-<tr class="separator:a0761c8cf0283a7b44a7de06a5dac6e45 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48b55f5719475fd16f1f36ea2239c50d inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a48b55f5719475fd16f1f36ea2239c50d" name="a48b55f5719475fd16f1f36ea2239c50d"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>createValidChildName</b> (string name) const</td></tr>
 <tr class="memdesc:a48b55f5719475fd16f1f36ea2239c50d inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using the input name as a starting point, modify it to create a valid, unique name for a child element. <br /></td></tr>

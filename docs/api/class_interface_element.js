@@ -3,6 +3,7 @@ var class_interface_element =
     [ "addInput", "class_interface_element.html#a1f0aabc9d7fe01a416727fbd3df9d0c3", null ],
     [ "addOutput", "class_interface_element.html#a00a217e4cd68991782055ba2aebd7314", null ],
     [ "addToken", "class_interface_element.html#a89c1a09c07ed267ce8d05331bb3f52cc", null ],
+    [ "clearContent", "class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf", null ],
     [ "getActiveInput", "class_interface_element.html#ada0b7d4c636e19fccf9de99a29f8d68d", null ],
     [ "getActiveInputs", "class_interface_element.html#a99aade732d0027a2f9dc12f8552bd851", null ],
     [ "getActiveOutput", "class_interface_element.html#a84c847b7b5b7e2965084d2754cf879d1", null ],

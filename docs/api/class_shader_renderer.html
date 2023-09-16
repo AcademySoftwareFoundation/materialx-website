@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -119,6 +119,11 @@ Inheritance diagram for ShaderRenderer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a782c36bfce6ff989984430100d41e01c"><td class="memItemLeft" align="right" valign="top"><a id="a782c36bfce6ff989984430100d41e01c" name="a782c36bfce6ff989984430100d41e01c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a782c36bfce6ff989984430100d41e01c">MatrixConvention</a> { <b>OpenGL</b> = 0
+, <b>Metal</b> = 1
+ }</td></tr>
+<tr class="memdesc:a782c36bfce6ff989984430100d41e01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewing API matrix conventions designation (default to OpenGL). <br /></td></tr>
+<tr class="separator:a782c36bfce6ff989984430100d41e01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02ee4d51c8927817002da896a473f5c"><td class="memItemLeft" align="right" valign="top"><a id="af02ee4d51c8927817002da896a473f5c" name="af02ee4d51c8927817002da896a473f5c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StageMap</b> = <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a></td></tr>
 <tr class="memdesc:af02ee4d51c8927817002da896a473f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map with name and source code for each shader stage. <br /></td></tr>
@@ -172,6 +177,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometryHandler</b
 <tr class="memitem:a4b351e810d3cf815504236fdfa726cf6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a4b351e810d3cf815504236fdfa726cf6">validateInputs</a> ()</td></tr>
 <tr class="memdesc:a4b351e810d3cf815504236fdfa726cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate inputs for the program.  <a href="class_shader_renderer.html#a4b351e810d3cf815504236fdfa726cf6">More...</a><br /></td></tr>
 <tr class="separator:a4b351e810d3cf815504236fdfa726cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6a46cd789a3b49d13db69980d14897"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a2a6a46cd789a3b49d13db69980d14897">updateUniform</a> (const string &amp;name, <a class="el" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a> value)</td></tr>
+<tr class="memdesc:a2a6a46cd789a3b49d13db69980d14897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the program with value of the uniform.  <a href="class_shader_renderer.html#a2a6a46cd789a3b49d13db69980d14897">More...</a><br /></td></tr>
+<tr class="separator:a2a6a46cd789a3b49d13db69980d14897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefb865cd7329b8908471f748afd433ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#aefb865cd7329b8908471f748afd433ba">setSize</a> (unsigned int width, unsigned int height)</td></tr>
 <tr class="memdesc:aefb865cd7329b8908471f748afd433ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the rendered image.  <a href="class_shader_renderer.html#aefb865cd7329b8908471f748afd433ba">More...</a><br /></td></tr>
 <tr class="separator:aefb865cd7329b8908471f748afd433ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +193,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometryHandler</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a044c580237b606aed0d1c1f7de268706"><td class="memItemLeft" align="right" valign="top"><a id="a044c580237b606aed0d1c1f7de268706" name="a044c580237b606aed0d1c1f7de268706"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType)</td></tr>
-<tr class="separator:a044c580237b606aed0d1c1f7de268706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3527025ac0393c7379b8599a9f43eaec"><td class="memItemLeft" align="right" valign="top"><a id="a3527025ac0393c7379b8599a9f43eaec" name="a3527025ac0393c7379b8599a9f43eaec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType, <a class="el" href="class_shader_renderer.html#a782c36bfce6ff989984430100d41e01c">MatrixConvention</a> matrixConvention=MatrixConvention::OpenGL)</td></tr>
+<tr class="separator:a3527025ac0393c7379b8599a9f43eaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -200,6 +208,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_height</b></
 <tr class="memitem:affab7d9304cebb8b50c7bff554cb3ff3"><td class="memItemLeft" align="right" valign="top"><a id="affab7d9304cebb8b50c7bff554cb3ff3" name="affab7d9304cebb8b50c7bff554cb3ff3"></a>
 Image::BaseType&#160;</td><td class="memItemRight" valign="bottom"><b>_baseType</b></td></tr>
 <tr class="separator:affab7d9304cebb8b50c7bff554cb3ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0518d172ece20169a9fd0752d885028a"><td class="memItemLeft" align="right" valign="top"><a id="a0518d172ece20169a9fd0752d885028a" name="a0518d172ece20169a9fd0752d885028a"></a>
+<a class="el" href="class_shader_renderer.html#a782c36bfce6ff989984430100d41e01c">MatrixConvention</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_matrixConvention</b></td></tr>
+<tr class="separator:a0518d172ece20169a9fd0752d885028a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820105c7246533f0f24bc5632aa4b0e3"><td class="memItemLeft" align="right" valign="top"><a id="a820105c7246533f0f24bc5632aa4b0e3" name="a820105c7246533f0f24bc5632aa4b0e3"></a>
 CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td></tr>
 <tr class="separator:a820105c7246533f0f24bc5632aa4b0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,6 +419,46 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
 <p>Set the size of the rendered image. </p>
 
 <p>Reimplemented in <a class="el" href="class_glsl_renderer.html#af8ab8b15dfa71bbb8b6c9145064363bc">GlslRenderer</a>, and <a class="el" href="class_osl_renderer.html#af8ab8b15dfa71bbb8b6c9145064363bc">OslRenderer</a>.</p>
+
+</div>
+</div>
+<a id="a2a6a46cd789a3b49d13db69980d14897" name="a2a6a46cd789a3b49d13db69980d14897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6a46cd789a3b49d13db69980d14897">&#9670;&#160;</a></span>updateUniform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateUniform </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the program with value of the uniform. </p>
+
+<p>Reimplemented in <a class="el" href="class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d">GlslRenderer</a>.</p>
 
 </div>
 </div>

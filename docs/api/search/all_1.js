@@ -1,7 +1,7 @@
 var searchData=
 [
   ['acceptsinputtype_0',['acceptsInputType',['../class_blur_node.html#a2c86919558ba4eea14ec9413d7bbe8fc',1,'BlurNode::acceptsInputType()'],['../class_convolution_node.html#ad07ff3ff92a069c051f3d448f4894b65',1,'ConvolutionNode::acceptsInputType()'],['../class_height_to_normal_node_glsl.html#a2c86919558ba4eea14ec9413d7bbe8fc',1,'HeightToNormalNodeGlsl::acceptsInputType()']]],
-  ['acquireimage_1',['acquireImage',['../class_image_handler.html#a38b95b404ad1c6f65a074a744a5b170b',1,'ImageHandler']]],
+  ['acquireimage_1',['acquireImage',['../class_image_handler.html#a29f88850be86a701c523e161f31ec85a',1,'ImageHandler']]],
   ['add_2',['add',['../class_variable_block.html#a645e61e2e2c25c4d78930fd2a4644f23',1,'VariableBlock::add(ShaderPortPtr port)'],['../class_variable_block.html#af1a62bb77c0b8f2c9bb21554919ffb58',1,'VariableBlock::add(const TypeDesc *type, const string &amp;name, ValuePtr value=nullptr)']]],
   ['addargument_3',['addArgument',['../class_closure_context.html#aabadec75619badbae96d4db72246a688',1,'ClosureContext']]],
   ['addattributedef_4',['addAttributeDef',['../class_document.html#a1ade764942ae00a0e0c121174d71f28a',1,'Document']]],
@@ -15,7 +15,7 @@ var searchData=
   ['addcomment_12',['addComment',['../class_shader_stage.html#aaaab8da205ba7e35bd053e5f70a7a439',1,'ShaderStage']]],
   ['adddefaultgeomnode_13',['addDefaultGeomNode',['../class_shader_graph.html#aa52d69682d886f136c4a5dfa673b444e',1,'ShaderGraph']]],
   ['addextension_14',['addExtension',['../class_file_path.html#a2865d3b8be45c3abc19a38cdc0ac291d',1,'FilePath']]],
-  ['addfunctioncall_15',['addFunctionCall',['../class_shader_stage.html#a63a515f8fca63daa1559356fc8cfdf6e',1,'ShaderStage']]],
+  ['addfunctioncall_15',['addFunctionCall',['../class_shader_stage.html#a6558f95bdc590ffcedb11d3c84fabf98',1,'ShaderStage']]],
   ['addfunctiondefinition_16',['addFunctionDefinition',['../class_shader_stage.html#a8b9e006b522e93d414b16307f238e14c',1,'ShaderStage']]],
   ['addgeominfo_17',['addGeomInfo',['../class_document.html#a6db34b8b3e9a4212b79a1379a4b61f65',1,'Document']]],
   ['addgeomnode_18',['addGeomNode',['../class_graph_element.html#ab806bd8269c2cca32d78f08c0ab562cb',1,'GraphElement']]],

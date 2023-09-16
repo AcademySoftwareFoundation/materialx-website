@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -138,9 +138,9 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ColorManagementSystem</b> ()</td></tr>
 <tr class="memdesc:ac70a58fcb488aebe762a6ae5a37c2ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
 <tr class="separator:ac70a58fcb488aebe762a6ae5a37c2ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aeba28e792a933836a424444e292473"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_definition_8h.html#a51472e15bdd8dcfc7fd5fb3a10778a52">ImplementationPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_color_management_system.html#a2aeba28e792a933836a424444e292473">getImplementation</a> (const <a class="el" href="struct_color_space_transform.html">ColorSpaceTransform</a> &amp;transform) const =0</td></tr>
-<tr class="memdesc:a2aeba28e792a933836a424444e292473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an implementation for a given transform.  <a href="class_color_management_system.html#a2aeba28e792a933836a424444e292473">More...</a><br /></td></tr>
-<tr class="separator:a2aeba28e792a933836a424444e292473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d5513fe884081f1f57baee970dfd04"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_definition_8h.html#afb420c54330df9d2d045ba15e90d9d8c">NodeDefPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_color_management_system.html#ad5d5513fe884081f1f57baee970dfd04">getNodeDef</a> (const <a class="el" href="struct_color_space_transform.html">ColorSpaceTransform</a> &amp;transform) const =0</td></tr>
+<tr class="memdesc:ad5d5513fe884081f1f57baee970dfd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a nodedef for a given transform.  <a href="class_color_management_system.html#ad5d5513fe884081f1f57baee970dfd04">More...</a><br /></td></tr>
+<tr class="separator:ad5d5513fe884081f1f57baee970dfd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -151,36 +151,6 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Abstract base class for color management systems. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2aeba28e792a933836a424444e292473" name="a2aeba28e792a933836a424444e292473"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aeba28e792a933836a424444e292473">&#9670;&#160;</a></span>getImplementation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="_definition_8h.html#a51472e15bdd8dcfc7fd5fb3a10778a52">ImplementationPtr</a> getImplementation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_color_space_transform.html">ColorSpaceTransform</a> &amp;&#160;</td>
-          <td class="paramname"><em>transform</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an implementation for a given transform. </p>
-
-<p>Implemented in <a class="el" href="class_default_color_management_system.html#a36bba1722e0e7f2bf6e52316dc0bf010">DefaultColorManagementSystem</a>.</p>
-
-</div>
-</div>
 <a id="a356948e60fe53e4fc02b9224c5dc3da5" name="a356948e60fe53e4fc02b9224c5dc3da5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a356948e60fe53e4fc02b9224c5dc3da5">&#9670;&#160;</a></span>getName()</h2>
 
@@ -207,6 +177,36 @@ Protected Attributes</h2></td></tr>
 <p>Return the <a class="el" href="class_color_management_system.html" title="Abstract base class for color management systems.">ColorManagementSystem</a> name. </p>
 
 <p>Implemented in <a class="el" href="class_default_color_management_system.html#aa379b9dbc5fd1db391abc9a2abeaff70">DefaultColorManagementSystem</a>.</p>
+
+</div>
+</div>
+<a id="ad5d5513fe884081f1f57baee970dfd04" name="ad5d5513fe884081f1f57baee970dfd04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d5513fe884081f1f57baee970dfd04">&#9670;&#160;</a></span>getNodeDef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_definition_8h.html#afb420c54330df9d2d045ba15e90d9d8c">NodeDefPtr</a> getNodeDef </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_color_space_transform.html">ColorSpaceTransform</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a nodedef for a given transform. </p>
+
+<p>Implemented in <a class="el" href="class_default_color_management_system.html#a938ef5e1ae401e224f663e8d68b28ed3">DefaultColorManagementSystem</a>.</p>
 
 </div>
 </div>

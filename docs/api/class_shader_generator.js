@@ -9,7 +9,7 @@ var class_shader_generator =
     [ "emitDependentFunctionCalls", "class_shader_generator.html#ab0d6b1383e79867fb7c7c9783c426ed7", null ],
     [ "emitFunctionBodyBegin", "class_shader_generator.html#ad6fc9ad3b7e6ddf85e08d4c39555d935", null ],
     [ "emitFunctionBodyEnd", "class_shader_generator.html#ae7a03dcc0e4b04719472c1c13deec203", null ],
-    [ "emitFunctionCall", "class_shader_generator.html#a8e667863ba253972027cf6290e1e0af6", null ],
+    [ "emitFunctionCall", "class_shader_generator.html#a42a500f0776d7ad648435a9b3d5efdd1", null ],
     [ "emitFunctionCalls", "class_shader_generator.html#a13ba0ba614853254f2cc95da11807ff0", null ],
     [ "emitFunctionDefinition", "class_shader_generator.html#a4b8304db3dddf083330f224a5173501b", null ],
     [ "emitFunctionDefinitions", "class_shader_generator.html#a0c21c1927321e9fb22e3ce1ef76cee5d", null ],

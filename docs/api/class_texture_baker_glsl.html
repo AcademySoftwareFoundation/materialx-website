@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -276,6 +276,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~GlslRenderer</b> 
 <tr class="memitem:a02a339c1b28754a6340ea031de2f8411 inherit pub_methods_class_glsl_renderer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_renderer.html#a02a339c1b28754a6340ea031de2f8411">validateInputs</a> () override</td></tr>
 <tr class="memdesc:a02a339c1b28754a6340ea031de2f8411 inherit pub_methods_class_glsl_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate inputs for the program.  <a href="class_glsl_renderer.html#a02a339c1b28754a6340ea031de2f8411">More...</a><br /></td></tr>
 <tr class="separator:a02a339c1b28754a6340ea031de2f8411 inherit pub_methods_class_glsl_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a13b88d4c78f11a2e381a544a6ef72d inherit pub_methods_class_glsl_renderer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d">updateUniform</a> (const string &amp;name, <a class="el" href="_value_8h.html#a33a2ae59d2d48eab5a3a5233be8db2aa">ConstValuePtr</a> value) override</td></tr>
+<tr class="memdesc:a0a13b88d4c78f11a2e381a544a6ef72d inherit pub_methods_class_glsl_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the program with value of the uniform.  <a href="class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d">More...</a><br /></td></tr>
+<tr class="separator:a0a13b88d4c78f11a2e381a544a6ef72d inherit pub_methods_class_glsl_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ab8b15dfa71bbb8b6c9145064363bc inherit pub_methods_class_glsl_renderer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_renderer.html#af8ab8b15dfa71bbb8b6c9145064363bc">setSize</a> (unsigned int width, unsigned int height) override</td></tr>
 <tr class="memdesc:af8ab8b15dfa71bbb8b6c9145064363bc inherit pub_methods_class_glsl_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the size of the rendered image.  <a href="class_glsl_renderer.html#af8ab8b15dfa71bbb8b6c9145064363bc">More...</a><br /></td></tr>
 <tr class="separator:af8ab8b15dfa71bbb8b6c9145064363bc inherit pub_methods_class_glsl_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,6 +360,11 @@ static <a class="el" href="_glsl_renderer_8h.html#a5aeafa0ebb43497ac6bd3b3ba2031
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_shader_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_shader_renderer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_shader_renderer.html">ShaderRenderer</a></td></tr>
+<tr class="memitem:a782c36bfce6ff989984430100d41e01c inherit pub_types_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a782c36bfce6ff989984430100d41e01c" name="a782c36bfce6ff989984430100d41e01c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_renderer.html#a782c36bfce6ff989984430100d41e01c">MatrixConvention</a> { <b>OpenGL</b> = 0
+, <b>Metal</b> = 1
+ }</td></tr>
+<tr class="memdesc:a782c36bfce6ff989984430100d41e01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewing API matrix conventions designation (default to OpenGL). <br /></td></tr>
+<tr class="separator:a782c36bfce6ff989984430100d41e01c inherit pub_types_class_shader_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02ee4d51c8927817002da896a473f5c inherit pub_types_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="af02ee4d51c8927817002da896a473f5c" name="af02ee4d51c8927817002da896a473f5c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StageMap</b> = <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a></td></tr>
 <tr class="memdesc:af02ee4d51c8927817002da896a473f5c inherit pub_types_class_shader_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map with name and source code for each shader stage. <br /></td></tr>
@@ -395,9 +403,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeBakedImage</b> (
 &#160;</td><td class="memItemRight" valign="bottom"><b>GlslRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType)</td></tr>
 <tr class="separator:a9e3958c40a0b21bf21909f6a02b2c8ea inherit pro_methods_class_glsl_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_shader_renderer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_shader_renderer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_shader_renderer.html">ShaderRenderer</a></td></tr>
-<tr class="memitem:a044c580237b606aed0d1c1f7de268706 inherit pro_methods_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a044c580237b606aed0d1c1f7de268706" name="a044c580237b606aed0d1c1f7de268706"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType)</td></tr>
-<tr class="separator:a044c580237b606aed0d1c1f7de268706 inherit pro_methods_class_shader_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3527025ac0393c7379b8599a9f43eaec inherit pro_methods_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a3527025ac0393c7379b8599a9f43eaec" name="a3527025ac0393c7379b8599a9f43eaec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType, <a class="el" href="class_shader_renderer.html#a782c36bfce6ff989984430100d41e01c">MatrixConvention</a> matrixConvention=MatrixConvention::OpenGL)</td></tr>
+<tr class="separator:a3527025ac0393c7379b8599a9f43eaec inherit pro_methods_class_shader_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_texture_baker"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_texture_baker')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_texture_baker.html">TextureBaker&lt; GlslRenderer, GlslShaderGenerator &gt;</a></td></tr>
 <tr class="memitem:a21676d928bf5b7bf5de77fef16834ec5 inherit pro_attribs_class_texture_baker"><td class="memItemLeft" align="right" valign="top"><a id="a21676d928bf5b7bf5de77fef16834ec5" name="a21676d928bf5b7bf5de77fef16834ec5"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>_extension</b></td></tr>
@@ -484,6 +492,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_height</b></
 <tr class="memitem:affab7d9304cebb8b50c7bff554cb3ff3 inherit pro_attribs_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="affab7d9304cebb8b50c7bff554cb3ff3" name="affab7d9304cebb8b50c7bff554cb3ff3"></a>
 Image::BaseType&#160;</td><td class="memItemRight" valign="bottom"><b>_baseType</b></td></tr>
 <tr class="separator:affab7d9304cebb8b50c7bff554cb3ff3 inherit pro_attribs_class_shader_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0518d172ece20169a9fd0752d885028a inherit pro_attribs_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a0518d172ece20169a9fd0752d885028a" name="a0518d172ece20169a9fd0752d885028a"></a>
+<a class="el" href="class_shader_renderer.html#a782c36bfce6ff989984430100d41e01c">MatrixConvention</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_matrixConvention</b></td></tr>
+<tr class="separator:a0518d172ece20169a9fd0752d885028a inherit pro_attribs_class_shader_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820105c7246533f0f24bc5632aa4b0e3 inherit pro_attribs_class_shader_renderer"><td class="memItemLeft" align="right" valign="top"><a id="a820105c7246533f0f24bc5632aa4b0e3" name="a820105c7246533f0f24bc5632aa4b0e3"></a>
 CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td></tr>
 <tr class="separator:a820105c7246533f0f24bc5632aa4b0e3 inherit pro_attribs_class_shader_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>

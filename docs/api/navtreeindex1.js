@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"_material_x_core_2_util_8h_source.html":[3,0,0,0,15],
+"_material_x_format_2_export_8h.html":[3,0,0,1,1],
+"_material_x_format_2_export_8h_source.html":[3,0,0,1,1],
 "_material_x_format_2_util_8h.html":[3,0,0,1,3],
 "_material_x_format_2_util_8h.html#a3b454a1ca1307ea78d9437d4727200a9":[3,0,0,1,3,3],
 "_material_x_format_2_util_8h.html#a4445f3ea975126ebd2773f8f47d30eaa":[3,0,0,1,3,5],
@@ -127,11 +130,11 @@ var NAVTREEINDEX1 =
 "_shader_material_8h.html":[3,0,0,6,10],
 "_shader_material_8h_source.html":[3,0,0,6,10],
 "_shader_node_8h.html":[3,0,0,5,13],
-"_shader_node_8h.html#a36e6e0055d95bf17fad981d76ff37667":[3,0,0,5,13,13],
-"_shader_node_8h.html#a507e7609adfe69ff44d69c21ea75fb3d":[3,0,0,5,13,12],
-"_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce":[3,0,0,5,13,11],
-"_shader_node_8h.html#a75cbb7d869f3dcc40d0408db91420bd6":[3,0,0,5,13,10],
-"_shader_node_8h.html#a9946d4a8fc843a8bd8be9175ec9e0f0f":[3,0,0,5,13,9],
+"_shader_node_8h.html#a36e6e0055d95bf17fad981d76ff37667":[3,0,0,5,13,12],
+"_shader_node_8h.html#a507e7609adfe69ff44d69c21ea75fb3d":[3,0,0,5,13,11],
+"_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce":[3,0,0,5,13,10],
+"_shader_node_8h.html#a75cbb7d869f3dcc40d0408db91420bd6":[3,0,0,5,13,9],
+"_shader_node_8h.html#a9946d4a8fc843a8bd8be9175ec9e0f0f":[3,0,0,5,13,8],
 "_shader_node_8h_source.html":[3,0,0,5,13],
 "_shader_node_impl_8h.html":[3,0,0,5,14],
 "_shader_node_impl_8h.html#af9b23189c1dadf97b46796164ac42a78":[3,0,0,5,14,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "class_attribute_def.html#a26044f63e9069e534f23b1dde870221a":[2,0,1,4],
 "class_attribute_def.html#a5dc80b2741ba596ff7b9d3663bc03a98":[2,0,1,0],
 "class_attribute_def.html#a787ea4b9707694fab45230846396403e":[2,0,1,12],
-"class_attribute_def.html#a7b3087f38de744641842d8e87da7ef72":[2,0,1,2],
-"class_attribute_def.html#a96d5b88563b24f6be1b11fd174a70c2c":[2,0,1,6],
-"class_attribute_def.html#a9ae2c0014ecedc93bbbefd180bfd3ae9":[2,0,1,11],
-"class_attribute_def.html#aa122e1edc849d62daa3fe31501b3cef8":[2,0,1,14]
+"class_attribute_def.html#a7b3087f38de744641842d8e87da7ef72":[2,0,1,2]
 };

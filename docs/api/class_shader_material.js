@@ -6,7 +6,6 @@ var class_shader_material =
     [ "bindMesh", "class_shader_material.html#a35bf4772663f679ee7604b72eaa6a005", null ],
     [ "bindPartition", "class_shader_material.html#a8a9071e7ca6140afb58fa31c26eb9a74", null ],
     [ "bindShader", "class_shader_material.html#a49940a0c960df6006ed550a9159ed401", null ],
-    [ "bindUnits", "class_shader_material.html#aee9966ee04ad48fb618ca3c8802602c0", null ],
     [ "bindViewInformation", "class_shader_material.html#a79108c7e08788a92cf0f83fe917363a8", null ],
     [ "copyShader", "class_shader_material.html#a8c56fb03609590de394ca20a56cb67c0", null ],
     [ "drawPartition", "class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e", null ],
