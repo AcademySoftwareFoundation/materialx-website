@@ -14,5 +14,6 @@ var class_glsl_renderer =
     [ "renderTextureSpace", "class_glsl_renderer.html#abc6ab6932dde5137c957cfaa75bf7519", null ],
     [ "setScreenColor", "class_glsl_renderer.html#a0745ea64ae33fcf5c7dabf093cb46c51", null ],
     [ "setSize", "class_glsl_renderer.html#af8ab8b15dfa71bbb8b6c9145064363bc", null ],
+    [ "updateUniform", "class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d", null ],
     [ "validateInputs", "class_glsl_renderer.html#a02a339c1b28754a6340ea031de2f8411", null ]
 ];

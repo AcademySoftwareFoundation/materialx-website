@@ -9,7 +9,7 @@ var class_hw_shader_generator =
     ] ],
     [ "addStageLightingUniforms", "class_hw_shader_generator.html#a2beb3a2fb4938f020ab646f83ddbaf3e", null ],
     [ "createShader", "class_hw_shader_generator.html#abc049abca6fb1dfb6556487440e5b855", null ],
-    [ "emitFunctionCall", "class_hw_shader_generator.html#a0e6928d2eb0d811cb2956bc4cf5d1d4c", null ],
+    [ "emitFunctionCall", "class_hw_shader_generator.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79", null ],
     [ "getClosureContexts", "class_hw_shader_generator.html#aed30dd9398e28f9c74b4365f92dc5f56", null ],
     [ "_defDefault", "class_hw_shader_generator.html#a0ba5c5d627c12139087de938062aaa06", null ]
 ];

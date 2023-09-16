@@ -13,7 +13,6 @@ var class_shader_graph =
     [ "addUnitTransformNode", "class_shader_graph.html#a0065a9c84ac00a95d99b412fa021c117", null ],
     [ "addUpstreamDependencies", "class_shader_graph.html#aafa24fe4864dd515eead25b14d6af7f7", null ],
     [ "bypass", "class_shader_graph.html#acca66968656109891960f3c6cd362767", null ],
-    [ "calculateScopes", "class_shader_graph.html#a4d6ec1f20ba9f0aba27a69d5bf2138ed", null ],
     [ "createConnectedNodes", "class_shader_graph.html#adc6eddfc587b28185755f84691a8ef17", null ],
     [ "createNode", "class_shader_graph.html#a4a90b3387966b6c9a8b62e425e7580c7", null ],
     [ "disconnect", "class_shader_graph.html#a6da12f47199bed1881c71799aed3aeab", null ],

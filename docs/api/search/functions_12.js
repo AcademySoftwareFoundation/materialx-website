@@ -8,6 +8,7 @@ var searchData=
   ['unbindlightshaders_5',['unbindLightShaders',['../class_hw_shader_generator.html#a36f8679404ba8532f6006500a2444a87',1,'HwShaderGenerator']]],
   ['unprojectfromviewport_6',['unprojectFromViewport',['../class_camera.html#a5925337920169369c3446f1381dbe9ef',1,'Camera']]],
   ['unregisterclass_7',['unregisterClass',['../class_factory.html#a38f809d4ab99f6000b7ab74e8fb89104',1,'Factory']]],
-  ['upgradeversion_8',['upgradeVersion',['../class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc',1,'Document']]],
-  ['usetestrender_9',['useTestRender',['../class_osl_renderer.html#adbbb4fb74630a04aa1690a467bcf840b',1,'OslRenderer']]]
+  ['updateuniform_8',['updateUniform',['../class_shader_renderer.html#a2a6a46cd789a3b49d13db69980d14897',1,'ShaderRenderer::updateUniform()'],['../class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d',1,'GlslRenderer::updateUniform()']]],
+  ['upgradeversion_9',['upgradeVersion',['../class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc',1,'Document']]],
+  ['usetestrender_10',['useTestRender',['../class_osl_renderer.html#adbbb4fb74630a04aa1690a467bcf840b',1,'OslRenderer']]]
 ];

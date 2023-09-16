@@ -13,6 +13,7 @@ var _material_x_core_2_util_8h =
     [ "splitNamePath", "_material_x_core_2_util_8h.html#a886b0c9b26c1d7e30065fd79e378d002", null ],
     [ "splitString", "_material_x_core_2_util_8h.html#af38a232ad00117fa61f1704064446851", null ],
     [ "stringEndsWith", "_material_x_core_2_util_8h.html#a20e01c857f7b3509d63ae589a762031b", null ],
+    [ "stringStartsWith", "_material_x_core_2_util_8h.html#a625e10c7d75594f20967d043ef8cfce5", null ],
     [ "stringToLower", "_material_x_core_2_util_8h.html#a62d612bd307fced8a2812124dd82ed55", null ],
     [ "trimSpaces", "_material_x_core_2_util_8h.html#a7121e1097a34dd7ec32cc3e7e3b690a8", null ]
 ];

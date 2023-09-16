@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -120,14 +120,15 @@ Inheritance diagram for Element:</div>
 <area href="class_geom_element.html" title="The base class for geometric elements, which support bindings to geometries and geometric collections..." alt="GeomElement" shape="rect" coords="232,336,454,360"/>
 <area href="class_look.html" title="A look element within a Document." alt="Look" shape="rect" coords="232,392,454,416"/>
 <area href="class_look_group.html" title="A look group element within a Document." alt="LookGroup" shape="rect" coords="232,448,454,472"/>
-<area href="class_property_set.html" title="A property set element within a Document." alt="PropertySet" shape="rect" coords="232,504,454,528"/>
-<area href="class_type_def.html" title="A type definition element within a Document." alt="TypeDef" shape="rect" coords="232,560,454,584"/>
-<area href="class_typed_element.html" title="The base class for typed elements." alt="TypedElement" shape="rect" coords="232,616,454,640"/>
-<area href="class_unit.html" title="A unit declaration within a UnitDef." alt="Unit" shape="rect" coords="232,672,454,696"/>
-<area href="class_unit_def.html" title="A unit definition element within a Document." alt="UnitDef" shape="rect" coords="232,728,454,752"/>
-<area href="class_unit_type_def.html" title="A unit type definition element within a Document." alt="UnitTypeDef" shape="rect" coords="232,784,454,808"/>
-<area href="class_variant_assign.html" title="A variant assignment element within a Look." alt="VariantAssign" shape="rect" coords="232,840,454,864"/>
-<area href="class_variant_set.html" title="A variant set element within a Document." alt="VariantSet" shape="rect" coords="232,896,454,920"/>
+<area href="class_newline_element.html" title="An element representing a newline within a document." alt="NewlineElement" shape="rect" coords="232,504,454,528"/>
+<area href="class_property_set.html" title="A property set element within a Document." alt="PropertySet" shape="rect" coords="232,560,454,584"/>
+<area href="class_type_def.html" title="A type definition element within a Document." alt="TypeDef" shape="rect" coords="232,616,454,640"/>
+<area href="class_typed_element.html" title="The base class for typed elements." alt="TypedElement" shape="rect" coords="232,672,454,696"/>
+<area href="class_unit.html" title="A unit declaration within a UnitDef." alt="Unit" shape="rect" coords="232,728,454,752"/>
+<area href="class_unit_def.html" title="A unit definition element within a Document." alt="UnitDef" shape="rect" coords="232,784,454,808"/>
+<area href="class_unit_type_def.html" title="A unit type definition element within a Document." alt="UnitTypeDef" shape="rect" coords="232,840,454,864"/>
+<area href="class_variant_assign.html" title="A variant assignment element within a Look." alt="VariantAssign" shape="rect" coords="232,896,454,920"/>
+<area href="class_variant_set.html" title="A variant set element within a Document." alt="VariantSet" shape="rect" coords="232,952,454,976"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -439,9 +440,8 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getActi
 <tr class="memitem:a7c9598aadf5bd08869adfabac2bc349a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a7c9598aadf5bd08869adfabac2bc349a">copyContentFrom</a> (const <a class="el" href="_element_8h.html#a6cac15657c90466f204f7287c99f20cc">ConstElementPtr</a> &amp;source)</td></tr>
 <tr class="memdesc:a7c9598aadf5bd08869adfabac2bc349a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy all attributes and descendants from the given element to this one.  <a href="class_element.html#a7c9598aadf5bd08869adfabac2bc349a">More...</a><br /></td></tr>
 <tr class="separator:a7c9598aadf5bd08869adfabac2bc349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0761c8cf0283a7b44a7de06a5dac6e45"><td class="memItemLeft" align="right" valign="top"><a id="a0761c8cf0283a7b44a7de06a5dac6e45" name="a0761c8cf0283a7b44a7de06a5dac6e45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearContent</b> ()</td></tr>
-<tr class="memdesc:a0761c8cf0283a7b44a7de06a5dac6e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element. <br /></td></tr>
+<tr class="memitem:a0761c8cf0283a7b44a7de06a5dac6e45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a0761c8cf0283a7b44a7de06a5dac6e45">clearContent</a> ()</td></tr>
+<tr class="memdesc:a0761c8cf0283a7b44a7de06a5dac6e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element.  <a href="class_element.html#a0761c8cf0283a7b44a7de06a5dac6e45">More...</a><br /></td></tr>
 <tr class="separator:a0761c8cf0283a7b44a7de06a5dac6e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48b55f5719475fd16f1f36ea2239c50d"><td class="memItemLeft" align="right" valign="top"><a id="a48b55f5719475fd16f1f36ea2239c50d" name="a48b55f5719475fd16f1f36ea2239c50d"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>createValidChildName</b> (string name) const</td></tr>
@@ -663,6 +663,35 @@ template&lt;class T &gt; </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A shared pointer to a new child element, containing the contents of the original child but with a new category and subclass. </dd></dl>
+
+</div>
+</div>
+<a id="a0761c8cf0283a7b44a7de06a5dac6e45" name="a0761c8cf0283a7b44a7de06a5dac6e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0761c8cf0283a7b44a7de06a5dac6e45">&#9670;&#160;</a></span>clearContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clearContent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear all attributes and descendants from this element. </p>
+
+<p>Reimplemented in <a class="el" href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">InterfaceElement</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1303,7 @@ template&lt;class T &gt; </td></tr>
 <div class="line">    <a class="code hl_typedef" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> downElem = edge.getDownstreamElement();</div>
 <div class="line">    cout &lt;&lt; upElem-&gt;asString() &lt;&lt; <span class="stringliteral">&quot; lies upstream from &quot;</span> &lt;&lt; downElem-&gt;asString() &lt;&lt; endl;</div>
 <div class="line">}</div>
-<div class="ttc" id="a_element_8h_html_a74d91fb8b93d96837a7c900a3f0bb426"><div class="ttname"><a href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a></div><div class="ttdeci">shared_ptr&lt; Element &gt; ElementPtr</div><div class="ttdoc">A shared pointer to an Element.</div><div class="ttdef"><b>Definition:</b> Element.h:30</div></div>
+<div class="ttc" id="a_element_8h_html_a74d91fb8b93d96837a7c900a3f0bb426"><div class="ttname"><a href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a></div><div class="ttdeci">shared_ptr&lt; Element &gt; ElementPtr</div><div class="ttdoc">A shared pointer to an Element.</div><div class="ttdef"><b>Definition:</b> Element.h:31</div></div>
 <div class="ttc" id="aclass_edge_html"><div class="ttname"><a href="class_edge.html">Edge</a></div><div class="ttdoc">An edge between two connected Elements, returned during graph traversal.</div><div class="ttdef"><b>Definition:</b> Traversal.h:30</div></div>
 </div><!-- fragment --><p> Example usage with an explicit iterator: </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (mx::GraphIterator it = inputElem-&gt;traverseGraph().begin(); it != mx::GraphIterator::end(); ++it)</div>
 <div class="line">{</div>
@@ -1317,7 +1346,7 @@ template&lt;class T &gt; </td></tr>
 <div class="line">        cout &lt;&lt; derivedElem-&gt;asString() &lt;&lt; <span class="stringliteral">&quot; inherits from &quot;</span> &lt;&lt; elem-&gt;asString() &lt;&lt; endl;</div>
 <div class="line">    derivedElem = elem;</div>
 <div class="line">}</div>
-<div class="ttc" id="a_element_8h_html_a6cac15657c90466f204f7287c99f20cc"><div class="ttname"><a href="_element_8h.html#a6cac15657c90466f204f7287c99f20cc">ConstElementPtr</a></div><div class="ttdeci">shared_ptr&lt; const Element &gt; ConstElementPtr</div><div class="ttdoc">A shared pointer to a const Element.</div><div class="ttdef"><b>Definition:</b> Element.h:32</div></div>
+<div class="ttc" id="a_element_8h_html_a6cac15657c90466f204f7287c99f20cc"><div class="ttname"><a href="_element_8h.html#a6cac15657c90466f204f7287c99f20cc">ConstElementPtr</a></div><div class="ttdeci">shared_ptr&lt; const Element &gt; ConstElementPtr</div><div class="ttdoc">A shared pointer to a const Element.</div><div class="ttdef"><b>Definition:</b> Element.h:33</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

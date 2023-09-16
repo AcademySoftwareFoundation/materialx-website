@@ -2,6 +2,7 @@ var class_node_graph =
 [
     [ "addInterfaceName", "class_node_graph.html#add200b8139fd1f7bc3fde721e49660ad", null ],
     [ "getDeclaration", "class_node_graph.html#af3fb16a89afea8c1deeaf609d358524d", null ],
+    [ "getDownstreamPorts", "class_node_graph.html#a0bd357f1c7499fb2e19467b2e6016c7c", null ],
     [ "getImplementation", "class_node_graph.html#ac71149ba1c16720ad0af911777f40749", null ],
     [ "getMaterialOutputs", "class_node_graph.html#aab39e4d2ee6b779de82e9c8cbcd4be86", null ],
     [ "getNodeDef", "class_node_graph.html#ac7ae0e8dcc12c4b679950d108427d101", null ],

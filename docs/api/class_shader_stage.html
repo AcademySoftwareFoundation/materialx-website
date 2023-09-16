@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -256,10 +256,9 @@ template&lt;typename T &gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addFunctionDefinition</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a8b9e006b522e93d414b16307f238e14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function definition for a node's implementation. <br /></td></tr>
 <tr class="separator:a8b9e006b522e93d414b16307f238e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a515f8fca63daa1559356fc8cfdf6e"><td class="memItemLeft" align="right" valign="top"><a id="a63a515f8fca63daa1559356fc8cfdf6e" name="a63a515f8fca63daa1559356fc8cfdf6e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addFunctionCall</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a63a515f8fca63daa1559356fc8cfdf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function call for the given node. <br /></td></tr>
-<tr class="separator:a63a515f8fca63daa1559356fc8cfdf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6558f95bdc590ffcedb11d3c84fabf98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_stage.html#a6558f95bdc590ffcedb11d3c84fabf98">addFunctionCall</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, bool emitCode=true)</td></tr>
+<tr class="memdesc:a6558f95bdc590ffcedb11d3c84fabf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function call for the given node.  <a href="class_shader_stage.html#a6558f95bdc590ffcedb11d3c84fabf98">More...</a><br /></td></tr>
+<tr class="separator:a6558f95bdc590ffcedb11d3c84fabf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50dd7b1d2e86a6f133750a314fd45548"><td class="memItemLeft" align="right" valign="top"><a id="a50dd7b1d2e86a6f133750a314fd45548" name="a50dd7b1d2e86a6f133750a314fd45548"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmitted</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
 <tr class="memdesc:a50dd7b1d2e86a6f133750a314fd45548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the function for the given node has been emitted in the current scope. <br /></td></tr>
@@ -277,7 +276,45 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A shader stage, containing the state and resulting source code for the stage. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6558f95bdc590ffcedb11d3c84fabf98" name="a6558f95bdc590ffcedb11d3c84fabf98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6558f95bdc590ffcedb11d3c84fabf98">&#9670;&#160;</a></span>addFunctionCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addFunctionCall </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_gen_context.html">GenContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>emitCode</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add the function call for the given node. </p>
+<p >This will register the function as being called in the current scope, and code for the function call will be added to the stage. If emitCode is set to false the code for the function call will be omitted. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_shader_stage_8h_source.html">ShaderStage.h</a></li>
 <li>source/MaterialXGenShader/ShaderStage.cpp</li>
 </ul>

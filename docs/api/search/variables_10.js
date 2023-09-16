@@ -6,6 +6,5 @@ var searchData=
   ['shaderinterfacetype_3',['shaderInterfaceType',['../class_gen_options.html#abbbf5859103e5fecd0dcd5cfcf927ed7',1,'GenOptions']]],
   ['size_4',['size',['../struct_glsl_program_1_1_input.html#a439227feff9d7f55384e8780cfc2eb82',1,'GlslProgram::Input']]],
   ['space_5',['SPACE',['../class_glsl_implementation.html#a74a268311329928dba00cef2027c1488',1,'GlslImplementation']]],
-  ['surface_6',['SURFACE',['../class_shader_node_1_1_classification.html#ab5850493e5aca2d76717f30f3d71008e',1,'ShaderNode::Classification']]],
-  ['switch_7',['SWITCH',['../class_shader_node_1_1_classification.html#a2dc299cbbc17f968f7ea5863fa15a651',1,'ShaderNode::Classification']]]
+  ['surface_6',['SURFACE',['../class_shader_node_1_1_classification.html#ab5850493e5aca2d76717f30f3d71008e',1,'ShaderNode::Classification']]]
 ];

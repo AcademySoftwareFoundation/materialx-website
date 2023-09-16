@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">MaterialX Overview </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_documents_DeveloperGuide_MainPage"></a> MaterialX is an open standard for transfer of rich material and look-development content between applications and renderers. Originated at Lucasfilm in 2012, MaterialX has been used by Industrial Light &amp; Magic (ILM) in feature films such as <em>Star Wars: The Force Awakens</em> and real-time experiences such as <em>Trials on Tatooine</em>, and it remains the central material format for new ILM productions.</p>
+<div class="textblock"><p ><a class="anchor" id="md_documents_DeveloperGuide_MainPage"></a> MaterialX is an open standard for representing rich material and look-development content in computer graphics, enabling its platform-independent description and exchange across applications and renderers. Launched at <a href="https://www.ilm.com/">Industrial Light &amp; Magic</a> in 2012, MaterialX has been a key technology in their feature films and real-time experiences since <em>Star Wars: The Force Awakens</em> and <em>Millennium Falcon: Smugglers Run</em>. The project was released as open source in 2017, with companies including Sony Pictures Imageworks, Pixar, Autodesk, Adobe, and SideFX contributing to its ongoing development. In 2021, MaterialX became the seventh hosted project of the <a href="https://www.aswf.io/">Academy Software Foundation</a>.</p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Quick Start for Developers</h2>
 <ul>
@@ -105,13 +105,13 @@ Quick Start for Developers</h2>
 </ul>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Supported Platforms</h2>
-<p >The MaterialX codebase requires a compiler with support for C++11, and can be built with any of the following:</p>
+<p >The MaterialX codebase requires a compiler with support for C++14, and can be built with any of the following:</p>
 <ul>
-<li>Microsoft Visual Studio 2015 or newer</li>
-<li>GCC 4.8 or newer</li>
-<li>Clang 3.3 or newer</li>
+<li>Microsoft Visual Studio 2017 or newer</li>
+<li>GCC 6 or newer</li>
+<li>Clang 6 or newer</li>
 </ul>
-<p >The Python bindings for MaterialX are based on <a href="https://github.com/pybind/pybind11">PyBind11</a>, and support Python versions 2.7 and 3.x.</p>
+<p >The Python bindings for MaterialX are based on <a href="https://github.com/pybind/pybind11">PyBind11</a>, and support Python versions 3.6 and greater.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Building MaterialX</h2>
 <h3><a class="anchor" id="autotoc_md4"></a>
@@ -127,8 +127,8 @@ Building MaterialX C++</h3>
 Building MaterialX Python</h3>
 <p >By default, the <code>MATERIALX_BUILD_PYTHON</code> option will use the active version of Python in the developer's path. To select a specific version of Python, use one or more of the following advanced options:</p>
 <ul>
-<li><code>MATERIALX_PYTHON_VERSION</code>: Python version to be used in building the MaterialX Python package (e.g. <code>2.7</code>)</li>
-<li><code>MATERIALX_PYTHON_EXECUTABLE</code>: Python executable to be used in building the MaterialX Python package (e.g. <code>C:/Python27/python.exe</code>)</li>
+<li><code>MATERIALX_PYTHON_VERSION</code>: Python version to be used in building the MaterialX Python package (e.g. <code>3.9</code>)</li>
+<li><code>MATERIALX_PYTHON_EXECUTABLE</code>: Python executable to be used in building the MaterialX Python package (e.g. <code>C:/Python39/python.exe</code>)</li>
 </ul>
 <p >Additional options for the generation of MaterialX Python include the following:</p>
 <ul>

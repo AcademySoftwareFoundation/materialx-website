@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -128,9 +128,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addLoader</b> (<a cla
 <tr class="memitem:afd02ffab9784aaf449221aab531a0eaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#afd02ffab9784aaf449221aab531a0eaf">saveImage</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath, <a class="el" href="_image_8h.html#a1055c7a08e0dca607a152c259de50a99">ConstImagePtr</a> image, bool verticalFlip=false)</td></tr>
 <tr class="memdesc:afd02ffab9784aaf449221aab531a0eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save image to disk.  <a href="class_image_handler.html#afd02ffab9784aaf449221aab531a0eaf">More...</a><br /></td></tr>
 <tr class="separator:afd02ffab9784aaf449221aab531a0eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b95b404ad1c6f65a074a744a5b170b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#a38b95b404ad1c6f65a074a744a5b170b">acquireImage</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath)</td></tr>
-<tr class="memdesc:a38b95b404ad1c6f65a074a744a5b170b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire an image from the cache or file system.  <a href="class_image_handler.html#a38b95b404ad1c6f65a074a744a5b170b">More...</a><br /></td></tr>
-<tr class="separator:a38b95b404ad1c6f65a074a744a5b170b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f88850be86a701c523e161f31ec85a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#a29f88850be86a701c523e161f31ec85a">acquireImage</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;filePath, const <a class="el" href="class_color4.html">Color4</a> &amp;defaultColor=<a class="el" href="class_color4.html">Color4</a>(0.0f))</td></tr>
+<tr class="memdesc:a29f88850be86a701c523e161f31ec85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire an image from the cache or file system.  <a href="class_image_handler.html#a29f88850be86a701c523e161f31ec85a">More...</a><br /></td></tr>
+<tr class="separator:a29f88850be86a701c523e161f31ec85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c794ac662955088dcb62d47343b620"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#a22c794ac662955088dcb62d47343b620">bindImage</a> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> image, const <a class="el" href="class_image_sampling_properties.html">ImageSamplingProperties</a> &amp;samplingProperties)</td></tr>
 <tr class="memdesc:a22c794ac662955088dcb62d47343b620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind an image for rendering.  <a href="class_image_handler.html#a22c794ac662955088dcb62d47343b620">More...</a><br /></td></tr>
 <tr class="separator:a22c794ac662955088dcb62d47343b620"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,10 +171,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clearImageCache</b> (
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getZeroImage</b> () const</td></tr>
 <tr class="memdesc:aca94c1c8c643a7635a9a20e6903acd63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a fallback image with zeroes in all channels. <br /></td></tr>
 <tr class="separator:aca94c1c8c643a7635a9a20e6903acd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb45a048cf56681f63c7dcc5750dfb3"><td class="memItemLeft" align="right" valign="top"><a id="aafb45a048cf56681f63c7dcc5750dfb3" name="aafb45a048cf56681f63c7dcc5750dfb3"></a>
-<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getInvalidImage</b> () const</td></tr>
-<tr class="memdesc:aafb45a048cf56681f63c7dcc5750dfb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sentinel invalid image, representing images that cannot be loaded and should be replaced with their declared default value. <br /></td></tr>
-<tr class="separator:aafb45a048cf56681f63c7dcc5750dfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c8d266d79fc45f0f95545e3da99023"><td class="memItemLeft" align="right" valign="top"><a id="a41c8d266d79fc45f0f95545e3da99023" name="a41c8d266d79fc45f0f95545e3da99023"></a>
 <a class="el" href="_image_8h.html#a8ca07e7c21671e49439f58eb910a306b">ImageVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getReferencedImages</b> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc)</td></tr>
 <tr class="memdesc:a41c8d266d79fc45f0f95545e3da99023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire all images referenced by the given document, and return the images in a vector. <br /></td></tr>
@@ -218,16 +214,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a9daae529103252f2f7885577ba62bb62"><td class="memItemLeft" align="right" valign="top"><a id="a9daae529103252f2f7885577ba62bb62" name="a9daae529103252f2f7885577ba62bb62"></a>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_zeroImage</b></td></tr>
 <tr class="separator:a9daae529103252f2f7885577ba62bb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95cdab5af4f66045ec3f8ead53ed1ea3"><td class="memItemLeft" align="right" valign="top"><a id="a95cdab5af4f66045ec3f8ead53ed1ea3" name="a95cdab5af4f66045ec3f8ead53ed1ea3"></a>
-<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_invalidImage</b></td></tr>
-<tr class="separator:a95cdab5af4f66045ec3f8ead53ed1ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base image handler class. </p>
 <p >Keeps track of images which are loaded from disk via supplied <a class="el" href="class_image_loader.html" title="Abstract base class for file-system image loaders.">ImageLoader</a>. Derived classes are responsible for determinining how to perform the logic for "binding" of these resources for a given target (such as a given shading language). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38b95b404ad1c6f65a074a744a5b170b" name="a38b95b404ad1c6f65a074a744a5b170b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b95b404ad1c6f65a074a744a5b170b">&#9670;&#160;</a></span>acquireImage()</h2>
+<a id="a29f88850be86a701c523e161f31ec85a" name="a29f88850be86a701c523e161f31ec85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f88850be86a701c523e161f31ec85a">&#9670;&#160;</a></span>acquireImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,16 +229,27 @@ Protected Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> acquireImage </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_file_path.html">FilePath</a> &amp;&#160;</td>
-          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="class_color4.html">Color4</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultColor</em> = <code><a class="el" href="class_color4.html">Color4</a>(0.0f)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Acquire an image from the cache or file system. </p>
-<p >If the image is not found in the cache, then each image loader will be applied in turn. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >If the image is not found in the cache, then each image loader will be applied in turn. If the image cannot be found by any loader, then a uniform image of the given default color will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filePath</td><td>File path of the image. </td></tr>
+    <tr><td class="paramname">defaultColor</td><td>Default color to use as a fallback for missing images. </td></tr>
   </table>
   </dd>
 </dl>

@@ -1,7 +1,6 @@
 var class_shader_node =
 [
     [ "Classification", "class_shader_node_1_1_classification.html", null ],
-    [ "ScopeInfo", "struct_shader_node_1_1_scope_info.html", null ],
     [ "ShaderNode", "class_shader_node.html#add10f8dc3be0665b3708747c624e8105", null ],
     [ "addClassification", "class_shader_node.html#a5b10edf8a4431c569dab0029b9889222", null ],
     [ "addInput", "class_shader_node.html#aaa33cc81760f787d04e72147eb0281cb", null ],
@@ -15,15 +14,12 @@ var class_shader_node =
     [ "getMetadata", "class_shader_node.html#a5d9f8ca2accba061f09c53862ba6e3f3", null ],
     [ "getName", "class_shader_node.html#a43f65f5d191c125b0b52028fdbf0f364", null ],
     [ "getParent", "class_shader_node.html#a32fc91409f640989ad93455c5928b869", null ],
-    [ "getScopeInfo", "class_shader_node.html#afdb50961495b7376fd3fbc13e13ab95f", null ],
-    [ "getScopeInfo", "class_shader_node.html#ac28358a9e40bce52ce694abd5b3db1fd", null ],
     [ "hasClassification", "class_shader_node.html#a5a33e8d9e0f2e1376740c5874ab7bfae", null ],
     [ "initialize", "class_shader_node.html#a6f6c953fcc052a153b7a537c80705058", null ],
     [ "isAGraph", "class_shader_node.html#a8896c5b0a07e3b9a2003db54d6d1936d", null ],
     [ "isEditable", "class_shader_node.html#af0326b866d4856385db6758497fc63bd", null ],
     [ "isEditable", "class_shader_node.html#a2a29280acb289d497fdc0d73a21f1702", null ],
     [ "numInputs", "class_shader_node.html#af5479391bbdb230de7b7cfb5100769be", null ],
-    [ "referencedConditionally", "class_shader_node.html#ada7c3e5b0027a8b79a5384d878cd7924", null ],
     [ "setClassification", "class_shader_node.html#aaff2b296bfd256f979797f81b500f390", null ],
     [ "setMetadata", "class_shader_node.html#a4edbd087c8f4f6c298b168f54ab007ef", null ]
 ];

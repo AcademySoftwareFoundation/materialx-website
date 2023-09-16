@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.7</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
    </div>
   </td>
  </tr>
@@ -123,9 +123,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_1_1_classification.html">Classification</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for classifying nodes into different categories.  <a href="class_shader_node_1_1_classification.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information on source code scope for the node.  <a href="struct_shader_node_1_1_scope_info.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -163,18 +160,6 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName
 const <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getImplementation</b> () const</td></tr>
 <tr class="memdesc:ad483e283206e41d2dc3732dece1c1889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the implementation used for this node. <br /></td></tr>
 <tr class="separator:ad483e283206e41d2dc3732dece1c1889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb50961495b7376fd3fbc13e13ab95f"><td class="memItemLeft" align="right" valign="top"><a id="afdb50961495b7376fd3fbc13e13ab95f" name="afdb50961495b7376fd3fbc13e13ab95f"></a>
-<a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getScopeInfo</b> ()</td></tr>
-<tr class="memdesc:afdb50961495b7376fd3fbc13e13ab95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the scope info for this node. <br /></td></tr>
-<tr class="separator:afdb50961495b7376fd3fbc13e13ab95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac28358a9e40bce52ce694abd5b3db1fd"><td class="memItemLeft" align="right" valign="top"><a id="ac28358a9e40bce52ce694abd5b3db1fd" name="ac28358a9e40bce52ce694abd5b3db1fd"></a>
-const <a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getScopeInfo</b> () const</td></tr>
-<tr class="memdesc:ac28358a9e40bce52ce694abd5b3db1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the scope info for this node. <br /></td></tr>
-<tr class="separator:ac28358a9e40bce52ce694abd5b3db1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7c3e5b0027a8b79a5384d878cd7924"><td class="memItemLeft" align="right" valign="top"><a id="ada7c3e5b0027a8b79a5384d878cd7924" name="ada7c3e5b0027a8b79a5384d878cd7924"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>referencedConditionally</b> () const</td></tr>
-<tr class="memdesc:ada7c3e5b0027a8b79a5384d878cd7924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this node is only referenced by a conditional. <br /></td></tr>
-<tr class="separator:ada7c3e5b0027a8b79a5384d878cd7924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6c953fcc052a153b7a537c80705058"><td class="memItemLeft" align="right" valign="top"><a id="a6f6c953fcc052a153b7a537c80705058" name="a6f6c953fcc052a153b7a537c80705058"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (const <a class="el" href="class_node.html">Node</a> &amp;node, const <a class="el" href="class_node_def.html">NodeDef</a> &amp;nodeDef, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a6f6c953fcc052a153b7a537c80705058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this shader node with all required data from the given node and nodedef. <br /></td></tr>
@@ -270,12 +255,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOT</b
 <tr class="memitem:a4ffbd7cecc6a9667d89689bad79ae899"><td class="memItemLeft" align="right" valign="top"><a id="a4ffbd7cecc6a9667d89689bad79ae899" name="a4ffbd7cecc6a9667d89689bad79ae899"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>IMAGE</b> = &quot;image&quot;</td></tr>
 <tr class="separator:a4ffbd7cecc6a9667d89689bad79ae899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae469dbf8bbcd87befb014957ce6902e3"><td class="memItemLeft" align="right" valign="top"><a id="ae469dbf8bbcd87befb014957ce6902e3" name="ae469dbf8bbcd87befb014957ce6902e3"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARE</b> = &quot;compare&quot;</td></tr>
-<tr class="separator:ae469dbf8bbcd87befb014957ce6902e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9eb9cd3971339fd0f7c0a45631213b4"><td class="memItemLeft" align="right" valign="top"><a id="af9eb9cd3971339fd0f7c0a45631213b4" name="af9eb9cd3971339fd0f7c0a45631213b4"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SWITCH</b> = &quot;switch&quot;</td></tr>
-<tr class="separator:af9eb9cd3971339fd0f7c0a45631213b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83291bb4e5939eb0de30e62797098c32"><td class="memItemLeft" align="right" valign="top"><a id="a83291bb4e5939eb0de30e62797098c32" name="a83291bb4e5939eb0de30e62797098c32"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SURFACESHADER</b> = &quot;surfaceshader&quot;</td></tr>
 <tr class="separator:a83291bb4e5939eb0de30e62797098c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,9 +328,6 @@ vector&lt; <a class="el" href="class_shader_output.html">ShaderOutput</a> * &gt;
 <tr class="memitem:ac16538baa1b6b076a019e1f94f377336"><td class="memItemLeft" align="right" valign="top"><a id="ac16538baa1b6b076a019e1f94f377336" name="ac16538baa1b6b076a019e1f94f377336"></a>
 ShaderMetadataVecPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_metadata</b></td></tr>
 <tr class="separator:ac16538baa1b6b076a019e1f94f377336"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26a5e8479662575dc59b26f158f1cb0"><td class="memItemLeft" align="right" valign="top"><a id="ae26a5e8479662575dc59b26f158f1cb0" name="ae26a5e8479662575dc59b26f158f1cb0"></a>
-<a class="el" href="struct_shader_node_1_1_scope_info.html">ScopeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_scopeInfo</b></td></tr>
-<tr class="separator:ae26a5e8479662575dc59b26f158f1cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
