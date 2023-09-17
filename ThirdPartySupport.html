@@ -159,6 +159,11 @@
           </ul>
           <ul>
             <li>
+              <a href="ThirdPartySupport.html#Max">Autodesk 3ds Max</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
               <a href="ThirdPartySupport.html#Apple">Apple VisionOS</a>
             </li>
           </ul>
@@ -258,7 +263,7 @@
             <br><br>
             The USD Hydra rendering framework supports MaterialX in HdStorm and HdPrman, using <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGen</a> to generate GLSL and OSL shaders from MaterialX graphs on demand.
             <br><br>
-            Additional details on MaterialX support in USD Hydra may be found in the slides from the MaterialX session at <a href="https://www.materialx.org/assets/ASWF_OSD2021_MaterialX_slides_final.pdf">ASWF Open Source Days 2021</a>.
+            Additional details on MaterialX support in USD Hydra may be found in the slides from the MaterialX Virtual Towh Hall at <a href="https://materialx.org/assets/ASWF_OSD2023_MaterialX_Final.pdf">ASWF Open Source Days 2023</a>.
           </p>
 
           <h2 id="Houdini"><strong>SideFX Houdini</strong></h2>
@@ -267,7 +272,7 @@
             <br><br>
             <a href="https://www.sidefx.com/tutorials/karma-a-beautiful-game/">Karma, A Beautiful Game</a> by Moeen Sayed provides a useful tutorial on look development in Houdini/Solaris, including an overview of using MaterialX to construct surface and volume materials.
             <br><br>
-            Additional details on MaterialX support in Houdini/Solaris may be found in the slides from the MaterialX session at <a href="https://www.materialx.org/assets/ASWF_OSD2021_MaterialX_slides_final.pdf">ASWF Open Source Days 2021</a>.
+            Additional details on MaterialX BSDF graphs in Houdini may be found in the <a href="https://www.youtube.com/watch?v=b3OyLypfc1I">Solaris Essentials</a> tutorial series.
           </p>
 
           <h2 id="Maya"><strong>Autodesk Maya</strong></h2>
@@ -276,7 +281,14 @@
             <br><br>
             Maya 2024 introduced a technology preview of <a href="https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=GUID-5C076445-22FB-4C74-9147-43672BCF88CD">LookdevX</a>, which supports the creation, editing, and rendering of MaterialX graphs.
             <br><br>
-            Additional details on MaterialX support in Maya may be found in the slides from the MaterialX and OSL session at <a href="https://www.materialx.org/assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf">ASWF Open Source Days 2022</a>.
+            Additional details on LookdevX in Maya may be found in the slides from the MaterialX Virtual Town Hall at <a href="https://materialx.org/assets/ASWF_OSD2023_MaterialX_Final.pdf">ASWF Open Source Days 2023</a>.
+          </p>
+
+          <h2 id="Max"><strong>Autodesk 3ds Max</strong></h2>
+          <p>
+            Autodesk supports MaterialX in 3ds Max 2024 through a bundled <a href="https://help.autodesk.com/view/3DSMAX/2024/ENU/?guid=GUID-CC8C2874-1F7C-45A3-B21A-6F8FE85516D5">MaterialX</a> plug-in, enabling the authoring, import, and export of MaterialX content.
+            <br><br>
+            The MaterialX and USD plug-ins in 3ds Max are integrated, allowing USD content to reference MaterialX documents in a combined USD/MaterialX workflow.
           </p>
 
           <h2 id="Apple"><strong>Apple VisionOS</strong></h2>
@@ -296,6 +308,8 @@
           <h2 id="Unreal"><strong>Unreal Engine</strong></h2>
           <p>
             Epic Games supports MaterialX in <a href="https://docs.unrealengine.com/5.1/en-US/unreal-engine-5.1-release-notes/">Unreal Engine 5.1 and beyond</a>, allowing the import of MaterialX documents based on the Standard Surface shading model.
+            <br><br>
+            As of <a href="https://docs.unrealengine.com/5.3/en-US/unreal-engine-5.3-release-notes/">Unreal Engine 5.3</a>, MaterialX content may additionally be referenced in USD workflows within Unreal.
             <br><br>
             For now, only a subset of the MaterialX standard data types and nodes is supported, and Epic plans to extend this supported set in future releases.
           </p>
