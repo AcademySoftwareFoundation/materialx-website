@@ -137,6 +137,16 @@
               <a href="Tools.html#Viewer">MaterialX Viewer</a>
             </li>
           </ul>
+          <ul>
+            <li>
+              <a href="Tools.html#GraphEditor">MaterialX Graph Editor</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="Tools.html#WebViewer">MaterialX Web Viewer</a>
+            </li>
+          </ul>
         </li>
       </ul>
       <ul>
@@ -259,37 +269,27 @@
 
           <h2 id="ShaderGen"><strong>ShaderGen</strong></h2>
           <p>
-            <strong>ShaderGen</strong> is a dynamic shader generation system that can build
-            and compile complete OSL or GLSL shaders from MaterialX nodegraphs.
+            <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGen</a>
+            is a dynamic shader generation system that can build and compile complete GLSL, OSL, MDL, and MSL shaders from MaterialX nodegraphs.
             A key component of ShaderGen is a set of
             <a href="assets/MaterialX.v1.38.PBRSpec.pdf">Physically Based Shading nodes</a>,
-            which can be used in conjunction with
-            Standard Library nodes to create complex layered energy-conserving surface,
-            volume and emissive shaders for offline or realtime/viewport rendering.
-          </p>
-          <p>
-            For much more information about ShaderGen components and how ShaderGen works,
-            please see the
-            <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGeneration</a>
-            page on the MaterialX GitHub.
+            which can be used in conjunction with the standard pattern nodes to create complex layered energy-conserving surface,
+            volume and emissive shaders for offline or real-time rendering.
           </p>
 
           <h2 id="Viewer"><strong>MaterialX Viewer</strong></h2>
           <p>
-            Complementing ShaderGen is a simple standalone
-            <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/Viewer.md">Viewer application</a>
-            for MaterialX content.  <strong>MaterialXView</strong> uses ShaderGen with a
-            NanoGUI interface to build
-            GLSL shaders of MaterialX nodegraphs, which can be bound with a selected
-            MaterialX material and applied to geometry defined in .obj format; standard
-            geometries including a sphere, teapot and cutaway shaderball object are included
-            in the distribution, as are a number of example materials based on the
-            <a href="https://github.com/Autodesk/standard-surface/blob/master/reference/standard_surface.mtlx">StandardSurface</a>
-            shader.
+            The <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/Viewer.md">MaterialX Viewer</a> leverages shader generation to build GLSL and MSL shaders from MaterialX graphs, rendering the results using the NanoGUI framework. The standard set of pattern and physically based shading nodes is supported, and libraries of custom nodes can be included as additional library paths.
           </p>
+
+          <h2 id="GraphEditor"><strong>MaterialX Graph Editor</strong></h2>
           <p>
-            MaterialX can also be compiled to JavaScript for Web usage. ShaderGen can generate GLSL ES shaders for WebGL rendering. 
-            An example MaterialX Web Viewer is hosted <a href="https://academysoftwarefoundation.github.io/MaterialX/">here</a>  
+            The <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/GraphEditor.md">MaterialX Graph Editor</a> is an example application for visualizing, creating, and editing MaterialX graphs. It utilizes the ImGui framework as well as additional ImGui extensions such as the Node Editor.
+          </p>
+
+          <h2 id="WebViewer"><strong>MaterialX Web Viewer</strong></h2>
+          <p>
+            The <a href="https://academysoftwarefoundation.github.io/MaterialX/">MaterialX Web Viewer</a> leverages shader generation to build ESSL shaders from MaterialX graphs, rendering the results using the Three.js framework. The Web Viewer uses the <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/javascript">MaterialX JavaScript</a> bindings to access the MaterialX API, allowing it to support the latest MaterialX nodes and features as they are added.
           </p>
 
           <!-- --------------------------------------------------------------------------------- -->
