@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -142,9 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a909325144d9358ac01e59a7e9530bc21"><td class="memItemLeft" align="right" valign="top">MX_FORMAT_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_xml_io_8h.html#a909325144d9358ac01e59a7e9530bc21">readFromXmlFile</a> (<a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, <a class="el" href="class_file_path.html">FilePath</a> filename, <a class="el" href="class_file_search_path.html">FileSearchPath</a> searchPath=<a class="el" href="class_file_search_path.html">FileSearchPath</a>(), const <a class="el" href="class_xml_read_options.html">XmlReadOptions</a> *readOptions=nullptr)</td></tr>
 <tr class="memdesc:a909325144d9358ac01e59a7e9530bc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> as XML from the given filename.  <a href="_xml_io_8h.html#a909325144d9358ac01e59a7e9530bc21">More...</a><br /></td></tr>
 <tr class="separator:a909325144d9358ac01e59a7e9530bc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4184cf926eeb7bbe3842326a6d58e258"><td class="memItemLeft" align="right" valign="top">MX_FORMAT_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_xml_io_8h.html#a4184cf926eeb7bbe3842326a6d58e258">readFromXmlString</a> (<a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, const string &amp;str, <a class="el" href="class_file_search_path.html">FileSearchPath</a> searchPath=<a class="el" href="class_file_search_path.html">FileSearchPath</a>(), const <a class="el" href="class_xml_read_options.html">XmlReadOptions</a> *readOptions=nullptr)</td></tr>
-<tr class="memdesc:a4184cf926eeb7bbe3842326a6d58e258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> as XML from the given string.  <a href="_xml_io_8h.html#a4184cf926eeb7bbe3842326a6d58e258">More...</a><br /></td></tr>
-<tr class="separator:a4184cf926eeb7bbe3842326a6d58e258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04f4c685b588b1d302359ef869a7077"><td class="memItemLeft" align="right" valign="top">MX_FORMAT_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_xml_io_8h.html#ae04f4c685b588b1d302359ef869a7077">readFromXmlString</a> (<a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, const string &amp;str, const <a class="el" href="class_file_search_path.html">FileSearchPath</a> &amp;searchPath=<a class="el" href="class_file_search_path.html">FileSearchPath</a>(), const <a class="el" href="class_xml_read_options.html">XmlReadOptions</a> *readOptions=nullptr)</td></tr>
+<tr class="memdesc:ae04f4c685b588b1d302359ef869a7077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> as XML from the given string.  <a href="_xml_io_8h.html#ae04f4c685b588b1d302359ef869a7077">More...</a><br /></td></tr>
+<tr class="separator:ae04f4c685b588b1d302359ef869a7077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Write Functions</div></td></tr>
 <tr class="memitem:acc59f34b2e045934ef3b24868c0a6da1"><td class="memItemLeft" align="right" valign="top">MX_FORMAT_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_xml_io_8h.html#acc59f34b2e045934ef3b24868c0a6da1">writeToXmlStream</a> (<a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, std::ostream &amp;stream, const <a class="el" href="class_xml_write_options.html">XmlWriteOptions</a> *writeOptions=nullptr)</td></tr>
 <tr class="memdesc:acc59f34b2e045934ef3b24868c0a6da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a <a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> as XML to the given output stream.  <a href="_xml_io_8h.html#acc59f34b2e045934ef3b24868c0a6da1">More...</a><br /></td></tr>
@@ -378,8 +378,8 @@ MX_FORMAT_API const string&#160;</td><td class="memItemRight" valign="bottom"><b
 
 </div>
 </div>
-<a id="a4184cf926eeb7bbe3842326a6d58e258" name="a4184cf926eeb7bbe3842326a6d58e258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4184cf926eeb7bbe3842326a6d58e258">&#9670;&#160;</a></span>readFromXmlString()</h2>
+<a id="ae04f4c685b588b1d302359ef869a7077" name="ae04f4c685b588b1d302359ef869a7077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04f4c685b588b1d302359ef869a7077">&#9670;&#160;</a></span>readFromXmlString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +399,7 @@ MX_FORMAT_API const string&#160;</td><td class="memItemRight" valign="bottom"><b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_file_search_path.html">FileSearchPath</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_file_search_path.html">FileSearchPath</a> &amp;&#160;</td>
           <td class="paramname"><em>searchPath</em> = <code><a class="el" href="class_file_search_path.html">FileSearchPath</a>()</code>, </td>
         </tr>
         <tr>

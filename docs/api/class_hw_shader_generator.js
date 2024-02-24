@@ -11,5 +11,6 @@ var class_hw_shader_generator =
     [ "createShader", "class_hw_shader_generator.html#abc049abca6fb1dfb6556487440e5b855", null ],
     [ "emitFunctionCall", "class_hw_shader_generator.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79", null ],
     [ "getClosureContexts", "class_hw_shader_generator.html#aed30dd9398e28f9c74b4365f92dc5f56", null ],
+    [ "getVertexDataPrefix", "class_hw_shader_generator.html#acd26d2e250ee8287918c33f92f31b76a", null ],
     [ "_defDefault", "class_hw_shader_generator.html#a0ba5c5d627c12139087de938062aaa06", null ]
 ];

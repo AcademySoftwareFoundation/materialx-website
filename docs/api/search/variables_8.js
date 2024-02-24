@@ -10,5 +10,6 @@ var searchData=
   ['hwtransmissionrendermethod_7',['hwTransmissionRenderMethod',['../class_gen_options.html#a8c33039ae27c11415c55e87c4b16fd64',1,'GenOptions']]],
   ['hwtransparency_8',['hwTransparency',['../class_gen_options.html#aa9208729291bf20f854ef3d54f656b81',1,'GenOptions']]],
   ['hwwritealbedotable_9',['hwWriteAlbedoTable',['../class_gen_options.html#af328684f499b74fc761abf7ed6a7d0e8',1,'GenOptions']]],
-  ['hwwritedepthmoments_10',['hwWriteDepthMoments',['../class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06',1,'GenOptions']]]
+  ['hwwritedepthmoments_10',['hwWriteDepthMoments',['../class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06',1,'GenOptions']]],
+  ['hwwriteenvprefilter_11',['hwWriteEnvPrefilter',['../class_gen_options.html#a4604f63b5bc4cb699ab11d45b2542375',1,'GenOptions']]]
 ];

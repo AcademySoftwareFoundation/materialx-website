@@ -60,6 +60,7 @@ var hierarchy =
         [ "VariantSet", "class_variant_set.html", null ]
       ] ],
       [ "GenUserData", "class_gen_user_data.html", [
+        [ "GenMdlOptions", "class_gen_mdl_options.html", null ],
         [ "HwLightShaders", "class_hw_light_shaders.html", null ],
         [ "HwResourceBindingContext", "class_hw_resource_binding_context.html", [
           [ "GlslResourceBindingContext", "class_glsl_resource_binding_context.html", null ],
@@ -171,26 +172,31 @@ var hierarchy =
         ] ],
         [ "HeightToNormalNodeGlsl", "class_height_to_normal_node_glsl.html", null ]
       ] ],
-      [ "GlslImplementation", "class_glsl_implementation.html", [
-        [ "BitangentNodeGlsl", "class_bitangent_node_glsl.html", null ],
-        [ "FrameNodeGlsl", "class_frame_node_glsl.html", null ],
-        [ "GeomColorNodeGlsl", "class_geom_color_node_glsl.html", null ],
-        [ "GeomPropValueNodeGlsl", "class_geom_prop_value_node_glsl.html", null ],
-        [ "GeomPropValueNodeGlslAsUniform", "class_geom_prop_value_node_glsl_as_uniform.html", null ],
-        [ "LightNodeGlsl", "class_light_node_glsl.html", null ],
-        [ "LightSamplerNodeGlsl", "class_light_sampler_node_glsl.html", null ],
-        [ "NormalNodeGlsl", "class_normal_node_glsl.html", null ],
-        [ "NumLightsNodeGlsl", "class_num_lights_node_glsl.html", null ],
-        [ "PositionNodeGlsl", "class_position_node_glsl.html", null ],
-        [ "SurfaceNodeGlsl", "class_surface_node_glsl.html", null ],
-        [ "TangentNodeGlsl", "class_tangent_node_glsl.html", null ],
-        [ "TexCoordNodeGlsl", "class_tex_coord_node_glsl.html", null ],
-        [ "TimeNodeGlsl", "class_time_node_glsl.html", null ],
-        [ "TransformVectorNodeGlsl", "class_transform_vector_node_glsl.html", [
-          [ "TransformNormalNodeGlsl", "class_transform_normal_node_glsl.html", null ],
-          [ "TransformPointNodeGlsl", "class_transform_point_node_glsl.html", null ]
+      [ "HwImplementation", "class_hw_implementation.html", [
+        [ "GlslImplementation", "class_glsl_implementation.html", [
+          [ "GeomColorNodeGlsl", "class_geom_color_node_glsl.html", null ],
+          [ "GeomPropValueNodeGlsl", "class_geom_prop_value_node_glsl.html", null ],
+          [ "GeomPropValueNodeGlslAsUniform", "class_geom_prop_value_node_glsl_as_uniform.html", null ],
+          [ "LightNodeGlsl", "class_light_node_glsl.html", null ],
+          [ "LightSamplerNodeGlsl", "class_light_sampler_node_glsl.html", null ],
+          [ "NumLightsNodeGlsl", "class_num_lights_node_glsl.html", null ],
+          [ "SurfaceNodeGlsl", "class_surface_node_glsl.html", null ],
+          [ "UnlitSurfaceNodeGlsl", "class_unlit_surface_node_glsl.html", null ]
         ] ],
-        [ "UnlitSurfaceNodeGlsl", "class_unlit_surface_node_glsl.html", null ]
+        [ "HwBitangentNode", "class_hw_bitangent_node.html", null ],
+        [ "HwFrameNode", "class_hw_frame_node.html", null ],
+        [ "HwNormalNode", "class_hw_normal_node.html", null ],
+        [ "HwPositionNode", "class_hw_position_node.html", null ],
+        [ "HwTangentNode", "class_hw_tangent_node.html", null ],
+        [ "HwTimeNode", "class_hw_time_node.html", null ],
+        [ "HwViewDirectionNode", "class_hw_view_direction_node.html", null ]
+      ] ],
+      [ "HwTexCoordNode", "class_hw_tex_coord_node.html", null ],
+      [ "HwTransformNode", "class_hw_transform_node.html", [
+        [ "HwTransformNormalNode", "class_hw_transform_normal_node.html", null ],
+        [ "HwTransformVectorNode", "class_hw_transform_vector_node.html", [
+          [ "HwTransformPointNode", "class_hw_transform_point_node.html", null ]
+        ] ]
       ] ],
       [ "MaterialNode", "class_material_node.html", null ],
       [ "NopNode", "class_nop_node.html", null ],

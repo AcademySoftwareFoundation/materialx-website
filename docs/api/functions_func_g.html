@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>generateShader()&#160;:&#160;<a class="el" href="class_glsl_material.html#afeb443bf68414f265bd5857d90446796">GlslMaterial</a>, <a class="el" href="class_shader_material.html#a42e183766ac5c03c8e8d5a5bfb5dc5dd">ShaderMaterial</a></li>
 <li>generateTangents()&#160;:&#160;<a class="el" href="class_mesh.html#a30ad2855b424dafed47dd639cc7af151">Mesh</a></li>
 <li>generateTextureCoordinates()&#160;:&#160;<a class="el" href="class_mesh.html#a0f2ad1acf5823395690ba5f65eaa6d3d">Mesh</a></li>
+<li>GenMdlOptions()&#160;:&#160;<a class="el" href="class_gen_mdl_options.html#a0978895ea428fab934b16ff38ca156bf">GenMdlOptions</a></li>
 <li>GeomPath()&#160;:&#160;<a class="el" href="class_geom_path.html#aab02c595055f2e104054b467680371c4">GeomPath</a></li>
 <li>get()&#160;:&#160;<a class="el" href="class_hw_light_shaders.html#a69d50f59c28a00065f9b26f95559f3b0">HwLightShaders</a>, <a class="el" href="class_type_desc.html#a7ebfacd54393cd4fa671ddf4a2e233cb">TypeDesc</a></li>
 <li>getActiveColorSpace()&#160;:&#160;<a class="el" href="class_element.html#a8c502d05346aec6fa373be2dabbbb928">Element</a></li>
@@ -208,6 +209,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>getEndMultiLineComment()&#160;:&#160;<a class="el" href="class_syntax.html#aa3aaa60969e1ed20c7fbce0b48e482b2">Syntax</a></li>
 <li>getEnumeratedType()&#160;:&#160;<a class="el" href="class_mdl_syntax.html#a79b8c5fa3a380cc3dbc92a7b007c710e">MdlSyntax</a></li>
 <li>getEnvIrradianceMap()&#160;:&#160;<a class="el" href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">LightHandler</a></li>
+<li>getEnvPrefilteredMap()&#160;:&#160;<a class="el" href="class_light_handler.html#a36a6d54880864f422b64c923d466a716">LightHandler</a></li>
 <li>getEnvRadianceMap()&#160;:&#160;<a class="el" href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">LightHandler</a></li>
 <li>getEnvSampleCount()&#160;:&#160;<a class="el" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">LightHandler</a></li>
 <li>getExcludeGeom()&#160;:&#160;<a class="el" href="class_collection.html#a66c09558fbacb8be50a4b14084c1bc2e">Collection</a></li>
@@ -297,6 +299,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>getMaterialOutputs()&#160;:&#160;<a class="el" href="class_document.html#aab39e4d2ee6b779de82e9c8cbcd4be86">Document</a>, <a class="el" href="class_material_assign.html#aab39e4d2ee6b779de82e9c8cbcd4be86">MaterialAssign</a>, <a class="el" href="class_node_graph.html#aab39e4d2ee6b779de82e9c8cbcd4be86">NodeGraph</a></li>
 <li>getMaximumBounds()&#160;:&#160;<a class="el" href="class_geometry_handler.html#a6f6c8d0fb9a4f7c7d8b2b586128c47ea">GeometryHandler</a>, <a class="el" href="class_mesh.html#a6f6c8d0fb9a4f7c7d8b2b586128c47ea">Mesh</a></li>
 <li>getMaxMipCount()&#160;:&#160;<a class="el" href="class_image.html#a1fdcc48d1d778f4e36e701c4f5089b16">Image</a></li>
+<li>getMdlVersionFilenameSuffix()&#160;:&#160;<a class="el" href="class_mdl_shader_generator.html#af7b667d9ba627f0436153984f510b032">MdlShaderGenerator</a></li>
 <li>getMember()&#160;:&#160;<a class="el" href="class_type_def.html#a1d6b6be4f520c27c74f25227d41eddc4">TypeDef</a></li>
 <li>getMembers()&#160;:&#160;<a class="el" href="class_type_def.html#a54669ec3b62010048f847583892ce6b0">TypeDef</a>, <a class="el" href="class_type_syntax.html#aacd6280e8b1233f0691a9363541b5db4">TypeSyntax</a></li>
 <li>getMeshes()&#160;:&#160;<a class="el" href="class_geometry_handler.html#a5fb684ef6eb3c60d9ceda381298a54b5">GeometryHandler</a></li>
@@ -337,6 +340,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>getOutputSuffix()&#160;:&#160;<a class="el" href="class_gen_context.html#ae57d2395cd8cab89a3b2ab5a97ea2ab7">GenContext</a></li>
 <li>getOutputTypeName()&#160;:&#160;<a class="el" href="class_syntax.html#af537066cbc74363bd281a33e98f00735">Syntax</a></li>
 <li>getParent()&#160;:&#160;<a class="el" href="class_element.html#af69c34f7be572f3008369d4bcbe7d1a5">Element</a>, <a class="el" href="class_shader_node.html#a32fc91409f640989ad93455c5928b869">ShaderNode</a></li>
+<li>getParentNodes()&#160;:&#160;<a class="el" href="class_gen_context.html#a0b02ba03917a077ecd61245e7e5bd351">GenContext</a></li>
 <li>getParentPath()&#160;:&#160;<a class="el" href="class_file_path.html#ac0795c0b04789e2dc86d30750c9a6fb8">FilePath</a></li>
 <li>getPartition()&#160;:&#160;<a class="el" href="class_mesh.html#a71083e12c0242a05b6e1601f2a6e97f6">Mesh</a></li>
 <li>getPartitionCount()&#160;:&#160;<a class="el" href="class_mesh.html#aff307fa888fce4f40d537e8cc939a746">Mesh</a></li>
@@ -442,10 +446,11 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>getUpstreamElement()&#160;:&#160;<a class="el" href="class_edge.html#ac755ff7372ac739220a4a06300b28d26">Edge</a>, <a class="el" href="class_element.html#a9666428d61bfeb5e12d7b1fa5acc4576">Element</a>, <a class="el" href="class_graph_iterator.html#ac755ff7372ac739220a4a06300b28d26">GraphIterator</a></li>
 <li>getUpstreamIndex()&#160;:&#160;<a class="el" href="class_graph_iterator.html#a46ee8e7dbf9c0e820558d591c445ef49">GraphIterator</a></li>
 <li>getUpstreamResult()&#160;:&#160;<a class="el" href="class_mdl_shader_generator.html#afcf5602c6f6e64675c9b062a66f4b8da">MdlShaderGenerator</a>, <a class="el" href="class_shader_generator.html#a0aa5ec4123c378519a11d3347c04ff27">ShaderGenerator</a></li>
+<li>getUsePrefilteredMap()&#160;:&#160;<a class="el" href="class_light_handler.html#a128724bc0413f87d313dea6796b1afad">LightHandler</a></li>
 <li>getUserData()&#160;:&#160;<a class="el" href="class_gen_context.html#ae8100e8f6d43278d34c6627cadf7d03a">GenContext</a></li>
 <li>getValue()&#160;:&#160;<a class="el" href="class_aggregate_type_syntax.html#a140c929f14914216e67f1f47cae19d46">AggregateTypeSyntax</a>, <a class="el" href="class_attribute_def.html#a0fd2c4d512f27d9cfa1714259edfd6db">AttributeDef</a>, <a class="el" href="class_scalar_type_syntax.html#a140c929f14914216e67f1f47cae19d46">ScalarTypeSyntax</a>, <a class="el" href="class_shader_port.html#a0fd2c4d512f27d9cfa1714259edfd6db">ShaderPort</a>, <a class="el" href="class_string_type_syntax.html#a140c929f14914216e67f1f47cae19d46">StringTypeSyntax</a>, <a class="el" href="class_syntax.html#af1db383f350afd37ff5c13e512734250">Syntax</a>, <a class="el" href="class_type_syntax.html#a1f2b8b8544c9b109363d46b802f33858">TypeSyntax</a>, <a class="el" href="class_value_element.html#a0fd2c4d512f27d9cfa1714259edfd6db">ValueElement</a></li>
 <li>getValueElement()&#160;:&#160;<a class="el" href="class_interface_element.html#a78d84f39f49588307c6d8eff1f0f5cac">InterfaceElement</a></li>
-<li>getValueString()&#160;:&#160;<a class="el" href="class_attribute_def.html#a26044f63e9069e534f23b1dde870221a">AttributeDef</a>, <a class="el" href="class_typed_value.html#ab47d019296b04d3bf5c4ed2d17c2a520">TypedValue&lt; T &gt;</a>, <a class="el" href="class_value.html#a2b4a59546ebb945af6206e3f2e24d7b4">Value</a>, <a class="el" href="class_value_element.html#a26044f63e9069e534f23b1dde870221a">ValueElement</a></li>
+<li>getValueString()&#160;:&#160;<a class="el" href="class_attribute_def.html#a26044f63e9069e534f23b1dde870221a">AttributeDef</a>, <a class="el" href="class_shader_port.html#ab9c860e47a9255c2709b0eeb32490d40">ShaderPort</a>, <a class="el" href="class_typed_value.html#ab47d019296b04d3bf5c4ed2d17c2a520">TypedValue&lt; T &gt;</a>, <a class="el" href="class_value.html#a2b4a59546ebb945af6206e3f2e24d7b4">Value</a>, <a class="el" href="class_value_element.html#a26044f63e9069e534f23b1dde870221a">ValueElement</a></li>
 <li>getVariable()&#160;:&#160;<a class="el" href="class_shader_port.html#ab38b1d9b6319fda2f43243dd9ce33bcf">ShaderPort</a></li>
 <li>getVariableName()&#160;:&#160;<a class="el" href="class_swizzle_node.html#a3fe9e1ee3bba38120091ca71be487cf6">SwizzleNode</a>, <a class="el" href="class_syntax.html#a8769347757565e5da262248636e3c47b">Syntax</a></li>
 <li>getVariableOrder()&#160;:&#160;<a class="el" href="class_variable_block.html#aed61f158578995fd4d481817bd9830e5">VariableBlock</a></li>
@@ -461,7 +466,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>getVersionIntegers()&#160;:&#160;<a class="el" href="class_document.html#aa8649ed50a288976cc49b274327b3ba1">Document</a>, <a class="el" href="class_interface_element.html#aa5e960486495eafcdbcc7fbd48c92615">InterfaceElement</a></li>
 <li>getVersionString()&#160;:&#160;<a class="el" href="class_interface_element.html#a56c3201b0fe26f22aa9f89e8c175d9b2">InterfaceElement</a></li>
 <li>getVertexCount()&#160;:&#160;<a class="el" href="class_mesh.html#a24a4e01af898769244e11a4f94ca8fd0">Mesh</a></li>
-<li>getVertexDataPrefix()&#160;:&#160;<a class="el" href="class_essl_shader_generator.html#a77076efa2108759f613354ae2b0edc36">EsslShaderGenerator</a>, <a class="el" href="class_glsl_shader_generator.html#a77d92e15d82a8676b36582e5d723af2a">GlslShaderGenerator</a>, <a class="el" href="class_vk_shader_generator.html#a77076efa2108759f613354ae2b0edc36">VkShaderGenerator</a></li>
+<li>getVertexDataPrefix()&#160;:&#160;<a class="el" href="class_essl_shader_generator.html#a77076efa2108759f613354ae2b0edc36">EsslShaderGenerator</a>, <a class="el" href="class_glsl_shader_generator.html#a77076efa2108759f613354ae2b0edc36">GlslShaderGenerator</a>, <a class="el" href="class_hw_shader_generator.html#acd26d2e250ee8287918c33f92f31b76a">HwShaderGenerator</a>, <a class="el" href="class_vk_shader_generator.html#a77076efa2108759f613354ae2b0edc36">VkShaderGenerator</a></li>
 <li>getViewDirection()&#160;:&#160;<a class="el" href="class_camera.html#a98fb8b13643f8a6a58e27fb4d1c88462">Camera</a></li>
 <li>getViewerCollection()&#160;:&#160;<a class="el" href="class_visibility.html#a8aa728250044c4009bc0fb41db822331">Visibility</a></li>
 <li>getViewerGeom()&#160;:&#160;<a class="el" href="class_visibility.html#aed9144fff169b069b9b8fc00101906c7">Visibility</a></li>

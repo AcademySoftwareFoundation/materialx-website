@@ -14,6 +14,7 @@ var class_gen_options =
     [ "hwTransparency", "class_gen_options.html#aa9208729291bf20f854ef3d54f656b81", null ],
     [ "hwWriteAlbedoTable", "class_gen_options.html#af328684f499b74fc761abf7ed6a7d0e8", null ],
     [ "hwWriteDepthMoments", "class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06", null ],
+    [ "hwWriteEnvPrefilter", "class_gen_options.html#a4604f63b5bc4cb699ab11d45b2542375", null ],
     [ "libraryPrefix", "class_gen_options.html#added87e0a84aadf53c89317387c813ac", null ],
     [ "shaderInterfaceType", "class_gen_options.html#abbbf5859103e5fecd0dcd5cfcf927ed7", null ],
     [ "targetColorSpaceOverride", "class_gen_options.html#a8e4c555c81472c8b7501845b1d2d1bb5", null ],

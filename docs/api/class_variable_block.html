@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -160,10 +160,9 @@ const vector&lt; <a class="el" href="class_shader_port.html">ShaderPort</a> * &g
 <a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const <a class="el" href="_shader_stage_8h.html#adede5df15fdc613823ff6072ed96a96b">ShaderPortPredicate</a> &amp;predicate)</td></tr>
 <tr class="memdesc:aec44e640628d0c6bcea3d1f4da1e5c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a port based on a predicate. <br /></td></tr>
 <tr class="separator:aec44e640628d0c6bcea3d1f4da1e5c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a62bb77c0b8f2c9bb21554919ffb58"><td class="memItemLeft" align="right" valign="top"><a id="af1a62bb77c0b8f2c9bb21554919ffb58" name="af1a62bb77c0b8f2c9bb21554919ffb58"></a>
-<a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;name, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> value=nullptr)</td></tr>
-<tr class="memdesc:af1a62bb77c0b8f2c9bb21554919ffb58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new shader port to this block. <br /></td></tr>
-<tr class="separator:af1a62bb77c0b8f2c9bb21554919ffb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef92bbea3ffde8ac01ec422ac8529395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_block.html#aef92bbea3ffde8ac01ec422ac8529395">add</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;name, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> value=nullptr, bool shouldWiden=false)</td></tr>
+<tr class="memdesc:aef92bbea3ffde8ac01ec422ac8529395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new shader port to this block.  <a href="class_variable_block.html#aef92bbea3ffde8ac01ec422ac8529395">More...</a><br /></td></tr>
+<tr class="separator:aef92bbea3ffde8ac01ec422ac8529395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a645e61e2e2c25c4d78930fd2a4644f23"><td class="memItemLeft" align="right" valign="top"><a id="a645e61e2e2c25c4d78930fd2a4644f23" name="a645e61e2e2c25c4d78930fd2a4644f23"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el" href="_shader_node_8h.html#a36e6e0055d95bf17fad981d76ff37667">ShaderPortPtr</a> port)</td></tr>
 <tr class="memdesc:a645e61e2e2c25c4d78930fd2a4644f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an existing shader port to this block. <br /></td></tr>
@@ -172,6 +171,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A block of variables in a shader stage. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef92bbea3ffde8ac01ec422ac8529395" name="aef92bbea3ffde8ac01ec422ac8529395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef92bbea3ffde8ac01ec422ac8529395">&#9670;&#160;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_shader_port.html">ShaderPort</a> * add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a>&#160;</td>
+          <td class="paramname"><em>value</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shouldWiden</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new shader port to this block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The desired shader port type </td></tr>
+    <tr><td class="paramname">name</td><td>The shader port name </td></tr>
+    <tr><td class="paramname">value</td><td>The value to attach to the shader port </td></tr>
+    <tr><td class="paramname">shouldWiden</td><td>When false, an exception is thrown if the type of the existing port with the same name does not match the requested type. When true, the types can mismatch, and the type of any existing port is widened to match the requested type when necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new shader port, or a pre-existing shader port with the same name. </dd></dl>
+
+</div>
+</div>
 <a id="abecea9a9d2fdd8ead11e5bf3e20e24a5" name="abecea9a9d2fdd8ead11e5bf3e20e24a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abecea9a9d2fdd8ead11e5bf3e20e24a5">&#9670;&#160;</a></span>find() <span class="overload">[1/2]</span></h2>
 
