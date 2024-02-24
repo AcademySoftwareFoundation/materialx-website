@@ -8,7 +8,7 @@ var class_glsl_shader_generator =
     [ "getImplementation", "class_glsl_shader_generator.html#ad1849686eb31e30f5998bb121844f48c", null ],
     [ "getTarget", "class_glsl_shader_generator.html#a0b6a1a7ea1d88588b6f49a1005f1c2ab", null ],
     [ "getVersion", "class_glsl_shader_generator.html#a217fe2d1e77a12619e7963813e4cdae3", null ],
-    [ "getVertexDataPrefix", "class_glsl_shader_generator.html#a77d92e15d82a8676b36582e5d723af2a", null ],
+    [ "getVertexDataPrefix", "class_glsl_shader_generator.html#a77076efa2108759f613354ae2b0edc36", null ],
     [ "requiresLighting", "class_glsl_shader_generator.html#a7ebd263224a0a494f6b2e3fc07171efc", null ],
     [ "_lightSamplingNodes", "class_glsl_shader_generator.html#a2a81894b7d006b02810156c43c056fce", null ]
 ];

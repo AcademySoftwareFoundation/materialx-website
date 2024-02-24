@@ -6,6 +6,7 @@ var class_light_handler =
     [ "getAlbedoTable", "class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9", null ],
     [ "getDirectLighting", "class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269", null ],
     [ "getEnvIrradianceMap", "class_light_handler.html#aa039fbf296d08b4f88677f1271d08437", null ],
+    [ "getEnvPrefilteredMap", "class_light_handler.html#a36a6d54880864f422b64c923d466a716", null ],
     [ "getEnvRadianceMap", "class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f", null ],
     [ "getEnvSampleCount", "class_light_handler.html#a646c767d68b690b498395ead46a04792", null ],
     [ "getFirstLightOfCategory", "class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1", null ],
@@ -14,14 +15,17 @@ var class_light_handler =
     [ "getLightSources", "class_light_handler.html#a5377397716900040cd22d27ce97b1e63", null ],
     [ "getLightTransform", "class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12", null ],
     [ "getRefractionTwoSided", "class_light_handler.html#af79a4ecedccff396989ce48a77b57c78", null ],
+    [ "getUsePrefilteredMap", "class_light_handler.html#a128724bc0413f87d313dea6796b1afad", null ],
     [ "registerLights", "class_light_handler.html#a76b3067128b46043cf202c5b13e53e4e", null ],
     [ "setAlbedoTable", "class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa", null ],
     [ "setDirectLighting", "class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7", null ],
     [ "setEnvIrradianceMap", "class_light_handler.html#a225d93115829c1626beb36f6ee03f59c", null ],
+    [ "setEnvPrefilteredMap", "class_light_handler.html#a263f0bea291bb109b22e22bde145f3e9", null ],
     [ "setEnvRadianceMap", "class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939", null ],
     [ "setEnvSampleCount", "class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd", null ],
     [ "setIndirectLighting", "class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b", null ],
     [ "setLightSources", "class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b", null ],
     [ "setLightTransform", "class_light_handler.html#a7daad11991e6853d9956feec94a479bd", null ],
-    [ "setRefractionTwoSided", "class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c", null ]
+    [ "setRefractionTwoSided", "class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c", null ],
+    [ "setUsePrefilteredMap", "class_light_handler.html#a2b6f107e940198087e4365c116d7e859", null ]
 ];

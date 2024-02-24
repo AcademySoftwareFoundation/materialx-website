@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -140,6 +140,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnvRadianceMap</b>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getEnvRadianceMap</b> () const</td></tr>
 <tr class="memdesc:a9652dc682d2cd0c841601b4f3d030a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the environment radiance map. <br /></td></tr>
 <tr class="separator:a9652dc682d2cd0c841601b4f3d030a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263f0bea291bb109b22e22bde145f3e9"><td class="memItemLeft" align="right" valign="top"><a id="a263f0bea291bb109b22e22bde145f3e9" name="a263f0bea291bb109b22e22bde145f3e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnvPrefilteredMap</b> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</td></tr>
+<tr class="memdesc:a263f0bea291bb109b22e22bde145f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the environment radiance map for the prefiltered environment lighting model. <br /></td></tr>
+<tr class="separator:a263f0bea291bb109b22e22bde145f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a6d54880864f422b64c923d466a716"><td class="memItemLeft" align="right" valign="top"><a id="a36a6d54880864f422b64c923d466a716" name="a36a6d54880864f422b64c923d466a716"></a>
+<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getEnvPrefilteredMap</b> () const</td></tr>
+<tr class="memdesc:a36a6d54880864f422b64c923d466a716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the environment radiance map for the prefiltered environment lighting model. <br /></td></tr>
+<tr class="separator:a36a6d54880864f422b64c923d466a716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6f107e940198087e4365c116d7e859"><td class="memItemLeft" align="right" valign="top"><a id="a2b6f107e940198087e4365c116d7e859" name="a2b6f107e940198087e4365c116d7e859"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUsePrefilteredMap</b> (bool val)</td></tr>
+<tr class="memdesc:a2b6f107e940198087e4365c116d7e859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to use the prefiltered environment lighting model. <br /></td></tr>
+<tr class="separator:a2b6f107e940198087e4365c116d7e859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128724bc0413f87d313dea6796b1afad"><td class="memItemLeft" align="right" valign="top"><a id="a128724bc0413f87d313dea6796b1afad" name="a128724bc0413f87d313dea6796b1afad"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getUsePrefilteredMap</b> ()</td></tr>
+<tr class="memdesc:a128724bc0413f87d313dea6796b1afad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether to use the prefiltered environment lighting model. <br /></td></tr>
+<tr class="separator:a128724bc0413f87d313dea6796b1afad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225d93115829c1626beb36f6ee03f59c"><td class="memItemLeft" align="right" valign="top"><a id="a225d93115829c1626beb36f6ee03f59c" name="a225d93115829c1626beb36f6ee03f59c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnvIrradianceMap</b> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</td></tr>
 <tr class="memdesc:a225d93115829c1626beb36f6ee03f59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the environment irradiance map. <br /></td></tr>
@@ -224,9 +240,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_directLighting</b></
 <tr class="memitem:a791a80834913986ac88a60d491606a98"><td class="memItemLeft" align="right" valign="top"><a id="a791a80834913986ac88a60d491606a98" name="a791a80834913986ac88a60d491606a98"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_indirectLighting</b></td></tr>
 <tr class="separator:a791a80834913986ac88a60d491606a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1797cf29d9835db3b18e0e1b4ec15819"><td class="memItemLeft" align="right" valign="top"><a id="a1797cf29d9835db3b18e0e1b4ec15819" name="a1797cf29d9835db3b18e0e1b4ec15819"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_usePrefilteredMap</b></td></tr>
+<tr class="separator:a1797cf29d9835db3b18e0e1b4ec15819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1f911413cbd672d2d729738eb7c169d"><td class="memItemLeft" align="right" valign="top"><a id="ac1f911413cbd672d2d729738eb7c169d" name="ac1f911413cbd672d2d729738eb7c169d"></a>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_envRadianceMap</b></td></tr>
 <tr class="separator:ac1f911413cbd672d2d729738eb7c169d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72101af103b5c8d6c2ddbf6334d6cd6"><td class="memItemLeft" align="right" valign="top"><a id="ab72101af103b5c8d6c2ddbf6334d6cd6" name="ab72101af103b5c8d6c2ddbf6334d6cd6"></a>
+<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_envPrefilteredMap</b></td></tr>
+<tr class="separator:ab72101af103b5c8d6c2ddbf6334d6cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d11f15603d4ea7f9c0af93f2aed6428"><td class="memItemLeft" align="right" valign="top"><a id="a3d11f15603d4ea7f9c0af93f2aed6428" name="a3d11f15603d4ea7f9c0af93f2aed6428"></a>
 <a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_envIrradianceMap</b></td></tr>
 <tr class="separator:a3d11f15603d4ea7f9c0af93f2aed6428"><td class="memSeparator" colspan="2">&#160;</td></tr>

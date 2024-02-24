@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -157,9 +157,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setFilenameResolver</
 <a class="el" href="_element_8h.html#a2c7e67d10050c3c17eb5f86686ab687f">StringResolverPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getFilenameResolver</b> () const</td></tr>
 <tr class="memdesc:a6e41844317a5dd19ae79e7551396232d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the filename resolver for images. <br /></td></tr>
 <tr class="separator:a6e41844317a5dd19ae79e7551396232d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b96663a6700edf019fdd2190898b963"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#a7b96663a6700edf019fdd2190898b963">createRenderResources</a> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> image, bool generateMipMaps)</td></tr>
-<tr class="memdesc:a7b96663a6700edf019fdd2190898b963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create rendering resources for the given image.  <a href="class_image_handler.html#a7b96663a6700edf019fdd2190898b963">More...</a><br /></td></tr>
-<tr class="separator:a7b96663a6700edf019fdd2190898b963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218df60510df4b9759853f367be3eb15"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#a218df60510df4b9759853f367be3eb15">createRenderResources</a> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> image, bool generateMipMaps, bool useAsRenderTarget=false)</td></tr>
+<tr class="memdesc:a218df60510df4b9759853f367be3eb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create rendering resources for the given image.  <a href="class_image_handler.html#a218df60510df4b9759853f367be3eb15">More...</a><br /></td></tr>
+<tr class="separator:a218df60510df4b9759853f367be3eb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed34cf8ac25954085a98b8b5a3cae9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_handler.html#a2ed34cf8ac25954085a98b8b5a3cae9b">releaseRenderResources</a> (<a class="el" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> image=nullptr)</td></tr>
 <tr class="memdesc:a2ed34cf8ac25954085a98b8b5a3cae9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release rendering resources for the given image, or for all cached images if no image pointer is specified.  <a href="class_image_handler.html#a2ed34cf8ac25954085a98b8b5a3cae9b">More...</a><br /></td></tr>
 <tr class="separator:a2ed34cf8ac25954085a98b8b5a3cae9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +200,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>cacheImage</b> (const
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a1701bfcbb0681bbec2666eedb2a1358f"><td class="memItemLeft" align="right" valign="top"><a id="a1701bfcbb0681bbec2666eedb2a1358f" name="a1701bfcbb0681bbec2666eedb2a1358f"></a>
-<a class="el" href="_image_handler_8h.html#ab4e7bf54c7baa4681050b7da498debec">ImageLoaderMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_imageLoaders</b></td></tr>
+<a class="el" href="_image_handler_8h.html#ae528292f48f83a29bd0e8e9bdd9c9838">ImageLoaderMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_imageLoaders</b></td></tr>
 <tr class="separator:a1701bfcbb0681bbec2666eedb2a1358f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab99feedf227500db2506bc709fe1c95b"><td class="memItemLeft" align="right" valign="top"><a id="ab99feedf227500db2506bc709fe1c95b" name="ab99feedf227500db2506bc709fe1c95b"></a>
 <a class="el" href="_image_8h.html#a9bc10fb596ea57707e2a60974250363b">ImageMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_imageCache</b></td></tr>
@@ -304,8 +304,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b96663a6700edf019fdd2190898b963" name="a7b96663a6700edf019fdd2190898b963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b96663a6700edf019fdd2190898b963">&#9670;&#160;</a></span>createRenderResources()</h2>
+<a id="a218df60510df4b9759853f367be3eb15" name="a218df60510df4b9759853f367be3eb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218df60510df4b9759853f367be3eb15">&#9670;&#160;</a></span>createRenderResources()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +323,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>generateMipMaps</em>&#160;</td>
+          <td class="paramname"><em>generateMipMaps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useAsRenderTarget</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -340,7 +346,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Create rendering resources for the given image. </p>
 
-<p>Reimplemented in <a class="el" href="class_g_l_texture_handler.html#afbdf16cb8ab03fba6ef67be4ef2f6b48">GLTextureHandler</a>.</p>
+<p>Reimplemented in <a class="el" href="class_g_l_texture_handler.html#a5b624c4d12e0bcde58a703a5f8cf7043">GLTextureHandler</a>.</p>
 
 </div>
 </div>

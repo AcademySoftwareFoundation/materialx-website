@@ -4,7 +4,7 @@ var class_image_handler =
     [ "addLoader", "class_image_handler.html#a992d1de7488a2ccdc97abc6d9d8e6f90", null ],
     [ "bindImage", "class_image_handler.html#a22c794ac662955088dcb62d47343b620", null ],
     [ "clearImageCache", "class_image_handler.html#a391cc357499132326a59ddd052224ad7", null ],
-    [ "createRenderResources", "class_image_handler.html#a7b96663a6700edf019fdd2190898b963", null ],
+    [ "createRenderResources", "class_image_handler.html#a218df60510df4b9759853f367be3eb15", null ],
     [ "getFilenameResolver", "class_image_handler.html#a6e41844317a5dd19ae79e7551396232d", null ],
     [ "getReferencedImages", "class_image_handler.html#a41c8d266d79fc45f0f95545e3da99023", null ],
     [ "getSearchPath", "class_image_handler.html#a6234c4a312aa11713767a7124955e36a", null ],

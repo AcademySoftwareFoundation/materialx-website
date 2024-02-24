@@ -14,7 +14,7 @@ var class_shader_graph =
     [ "addUpstreamDependencies", "class_shader_graph.html#aafa24fe4864dd515eead25b14d6af7f7", null ],
     [ "bypass", "class_shader_graph.html#acca66968656109891960f3c6cd362767", null ],
     [ "createConnectedNodes", "class_shader_graph.html#adc6eddfc587b28185755f84691a8ef17", null ],
-    [ "createNode", "class_shader_graph.html#a4a90b3387966b6c9a8b62e425e7580c7", null ],
+    [ "createNode", "class_shader_graph.html#a54c66b9d462fbc4e93a61c4e4b1d1e74", null ],
     [ "disconnect", "class_shader_graph.html#a6da12f47199bed1881c71799aed3aeab", null ],
     [ "finalize", "class_shader_graph.html#afb30254bcf6391ce8ee0794d3d675d90", null ],
     [ "getIdentifierMap", "class_shader_graph.html#a8e5b1af4a837282deb2d1e43729c7d01", null ],
@@ -28,7 +28,7 @@ var class_shader_graph =
     [ "numInputSockets", "class_shader_graph.html#a39c7bad008ed162d22c5ed5a3dd3b9d8", null ],
     [ "numOutputSockets", "class_shader_graph.html#a9f0ad10f5b92cae740679c0fadf8df0b", null ],
     [ "optimize", "class_shader_graph.html#ac789f6484894f078aea01160e3d0d4c6", null ],
-    [ "populateColorTransformMap", "class_shader_graph.html#a36dc7829275baba93c4a7ad53346f7c4", null ],
+    [ "populateColorTransformMap", "class_shader_graph.html#aa236e922317957456bc7a0df7906e635", null ],
     [ "populateUnitTransformMap", "class_shader_graph.html#ad472954fc2c90ab01a1a0387c0dbc69f", null ],
     [ "setVariableNames", "class_shader_graph.html#a3c716ab663dfca2326c77c2ae2f45fee", null ],
     [ "topologicalSort", "class_shader_graph.html#a4f9916644cded0ec59cd40e02046f63c", null ]

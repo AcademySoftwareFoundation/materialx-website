@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -126,155 +126,178 @@ $(document).ready(function(){initNavTree('_light_handler_8h_source.html',''); in
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        _lightTransform(Matrix44::IDENTITY),</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        _directLighting(<span class="keyword">true</span>),</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        _indirectLighting(<span class="keyword">true</span>),</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        _envSampleCount(DEFAULT_ENV_SAMPLE_COUNT),</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        _refractionTwoSided(<span class="keyword">false</span>)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_light_handler.html">~LightHandler</a>() { }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">   47</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_light_handler_8h.html#a1c1719eed7a64c3017e70a78c0b809d7">LightHandlerPtr</a> <a class="code hl_function" href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">create</a>() { <span class="keywordflow">return</span> std::make_shared&lt;LightHandler&gt;(); }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">   53</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">setLightTransform</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a>&amp; mat)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        _lightTransform = mat;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">   59</a></span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> <a class="code hl_function" href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">getLightTransform</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> _lightTransform;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">setDirectLighting</a>(<span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        _directLighting = enable;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">   71</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">getDirectLighting</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> _directLighting;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">   77</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">setIndirectLighting</a>(<span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        _indirectLighting = enable;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_light_handler.html#af25d8f4df38340fc0257df8d8c2a07cf">   83</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_light_handler.html#af25d8f4df38340fc0257df8d8c2a07cf">getIndirectLighting</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> _indirectLighting;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939">   93</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939">setEnvRadianceMap</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        _envRadianceMap = map;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">   99</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">getEnvRadianceMap</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> _envRadianceMap;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_light_handler.html#a225d93115829c1626beb36f6ee03f59c">  105</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a225d93115829c1626beb36f6ee03f59c">setEnvIrradianceMap</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        _envIrradianceMap = map;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">  111</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">getEnvIrradianceMap</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> _envIrradianceMap;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">  117</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">setEnvSampleCount</a>(<span class="keywordtype">int</span> count)</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        _envSampleCount = count;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">  123</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">getEnvSampleCount</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> _envSampleCount;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">  129</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">setRefractionTwoSided</a>(<span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        _refractionTwoSided = enable;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_light_handler.html#af79a4ecedccff396989ce48a77b57c78">  135</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_light_handler.html#af79a4ecedccff396989ce48a77b57c78">getRefractionTwoSided</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">return</span> _refractionTwoSided;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">  145</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">setAlbedoTable</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> table)</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        _albedoTable = table;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">  151</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">getAlbedoTable</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">return</span> _albedoTable;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">void</span> addLightSource(<a class="code hl_typedef" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> node);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">  164</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">setLightSources</a>(<span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; lights)</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        _lightSources = lights;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        _usePrefilteredMap(<span class="keyword">false</span>),</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        _envSampleCount(DEFAULT_ENV_SAMPLE_COUNT),</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        _refractionTwoSided(<span class="keyword">false</span>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_light_handler.html">~LightHandler</a>() { }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">   48</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_light_handler_8h.html#a1c1719eed7a64c3017e70a78c0b809d7">LightHandlerPtr</a> <a class="code hl_function" href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">create</a>() { <span class="keywordflow">return</span> std::make_shared&lt;LightHandler&gt;(); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">   54</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">setLightTransform</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_matrix44.html">Matrix44</a>&amp; mat)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        _lightTransform = mat;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">   60</a></span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> <a class="code hl_function" href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">getLightTransform</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">return</span> _lightTransform;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">   66</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">setDirectLighting</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        _directLighting = enable;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">   72</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">getDirectLighting</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> _directLighting;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">   78</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">setIndirectLighting</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        _indirectLighting = enable;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_light_handler.html#af25d8f4df38340fc0257df8d8c2a07cf">   84</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_light_handler.html#af25d8f4df38340fc0257df8d8c2a07cf">getIndirectLighting</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> _indirectLighting;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939">   94</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939">setEnvRadianceMap</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        _envRadianceMap = map;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">  100</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">getEnvRadianceMap</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> _envRadianceMap;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_light_handler.html#a263f0bea291bb109b22e22bde145f3e9">  106</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a263f0bea291bb109b22e22bde145f3e9">setEnvPrefilteredMap</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        _envPrefilteredMap = map;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_light_handler.html#a36a6d54880864f422b64c923d466a716">  112</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#a36a6d54880864f422b64c923d466a716">getEnvPrefilteredMap</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">return</span> _envPrefilteredMap;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_light_handler.html#a2b6f107e940198087e4365c116d7e859">  118</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a2b6f107e940198087e4365c116d7e859">setUsePrefilteredMap</a>(<span class="keywordtype">bool</span> val)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        _usePrefilteredMap = val;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_light_handler.html#a128724bc0413f87d313dea6796b1afad">  124</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_light_handler.html#a128724bc0413f87d313dea6796b1afad">getUsePrefilteredMap</a>()</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">return</span> _usePrefilteredMap;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_light_handler.html#a225d93115829c1626beb36f6ee03f59c">  130</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a225d93115829c1626beb36f6ee03f59c">setEnvIrradianceMap</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> map)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        _envIrradianceMap = map;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">  136</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">getEnvIrradianceMap</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">return</span> _envIrradianceMap;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">  142</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">setEnvSampleCount</a>(<span class="keywordtype">int</span> count)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        _envSampleCount = count;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">  148</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_light_handler.html#a646c767d68b690b498395ead46a04792">getEnvSampleCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">return</span> _envSampleCount;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">  154</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">setRefractionTwoSided</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        _refractionTwoSided = enable;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_light_handler.html#af79a4ecedccff396989ce48a77b57c78">  160</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_light_handler.html#af79a4ecedccff396989ce48a77b57c78">getRefractionTwoSided</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">return</span> _refractionTwoSided;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_light_handler.html#a5377397716900040cd22d27ce97b1e63">  170</a></span>    <span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; <a class="code hl_function" href="class_light_handler.html#a5377397716900040cd22d27ce97b1e63">getLightSources</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">return</span> _lightSources;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">  170</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">setAlbedoTable</a>(<a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> table)</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        _albedoTable = table;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1">  176</a></span>    <a class="code hl_typedef" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> <a class="code hl_function" href="class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1">getFirstLightOfCategory</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; category)</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> light : _lightSources)</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">if</span> (light-&gt;getCategory() == category)</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">return</span> light;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            }</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">  176</a></span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> <a class="code hl_function" href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">getAlbedoTable</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">return</span> _albedoTable;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">void</span> addLightSource(<a class="code hl_typedef" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> node);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">  193</a></span>    <span class="keyword">const</span> std::unordered_map&lt;string, unsigned int&gt;&amp; <a class="code hl_function" href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">getLightIdMap</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">return</span> _lightIdMap;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <a class="code hl_typedef" href="_light_handler_8h.html#ad01fc302432d7e44b9280cb1df799db4">LightIdMap</a> computeLightIdMap(<span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; nodes);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordtype">void</span> findLights(<a class="code hl_typedef" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, vector&lt;NodePtr&gt;&amp; lights);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">void</span> registerLights(<a class="code hl_typedef" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, <span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; lights, <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">  189</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">setLightSources</a>(<span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; lights)</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        _lightSources = lights;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="class_light_handler.html#a5377397716900040cd22d27ce97b1e63">  195</a></span>    <span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; <a class="code hl_function" href="class_light_handler.html#a5377397716900040cd22d27ce97b1e63">getLightSources</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">return</span> _lightSources;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1">  201</a></span>    <a class="code hl_typedef" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> <a class="code hl_function" href="class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1">getFirstLightOfCategory</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; category)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a> light : _lightSources)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <span class="keywordflow">if</span> (light-&gt;getCategory() == category)</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <span class="keywordflow">return</span> light;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> _lightTransform;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">bool</span> _directLighting;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordtype">bool</span> _indirectLighting;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _envRadianceMap;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _envIrradianceMap;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keywordtype">int</span> _envSampleCount;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordtype">bool</span> _refractionTwoSided;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _albedoTable;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    vector&lt;NodePtr&gt; _lightSources;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    std::unordered_map&lt;string, unsigned int&gt; _lightIdMap;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>};</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">  218</a></span>    <span class="keyword">const</span> std::unordered_map&lt;string, unsigned int&gt;&amp; <a class="code hl_function" href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">getLightIdMap</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">return</span> _lightIdMap;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_typedef" href="_light_handler_8h.html#ad01fc302432d7e44b9280cb1df799db4">LightIdMap</a> computeLightIdMap(<span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; nodes);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordtype">void</span> findLights(<a class="code hl_typedef" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, vector&lt;NodePtr&gt;&amp; lights);</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>MATERIALX_NAMESPACE_END</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">void</span> registerLights(<a class="code hl_typedef" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> doc, <span class="keyword">const</span> vector&lt;NodePtr&gt;&amp; lights, <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <a class="code hl_class" href="class_matrix44.html">Matrix44</a> _lightTransform;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordtype">bool</span> _directLighting;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">bool</span> _indirectLighting;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">bool</span> _usePrefilteredMap;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _envRadianceMap;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _envPrefilteredMap;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _envIrradianceMap;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordtype">int</span> _envSampleCount;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordtype">bool</span> _refractionTwoSided;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <a class="code hl_typedef" href="_image_8h.html#adb43ce077de07f031d0c6989de25d545">ImagePtr</a> _albedoTable;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    vector&lt;NodePtr&gt; _lightSources;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    std::unordered_map&lt;string, unsigned int&gt; _lightIdMap;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>};</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_document_8h_html"><div class="ttname"><a href="_document_8h.html">Document.h</a></div><div class="ttdoc">The top-level Document class.</div></div>
 <div class="ttc" id="a_document_8h_html_af7c96a4988168273c63f2f297721adcc"><div class="ttname"><a href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a></div><div class="ttdeci">shared_ptr&lt; Document &gt; DocumentPtr</div><div class="ttdoc">A shared pointer to a Document.</div><div class="ttdef"><b>Definition:</b> Document.h:22</div></div>
 <div class="ttc" id="a_image_8h_html"><div class="ttname"><a href="_image_8h.html">Image.h</a></div><div class="ttdoc">Image class.</div></div>
@@ -286,27 +309,31 @@ $(document).ready(function(){initNavTree('_light_handler_8h_source.html',''); in
 <div class="ttc" id="a_node_8h_html_a9be017e028fef90cc0e3afc260302531"><div class="ttname"><a href="_node_8h.html#a9be017e028fef90cc0e3afc260302531">NodePtr</a></div><div class="ttdeci">shared_ptr&lt; Node &gt; NodePtr</div><div class="ttdoc">A shared pointer to a Node.</div><div class="ttdef"><b>Definition:</b> Node.h:24</div></div>
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:31</div></div>
 <div class="ttc" id="aclass_light_handler_html"><div class="ttname"><a href="class_light_handler.html">LightHandler</a></div><div class="ttdoc">Utility light handler for creating and providing light data for shader binding.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:34</div></div>
-<div class="ttc" id="aclass_light_handler_html_a19d0bf31fbe458a8cc8f7600bc9d45d7"><div class="ttname"><a href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">LightHandler::setDirectLighting</a></div><div class="ttdeci">void setDirectLighting(bool enable)</div><div class="ttdoc">Set whether direct lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:65</div></div>
-<div class="ttc" id="aclass_light_handler_html_a225d93115829c1626beb36f6ee03f59c"><div class="ttname"><a href="class_light_handler.html#a225d93115829c1626beb36f6ee03f59c">LightHandler::setEnvIrradianceMap</a></div><div class="ttdeci">void setEnvIrradianceMap(ImagePtr map)</div><div class="ttdoc">Set the environment irradiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:105</div></div>
-<div class="ttc" id="aclass_light_handler_html_a3a88fe533a61b58c33e315538f3725c1"><div class="ttname"><a href="class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1">LightHandler::getFirstLightOfCategory</a></div><div class="ttdeci">NodePtr getFirstLightOfCategory(const string &amp;category)</div><div class="ttdoc">Return the first light source, if any, of the given category.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:176</div></div>
-<div class="ttc" id="aclass_light_handler_html_a448ffdcb3cb739dcc69c8a408da25269"><div class="ttname"><a href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">LightHandler::getDirectLighting</a></div><div class="ttdeci">bool getDirectLighting() const</div><div class="ttdoc">Return whether direct lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:71</div></div>
-<div class="ttc" id="aclass_light_handler_html_a5377397716900040cd22d27ce97b1e63"><div class="ttname"><a href="class_light_handler.html#a5377397716900040cd22d27ce97b1e63">LightHandler::getLightSources</a></div><div class="ttdeci">const vector&lt; NodePtr &gt; &amp; getLightSources() const</div><div class="ttdoc">Return the vector of light sources.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:170</div></div>
-<div class="ttc" id="aclass_light_handler_html_a59ecc3465f1fb6e012e43f4d9c79cf34"><div class="ttname"><a href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">LightHandler::create</a></div><div class="ttdeci">static LightHandlerPtr create()</div><div class="ttdoc">Create a new light handler.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:47</div></div>
-<div class="ttc" id="aclass_light_handler_html_a5d92e14b6ee56e8ac974d4c1ccf126bd"><div class="ttname"><a href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">LightHandler::setEnvSampleCount</a></div><div class="ttdeci">void setEnvSampleCount(int count)</div><div class="ttdoc">Set the environment lighting sample count.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:117</div></div>
-<div class="ttc" id="aclass_light_handler_html_a5eba80ca3f2240a648537d661f9cca12"><div class="ttname"><a href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">LightHandler::getLightTransform</a></div><div class="ttdeci">Matrix44 getLightTransform() const</div><div class="ttdoc">Return the light transform.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:59</div></div>
-<div class="ttc" id="aclass_light_handler_html_a646c767d68b690b498395ead46a04792"><div class="ttname"><a href="class_light_handler.html#a646c767d68b690b498395ead46a04792">LightHandler::getEnvSampleCount</a></div><div class="ttdeci">int getEnvSampleCount() const</div><div class="ttdoc">Return the environment lighting sample count.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:123</div></div>
-<div class="ttc" id="aclass_light_handler_html_a7daad11991e6853d9956feec94a479bd"><div class="ttname"><a href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">LightHandler::setLightTransform</a></div><div class="ttdeci">void setLightTransform(const Matrix44 &amp;mat)</div><div class="ttdoc">Set the light transform.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:53</div></div>
-<div class="ttc" id="aclass_light_handler_html_a8be60de80636e85e45ffe30ef228cc6b"><div class="ttname"><a href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">LightHandler::setLightSources</a></div><div class="ttdeci">void setLightSources(const vector&lt; NodePtr &gt; &amp;lights)</div><div class="ttdoc">Set the vector of light sources.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:164</div></div>
-<div class="ttc" id="aclass_light_handler_html_a94c0201f8d11bf0797f7c742ffab3caa"><div class="ttname"><a href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">LightHandler::setAlbedoTable</a></div><div class="ttdeci">void setAlbedoTable(ImagePtr table)</div><div class="ttdoc">Set the directional albedo table.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:145</div></div>
-<div class="ttc" id="aclass_light_handler_html_a9652dc682d2cd0c841601b4f3d030a2f"><div class="ttname"><a href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">LightHandler::getEnvRadianceMap</a></div><div class="ttdeci">ImagePtr getEnvRadianceMap() const</div><div class="ttdoc">Return the environment radiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:99</div></div>
-<div class="ttc" id="aclass_light_handler_html_a96a74b34556c524eec75fb32c50bbb7b"><div class="ttname"><a href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">LightHandler::setIndirectLighting</a></div><div class="ttdeci">void setIndirectLighting(bool enable)</div><div class="ttdoc">Set whether indirect lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:77</div></div>
-<div class="ttc" id="aclass_light_handler_html_aa039fbf296d08b4f88677f1271d08437"><div class="ttname"><a href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">LightHandler::getEnvIrradianceMap</a></div><div class="ttdeci">ImagePtr getEnvIrradianceMap() const</div><div class="ttdoc">Return the environment irradiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:111</div></div>
-<div class="ttc" id="aclass_light_handler_html_ab55f7ea2b6d2864fd83762e44c82073d"><div class="ttname"><a href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">LightHandler::getLightIdMap</a></div><div class="ttdeci">const std::unordered_map&lt; string, unsigned int &gt; &amp; getLightIdMap() const</div><div class="ttdoc">Get a list of identifiers associated with a given light nodedef.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:193</div></div>
-<div class="ttc" id="aclass_light_handler_html_ae4acca0bdcfe167d2dc6582a83ce64c9"><div class="ttname"><a href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">LightHandler::getAlbedoTable</a></div><div class="ttdeci">ImagePtr getAlbedoTable() const</div><div class="ttdoc">Return the directional albedo table.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:151</div></div>
-<div class="ttc" id="aclass_light_handler_html_aed297fee194a2edad52ce0dc53616d9c"><div class="ttname"><a href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">LightHandler::setRefractionTwoSided</a></div><div class="ttdeci">void setRefractionTwoSided(bool enable)</div><div class="ttdoc">Set the two-sided refraction property.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:129</div></div>
-<div class="ttc" id="aclass_light_handler_html_af25d8f4df38340fc0257df8d8c2a07cf"><div class="ttname"><a href="class_light_handler.html#af25d8f4df38340fc0257df8d8c2a07cf">LightHandler::getIndirectLighting</a></div><div class="ttdeci">bool getIndirectLighting() const</div><div class="ttdoc">Return whether indirect lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:83</div></div>
-<div class="ttc" id="aclass_light_handler_html_af79a4ecedccff396989ce48a77b57c78"><div class="ttname"><a href="class_light_handler.html#af79a4ecedccff396989ce48a77b57c78">LightHandler::getRefractionTwoSided</a></div><div class="ttdeci">int getRefractionTwoSided() const</div><div class="ttdoc">Return the two-sided refraction property.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:135</div></div>
-<div class="ttc" id="aclass_light_handler_html_aff6f35c7d5a72e20b6e67d2aa0c23939"><div class="ttname"><a href="class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939">LightHandler::setEnvRadianceMap</a></div><div class="ttdeci">void setEnvRadianceMap(ImagePtr map)</div><div class="ttdoc">Set the environment radiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:93</div></div>
+<div class="ttc" id="aclass_light_handler_html_a128724bc0413f87d313dea6796b1afad"><div class="ttname"><a href="class_light_handler.html#a128724bc0413f87d313dea6796b1afad">LightHandler::getUsePrefilteredMap</a></div><div class="ttdeci">bool getUsePrefilteredMap()</div><div class="ttdoc">Return whether to use the prefiltered environment lighting model.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:124</div></div>
+<div class="ttc" id="aclass_light_handler_html_a19d0bf31fbe458a8cc8f7600bc9d45d7"><div class="ttname"><a href="class_light_handler.html#a19d0bf31fbe458a8cc8f7600bc9d45d7">LightHandler::setDirectLighting</a></div><div class="ttdeci">void setDirectLighting(bool enable)</div><div class="ttdoc">Set whether direct lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:66</div></div>
+<div class="ttc" id="aclass_light_handler_html_a225d93115829c1626beb36f6ee03f59c"><div class="ttname"><a href="class_light_handler.html#a225d93115829c1626beb36f6ee03f59c">LightHandler::setEnvIrradianceMap</a></div><div class="ttdeci">void setEnvIrradianceMap(ImagePtr map)</div><div class="ttdoc">Set the environment irradiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:130</div></div>
+<div class="ttc" id="aclass_light_handler_html_a263f0bea291bb109b22e22bde145f3e9"><div class="ttname"><a href="class_light_handler.html#a263f0bea291bb109b22e22bde145f3e9">LightHandler::setEnvPrefilteredMap</a></div><div class="ttdeci">void setEnvPrefilteredMap(ImagePtr map)</div><div class="ttdoc">Set the environment radiance map for the prefiltered environment lighting model.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:106</div></div>
+<div class="ttc" id="aclass_light_handler_html_a2b6f107e940198087e4365c116d7e859"><div class="ttname"><a href="class_light_handler.html#a2b6f107e940198087e4365c116d7e859">LightHandler::setUsePrefilteredMap</a></div><div class="ttdeci">void setUsePrefilteredMap(bool val)</div><div class="ttdoc">Set whether to use the prefiltered environment lighting model.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:118</div></div>
+<div class="ttc" id="aclass_light_handler_html_a36a6d54880864f422b64c923d466a716"><div class="ttname"><a href="class_light_handler.html#a36a6d54880864f422b64c923d466a716">LightHandler::getEnvPrefilteredMap</a></div><div class="ttdeci">ImagePtr getEnvPrefilteredMap() const</div><div class="ttdoc">Return the environment radiance map for the prefiltered environment lighting model.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:112</div></div>
+<div class="ttc" id="aclass_light_handler_html_a3a88fe533a61b58c33e315538f3725c1"><div class="ttname"><a href="class_light_handler.html#a3a88fe533a61b58c33e315538f3725c1">LightHandler::getFirstLightOfCategory</a></div><div class="ttdeci">NodePtr getFirstLightOfCategory(const string &amp;category)</div><div class="ttdoc">Return the first light source, if any, of the given category.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:201</div></div>
+<div class="ttc" id="aclass_light_handler_html_a448ffdcb3cb739dcc69c8a408da25269"><div class="ttname"><a href="class_light_handler.html#a448ffdcb3cb739dcc69c8a408da25269">LightHandler::getDirectLighting</a></div><div class="ttdeci">bool getDirectLighting() const</div><div class="ttdoc">Return whether direct lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:72</div></div>
+<div class="ttc" id="aclass_light_handler_html_a5377397716900040cd22d27ce97b1e63"><div class="ttname"><a href="class_light_handler.html#a5377397716900040cd22d27ce97b1e63">LightHandler::getLightSources</a></div><div class="ttdeci">const vector&lt; NodePtr &gt; &amp; getLightSources() const</div><div class="ttdoc">Return the vector of light sources.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:195</div></div>
+<div class="ttc" id="aclass_light_handler_html_a59ecc3465f1fb6e012e43f4d9c79cf34"><div class="ttname"><a href="class_light_handler.html#a59ecc3465f1fb6e012e43f4d9c79cf34">LightHandler::create</a></div><div class="ttdeci">static LightHandlerPtr create()</div><div class="ttdoc">Create a new light handler.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:48</div></div>
+<div class="ttc" id="aclass_light_handler_html_a5d92e14b6ee56e8ac974d4c1ccf126bd"><div class="ttname"><a href="class_light_handler.html#a5d92e14b6ee56e8ac974d4c1ccf126bd">LightHandler::setEnvSampleCount</a></div><div class="ttdeci">void setEnvSampleCount(int count)</div><div class="ttdoc">Set the environment lighting sample count.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:142</div></div>
+<div class="ttc" id="aclass_light_handler_html_a5eba80ca3f2240a648537d661f9cca12"><div class="ttname"><a href="class_light_handler.html#a5eba80ca3f2240a648537d661f9cca12">LightHandler::getLightTransform</a></div><div class="ttdeci">Matrix44 getLightTransform() const</div><div class="ttdoc">Return the light transform.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:60</div></div>
+<div class="ttc" id="aclass_light_handler_html_a646c767d68b690b498395ead46a04792"><div class="ttname"><a href="class_light_handler.html#a646c767d68b690b498395ead46a04792">LightHandler::getEnvSampleCount</a></div><div class="ttdeci">int getEnvSampleCount() const</div><div class="ttdoc">Return the environment lighting sample count.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:148</div></div>
+<div class="ttc" id="aclass_light_handler_html_a7daad11991e6853d9956feec94a479bd"><div class="ttname"><a href="class_light_handler.html#a7daad11991e6853d9956feec94a479bd">LightHandler::setLightTransform</a></div><div class="ttdeci">void setLightTransform(const Matrix44 &amp;mat)</div><div class="ttdoc">Set the light transform.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:54</div></div>
+<div class="ttc" id="aclass_light_handler_html_a8be60de80636e85e45ffe30ef228cc6b"><div class="ttname"><a href="class_light_handler.html#a8be60de80636e85e45ffe30ef228cc6b">LightHandler::setLightSources</a></div><div class="ttdeci">void setLightSources(const vector&lt; NodePtr &gt; &amp;lights)</div><div class="ttdoc">Set the vector of light sources.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:189</div></div>
+<div class="ttc" id="aclass_light_handler_html_a94c0201f8d11bf0797f7c742ffab3caa"><div class="ttname"><a href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">LightHandler::setAlbedoTable</a></div><div class="ttdeci">void setAlbedoTable(ImagePtr table)</div><div class="ttdoc">Set the directional albedo table.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:170</div></div>
+<div class="ttc" id="aclass_light_handler_html_a9652dc682d2cd0c841601b4f3d030a2f"><div class="ttname"><a href="class_light_handler.html#a9652dc682d2cd0c841601b4f3d030a2f">LightHandler::getEnvRadianceMap</a></div><div class="ttdeci">ImagePtr getEnvRadianceMap() const</div><div class="ttdoc">Return the environment radiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:100</div></div>
+<div class="ttc" id="aclass_light_handler_html_a96a74b34556c524eec75fb32c50bbb7b"><div class="ttname"><a href="class_light_handler.html#a96a74b34556c524eec75fb32c50bbb7b">LightHandler::setIndirectLighting</a></div><div class="ttdeci">void setIndirectLighting(bool enable)</div><div class="ttdoc">Set whether indirect lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:78</div></div>
+<div class="ttc" id="aclass_light_handler_html_aa039fbf296d08b4f88677f1271d08437"><div class="ttname"><a href="class_light_handler.html#aa039fbf296d08b4f88677f1271d08437">LightHandler::getEnvIrradianceMap</a></div><div class="ttdeci">ImagePtr getEnvIrradianceMap() const</div><div class="ttdoc">Return the environment irradiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:136</div></div>
+<div class="ttc" id="aclass_light_handler_html_ab55f7ea2b6d2864fd83762e44c82073d"><div class="ttname"><a href="class_light_handler.html#ab55f7ea2b6d2864fd83762e44c82073d">LightHandler::getLightIdMap</a></div><div class="ttdeci">const std::unordered_map&lt; string, unsigned int &gt; &amp; getLightIdMap() const</div><div class="ttdoc">Get a list of identifiers associated with a given light nodedef.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:218</div></div>
+<div class="ttc" id="aclass_light_handler_html_ae4acca0bdcfe167d2dc6582a83ce64c9"><div class="ttname"><a href="class_light_handler.html#ae4acca0bdcfe167d2dc6582a83ce64c9">LightHandler::getAlbedoTable</a></div><div class="ttdeci">ImagePtr getAlbedoTable() const</div><div class="ttdoc">Return the directional albedo table.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:176</div></div>
+<div class="ttc" id="aclass_light_handler_html_aed297fee194a2edad52ce0dc53616d9c"><div class="ttname"><a href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">LightHandler::setRefractionTwoSided</a></div><div class="ttdeci">void setRefractionTwoSided(bool enable)</div><div class="ttdoc">Set the two-sided refraction property.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:154</div></div>
+<div class="ttc" id="aclass_light_handler_html_af25d8f4df38340fc0257df8d8c2a07cf"><div class="ttname"><a href="class_light_handler.html#af25d8f4df38340fc0257df8d8c2a07cf">LightHandler::getIndirectLighting</a></div><div class="ttdeci">bool getIndirectLighting() const</div><div class="ttdoc">Return whether indirect lighting is enabled.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:84</div></div>
+<div class="ttc" id="aclass_light_handler_html_af79a4ecedccff396989ce48a77b57c78"><div class="ttname"><a href="class_light_handler.html#af79a4ecedccff396989ce48a77b57c78">LightHandler::getRefractionTwoSided</a></div><div class="ttdeci">int getRefractionTwoSided() const</div><div class="ttdoc">Return the two-sided refraction property.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:160</div></div>
+<div class="ttc" id="aclass_light_handler_html_aff6f35c7d5a72e20b6e67d2aa0c23939"><div class="ttname"><a href="class_light_handler.html#aff6f35c7d5a72e20b6e67d2aa0c23939">LightHandler::setEnvRadianceMap</a></div><div class="ttdeci">void setEnvRadianceMap(ImagePtr map)</div><div class="ttdoc">Set the environment radiance map.</div><div class="ttdef"><b>Definition:</b> LightHandler.h:94</div></div>
 <div class="ttc" id="aclass_matrix44_html"><div class="ttname"><a href="class_matrix44.html">Matrix44</a></div><div class="ttdoc">A 4x4 matrix of floating-point values.</div><div class="ttdef"><b>Definition:</b> Types.h:656</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

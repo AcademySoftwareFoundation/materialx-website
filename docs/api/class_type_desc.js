@@ -12,5 +12,7 @@ var class_type_desc =
     [ "isFloat2", "class_type_desc.html#ae74ac2f007e335aa6d8f0ca8603581c6", null ],
     [ "isFloat3", "class_type_desc.html#a9c04bc9127639362581f76d5b5575c89", null ],
     [ "isFloat4", "class_type_desc.html#af7bc9ba6bed647c0439adb7e119955b3", null ],
-    [ "isScalar", "class_type_desc.html#a9482387ad3437420d3636203553ccfe4", null ]
+    [ "isScalar", "class_type_desc.html#a9482387ad3437420d3636203553ccfe4", null ],
+    [ "operator!=", "class_type_desc.html#abb49b1b1269f434a524653d38c76ed3d", null ],
+    [ "operator==", "class_type_desc.html#aa82f50ccc04a3380a82327eea1a3d5b8", null ]
 ];

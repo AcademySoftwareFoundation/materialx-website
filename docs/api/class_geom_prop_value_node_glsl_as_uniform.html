@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,8 @@ Inheritance diagram for GeomPropValueNodeGlslAsUniform:</div>
  <div class="center">
   <img src="class_geom_prop_value_node_glsl_as_uniform.png" usemap="#GeomPropValueNodeGlslAsUniform_map" alt=""/>
   <map id="GeomPropValueNodeGlslAsUniform_map" name="GeomPropValueNodeGlslAsUniform_map">
-<area href="class_glsl_implementation.html" title="Base class for common GLSL node implementations." alt="GlslImplementation" shape="rect" coords="0,56,213,80"/>
+<area href="class_glsl_implementation.html" title="Base class for common GLSL node implementations." alt="GlslImplementation" shape="rect" coords="0,112,213,136"/>
+<area href="class_hw_implementation.html" alt="HwImplementation" shape="rect" coords="0,56,213,80"/>
 <area href="class_shader_node_impl.html" title="Class handling the shader generation implementation for a node." alt="ShaderNodeImpl" shape="rect" coords="0,0,213,24"/>
   </map>
 </div></div>
@@ -126,9 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b6a1a7ea1d88588b6f49a1005f1c2ab inherit pub_methods_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_implementation.html#a0b6a1a7ea1d88588b6f49a1005f1c2ab">getTarget</a> () const override</td></tr>
 <tr class="memdesc:a0b6a1a7ea1d88588b6f49a1005f1c2ab inherit pub_methods_class_glsl_implementation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an identifier for the target used by this implementation.  <a href="class_glsl_implementation.html#a0b6a1a7ea1d88588b6f49a1005f1c2ab">More...</a><br /></td></tr>
 <tr class="separator:a0b6a1a7ea1d88588b6f49a1005f1c2ab inherit pub_methods_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8a151d9bb382d155b16036938e886c inherit pub_methods_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glsl_implementation.html#a3e8a151d9bb382d155b16036938e886c">isEditable</a> (const <a class="el" href="class_shader_input.html">ShaderInput</a> &amp;input) const override</td></tr>
-<tr class="memdesc:a3e8a151d9bb382d155b16036938e886c inherit pub_methods_class_glsl_implementation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if an input is editable by users.  <a href="class_glsl_implementation.html#a3e8a151d9bb382d155b16036938e886c">More...</a><br /></td></tr>
-<tr class="separator:a3e8a151d9bb382d155b16036938e886c inherit pub_methods_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_hw_implementation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_hw_implementation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_hw_implementation.html">HwImplementation</a></td></tr>
+<tr class="memitem:a3e8a151d9bb382d155b16036938e886c inherit pub_methods_class_hw_implementation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hw_implementation.html#a3e8a151d9bb382d155b16036938e886c">isEditable</a> (const <a class="el" href="class_shader_input.html">ShaderInput</a> &amp;input) const override</td></tr>
+<tr class="memdesc:a3e8a151d9bb382d155b16036938e886c inherit pub_methods_class_hw_implementation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if an input is editable by users.  <a href="class_hw_implementation.html#a3e8a151d9bb382d155b16036938e886c">More...</a><br /></td></tr>
+<tr class="separator:a3e8a151d9bb382d155b16036938e886c inherit pub_methods_class_hw_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_shader_node_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_shader_node_impl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a></td></tr>
 <tr class="memitem:a692cb100c22c74ebc3dc7feb2ba4f145 inherit pub_methods_class_shader_node_impl"><td class="memItemLeft" align="right" valign="top">virtual const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a692cb100c22c74ebc3dc7feb2ba4f145">getTarget</a> () const</td></tr>
 <tr class="memdesc:a692cb100c22c74ebc3dc7feb2ba4f145 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an identifier for the target used by this implementation.  <a href="class_shader_node_impl.html#a692cb100c22c74ebc3dc7feb2ba4f145">More...</a><br /></td></tr>
@@ -183,12 +185,12 @@ static <a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af60
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_class_glsl_implementation"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_glsl_implementation')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_glsl_implementation.html">GlslImplementation</a></td></tr>
-<tr class="memitem:ab11a1dda34491acff014ddfc9e6bafb8 inherit pro_types_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="ab11a1dda34491acff014ddfc9e6bafb8" name="ab11a1dda34491acff014ddfc9e6bafb8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Space</b> { <b>MODEL_SPACE</b> = 0
+<tr class="inherit_header pro_types_class_hw_implementation"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_hw_implementation')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_hw_implementation.html">HwImplementation</a></td></tr>
+<tr class="memitem:ab11a1dda34491acff014ddfc9e6bafb8 inherit pro_types_class_hw_implementation"><td class="memItemLeft" align="right" valign="top"><a id="ab11a1dda34491acff014ddfc9e6bafb8" name="ab11a1dda34491acff014ddfc9e6bafb8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Space</b> { <b>MODEL_SPACE</b> = 0
 , <b>OBJECT_SPACE</b> = 1
 , <b>WORLD_SPACE</b> = 2
  }</td></tr>
-<tr class="separator:ab11a1dda34491acff014ddfc9e6bafb8 inherit pro_types_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab11a1dda34491acff014ddfc9e6bafb8 inherit pro_types_class_hw_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_shader_node_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_shader_node_impl')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a></td></tr>
 <tr class="memitem:a11292c117ef8777c50299a500210820b inherit pro_methods_class_shader_node_impl"><td class="memItemLeft" align="right" valign="top"><a id="a11292c117ef8777c50299a500210820b" name="a11292c117ef8777c50299a500210820b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ShaderNodeImpl</b> ()</td></tr>
@@ -201,32 +203,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
 <tr class="memitem:ae059dfbd9014bb0672749a5fdb785c6e inherit pro_attribs_class_shader_node_impl"><td class="memItemLeft" align="right" valign="top"><a id="ae059dfbd9014bb0672749a5fdb785c6e" name="ae059dfbd9014bb0672749a5fdb785c6e"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_hash</b></td></tr>
 <tr class="separator:ae059dfbd9014bb0672749a5fdb785c6e inherit pro_attribs_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_class_glsl_implementation"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_glsl_implementation')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_glsl_implementation.html">GlslImplementation</a></td></tr>
-<tr class="memitem:a74a268311329928dba00cef2027c1488 inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a74a268311329928dba00cef2027c1488" name="a74a268311329928dba00cef2027c1488"></a>
+<tr class="inherit_header pro_static_attribs_class_hw_implementation"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_hw_implementation')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_hw_implementation.html">HwImplementation</a></td></tr>
+<tr class="memitem:a83d3306d3004c619b9df813721b78e7f inherit pro_static_attribs_class_hw_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a83d3306d3004c619b9df813721b78e7f" name="a83d3306d3004c619b9df813721b78e7f"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SPACE</b> = &quot;space&quot;</td></tr>
-<tr class="memdesc:a74a268311329928dba00cef2027c1488 inherit pro_static_attribs_class_glsl_implementation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal string constants. <br /></td></tr>
-<tr class="separator:a74a268311329928dba00cef2027c1488 inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68fef577d10424b9f9f45814b57c6e16 inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a68fef577d10424b9f9f45814b57c6e16" name="a68fef577d10424b9f9f45814b57c6e16"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TO_SPACE</b> = &quot;tospace&quot;</td></tr>
-<tr class="separator:a68fef577d10424b9f9f45814b57c6e16 inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa26a7067aa68af958227f3633d24f8 inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a7fa26a7067aa68af958227f3633d24f8" name="a7fa26a7067aa68af958227f3633d24f8"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>FROM_SPACE</b> = &quot;fromspace&quot;</td></tr>
-<tr class="separator:a7fa26a7067aa68af958227f3633d24f8 inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3afc385fd86eb7afbcfe8e9c4f744db2 inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a3afc385fd86eb7afbcfe8e9c4f744db2" name="a3afc385fd86eb7afbcfe8e9c4f744db2"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>WORLD</b> = &quot;world&quot;</td></tr>
-<tr class="separator:a3afc385fd86eb7afbcfe8e9c4f744db2 inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad28c3586fc9bf8aae8fb09322aaebaa1 inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="ad28c3586fc9bf8aae8fb09322aaebaa1" name="ad28c3586fc9bf8aae8fb09322aaebaa1"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>OBJECT</b> = &quot;object&quot;</td></tr>
-<tr class="separator:ad28c3586fc9bf8aae8fb09322aaebaa1 inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc597d7bf7375ce5041343302d498de inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a4fc597d7bf7375ce5041343302d498de" name="a4fc597d7bf7375ce5041343302d498de"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>MODEL</b> = &quot;model&quot;</td></tr>
-<tr class="separator:a4fc597d7bf7375ce5041343302d498de inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58874bf1728ddad38d02d762fc9ae624 inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a58874bf1728ddad38d02d762fc9ae624" name="a58874bf1728ddad38d02d762fc9ae624"></a>
+<tr class="memdesc:a83d3306d3004c619b9df813721b78e7f inherit pro_static_attribs_class_hw_implementation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal string constants. <br /></td></tr>
+<tr class="separator:a83d3306d3004c619b9df813721b78e7f inherit pro_static_attribs_class_hw_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58874bf1728ddad38d02d762fc9ae624 inherit pro_static_attribs_class_hw_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a58874bf1728ddad38d02d762fc9ae624" name="a58874bf1728ddad38d02d762fc9ae624"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INDEX</b> = &quot;index&quot;</td></tr>
-<tr class="separator:a58874bf1728ddad38d02d762fc9ae624 inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880ea45ed2183b99bf5c5dd972ea33da inherit pro_static_attribs_class_glsl_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a880ea45ed2183b99bf5c5dd972ea33da" name="a880ea45ed2183b99bf5c5dd972ea33da"></a>
+<tr class="separator:a58874bf1728ddad38d02d762fc9ae624 inherit pro_static_attribs_class_hw_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880ea45ed2183b99bf5c5dd972ea33da inherit pro_static_attribs_class_hw_implementation"><td class="memItemLeft" align="right" valign="top"><a id="a880ea45ed2183b99bf5c5dd972ea33da" name="a880ea45ed2183b99bf5c5dd972ea33da"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOMPROP</b> = &quot;geomprop&quot;</td></tr>
-<tr class="separator:a880ea45ed2183b99bf5c5dd972ea33da inherit pro_static_attribs_class_glsl_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a880ea45ed2183b99bf5c5dd972ea33da inherit pro_static_attribs_class_hw_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >GeomPropValue node non-implementation for GLSL. </p>

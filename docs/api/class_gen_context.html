@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>popClosureContext</b>
 <a class="el" href="class_closure_context.html">ClosureContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getClosureContext</b> ()</td></tr>
 <tr class="memdesc:ad6dafa40e8b876cee9f5c295aeb1e09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current closure context. <br /></td></tr>
 <tr class="separator:ad6dafa40e8b876cee9f5c295aeb1e09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f3112020b3dbdb2b4384ae747eecac"><td class="memItemLeft" align="right" valign="top"><a id="ad5f3112020b3dbdb2b4384ae747eecac" name="ad5f3112020b3dbdb2b4384ae747eecac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pushParentNode</b> (<a class="el" href="_node_8h.html#a6d909e094cae6750ec4597b5f4b22806">ConstNodePtr</a> node)</td></tr>
+<tr class="memdesc:ad5f3112020b3dbdb2b4384ae747eecac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a parent node onto the stack. <br /></td></tr>
+<tr class="separator:ad5f3112020b3dbdb2b4384ae747eecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f7fde93f1d781d752d30e9185d8666"><td class="memItemLeft" align="right" valign="top"><a id="a05f7fde93f1d781d752d30e9185d8666" name="a05f7fde93f1d781d752d30e9185d8666"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>popParentNode</b> ()</td></tr>
+<tr class="memdesc:a05f7fde93f1d781d752d30e9185d8666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop the current parent node from the stack. <br /></td></tr>
+<tr class="separator:a05f7fde93f1d781d752d30e9185d8666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b02ba03917a077ecd61245e7e5bd351"><td class="memItemLeft" align="right" valign="top"><a id="a0b02ba03917a077ecd61245e7e5bd351" name="a0b02ba03917a077ecd61245e7e5bd351"></a>
+const vector&lt; <a class="el" href="_node_8h.html#a6d909e094cae6750ec4597b5f4b22806">ConstNodePtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getParentNodes</b> ()</td></tr>
+<tr class="memdesc:a0b02ba03917a077ecd61245e7e5bd351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current stack of parent nodes. <br /></td></tr>
+<tr class="separator:a0b02ba03917a077ecd61245e7e5bd351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe445dca0e35adf621c544bf1d6058de"><td class="memItemLeft" align="right" valign="top"><a id="abe445dca0e35adf621c544bf1d6058de" name="abe445dca0e35adf621c544bf1d6058de"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pushUserData</b> (const string &amp;name, <a class="el" href="_gen_user_data_8h.html#aa02f3e2ec19aa88a3beb4f49ddc0c75b">GenUserDataPtr</a> data)</td></tr>
 <tr class="memdesc:abe445dca0e35adf621c544bf1d6058de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add user data to the context to make it available during shader generator. <br /></td></tr>
@@ -243,6 +255,9 @@ std::unordered_map&lt; const <a class="el" href="class_shader_output.html">Shade
 <tr class="memitem:af00fec4fd9265f79745bd25eb7fd7f00"><td class="memItemLeft" align="right" valign="top"><a id="af00fec4fd9265f79745bd25eb7fd7f00" name="af00fec4fd9265f79745bd25eb7fd7f00"></a>
 vector&lt; <a class="el" href="class_closure_context.html">ClosureContext</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_closureContexts</b></td></tr>
 <tr class="separator:af00fec4fd9265f79745bd25eb7fd7f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6491b7cc9f9d95312a478eee1e36238c"><td class="memItemLeft" align="right" valign="top"><a id="a6491b7cc9f9d95312a478eee1e36238c" name="a6491b7cc9f9d95312a478eee1e36238c"></a>
+vector&lt; <a class="el" href="_node_8h.html#a6d909e094cae6750ec4597b5f4b22806">ConstNodePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_parentNodes</b></td></tr>
+<tr class="separator:a6491b7cc9f9d95312a478eee1e36238c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7395aa7233889619ddd373a8e4ebb89a"><td class="memItemLeft" align="right" valign="top"><a id="a7395aa7233889619ddd373a8e4ebb89a" name="a7395aa7233889619ddd373a8e4ebb89a"></a>
 <a class="el" href="_gen_context_8h.html#a823c6f342cc32f292b5b2618cf4694dc">ApplicationVariableHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_applicationVariableHandler</b></td></tr>
 <tr class="separator:a7395aa7233889619ddd373a8e4ebb89a"><td class="memSeparator" colspan="2">&#160;</td></tr>

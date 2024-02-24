@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.8</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.9</span>
    </div>
   </td>
  </tr>
@@ -146,9 +146,24 @@ Installing MaterialX</h2>
 <p >Building the <code>install</code> target of your project will install the MaterialX C++ and Python libraries to the folder specified by the <code>CMAKE_INSTALL_PREFIX</code> setting, and will install MaterialX Python as a third-party library in your Python environment. Installation of MaterialX Python as a third-party library can be disabled by setting <code>MATERIALX_INSTALL_PYTHON</code> to <code>OFF</code>.</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 MaterialX Versioning</h2>
-<p >The MaterialX codebase uses a modified semantic versioning system where the <em>major</em> and <em>minor</em> versions match that of the corresponding MaterialX <a href="https://www.materialx.org/Specification.html">specification</a>, and the <em>build</em> version represents engineering advances within that specification version. MaterialX documents are similarly marked with the specification version they were authored in, and they are valid to load into any MaterialX codebase with an equal or higher specification version.</p>
-<p >Upgrading of MaterialX documents from earlier versions is handled at import time by the <a class="el" href="class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc" title="Upgrade the content of this document from earlier supported versions to the library version.">Document::upgradeVersion</a> method, which applies the syntax and node interface upgrades that have occurred in previous specification revisions. This allows the syntax conventions of MaterialX and the names and interfaces of nodes to evolve over time, without invalidating documents from earlier versions.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<p >The MaterialX codebase uses a modified semantic versioning system where the <em>major</em> and <em>minor</em> versions match that of the corresponding MaterialX <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/Specification/MaterialX.Specification.md">specification</a>, and the <em>build</em> version represents engineering advances within that specification version. MaterialX documents are similarly marked with the specification version they were authored in, and they are valid to load into any MaterialX codebase with an equal or higher specification version.</p>
+<p >Upgrading of MaterialX documents from earlier versions is handled at import time by the <code><a class="el" href="class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc" title="Upgrade the content of this document from earlier supported versions to the library version.">Document::upgradeVersion</a></code> method, which applies the syntax and node interface upgrades that have occurred in previous specification revisions. This allows the syntax conventions of MaterialX and the names and interfaces of nodes to evolve over time, without invalidating documents from earlier versions.</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+MaterialX API Changes</h3>
+<p >The following rules describe the categories of changes to the <a href="https://materialx.org/docs/api/classes.html">MaterialX API</a> that are allowed in version upgrades:</p>
+<ul>
+<li>In <em>build</em> version upgrades, only non-breaking changes to the MaterialX API are allowed. For any API call that is modified in a build version upgrade, backwards compatibility should be maintained using deprecated C++ and Python wrappers for the original API call.</li>
+<li>In <em>minor</em> and <em>major</em> version upgrades, breaking changes to the MaterialX API are allowed, though their benefit should be carefully weighed against their cost. Any breaking changes to API calls should be highlighted in the release notes for the new version.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md11"></a>
+MaterialX Data Library Changes</h3>
+<p >The following rules describe the categories of changes to the <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/libraries">MaterialX Data Libraries</a> that are allowed in version upgrades:</p>
+<ul>
+<li>In <em>build</em> version upgrades, only additive changes and fixes to the MaterialX data libraries are allowed. Additive changes are allowed to introduce new nodes, node versions, and node inputs with backwards-compatible default values. Data library fixes are allowed to update a node implementation to improve its alignment with the specification, without making any changes to its name or interface.</li>
+<li>In <em>minor</em> version upgrades, changes to the names and interfaces of MaterialX nodes are allowed, with the requirement that version upgrade logic be used to maintain the validity and visual interpretation of documents from earlier versions.</li>
+<li>In <em>major</em> version upgrades, changes to the syntax rules of MaterialX documents are allowed, with the requirement that version upgrade logic be used to maintain the validity and visual interpretation of documents from earlier versions. These changes usually require synchronized updates to both the MaterialX API and data libraries.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Additional Links</h2>
 <ul>
 <li>The main <a href="http://www.materialx.org">MaterialX website</a> provides background on the project's history, industry collaborations, and recent presentations.</li>

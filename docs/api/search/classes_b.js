@@ -5,6 +5,5 @@ var searchData=
   ['nodedef_2',['NodeDef',['../class_node_def.html',1,'']]],
   ['nodegraph_3',['NodeGraph',['../class_node_graph.html',1,'']]],
   ['nopnode_4',['NopNode',['../class_nop_node.html',1,'']]],
-  ['normalnodeglsl_5',['NormalNodeGlsl',['../class_normal_node_glsl.html',1,'']]],
-  ['numlightsnodeglsl_6',['NumLightsNodeGlsl',['../class_num_lights_node_glsl.html',1,'']]]
+  ['numlightsnodeglsl_5',['NumLightsNodeGlsl',['../class_num_lights_node_glsl.html',1,'']]]
 ];
