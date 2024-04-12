@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['newline_0',['NEWLINE',['../class_syntax.html#a7f7320e227a9834a211e5785e1b86092',1,'Syntax']]],
-  ['newline_1',['newLine',['../class_shader_stage.html#a24d44c9238b3bd0440c8e28f37616318',1,'ShaderStage']]],
+  ['newline_0',['newLine',['../class_shader_stage.html#a24d44c9238b3bd0440c8e28f37616318',1,'ShaderStage']]],
+  ['newline_1',['NEWLINE',['../class_syntax.html#a7f7320e227a9834a211e5785e1b86092',1,'Syntax']]],
   ['newlineelement_2',['NewlineElement',['../class_newline_element.html',1,'']]],
   ['newlineelementptr_3',['NewlineElementPtr',['../_element_8h.html#a490ae3ec2022f9fd5edd2c2f1be1785e',1,'Element.h']]],
   ['node_4',['Node',['../class_node.html',1,'']]],
