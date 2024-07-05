@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -125,28 +125,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99f1d24f06070e010ff0a9310f52a9cc"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">getSourceFileExtension</a> () const override</td></tr>
 <tr class="memdesc:a99f1d24f06070e010ff0a9310f52a9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file extension used for source code files in this language.  <a href="class_mdl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">More...</a><br /></td></tr>
 <tr class="separator:a99f1d24f06070e010ff0a9310f52a9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1ee52e8e669be54583d37a3d0b66b4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#abf1ee52e8e669be54583d37a3d0b66b4">getSwizzledVariable</a> (const string &amp;srcName, const <a class="el" href="class_type_desc.html">TypeDesc</a> *srcType, const string &amp;channels, const <a class="el" href="class_type_desc.html">TypeDesc</a> *dstType) const override</td></tr>
-<tr class="memdesc:abf1ee52e8e669be54583d37a3d0b66b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get syntax for a swizzled variable.  <a href="class_mdl_syntax.html#abf1ee52e8e669be54583d37a3d0b66b4">More...</a><br /></td></tr>
-<tr class="separator:abf1ee52e8e669be54583d37a3d0b66b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a033980e5621a07f682cd392f78cc3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#ad7a033980e5621a07f682cd392f78cc3">getArrayTypeSuffix</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const <a class="el" href="class_value.html">Value</a> &amp;value) const override</td></tr>
-<tr class="memdesc:ad7a033980e5621a07f682cd392f78cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to return array type suffix.  <a href="class_mdl_syntax.html#ad7a033980e5621a07f682cd392f78cc3">More...</a><br /></td></tr>
-<tr class="separator:ad7a033980e5621a07f682cd392f78cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabdc670ff61e8284b1a3e54c4c1216ab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#aabdc670ff61e8284b1a3e54c4c1216ab">getArrayVariableSuffix</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *, const <a class="el" href="class_value.html">Value</a> &amp;) const override</td></tr>
-<tr class="memdesc:aabdc670ff61e8284b1a3e54c4c1216ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to indicate array variables have no array suffix.  <a href="class_mdl_syntax.html#aabdc670ff61e8284b1a3e54c4c1216ab">More...</a><br /></td></tr>
-<tr class="separator:aabdc670ff61e8284b1a3e54c4c1216ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b8c5fa3a380cc3dbc92a7b007c710e"><td class="memItemLeft" align="right" valign="top"><a id="a79b8c5fa3a380cc3dbc92a7b007c710e" name="a79b8c5fa3a380cc3dbc92a7b007c710e"></a>
-const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getEnumeratedType</b> (const string &amp;value) const</td></tr>
-<tr class="memdesc:a79b8c5fa3a380cc3dbc92a7b007c710e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an type description for an enumeration based on member value. <br /></td></tr>
-<tr class="separator:a79b8c5fa3a380cc3dbc92a7b007c710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b7a7675f665b1558217b843c22b498b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#a6b7a7675f665b1558217b843c22b498b">remapEnumeration</a> (const string &amp;value, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;enumNames, std::pair&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;result) const override</td></tr>
-<tr class="memdesc:a6b7a7675f665b1558217b843c22b498b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator.  <a href="class_mdl_syntax.html#a6b7a7675f665b1558217b843c22b498b">More...</a><br /></td></tr>
-<tr class="separator:a6b7a7675f665b1558217b843c22b498b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e3b2867770bcdc2c812cf067a1e1f0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#aa7e3b2867770bcdc2c812cf067a1e1f0">getArrayTypeSuffix</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type, const <a class="el" href="class_value.html">Value</a> &amp;value) const override</td></tr>
+<tr class="memdesc:aa7e3b2867770bcdc2c812cf067a1e1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to return array type suffix.  <a href="class_mdl_syntax.html#aa7e3b2867770bcdc2c812cf067a1e1f0">More...</a><br /></td></tr>
+<tr class="separator:aa7e3b2867770bcdc2c812cf067a1e1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2acf6fd6559760b41088c31ea1a0ce"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#aea2acf6fd6559760b41088c31ea1a0ce">getArrayVariableSuffix</a> (<a class="el" href="class_type_desc.html">TypeDesc</a>, const <a class="el" href="class_value.html">Value</a> &amp;) const override</td></tr>
+<tr class="memdesc:aea2acf6fd6559760b41088c31ea1a0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to indicate array variables have no array suffix.  <a href="class_mdl_syntax.html#aea2acf6fd6559760b41088c31ea1a0ce">More...</a><br /></td></tr>
+<tr class="separator:aea2acf6fd6559760b41088c31ea1a0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbface271a1152cc7c03d332451406c9"><td class="memItemLeft" align="right" valign="top"><a id="afbface271a1152cc7c03d332451406c9" name="afbface271a1152cc7c03d332451406c9"></a>
+<a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getEnumeratedType</b> (const string &amp;value) const</td></tr>
+<tr class="memdesc:afbface271a1152cc7c03d332451406c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an type description for an enumeration based on member value. <br /></td></tr>
+<tr class="separator:afbface271a1152cc7c03d332451406c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5c302617c9a17ff061bf7e5a873471"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">remapEnumeration</a> (const string &amp;value, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;enumNames, std::pair&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;result) const override</td></tr>
+<tr class="memdesc:a1f5c302617c9a17ff061bf7e5a873471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator.  <a href="class_mdl_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">More...</a><br /></td></tr>
+<tr class="separator:a1f5c302617c9a17ff061bf7e5a873471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66ee79aebdf2070982505afeeb18464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdl_syntax.html#ac66ee79aebdf2070982505afeeb18464">makeValidName</a> (string &amp;name) const override</td></tr>
 <tr class="memdesc:ac66ee79aebdf2070982505afeeb18464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the given name string to remove any invalid characters or tokens.  <a href="class_mdl_syntax.html#ac66ee79aebdf2070982505afeeb18464">More...</a><br /></td></tr>
 <tr class="separator:ac66ee79aebdf2070982505afeeb18464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_syntax"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_syntax')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
-<tr class="memitem:a3d2b1b73edba152cc3fee7a0a878d5ca inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a3d2b1b73edba152cc3fee7a0a878d5ca">registerTypeSyntax</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> syntax)</td></tr>
-<tr class="memdesc:a3d2b1b73edba152cc3fee7a0a878d5ca inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register syntax handling for a data type.  <a href="class_syntax.html#a3d2b1b73edba152cc3fee7a0a878d5ca">More...</a><br /></td></tr>
+<tr class="memitem:a6c2138c8b7ebb75dc3dc411cae5fd796 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a6c2138c8b7ebb75dc3dc411cae5fd796">registerTypeSyntax</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type, <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> syntax)</td></tr>
+<tr class="memdesc:a6c2138c8b7ebb75dc3dc411cae5fd796 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register syntax handling for a data type.  <a href="class_syntax.html#a6c2138c8b7ebb75dc3dc411cae5fd796">More...</a><br /></td></tr>
+<tr class="separator:a6c2138c8b7ebb75dc3dc411cae5fd796 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2b1b73edba152cc3fee7a0a878d5ca inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a3d2b1b73edba152cc3fee7a0a878d5ca" name="a3d2b1b73edba152cc3fee7a0a878d5ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerTypeSyntax</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> syntax)</td></tr>
 <tr class="separator:a3d2b1b73edba152cc3fee7a0a878d5ca inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a564278d6f8c89c0b3e2daf1cb8f64a55 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a564278d6f8c89c0b3e2daf1cb8f64a55">registerReservedWords</a> (const <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> &amp;names)</td></tr>
 <tr class="memdesc:a564278d6f8c89c0b3e2daf1cb8f64a55 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register names that are reserved words not to be used by a code generator when naming variables and functions.  <a href="class_syntax.html#a564278d6f8c89c0b3e2daf1cb8f64a55">More...</a><br /></td></tr>
@@ -162,49 +162,60 @@ const <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760
 const <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInvalidTokens</b> () const</td></tr>
 <tr class="memdesc:a4384dc197efa4f9c7424648baeb45572 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a mapping from disallowed tokens to replacement strings for this language syntax. <br /></td></tr>
 <tr class="separator:a4384dc197efa4f9c7424648baeb45572 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a140d3c5d55e61e4bc015aa782f0124 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_type_syntax.html">TypeSyntax</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a8a140d3c5d55e61e4bc015aa782f0124">getTypeSyntax</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
-<tr class="memdesc:a8a140d3c5d55e61e4bc015aa782f0124 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type syntax object for a named type.  <a href="class_syntax.html#a8a140d3c5d55e61e4bc015aa782f0124">More...</a><br /></td></tr>
+<tr class="memitem:ab8546b422604c52b03baee11fdf62f1e inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_type_syntax.html">TypeSyntax</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#ab8546b422604c52b03baee11fdf62f1e">getTypeSyntax</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type) const</td></tr>
+<tr class="memdesc:ab8546b422604c52b03baee11fdf62f1e inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type syntax object for a named type.  <a href="class_syntax.html#ab8546b422604c52b03baee11fdf62f1e">More...</a><br /></td></tr>
+<tr class="separator:ab8546b422604c52b03baee11fdf62f1e inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a140d3c5d55e61e4bc015aa782f0124 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a8a140d3c5d55e61e4bc015aa782f0124" name="a8a140d3c5d55e61e4bc015aa782f0124"></a>
+const <a class="el" href="class_type_syntax.html">TypeSyntax</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeSyntax</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
 <tr class="separator:a8a140d3c5d55e61e4bc015aa782f0124 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee76c8c2885a4bffb36e5981fbac8ea inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a3ee76c8c2885a4bffb36e5981fbac8ea" name="a3ee76c8c2885a4bffb36e5981fbac8ea"></a>
 const vector&lt; <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeSyntaxes</b> () const</td></tr>
 <tr class="memdesc:a3ee76c8c2885a4bffb36e5981fbac8ea inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of all registered type syntax objects. <br /></td></tr>
 <tr class="separator:a3ee76c8c2885a4bffb36e5981fbac8ea inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca123b828eac6d1e83c10f4006354ef inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a0ca123b828eac6d1e83c10f4006354ef">getTypeDescription</a> (const <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> &amp;typeSyntax) const</td></tr>
-<tr class="memdesc:a0ca123b828eac6d1e83c10f4006354ef inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a type description given a type syntax.  <a href="class_syntax.html#a0ca123b828eac6d1e83c10f4006354ef">More...</a><br /></td></tr>
-<tr class="separator:a0ca123b828eac6d1e83c10f4006354ef inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ab1460cc69f59fcf6a6deddcc616cd inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="ab5ab1460cc69f59fcf6a6deddcc616cd" name="ab5ab1460cc69f59fcf6a6deddcc616cd"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeName</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> type) const</td></tr>
+<tr class="memdesc:ab5ab1460cc69f59fcf6a6deddcc616cd inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name syntax of the given type. <br /></td></tr>
+<tr class="separator:ab5ab1460cc69f59fcf6a6deddcc616cd inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58eaa6d4ac122c06864813f53065ef4 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af58eaa6d4ac122c06864813f53065ef4" name="af58eaa6d4ac122c06864813f53065ef4"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeName</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
-<tr class="memdesc:af58eaa6d4ac122c06864813f53065ef4 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name syntax of the given type. <br /></td></tr>
 <tr class="separator:af58eaa6d4ac122c06864813f53065ef4 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854b1737eb6a3615ef6adfb6acdd531e inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a854b1737eb6a3615ef6adfb6acdd531e" name="a854b1737eb6a3615ef6adfb6acdd531e"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getOutputTypeName</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> type) const</td></tr>
+<tr class="memdesc:a854b1737eb6a3615ef6adfb6acdd531e inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type name in an output context. <br /></td></tr>
+<tr class="separator:a854b1737eb6a3615ef6adfb6acdd531e inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af537066cbc74363bd281a33e98f00735 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af537066cbc74363bd281a33e98f00735" name="af537066cbc74363bd281a33e98f00735"></a>
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getOutputTypeName</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
-<tr class="memdesc:af537066cbc74363bd281a33e98f00735 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type name in an output context. <br /></td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getOutputTypeName</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
 <tr class="separator:af537066cbc74363bd281a33e98f00735 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd14f88523683d8fd3c19e599137350 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#acdd14f88523683d8fd3c19e599137350">getTypeAlias</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
-<tr class="memdesc:acdd14f88523683d8fd3c19e599137350 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a type alias for the given data type.  <a href="class_syntax.html#acdd14f88523683d8fd3c19e599137350">More...</a><br /></td></tr>
+<tr class="memitem:a5077e8718647459c31e75e95b7c9c3f7 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a5077e8718647459c31e75e95b7c9c3f7">getTypeAlias</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type) const</td></tr>
+<tr class="memdesc:a5077e8718647459c31e75e95b7c9c3f7 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a type alias for the given data type.  <a href="class_syntax.html#a5077e8718647459c31e75e95b7c9c3f7">More...</a><br /></td></tr>
+<tr class="separator:a5077e8718647459c31e75e95b7c9c3f7 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd14f88523683d8fd3c19e599137350 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="acdd14f88523683d8fd3c19e599137350" name="acdd14f88523683d8fd3c19e599137350"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeAlias</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
 <tr class="separator:acdd14f88523683d8fd3c19e599137350 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735a3857a111654cab4ff903d3b5e12e inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a735a3857a111654cab4ff903d3b5e12e">getTypeDefinition</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
-<tr class="memdesc:a735a3857a111654cab4ff903d3b5e12e inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a custom type definition if needed for the given data type.  <a href="class_syntax.html#a735a3857a111654cab4ff903d3b5e12e">More...</a><br /></td></tr>
+<tr class="memitem:a547ce4526faecedb1749ef6b41b4d99d inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a547ce4526faecedb1749ef6b41b4d99d">getTypeDefinition</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type) const</td></tr>
+<tr class="memdesc:a547ce4526faecedb1749ef6b41b4d99d inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a custom type definition if needed for the given data type.  <a href="class_syntax.html#a547ce4526faecedb1749ef6b41b4d99d">More...</a><br /></td></tr>
+<tr class="separator:a547ce4526faecedb1749ef6b41b4d99d inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735a3857a111654cab4ff903d3b5e12e inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a735a3857a111654cab4ff903d3b5e12e" name="a735a3857a111654cab4ff903d3b5e12e"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeDefinition</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
 <tr class="separator:a735a3857a111654cab4ff903d3b5e12e inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325132e3261af718806b8b812bc302df inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a325132e3261af718806b8b812bc302df" name="a325132e3261af718806b8b812bc302df"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultValue</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> type, bool uniform=false) const</td></tr>
+<tr class="memdesc:a325132e3261af718806b8b812bc302df inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default value string for the given type. <br /></td></tr>
+<tr class="separator:a325132e3261af718806b8b812bc302df inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a092566a8c4c5193e7a860062b163923e inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a092566a8c4c5193e7a860062b163923e" name="a092566a8c4c5193e7a860062b163923e"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultValue</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, bool uniform=false) const</td></tr>
-<tr class="memdesc:a092566a8c4c5193e7a860062b163923e inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default value string for the given type. <br /></td></tr>
 <tr class="separator:a092566a8c4c5193e7a860062b163923e inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf56abbcc3b25745ea61dfa21c528ee inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="afaf56abbcc3b25745ea61dfa21c528ee" name="afaf56abbcc3b25745ea61dfa21c528ee"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> type, const <a class="el" href="class_value.html">Value</a> &amp;value, bool uniform=false) const</td></tr>
+<tr class="memdesc:afaf56abbcc3b25745ea61dfa21c528ee inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value string for a given type and value object. <br /></td></tr>
+<tr class="separator:afaf56abbcc3b25745ea61dfa21c528ee inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1db383f350afd37ff5c13e512734250 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af1db383f350afd37ff5c13e512734250" name="af1db383f350afd37ff5c13e512734250"></a>
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const <a class="el" href="class_value.html">Value</a> &amp;value, bool uniform=false) const</td></tr>
-<tr class="memdesc:af1db383f350afd37ff5c13e512734250 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value string for a given type and value object. <br /></td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const <a class="el" href="class_value.html">Value</a> &amp;value, bool uniform=false) const</td></tr>
 <tr class="separator:af1db383f350afd37ff5c13e512734250 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54bc51937e25ef019575391072ad4a7b inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a54bc51937e25ef019575391072ad4a7b" name="a54bc51937e25ef019575391072ad4a7b"></a>
+<tr class="memitem:a1205aed96e9ea25c09dcd8b3222ea14e inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a1205aed96e9ea25c09dcd8b3222ea14e" name="a1205aed96e9ea25c09dcd8b3222ea14e"></a>
 virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> (const <a class="el" href="class_shader_port.html">ShaderPort</a> *port, bool uniform=false) const</td></tr>
-<tr class="memdesc:a54bc51937e25ef019575391072ad4a7b inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value string for a given shader port object. <br /></td></tr>
-<tr class="separator:a54bc51937e25ef019575391072ad4a7b inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e3e95819ab9dbfcf05d1dc2036ee8d inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#ac6e3e95819ab9dbfcf05d1dc2036ee8d">getSwizzledVariable</a> (const string &amp;srcName, const <a class="el" href="class_type_desc.html">TypeDesc</a> *srcType, const string &amp;channels, const <a class="el" href="class_type_desc.html">TypeDesc</a> *dstType) const</td></tr>
-<tr class="memdesc:ac6e3e95819ab9dbfcf05d1dc2036ee8d inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get syntax for a swizzled variable.  <a href="class_syntax.html#ac6e3e95819ab9dbfcf05d1dc2036ee8d">More...</a><br /></td></tr>
-<tr class="separator:ac6e3e95819ab9dbfcf05d1dc2036ee8d inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25c77bc6c2033cc4346c0acc11fca014 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a25c77bc6c2033cc4346c0acc11fca014" name="a25c77bc6c2033cc4346c0acc11fca014"></a>
-virtual <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getSwizzledValue</b> (<a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> value, const <a class="el" href="class_type_desc.html">TypeDesc</a> *srcType, const string &amp;channels, const <a class="el" href="class_type_desc.html">TypeDesc</a> *dstType) const</td></tr>
-<tr class="memdesc:a25c77bc6c2033cc4346c0acc11fca014 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get swizzled value. <br /></td></tr>
-<tr class="separator:a25c77bc6c2033cc4346c0acc11fca014 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a1205aed96e9ea25c09dcd8b3222ea14e inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value string for a given shader port object. <br /></td></tr>
+<tr class="separator:a1205aed96e9ea25c09dcd8b3222ea14e inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb752cb38cb0fcbfa5f958056d83ef5c inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#aeb752cb38cb0fcbfa5f958056d83ef5c">getInputQualifier</a> () const</td></tr>
 <tr class="memdesc:aeb752cb38cb0fcbfa5f958056d83ef5c inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a type qualifier to be used when declaring types for input variables.  <a href="class_syntax.html#aeb752cb38cb0fcbfa5f958056d83ef5c">More...</a><br /></td></tr>
 <tr class="separator:aeb752cb38cb0fcbfa5f958056d83ef5c inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,28 +259,37 @@ virtual const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a2aaf762261e6c126f5184d96a22d0d47 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a2aaf762261e6c126f5184d96a22d0d47">getSourceFileExtension</a> () const =0</td></tr>
 <tr class="memdesc:a2aaf762261e6c126f5184d96a22d0d47 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file extension used for source code files in this language.  <a href="class_syntax.html#a2aaf762261e6c126f5184d96a22d0d47">More...</a><br /></td></tr>
 <tr class="separator:a2aaf762261e6c126f5184d96a22d0d47 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad01be6734e3bbc1ff23b51a24c7afd0f inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#ad01be6734e3bbc1ff23b51a24c7afd0f">getArrayTypeSuffix</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *, const <a class="el" href="class_value.html">Value</a> &amp;) const</td></tr>
-<tr class="memdesc:ad01be6734e3bbc1ff23b51a24c7afd0f inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the array suffix to use for declaring an array type.  <a href="class_syntax.html#ad01be6734e3bbc1ff23b51a24c7afd0f">More...</a><br /></td></tr>
-<tr class="separator:ad01be6734e3bbc1ff23b51a24c7afd0f inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ac418a11dde185762f7a16387665ae inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#aa4ac418a11dde185762f7a16387665ae">getArrayVariableSuffix</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const <a class="el" href="class_value.html">Value</a> &amp;value) const</td></tr>
-<tr class="memdesc:aa4ac418a11dde185762f7a16387665ae inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the array suffix to use for declaring an array variable.  <a href="class_syntax.html#aa4ac418a11dde185762f7a16387665ae">More...</a><br /></td></tr>
+<tr class="memitem:a0f4c920c269ce549b88d1a0f2f6d2d07 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a0f4c920c269ce549b88d1a0f2f6d2d07">getArrayTypeSuffix</a> (<a class="el" href="class_type_desc.html">TypeDesc</a>, const <a class="el" href="class_value.html">Value</a> &amp;) const</td></tr>
+<tr class="memdesc:a0f4c920c269ce549b88d1a0f2f6d2d07 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the array suffix to use for declaring an array type.  <a href="class_syntax.html#a0f4c920c269ce549b88d1a0f2f6d2d07">More...</a><br /></td></tr>
+<tr class="separator:a0f4c920c269ce549b88d1a0f2f6d2d07 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bbf17695680bea9b23e67cdef3d99d inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af7bbf17695680bea9b23e67cdef3d99d" name="af7bbf17695680bea9b23e67cdef3d99d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getArrayTypeSuffix</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const <a class="el" href="class_value.html">Value</a> &amp;value) const</td></tr>
+<tr class="separator:af7bbf17695680bea9b23e67cdef3d99d inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c86575bb959985b133fa45e4386c723 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a0c86575bb959985b133fa45e4386c723">getArrayVariableSuffix</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type, const <a class="el" href="class_value.html">Value</a> &amp;value) const</td></tr>
+<tr class="memdesc:a0c86575bb959985b133fa45e4386c723 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the array suffix to use for declaring an array variable.  <a href="class_syntax.html#a0c86575bb959985b133fa45e4386c723">More...</a><br /></td></tr>
+<tr class="separator:a0c86575bb959985b133fa45e4386c723 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ac418a11dde185762f7a16387665ae inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="aa4ac418a11dde185762f7a16387665ae" name="aa4ac418a11dde185762f7a16387665ae"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getArrayVariableSuffix</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const <a class="el" href="class_value.html">Value</a> &amp;value) const</td></tr>
 <tr class="separator:aa4ac418a11dde185762f7a16387665ae inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8efd953778bec4b51a49312aaf3ef31 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#ab8efd953778bec4b51a49312aaf3ef31">typeSupported</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
-<tr class="memdesc:ab8efd953778bec4b51a49312aaf3ef31 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if given type is suppored in the syntax.  <a href="class_syntax.html#ab8efd953778bec4b51a49312aaf3ef31">More...</a><br /></td></tr>
-<tr class="separator:ab8efd953778bec4b51a49312aaf3ef31 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accbe9a62f50bda40a3d82633080703bd inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#accbe9a62f50bda40a3d82633080703bd">makeValidName</a> (string &amp;name) const</td></tr>
-<tr class="memdesc:accbe9a62f50bda40a3d82633080703bd inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the given name string to remove any invalid characters or tokens.  <a href="class_syntax.html#accbe9a62f50bda40a3d82633080703bd">More...</a><br /></td></tr>
-<tr class="separator:accbe9a62f50bda40a3d82633080703bd inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a2dc8ee84a28f290d1c37c6ca4c79f inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a25a2dc8ee84a28f290d1c37c6ca4c79f" name="a25a2dc8ee84a28f290d1c37c6ca4c79f"></a>
+<tr class="memitem:a52fef4d311323911570ae854f45ee28b inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a52fef4d311323911570ae854f45ee28b">typeSupported</a> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *type) const</td></tr>
+<tr class="memdesc:a52fef4d311323911570ae854f45ee28b inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if given type is suppored in the syntax.  <a href="class_syntax.html#a52fef4d311323911570ae854f45ee28b">More...</a><br /></td></tr>
+<tr class="separator:a52fef4d311323911570ae854f45ee28b inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43551baa1a68a7f1872ceda9c3bcce1b inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a43551baa1a68a7f1872ceda9c3bcce1b">makeValidName</a> (string &amp;name) const</td></tr>
+<tr class="memdesc:a43551baa1a68a7f1872ceda9c3bcce1b inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the given name string to remove any invalid characters or tokens.  <a href="class_syntax.html#a43551baa1a68a7f1872ceda9c3bcce1b">More...</a><br /></td></tr>
+<tr class="separator:a43551baa1a68a7f1872ceda9c3bcce1b inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91877de409aad92601091338eac47eb inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af91877de409aad92601091338eac47eb" name="af91877de409aad92601091338eac47eb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>makeIdentifier</b> (string &amp;name, <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;identifiers) const</td></tr>
-<tr class="memdesc:a25a2dc8ee84a28f290d1c37c6ca4c79f inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the given name is a unique identifier, updating it if needed to make it unique. <br /></td></tr>
-<tr class="separator:a25a2dc8ee84a28f290d1c37c6ca4c79f inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8769347757565e5da262248636e3c47b inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a8769347757565e5da262248636e3c47b">getVariableName</a> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;identifiers) const</td></tr>
-<tr class="memdesc:a8769347757565e5da262248636e3c47b inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique identifier for the given variable name and type.  <a href="class_syntax.html#a8769347757565e5da262248636e3c47b">More...</a><br /></td></tr>
+<tr class="memdesc:af91877de409aad92601091338eac47eb inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the given name is a unique identifier, updating it if needed to make it unique. <br /></td></tr>
+<tr class="separator:af91877de409aad92601091338eac47eb inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6646bf6b4f57d8db4d5ef4f9547369f5 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a6646bf6b4f57d8db4d5ef4f9547369f5">getVariableName</a> (const string &amp;name, <a class="el" href="class_type_desc.html">TypeDesc</a> type, <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;identifiers) const</td></tr>
+<tr class="memdesc:a6646bf6b4f57d8db4d5ef4f9547369f5 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique identifier for the given variable name and type.  <a href="class_syntax.html#a6646bf6b4f57d8db4d5ef4f9547369f5">More...</a><br /></td></tr>
+<tr class="separator:a6646bf6b4f57d8db4d5ef4f9547369f5 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8769347757565e5da262248636e3c47b inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a8769347757565e5da262248636e3c47b" name="a8769347757565e5da262248636e3c47b"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getVariableName</b> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;identifiers) const</td></tr>
 <tr class="separator:a8769347757565e5da262248636e3c47b inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e1bad1c9d76d0562b2b619002d944f inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a18e1bad1c9d76d0562b2b619002d944f">remapEnumeration</a> (const string &amp;value, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;enumNames, std::pair&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;result) const</td></tr>
-<tr class="memdesc:a18e1bad1c9d76d0562b2b619002d944f inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator.  <a href="class_syntax.html#a18e1bad1c9d76d0562b2b619002d944f">More...</a><br /></td></tr>
-<tr class="separator:a18e1bad1c9d76d0562b2b619002d944f inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc26f067af904b0d2bb7a90813c2b265 inherit pub_methods_class_syntax"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#afc26f067af904b0d2bb7a90813c2b265">remapEnumeration</a> (const string &amp;value, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;enumNames, std::pair&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;result) const</td></tr>
+<tr class="memdesc:afc26f067af904b0d2bb7a90813c2b265 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator.  <a href="class_syntax.html#afc26f067af904b0d2bb7a90813c2b265">More...</a><br /></td></tr>
+<tr class="separator:afc26f067af904b0d2bb7a90813c2b265 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -280,57 +300,57 @@ static <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">Sy
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4da1c36c2738473499a50f6a9fdbf51d"><td class="memItemLeft" align="right" valign="top"><a id="a4da1c36c2738473499a50f6a9fdbf51d" name="a4da1c36c2738473499a50f6a9fdbf51d"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CONST_QUALIFIER</b> = &quot;&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CONST_QUALIFIER</b></td></tr>
 <tr class="separator:a4da1c36c2738473499a50f6a9fdbf51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10749096d46a479d61184cd05ec387a2"><td class="memItemLeft" align="right" valign="top"><a id="a10749096d46a479d61184cd05ec387a2" name="a10749096d46a479d61184cd05ec387a2"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>UNIFORM_QUALIFIER</b> = &quot;uniform&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>UNIFORM_QUALIFIER</b></td></tr>
 <tr class="separator:a10749096d46a479d61184cd05ec387a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b36c85a17e69b86431dc8d49ea4b527"><td class="memItemLeft" align="right" valign="top"><a id="a8b36c85a17e69b86431dc8d49ea4b527" name="a8b36c85a17e69b86431dc8d49ea4b527"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SOURCE_FILE_EXTENSION</b> = &quot;.mdl&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SOURCE_FILE_EXTENSION</b></td></tr>
 <tr class="separator:a8b36c85a17e69b86431dc8d49ea4b527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31345c7003c94b80edcb348e414591af"><td class="memItemLeft" align="right" valign="top"><a id="a31345c7003c94b80edcb348e414591af" name="a31345c7003c94b80edcb348e414591af"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR2_MEMBERS</b> = { &quot;.x&quot;, &quot;.y&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR2_MEMBERS</b></td></tr>
 <tr class="separator:a31345c7003c94b80edcb348e414591af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad642450b6fd3dd103e8f4b1365cba292"><td class="memItemLeft" align="right" valign="top"><a id="ad642450b6fd3dd103e8f4b1365cba292" name="ad642450b6fd3dd103e8f4b1365cba292"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR3_MEMBERS</b> = { &quot;.x&quot;, &quot;.y&quot;, &quot;.z&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR3_MEMBERS</b></td></tr>
 <tr class="separator:ad642450b6fd3dd103e8f4b1365cba292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1b8ff48d5c5afc8e49798c660428fd"><td class="memItemLeft" align="right" valign="top"><a id="a1a1b8ff48d5c5afc8e49798c660428fd" name="a1a1b8ff48d5c5afc8e49798c660428fd"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR4_MEMBERS</b> = { &quot;.x&quot;, &quot;.y&quot;, &quot;.z&quot;, &quot;.w&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR4_MEMBERS</b></td></tr>
 <tr class="separator:a1a1b8ff48d5c5afc8e49798c660428fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf450555b3ba3113a9185faacd632b9"><td class="memItemLeft" align="right" valign="top"><a id="a0bf450555b3ba3113a9185faacd632b9" name="a0bf450555b3ba3113a9185faacd632b9"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR3_MEMBERS</b> = { &quot;.x&quot;, &quot;.y&quot;, &quot;.z&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR3_MEMBERS</b></td></tr>
 <tr class="separator:a0bf450555b3ba3113a9185faacd632b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ce66e8bdf10464dc9595f63dc891d3"><td class="memItemLeft" align="right" valign="top"><a id="af2ce66e8bdf10464dc9595f63dc891d3" name="af2ce66e8bdf10464dc9595f63dc891d3"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR4_MEMBERS</b> = { &quot;.x&quot;, &quot;.y&quot;, &quot;.z&quot;, &quot;.a&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR4_MEMBERS</b></td></tr>
 <tr class="separator:af2ce66e8bdf10464dc9595f63dc891d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7cf506d0f0aab13c3c04e98c063fe87"><td class="memItemLeft" align="right" valign="top"><a id="aa7cf506d0f0aab13c3c04e98c063fe87" name="aa7cf506d0f0aab13c3c04e98c063fe87"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ADDRESSMODE_MEMBERS</b> = { &quot;constant&quot;, &quot;clamp&quot;, &quot;periodic&quot;, &quot;mirror&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ADDRESSMODE_MEMBERS</b></td></tr>
 <tr class="separator:aa7cf506d0f0aab13c3c04e98c063fe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2395eb4f0b6e8dacb2c2c0c1b89be1"><td class="memItemLeft" align="right" valign="top"><a id="a3b2395eb4f0b6e8dacb2c2c0c1b89be1" name="a3b2395eb4f0b6e8dacb2c2c0c1b89be1"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COORDINATESPACE_MEMBERS</b> = { &quot;model&quot;, &quot;object&quot;, &quot;world&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>COORDINATESPACE_MEMBERS</b></td></tr>
 <tr class="separator:a3b2395eb4f0b6e8dacb2c2c0c1b89be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2148bd79add8bf2537eaed1343d9ea"><td class="memItemLeft" align="right" valign="top"><a id="acd2148bd79add8bf2537eaed1343d9ea" name="acd2148bd79add8bf2537eaed1343d9ea"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FILTERLOOKUPMODE_MEMBERS</b> = { &quot;closest&quot;, &quot;linear&quot;, &quot;cubic&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FILTERLOOKUPMODE_MEMBERS</b></td></tr>
 <tr class="separator:acd2148bd79add8bf2537eaed1343d9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb6f7805d330369bf691052785164d8e"><td class="memItemLeft" align="right" valign="top"><a id="abb6f7805d330369bf691052785164d8e" name="abb6f7805d330369bf691052785164d8e"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FILTERTYPE_MEMBERS</b> = { &quot;box&quot;, &quot;gaussian&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FILTERTYPE_MEMBERS</b></td></tr>
 <tr class="separator:abb6f7805d330369bf691052785164d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae02c50b9315b7b1d35df17054e1adfd8"><td class="memItemLeft" align="right" valign="top"><a id="ae02c50b9315b7b1d35df17054e1adfd8" name="ae02c50b9315b7b1d35df17054e1adfd8"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DISTRIBUTIONTYPE_MEMBERS</b> = { &quot;ggx&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DISTRIBUTIONTYPE_MEMBERS</b></td></tr>
 <tr class="separator:ae02c50b9315b7b1d35df17054e1adfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea42370ff8555547bed164f1934a4fa"><td class="memItemLeft" align="right" valign="top"><a id="aaea42370ff8555547bed164f1934a4fa" name="aaea42370ff8555547bed164f1934a4fa"></a>
-static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SCATTER_MODE_MEMBERS</b> = { &quot;R&quot;, &quot;T&quot;, &quot;RT&quot; }</td></tr>
+static const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SCATTER_MODE_MEMBERS</b></td></tr>
 <tr class="separator:aaea42370ff8555547bed164f1934a4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_syntax"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_syntax')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
-<tr class="memitem:a7f7320e227a9834a211e5785e1b86092 inherit pub_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a7f7320e227a9834a211e5785e1b86092" name="a7f7320e227a9834a211e5785e1b86092"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NEWLINE</b> = &quot;\n&quot;</td></tr>
-<tr class="memdesc:a7f7320e227a9834a211e5785e1b86092 inherit pub_static_attribs_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants with commonly used strings. <br /></td></tr>
-<tr class="separator:a7f7320e227a9834a211e5785e1b86092 inherit pub_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3932524c6f9a0692c2742f0daf9f68 inherit pub_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="acc3932524c6f9a0692c2742f0daf9f68" name="acc3932524c6f9a0692c2742f0daf9f68"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NEWLINE</b></td></tr>
+<tr class="memdesc:acc3932524c6f9a0692c2742f0daf9f68 inherit pub_static_attribs_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants with commonly used strings. <br /></td></tr>
+<tr class="separator:acc3932524c6f9a0692c2742f0daf9f68 inherit pub_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d608d3061e24629b0dbdd8a51ad85c inherit pub_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="aa0d608d3061e24629b0dbdd8a51ad85c" name="aa0d608d3061e24629b0dbdd8a51ad85c"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SEMICOLON</b> = &quot;;&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SEMICOLON</b></td></tr>
 <tr class="separator:aa0d608d3061e24629b0dbdd8a51ad85c inherit pub_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971ebb45ad419c5c6a04efe850eae26c inherit pub_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a971ebb45ad419c5c6a04efe850eae26c" name="a971ebb45ad419c5c6a04efe850eae26c"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COMMA</b> = &quot;,&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COMMA</b></td></tr>
 <tr class="separator:a971ebb45ad419c5c6a04efe850eae26c inherit pub_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -352,9 +372,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6842d2a957dffadea0e581a9449cad4e inherit pro_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a6842d2a957dffadea0e581a9449cad4e" name="a6842d2a957dffadea0e581a9449cad4e"></a>
 vector&lt; <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSyntaxes</b></td></tr>
 <tr class="separator:a6842d2a957dffadea0e581a9449cad4e inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2535c6761c3a396119b307ed9280a780 inherit pro_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a2535c6761c3a396119b307ed9280a780" name="a2535c6761c3a396119b307ed9280a780"></a>
-std::unordered_map&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSyntaxByType</b></td></tr>
-<tr class="separator:a2535c6761c3a396119b307ed9280a780 inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab2b712d5ac33592837f2edc70b26e2 inherit pro_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="aaab2b712d5ac33592837f2edc70b26e2" name="aaab2b712d5ac33592837f2edc70b26e2"></a>
+std::unordered_map&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, size_t, <a class="el" href="struct_type_desc_1_1_hasher.html">TypeDesc::Hasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSyntaxIndexByType</b></td></tr>
+<tr class="separator:aaab2b712d5ac33592837f2edc70b26e2 inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af416d98b9a7efb6d11f54b722dbe8398 inherit pro_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af416d98b9a7efb6d11f54b722dbe8398" name="af416d98b9a7efb6d11f54b722dbe8398"></a>
 <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_reservedWords</b></td></tr>
 <tr class="separator:af416d98b9a7efb6d11f54b722dbe8398 inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,31 +383,32 @@ std::unordered_map&lt; const <a class="el" href="class_type_desc.html">TypeDesc<
 <tr class="separator:a5d27aa59f97bbdc27392496ba3a39e42 inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_syntax"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_syntax')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
 <tr class="memitem:a0555065f24ce693bc4c9e287118ef20e inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a0555065f24ce693bc4c9e287118ef20e" name="a0555065f24ce693bc4c9e287118ef20e"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INDENTATION</b> = &quot; &quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INDENTATION</b></td></tr>
 <tr class="separator:a0555065f24ce693bc4c9e287118ef20e inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70af056c8b58616601ce03e4b65a5a6 inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="af70af056c8b58616601ce03e4b65a5a6" name="af70af056c8b58616601ce03e4b65a5a6"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>STRING_QUOTE</b> = &quot;\&quot;&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>STRING_QUOTE</b></td></tr>
 <tr class="separator:af70af056c8b58616601ce03e4b65a5a6 inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa199f44e68ea052df0f3dd4f6ea9f17e inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="aa199f44e68ea052df0f3dd4f6ea9f17e" name="aa199f44e68ea052df0f3dd4f6ea9f17e"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INCLUDE_STATEMENT</b> = &quot;#include&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INCLUDE_STATEMENT</b></td></tr>
 <tr class="separator:aa199f44e68ea052df0f3dd4f6ea9f17e inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add16646c90fbbbb8cf3744a056e55af2 inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="add16646c90fbbbb8cf3744a056e55af2" name="add16646c90fbbbb8cf3744a056e55af2"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SINGLE_LINE_COMMENT</b> = &quot;// &quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SINGLE_LINE_COMMENT</b></td></tr>
 <tr class="separator:add16646c90fbbbb8cf3744a056e55af2 inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8705531fbc1f51244c9ff13c9033af9e inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="a8705531fbc1f51244c9ff13c9033af9e" name="a8705531fbc1f51244c9ff13c9033af9e"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BEGIN_MULTI_LINE_COMMENT</b> = &quot;/* &quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BEGIN_MULTI_LINE_COMMENT</b></td></tr>
 <tr class="separator:a8705531fbc1f51244c9ff13c9033af9e inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c740f8651cbbdeb4dbfbdb718477ba inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="ad4c740f8651cbbdeb4dbfbdb718477ba" name="ad4c740f8651cbbdeb4dbfbdb718477ba"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MULTI_LINE_COMMENT</b> = &quot; */&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MULTI_LINE_COMMENT</b></td></tr>
 <tr class="separator:ad4c740f8651cbbdeb4dbfbdb718477ba inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2250af7fd2c43f67bf6f6d72bc64f3fe inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top">static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a2250af7fd2c43f67bf6f6d72bc64f3fe">CHANNELS_MAPPING</a></td></tr>
-<tr class="separator:a2250af7fd2c43f67bf6f6d72bc64f3fe inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0086e301718d63798610876944128fc inherit pro_static_attribs_class_syntax"><td class="memItemLeft" align="right" valign="top"><a id="ae0086e301718d63798610876944128fc" name="ae0086e301718d63798610876944128fc"></a>
+static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CHANNELS_MAPPING</b></td></tr>
+<tr class="separator:ae0086e301718d63798610876944128fc inherit pro_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_syntax.html" title="Base class for syntax objects used by shader generators to emit code with correct syntax for each lan...">Syntax</a> class for MDL (Material Definition Language) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad7a033980e5621a07f682cd392f78cc3" name="ad7a033980e5621a07f682cd392f78cc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7a033980e5621a07f682cd392f78cc3">&#9670;&#160;</a></span>getArrayTypeSuffix()</h2>
+<a id="aa7e3b2867770bcdc2c812cf067a1e1f0" name="aa7e3b2867770bcdc2c812cf067a1e1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e3b2867770bcdc2c812cf067a1e1f0">&#9670;&#160;</a></span>getArrayTypeSuffix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +419,7 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
         <tr>
           <td class="memname">string getArrayTypeSuffix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -422,12 +443,12 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
 
 <p>Override to return array type suffix. </p>
 
-<p>Reimplemented from <a class="el" href="class_syntax.html#ad01be6734e3bbc1ff23b51a24c7afd0f">Syntax</a>.</p>
+<p>Reimplemented from <a class="el" href="class_syntax.html#a0f4c920c269ce549b88d1a0f2f6d2d07">Syntax</a>.</p>
 
 </div>
 </div>
-<a id="aabdc670ff61e8284b1a3e54c4c1216ab" name="aabdc670ff61e8284b1a3e54c4c1216ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabdc670ff61e8284b1a3e54c4c1216ab">&#9670;&#160;</a></span>getArrayVariableSuffix()</h2>
+<a id="aea2acf6fd6559760b41088c31ea1a0ce" name="aea2acf6fd6559760b41088c31ea1a0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2acf6fd6559760b41088c31ea1a0ce">&#9670;&#160;</a></span>getArrayVariableSuffix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,7 +459,7 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
         <tr>
           <td class="memname">string getArrayVariableSuffix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -462,7 +483,7 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
 
 <p>Override to indicate array variables have no array suffix. </p>
 
-<p>Reimplemented from <a class="el" href="class_syntax.html#aa4ac418a11dde185762f7a16387665ae">Syntax</a>.</p>
+<p>Reimplemented from <a class="el" href="class_syntax.html#a0c86575bb959985b133fa45e4386c723">Syntax</a>.</p>
 
 </div>
 </div>
@@ -525,58 +546,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
 
 </div>
 </div>
-<a id="abf1ee52e8e669be54583d37a3d0b66b4" name="abf1ee52e8e669be54583d37a3d0b66b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf1ee52e8e669be54583d37a3d0b66b4">&#9670;&#160;</a></span>getSwizzledVariable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string getSwizzledVariable </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>srcName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
-          <td class="paramname"><em>srcType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>channels</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
-          <td class="paramname"><em>dstType</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get syntax for a swizzled variable. </p>
-
-<p>Reimplemented from <a class="el" href="class_syntax.html#ac6e3e95819ab9dbfcf05d1dc2036ee8d">Syntax</a>.</p>
-
-</div>
-</div>
 <a id="a9742417a857875199c83a0eda66a29ff" name="a9742417a857875199c83a0eda66a29ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9742417a857875199c83a0eda66a29ff">&#9670;&#160;</a></span>getUniformQualifier()</h2>
 
@@ -633,12 +602,12 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
 
 <p>Modify the given name string to remove any invalid characters or tokens. </p>
 
-<p>Reimplemented from <a class="el" href="class_syntax.html#accbe9a62f50bda40a3d82633080703bd">Syntax</a>.</p>
+<p>Reimplemented from <a class="el" href="class_syntax.html#a43551baa1a68a7f1872ceda9c3bcce1b">Syntax</a>.</p>
 
 </div>
 </div>
-<a id="a6b7a7675f665b1558217b843c22b498b" name="a6b7a7675f665b1558217b843c22b498b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b7a7675f665b1558217b843c22b498b">&#9670;&#160;</a></span>remapEnumeration()</h2>
+<a id="a1f5c302617c9a17ff061bf7e5a873471" name="a1f5c302617c9a17ff061bf7e5a873471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5c302617c9a17ff061bf7e5a873471">&#9670;&#160;</a></span>remapEnumeration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,7 +624,7 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -667,7 +636,7 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::pair&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::pair&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
@@ -686,13 +655,12 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>END_MU
 <p>Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator. </p>
 <p >The enumeration may be converted to a different type than the input. </p>
 
-<p>Reimplemented from <a class="el" href="class_syntax.html#a18e1bad1c9d76d0562b2b619002d944f">Syntax</a>.</p>
+<p>Reimplemented from <a class="el" href="class_syntax.html#afc26f067af904b0d2bb7a90813c2b265">Syntax</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXGenMdl/<a class="el" href="_mdl_syntax_8h_source.html">MdlSyntax.h</a></li>
-<li>source/MaterialXGenMdl/MdlSyntax.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

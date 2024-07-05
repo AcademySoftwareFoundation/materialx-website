@@ -10,7 +10,7 @@ var class_shader_material =
     [ "copyShader", "class_shader_material.html#a8c56fb03609590de394ca20a56cb67c0", null ],
     [ "drawPartition", "class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e", null ],
     [ "findUniform", "class_shader_material.html#acd2f449503e30f768c00b186817fef92", null ],
-    [ "generateEnvironmentShader", "class_shader_material.html#a8f395ec3417317e8614701a1766f1b10", null ],
+    [ "generateEnvironmentShader", "class_shader_material.html#a88c7cd5354458eeef043955061cdb09d", null ],
     [ "generateShader", "class_shader_material.html#a42e183766ac5c03c8e8d5a5bfb5dc5dd", null ],
     [ "generateShader", "class_shader_material.html#a0bdaed30fe2a55876b8bd7e1b6ac20c2", null ],
     [ "getDocument", "class_shader_material.html#aa95f2f924cdd16ea300a49440a4b46ae", null ],

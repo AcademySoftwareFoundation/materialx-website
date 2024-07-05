@@ -9,7 +9,7 @@ var dir_b07960269c0943959e50f8c16247d80a =
     [ "ImageHandler.h", "_image_handler_8h.html", "_image_handler_8h" ],
     [ "LightHandler.h", "_light_handler_8h.html", "_light_handler_8h" ],
     [ "Mesh.h", "_mesh_8h.html", "_mesh_8h" ],
-    [ "OiioImageLoader.h", "_oiio_image_loader_8h.html", "_oiio_image_loader_8h" ],
+    [ "OiioImageLoader.h", "_oiio_image_loader_8h_source.html", null ],
     [ "ShaderMaterial.h", "_shader_material_8h.html", "_shader_material_8h" ],
     [ "ShaderRenderer.h", "_shader_renderer_8h.html", "_shader_renderer_8h" ],
     [ "StbImageLoader.h", "_stb_image_loader_8h.html", "_stb_image_loader_8h" ],

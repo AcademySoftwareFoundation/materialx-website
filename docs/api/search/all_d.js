@@ -1,7 +1,7 @@
 var searchData=
 [
   ['newline_0',['newLine',['../class_shader_stage.html#a24d44c9238b3bd0440c8e28f37616318',1,'ShaderStage']]],
-  ['newline_1',['NEWLINE',['../class_syntax.html#a7f7320e227a9834a211e5785e1b86092',1,'Syntax']]],
+  ['newline_1',['NEWLINE',['../class_syntax.html#acc3932524c6f9a0692c2742f0daf9f68',1,'Syntax']]],
   ['newlineelement_2',['NewlineElement',['../class_newline_element.html',1,'']]],
   ['newlineelementptr_3',['NewlineElementPtr',['../_element_8h.html#a490ae3ec2022f9fd5edd2c2f1be1785e',1,'Element.h']]],
   ['node_4',['Node',['../class_node.html',1,'']]],
@@ -12,7 +12,7 @@ var searchData=
   ['nodegraphptr_9',['NodeGraphPtr',['../_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7',1,'Node.h']]],
   ['nodeptr_10',['NodePtr',['../_node_8h.html#a9be017e028fef90cc0e3afc260302531',1,'Node.h']]],
   ['nopnode_11',['NopNode',['../class_nop_node.html',1,'']]],
-  ['normalizeenvironment_12',['normalizeEnvironment',['../_harmonics_8h.html#a91c08d726149ab4eba9a13ebe6953109',1,'Harmonics.cpp']]],
+  ['normalizeenvironment_12',['normalizeEnvironment',['../_harmonics_8h.html#a91c08d726149ab4eba9a13ebe6953109',1,'Harmonics.h']]],
   ['numcolumns_13',['numColumns',['../class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611',1,'MatrixN']]],
   ['numelements_14',['numElements',['../class_vector_n.html#aa5e5fb35ac24ce0e141a0b3bd571a1f1',1,'VectorN']]],
   ['numinputs_15',['numInputs',['../class_shader_node.html#af5479391bbdb230de7b7cfb5100769be',1,'ShaderNode']]],

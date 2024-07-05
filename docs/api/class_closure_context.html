@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('class_closure_context.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab2ae8cbbd10277bded7b4285e3c2579f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a> = std::pair&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, string &gt;</td></tr>
-<tr class="memdesc:ab2ae8cbbd10277bded7b4285e3c2579f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extra argument for closure functions.  <a href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">More...</a><br /></td></tr>
-<tr class="separator:ab2ae8cbbd10277bded7b4285e3c2579f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda277659584dcbbd3a6f850f49f1c91"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_closure_context.html#adda277659584dcbbd3a6f850f49f1c91">Argument</a> = std::pair&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, string &gt;</td></tr>
+<tr class="memdesc:adda277659584dcbbd3a6f850f49f1c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extra argument for closure functions.  <a href="class_closure_context.html#adda277659584dcbbd3a6f850f49f1c91">More...</a><br /></td></tr>
+<tr class="separator:adda277659584dcbbd3a6f850f49f1c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450df945e64d54112df9528138b0ab21"><td class="memItemLeft" align="right" valign="top"><a id="a450df945e64d54112df9528138b0ab21" name="a450df945e64d54112df9528138b0ab21"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Arguments</b> = vector&lt; <a class="el" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Arguments</b> = vector&lt; <a class="el" href="class_closure_context.html#adda277659584dcbbd3a6f850f49f1c91">Argument</a> &gt;</td></tr>
 <tr class="memdesc:a450df945e64d54112df9528138b0ab21"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of arguments. <br /></td></tr>
 <tr class="separator:a450df945e64d54112df9528138b0ab21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8968f7855fdf9a1e6b3d826178e895d"><td class="memItemLeft" align="right" valign="top"><a id="ab8968f7855fdf9a1e6b3d826178e895d" name="ab8968f7855fdf9a1e6b3d826178e895d"></a>
@@ -130,21 +130,33 @@ Public Member Functions</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const</td></tr>
 <tr class="memdesc:ad332f75a3b947cd7df5f1a4857b431f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the identifier for this context. <br /></td></tr>
 <tr class="separator:ad332f75a3b947cd7df5f1a4857b431f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec19c59b8d68e383494dcd21f8d624f"><td class="memItemLeft" align="right" valign="top"><a id="a7ec19c59b8d68e383494dcd21f8d624f" name="a7ec19c59b8d68e383494dcd21f8d624f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addArgument</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> nodeType, const <a class="el" href="class_closure_context.html#adda277659584dcbbd3a6f850f49f1c91">Argument</a> &amp;arg)</td></tr>
+<tr class="memdesc:a7ec19c59b8d68e383494dcd21f8d624f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the given node type add an extra argument to be used for the function in this context. <br /></td></tr>
+<tr class="separator:a7ec19c59b8d68e383494dcd21f8d624f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabadec75619badbae96d4db72246a688"><td class="memItemLeft" align="right" valign="top"><a id="aabadec75619badbae96d4db72246a688" name="aabadec75619badbae96d4db72246a688"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addArgument</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *nodeType, const <a class="el" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a> &amp;arg)</td></tr>
-<tr class="memdesc:aabadec75619badbae96d4db72246a688"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the given node type add an extra argument to be used for the function in this context. <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addArgument</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *nodeType, const <a class="el" href="class_closure_context.html#adda277659584dcbbd3a6f850f49f1c91">Argument</a> &amp;arg)</td></tr>
 <tr class="separator:aabadec75619badbae96d4db72246a688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d04771c2edb1b1106c2b3f02cfa06fe"><td class="memItemLeft" align="right" valign="top"><a id="a9d04771c2edb1b1106c2b3f02cfa06fe" name="a9d04771c2edb1b1106c2b3f02cfa06fe"></a>
+const <a class="el" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getArguments</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> nodeType) const</td></tr>
+<tr class="memdesc:a9d04771c2edb1b1106c2b3f02cfa06fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of extra argument to be used for the given node in this context. <br /></td></tr>
+<tr class="separator:a9d04771c2edb1b1106c2b3f02cfa06fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad146c17be841226eafe790b41bf21ede"><td class="memItemLeft" align="right" valign="top"><a id="ad146c17be841226eafe790b41bf21ede" name="ad146c17be841226eafe790b41bf21ede"></a>
 const <a class="el" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getArguments</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *nodeType) const</td></tr>
-<tr class="memdesc:ad146c17be841226eafe790b41bf21ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of extra argument to be used for the given node in this context. <br /></td></tr>
 <tr class="separator:ad146c17be841226eafe790b41bf21ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82823d1b910c5e2e81da634acf050064"><td class="memItemLeft" align="right" valign="top"><a id="a82823d1b910c5e2e81da634acf050064" name="a82823d1b910c5e2e81da634acf050064"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSuffix</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> nodeType, const string &amp;suffix)</td></tr>
+<tr class="memdesc:a82823d1b910c5e2e81da634acf050064"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the given node type set a function name suffix to be used for the function in this context. <br /></td></tr>
+<tr class="separator:a82823d1b910c5e2e81da634acf050064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d31d9e4e77558227fab16e8839539ea"><td class="memItemLeft" align="right" valign="top"><a id="a9d31d9e4e77558227fab16e8839539ea" name="a9d31d9e4e77558227fab16e8839539ea"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSuffix</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *nodeType, const string &amp;suffix)</td></tr>
-<tr class="memdesc:a9d31d9e4e77558227fab16e8839539ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">For the given node type set a function name suffix to be used for the function in this context. <br /></td></tr>
 <tr class="separator:a9d31d9e4e77558227fab16e8839539ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a21429374d6677623a4ee343fbe4f3"><td class="memItemLeft" align="right" valign="top"><a id="a76a21429374d6677623a4ee343fbe4f3" name="a76a21429374d6677623a4ee343fbe4f3"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSuffix</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> nodeType) const</td></tr>
+<tr class="memdesc:a76a21429374d6677623a4ee343fbe4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the function name suffix to be used for the given node in this context. <br /></td></tr>
+<tr class="separator:a76a21429374d6677623a4ee343fbe4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c037b56cfa0b9a29beed500ebf22e5b"><td class="memItemLeft" align="right" valign="top"><a id="a2c037b56cfa0b9a29beed500ebf22e5b" name="a2c037b56cfa0b9a29beed500ebf22e5b"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSuffix</b> (const <a class="el" href="class_type_desc.html">TypeDesc</a> *nodeType) const</td></tr>
-<tr class="memdesc:a2c037b56cfa0b9a29beed500ebf22e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the function name suffix to be used for the given node in this context. <br /></td></tr>
 <tr class="separator:a2c037b56cfa0b9a29beed500ebf22e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eaf625fc4b194f3288de9f30e4f5c75"><td class="memItemLeft" align="right" valign="top"><a id="a0eaf625fc4b194f3288de9f30e4f5c75" name="a0eaf625fc4b194f3288de9f30e4f5c75"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setClosureParams</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> *closure, const <a class="el" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a> *params)</td></tr>
@@ -159,34 +171,34 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a230036e6f4733e2b971cc37925debe84"><td class="memItemLeft" align="right" valign="top"><a id="a230036e6f4733e2b971cc37925debe84" name="a230036e6f4733e2b971cc37925debe84"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>_type</b></td></tr>
 <tr class="separator:a230036e6f4733e2b971cc37925debe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf925c398422332c5405ddb9798bc0e"><td class="memItemLeft" align="right" valign="top"><a id="aabf925c398422332c5405ddb9798bc0e" name="aabf925c398422332c5405ddb9798bc0e"></a>
-std::unordered_map&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, <a class="el" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_arguments</b></td></tr>
-<tr class="separator:aabf925c398422332c5405ddb9798bc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad947596a132011e4bde27db3124de95e"><td class="memItemLeft" align="right" valign="top"><a id="ad947596a132011e4bde27db3124de95e" name="ad947596a132011e4bde27db3124de95e"></a>
-std::unordered_map&lt; const <a class="el" href="class_type_desc.html">TypeDesc</a> *, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_suffix</b></td></tr>
-<tr class="separator:ad947596a132011e4bde27db3124de95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8b6af5157c6f5151b21b4d32aca910"><td class="memItemLeft" align="right" valign="top"><a id="a7b8b6af5157c6f5151b21b4d32aca910" name="a7b8b6af5157c6f5151b21b4d32aca910"></a>
+std::unordered_map&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, <a class="el" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a>, <a class="el" href="struct_type_desc_1_1_hasher.html">TypeDesc::Hasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_arguments</b></td></tr>
+<tr class="separator:a7b8b6af5157c6f5151b21b4d32aca910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d2366bac78f49c1ba0e2422aa000b6"><td class="memItemLeft" align="right" valign="top"><a id="aa8d2366bac78f49c1ba0e2422aa000b6" name="aa8d2366bac78f49c1ba0e2422aa000b6"></a>
+std::unordered_map&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, string, <a class="el" href="struct_type_desc_1_1_hasher.html">TypeDesc::Hasher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_suffix</b></td></tr>
+<tr class="separator:aa8d2366bac78f49c1ba0e2422aa000b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d4edd228db27646eebff30499dd815"><td class="memItemLeft" align="right" valign="top"><a id="a82d4edd228db27646eebff30499dd815" name="a82d4edd228db27646eebff30499dd815"></a>
 std::unordered_map&lt; const <a class="el" href="class_shader_node.html">ShaderNode</a> *, const <a class="el" href="class_closure_context.html#ab8968f7855fdf9a1e6b3d826178e895d">ClosureParams</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_params</b></td></tr>
 <tr class="separator:a82d4edd228db27646eebff30499dd815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a1899716fdbcb7e6521279f8c29137eca"><td class="memItemLeft" align="right" valign="top"><a id="a1899716fdbcb7e6521279f8c29137eca" name="a1899716fdbcb7e6521279f8c29137eca"></a>
+<tr class="memitem:a5baf8e97aefe02fcc0b10efe43b71b79"><td class="memItemLeft" align="right" valign="top"><a id="a5baf8e97aefe02fcc0b10efe43b71b79" name="a5baf8e97aefe02fcc0b10efe43b71b79"></a>
 static const <a class="el" href="class_closure_context.html#a450df945e64d54112df9528138b0ab21">Arguments</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EMPTY_ARGUMENTS</b></td></tr>
-<tr class="separator:a1899716fdbcb7e6521279f8c29137eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5baf8e97aefe02fcc0b10efe43b71b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class representing a context for closure evaluation. </p>
 <p >On hardware BSDF closures are evaluated differently in reflection, transmission or environment/indirect contexts. This class represents the context we are in and if extra arguments and function decorators are needed for that context. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ab2ae8cbbd10277bded7b4285e3c2579f" name="ab2ae8cbbd10277bded7b4285e3c2579f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2ae8cbbd10277bded7b4285e3c2579f">&#9670;&#160;</a></span>Argument</h2>
+<a id="adda277659584dcbbd3a6f850f49f1c91" name="adda277659584dcbbd3a6f850f49f1c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda277659584dcbbd3a6f850f49f1c91">&#9670;&#160;</a></span>Argument</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_closure_context.html#ab2ae8cbbd10277bded7b4285e3c2579f">Argument</a> =  std::pair&lt;const <a class="el" href="class_type_desc.html">TypeDesc</a>*, string&gt;</td>
+          <td class="memname">using <a class="el" href="class_closure_context.html#adda277659584dcbbd3a6f850f49f1c91">Argument</a> =  std::pair&lt;<a class="el" href="class_type_desc.html">TypeDesc</a>, string&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,9 +238,8 @@ static const <a class="el" href="class_closure_context.html#a450df945e64d54112df
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_gen_context_8h_source.html">GenContext.h</a></li>
-<li>source/MaterialXGenShader/HwShaderGenerator.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

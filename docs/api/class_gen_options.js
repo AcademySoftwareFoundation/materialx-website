@@ -10,6 +10,7 @@ var class_gen_options =
     [ "hwNormalizeUdimTexCoords", "class_gen_options.html#ac8f296ec52a0efd37966e1939d414e54", null ],
     [ "hwShadowMap", "class_gen_options.html#a6f32717e035b820d5950ea28c2e53cae", null ],
     [ "hwSpecularEnvironmentMethod", "class_gen_options.html#aa25c715c16a134a535ef72d0dee19b5f", null ],
+    [ "hwSrgbEncodeOutput", "class_gen_options.html#a7241a1bc9fc38bf47269830d9f5950cb", null ],
     [ "hwTransmissionRenderMethod", "class_gen_options.html#a8c33039ae27c11415c55e87c4b16fd64", null ],
     [ "hwTransparency", "class_gen_options.html#aa9208729291bf20f854ef3d54f656b81", null ],
     [ "hwWriteAlbedoTable", "class_gen_options.html#af328684f499b74fc761abf7ed6a7d0e8", null ],

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -164,13 +164,13 @@ const <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &amp;&
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (const <a class="el" href="class_node.html">Node</a> &amp;node, const <a class="el" href="class_node_def.html">NodeDef</a> &amp;nodeDef, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a6f6c953fcc052a153b7a537c80705058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this shader node with all required data from the given node and nodedef. <br /></td></tr>
 <tr class="separator:a6f6c953fcc052a153b7a537c80705058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa33cc81760f787d04e72147eb0281cb"><td class="memItemLeft" align="right" valign="top"><a id="aaa33cc81760f787d04e72147eb0281cb" name="aaa33cc81760f787d04e72147eb0281cb"></a>
-<a class="el" href="class_shader_input.html">ShaderInput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addInput</b> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type)</td></tr>
-<tr class="memdesc:aaa33cc81760f787d04e72147eb0281cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add inputs/outputs. <br /></td></tr>
-<tr class="separator:aaa33cc81760f787d04e72147eb0281cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93b6e57001921cac39dcb0142915ccf"><td class="memItemLeft" align="right" valign="top"><a id="ad93b6e57001921cac39dcb0142915ccf" name="ad93b6e57001921cac39dcb0142915ccf"></a>
-<a class="el" href="class_shader_output.html">ShaderOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addOutput</b> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type)</td></tr>
-<tr class="separator:ad93b6e57001921cac39dcb0142915ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b44467d61f165a8804fb145bcc7cfb5"><td class="memItemLeft" align="right" valign="top"><a id="a4b44467d61f165a8804fb145bcc7cfb5" name="a4b44467d61f165a8804fb145bcc7cfb5"></a>
+<a class="el" href="class_shader_input.html">ShaderInput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addInput</b> (const string &amp;name, <a class="el" href="class_type_desc.html">TypeDesc</a> type)</td></tr>
+<tr class="memdesc:a4b44467d61f165a8804fb145bcc7cfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add inputs/outputs. <br /></td></tr>
+<tr class="separator:a4b44467d61f165a8804fb145bcc7cfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d61102f593410f639ac8c7d59dc29c8"><td class="memItemLeft" align="right" valign="top"><a id="a9d61102f593410f639ac8c7d59dc29c8" name="a9d61102f593410f639ac8c7d59dc29c8"></a>
+<a class="el" href="class_shader_output.html">ShaderOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addOutput</b> (const string &amp;name, <a class="el" href="class_type_desc.html">TypeDesc</a> type)</td></tr>
+<tr class="separator:a9d61102f593410f639ac8c7d59dc29c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5479391bbdb230de7b7cfb5100769be"><td class="memItemLeft" align="right" valign="top"><a id="af5479391bbdb230de7b7cfb5100769be" name="af5479391bbdb230de7b7cfb5100769be"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>numInputs</b> () const</td></tr>
 <tr class="memdesc:af5479391bbdb230de7b7cfb5100769be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of inputs/outputs. <br /></td></tr>
@@ -232,40 +232,40 @@ const ShaderMetadataVecPtr &amp;&#160;</td><td class="memItemRight" valign="bott
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a27941dfb907a50a3b8e2998ee19dcb86"><td class="memItemLeft" align="right" valign="top"><a id="a27941dfb907a50a3b8e2998ee19dcb86" name="a27941dfb907a50a3b8e2998ee19dcb86"></a>
+<tr class="memitem:a52293a9fc06a81a5476af36fa0706055"><td class="memItemLeft" align="right" valign="top"><a id="a52293a9fc06a81a5476af36fa0706055" name="a52293a9fc06a81a5476af36fa0706055"></a>
 static <a class="el" href="_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce">ShaderNodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const <a class="el" href="class_shader_graph.html">ShaderGraph</a> *parent, const string &amp;name, const <a class="el" href="class_node_def.html">NodeDef</a> &amp;nodeDef, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a27941dfb907a50a3b8e2998ee19dcb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new node from a nodedef. <br /></td></tr>
-<tr class="separator:a27941dfb907a50a3b8e2998ee19dcb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1fcd02a0fe384266dc25be1caefda6d"><td class="memItemLeft" align="right" valign="top"><a id="ae1fcd02a0fe384266dc25be1caefda6d" name="ae1fcd02a0fe384266dc25be1caefda6d"></a>
+<tr class="memdesc:a52293a9fc06a81a5476af36fa0706055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new node from a nodedef. <br /></td></tr>
+<tr class="separator:a52293a9fc06a81a5476af36fa0706055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc6d2c8d1686eaf1f79b048027082d5"><td class="memItemLeft" align="right" valign="top"><a id="a8cc6d2c8d1686eaf1f79b048027082d5" name="a8cc6d2c8d1686eaf1f79b048027082d5"></a>
 static <a class="el" href="_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce">ShaderNodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const <a class="el" href="class_shader_graph.html">ShaderGraph</a> *parent, const string &amp;name, <a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> impl, unsigned int classification=Classification::TEXTURE)</td></tr>
-<tr class="memdesc:ae1fcd02a0fe384266dc25be1caefda6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new node from a node implementation. <br /></td></tr>
-<tr class="separator:ae1fcd02a0fe384266dc25be1caefda6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a8cc6d2c8d1686eaf1f79b048027082d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new node from a node implementation. <br /></td></tr>
+<tr class="separator:a8cc6d2c8d1686eaf1f79b048027082d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa46b25dcdcde441e74495989e2f55efc"><td class="memItemLeft" align="right" valign="top"><a id="aa46b25dcdcde441e74495989e2f55efc" name="aa46b25dcdcde441e74495989e2f55efc"></a>
-static const <a class="el" href="_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce">ShaderNodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NONE</b> = createEmptyNode()</td></tr>
+static const <a class="el" href="_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce">ShaderNodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NONE</b></td></tr>
 <tr class="separator:aa46b25dcdcde441e74495989e2f55efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad409f84274060df46c9ce502f80d8248"><td class="memItemLeft" align="right" valign="top"><a id="ad409f84274060df46c9ce502f80d8248" name="ad409f84274060df46c9ce502f80d8248"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CONSTANT</b> = &quot;constant&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CONSTANT</b></td></tr>
 <tr class="separator:ad409f84274060df46c9ce502f80d8248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6e41be0628cd45c56cfe18c0a183842"><td class="memItemLeft" align="right" valign="top"><a id="af6e41be0628cd45c56cfe18c0a183842" name="af6e41be0628cd45c56cfe18c0a183842"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOT</b> = &quot;dot&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOT</b></td></tr>
 <tr class="separator:af6e41be0628cd45c56cfe18c0a183842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ffbd7cecc6a9667d89689bad79ae899"><td class="memItemLeft" align="right" valign="top"><a id="a4ffbd7cecc6a9667d89689bad79ae899" name="a4ffbd7cecc6a9667d89689bad79ae899"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>IMAGE</b> = &quot;image&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>IMAGE</b></td></tr>
 <tr class="separator:a4ffbd7cecc6a9667d89689bad79ae899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83291bb4e5939eb0de30e62797098c32"><td class="memItemLeft" align="right" valign="top"><a id="a83291bb4e5939eb0de30e62797098c32" name="a83291bb4e5939eb0de30e62797098c32"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SURFACESHADER</b> = &quot;surfaceshader&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SURFACESHADER</b></td></tr>
 <tr class="separator:a83291bb4e5939eb0de30e62797098c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d966324be1c616395f2a4c5abef8b25"><td class="memItemLeft" align="right" valign="top"><a id="a6d966324be1c616395f2a4c5abef8b25" name="a6d966324be1c616395f2a4c5abef8b25"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SCATTER_MODE</b> = &quot;scatter_mode&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SCATTER_MODE</b></td></tr>
 <tr class="separator:a6d966324be1c616395f2a4c5abef8b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84980117957afe47629e5f9e0ebe940d"><td class="memItemLeft" align="right" valign="top"><a id="a84980117957afe47629e5f9e0ebe940d" name="a84980117957afe47629e5f9e0ebe940d"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BSDF_R</b> = &quot;R&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BSDF_R</b></td></tr>
 <tr class="separator:a84980117957afe47629e5f9e0ebe940d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495c3aab3c7435b3fb3008e7f7cfbb68"><td class="memItemLeft" align="right" valign="top"><a id="a495c3aab3c7435b3fb3008e7f7cfbb68" name="a495c3aab3c7435b3fb3008e7f7cfbb68"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BSDF_T</b> = &quot;T&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BSDF_T</b></td></tr>
 <tr class="separator:a495c3aab3c7435b3fb3008e7f7cfbb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc20bfaf25bdb91c02c39f5fcd9b2a8"><td class="memItemLeft" align="right" valign="top"><a id="a0fc20bfaf25bdb91c02c39f5fcd9b2a8" name="a0fc20bfaf25bdb91c02c39f5fcd9b2a8"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSFORM_POINT</b></td></tr>
@@ -277,19 +277,19 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSF
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSFORM_NORMAL</b></td></tr>
 <tr class="separator:a5209454dd6b08710c59ebf0df1c54f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad842429b36ac163f3aac6a29217a1e5e"><td class="memItemLeft" align="right" valign="top"><a id="ad842429b36ac163f3aac6a29217a1e5e" name="ad842429b36ac163f3aac6a29217a1e5e"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TEXTURE2D_GROUPNAME</b> = &quot;texture2d&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TEXTURE2D_GROUPNAME</b></td></tr>
 <tr class="separator:ad842429b36ac163f3aac6a29217a1e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06123266d04a2e91fa512d66d9f86dda"><td class="memItemLeft" align="right" valign="top"><a id="a06123266d04a2e91fa512d66d9f86dda" name="a06123266d04a2e91fa512d66d9f86dda"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TEXTURE3D_GROUPNAME</b> = &quot;texture3d&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TEXTURE3D_GROUPNAME</b></td></tr>
 <tr class="separator:a06123266d04a2e91fa512d66d9f86dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96fdbc0de60e180a7cca6fad11d51290"><td class="memItemLeft" align="right" valign="top"><a id="a96fdbc0de60e180a7cca6fad11d51290" name="a96fdbc0de60e180a7cca6fad11d51290"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>PROCEDURAL2D_GROUPNAME</b> = &quot;procedural2d&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>PROCEDURAL2D_GROUPNAME</b></td></tr>
 <tr class="separator:a96fdbc0de60e180a7cca6fad11d51290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7683d8f897f90c2e6551d94d5044e320"><td class="memItemLeft" align="right" valign="top"><a id="a7683d8f897f90c2e6551d94d5044e320" name="a7683d8f897f90c2e6551d94d5044e320"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>PROCEDURAL3D_GROUPNAME</b> = &quot;procedural3d&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>PROCEDURAL3D_GROUPNAME</b></td></tr>
 <tr class="separator:a7683d8f897f90c2e6551d94d5044e320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14dc6caa652d7a1077340d404051321e"><td class="memItemLeft" align="right" valign="top"><a id="a14dc6caa652d7a1077340d404051321e" name="a14dc6caa652d7a1077340d404051321e"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOMETRIC_GROUPNAME</b> = &quot;geometric&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOMETRIC_GROUPNAME</b></td></tr>
 <tr class="separator:a14dc6caa652d7a1077340d404051321e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -453,9 +453,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGraph</b></td>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_shader_node_8h_source.html">ShaderNode.h</a></li>
-<li>source/MaterialXGenShader/ShaderNode.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

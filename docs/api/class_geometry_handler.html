@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ $(document).ready(function(){initNavTree('class_geometry_handler.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab49cf6761fd45d82fa89be05b415a6b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_handler.html#ab49cf6761fd45d82fa89be05b415a6b0">addLoader</a> (<a class="el" href="_geometry_handler_8h.html#ac8c438db8c39cdbc4febab9fbd818c6b">GeometryLoaderPtr</a> loader)</td></tr>
-<tr class="memdesc:ab49cf6761fd45d82fa89be05b415a6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a geometry loader.  <a href="class_geometry_handler.html#ab49cf6761fd45d82fa89be05b415a6b0">More...</a><br /></td></tr>
-<tr class="separator:ab49cf6761fd45d82fa89be05b415a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215ea5cb04bfdd03f9f02164dd27792a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry_handler.html#a215ea5cb04bfdd03f9f02164dd27792a">addLoader</a> (<a class="el" href="_geometry_handler_8h.html#ac8c438db8c39cdbc4febab9fbd818c6b">GeometryLoaderPtr</a> loader)</td></tr>
+<tr class="memdesc:a215ea5cb04bfdd03f9f02164dd27792a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a geometry loader.  <a href="class_geometry_handler.html#a215ea5cb04bfdd03f9f02164dd27792a">More...</a><br /></td></tr>
+<tr class="separator:a215ea5cb04bfdd03f9f02164dd27792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1abcc4aa0686612f96da8c6782319a"><td class="memItemLeft" align="right" valign="top"><a id="a5a1abcc4aa0686612f96da8c6782319a" name="a5a1abcc4aa0686612f96da8c6782319a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>supportedExtensions</b> (<a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> &amp;extensions)</td></tr>
 <tr class="memdesc:a5a1abcc4aa0686612f96da8c6782319a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of extensions supported by the handler. <br /></td></tr>
@@ -150,10 +150,10 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="_geometry_handler_8h.html#ad35110d52404e6e39c4bb100b6195db5">GeometryHandlerPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> ()</td></tr>
 <tr class="memdesc:a7881ec4ebbe1c96746be9ca3a606686a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new geometry handler. <br /></td></tr>
 <tr class="separator:a7881ec4ebbe1c96746be9ca3a606686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601615ca3b57b20181823d178598b084"><td class="memItemLeft" align="right" valign="top"><a id="a601615ca3b57b20181823d178598b084" name="a601615ca3b57b20181823d178598b084"></a>
+<tr class="memitem:ab90ac3275d300de76fa25239dae30608"><td class="memItemLeft" align="right" valign="top"><a id="ab90ac3275d300de76fa25239dae30608" name="ab90ac3275d300de76fa25239dae30608"></a>
 static <a class="el" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createQuadMesh</b> (const <a class="el" href="class_vector2.html">Vector2</a> &amp;uvMin=<a class="el" href="class_vector2.html">Vector2</a>(0.0f, 0.0f), const <a class="el" href="class_vector2.html">Vector2</a> &amp;uvMax=<a class="el" href="class_vector2.html">Vector2</a>(1.0f, 1.0f), bool flipTexCoordsHorizontally=false)</td></tr>
-<tr class="memdesc:a601615ca3b57b20181823d178598b084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to create a quad mesh. <br /></td></tr>
-<tr class="separator:a601615ca3b57b20181823d178598b084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ab90ac3275d300de76fa25239dae30608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to create a quad mesh. <br /></td></tr>
+<tr class="separator:ab90ac3275d300de76fa25239dae30608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -180,14 +180,14 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p >Class which holds a set of geometry loaders. </p>
 <p >Each loader is associated with a given set of file extensions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab49cf6761fd45d82fa89be05b415a6b0" name="ab49cf6761fd45d82fa89be05b415a6b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab49cf6761fd45d82fa89be05b415a6b0">&#9670;&#160;</a></span>addLoader()</h2>
+<a id="a215ea5cb04bfdd03f9f02164dd27792a" name="a215ea5cb04bfdd03f9f02164dd27792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215ea5cb04bfdd03f9f02164dd27792a">&#9670;&#160;</a></span>addLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MATERIALX_NAMESPACE_BEGIN void addLoader </td>
+          <td class="memname">void addLoader </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_geometry_handler_8h.html#ac8c438db8c39cdbc4febab9fbd818c6b">GeometryLoaderPtr</a>&#160;</td>
           <td class="paramname"><em>loader</em></td><td>)</td>
@@ -264,9 +264,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXRender/<a class="el" href="_geometry_handler_8h_source.html">GeometryHandler.h</a></li>
-<li>source/MaterialXRender/GeometryHandler.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

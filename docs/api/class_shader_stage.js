@@ -34,6 +34,7 @@ var class_shader_stage =
     [ "getUniformBlock", "class_shader_stage.html#aaf261e7e00325ee4025e42da46fa03c2", null ],
     [ "getUniformBlock", "class_shader_stage.html#ac619b3675afe7f00c62d9eaca68de7ea", null ],
     [ "getUniformBlocks", "class_shader_stage.html#a021fef8be5a721bb1c3523960ae2b465", null ],
+    [ "hasSourceDependency", "class_shader_stage.html#a61b892b496ff8eb49324d8f42c1b3169", null ],
     [ "isEmitted", "class_shader_stage.html#a50dd7b1d2e86a6f133750a314fd45548", null ],
     [ "newLine", "class_shader_stage.html#a24d44c9238b3bd0440c8e28f37616318", null ],
     [ "setFunctionName", "class_shader_stage.html#a0a73fecee5dac3aa550951bbe1852227", null ],

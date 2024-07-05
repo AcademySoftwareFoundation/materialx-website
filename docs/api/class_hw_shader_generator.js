@@ -7,8 +7,8 @@ var class_hw_shader_generator =
       [ "INDIRECT", "class_hw_shader_generator.html#ac4f3ab7fbbd80939f89218068976f3e9aa70fc5026d3a310a836fa57ac51d8a4e", null ],
       [ "EMISSION", "class_hw_shader_generator.html#ac4f3ab7fbbd80939f89218068976f3e9a6b66c706c4bc43ff1a3b5a0044fdfa18", null ]
     ] ],
-    [ "addStageLightingUniforms", "class_hw_shader_generator.html#a2beb3a2fb4938f020ab646f83ddbaf3e", null ],
-    [ "createShader", "class_hw_shader_generator.html#abc049abca6fb1dfb6556487440e5b855", null ],
+    [ "addStageLightingUniforms", "class_hw_shader_generator.html#a42222658efbbc1448114e189b62f1fb9", null ],
+    [ "createShader", "class_hw_shader_generator.html#a37ed207aa136fb2ceac94a7b5cb16e3e", null ],
     [ "emitFunctionCall", "class_hw_shader_generator.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79", null ],
     [ "getClosureContexts", "class_hw_shader_generator.html#aed30dd9398e28f9c74b4365f92dc5f56", null ],
     [ "getVertexDataPrefix", "class_hw_shader_generator.html#acd26d2e250ee8287918c33f92f31b76a", null ],

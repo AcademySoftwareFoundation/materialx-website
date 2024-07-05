@@ -3,7 +3,7 @@ var class_shader_node =
     [ "Classification", "class_shader_node_1_1_classification.html", null ],
     [ "ShaderNode", "class_shader_node.html#add10f8dc3be0665b3708747c624e8105", null ],
     [ "addClassification", "class_shader_node.html#a5b10edf8a4431c569dab0029b9889222", null ],
-    [ "addInput", "class_shader_node.html#aaa33cc81760f787d04e72147eb0281cb", null ],
+    [ "addInput", "class_shader_node.html#a4b44467d61f165a8804fb145bcc7cfb5", null ],
     [ "createMetadata", "class_shader_node.html#ad47b96ffd07985711da49487d7aee87c", null ],
     [ "getClassification", "class_shader_node.html#aad3c8bdc0a8e965b7f31dc8e3054f2e1", null ],
     [ "getImplementation", "class_shader_node.html#ad483e283206e41d2dc3732dece1c1889", null ],

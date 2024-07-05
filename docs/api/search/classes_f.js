@@ -31,8 +31,5 @@ var searchData=
   ['stringresolver_28',['StringResolver',['../class_string_resolver.html',1,'']]],
   ['stringtypesyntax_29',['StringTypeSyntax',['../class_string_type_syntax.html',1,'']]],
   ['surfacenodeglsl_30',['SurfaceNodeGlsl',['../class_surface_node_glsl.html',1,'']]],
-  ['surfaceshadernodeglsl_31',['SurfaceShaderNodeGlsl',['../class_surface_shader_node_glsl.html',1,'']]],
-  ['switchnode_32',['SwitchNode',['../class_switch_node.html',1,'']]],
-  ['swizzlenode_33',['SwizzleNode',['../class_swizzle_node.html',1,'']]],
-  ['syntax_34',['Syntax',['../class_syntax.html',1,'']]]
+  ['syntax_31',['Syntax',['../class_syntax.html',1,'']]]
 ];

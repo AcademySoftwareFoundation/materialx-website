@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -146,9 +146,9 @@ const std::unordered_map&lt; string, float &gt; &amp;&#160;</td><td class="memIt
 <tr class="memitem:a30c3f443fba3cbb5ff4b750bb592b3bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linear_unit_converter.html#a30c3f443fba3cbb5ff4b750bb592b3bd">getUnitAsInteger</a> (const string &amp;unitName) const override</td></tr>
 <tr class="memdesc:a30c3f443fba3cbb5ff4b750bb592b3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a unit name return a value that it can map to as an integer.  <a href="class_linear_unit_converter.html#a30c3f443fba3cbb5ff4b750bb592b3bd">More...</a><br /></td></tr>
 <tr class="separator:a30c3f443fba3cbb5ff4b750bb592b3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3200a5215ea6ba216e537341792f2cde"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linear_unit_converter.html#a3200a5215ea6ba216e537341792f2cde">getUnitFromInteger</a> (int index) const override</td></tr>
-<tr class="memdesc:a3200a5215ea6ba216e537341792f2cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an integer index return the unit name in the map used by the converter.  <a href="class_linear_unit_converter.html#a3200a5215ea6ba216e537341792f2cde">More...</a><br /></td></tr>
-<tr class="separator:a3200a5215ea6ba216e537341792f2cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d82908abe29e03174af89de01611c44"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linear_unit_converter.html#a2d82908abe29e03174af89de01611c44">getUnitFromInteger</a> (int index) const override</td></tr>
+<tr class="memdesc:a2d82908abe29e03174af89de01611c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an integer index return the unit name in the map used by the converter.  <a href="class_linear_unit_converter.html#a2d82908abe29e03174af89de01611c44">More...</a><br /></td></tr>
+<tr class="separator:a2d82908abe29e03174af89de01611c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec8de8b8a30d0f5d789a09f4172910b"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit_converter.html#a4ec8de8b8a30d0f5d789a09f4172910b">convert</a> (float input, const string &amp;inputUnit, const string &amp;outputUnit) const =0</td></tr>
 <tr class="memdesc:a4ec8de8b8a30d0f5d789a09f4172910b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a given value in a given unit to a desired unit.  <a href="class_unit_converter.html#a4ec8de8b8a30d0f5d789a09f4172910b">More...</a><br /></td></tr>
 <tr class="separator:a4ec8de8b8a30d0f5d789a09f4172910b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,10 +173,10 @@ const std::unordered_map&lt; string, float &gt; &amp;&#160;</td><td class="memIt
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a89ba64d3b093e686110b03b89108427d"><td class="memItemLeft" align="right" valign="top"><a id="a89ba64d3b093e686110b03b89108427d" name="a89ba64d3b093e686110b03b89108427d"></a>
+<tr class="memitem:ac2b43fdcc77a4ed8f22e62e63846f88b"><td class="memItemLeft" align="right" valign="top"><a id="ac2b43fdcc77a4ed8f22e62e63846f88b" name="ac2b43fdcc77a4ed8f22e62e63846f88b"></a>
 static <a class="el" href="_unit_8h.html#afd9858f2882672b432442076bd2a581d">LinearUnitConverterPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (<a class="el" href="_definition_8h.html#afd46bbf39caea5fd2467d5df57fb3773">UnitTypeDefPtr</a> <a class="el" href="class_unit_def.html">UnitDef</a>)</td></tr>
-<tr class="memdesc:a89ba64d3b093e686110b03b89108427d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creator. <br /></td></tr>
-<tr class="separator:a89ba64d3b093e686110b03b89108427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ac2b43fdcc77a4ed8f22e62e63846f88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creator. <br /></td></tr>
+<tr class="separator:ac2b43fdcc77a4ed8f22e62e63846f88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A converter class for linear units that require only a scalar multiplication. </p>
@@ -465,8 +465,8 @@ static <a class="el" href="_unit_8h.html#afd9858f2882672b432442076bd2a581d">Line
 
 </div>
 </div>
-<a id="a3200a5215ea6ba216e537341792f2cde" name="a3200a5215ea6ba216e537341792f2cde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3200a5215ea6ba216e537341792f2cde">&#9670;&#160;</a></span>getUnitFromInteger()</h2>
+<a id="a2d82908abe29e03174af89de01611c44" name="a2d82908abe29e03174af89de01611c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d82908abe29e03174af89de01611c44">&#9670;&#160;</a></span>getUnitFromInteger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,7 +475,7 @@ static <a class="el" href="_unit_8h.html#afd9858f2882672b432442076bd2a581d">Line
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string getUnitFromInteger </td>
+          <td class="memname">virtual string getUnitFromInteger </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -526,9 +526,8 @@ static <a class="el" href="_unit_8h.html#afd9858f2882672b432442076bd2a581d">Line
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXCore/<a class="el" href="_unit_8h_source.html">Unit.h</a></li>
-<li>source/MaterialXCore/Unit.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -16,9 +16,7 @@ var searchData=
   ['color4_13',['Color4',['../class_color4.html',1,'']]],
   ['colormanagementsystem_14',['ColorManagementSystem',['../class_color_management_system.html',1,'']]],
   ['colorspacetransform_15',['ColorSpaceTransform',['../struct_color_space_transform.html',1,'']]],
-  ['combinenode_16',['CombineNode',['../class_combine_node.html',1,'']]],
-  ['commentelement_17',['CommentElement',['../class_comment_element.html',1,'']]],
-  ['compoundnode_18',['CompoundNode',['../class_compound_node.html',1,'']]],
-  ['convertnode_19',['ConvertNode',['../class_convert_node.html',1,'']]],
-  ['convolutionnode_20',['ConvolutionNode',['../class_convolution_node.html',1,'']]]
+  ['commentelement_16',['CommentElement',['../class_comment_element.html',1,'']]],
+  ['compoundnode_17',['CompoundNode',['../class_compound_node.html',1,'']]],
+  ['convolutionnode_18',['ConvolutionNode',['../class_convolution_node.html',1,'']]]
 ];

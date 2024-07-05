@@ -6,7 +6,7 @@ var class_element =
     [ "asA", "class_element.html#a4a75e5097ae472310f67ebdd9e5114ae", null ],
     [ "asString", "class_element.html#a195bda23a439c46862ff20a337113f7d", null ],
     [ "changeChildCategory", "class_element.html#a3d58b1b9c116a8a01f0437a63e2cf8cf", null ],
-    [ "clearContent", "class_element.html#a0761c8cf0283a7b44a7de06a5dac6e45", null ],
+    [ "clearContent", "class_element.html#a5cf6270e258c23e75f8fe2c98697b76d", null ],
     [ "copyContentFrom", "class_element.html#a7c9598aadf5bd08869adfabac2bc349a", null ],
     [ "createStringResolver", "class_element.html#a88ea2e46fc1c36f9c08ae2299d16cef4", null ],
     [ "createValidChildName", "class_element.html#a48b55f5719475fd16f1f36ea2239c50d", null ],
@@ -14,6 +14,7 @@ var class_element =
     [ "getActiveFilePrefix", "class_element.html#adcbec6cff3881687e677fb3b1ef40f82", null ],
     [ "getActiveGeomPrefix", "class_element.html#a15c76d88e28c8bbe678abab4f0b29d24", null ],
     [ "getActiveSourceUri", "class_element.html#a0530443f1276eba3697c545d08e855d8", null ],
+    [ "getAncestorOfType", "class_element.html#a2716f0413e9a0ee3ba22628eb78969d0", null ],
     [ "getAncestorOfType", "class_element.html#a2b7c3245679764450e6311a36e8ef25c", null ],
     [ "getAttribute", "class_element.html#a0cc999ec391f2436d9be051a56d921bf", null ],
     [ "getAttributeNames", "class_element.html#a5cc443f00638aa5e0772b8b12e83f243", null ],
@@ -44,7 +45,7 @@ var class_element =
     [ "getSelf", "class_element.html#a132bbbebb1a1fbc5c2c1b1b13a31dfbb", null ],
     [ "getSourceUri", "class_element.html#a68cff1af342b41c60498c1cfbe04628d", null ],
     [ "getTypedAttribute", "class_element.html#a9c45f515aa286617eb038a5d69dda466", null ],
-    [ "getUpstreamEdge", "class_element.html#ab57e0f3274e7b625a01ac7a7583ff9f1", null ],
+    [ "getUpstreamEdge", "class_element.html#aff666b934c8dd47cea2ef0d7f02f366d", null ],
     [ "getUpstreamEdgeCount", "class_element.html#a84a1963858e878945a09a2435ba5a5e1", null ],
     [ "getUpstreamElement", "class_element.html#a9666428d61bfeb5e12d7b1fa5acc4576", null ],
     [ "hasAttribute", "class_element.html#ae937c30e5241baea5ae003e2e2bc3f32", null ],
@@ -78,5 +79,5 @@ var class_element =
     [ "traverseGraph", "class_element.html#a38df1b65f099979e47e716beed9ab221", null ],
     [ "traverseInheritance", "class_element.html#a758309b1274e959a5dd4416c910e2ffd", null ],
     [ "traverseTree", "class_element.html#a34584e8db9ddc145eba66b6e21568ae5", null ],
-    [ "validate", "class_element.html#af00d5378160332bb4fe55ab3cfad3770", null ]
+    [ "validate", "class_element.html#a6b34b2b7022c16078a1ef6030c3894cc", null ]
 ];

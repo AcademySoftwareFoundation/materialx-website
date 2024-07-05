@@ -6,7 +6,7 @@ var class_linear_unit_converter =
     [ "convert", "class_linear_unit_converter.html#acad6b53ef6a5cd95c6cdafbc60672770", null ],
     [ "convert", "class_linear_unit_converter.html#ac7e51d7bf5f7b5a9bb805dee5522015a", null ],
     [ "getUnitAsInteger", "class_linear_unit_converter.html#a30c3f443fba3cbb5ff4b750bb592b3bd", null ],
-    [ "getUnitFromInteger", "class_linear_unit_converter.html#a3200a5215ea6ba216e537341792f2cde", null ],
+    [ "getUnitFromInteger", "class_linear_unit_converter.html#a2d82908abe29e03174af89de01611c44", null ],
     [ "getUnitScale", "class_linear_unit_converter.html#af4ec3617953089aa8616feb7e59e2d04", null ],
     [ "getUnitType", "class_linear_unit_converter.html#af1a3b4c6e4e488f386712f9113b12945", null ],
     [ "write", "class_linear_unit_converter.html#ab5022223b51a6ce489241148e79a2131", null ]

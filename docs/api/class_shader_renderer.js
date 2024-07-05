@@ -6,8 +6,8 @@ var class_shader_renderer =
       [ "Metal", "class_shader_renderer.html#a782c36bfce6ff989984430100d41e01caeaa57a9b4248ce3968e718895e1c2f04", null ]
     ] ],
     [ "captureImage", "class_shader_renderer.html#a0e7f0909c7d5357b8d91c70dfa3aca54", null ],
-    [ "createProgram", "class_shader_renderer.html#a27295956757e2dcec596955aad744b40", null ],
-    [ "createProgram", "class_shader_renderer.html#a990f5887d2593101173ee8f50d3d7231", null ],
+    [ "createProgram", "class_shader_renderer.html#a074016caa300719a16efa538dac28dd5", null ],
+    [ "createProgram", "class_shader_renderer.html#acc705fbe50dd87df811619a09fcd0a9c", null ],
     [ "getCamera", "class_shader_renderer.html#acd02e141a1924b6f1271573fdba8e1f5", null ],
     [ "getGeometryHandler", "class_shader_renderer.html#a5772403c6508e08a79087561517b7075", null ],
     [ "getImageHandler", "class_shader_renderer.html#a60a7dd06d4158db427190f3fbd2ae74e", null ],
@@ -18,7 +18,7 @@ var class_shader_renderer =
     [ "setGeometryHandler", "class_shader_renderer.html#a55126f492cc55b799ee361c992c27d89", null ],
     [ "setImageHandler", "class_shader_renderer.html#a1e44744fcfec42866ef5405ba0482ac9", null ],
     [ "setLightHandler", "class_shader_renderer.html#a2cb5cd0c241eefdc5adc34a2a27ddc05", null ],
-    [ "setSize", "class_shader_renderer.html#aefb865cd7329b8908471f748afd433ba", null ],
-    [ "updateUniform", "class_shader_renderer.html#a2a6a46cd789a3b49d13db69980d14897", null ],
+    [ "setSize", "class_shader_renderer.html#a800c5915f32e9259f06a43dbc8663787", null ],
+    [ "updateUniform", "class_shader_renderer.html#adbed4ccfec2cc43f99cd2b575a64bc1b", null ],
     [ "validateInputs", "class_shader_renderer.html#a4b351e810d3cf815504236fdfa726cf6", null ]
 ];

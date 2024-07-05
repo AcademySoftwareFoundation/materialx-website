@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -116,9 +116,9 @@ Inheritance diagram for ShaderMetadataRegistry:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fc4fb576555c76e7b8c2f77c07922dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_metadata_registry.html#a0fc4fb576555c76e7b8c2f77c07922dc">addMetadata</a> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> value=nullptr)</td></tr>
-<tr class="memdesc:a0fc4fb576555c76e7b8c2f77c07922dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new metadata entry to the registry.  <a href="class_shader_metadata_registry.html#a0fc4fb576555c76e7b8c2f77c07922dc">More...</a><br /></td></tr>
-<tr class="separator:a0fc4fb576555c76e7b8c2f77c07922dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce96bcb548334a3304c4f8e905f056c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_metadata_registry.html#a1ce96bcb548334a3304c4f8e905f056c">addMetadata</a> (const string &amp;name, <a class="el" href="class_type_desc.html">TypeDesc</a> type, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> value=nullptr)</td></tr>
+<tr class="memdesc:a1ce96bcb548334a3304c4f8e905f056c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new metadata entry to the registry.  <a href="class_shader_metadata_registry.html#a1ce96bcb548334a3304c4f8e905f056c">More...</a><br /></td></tr>
+<tr class="separator:a1ce96bcb548334a3304c4f8e905f056c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7328b52267227eeba3595098cf593da"><td class="memItemLeft" align="right" valign="top"><a id="ad7328b52267227eeba3595098cf593da" name="ad7328b52267227eeba3595098cf593da"></a>
 const <a class="el" href="struct_shader_metadata.html">ShaderMetadata</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findMetadata</b> (const string &amp;name) const</td></tr>
 <tr class="memdesc:ad7328b52267227eeba3595098cf593da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the metadata registered for the given name, or nullptr if no such entry is found. <br /></td></tr>
@@ -157,9 +157,9 @@ template&lt;class T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4d108925be6ed70bbc11665882d94d6f"><td class="memItemLeft" align="right" valign="top"><a id="a4d108925be6ed70bbc11665882d94d6f" name="a4d108925be6ed70bbc11665882d94d6f"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>USER_DATA_NAME</b> = &quot;ShaderMetadataRegistry&quot;</td></tr>
-<tr class="separator:a4d108925be6ed70bbc11665882d94d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa210b7cd61d4db46bb4e5faa215b903"><td class="memItemLeft" align="right" valign="top"><a id="afa210b7cd61d4db46bb4e5faa215b903" name="afa210b7cd61d4db46bb4e5faa215b903"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>USER_DATA_NAME</b></td></tr>
+<tr class="separator:afa210b7cd61d4db46bb4e5faa215b903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -173,8 +173,8 @@ std::unordered_map&lt; string, size_t &gt;&#160;</td><td class="memItemRight" va
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A registry for metadata that will be exported to the generated shader if found on nodes and inputs during shader generation. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0fc4fb576555c76e7b8c2f77c07922dc" name="a0fc4fb576555c76e7b8c2f77c07922dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fc4fb576555c76e7b8c2f77c07922dc">&#9670;&#160;</a></span>addMetadata()</h2>
+<a id="a1ce96bcb548334a3304c4f8e905f056c" name="a1ce96bcb548334a3304c4f8e905f056c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce96bcb548334a3304c4f8e905f056c">&#9670;&#160;</a></span>addMetadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +191,7 @@ std::unordered_map&lt; string, size_t &gt;&#160;</td><td class="memItemRight" va
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_type_desc.html">TypeDesc</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -218,9 +218,8 @@ std::unordered_map&lt; string, size_t &gt;&#160;</td><td class="memItemRight" va
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_shader_node_8h_source.html">ShaderNode.h</a></li>
-<li>source/MaterialXGenShader/ShaderNode.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

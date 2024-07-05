@@ -102,12 +102,12 @@ var hierarchy =
     [ "GraphIterator", "class_graph_iterator.html", null ],
     [ "Half", "class_half.html", null ],
     [ "VectorN< V, S, N >::Hash", "class_vector_n_1_1_hash.html", null ],
+    [ "TypeDesc::Hasher", "struct_type_desc_1_1_hasher.html", null ],
     [ "Image", "class_image.html", null ],
     [ "ImageHandler", "class_image_handler.html", [
       [ "GLTextureHandler", "class_g_l_texture_handler.html", null ]
     ] ],
     [ "ImageLoader", "class_image_loader.html", [
-      [ "OiioImageLoader", "class_oiio_image_loader.html", null ],
       [ "StbImageLoader", "class_stb_image_loader.html", null ]
     ] ],
     [ "ImageSamplingKeyHasher", "struct_image_sampling_key_hasher.html", null ],
@@ -160,12 +160,10 @@ var hierarchy =
       [ "ClosureLayerNode", "class_closure_layer_node.html", null ],
       [ "ClosureMixNode", "class_closure_mix_node.html", null ],
       [ "ClosureMultiplyNode", "class_closure_multiply_node.html", null ],
-      [ "CombineNode", "class_combine_node.html", null ],
       [ "CompoundNode", "class_compound_node.html", [
         [ "ClosureCompoundNode", "class_closure_compound_node.html", null ],
         [ "LightCompoundNodeGlsl", "class_light_compound_node_glsl.html", null ]
       ] ],
-      [ "ConvertNode", "class_convert_node.html", null ],
       [ "ConvolutionNode", "class_convolution_node.html", [
         [ "BlurNode", "class_blur_node.html", [
           [ "BlurNodeGlsl", "class_blur_node_glsl.html", null ]
@@ -203,11 +201,8 @@ var hierarchy =
       [ "SourceCodeNode", "class_source_code_node.html", [
         [ "ClosureSourceCodeNode", "class_closure_source_code_node.html", null ],
         [ "HwImageNode", "class_hw_image_node.html", null ],
-        [ "LightShaderNodeGlsl", "class_light_shader_node_glsl.html", null ],
-        [ "SurfaceShaderNodeGlsl", "class_surface_shader_node_glsl.html", null ]
-      ] ],
-      [ "SwitchNode", "class_switch_node.html", null ],
-      [ "SwizzleNode", "class_swizzle_node.html", null ]
+        [ "LightShaderNodeGlsl", "class_light_shader_node_glsl.html", null ]
+      ] ]
     ] ],
     [ "ShaderPortFlag", "class_shader_port_flag.html", null ],
     [ "ShaderRenderer", "class_shader_renderer.html", [
@@ -234,6 +229,7 @@ var hierarchy =
     ] ],
     [ "TreeIterator", "class_tree_iterator.html", null ],
     [ "TypeDesc", "class_type_desc.html", null ],
+    [ "TypeDescRegistry", "class_type_desc_registry.html", null ],
     [ "TypeSyntax", "class_type_syntax.html", [
       [ "AggregateTypeSyntax", "class_aggregate_type_syntax.html", null ],
       [ "ScalarTypeSyntax", "class_scalar_type_syntax.html", [
@@ -263,7 +259,6 @@ var hierarchy =
       [ "VectorN< Color4, float, 4 >", "class_vector_n.html", [
         [ "Color4", "class_color4.html", null ]
       ] ],
-      [ "VectorN< VertexVector, float, 8 >", "class_vector_n.html", null ],
       [ "VectorN< Vector4, float, 4 >", "class_vector_n.html", [
         [ "Quaternion", "class_quaternion.html", null ],
         [ "Vector4", "class_vector4.html", null ]

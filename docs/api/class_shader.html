@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -108,10 +108,10 @@ $(document).ready(function(){initNavTree('class_shader.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8ba7f06d74e9074638996a4b80f5f57a"><td class="memItemLeft" align="right" valign="top"><a id="a8ba7f06d74e9074638996a4b80f5f57a" name="a8ba7f06d74e9074638996a4b80f5f57a"></a>
+<tr class="memitem:abf8d1b682d3a604ae3198d02a8d0c086"><td class="memItemLeft" align="right" valign="top"><a id="abf8d1b682d3a604ae3198d02a8d0c086" name="abf8d1b682d3a604ae3198d02a8d0c086"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Shader</b> (const string &amp;name, <a class="el" href="_shader_graph_8h.html#aaf78e54f0325edc6ce48bbbfdc196416">ShaderGraphPtr</a> graph)</td></tr>
-<tr class="memdesc:a8ba7f06d74e9074638996a4b80f5f57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a8ba7f06d74e9074638996a4b80f5f57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:abf8d1b682d3a604ae3198d02a8d0c086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:abf8d1b682d3a604ae3198d02a8d0c086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ded5d90e4cd2bc8854ed46b4c41e52e"><td class="memItemLeft" align="right" valign="top"><a id="a8ded5d90e4cd2bc8854ed46b4c41e52e" name="a8ded5d90e4cd2bc8854ed46b4c41e52e"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Shader</b> ()</td></tr>
 <tr class="memdesc:a8ded5d90e4cd2bc8854ed46b4c41e52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -173,11 +173,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasClassification</b>
 <tr class="memdesc:a427c58bff8cb8e218750b662d3298d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this shader matches the given classification. <br /></td></tr>
 <tr class="separator:a427c58bff8cb8e218750b662d3298d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12c620cb0274f11d4b8d66dbe4ee818a"><td class="memItemLeft" align="right" valign="top"><a id="a12c620cb0274f11d4b8d66dbe4ee818a" name="a12c620cb0274f11d4b8d66dbe4ee818a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSourceCode</b> (const string &amp;code, const string &amp;stage=Stage::PIXEL)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSourceCode</b> (const string &amp;code, const string &amp;stage=<a class="el" href="_shader_stage_8h.html#ab9c1236cb7ca383132d1ba2c4cf17218">Stage::PIXEL</a>)</td></tr>
 <tr class="memdesc:a12c620cb0274f11d4b8d66dbe4ee818a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the shader source code for a given shader stage. <br /></td></tr>
 <tr class="separator:a12c620cb0274f11d4b8d66dbe4ee818a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab35839fdeb049366da15d399a313167c"><td class="memItemLeft" align="right" valign="top"><a id="ab35839fdeb049366da15d399a313167c" name="ab35839fdeb049366da15d399a313167c"></a>
-const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSourceCode</b> (const string &amp;stage=Stage::PIXEL) const</td></tr>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSourceCode</b> (const string &amp;stage=<a class="el" href="_shader_stage_8h.html#ab9c1236cb7ca383132d1ba2c4cf17218">Stage::PIXEL</a>) const</td></tr>
 <tr class="memdesc:ab35839fdeb049366da15d399a313167c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shader source code for a given shader stage. <br /></td></tr>
 <tr class="separator:ab35839fdeb049366da15d399a313167c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -216,9 +216,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b><
 <div class="textblock"><p >Class containing all data needed during shader generation. </p>
 <p >After generation is completed it will contain the resulting source code emitted by shader generators.</p>
 <p >The class contains a default implementation using a single shader stage. Derived shaders can override this, as well as overriding all methods that add code to the shader. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_shader_8h_source.html">Shader.h</a></li>
-<li>source/MaterialXGenShader/Shader.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
