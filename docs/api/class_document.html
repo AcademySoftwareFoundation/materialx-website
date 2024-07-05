@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -122,10 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc910d73ef5be4e726ae7c1a42b90ac7"><td class="memItemLeft" align="right" valign="top"><a id="abc910d73ef5be4e726ae7c1a42b90ac7" name="abc910d73ef5be4e726ae7c1a42b90ac7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Document</b> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> parent, const string &amp;name)</td></tr>
 <tr class="separator:abc910d73ef5be4e726ae7c1a42b90ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a40b6614565f755233080a384c35f1"><td class="memItemLeft" align="right" valign="top"><a id="a25a40b6614565f755233080a384c35f1" name="a25a40b6614565f755233080a384c35f1"></a>
+<tr class="memitem:a6365dca5a7d8ddb694726a53b55a4c27"><td class="memItemLeft" align="right" valign="top"><a id="a6365dca5a7d8ddb694726a53b55a4c27" name="a6365dca5a7d8ddb694726a53b55a4c27"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> ()</td></tr>
-<tr class="memdesc:a25a40b6614565f755233080a384c35f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the document, removing any existing content. <br /></td></tr>
-<tr class="separator:a25a40b6614565f755233080a384c35f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a6365dca5a7d8ddb694726a53b55a4c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the document, removing any existing content. <br /></td></tr>
+<tr class="separator:a6365dca5a7d8ddb694726a53b55a4c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5f3f3df6dc6c0a05a1413a40a9cca5a"><td class="memItemLeft" align="right" valign="top"><a id="ab5f3f3df6dc6c0a05a1413a40a9cca5a" name="ab5f3f3df6dc6c0a05a1413a40a9cca5a"></a>
 virtual <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> () const</td></tr>
 <tr class="memdesc:ab5f3f3df6dc6c0a05a1413a40a9cca5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a deep copy of the document. <br /></td></tr>
@@ -137,6 +137,9 @@ virtual <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc"
 <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getReferencedSourceUris</b> () const</td></tr>
 <tr class="memdesc:a60ab7699c6fee79d58174e1b1575dae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of source URI's referenced by the document. <br /></td></tr>
 <tr class="separator:a60ab7699c6fee79d58174e1b1575dae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3ac22e0d939a0079af29bfed49b63c"><td class="memItemLeft" align="right" valign="top"><a id="a2a3ac22e0d939a0079af29bfed49b63c" name="a2a3ac22e0d939a0079af29bfed49b63c"></a>
+NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><b>addNodeDefFromGraph</b> (<a class="el" href="_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7">NodeGraphPtr</a> nodeGraph, const string &amp;nodeDefName, const string &amp;node, const string &amp;version, bool isDefaultVersion, const string &amp;nodeGroup, const string &amp;newGraphName)</td></tr>
+<tr class="separator:a2a3ac22e0d939a0079af29bfed49b63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">NodeGraph Elements</div></td></tr>
 <tr class="memitem:a97f63ba566fe1e207503c006209791c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7">NodeGraphPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a97f63ba566fe1e207503c006209791c1">addNodeGraph</a> (const string &amp;name=EMPTY_STRING)</td></tr>
 <tr class="memdesc:a97f63ba566fe1e207503c006209791c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> to the document.  <a href="class_document.html#a97f63ba566fe1e207503c006209791c1">More...</a><br /></td></tr>
@@ -265,9 +268,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>removeTypeDef</b> (co
 <tr class="memitem:a9b83ab0131023aecd3659666ac3a3b5f"><td class="memItemLeft" align="right" valign="top">NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a9b83ab0131023aecd3659666ac3a3b5f">addNodeDef</a> (const string &amp;name=EMPTY_STRING, const string &amp;type=DEFAULT_TYPE_STRING, const string &amp;node=EMPTY_STRING)</td></tr>
 <tr class="memdesc:a9b83ab0131023aecd3659666ac3a3b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> to the document.  <a href="class_document.html#a9b83ab0131023aecd3659666ac3a3b5f">More...</a><br /></td></tr>
 <tr class="separator:a9b83ab0131023aecd3659666ac3a3b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2983841fc6896f979f2101657890dd2"><td class="memItemLeft" align="right" valign="top">NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#ab2983841fc6896f979f2101657890dd2">addNodeDefFromGraph</a> (const <a class="el" href="_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7">NodeGraphPtr</a> nodeGraph, const string &amp;nodeDefName, const string &amp;node, const string &amp;version, bool isDefaultVersion, const string &amp;nodeGroup, const string &amp;newGraphName)</td></tr>
-<tr class="memdesc:ab2983841fc6896f979f2101657890dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> declaration which is based on a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>.  <a href="class_document.html#ab2983841fc6896f979f2101657890dd2">More...</a><br /></td></tr>
-<tr class="separator:ab2983841fc6896f979f2101657890dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d935301ff4026ef9bb48c007e573562"><td class="memItemLeft" align="right" valign="top">NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a4d935301ff4026ef9bb48c007e573562">addNodeDefFromGraph</a> (<a class="el" href="_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7">NodeGraphPtr</a> nodeGraph, const string &amp;nodeDefName, const string &amp;category, const string &amp;newGraphName)</td></tr>
+<tr class="memdesc:a4d935301ff4026ef9bb48c007e573562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> and Functional Graph based on a Compound <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>.  <a href="class_document.html#a4d935301ff4026ef9bb48c007e573562">More...</a><br /></td></tr>
+<tr class="separator:a4d935301ff4026ef9bb48c007e573562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dabefafd84743bbe81849f29bb9a89f"><td class="memItemLeft" align="right" valign="top"><a id="a9dabefafd84743bbe81849f29bb9a89f" name="a9dabefafd84743bbe81849f29bb9a89f"></a>
 NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeDef</b> (const string &amp;name) const</td></tr>
 <tr class="memdesc:a9dabefafd84743bbe81849f29bb9a89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a>, if any, with the given name. <br /></td></tr>
@@ -662,9 +665,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultVersion</b>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>getDefaultVersion</b> () const</td></tr>
 <tr class="memdesc:ab871613032696392b4c1282c6b9c8580 inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default version flag of this element. <br /></td></tr>
 <tr class="separator:ab871613032696392b4c1282c6b9c8580 inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4978e020a466cca80d0e7a233979529a inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_interface_8h.html#a73652e942084f4d2a0584e1d742d02ad">ConstInterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#a4978e020a466cca80d0e7a233979529a">getDeclaration</a> (const string &amp;target=EMPTY_STRING) const</td></tr>
-<tr class="memdesc:a4978e020a466cca80d0e7a233979529a inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first declaration of this interface, optionally filtered by the given target name.  <a href="class_interface_element.html#a4978e020a466cca80d0e7a233979529a">More...</a><br /></td></tr>
-<tr class="separator:a4978e020a466cca80d0e7a233979529a inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac57740b87e6d324f904818c7f1a52d8 inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_interface_8h.html#a73652e942084f4d2a0584e1d742d02ad">ConstInterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#aac57740b87e6d324f904818c7f1a52d8">getDeclaration</a> (const string &amp;target=EMPTY_STRING) const</td></tr>
+<tr class="memdesc:aac57740b87e6d324f904818c7f1a52d8 inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first declaration of this interface, optionally filtered by the given target name.  <a href="class_interface_element.html#aac57740b87e6d324f904818c7f1a52d8">More...</a><br /></td></tr>
+<tr class="separator:aac57740b87e6d324f904818c7f1a52d8 inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">clearContent</a> () override</td></tr>
 <tr class="memdesc:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all attributes and descendants from this element.  <a href="class_interface_element.html#a79eddfa50c7a15e4c7d10031c29d66bf">More...</a><br /></td></tr>
 <tr class="separator:a79eddfa50c7a15e4c7d10031c29d66bf inherit pub_methods_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -941,6 +944,11 @@ DocumentPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getDocument</b
 ConstDocumentPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getDocument</b> () const</td></tr>
 <tr class="memdesc:ae464f92bcde4eed60434dad098b0a8f3 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the root document of our tree. <br /></td></tr>
 <tr class="separator:ae464f92bcde4eed60434dad098b0a8f3 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2716f0413e9a0ee3ba22628eb78969d0 inherit pub_methods_class_element"><td class="memTemplParams" colspan="2"><a id="a2716f0413e9a0ee3ba22628eb78969d0" name="a2716f0413e9a0ee3ba22628eb78969d0"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a2716f0413e9a0ee3ba22628eb78969d0 inherit pub_methods_class_element"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getAncestorOfType</b> ()</td></tr>
+<tr class="memdesc:a2716f0413e9a0ee3ba22628eb78969d0 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first ancestor of the given subclass, or an empty shared pointer if no ancestor of this subclass is found. <br /></td></tr>
+<tr class="separator:a2716f0413e9a0ee3ba22628eb78969d0 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b7c3245679764450e6311a36e8ef25c inherit pub_methods_class_element"><td class="memTemplParams" colspan="2"><a id="a2b7c3245679764450e6311a36e8ef25c" name="a2b7c3245679764450e6311a36e8ef25c"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a2b7c3245679764450e6311a36e8ef25c inherit pub_methods_class_element"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; const T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getAncestorOfType</b> () const</td></tr>
@@ -952,9 +960,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a38df1b65f099979e47e716beed9ab221 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graph_iterator.html">GraphIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a38df1b65f099979e47e716beed9ab221">traverseGraph</a> () const</td></tr>
 <tr class="memdesc:a38df1b65f099979e47e716beed9ab221 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverse the dataflow graph from the given element to each of its upstream sources in depth-first order, using pre-order visitation.  <a href="class_element.html#a38df1b65f099979e47e716beed9ab221">More...</a><br /></td></tr>
 <tr class="separator:a38df1b65f099979e47e716beed9ab221 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57e0f3274e7b625a01ac7a7583ff9f1 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_edge.html">Edge</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#ab57e0f3274e7b625a01ac7a7583ff9f1">getUpstreamEdge</a> (size_t index=0) const</td></tr>
-<tr class="memdesc:ab57e0f3274e7b625a01ac7a7583ff9f1 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="class_edge.html" title="An edge between two connected Elements, returned during graph traversal.">Edge</a> with the given index that lies directly upstream from this element in the dataflow graph.  <a href="class_element.html#ab57e0f3274e7b625a01ac7a7583ff9f1">More...</a><br /></td></tr>
-<tr class="separator:ab57e0f3274e7b625a01ac7a7583ff9f1 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff666b934c8dd47cea2ef0d7f02f366d inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_edge.html">Edge</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#aff666b934c8dd47cea2ef0d7f02f366d">getUpstreamEdge</a> (size_t index=0) const</td></tr>
+<tr class="memdesc:aff666b934c8dd47cea2ef0d7f02f366d inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="class_edge.html" title="An edge between two connected Elements, returned during graph traversal.">Edge</a> with the given index that lies directly upstream from this element in the dataflow graph.  <a href="class_element.html#aff666b934c8dd47cea2ef0d7f02f366d">More...</a><br /></td></tr>
+<tr class="separator:aff666b934c8dd47cea2ef0d7f02f366d inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84a1963858e878945a09a2435ba5a5e1 inherit pub_methods_class_element"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a84a1963858e878945a09a2435ba5a5e1">getUpstreamEdgeCount</a> () const</td></tr>
 <tr class="memdesc:a84a1963858e878945a09a2435ba5a5e1 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of queriable upstream edges for this element.  <a href="class_element.html#a84a1963858e878945a09a2435ba5a5e1">More...</a><br /></td></tr>
 <tr class="separator:a84a1963858e878945a09a2435ba5a5e1 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1006,51 +1014,57 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad6f8ab005d946b15d5ebc111e4e952eb"><td class="memItemLeft" align="right" valign="top"><a id="ad6f8ab005d946b15d5ebc111e4e952eb" name="ad6f8ab005d946b15d5ebc111e4e952eb"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CATEGORY</b></td></tr>
 <tr class="separator:ad6f8ab005d946b15d5ebc111e4e952eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ff8cd84c77c8dc813d44195ef8041d"><td class="memItemLeft" align="right" valign="top"><a id="a41ff8cd84c77c8dc813d44195ef8041d" name="a41ff8cd84c77c8dc813d44195ef8041d"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CMS_ATTRIBUTE</b> = &quot;cms&quot;</td></tr>
-<tr class="separator:a41ff8cd84c77c8dc813d44195ef8041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadaea80c86af7f0dcf374eac13c8f2fe"><td class="memItemLeft" align="right" valign="top"><a id="aadaea80c86af7f0dcf374eac13c8f2fe" name="aadaea80c86af7f0dcf374eac13c8f2fe"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CMS_ATTRIBUTE</b></td></tr>
+<tr class="separator:aadaea80c86af7f0dcf374eac13c8f2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a4175f805d9e31d60cc1f6cacce49f"><td class="memItemLeft" align="right" valign="top"><a id="a69a4175f805d9e31d60cc1f6cacce49f" name="a69a4175f805d9e31d60cc1f6cacce49f"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CMS_CONFIG_ATTRIBUTE</b> = &quot;cmsconfig&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CMS_CONFIG_ATTRIBUTE</b></td></tr>
 <tr class="separator:a69a4175f805d9e31d60cc1f6cacce49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_interface_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_interface_element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_interface_element.html">InterfaceElement</a></td></tr>
 <tr class="memitem:a8928230c84421902920c98efe23c504c inherit pub_static_attribs_class_interface_element"><td class="memItemLeft" align="right" valign="top"><a id="a8928230c84421902920c98efe23c504c" name="a8928230c84421902920c98efe23c504c"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NODE_DEF_ATTRIBUTE</b> = &quot;nodedef&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NODE_DEF_ATTRIBUTE</b></td></tr>
 <tr class="separator:a8928230c84421902920c98efe23c504c inherit pub_static_attribs_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af830a853dbd04b0856f5d4ccbb904b28 inherit pub_static_attribs_class_interface_element"><td class="memItemLeft" align="right" valign="top"><a id="af830a853dbd04b0856f5d4ccbb904b28" name="af830a853dbd04b0856f5d4ccbb904b28"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TARGET_ATTRIBUTE</b> = &quot;target&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TARGET_ATTRIBUTE</b></td></tr>
 <tr class="separator:af830a853dbd04b0856f5d4ccbb904b28 inherit pub_static_attribs_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b84eca9946f20e963c054ec3de5c608 inherit pub_static_attribs_class_interface_element"><td class="memItemLeft" align="right" valign="top"><a id="a7b84eca9946f20e963c054ec3de5c608" name="a7b84eca9946f20e963c054ec3de5c608"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_ATTRIBUTE</b> = &quot;version&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_ATTRIBUTE</b></td></tr>
 <tr class="separator:a7b84eca9946f20e963c054ec3de5c608 inherit pub_static_attribs_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d202fb26099aabbc097c08d68fb7a8 inherit pub_static_attribs_class_interface_element"><td class="memItemLeft" align="right" valign="top"><a id="a15d202fb26099aabbc097c08d68fb7a8" name="a15d202fb26099aabbc097c08d68fb7a8"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_VERSION_ATTRIBUTE</b> = &quot;isdefaultversion&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_VERSION_ATTRIBUTE</b></td></tr>
 <tr class="separator:a15d202fb26099aabbc097c08d68fb7a8 inherit pub_static_attribs_class_interface_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_typed_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_typed_element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_typed_element.html">TypedElement</a></td></tr>
 <tr class="memitem:a0b8daa0b7e13c4042505101e07413c69 inherit pub_static_attribs_class_typed_element"><td class="memItemLeft" align="right" valign="top"><a id="a0b8daa0b7e13c4042505101e07413c69" name="a0b8daa0b7e13c4042505101e07413c69"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_ATTRIBUTE</b> = &quot;type&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_ATTRIBUTE</b></td></tr>
 <tr class="separator:a0b8daa0b7e13c4042505101e07413c69 inherit pub_static_attribs_class_typed_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_element.html">Element</a></td></tr>
-<tr class="memitem:a2d7ac41d32574e206600c255bfeacdac inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a2d7ac41d32574e206600c255bfeacdac" name="a2d7ac41d32574e206600c255bfeacdac"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NAME_ATTRIBUTE</b> = &quot;name&quot;</td></tr>
-<tr class="separator:a2d7ac41d32574e206600c255bfeacdac inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c177f2b2d1ae7da2c7e9f4defbe844c inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a1c177f2b2d1ae7da2c7e9f4defbe844c" name="a1c177f2b2d1ae7da2c7e9f4defbe844c"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NAME_ATTRIBUTE</b></td></tr>
+<tr class="separator:a1c177f2b2d1ae7da2c7e9f4defbe844c inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6a09c1c71b5ec57059be5f6dbe5811 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a6a6a09c1c71b5ec57059be5f6dbe5811" name="a6a6a09c1c71b5ec57059be5f6dbe5811"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>FILE_PREFIX_ATTRIBUTE</b> = &quot;fileprefix&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>FILE_PREFIX_ATTRIBUTE</b></td></tr>
 <tr class="separator:a6a6a09c1c71b5ec57059be5f6dbe5811 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f12d06da99e1aae363fd84468ef6d88 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a2f12d06da99e1aae363fd84468ef6d88" name="a2f12d06da99e1aae363fd84468ef6d88"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOM_PREFIX_ATTRIBUTE</b> = &quot;geomprefix&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>GEOM_PREFIX_ATTRIBUTE</b></td></tr>
 <tr class="separator:a2f12d06da99e1aae363fd84468ef6d88 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b03a3ce8508117c4b4c1e12b8bd6bc0 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a6b03a3ce8508117c4b4c1e12b8bd6bc0" name="a6b03a3ce8508117c4b4c1e12b8bd6bc0"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_SPACE_ATTRIBUTE</b> = &quot;colorspace&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_SPACE_ATTRIBUTE</b></td></tr>
 <tr class="separator:a6b03a3ce8508117c4b4c1e12b8bd6bc0 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5138402124f5db34a326e23b0b373730 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a5138402124f5db34a326e23b0b373730" name="a5138402124f5db34a326e23b0b373730"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INHERIT_ATTRIBUTE</b> = &quot;inherit&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>INHERIT_ATTRIBUTE</b></td></tr>
 <tr class="separator:a5138402124f5db34a326e23b0b373730 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e7cfe764138a7fc7b56e3f0a4a67c3 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="ab9e7cfe764138a7fc7b56e3f0a4a67c3" name="ab9e7cfe764138a7fc7b56e3f0a4a67c3"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NAMESPACE_ATTRIBUTE</b> = &quot;namespace&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NAMESPACE_ATTRIBUTE</b></td></tr>
 <tr class="separator:ab9e7cfe764138a7fc7b56e3f0a4a67c3 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e025294fe13213ef9ca980e85c96494 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a1e025294fe13213ef9ca980e85c96494" name="a1e025294fe13213ef9ca980e85c96494"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOC_ATTRIBUTE</b> = &quot;doc&quot;</td></tr>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DOC_ATTRIBUTE</b></td></tr>
 <tr class="separator:a1e025294fe13213ef9ca980e85c96494 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc4f84eb3b0e4316b2550a381a8b781 inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a6dc4f84eb3b0e4316b2550a381a8b781" name="a6dc4f84eb3b0e4316b2550a381a8b781"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>XPOS_ATTRIBUTE</b></td></tr>
+<tr class="separator:a6dc4f84eb3b0e4316b2550a381a8b781 inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd1bbfe1101570e3f53110a9a46976a inherit pub_static_attribs_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a4bd1bbfe1101570e3f53110a9a46976a" name="a4bd1bbfe1101570e3f53110a9a46976a"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>YPOS_ATTRIBUTE</b></td></tr>
+<tr class="separator:a4bd1bbfe1101570e3f53110a9a46976a inherit pub_static_attribs_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1099,12 +1113,12 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab29be0f37e94f5769a47c58b6d89e7cf inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="ab29be0f37e94f5769a47c58b6d89e7cf" name="ab29be0f37e94f5769a47c58b6d89e7cf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>validateRequire</b> (bool expression, bool &amp;res, string *message, const string &amp;errorDesc) const</td></tr>
 <tr class="separator:ab29be0f37e94f5769a47c58b6d89e7cf inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab674cf7e59de530547a42177824f0388 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="ab674cf7e59de530547a42177824f0388" name="ab674cf7e59de530547a42177824f0388"></a>
+<tr class="memitem:a7f2bb47f82197fe904d446dc72ddd432 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a7f2bb47f82197fe904d446dc72ddd432" name="a7f2bb47f82197fe904d446dc72ddd432"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>registerChildElement</b> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> child)</td></tr>
-<tr class="separator:ab674cf7e59de530547a42177824f0388 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a125954a7014a10007f85c9c5bb2b5fc6 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a125954a7014a10007f85c9c5bb2b5fc6" name="a125954a7014a10007f85c9c5bb2b5fc6"></a>
+<tr class="separator:a7f2bb47f82197fe904d446dc72ddd432 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dcb69fb0f7c44bc2cda04c348d8bc1 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a51dcb69fb0f7c44bc2cda04c348d8bc1" name="a51dcb69fb0f7c44bc2cda04c348d8bc1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterChildElement</b> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> child)</td></tr>
-<tr class="separator:a125954a7014a10007f85c9c5bb2b5fc6 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a51dcb69fb0f7c44bc2cda04c348d8bc1 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c216fc3f180338b55c4707bbf25d330 inherit pro_methods_class_element"><td class="memItemLeft" align="right" valign="top"><a id="a0c216fc3f180338b55c4707bbf25d330" name="a0c216fc3f180338b55c4707bbf25d330"></a>
 <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getSelfNonConst</b> () const</td></tr>
 <tr class="separator:a0c216fc3f180338b55c4707bbf25d330 inherit pro_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1461,8 +1475,8 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 
 </div>
 </div>
-<a id="ab2983841fc6896f979f2101657890dd2" name="ab2983841fc6896f979f2101657890dd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2983841fc6896f979f2101657890dd2">&#9670;&#160;</a></span>addNodeDefFromGraph()</h2>
+<a id="a4d935301ff4026ef9bb48c007e573562" name="a4d935301ff4026ef9bb48c007e573562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d935301ff4026ef9bb48c007e573562">&#9670;&#160;</a></span>addNodeDefFromGraph()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1470,7 +1484,7 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
         <tr>
           <td class="memname">NodeDefPtr addNodeDefFromGraph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7">NodeGraphPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_node_8h.html#a284c86c16f9d19e33e17596f230dd5c7">NodeGraphPtr</a>&#160;</td>
           <td class="paramname"><em>nodeGraph</em>, </td>
         </tr>
         <tr>
@@ -1483,25 +1497,7 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isDefaultVersion</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>nodeGroup</em>, </td>
+          <td class="paramname"><em>category</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1517,16 +1513,13 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
       </table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> declaration which is based on a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>. </p>
+<p>Create a <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> and Functional Graph based on a Compound <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nodeGraph</td><td><a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> used to create <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> </td></tr>
-    <tr><td class="paramname">nodeDefName</td><td>Declaration name </td></tr>
-    <tr><td class="paramname">node</td><td><a class="el" href="class_node.html" title="A node element within a NodeGraph or Document.">Node</a> type for the new declaration </td></tr>
-    <tr><td class="paramname">version</td><td>Version for the new declaration </td></tr>
-    <tr><td class="paramname">isDefaultVersion</td><td>If a version is specified is thie definition the default version </td></tr>
-    <tr><td class="paramname">newGraphName</td><td>Make a copy of this <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> with the given name if a non-empty name is provided. Otherwise modify the existing <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>. Default value is an empty string. </td></tr>
-    <tr><td class="paramname">nodeGroup</td><td>Optional node group for the new declaration. The Default value is an emptry string. </td></tr>
+    <tr><td class="paramname">nodeGraph</td><td>Compound <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>. </td></tr>
+    <tr><td class="paramname">newGraphName</td><td>Name of new functional <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a>. </td></tr>
+    <tr><td class="paramname">nodeDefName</td><td>Name of new <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> </td></tr>
+    <tr><td class="paramname">category</td><td>Category of the new <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1804,7 +1797,7 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 
 <p>Return the major and minor versions as an integer pair. </p>
 
-<p>Reimplemented from <a class="el" href="class_interface_element.html#aa5e960486495eafcdbcc7fbd48c92615">InterfaceElement</a>.</p>
+<p>Reimplemented from <a class="el" href="class_interface_element.html#a3f6e1d07baacc03b627eefacfcdeb46e">InterfaceElement</a>.</p>
 
 </div>
 </div>
@@ -1867,13 +1860,12 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the document passes all tests, false otherwise. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="class_element.html#af00d5378160332bb4fe55ab3cfad3770">Element</a>.</p>
+<p>Reimplemented from <a class="el" href="class_element.html#a6b34b2b7022c16078a1ef6030c3894cc">Element</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXCore/<a class="el" href="_document_8h_source.html">Document.h</a></li>
-<li>source/MaterialXCore/Document.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

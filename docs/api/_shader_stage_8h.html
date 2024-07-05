@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('_shader_stage_8h.html',''); initResiza
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ShaderStage.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -155,26 +156,44 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderStagePtr</b> =
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a41aa11111267dcf79c94e9534b60afd7"><td class="memItemLeft" align="right" valign="top"><a id="a41aa11111267dcf79c94e9534b60afd7" name="a41aa11111267dcf79c94e9534b60afd7"></a>
+<a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addStageUniform</b> (const string &amp;block, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage)</td></tr>
+<tr class="memdesc:a41aa11111267dcf79c94e9534b60afd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a new shader port to a uniform block. <br /></td></tr>
+<tr class="separator:a41aa11111267dcf79c94e9534b60afd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4202d5a4e75ac498cff8f7e39cec70"><td class="memItemLeft" align="right" valign="top"><a id="a6a4202d5a4e75ac498cff8f7e39cec70" name="a6a4202d5a4e75ac498cff8f7e39cec70"></a>
 <a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addStageUniform</b> (const string &amp;block, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage)</td></tr>
-<tr class="memdesc:a6a4202d5a4e75ac498cff8f7e39cec70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a new shader port to a uniform block. <br /></td></tr>
 <tr class="separator:a6a4202d5a4e75ac498cff8f7e39cec70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312b0a40dd235d8489c276d869edf4fe"><td class="memItemLeft" align="right" valign="top"><a id="a312b0a40dd235d8489c276d869edf4fe" name="a312b0a40dd235d8489c276d869edf4fe"></a>
+<a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addStageInput</b> (const string &amp;block, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool shouldWiden=false)</td></tr>
+<tr class="memdesc:a312b0a40dd235d8489c276d869edf4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a new shader port to an input block. <br /></td></tr>
+<tr class="separator:a312b0a40dd235d8489c276d869edf4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73710091aba04114b4c226ef5f22980"><td class="memItemLeft" align="right" valign="top"><a id="af73710091aba04114b4c226ef5f22980" name="af73710091aba04114b4c226ef5f22980"></a>
 <a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addStageInput</b> (const string &amp;block, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool shouldWiden=false)</td></tr>
-<tr class="memdesc:af73710091aba04114b4c226ef5f22980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a new shader port to an input block. <br /></td></tr>
 <tr class="separator:af73710091aba04114b4c226ef5f22980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a33c55069128a0bd04f20d731089c6"><td class="memItemLeft" align="right" valign="top"><a id="a25a33c55069128a0bd04f20d731089c6" name="a25a33c55069128a0bd04f20d731089c6"></a>
+<a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addStageOutput</b> (const string &amp;block, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool shouldWiden=false)</td></tr>
+<tr class="memdesc:a25a33c55069128a0bd04f20d731089c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a new shader port to an output block. <br /></td></tr>
+<tr class="separator:a25a33c55069128a0bd04f20d731089c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af93b60dededed3295f4880ccdd7d1d3f"><td class="memItemLeft" align="right" valign="top"><a id="af93b60dededed3295f4880ccdd7d1d3f" name="af93b60dededed3295f4880ccdd7d1d3f"></a>
 <a class="el" href="class_shader_port.html">ShaderPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addStageOutput</b> (const string &amp;block, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool shouldWiden=false)</td></tr>
-<tr class="memdesc:af93b60dededed3295f4880ccdd7d1d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a new shader port to an output block. <br /></td></tr>
 <tr class="separator:af93b60dededed3295f4880ccdd7d1d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a131c90af15353a7554bd4d63b969c1a7"><td class="memItemLeft" align="right" valign="top"><a id="a131c90af15353a7554bd4d63b969c1a7" name="a131c90af15353a7554bd4d63b969c1a7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addStageConnectorBlock</b> (const string &amp;block, const string &amp;instance, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;from, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;to)</td></tr>
 <tr class="memdesc:a131c90af15353a7554bd4d63b969c1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a connector block between stages. <br /></td></tr>
 <tr class="separator:a131c90af15353a7554bd4d63b969c1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfb4885a3089d26a4c85ae36c03f50f"><td class="memItemLeft" align="right" valign="top"><a id="a7bfb4885a3089d26a4c85ae36c03f50f" name="a7bfb4885a3089d26a4c85ae36c03f50f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addStageConnector</b> (const string &amp;block, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;from, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;to, bool shouldWiden=false)</td></tr>
+<tr class="memdesc:a7bfb4885a3089d26a4c85ae36c03f50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a variable to a stage connector block. <br /></td></tr>
+<tr class="separator:a7bfb4885a3089d26a4c85ae36c03f50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bbfaaf582edb3b4ad1ef530132e1c9"><td class="memItemLeft" align="right" valign="top"><a id="a51bbfaaf582edb3b4ad1ef530132e1c9" name="a51bbfaaf582edb3b4ad1ef530132e1c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addStageConnector</b> (const string &amp;block, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, const string &amp;name, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;from, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;to, bool shouldWiden=false)</td></tr>
-<tr class="memdesc:a51bbfaaf582edb3b4ad1ef530132e1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for adding a variable to a stage connector block. <br /></td></tr>
 <tr class="separator:a51bbfaaf582edb3b4ad1ef530132e1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab9c1236cb7ca383132d1ba2c4cf17218"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shader_stage_8h.html#ab9c1236cb7ca383132d1ba2c4cf17218">PIXEL</a></td></tr>
+<tr class="memdesc:ab9c1236cb7ca383132d1ba2c4cf17218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier for pixel stage.  <a href="_shader_stage_8h.html#ab9c1236cb7ca383132d1ba2c4cf17218">More...</a><br /></td></tr>
+<tr class="separator:ab9c1236cb7ca383132d1ba2c4cf17218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class related to holding information for shader stages. </p>
@@ -207,6 +226,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addStageConnector</b>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (stage.getName() == name)        \</div>
 <div class="line">    {</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab9c1236cb7ca383132d1ba2c4cf17218" name="ab9c1236cb7ca383132d1ba2c4cf17218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c1236cb7ca383132d1ba2c4cf17218">&#9670;&#160;</a></span>PIXEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MX_GENSHADER_API const string PIXEL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identifier for pixel stage. </p>
+<p >This is the main stage used by all shader targets. For single stage shader targets this is the one and only stage. <a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> targets with multiple stages can add additional stage identifiers to the Stage namespace. </p>
+
 </div>
 </div>
 </div><!-- contents -->

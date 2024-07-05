@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -125,6 +125,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addUpstreamDependenci
 <tr class="memitem:added87e0a84aadf53c89317387c813ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#added87e0a84aadf53c89317387c813ac">libraryPrefix</a></td></tr>
 <tr class="memdesc:added87e0a84aadf53c89317387c813ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard library prefix, which will be applied to calls to emitLibraryInclude during code generation.  <a href="class_gen_options.html#added87e0a84aadf53c89317387c813ac">More...</a><br /></td></tr>
 <tr class="separator:added87e0a84aadf53c89317387c813ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385d1eaf82f5d5c9ae3fdfc4b163b9a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#a385d1eaf82f5d5c9ae3fdfc4b163b9a1">emitColorTransforms</a></td></tr>
+<tr class="memdesc:a385d1eaf82f5d5c9ae3fdfc4b163b9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable emitting colorspace transform code if a color management system is defined.  <a href="class_gen_options.html#a385d1eaf82f5d5c9ae3fdfc4b163b9a1">More...</a><br /></td></tr>
+<tr class="separator:a385d1eaf82f5d5c9ae3fdfc4b163b9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9208729291bf20f854ef3d54f656b81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#aa9208729291bf20f854ef3d54f656b81">hwTransparency</a></td></tr>
 <tr class="memdesc:aa9208729291bf20f854ef3d54f656b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if transparency is needed or not for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shaders.  <a href="class_gen_options.html#aa9208729291bf20f854ef3d54f656b81">More...</a><br /></td></tr>
 <tr class="separator:aa9208729291bf20f854ef3d54f656b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +143,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addUpstreamDependenci
 <a class="el" href="_gen_options_8h.html#a4e48ff6b1f4ac9effc9fbd905d6ebb34">HwTransmissionRenderMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hwTransmissionRenderMethod</b></td></tr>
 <tr class="memdesc:a8c33039ae27c11415c55e87c4b16fd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the method to use for transmission rendering for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets. <br /></td></tr>
 <tr class="separator:a8c33039ae27c11415c55e87c4b16fd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7241a1bc9fc38bf47269830d9f5950cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#a7241a1bc9fc38bf47269830d9f5950cb">hwSrgbEncodeOutput</a></td></tr>
+<tr class="memdesc:a7241a1bc9fc38bf47269830d9f5950cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables an sRGB encoding for the color output on <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets.  <a href="class_gen_options.html#a7241a1bc9fc38bf47269830d9f5950cb">More...</a><br /></td></tr>
+<tr class="separator:a7241a1bc9fc38bf47269830d9f5950cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cdafef42f84b8fa82cff70cfa59e06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06">hwWriteDepthMoments</a></td></tr>
 <tr class="memdesc:ac4cdafef42f84b8fa82cff70cfa59e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the writing of depth moments for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets.  <a href="class_gen_options.html#ac4cdafef42f84b8fa82cff70cfa59e06">More...</a><br /></td></tr>
 <tr class="separator:ac4cdafef42f84b8fa82cff70cfa59e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,9 +172,6 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>hwMaxActiveLi
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hwImplicitBitangents</b></td></tr>
 <tr class="memdesc:ac3490eaad9f81cf1a2f1c27f76e6322b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate fallback bitangents from existing normals and tangents inside the bitangent node. <br /></td></tr>
 <tr class="separator:ac3490eaad9f81cf1a2f1c27f76e6322b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a385d1eaf82f5d5c9ae3fdfc4b163b9a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gen_options.html#a385d1eaf82f5d5c9ae3fdfc4b163b9a1">emitColorTransforms</a></td></tr>
-<tr class="memdesc:a385d1eaf82f5d5c9ae3fdfc4b163b9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable emitting colorspace transform code if a color management system is defined.  <a href="class_gen_options.html#a385d1eaf82f5d5c9ae3fdfc4b163b9a1">More...</a><br /></td></tr>
-<tr class="separator:a385d1eaf82f5d5c9ae3fdfc4b163b9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class holding options to configure shader generation. </p>
@@ -254,6 +257,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hwImplicitBitangents<
 </div><div class="memdoc">
 
 <p>Enables shadow mapping for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets. </p>
+<p >Defaults to false. </p>
+
+</div>
+</div>
+<a id="a7241a1bc9fc38bf47269830d9f5950cb" name="a7241a1bc9fc38bf47269830d9f5950cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7241a1bc9fc38bf47269830d9f5950cb">&#9670;&#160;</a></span>hwSrgbEncodeOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hwSrgbEncodeOutput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables an sRGB encoding for the color output on <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader targets. </p>
 <p >Defaults to false. </p>
 
 </div>

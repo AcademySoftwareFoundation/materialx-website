@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -180,16 +180,16 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>_geomPrefix</b></td
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isResolvedType</b> (const string &amp;type)</td></tr>
 <tr class="memdesc:a45021eb6cca3e92bfc1e7e8610100ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the given type may be resolved by this class. <br /></td></tr>
 <tr class="separator:a45021eb6cca3e92bfc1e7e8610100ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41a363fcc5a10bc7228d460c1572c87"><td class="memItemLeft" align="right" valign="top"><a id="ab41a363fcc5a10bc7228d460c1572c87" name="ab41a363fcc5a10bc7228d460c1572c87"></a>
+<tr class="memitem:ae3b9e5b8c2503644526a81ce5367e984"><td class="memItemLeft" align="right" valign="top"><a id="ae3b9e5b8c2503644526a81ce5367e984" name="ae3b9e5b8c2503644526a81ce5367e984"></a>
 virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>resolve</b> (const string &amp;str, const string &amp;type) const</td></tr>
-<tr class="memdesc:ab41a363fcc5a10bc7228d460c1572c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input string and type, apply all appropriate modifiers and return the resulting string. <br /></td></tr>
-<tr class="separator:ab41a363fcc5a10bc7228d460c1572c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ae3b9e5b8c2503644526a81ce5367e984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input string and type, apply all appropriate modifiers and return the resulting string. <br /></td></tr>
+<tr class="separator:ae3b9e5b8c2503644526a81ce5367e984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A helper object for applying string modifiers to data values in the context of a specific element and geometry. </p>
 <p >A <a class="el" href="class_string_resolver.html" title="A helper object for applying string modifiers to data values in the context of a specific element and...">StringResolver</a> may be constructed through the <a class="el" href="class_element.html#a88ea2e46fc1c36f9c08ae2299d16cef4" title="Construct a StringResolver at the scope of this element.">Element::createStringResolver</a> method, which initializes it in the context of a specific element, geometry, and material.</p>
-<p >Calling the <a class="el" href="class_string_resolver.html#ab41a363fcc5a10bc7228d460c1572c87" title="Given an input string and type, apply all appropriate modifiers and return the resulting string.">StringResolver::resolve</a> method applies all modifiers to a particular string value.</p>
-<p >Methods such as <a class="el" href="class_string_resolver.html#ae177ae9a2170982d69364d714279d4ed" title="Set the file prefix for this context.">StringResolver::setFilePrefix</a> may be used to edit the stored string modifiers before calling <a class="el" href="class_string_resolver.html#ab41a363fcc5a10bc7228d460c1572c87" title="Given an input string and type, apply all appropriate modifiers and return the resulting string.">StringResolver::resolve</a>. </p>
+<p >Calling the <a class="el" href="class_string_resolver.html#ae3b9e5b8c2503644526a81ce5367e984" title="Given an input string and type, apply all appropriate modifiers and return the resulting string.">StringResolver::resolve</a> method applies all modifiers to a particular string value.</p>
+<p >Methods such as <a class="el" href="class_string_resolver.html#ae177ae9a2170982d69364d714279d4ed" title="Set the file prefix for this context.">StringResolver::setFilePrefix</a> may be used to edit the stored string modifiers before calling <a class="el" href="class_string_resolver.html#ae3b9e5b8c2503644526a81ce5367e984" title="Given an input string and type, apply all appropriate modifiers and return the resulting string.">StringResolver::resolve</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae773342e622e2fb07da1f67a24cdeae1" name="ae773342e622e2fb07da1f67a24cdeae1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae773342e622e2fb07da1f67a24cdeae1">&#9670;&#160;</a></span>setUdimString()</h2>
@@ -233,9 +233,8 @@ virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>resolve</b>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXCore/<a class="el" href="_element_8h_source.html">Element.h</a></li>
-<li>source/MaterialXCore/Element.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

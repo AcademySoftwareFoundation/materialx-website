@@ -6,7 +6,6 @@ var class_type_syntax =
     [ "getName", "class_type_syntax.html#a43f65f5d191c125b0b52028fdbf0f364", null ],
     [ "getTypeAlias", "class_type_syntax.html#a6b2ffd95b5d334c7a9205f713f92decd", null ],
     [ "getTypeDefinition", "class_type_syntax.html#ad9552ad7a3b1d535ab3428667e3ef63b", null ],
-    [ "getValue", "class_type_syntax.html#a9223197eff3f075007a178dc366f1cce", null ],
-    [ "getValue", "class_type_syntax.html#a14922964d35be8b09b24bfdf4e1c4f6f", null ],
+    [ "getValue", "class_type_syntax.html#a5201754a81b0c4b4afd0ffea231e6a93", null ],
     [ "getValue", "class_type_syntax.html#a1f2b8b8544c9b109363d46b802f33858", null ]
 ];

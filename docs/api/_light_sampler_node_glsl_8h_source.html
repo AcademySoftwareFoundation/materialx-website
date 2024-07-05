@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('_light_sampler_node_glsl_8h_source.htm
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> create();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_shader_node_impl.html#a4b8304db3dddf083330f224a5173501b">emitFunctionDefinition</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code hl_class" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_light_sampler_node_glsl.html#ab8f2bd24a3e8a82fddb3d83fc0d5d55e">   21</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_light_sampler_node_glsl.html#ab8f2bd24a3e8a82fddb3d83fc0d5d55e">emitFunctionDefinition</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_shader_node.html">ShaderNode</a>&amp; node, <a class="code hl_class" href="class_gen_context.html">GenContext</a>&amp; context, <a class="code hl_class" href="class_shader_stage.html">ShaderStage</a>&amp; stage) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>MATERIALX_NAMESPACE_END</div>
@@ -122,10 +122,10 @@ $(document).ready(function(){initNavTree('_light_sampler_node_glsl_8h_source.htm
 <div class="ttc" id="a_glsl_shader_generator_8h_html"><div class="ttname"><a href="_glsl_shader_generator_8h.html">GlslShaderGenerator.h</a></div><div class="ttdoc">GLSL shader generator.</div></div>
 <div class="ttc" id="a_material_x_gen_shader_2_library_8h_html_ad155467af6091077f433b22feb6f2054"><div class="ttname"><a href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a></div><div class="ttdeci">shared_ptr&lt; ShaderNodeImpl &gt; ShaderNodeImplPtr</div><div class="ttdoc">Shared pointer to a ShaderNodeImpl.</div><div class="ttdef"><b>Definition:</b> Library.h:40</div></div>
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition:</b> GenContext.h:31</div></div>
-<div class="ttc" id="aclass_glsl_implementation_html"><div class="ttname"><a href="class_glsl_implementation.html">GlslImplementation</a></div><div class="ttdoc">Base class for common GLSL node implementations.</div><div class="ttdef"><b>Definition:</b> GlslShaderGenerator.h:92</div></div>
+<div class="ttc" id="aclass_glsl_implementation_html"><div class="ttname"><a href="class_glsl_implementation.html">GlslImplementation</a></div><div class="ttdoc">Base class for common GLSL node implementations.</div><div class="ttdef"><b>Definition:</b> GlslShaderGenerator.h:93</div></div>
 <div class="ttc" id="aclass_light_sampler_node_glsl_html"><div class="ttname"><a href="class_light_sampler_node_glsl.html">LightSamplerNodeGlsl</a></div><div class="ttdoc">Utility node for sampling lights for GLSL.</div><div class="ttdef"><b>Definition:</b> LightSamplerNodeGlsl.h:15</div></div>
-<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:326</div></div>
-<div class="ttc" id="aclass_shader_node_impl_html_a4b8304db3dddf083330f224a5173501b"><div class="ttname"><a href="class_shader_node_impl.html#a4b8304db3dddf083330f224a5173501b">ShaderNodeImpl::emitFunctionDefinition</a></div><div class="ttdeci">virtual void emitFunctionDefinition(const ShaderNode &amp;node, GenContext &amp;context, ShaderStage &amp;stage) const</div><div class="ttdoc">Emit function definition for the given node instance.</div><div class="ttdef"><b>Definition:</b> ShaderNodeImpl.cpp:53</div></div>
+<div class="ttc" id="aclass_light_sampler_node_glsl_html_ab8f2bd24a3e8a82fddb3d83fc0d5d55e"><div class="ttname"><a href="class_light_sampler_node_glsl.html#ab8f2bd24a3e8a82fddb3d83fc0d5d55e">LightSamplerNodeGlsl::emitFunctionDefinition</a></div><div class="ttdeci">void emitFunctionDefinition(const ShaderNode &amp;node, GenContext &amp;context, ShaderStage &amp;stage) const override</div><div class="ttdoc">Emit function definition for the given node instance.</div></div>
+<div class="ttc" id="aclass_shader_node_html"><div class="ttname"><a href="class_shader_node.html">ShaderNode</a></div><div class="ttdoc">Class representing a node in the shader generation DAG.</div><div class="ttdef"><b>Definition:</b> ShaderNode.h:320</div></div>
 <div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition:</b> ShaderStage.h:139</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

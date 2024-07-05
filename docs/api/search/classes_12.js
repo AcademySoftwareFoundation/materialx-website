@@ -21,9 +21,8 @@ var searchData=
   ['vectorn_3c_20vector3d_2c_20double_2c_203_20_3e_18',['VectorN&lt; Vector3d, double, 3 &gt;',['../class_vector_n.html',1,'']]],
   ['vectorn_3c_20vector4_2c_20float_2c_204_20_3e_19',['VectorN&lt; Vector4, float, 4 &gt;',['../class_vector_n.html',1,'']]],
   ['vectorn_3c_20vector4d_2c_20double_2c_204_20_3e_20',['VectorN&lt; Vector4d, double, 4 &gt;',['../class_vector_n.html',1,'']]],
-  ['vectorn_3c_20vertexvector_2c_20float_2c_208_20_3e_21',['VectorN&lt; VertexVector, float, 8 &gt;',['../class_vector_n.html',1,'']]],
-  ['visibility_22',['Visibility',['../class_visibility.html',1,'']]],
-  ['vkresourcebindingcontext_23',['VkResourceBindingContext',['../class_vk_resource_binding_context.html',1,'']]],
-  ['vkshadergenerator_24',['VkShaderGenerator',['../class_vk_shader_generator.html',1,'']]],
-  ['vksyntax_25',['VkSyntax',['../class_vk_syntax.html',1,'']]]
+  ['visibility_21',['Visibility',['../class_visibility.html',1,'']]],
+  ['vkresourcebindingcontext_22',['VkResourceBindingContext',['../class_vk_resource_binding_context.html',1,'']]],
+  ['vkshadergenerator_23',['VkShaderGenerator',['../class_vk_shader_generator.html',1,'']]],
+  ['vksyntax_24',['VkSyntax',['../class_vk_syntax.html',1,'']]]
 ];

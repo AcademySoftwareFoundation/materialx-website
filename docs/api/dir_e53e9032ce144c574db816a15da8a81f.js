@@ -7,9 +7,7 @@ var dir_e53e9032ce144c574db816a15da8a81f =
     [ "ClosureMixNode.h", "_closure_mix_node_8h_source.html", null ],
     [ "ClosureMultiplyNode.h", "_closure_multiply_node_8h_source.html", null ],
     [ "ClosureSourceCodeNode.h", "_closure_source_code_node_8h_source.html", null ],
-    [ "CombineNode.h", "_combine_node_8h_source.html", null ],
     [ "CompoundNode.h", "_compound_node_8h_source.html", null ],
-    [ "ConvertNode.h", "_convert_node_8h_source.html", null ],
     [ "ConvolutionNode.h", "_convolution_node_8h_source.html", null ],
     [ "HwBitangentNode.h", "_hw_bitangent_node_8h_source.html", null ],
     [ "HwFrameNode.h", "_hw_frame_node_8h_source.html", null ],
@@ -22,7 +20,5 @@ var dir_e53e9032ce144c574db816a15da8a81f =
     [ "HwTransformNode.h", "_hw_transform_node_8h_source.html", null ],
     [ "HwViewDirectionNode.h", "_hw_view_direction_node_8h_source.html", null ],
     [ "MaterialNode.h", "_material_node_8h_source.html", null ],
-    [ "SourceCodeNode.h", "_source_code_node_8h_source.html", null ],
-    [ "SwitchNode.h", "_switch_node_8h_source.html", null ],
-    [ "SwizzleNode.h", "_swizzle_node_8h_source.html", null ]
+    [ "SourceCodeNode.h", "_source_code_node_8h_source.html", null ]
 ];

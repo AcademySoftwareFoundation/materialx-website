@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_type_desc_8h.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">TypeDesc.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('_type_desc_8h.html',''); initResizable
 <p>Type descriptor for a MaterialX data type.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_material_x_gen_shader_2_export_8h_source.html">MaterialXGenShader/Export.h</a>&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 </div>
 <p><a href="_type_desc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,16 +110,58 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_type_desc.html">TypeDesc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type descriptor for MaterialX data types.  <a href="class_type_desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_type_desc_1_1_hasher.html">TypeDesc::Hasher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash operator.  <a href="struct_type_desc_1_1_hasher.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_type_desc_registry.html">TypeDescRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for type registration.  <a href="class_type_desc_registry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ab1d33f3a415dff56ff631b5f5f5c9a54"><td class="memItemLeft" align="right" valign="top"><a id="ab1d33f3a415dff56ff631b5f5f5c9a54" name="ab1d33f3a415dff56ff631b5f5f5c9a54"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ChannelMap</b> = std::unordered_map&lt; char, int &gt;</td></tr>
-<tr class="separator:ab1d33f3a415dff56ff631b5f5f5c9a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a693abdf1d012ca6dd3461c6dd4e3a40d"><td class="memItemLeft" align="right" valign="top"><a id="a693abdf1d012ca6dd3461c6dd4e3a40d" name="a693abdf1d012ca6dd3461c6dd4e3a40d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TYPEDESC_DEFINE_TYPE</b>(T,  name,  basetype,  semantic,  size)&#160;&#160;&#160;    static constexpr <a class="el" href="class_type_desc.html">TypeDesc</a> T(name, basetype, semantic, size);</td></tr>
+<tr class="memdesc:a693abdf1d012ca6dd3461c6dd4e3a40d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to define global type descriptions for commonly used types. <br /></td></tr>
+<tr class="separator:a693abdf1d012ca6dd3461c6dd4e3a40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3073f019dc4d55cae0af37762d8e067e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_type_desc_8h.html#a3073f019dc4d55cae0af37762d8e067e">TYPEDESC_REGISTER_TYPE</a>(T,  name)&#160;&#160;&#160;    <a class="el" href="class_type_desc_registry.html">TypeDescRegistry</a> register_##T(T, name);</td></tr>
+<tr class="memdesc:a3073f019dc4d55cae0af37762d8e067e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to register a previously defined type in the type registry.  <a href="_type_desc_8h.html#a3073f019dc4d55cae0af37762d8e067e">More...</a><br /></td></tr>
+<tr class="separator:a3073f019dc4d55cae0af37762d8e067e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Type descriptor for a MaterialX data type. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3073f019dc4d55cae0af37762d8e067e" name="a3073f019dc4d55cae0af37762d8e067e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3073f019dc4d55cae0af37762d8e067e">&#9670;&#160;</a></span>TYPEDESC_REGISTER_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TYPEDESC_REGISTER_TYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">T, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    <a class="el" href="class_type_desc_registry.html">TypeDescRegistry</a> register_##T(T, name);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro to register a previously defined type in the type registry. </p>
+<p >Registration must be done in order for the type to be searchable by name. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -62,15 +62,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_blur_node_8h_source.html",
-"_material_x_core_2_util_8h.html#a886b0c9b26c1d7e30065fd79e378d002",
-"class_attribute_def.html#a7b3087f38de744641842d8e87da7ef72",
-"class_element.html#a758309b1274e959a5dd4416c910e2ffd",
-"class_glsl_material.html#a01b4d6a7dad79608f7b0f8f9b961e52d",
-"class_implementation.html#ac7ae0e8dcc12c4b679950d108427d101",
-"class_mesh.html#ac00dc711e8c0150b6c96de5538decaf2",
-"class_shader_generator.html#af53adb1097cdea7d6265b9ee357478ff",
-"class_string_resolver.html#a8971f846f163c7a3b3ceeec9cc5ea4a7",
-"class_variable_block.html#a644718bb2fb240de962dc3c9a1fdf0dc"
+"_material_x_core_2_util_8h.html#a62d612bd307fced8a2812124dd82ed55",
+"class_attribute_def.html#a26044f63e9069e534f23b1dde870221a",
+"class_element.html#a6eea8ea113395c0f1789e8f9d3fd9fbf",
+"class_glsl_material.html",
+"class_implementation.html#abd93778af015b20d076960f70396fe28",
+"class_mesh.html#aa71e3512a6899f14a6f3bc8d8dd9e6ea",
+"class_shader_graph.html#a0cc72b8c936894cb13412035fc082a72",
+"class_string_resolver.html#af0f9f584cf0dba99b12f14fb9472a68c",
+"class_variant_assign.html#aef7e50ce6d1133535e08a82cb01b88c6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

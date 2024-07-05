@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.38.10</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
    </div>
   </td>
  </tr>
@@ -243,9 +243,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addBlock</b> (const s
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addInclude</b> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;includeFilename, const <a class="el" href="class_file_path.html">FilePath</a> &amp;sourceFilename, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a38680f1199bccbbf9046e7dc56fb14fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the contents of an include file if not already present. <br /></td></tr>
 <tr class="separator:a38680f1199bccbbf9046e7dc56fb14fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b892b496ff8eb49324d8f42c1b3169"><td class="memItemLeft" align="right" valign="top"><a id="a61b892b496ff8eb49324d8f42c1b3169" name="a61b892b496ff8eb49324d8f42c1b3169"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasSourceDependency</b> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;file)</td></tr>
+<tr class="memdesc:a61b892b496ff8eb49324d8f42c1b3169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this stage depends on the given source file. <br /></td></tr>
+<tr class="separator:a61b892b496ff8eb49324d8f42c1b3169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e7430fa1c47ddac8fe96e5c35349b47"><td class="memItemLeft" align="right" valign="top"><a id="a6e7430fa1c47ddac8fe96e5c35349b47" name="a6e7430fa1c47ddac8fe96e5c35349b47"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addSourceDependency</b> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;file)</td></tr>
-<tr class="memdesc:a6e7430fa1c47ddac8fe96e5c35349b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a source file dependency for dependency tracking purposes. <br /></td></tr>
+<tr class="memdesc:a6e7430fa1c47ddac8fe96e5c35349b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the given source file as a dependency of this stage. <br /></td></tr>
 <tr class="separator:a6e7430fa1c47ddac8fe96e5c35349b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11bd3a321abbdd6ddd27e01944da1e07"><td class="memTemplParams" colspan="2"><a id="a11bd3a321abbdd6ddd27e01944da1e07" name="a11bd3a321abbdd6ddd27e01944da1e07"></a>
 template&lt;typename T &gt; </td></tr>
@@ -314,9 +318,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b><
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/MaterialXGenShader/<a class="el" href="_shader_stage_8h_source.html">ShaderStage.h</a></li>
-<li>source/MaterialXGenShader/ShaderStage.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
