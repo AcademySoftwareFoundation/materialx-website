@@ -4,7 +4,6 @@ var class_node =
     [ "addInputsFromNodeDef", "class_node.html#a8a3d67ce5137e0ea06ce6e45d256221f", null ],
     [ "getConnectedNode", "class_node.html#a81508f6337057a63ee9870fea9aeb624", null ],
     [ "getConnectedNodeName", "class_node.html#aa873330673c8bdc044d9272712a66dfa", null ],
-    [ "getConnectedOutput", "class_node.html#a83346b1cd09131ea863e8e24a1ba8f60", null ],
     [ "getDeclaration", "class_node.html#af3fb16a89afea8c1deeaf609d358524d", null ],
     [ "getDownstreamPorts", "class_node.html#a0bd357f1c7499fb2e19467b2e6016c7c", null ],
     [ "getImplementation", "class_node.html#a574f2438d501100d4fe72c81a4995d18", null ],
@@ -14,6 +13,5 @@ var class_node =
     [ "getUpstreamEdgeCount", "class_node.html#a6e521791f72cc3adc16cf4824639f71c", null ],
     [ "setConnectedNode", "class_node.html#aadadda2e802727c536a3e613fcb3741f", null ],
     [ "setConnectedNodeName", "class_node.html#a2405c6a1d9ed30c2e4d3beee06627f65", null ],
-    [ "setConnectedOutput", "class_node.html#aae1163986c5577f66d5962fd929949db", null ],
     [ "validate", "class_node.html#a488dfe5fda981fdd4f948b278b24e84e", null ]
 ];
