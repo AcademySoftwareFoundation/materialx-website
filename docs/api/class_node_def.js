@@ -2,6 +2,7 @@ var class_node_def =
 [
     [ "getDeclaration", "class_node_def.html#af3fb16a89afea8c1deeaf609d358524d", null ],
     [ "getImplementation", "class_node_def.html#a574f2438d501100d4fe72c81a4995d18", null ],
+    [ "getInputHints", "class_node_def.html#a7b49bdc9dad7871258eeebcbe98606f4", null ],
     [ "getNodeGroup", "class_node_def.html#a8ed1da4dd09379b64baa644d74121f79", null ],
     [ "getNodeString", "class_node_def.html#abe380e4837fcec30ebcec93e1d88fda9", null ],
     [ "getType", "class_node_def.html#a86065934c526cda248f48793f5532d48", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"class_variant_assign.html#ab8d3cf6bcf33a9dcda8a4e4f07534cc6":[2,0,189,1],
 "class_variant_assign.html#aef7e50ce6d1133535e08a82cb01b88c6":[2,0,189,0],
 "class_variant_assign.html#af19d07b1865ee01ef13f12adffa28cf5":[2,0,189,2],
 "class_variant_set.html":[2,0,190],

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.1</span>
    </div>
   </td>
  </tr>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('_file_8h_source.html',''); initResizab
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordtype">size_t</span> i = baseName.rfind(<span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">if</span> (i != string::npos)</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                baseName = baseName.substr(0, i);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                baseName.resize(i);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            }</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('_file_8h_source.html',''); initResizab
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_file_8h_html_a940cd96352a8010d5c802269dafc5772"><div class="ttname"><a href="_file_8h.html#a940cd96352a8010d5c802269dafc5772">getEnvironmentPath</a></div><div class="ttdeci">MX_FORMAT_API FileSearchPath getEnvironmentPath(const string &amp;sep=PATH_LIST_SEPARATOR)</div><div class="ttdoc">Return a FileSearchPath object from search path environment variable.</div></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:57</div></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition:</b> Library.h:55</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html"><div class="ttname"><a href="_material_x_core_2_util_8h.html">Util.h</a></div><div class="ttdoc">Utility methods.</div></div>
 <div class="ttc" id="a_material_x_core_2_util_8h_html_af38a232ad00117fa61f1704064446851"><div class="ttname"><a href="_material_x_core_2_util_8h.html#af38a232ad00117fa61f1704064446851">splitString</a></div><div class="ttdeci">MX_CORE_API StringVec splitString(const string &amp;str, const string &amp;sep)</div><div class="ttdoc">Split a string into a vector of substrings using the given set of separator characters.</div></div>
 <div class="ttc" id="a_material_x_format_2_export_8h_html"><div class="ttname"><a href="_material_x_format_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>

@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.1</span>
    </div>
   </td>
  </tr>
@@ -134,12 +134,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setConnectedNodeName<
 <tr class="memitem:aa873330673c8bdc044d9272712a66dfa"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aa873330673c8bdc044d9272712a66dfa">getConnectedNodeName</a> (const string &amp;inputName) const</td></tr>
 <tr class="memdesc:aa873330673c8bdc044d9272712a66dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the <a class="el" href="class_node.html" title="A node element within a NodeGraph or Document.">Node</a> connected to the given input.  <a href="class_node.html#aa873330673c8bdc044d9272712a66dfa">More...</a><br /></td></tr>
 <tr class="separator:aa873330673c8bdc044d9272712a66dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1163986c5577f66d5962fd929949db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aae1163986c5577f66d5962fd929949db">setConnectedOutput</a> (const string &amp;inputName, <a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a> output)</td></tr>
-<tr class="memdesc:aae1163986c5577f66d5962fd929949db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output to which the given input is connected, creating a child input if needed.  <a href="class_node.html#aae1163986c5577f66d5962fd929949db">More...</a><br /></td></tr>
-<tr class="separator:aae1163986c5577f66d5962fd929949db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83346b1cd09131ea863e8e24a1ba8f60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a83346b1cd09131ea863e8e24a1ba8f60">getConnectedOutput</a> (const string &amp;inputName) const</td></tr>
-<tr class="memdesc:a83346b1cd09131ea863e8e24a1ba8f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output connected to the given input.  <a href="class_node.html#a83346b1cd09131ea863e8e24a1ba8f60">More...</a><br /></td></tr>
-<tr class="separator:a83346b1cd09131ea863e8e24a1ba8f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">NodeDef References</div></td></tr>
 <tr class="memitem:a94715aa230e7d52001192f0e46129bc3"><td class="memItemLeft" align="right" valign="top">NodeDefPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a94715aa230e7d52001192f0e46129bc3">getNodeDef</a> (const string &amp;target=EMPTY_STRING, bool allowRoughMatch=false) const</td></tr>
 <tr class="memdesc:a94715aa230e7d52001192f0e46129bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a> that declares this node, optionally filtered by the given target name.  <a href="class_node.html#a94715aa230e7d52001192f0e46129bc3">More...</a><br /></td></tr>
@@ -865,27 +859,6 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 
 </div>
 </div>
-<a id="a83346b1cd09131ea863e8e24a1ba8f60" name="a83346b1cd09131ea863e8e24a1ba8f60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83346b1cd09131ea863e8e24a1ba8f60">&#9670;&#160;</a></span>getConnectedOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a> getConnectedOutput </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>inputName</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the output connected to the given input. </p>
-<p >If the given input is not present, then an empty OutputPtr is returned. </p>
-
-</div>
-</div>
 <a id="af3fb16a89afea8c1deeaf609d358524d" name="af3fb16a89afea8c1deeaf609d358524d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3fb16a89afea8c1deeaf609d358524d">&#9670;&#160;</a></span>getDeclaration()</h2>
 
@@ -1097,37 +1070,6 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 
 <p>Set the node to which the given input is connected, creating a child input if needed. </p>
 <p >If the node argument is null, then any existing node connection on the input will be cleared. </p>
-
-</div>
-</div>
-<a id="aae1163986c5577f66d5962fd929949db" name="aae1163986c5577f66d5962fd929949db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae1163986c5577f66d5962fd929949db">&#9670;&#160;</a></span>setConnectedOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setConnectedOutput </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>inputName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a>&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the output to which the given input is connected, creating a child input if needed. </p>
-<p >If the node argument is null, then any existing output connection on the input will be cleared. </p>
 
 </div>
 </div>

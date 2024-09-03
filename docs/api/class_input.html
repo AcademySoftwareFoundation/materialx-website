@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.0</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.1</span>
    </div>
   </td>
  </tr>
@@ -149,6 +149,18 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDefa
 <a class="el" href="_interface_8h.html#ac315f2ce45a6f66e1828ba67a8155aa1">InputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getInterfaceInput</b> () const</td></tr>
 <tr class="memdesc:a61785c99ab656ec1d4f84e7e6a41091b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input on the parent graph corresponding to the interface name for this input. <br /></td></tr>
 <tr class="separator:a61785c99ab656ec1d4f84e7e6a41091b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Hints</div></td></tr>
+<tr class="memitem:aa21cf4519a708dcebfa1491f7472450f"><td class="memItemLeft" align="right" valign="top"><a id="aa21cf4519a708dcebfa1491f7472450f" name="aa21cf4519a708dcebfa1491f7472450f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasHint</b> () const</td></tr>
+<tr class="memdesc:aa21cf4519a708dcebfa1491f7472450f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the input has a hint. <br /></td></tr>
+<tr class="separator:aa21cf4519a708dcebfa1491f7472450f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3435fa1aa98aa87cf5102d67e53aeae"><td class="memItemLeft" align="right" valign="top"><a id="af3435fa1aa98aa87cf5102d67e53aeae" name="af3435fa1aa98aa87cf5102d67e53aeae"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getHint</b> () const</td></tr>
+<tr class="memdesc:af3435fa1aa98aa87cf5102d67e53aeae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the code generation hint. <br /></td></tr>
+<tr class="separator:af3435fa1aa98aa87cf5102d67e53aeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a3fb7d08bfd8d58bf2b9b7166d4cab"><td class="memItemLeft" align="right" valign="top"><a id="ac1a3fb7d08bfd8d58bf2b9b7166d4cab" name="ac1a3fb7d08bfd8d58bf2b9b7166d4cab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHint</b> (const string &amp;hint)</td></tr>
+<tr class="separator:ac1a3fb7d08bfd8d58bf2b9b7166d4cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Validation</div></td></tr>
 <tr class="memitem:a488dfe5fda981fdd4f948b278b24e84e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a488dfe5fda981fdd4f948b278b24e84e">validate</a> (string *message=nullptr) const override</td></tr>
 <tr class="memdesc:a488dfe5fda981fdd4f948b278b24e84e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate that the given element tree, including all descendants, is consistent with the MaterialX specification.  <a href="class_input.html#a488dfe5fda981fdd4f948b278b24e84e">More...</a><br /></td></tr>
@@ -189,10 +201,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasOutputString</b> (
 <tr class="memitem:aa9187d2363cb6e7690613fafb11624bc inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_port_element.html#aa9187d2363cb6e7690613fafb11624bc">setConnectedOutput</a> (<a class="el" href="_interface_8h.html#a1aeb143693a07b6c94c42c9c8caf4564">ConstOutputPtr</a> output)</td></tr>
 <tr class="memdesc:aa9187d2363cb6e7690613fafb11624bc inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output to which this input is connected.  <a href="class_port_element.html#aa9187d2363cb6e7690613fafb11624bc">More...</a><br /></td></tr>
 <tr class="separator:aa9187d2363cb6e7690613fafb11624bc inherit pub_methods_class_port_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d6a085e12c537195842ed01437617d2 inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top"><a id="a2d6a085e12c537195842ed01437617d2" name="a2d6a085e12c537195842ed01437617d2"></a>
-virtual <a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getConnectedOutput</b> () const</td></tr>
-<tr class="memdesc:a2d6a085e12c537195842ed01437617d2 inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output, if any, to which this input is connected. <br /></td></tr>
-<tr class="separator:a2d6a085e12c537195842ed01437617d2 inherit pub_methods_class_port_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f3f2d759cb17ee4092d3e6c9b07c70 inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top"><a id="ae9f3f2d759cb17ee4092d3e6c9b07c70" name="ae9f3f2d759cb17ee4092d3e6c9b07c70"></a>
+<a class="el" href="_interface_8h.html#ad35826a76ff731a8f5cfe84117183808">OutputPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getConnectedOutput</b> () const</td></tr>
+<tr class="memdesc:ae9f3f2d759cb17ee4092d3e6c9b07c70 inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output, if any, to which this input is connected. <br /></td></tr>
+<tr class="separator:ae9f3f2d759cb17ee4092d3e6c9b07c70 inherit pub_methods_class_port_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2585349d0c3de6fca50822fc9804aa16 inherit pub_methods_class_port_element"><td class="memItemLeft" align="right" valign="top"><a id="a2585349d0c3de6fca50822fc9804aa16" name="a2585349d0c3de6fca50822fc9804aa16"></a>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getOutputString</b> () const</td></tr>
 <tr class="memdesc:a2585349d0c3de6fca50822fc9804aa16 inherit pub_methods_class_port_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the output string of this element. <br /></td></tr>
@@ -637,6 +649,18 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CATEGO
 <tr class="memitem:ab3b7107b2a725a7728ea5826be0e8e37"><td class="memItemLeft" align="right" valign="top"><a id="ab3b7107b2a725a7728ea5826be0e8e37" name="ab3b7107b2a725a7728ea5826be0e8e37"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_GEOM_PROP_ATTRIBUTE</b></td></tr>
 <tr class="separator:ab3b7107b2a725a7728ea5826be0e8e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aac07f6bc502de024cc48fbec66a75d"><td class="memItemLeft" align="right" valign="top"><a id="a2aac07f6bc502de024cc48fbec66a75d" name="a2aac07f6bc502de024cc48fbec66a75d"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>HINT_ATTRIBUTE</b></td></tr>
+<tr class="separator:a2aac07f6bc502de024cc48fbec66a75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcf47d6f6c857dae72d06fe56a73244"><td class="memItemLeft" align="right" valign="top"><a id="a1bcf47d6f6c857dae72d06fe56a73244" name="a1bcf47d6f6c857dae72d06fe56a73244"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSPARENCY_HINT</b></td></tr>
+<tr class="separator:a1bcf47d6f6c857dae72d06fe56a73244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f7dcb2cef87e39c29c4ee1b6b59fcf"><td class="memItemLeft" align="right" valign="top"><a id="aa8f7dcb2cef87e39c29c4ee1b6b59fcf" name="aa8f7dcb2cef87e39c29c4ee1b6b59fcf"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>OPACITY_HINT</b></td></tr>
+<tr class="separator:aa8f7dcb2cef87e39c29c4ee1b6b59fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41c03da367373e2024d47d7ccf4cfa6"><td class="memItemLeft" align="right" valign="top"><a id="ab41c03da367373e2024d47d7ccf4cfa6" name="ab41c03da367373e2024d47d7ccf4cfa6"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>ANISOTROPY_HINT</b></td></tr>
+<tr class="separator:ab41c03da367373e2024d47d7ccf4cfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_class_port_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_port_element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_port_element.html">PortElement</a></td></tr>
 <tr class="memitem:a2a6ff2de7963494eb3232c0ee0810bd9 inherit pub_static_attribs_class_port_element"><td class="memItemLeft" align="right" valign="top"><a id="a2a6ff2de7963494eb3232c0ee0810bd9" name="a2a6ff2de7963494eb3232c0ee0810bd9"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NODE_NAME_ATTRIBUTE</b></td></tr>

@@ -25,7 +25,7 @@ var searchData=
   ['setconnectedinterfacename_22',['setConnectedInterfaceName',['../class_input.html#ae02d93e25126287f7da4235787257bda',1,'Input']]],
   ['setconnectednode_23',['setConnectedNode',['../class_port_element.html#abbee2e182534e0734c3097a01e997a71',1,'PortElement::setConnectedNode()'],['../class_node.html#aadadda2e802727c536a3e613fcb3741f',1,'Node::setConnectedNode(const string &amp;inputName, ConstNodePtr node)']]],
   ['setconnectednodename_24',['setConnectedNodeName',['../class_node.html#a2405c6a1d9ed30c2e4d3beee06627f65',1,'Node']]],
-  ['setconnectedoutput_25',['setConnectedOutput',['../class_port_element.html#aa9187d2363cb6e7690613fafb11624bc',1,'PortElement::setConnectedOutput()'],['../class_interface_element.html#aae1163986c5577f66d5962fd929949db',1,'InterfaceElement::setConnectedOutput()'],['../class_node.html#aae1163986c5577f66d5962fd929949db',1,'Node::setConnectedOutput()']]],
+  ['setconnectedoutput_25',['setConnectedOutput',['../class_port_element.html#aa9187d2363cb6e7690613fafb11624bc',1,'PortElement::setConnectedOutput()'],['../class_interface_element.html#aae1163986c5577f66d5962fd929949db',1,'InterfaceElement::setConnectedOutput()']]],
   ['setcontainselements_26',['setContainsElements',['../class_backdrop.html#ae1207ca20b25aad43dfd304060b99117',1,'Backdrop']]],
   ['setcontainsstring_27',['setContainsString',['../class_backdrop.html#a10ac04790d40c381022fe60035ba05cb',1,'Backdrop']]],
   ['setcontext_28',['setContext',['../class_type_def.html#a880fb93c5f719d6aba2707c3a4c87225',1,'TypeDef']]],
