@@ -131,7 +131,7 @@ MX_GENSHADER_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>elem
 <tr class="memdesc:a95086b0f70f108e1ea74f0df5f1be520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a node input, return the corresponding input within its matching nodedef.  <a href="_material_x_gen_shader_2_util_8h.html#a95086b0f70f108e1ea74f0df5f1be520">More...</a><br /></td></tr>
 <tr class="separator:a95086b0f70f108e1ea74f0df5f1be520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08fd2716d3cea3665b6ddc9efd9e6216"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#a08fd2716d3cea3665b6ddc9efd9e6216">tokenSubstitution</a> (const <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> &amp;substitutions, string &amp;source)</td></tr>
-<tr class="memdesc:a08fd2716d3cea3665b6ddc9efd9e6216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform token substitutions on the given source string, using the given substituation map.  <a href="_material_x_gen_shader_2_util_8h.html#a08fd2716d3cea3665b6ddc9efd9e6216">More...</a><br /></td></tr>
+<tr class="memdesc:a08fd2716d3cea3665b6ddc9efd9e6216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform token substitutions on the given source string, using the given substitution map.  <a href="_material_x_gen_shader_2_util_8h.html#a08fd2716d3cea3665b6ddc9efd9e6216">More...</a><br /></td></tr>
 <tr class="separator:a08fd2716d3cea3665b6ddc9efd9e6216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a21acb01feffccd34a8bcfa4dd315e"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API vector&lt; <a class="el" href="class_vector2.html">Vector2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_material_x_gen_shader_2_util_8h.html#ad3a21acb01feffccd34a8bcfa4dd315e">getUdimCoordinates</a> (const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> &amp;udimIdentifiers)</td></tr>
 <tr class="memdesc:ad3a21acb01feffccd34a8bcfa4dd315e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the UDIM coordinates for a set of UDIM identifiers.  <a href="_material_x_gen_shader_2_util_8h.html#ad3a21acb01feffccd34a8bcfa4dd315e">More...</a><br /></td></tr>
@@ -354,7 +354,7 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>find
 
 <p>Returns true if the given element is a surface shader with the potential of being transparent. </p>
 <p >This can be used by <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader generators to determine if a shader will require transparency handling.</p>
-<p >Note: This function will check some common cases for how a surface shader can be transparent. It is not covering all possible cases for how transparency can be done and target applications might need to do additional checks to track transparency correctly. For example, custom surface shader nodes implemented in source code will not be tracked by this function and transprency for such nodes must be tracked separately by the target application. </p>
+<p >Note: This function will check some common cases for how a surface shader can be transparent. It is not covering all possible cases for how transparency can be done and target applications might need to do additional checks to track transparency correctly. For example, custom surface shader nodes implemented in source code will not be tracked by this function and transparency for such nodes must be tracked separately by the target application. </p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>find
       </table>
 </div><div class="memdoc">
 
-<p>Perform token substitutions on the given source string, using the given substituation map. </p>
+<p>Perform token substitutions on the given source string, using the given substitution map. </p>
 <p >Tokens are required to start with '$' and can only consist of alphanumeric characters. The full token name, including '$' and all following alphanumeric character, will be replaced by the corresponding string in the substitution map, if the token exists in the map. </p>
 
 </div>
