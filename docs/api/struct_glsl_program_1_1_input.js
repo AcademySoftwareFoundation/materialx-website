@@ -9,5 +9,5 @@ var struct_glsl_program_1_1_input =
     [ "size", "struct_glsl_program_1_1_input.html#a439227feff9d7f55384e8780cfc2eb82", null ],
     [ "typeString", "struct_glsl_program_1_1_input.html#a3ff7f04854e2a9852e786b2c1f168a55", null ],
     [ "unit", "struct_glsl_program_1_1_input.html#a665cad909f1fdd53f768e81de9b62de0", null ],
-    [ "value", "struct_glsl_program_1_1_input.html#ab5be35880ef96349996be371c7ba219e", null ]
+    [ "value", "struct_glsl_program_1_1_input.html#aa3de853f38ef3ded925ea01cf8855468", null ]
 ];

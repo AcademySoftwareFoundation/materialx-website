@@ -11,7 +11,8 @@ var searchData=
   ['matchesgeomstring_8',['matchesGeomString',['../class_collection.html#af5bea3e55baa7fd5e2c3b67b4a5820ec',1,'Collection']]],
   ['mergepartitions_9',['mergePartitions',['../class_mesh.html#a9d1ac3c75800955a9a2219e653038b4b',1,'Mesh']]],
   ['modifyinterfacename_10',['modifyInterfaceName',['../class_node_graph.html#ac2c20a4ba0f1735f946149dab0172cd5',1,'NodeGraph']]],
-  ['modifyuniform_11',['modifyUniform',['../class_shader_material.html#a9687f12f129f1cdbbcb75c344281eebd',1,'ShaderMaterial::modifyUniform()'],['../class_glsl_material.html#a6d151bdeff0d54a5538a38ae6066bfd8',1,'GlslMaterial::modifyUniform()']]],
-  ['multiply_12',['multiply',['../class_matrix33.html#ae5b80d6f256a424670ba627ddfda2c65',1,'Matrix33::multiply()'],['../class_matrix44.html#a0cbfa719fc9dd23f5bcbe034cae7054b',1,'Matrix44::multiply()']]],
-  ['mx_5fcore_5fextern_5ftemplate_13',['MX_CORE_EXTERN_TEMPLATE',['../_value_8h.html#a5651cd9cfffdd7b2eedecb9cae351bcd',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; int &gt;):&#160;Value.h'],['../_value_8h.html#a3b1b38cc458d542510e56796c1a3d665',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; IntVec &gt;):&#160;Value.h'],['../_value_8h.html#a30d1be85fbfc0907195371516c38ec14',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; long &gt;):&#160;Value.h']]]
+  ['modifyportname_11',['modifyPortName',['../class_mdl_syntax.html#a7b65b2e601810dd2f9a09a21f4593297',1,'MdlSyntax']]],
+  ['modifyuniform_12',['modifyUniform',['../class_shader_material.html#a9687f12f129f1cdbbcb75c344281eebd',1,'ShaderMaterial::modifyUniform()'],['../class_glsl_material.html#a6d151bdeff0d54a5538a38ae6066bfd8',1,'GlslMaterial::modifyUniform()']]],
+  ['multiply_13',['multiply',['../class_matrix33.html#ae5b80d6f256a424670ba627ddfda2c65',1,'Matrix33::multiply()'],['../class_matrix44.html#a0cbfa719fc9dd23f5bcbe034cae7054b',1,'Matrix44::multiply()']]],
+  ['mx_5fcore_5fextern_5ftemplate_14',['MX_CORE_EXTERN_TEMPLATE',['../_value_8h.html#a5651cd9cfffdd7b2eedecb9cae351bcd',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; int &gt;):&#160;Value.h'],['../_value_8h.html#a3b1b38cc458d542510e56796c1a3d665',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; IntVec &gt;):&#160;Value.h'],['../_value_8h.html#a30d1be85fbfc0907195371516c38ec14',1,'MX_CORE_EXTERN_TEMPLATE(TypedValue&lt; long &gt;):&#160;Value.h']]]
 ];

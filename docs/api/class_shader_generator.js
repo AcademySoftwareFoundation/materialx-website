@@ -2,6 +2,7 @@ var class_shader_generator =
 [
     [ "~ShaderGenerator", "class_shader_generator.html#ab0bf95741f0a806c02f16f7cab73dd61", null ],
     [ "ShaderGenerator", "class_shader_generator.html#afb4e0502c13932ed0c5100db3633c2a1", null ],
+    [ "clearStructTypeDefs", "class_shader_generator.html#a6464bcb810273e5722d8b8605a891922", null ],
     [ "createStage", "class_shader_generator.html#a766685d2edaaec6217045cf1159fc9f2", null ],
     [ "createVariables", "class_shader_generator.html#a24f4ca85de1760cb40ccfae45cdf02cb", null ],
     [ "emitBlock", "class_shader_generator.html#a1d9ecd5d1ce7beefb444b3a245a3d41f", null ],
@@ -37,6 +38,7 @@ var class_shader_generator =
     [ "getUnitSystem", "class_shader_generator.html#ad9990864460e1772620c8702d46d3025", null ],
     [ "getUpstreamResult", "class_shader_generator.html#a46e6acd167c18775daa2a57f3a1b8bdc", null ],
     [ "implementationRegistered", "class_shader_generator.html#a042cb49474a379e4be44b0e1b2ca3885", null ],
+    [ "loadStructTypeDefs", "class_shader_generator.html#a7dfad3ac94171da83542cb2d8d7cbd80", null ],
     [ "registerImplementation", "class_shader_generator.html#a4ed43e2321e4895662d0f48bac040047", null ],
     [ "registerImplementation", "class_shader_generator.html#a48c94b06c11301938d05dd015cf2801c", null ],
     [ "registerShaderMetadata", "class_shader_generator.html#a575a30689cc1cc2b575632cfeb4423e8", null ],

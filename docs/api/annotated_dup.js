@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "AggregateTypeSyntax", "class_aggregate_type_syntax.html", "class_aggregate_type_syntax" ],
+    [ "AggregateValue", "class_aggregate_value.html", "class_aggregate_value" ],
     [ "AttributeDef", "class_attribute_def.html", "class_attribute_def" ],
     [ "Backdrop", "class_backdrop.html", "class_backdrop" ],
     [ "BlurNode", "class_blur_node.html", "class_blur_node" ],
@@ -27,6 +28,7 @@ var annotated_dup =
     [ "Document", "class_document.html", "class_document" ],
     [ "Edge", "class_edge.html", "class_edge" ],
     [ "Element", "class_element.html", "class_element" ],
+    [ "ElementEquivalenceOptions", "class_element_equivalence_options.html", "class_element_equivalence_options" ],
     [ "EsslShaderGenerator", "class_essl_shader_generator.html", "class_essl_shader_generator" ],
     [ "EsslSyntax", "class_essl_syntax.html", null ],
     [ "Exception", "class_exception.html", null ],
@@ -63,6 +65,7 @@ var annotated_dup =
     [ "GlslRenderer", "class_glsl_renderer.html", "class_glsl_renderer" ],
     [ "GlslResourceBindingContext", "class_glsl_resource_binding_context.html", null ],
     [ "GlslShaderGenerator", "class_glsl_shader_generator.html", "class_glsl_shader_generator" ],
+    [ "GlslStructTypeSyntax", "class_glsl_struct_type_syntax.html", "class_glsl_struct_type_syntax" ],
     [ "GlslSyntax", "class_glsl_syntax.html", "class_glsl_syntax" ],
     [ "GLTextureHandler", "class_g_l_texture_handler.html", "class_g_l_texture_handler" ],
     [ "GraphElement", "class_graph_element.html", "class_graph_element" ],
@@ -160,6 +163,9 @@ var annotated_dup =
     [ "StbImageLoader", "class_stb_image_loader.html", "class_stb_image_loader" ],
     [ "StringResolver", "class_string_resolver.html", "class_string_resolver" ],
     [ "StringTypeSyntax", "class_string_type_syntax.html", "class_string_type_syntax" ],
+    [ "StructTypeDesc", "class_struct_type_desc.html", "class_struct_type_desc" ],
+    [ "StructTypeDescRegistry", "class_struct_type_desc_registry.html", null ],
+    [ "StructTypeSyntax", "class_struct_type_syntax.html", "class_struct_type_syntax" ],
     [ "SurfaceNodeGlsl", "class_surface_node_glsl.html", "class_surface_node_glsl" ],
     [ "Syntax", "class_syntax.html", "class_syntax" ],
     [ "TargetDef", "class_target_def.html", "class_target_def" ],

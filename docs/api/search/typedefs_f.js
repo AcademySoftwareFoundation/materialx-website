@@ -8,14 +8,14 @@ var searchData=
   ['shadergraphptr_5',['ShaderGraphPtr',['../_shader_graph_8h.html#aaf78e54f0325edc6ce48bbbfdc196416',1,'ShaderGraph.h']]],
   ['shaderinputptr_6',['ShaderInputPtr',['../_shader_node_8h.html#a9946d4a8fc843a8bd8be9175ec9e0f0f',1,'ShaderNode.h']]],
   ['shaderinputvec_7',['ShaderInputVec',['../_shader_node_8h.html#a75cbb7d869f3dcc40d0408db91420bd6',1,'ShaderNode.h']]],
-  ['shadernodeimplptr_8',['ShaderNodeImplPtr',['../_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054',1,'ShaderNodeImplPtr():&#160;Library.h'],['../_shader_node_impl_8h.html#af9b23189c1dadf97b46796164ac42a78',1,'ShaderNodeImplPtr():&#160;ShaderNodeImpl.h']]],
+  ['shadernodeimplptr_8',['ShaderNodeImplPtr',['../_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054',1,'ShaderNodeImplPtr:&#160;Library.h'],['../_shader_node_impl_8h.html#af9b23189c1dadf97b46796164ac42a78',1,'ShaderNodeImplPtr:&#160;ShaderNodeImpl.h']]],
   ['shadernodeptr_9',['ShaderNodePtr',['../_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce',1,'ShaderNode.h']]],
   ['shaderoutputptr_10',['ShaderOutputPtr',['../_shader_node_8h.html#a507e7609adfe69ff44d69c21ea75fb3d',1,'ShaderNode.h']]],
   ['shaderportpredicate_11',['ShaderPortPredicate',['../_shader_stage_8h.html#adede5df15fdc613823ff6072ed96a96b',1,'ShaderStage.h']]],
   ['shaderportptr_12',['ShaderPortPtr',['../_shader_node_8h.html#a36e6e0055d95bf17fad981d76ff37667',1,'ShaderNode.h']]],
   ['shaderptr_13',['ShaderPtr',['../_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031',1,'Library.h']]],
   ['shaderrendererptr_14',['ShaderRendererPtr',['../_shader_renderer_8h.html#aa825d36ae8df5ff3323219d3f65db193',1,'ShaderRenderer.h']]],
-  ['shaderstageptr_15',['ShaderStagePtr',['../_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87',1,'ShaderStagePtr():&#160;Library.h'],['../_shader_stage_8h.html#a002e2fa177595c0454d38b0799b6c5c1',1,'ShaderStagePtr():&#160;ShaderStage.h']]],
+  ['shaderstageptr_15',['ShaderStagePtr',['../_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87',1,'ShaderStagePtr:&#160;Library.h'],['../_shader_stage_8h.html#a002e2fa177595c0454d38b0799b6c5c1',1,'ShaderStagePtr:&#160;ShaderStage.h']]],
   ['simplewindowptr_16',['SimpleWindowPtr',['../_g_l_context_8h.html#ab15ddbf064cb6e364fa216cadc3cf9e5',1,'GLContext.h']]],
   ['stagemap_17',['StageMap',['../class_shader_renderer.html#af02ee4d51c8927817002da896a473f5c',1,'ShaderRenderer']]],
   ['stbimageloaderptr_18',['StbImageLoaderPtr',['../_stb_image_loader_8h.html#a207203dd22009bad91793ce9d36a1f9a',1,'StbImageLoader.h']]],
@@ -24,5 +24,6 @@ var searchData=
   ['stringset_21',['StringSet',['../_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84',1,'Library.h']]],
   ['stringstream_22',['StringStream',['../_material_x_gen_shader_2_library_8h.html#aacf806ba1ec54c669c300f0edafbb127',1,'Library.h']]],
   ['stringvec_23',['StringVec',['../_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43',1,'Library.h']]],
-  ['syntaxptr_24',['SyntaxPtr',['../_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66',1,'Syntax.h']]]
+  ['structtypesyntaxptr_24',['StructTypeSyntaxPtr',['../_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1',1,'Syntax.h']]],
+  ['syntaxptr_25',['SyntaxPtr',['../_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66',1,'Syntax.h']]]
 ];

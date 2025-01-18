@@ -17,6 +17,7 @@ var class_value_element =
     [ "hasUnitType", "class_value_element.html#a7b5aa90b120a13518a9dbf2ff0b51780", null ],
     [ "hasValue", "class_value_element.html#af236b4f0a7cbfd823979ca197e124adb", null ],
     [ "hasValueString", "class_value_element.html#af114f70ae1148dcf02fa799114d34a24", null ],
+    [ "isAttributeEquivalent", "class_value_element.html#a1d485958a4a43e2bac5293daeb84d57f", null ],
     [ "setImplementationName", "class_value_element.html#ad849744b3aec3bcb99dac5b1c2c915fc", null ],
     [ "setInterfaceName", "class_value_element.html#a2b6e5b47349bfba70c53960a56b360b6", null ],
     [ "setIsUniform", "class_value_element.html#a7c1dfb32b04973d3ab320e4ae0dba260", null ],

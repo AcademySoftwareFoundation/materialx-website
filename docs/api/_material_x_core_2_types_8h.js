@@ -3,7 +3,7 @@ var _material_x_core_2_types_8h =
     [ "VectorBase", "class_vector_base.html", null ],
     [ "Uninit", "class_uninit.html", null ],
     [ "VectorN< V, S, N >", "class_vector_n.html", "class_vector_n" ],
-    [ "VectorN< V, S, N >::Hash", "class_vector_n_1_1_hash.html", null ],
+    [ "Hash", "class_vector_n_1_1_hash.html", null ],
     [ "Vector2", "class_vector2.html", "class_vector2" ],
     [ "Vector3", "class_vector3.html", "class_vector3" ],
     [ "Vector4", "class_vector4.html", null ],

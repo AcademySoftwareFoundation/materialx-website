@@ -1,15 +1,16 @@
 var hierarchy =
 [
-    [ "TextureBaker< Renderer, ShaderGen >::BakedConstant", "class_texture_baker_1_1_baked_constant.html", null ],
-    [ "TextureBaker< Renderer, ShaderGen >::BakedImage", "class_texture_baker_1_1_baked_image.html", null ],
+    [ "BakedConstant", "class_texture_baker_1_1_baked_constant.html", null ],
+    [ "BakedImage", "class_texture_baker_1_1_baked_image.html", null ],
     [ "Camera", "class_camera.html", null ],
-    [ "ShaderNode::Classification", "class_shader_node_1_1_classification.html", null ],
+    [ "Classification", "class_shader_node_1_1_classification.html", null ],
     [ "ClosureContext", "class_closure_context.html", null ],
     [ "ColorManagementSystem", "class_color_management_system.html", [
       [ "DefaultColorManagementSystem", "class_default_color_management_system.html", null ]
     ] ],
     [ "ColorSpaceTransform", "struct_color_space_transform.html", null ],
     [ "Edge", "class_edge.html", null ],
+    [ "ElementEquivalenceOptions", "class_element_equivalence_options.html", null ],
     [ "enable_shared_from_this", null, [
       [ "Element", "class_element.html", [
         [ "Backdrop", "class_backdrop.html", null ],
@@ -40,10 +41,10 @@ var hierarchy =
             [ "NodeDef", "class_node_def.html", null ],
             [ "Variant", "class_variant.html", null ]
           ] ],
-          [ "Member", "class_member.html", null ],
           [ "TargetDef", "class_target_def.html", null ],
           [ "ValueElement", "class_value_element.html", [
             [ "GeomProp", "class_geom_prop.html", null ],
+            [ "Member", "class_member.html", null ],
             [ "PortElement", "class_port_element.html", [
               [ "Input", "class_input.html", null ],
               [ "Output", "class_output.html", null ]
@@ -85,7 +86,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "Factory< T >", "class_factory.html", null ],
-    [ "Factory< ShaderNodeImpl >", "class_factory.html", null ],
     [ "FilePath", "class_file_path.html", null ],
     [ "FileSearchPath", "class_file_search_path.html", null ],
     [ "GenContext", "class_gen_context.html", null ],
@@ -101,8 +101,8 @@ var hierarchy =
     [ "GlslProgram", "class_glsl_program.html", null ],
     [ "GraphIterator", "class_graph_iterator.html", null ],
     [ "Half", "class_half.html", null ],
-    [ "VectorN< V, S, N >::Hash", "class_vector_n_1_1_hash.html", null ],
-    [ "TypeDesc::Hasher", "struct_type_desc_1_1_hasher.html", null ],
+    [ "Hash", "class_vector_n_1_1_hash.html", null ],
+    [ "Hasher", "struct_type_desc_1_1_hasher.html", null ],
     [ "Image", "class_image.html", null ],
     [ "ImageHandler", "class_image_handler.html", [
       [ "GLTextureHandler", "class_g_l_texture_handler.html", null ]
@@ -113,7 +113,7 @@ var hierarchy =
     [ "ImageSamplingKeyHasher", "struct_image_sampling_key_hasher.html", null ],
     [ "ImageSamplingProperties", "class_image_sampling_properties.html", null ],
     [ "InheritanceIterator", "class_inheritance_iterator.html", null ],
-    [ "GlslProgram::Input", "struct_glsl_program_1_1_input.html", null ],
+    [ "Input", "struct_glsl_program_1_1_input.html", null ],
     [ "LightHandler", "class_light_handler.html", null ],
     [ "MatrixBase", "class_matrix_base.html", [
       [ "MatrixN< Matrix33, float, 3 >", "class_matrix_n.html", [
@@ -130,7 +130,7 @@ var hierarchy =
     [ "Renderer", null, [
       [ "TextureBaker< Renderer, ShaderGen >", "class_texture_baker.html", null ]
     ] ],
-    [ "ShaderStage::Scope", "struct_shader_stage_1_1_scope.html", null ],
+    [ "Scope", "struct_shader_stage_1_1_scope.html", null ],
     [ "ScopedFloatFormatting", "class_scoped_float_formatting.html", null ],
     [ "ScopedSetClosureParams", "class_scoped_set_closure_params.html", null ],
     [ "ScopedSetVariableName", "class_scoped_set_variable_name.html", null ],
@@ -219,6 +219,9 @@ var hierarchy =
     [ "ShCoeffs< C, B >", "class_sh_coeffs.html", null ],
     [ "SimpleWindow", "class_simple_window.html", null ],
     [ "StringResolver", "class_string_resolver.html", null ],
+    [ "StructMemberTypeDesc", "struct_struct_type_desc_1_1_struct_member_type_desc.html", null ],
+    [ "StructTypeDesc", "class_struct_type_desc.html", null ],
+    [ "StructTypeDescRegistry", "class_struct_type_desc_registry.html", null ],
     [ "Syntax", "class_syntax.html", [
       [ "GlslSyntax", "class_glsl_syntax.html", [
         [ "EsslSyntax", "class_essl_syntax.html", null ],
@@ -234,6 +237,9 @@ var hierarchy =
       [ "AggregateTypeSyntax", "class_aggregate_type_syntax.html", null ],
       [ "ScalarTypeSyntax", "class_scalar_type_syntax.html", [
         [ "StringTypeSyntax", "class_string_type_syntax.html", null ]
+      ] ],
+      [ "StructTypeSyntax", "class_struct_type_syntax.html", [
+        [ "GlslStructTypeSyntax", "class_glsl_struct_type_syntax.html", null ]
       ] ]
     ] ],
     [ "UIProperties", "struct_u_i_properties.html", null ],
@@ -246,6 +252,7 @@ var hierarchy =
     [ "UnitSystem", "class_unit_system.html", null ],
     [ "UnitTransform", "struct_unit_transform.html", null ],
     [ "Value", "class_value.html", [
+      [ "AggregateValue", "class_aggregate_value.html", null ],
       [ "TypedValue< T >", "class_typed_value.html", null ]
     ] ],
     [ "VariableBlock", "class_variable_block.html", null ],
