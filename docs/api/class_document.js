@@ -21,6 +21,7 @@ var class_document =
     [ "getCollections", "class_document.html#ab5a3a35fd8f154b58887d778a801b863", null ],
     [ "getColorManagementConfig", "class_document.html#a44fc9e3771cb75d89ac41f8ae5729b12", null ],
     [ "getColorManagementSystem", "class_document.html#ad1a9276741175910156eb27cb9a2e41a", null ],
+    [ "getDataLibrary", "class_document.html#a65b709b557ec1aed39ef4d1f039e0203", null ],
     [ "getGeomInfo", "class_document.html#a1cc858d6f5d803b0268f27945bc501c9", null ],
     [ "getGeomInfos", "class_document.html#a92980e42c57dffa803098cb07c0011cf", null ],
     [ "getGeomPropDef", "class_document.html#a1e1a536dbab4dd940c8f0efde5324b2d", null ],
@@ -56,6 +57,7 @@ var class_document =
     [ "getVersionIntegers", "class_document.html#aa8649ed50a288976cc49b274327b3ba1", null ],
     [ "hasColorManagementConfig", "class_document.html#a52a523462cc7d267d46563a90d4f5704", null ],
     [ "hasColorManagementSystem", "class_document.html#a34c9daf7dcc6cf22f38ed30bcd1ef8f5", null ],
+    [ "hasDataLibrary", "class_document.html#acb69d33940733c2c42ec0312357856c3", null ],
     [ "importLibrary", "class_document.html#ad885dd9e4aba7e5bd1efb25cef91eef9", null ],
     [ "initialize", "class_document.html#a6365dca5a7d8ddb694726a53b55a4c27", null ],
     [ "invalidateCache", "class_document.html#ae4f5daed0983e1d3bfb144a5078d75cc", null ],
@@ -76,6 +78,7 @@ var class_document =
     [ "removeVariantSet", "class_document.html#a1409a051a1ad69942ffef4ed1ba91647", null ],
     [ "setColorManagementConfig", "class_document.html#a6a3d23f8644a0bb5ca7c33fb33709478", null ],
     [ "setColorManagementSystem", "class_document.html#a27beb9fb8232d1261118a16fc0f2a5ca", null ],
+    [ "setDataLibrary", "class_document.html#aebb5529377ec3601af0e8c7dda82dc52", null ],
     [ "upgradeVersion", "class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc", null ],
     [ "validate", "class_document.html#a488dfe5fda981fdd4f948b278b24e84e", null ]
 ];

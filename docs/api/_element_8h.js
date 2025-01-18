@@ -8,6 +8,7 @@ var _element_8h =
     [ "NewlineElement", "class_newline_element.html", null ],
     [ "GenericElement", "class_generic_element.html", null ],
     [ "StringResolver", "class_string_resolver.html", "class_string_resolver" ],
+    [ "ElementEquivalenceOptions", "class_element_equivalence_options.html", "class_element_equivalence_options" ],
     [ "ExceptionOrphanedElement", "class_exception_orphaned_element.html", null ],
     [ "CommentElementPtr", "_element_8h.html#aad44aeedae2a4154a88e86935f0f204a", null ],
     [ "ConstCommentElementPtr", "_element_8h.html#a3886a2c07a6f67ec33a411b6db1ec08a", null ],

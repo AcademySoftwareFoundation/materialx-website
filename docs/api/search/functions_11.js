@@ -16,7 +16,7 @@ var searchData=
   ['traversetree_13',['traverseTree',['../class_element.html#a34584e8db9ddc145eba66b6e21568ae5',1,'Element']]],
   ['traverseupstream_14',['traverseUpstream',['../class_shader_graph.html#a457231fb15bbed1db10c955181f103df',1,'ShaderGraph']]],
   ['trimspaces_15',['trimSpaces',['../_material_x_core_2_util_8h.html#a7121e1097a34dd7ec32cc3e7e3b690a8',1,'Util.h']]],
-  ['typedesc_16',['TypeDesc',['../class_type_desc.html#a1c89e82e022b88bf590827ba6b384b47',1,'TypeDesc::TypeDesc() noexcept'],['../class_type_desc.html#a9fbe0355fe155c7b6d6aa2d6223eccb0',1,'TypeDesc::TypeDesc(std::string_view name, uint8_t basetype, uint8_t semantic=SEMANTIC_NONE, uint16_t size=1) noexcept']]],
+  ['typedesc_16',['TypeDesc',['../class_type_desc.html#a1c89e82e022b88bf590827ba6b384b47',1,'TypeDesc::TypeDesc() noexcept'],['../class_type_desc.html#a1487dd88938c6066e576bd27e41470d9',1,'TypeDesc::TypeDesc(std::string_view name, uint8_t basetype, uint8_t semantic=SEMANTIC_NONE, uint16_t size=1, uint16_t structIndex=0) noexcept']]],
   ['typeid_17',['typeId',['../class_type_desc.html#af1cb155eee721f4c2e65cbfcea458615',1,'TypeDesc']]],
   ['typesupported_18',['typeSupported',['../class_syntax.html#a52fef4d311323911570ae854f45ee28b',1,'Syntax::typeSupported()'],['../class_glsl_syntax.html#ae346b608de8dd894559bd21fb30f44e1',1,'GlslSyntax::typeSupported()']]],
   ['typesyntax_19',['TypeSyntax',['../class_type_syntax.html#a6c707629804fcf46c8e63b811e1178bb',1,'TypeSyntax']]]

@@ -7,7 +7,7 @@ var _shader_node_8h =
     [ "ShaderInput", "class_shader_input.html", "class_shader_input" ],
     [ "ShaderOutput", "class_shader_output.html", "class_shader_output" ],
     [ "ShaderNode", "class_shader_node.html", "class_shader_node" ],
-    [ "ShaderNode::Classification", "class_shader_node_1_1_classification.html", null ],
+    [ "Classification", "class_shader_node_1_1_classification.html", null ],
     [ "ShaderInputPtr", "_shader_node_8h.html#a9946d4a8fc843a8bd8be9175ec9e0f0f", null ],
     [ "ShaderInputVec", "_shader_node_8h.html#a75cbb7d869f3dcc40d0408db91420bd6", null ],
     [ "ShaderNodePtr", "_shader_node_8h.html#a63dacb92055290cf7cb319f65f2c79ce", null ],

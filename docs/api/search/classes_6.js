@@ -23,8 +23,9 @@ var searchData=
   ['glslrenderer_20',['GlslRenderer',['../class_glsl_renderer.html',1,'']]],
   ['glslresourcebindingcontext_21',['GlslResourceBindingContext',['../class_glsl_resource_binding_context.html',1,'']]],
   ['glslshadergenerator_22',['GlslShaderGenerator',['../class_glsl_shader_generator.html',1,'']]],
-  ['glslsyntax_23',['GlslSyntax',['../class_glsl_syntax.html',1,'']]],
-  ['gltexturehandler_24',['GLTextureHandler',['../class_g_l_texture_handler.html',1,'']]],
-  ['graphelement_25',['GraphElement',['../class_graph_element.html',1,'']]],
-  ['graphiterator_26',['GraphIterator',['../class_graph_iterator.html',1,'']]]
+  ['glslstructtypesyntax_23',['GlslStructTypeSyntax',['../class_glsl_struct_type_syntax.html',1,'']]],
+  ['glslsyntax_24',['GlslSyntax',['../class_glsl_syntax.html',1,'']]],
+  ['gltexturehandler_25',['GLTextureHandler',['../class_g_l_texture_handler.html',1,'']]],
+  ['graphelement_26',['GraphElement',['../class_graph_element.html',1,'']]],
+  ['graphiterator_27',['GraphIterator',['../class_graph_iterator.html',1,'']]]
 ];

@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "MaterialX", "index.html", [
-    [ "MaterialX Overview", "index.html", null ],
+    [ "MaterialX Overview", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -62,16 +62,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_blur_node_8h_source.html",
-"_material_x_core_2_util_8h.html#a62d612bd307fced8a2812124dd82ed55",
-"class_attribute_def.html#a26044f63e9069e534f23b1dde870221a",
-"class_element.html#a6eea8ea113395c0f1789e8f9d3fd9fbf",
-"class_glsl_material.html",
-"class_implementation.html#abd93778af015b20d076960f70396fe28",
-"class_mesh.html#a94f4abe9fa5ea3cb8c279a4accf3a46a",
-"class_shader_graph.html#a04950cda6630cf4bdcfe9b98bdb3b307",
-"class_string_resolver.html#af0d0761975f80e817eff0cd07f75248f",
-"class_variant_assign.html#ab8d3cf6bcf33a9dcda8a4e4f07534cc6"
+"_material_x_core_2_util_8h.html#a959b58b3e0c330ed20a1594b18a05aeb",
+"class_attribute_def.html#a1067be1935c379e1920078e1b3af2d8d",
+"class_element.html#a5f92a81184b72fe159282f62768f0e58",
+"class_geometry_handler.html#a215ea5cb04bfdd03f9f02164dd27792a",
+"class_image_sampling_properties.html#a3235b50e28af0c32da4e308d0149681ca8d6b5cada83510220f59e00ce86d4d92",
+"class_mesh.html",
+"class_shader_generator.html#a70f8c6101bd8495d23a5d2efab5c851d",
+"class_simple_window.html#a7f0f3e5dd09a150b2cc221c01804d1a7",
+"class_value_element.html#ac09aae9bfc89ef36b3655d1b7c225b1b",
+"struct_u_i_properties.html#acb501016e1b13147967af4fecdf7ca81"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';

@@ -25,6 +25,9 @@ var searchData=
   ['flattenfilenames_22',['flattenFilenames',['../_material_x_format_2_util_8h.html#a5cfe4ec5bfe85af0ee8ebb3dbdcc50d4',1,'Util.h']]],
   ['flattensubgraphs_23',['flattenSubgraphs',['../class_graph_element.html#a46aecf7b11bc8f5745946607afee70cc',1,'GraphElement']]],
   ['floatformat_24',['FloatFormat',['../class_value.html#aa900700142fa799baa05b7aa63fe3066',1,'Value']]],
-  ['floatvec_25',['FloatVec',['../_value_8h.html#a9f39d0fca994531befd9874b4cfbdac3',1,'Value.h']]],
-  ['fromvaluestring_26',['fromValueString',['../_value_8h.html#a3c6dfde9285f3b34f86769efd4e5db33',1,'Value.h']]]
+  ['floatformat_25',['floatFormat',['../class_element_equivalence_options.html#aec9854bbf4e9f309a4f851c4c545ce72',1,'ElementEquivalenceOptions']]],
+  ['floatprecision_26',['floatPrecision',['../class_element_equivalence_options.html#aa61c1fda74d91bd942e6e2fcb3d8552b',1,'ElementEquivalenceOptions']]],
+  ['floatvec_27',['FloatVec',['../_value_8h.html#a9f39d0fca994531befd9874b4cfbdac3',1,'Value.h']]],
+  ['for_20developers_28',['Quick Start for Developers',['../index.html#autotoc_md1',1,'']]],
+  ['fromvaluestring_29',['fromValueString',['../_value_8h.html#a3c6dfde9285f3b34f86769efd4e5db33',1,'Value.h']]]
 ];

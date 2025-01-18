@@ -1,6 +1,7 @@
 var class_image =
 [
     [ "applyBoxBlur", "class_image.html#a68ecbe66b430eab0693a1970be114ea0", null ],
+    [ "applyBoxDownsample", "class_image.html#a5f4d53487d9f54266c331e5536f2a1a5", null ],
     [ "applyGammaTransform", "class_image.html#a630e77018b2770c00b8c8df4775ea8f7", null ],
     [ "applyGaussianBlur", "class_image.html#a7486667833b05d55e956f85d81f975e8", null ],
     [ "applyMatrixTransform", "class_image.html#af8d50d43bea1becfb1b896f7920ef780", null ],

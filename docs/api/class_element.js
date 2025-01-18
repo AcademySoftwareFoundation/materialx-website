@@ -58,6 +58,8 @@ var class_element =
     [ "hasNamespace", "class_element.html#a0c21b0c5068f35162027009096ba7450", null ],
     [ "hasSourceUri", "class_element.html#a397054093aca067747fc9bf15c46b748", null ],
     [ "isA", "class_element.html#a1abac623ce8f53ed8d408a05bab3960e", null ],
+    [ "isAttributeEquivalent", "class_element.html#af1b558186ea36750578984f122e534f8", null ],
+    [ "isEquivalent", "class_element.html#aa493031a0a3498fe6fa9ff8148a60cf9", null ],
     [ "operator!=", "class_element.html#a7fff87cea56f66fdc61a319af01fd605", null ],
     [ "operator==", "class_element.html#aab18528558b91af6ed398f4056026bdf", null ],
     [ "removeAttribute", "class_element.html#aa3d78070e34ac133a211ee8d95134005", null ],
