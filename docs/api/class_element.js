@@ -22,7 +22,7 @@ var class_element =
     [ "getChild", "class_element.html#a67f43f7e3cf2c0ce51aa37c0ff6044f6", null ],
     [ "getChildIndex", "class_element.html#a5f92a81184b72fe159282f62768f0e58", null ],
     [ "getChildOfType", "class_element.html#aab1fff65868abc256b8c9355a1b26421", null ],
-    [ "getChildren", "class_element.html#ad5c9e51f19e929d0a6d57755f47bffed", null ],
+    [ "getChildren", "class_element.html#ad71b86ca02e2ae8f5c87e7f3fadbedaa", null ],
     [ "getChildrenOfType", "class_element.html#afeb5c099e6c90fad07704ecdfc43386b", null ],
     [ "getColorSpace", "class_element.html#a3eeaac78f2bcb9960e3b8ee520e28067", null ],
     [ "getDescendant", "class_element.html#aac5271edba891cb82555096452322315", null ],

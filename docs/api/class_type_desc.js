@@ -1,14 +1,15 @@
 var class_type_desc =
 [
+    [ "DataBlock", "class_type_desc_1_1_data_block.html", null ],
     [ "Hasher", "struct_type_desc_1_1_hasher.html", null ],
     [ "TypeDesc", "class_type_desc.html#a1c89e82e022b88bf590827ba6b384b47", null ],
-    [ "TypeDesc", "class_type_desc.html#a1487dd88938c6066e576bd27e41470d9", null ],
+    [ "TypeDesc", "class_type_desc.html#a150d45238c0015768884eb7d00a4e351", null ],
     [ "createValueFromStrings", "class_type_desc.html#ab0e80587b1b5e7d5214ff269deb1eba5", null ],
     [ "getBaseType", "class_type_desc.html#afe5ee157880c6467f148702bd54b23e9", null ],
     [ "getName", "class_type_desc.html#a43f65f5d191c125b0b52028fdbf0f364", null ],
     [ "getSemantic", "class_type_desc.html#a9f72206630a15a9274e56ab0b482dce1", null ],
     [ "getSize", "class_type_desc.html#a9be1e4285daa77fe397767c097fbdc66", null ],
-    [ "getStructIndex", "class_type_desc.html#aef2b081c05beb606c237d1ffe339db8c", null ],
+    [ "getStructMembers", "class_type_desc.html#ad7de4d6ed6b84b36ba15f431f635076b", null ],
     [ "isAggregate", "class_type_desc.html#ad24121b1fc349b8b9d7870d58aa4ad19", null ],
     [ "isArray", "class_type_desc.html#aefe7cc24045c3560d7550ba662375ce4", null ],
     [ "isClosure", "class_type_desc.html#a63a4ca9571cc3b8b772ffc7981d49cda", null ],

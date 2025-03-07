@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -102,9 +102,7 @@ $(function(){initNavTree('class_hw_shader_generator.html',''); initResizable(tru
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_hw_shader_generator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">HwShaderGenerator Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
@@ -136,6 +134,8 @@ Public Types</h2></td></tr>
 , <b>INDIRECT</b>
 , <br />
 &#160;&#160;<b>EMISSION</b>
+, <b>LIGHTING</b>
+, <b>CLOSURE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:ac4f3ab7fbbd80939f89218068976f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of closure contexts for <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a>. <br /></td></tr>
@@ -143,16 +143,13 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac4f1d2a8bd6f81b7d7b2b58a3c7efa79" id="r_ac4f1d2a8bd6f81b7d7b2b58a3c7efa79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79">emitFunctionCall</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const override</td></tr>
-<tr class="memdesc:ac4f1d2a8bd6f81b7d7b2b58a3c7efa79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function call for a single node.  <br /></td></tr>
-<tr class="separator:ac4f1d2a8bd6f81b7d7b2b58a3c7efa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42222658efbbc1448114e189b62f1fb9" id="r_a42222658efbbc1448114e189b62f1fb9"><td class="memItemLeft" align="right" valign="top"><a id="a42222658efbbc1448114e189b62f1fb9" name="a42222658efbbc1448114e189b62f1fb9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addStageLightingUniforms</b> (<a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
 <tr class="memdesc:a42222658efbbc1448114e189b62f1fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit code for active light count definitions and uniforms. <br /></td></tr>
 <tr class="separator:a42222658efbbc1448114e189b62f1fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed30dd9398e28f9c74b4365f92dc5f56" id="r_aed30dd9398e28f9c74b4365f92dc5f56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed30dd9398e28f9c74b4365f92dc5f56">getClosureContexts</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, vector&lt; <a class="el" href="class_closure_context.html">ClosureContext</a> * &gt; &amp;cct) const override</td></tr>
-<tr class="memdesc:aed30dd9398e28f9c74b4365f92dc5f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the closure contexts defined for the given node.  <br /></td></tr>
-<tr class="separator:aed30dd9398e28f9c74b4365f92dc5f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43f900cb6bf73f982df92b70129bed3" id="r_aa43f900cb6bf73f982df92b70129bed3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa43f900cb6bf73f982df92b70129bed3">nodeNeedsClosureData</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node) const override</td></tr>
+<tr class="memdesc:aa43f900cb6bf73f982df92b70129bed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the node needs the ClosureData struct added.  <br /></td></tr>
+<tr class="separator:aa43f900cb6bf73f982df92b70129bed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd26d2e250ee8287918c33f92f31b76a" id="r_acd26d2e250ee8287918c33f92f31b76a"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd26d2e250ee8287918c33f92f31b76a">getVertexDataPrefix</a> (const <a class="el" href="class_variable_block.html">VariableBlock</a> &amp;vertexData) const =0</td></tr>
 <tr class="memdesc:acd26d2e250ee8287918c33f92f31b76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the prefix of vertex data variables.  <br /></td></tr>
 <tr class="separator:acd26d2e250ee8287918c33f92f31b76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +216,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionD
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionDefinitions</b> (const <a class="el" href="class_shader_graph.html">ShaderGraph</a> &amp;graph, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
 <tr class="memdesc:ab1edf8bf8533f11e53a50259ab4c2286 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all function definitions for a graph. <br /></td></tr>
 <tr class="separator:ab1edf8bf8533f11e53a50259ab4c2286 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae966858614aba55af1606b114a965524 inherit pub_methods_class_shader_generator" id="r_ae966858614aba55af1606b114a965524"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionCall</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
+<tr class="memdesc:ae966858614aba55af1606b114a965524 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function call for a single node. <br /></td></tr>
+<tr class="separator:ae966858614aba55af1606b114a965524 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec7ce1b6fb711582f12587654dca9df inherit pub_methods_class_shader_generator" id="r_a5ec7ce1b6fb711582f12587654dca9df"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionCall</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool checkScope) const</td></tr>
 <tr class="separator:a5ec7ce1b6fb711582f12587654dca9df inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,18 +292,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setUnitSystem</b> (<a
 <a class="el" href="_unit_system_8h.html#ab9387686ba9357f498d9ae7c870c8ada">UnitSystemPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUnitSystem</b> () const</td></tr>
 <tr class="memdesc:ad9990864460e1772620c8702d46d3025 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unit system. <br /></td></tr>
 <tr class="separator:ad9990864460e1772620c8702d46d3025 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d02fe3b1a9921d84da9a84d1647a900 inherit pub_methods_class_shader_generator" id="r_a7d02fe3b1a9921d84da9a84d1647a900"><td class="memItemLeft" align="right" valign="top">
+TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeSystem</b> () const</td></tr>
+<tr class="memdesc:a7d02fe3b1a9921d84da9a84d1647a900 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type system. <br /></td></tr>
+<tr class="separator:a7d02fe3b1a9921d84da9a84d1647a900 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438b6cb63f40152962b5f2fc4e90c210 inherit pub_methods_class_shader_generator" id="r_a438b6cb63f40152962b5f2fc4e90c210"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTokenSubstitutions</b> () const</td></tr>
 <tr class="memdesc:a438b6cb63f40152962b5f2fc4e90c210 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the map of token substitutions used by the generator. <br /></td></tr>
 <tr class="separator:a438b6cb63f40152962b5f2fc4e90c210 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfad3ac94171da83542cb2d8d7cbd80 inherit pub_methods_class_shader_generator" id="r_a7dfad3ac94171da83542cb2d8d7cbd80"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadStructTypeDefs</b> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc)</td></tr>
-<tr class="memdesc:a7dfad3ac94171da83542cb2d8d7cbd80 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load any struct type definitions from the document in to the type cache. <br /></td></tr>
-<tr class="separator:a7dfad3ac94171da83542cb2d8d7cbd80 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6464bcb810273e5722d8b8605a891922 inherit pub_methods_class_shader_generator" id="r_a6464bcb810273e5722d8b8605a891922"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearStructTypeDefs</b> ()</td></tr>
-<tr class="memdesc:a6464bcb810273e5722d8b8605a891922 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any struct type definitions loaded. <br /></td></tr>
-<tr class="separator:a6464bcb810273e5722d8b8605a891922 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5fffb73f451f0383096237ccbd0e72 inherit pub_methods_class_shader_generator" id="r_abc5fffb73f451f0383096237ccbd0e72"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>registerTypeDefs</b> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc)</td></tr>
+<tr class="memdesc:abc5fffb73f451f0383096237ccbd0e72 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register type definitions from the document. <br /></td></tr>
+<tr class="separator:abc5fffb73f451f0383096237ccbd0e72 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575a30689cc1cc2b575632cfeb4423e8 inherit pub_methods_class_shader_generator" id="r_a575a30689cc1cc2b575632cfeb4423e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a575a30689cc1cc2b575632cfeb4423e8">registerShaderMetadata</a> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
 <tr class="memdesc:a575a30689cc1cc2b575632cfeb4423e8 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register metadata that should be exported to the generated shaders.  <br /></td></tr>
 <tr class="separator:a575a30689cc1cc2b575632cfeb4423e8 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,33 +322,20 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>unbindLightSha
 <tr class="memdesc:a9eb730e50ea8035531499fec28aec74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbind all light shaders previously bound. <br /></td></tr>
 <tr class="separator:a9eb730e50ea8035531499fec28aec74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0021eb5abf1a5049cb37a06010a0f8d5" id="r_a0021eb5abf1a5049cb37a06010a0f8d5"><td class="memItemLeft" align="right" valign="top"><a id="a0021eb5abf1a5049cb37a06010a0f8d5" name="a0021eb5abf1a5049cb37a06010a0f8d5"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSURE_CONTEXT_SUFFIX_REFLECTION</b></td></tr>
-<tr class="memdesc:a0021eb5abf1a5049cb37a06010a0f8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">String constants for closure context suffixes. <br /></td></tr>
-<tr class="separator:a0021eb5abf1a5049cb37a06010a0f8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab55c0e0b55f1e7fae297dc36eca24919" id="r_ab55c0e0b55f1e7fae297dc36eca24919"><td class="memItemLeft" align="right" valign="top"><a id="ab55c0e0b55f1e7fae297dc36eca24919" name="ab55c0e0b55f1e7fae297dc36eca24919"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSURE_CONTEXT_SUFFIX_TRANSMISSION</b></td></tr>
-<tr class="separator:ab55c0e0b55f1e7fae297dc36eca24919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60b04f96957a22c2dc4911a034dedd4" id="r_af60b04f96957a22c2dc4911a034dedd4"><td class="memItemLeft" align="right" valign="top"><a id="af60b04f96957a22c2dc4911a034dedd4" name="af60b04f96957a22c2dc4911a034dedd4"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>CLOSURE_CONTEXT_SUFFIX_INDIRECT</b></td></tr>
-<tr class="separator:af60b04f96957a22c2dc4911a034dedd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a19de074c2adcb3f2deb9244ce9082045" id="r_a19de074c2adcb3f2deb9244ce9082045"><td class="memItemLeft" align="right" valign="top"><a id="a19de074c2adcb3f2deb9244ce9082045" name="a19de074c2adcb3f2deb9244ce9082045"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HwShaderGenerator</b> (<a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> syntax)</td></tr>
-<tr class="separator:a19de074c2adcb3f2deb9244ce9082045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f561a4731edb3d2519149dbc53530f3" id="r_a9f561a4731edb3d2519149dbc53530f3"><td class="memItemLeft" align="right" valign="top"><a id="a9f561a4731edb3d2519149dbc53530f3" name="a9f561a4731edb3d2519149dbc53530f3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>HwShaderGenerator</b> (TypeSystemPtr typeSystem, <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> syntax)</td></tr>
+<tr class="separator:a9f561a4731edb3d2519149dbc53530f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ed207aa136fb2ceac94a7b5cb16e3e" id="r_a37ed207aa136fb2ceac94a7b5cb16e3e"><td class="memItemLeft" align="right" valign="top"><a id="a37ed207aa136fb2ceac94a7b5cb16e3e" name="a37ed207aa136fb2ceac94a7b5cb16e3e"></a>
 virtual <a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createShader</b> (const string &amp;name, <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> element, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
 <tr class="memdesc:a37ed207aa136fb2ceac94a7b5cb16e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and initialize a new <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader for shader generation. <br /></td></tr>
 <tr class="separator:a37ed207aa136fb2ceac94a7b5cb16e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_shader_generator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_shader_generator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_shader_generator.html">ShaderGenerator</a></td></tr>
-<tr class="memitem:afb4e0502c13932ed0c5100db3633c2a1 inherit pro_methods_class_shader_generator" id="r_afb4e0502c13932ed0c5100db3633c2a1"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b> (<a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> syntax)</td></tr>
-<tr class="memdesc:afb4e0502c13932ed0c5100db3633c2a1 inherit pro_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
-<tr class="separator:afb4e0502c13932ed0c5100db3633c2a1 inherit pro_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68040f10c946d240665111e72847bdec inherit pro_methods_class_shader_generator" id="r_a68040f10c946d240665111e72847bdec"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b> (TypeSystemPtr typeSystem, <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> syntax)</td></tr>
+<tr class="memdesc:a68040f10c946d240665111e72847bdec inherit pro_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
+<tr class="separator:a68040f10c946d240665111e72847bdec inherit pro_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a766685d2edaaec6217045cf1159fc9f2 inherit pro_methods_class_shader_generator" id="r_a766685d2edaaec6217045cf1159fc9f2"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87">ShaderStagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createStage</b> (const string &amp;name, <a class="el" href="class_shader.html">Shader</a> &amp;shader) const</td></tr>
 <tr class="memdesc:a766685d2edaaec6217045cf1159fc9f2 inherit pro_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new stage in a shader. <br /></td></tr>
@@ -364,25 +352,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceTokens</b> (co
 <tr class="memdesc:a24f4ca85de1760cb40ccfae45cdf02cb inherit pro_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create shader variables (e.g.  <br /></td></tr>
 <tr class="separator:a24f4ca85de1760cb40ccfae45cdf02cb inherit pro_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0ba5c5d627c12139087de938062aaa06" id="r_a0ba5c5d627c12139087de938062aaa06"><td class="memItemLeft" align="right" valign="top"><a id="a0ba5c5d627c12139087de938062aaa06" name="a0ba5c5d627c12139087de938062aaa06"></a>
-<a class="el" href="class_closure_context.html">ClosureContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_defDefault</b></td></tr>
-<tr class="memdesc:a0ba5c5d627c12139087de938062aaa06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closure contexts for defining closure functions. <br /></td></tr>
-<tr class="separator:a0ba5c5d627c12139087de938062aaa06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8bf5dd5c24ee4a15b9f8e5365488007" id="r_af8bf5dd5c24ee4a15b9f8e5365488007"><td class="memItemLeft" align="right" valign="top"><a id="af8bf5dd5c24ee4a15b9f8e5365488007" name="af8bf5dd5c24ee4a15b9f8e5365488007"></a>
-<a class="el" href="class_closure_context.html">ClosureContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_defReflection</b></td></tr>
-<tr class="separator:af8bf5dd5c24ee4a15b9f8e5365488007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d43b85ef1a885d2bcc8a84ba8df92d" id="r_a94d43b85ef1a885d2bcc8a84ba8df92d"><td class="memItemLeft" align="right" valign="top"><a id="a94d43b85ef1a885d2bcc8a84ba8df92d" name="a94d43b85ef1a885d2bcc8a84ba8df92d"></a>
-<a class="el" href="class_closure_context.html">ClosureContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_defTransmission</b></td></tr>
-<tr class="separator:a94d43b85ef1a885d2bcc8a84ba8df92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c4593ffa0dba5375491f106e40b79d" id="r_a83c4593ffa0dba5375491f106e40b79d"><td class="memItemLeft" align="right" valign="top"><a id="a83c4593ffa0dba5375491f106e40b79d" name="a83c4593ffa0dba5375491f106e40b79d"></a>
-<a class="el" href="class_closure_context.html">ClosureContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_defIndirect</b></td></tr>
-<tr class="separator:a83c4593ffa0dba5375491f106e40b79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3560494fcf7f4c47113c0ba8ef5dd44e" id="r_a3560494fcf7f4c47113c0ba8ef5dd44e"><td class="memItemLeft" align="right" valign="top"><a id="a3560494fcf7f4c47113c0ba8ef5dd44e" name="a3560494fcf7f4c47113c0ba8ef5dd44e"></a>
-<a class="el" href="class_closure_context.html">ClosureContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_defEmission</b></td></tr>
-<tr class="separator:a3560494fcf7f4c47113c0ba8ef5dd44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_shader_generator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_shader_generator')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_shader_generator.html">ShaderGenerator</a></td></tr>
+<tr class="memitem:a7a294a56427b14c31d8b52050b7c2cc7 inherit pro_attribs_class_shader_generator" id="r_a7a294a56427b14c31d8b52050b7c2cc7"><td class="memItemLeft" align="right" valign="top">
+TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSystem</b></td></tr>
+<tr class="separator:a7a294a56427b14c31d8b52050b7c2cc7 inherit pro_attribs_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e5b700e3565bb80bb71db34617ee96 inherit pro_attribs_class_shader_generator" id="r_ae2e5b700e3565bb80bb71db34617ee96"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_syntax</b></td></tr>
 <tr class="separator:ae2e5b700e3565bb80bb71db34617ee96 inherit pro_attribs_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,9 +376,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac95bcf2c7eb505245c1458bc802f4c29 inherit pro_attribs_class_shader_generator" id="r_ac95bcf2c7eb505245c1458bc802f4c29"><td class="memItemLeft" align="right" valign="top">
 friend&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGraph</b></td></tr>
 <tr class="separator:ac95bcf2c7eb505245c1458bc802f4c29 inherit pro_attribs_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_attribs_class_shader_generator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_attribs_class_shader_generator')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_shader_generator.html">ShaderGenerator</a></td></tr>
 <tr class="memitem:ab49a9c546f2674409a62e044c34d6bda inherit pro_static_attribs_class_shader_generator" id="r_ab49a9c546f2674409a62e044c34d6bda"><td class="memItemLeft" align="right" valign="top">
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE_TRANSFORM_UV</b></td></tr>
@@ -449,77 +421,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE
 
 </div>
 </div>
-<a id="ac4f1d2a8bd6f81b7d7b2b58a3c7efa79" name="ac4f1d2a8bd6f81b7d7b2b58a3c7efa79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79">&#9670;&#160;</a></span>emitFunctionCall()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void emitFunctionCall </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_gen_context.html">GenContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>stage</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add the function call for a single node. </p>
-
-<p>Reimplemented from <a class="el" href="class_shader_generator.html#ae966858614aba55af1606b114a965524">ShaderGenerator</a>.</p>
-
-</div>
-</div>
-<a id="aed30dd9398e28f9c74b4365f92dc5f56" name="aed30dd9398e28f9c74b4365f92dc5f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed30dd9398e28f9c74b4365f92dc5f56">&#9670;&#160;</a></span>getClosureContexts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void getClosureContexts </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; <a class="el" href="class_closure_context.html">ClosureContext</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cct</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the closure contexts defined for the given node. </p>
-
-<p>Reimplemented from <a class="el" href="class_shader_generator.html#a43850199c96a58a0bb94f7e61aa6156e">ShaderGenerator</a>.</p>
-
-</div>
-</div>
 <a id="acd26d2e250ee8287918c33f92f31b76a" name="acd26d2e250ee8287918c33f92f31b76a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd26d2e250ee8287918c33f92f31b76a">&#9670;&#160;</a></span>getVertexDataPrefix()</h2>
 
@@ -546,6 +447,35 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE
 <p>Determine the prefix of vertex data variables. </p>
 
 <p>Implemented in <a class="el" href="class_essl_shader_generator.html#a77076efa2108759f613354ae2b0edc36">EsslShaderGenerator</a>, <a class="el" href="class_glsl_shader_generator.html#a77076efa2108759f613354ae2b0edc36">GlslShaderGenerator</a>, and <a class="el" href="class_vk_shader_generator.html#a77076efa2108759f613354ae2b0edc36">VkShaderGenerator</a>.</p>
+
+</div>
+</div>
+<a id="aa43f900cb6bf73f982df92b70129bed3" name="aa43f900cb6bf73f982df92b70129bed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43f900cb6bf73f982df92b70129bed3">&#9670;&#160;</a></span>nodeNeedsClosureData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nodeNeedsClosureData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the node needs the ClosureData struct added. </p>
+
+<p>Reimplemented from <a class="el" href="class_shader_generator.html#aa7e9e143ad0c932c57c2f82ed6b95350">ShaderGenerator</a>.</p>
 
 </div>
 </div>

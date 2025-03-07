@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,6 @@ $(function(){initNavTree('class_type_desc.html',''); initResizable(true); });
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_type_desc-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">TypeDesc Class Reference</div></div>
@@ -116,6 +115,9 @@ $(function(){initNavTree('class_type_desc.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_type_desc_1_1_data_block.html">DataBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data block holding large data needed by the type description.  <a href="class_type_desc_1_1_data_block.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_type_desc_1_1_hasher.html">Hasher</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash operator.  <a href="struct_type_desc_1_1_hasher.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +152,9 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a5a5b1d8320f94d3c3d142753f5527fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e19673e8047981ad97097160a14add" id="r_a44e19673e8047981ad97097160a14add"><td class="memItemLeft" align="right" valign="top"><a id="a44e19673e8047981ad97097160a14add" name="a44e19673e8047981ad97097160a14add"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DataBlockPtr</b> = std::shared_ptr&lt;<a class="el" href="class_type_desc_1_1_data_block.html">DataBlock</a>&gt;</td></tr>
+<tr class="separator:a44e19673e8047981ad97097160a14add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -157,10 +162,10 @@ Public Member Functions</h2></td></tr>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>TypeDesc</b> () noexcept</td></tr>
 <tr class="memdesc:a1c89e82e022b88bf590827ba6b384b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructor. <br /></td></tr>
 <tr class="separator:a1c89e82e022b88bf590827ba6b384b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1487dd88938c6066e576bd27e41470d9" id="r_a1487dd88938c6066e576bd27e41470d9"><td class="memItemLeft" align="right" valign="top"><a id="a1487dd88938c6066e576bd27e41470d9" name="a1487dd88938c6066e576bd27e41470d9"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>TypeDesc</b> (std::string_view name, uint8_t basetype, uint8_t semantic=SEMANTIC_NONE, uint16_t size=1, uint16_t structIndex=0) noexcept</td></tr>
-<tr class="memdesc:a1487dd88938c6066e576bd27e41470d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a1487dd88938c6066e576bd27e41470d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150d45238c0015768884eb7d00a4e351" id="r_a150d45238c0015768884eb7d00a4e351"><td class="memItemLeft" align="right" valign="top"><a id="a150d45238c0015768884eb7d00a4e351" name="a150d45238c0015768884eb7d00a4e351"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>TypeDesc</b> (std::string_view name, uint8_t basetype, uint8_t semantic, uint16_t size, const <a class="el" href="class_type_desc_1_1_data_block.html">DataBlock</a> *data) noexcept</td></tr>
+<tr class="memdesc:a150d45238c0015768884eb7d00a4e351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a150d45238c0015768884eb7d00a4e351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1cb155eee721f4c2e65cbfcea458615" id="r_af1cb155eee721f4c2e65cbfcea458615"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1cb155eee721f4c2e65cbfcea458615">typeId</a> () const</td></tr>
 <tr class="memdesc:af1cb155eee721f4c2e65cbfcea458615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the unique id assigned to this type.  <br /></td></tr>
 <tr class="separator:af1cb155eee721f4c2e65cbfcea458615"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,10 +216,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isClosure</b> () cons
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isStruct</b> () const</td></tr>
 <tr class="memdesc:a758ce87c14717772fdb523b02740808e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the type represents a struct. <br /></td></tr>
 <tr class="separator:a758ce87c14717772fdb523b02740808e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2b081c05beb606c237d1ffe339db8c" id="r_aef2b081c05beb606c237d1ffe339db8c"><td class="memItemLeft" align="right" valign="top"><a id="aef2b081c05beb606c237d1ffe339db8c" name="aef2b081c05beb606c237d1ffe339db8c"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>getStructIndex</b> () const</td></tr>
-<tr class="memdesc:aef2b081c05beb606c237d1ffe339db8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the index for the struct member information in <a class="el" href="class_struct_type_desc.html" title="A type descriptor for MaterialX struct types.">StructTypeDesc</a>, the result is invalid if <code><a class="el" href="#a758ce87c14717772fdb523b02740808e" title="Return true if the type represents a struct.">isStruct()</a></code> returns false. <br /></td></tr>
-<tr class="separator:aef2b081c05beb606c237d1ffe339db8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7de4d6ed6b84b36ba15f431f635076b" id="r_ad7de4d6ed6b84b36ba15f431f635076b"><td class="memItemLeft" align="right" valign="top">StructMemberDescVecPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7de4d6ed6b84b36ba15f431f635076b">getStructMembers</a> () const</td></tr>
+<tr class="memdesc:ad7de4d6ed6b84b36ba15f431f635076b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the struct member description.  <br /></td></tr>
+<tr class="separator:ad7de4d6ed6b84b36ba15f431f635076b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb12ef1f03bb019f8cc6aa673b3f4a5" id="r_a3bb12ef1f03bb019f8cc6aa673b3f4a5"><td class="memItemLeft" align="right" valign="top"><a id="a3bb12ef1f03bb019f8cc6aa673b3f4a5" name="a3bb12ef1f03bb019f8cc6aa673b3f4a5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> rhs) const</td></tr>
 <tr class="memdesc:a3bb12ef1f03bb019f8cc6aa673b3f4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator. <br /></td></tr>
@@ -232,16 +236,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (<a 
 <tr class="memdesc:ab0e80587b1b5e7d5214ff269deb1eba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="class_value.html" title="A generic, discriminated value, whose type may be queried dynamically.">Value</a> from a string for a given typeDesc. <br /></td></tr>
 <tr class="separator:ab0e80587b1b5e7d5214ff269deb1eba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad93b4a983ed45f4c22be8db8222d5d85" id="r_ad93b4a983ed45f4c22be8db8222d5d85"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad93b4a983ed45f4c22be8db8222d5d85">get</a> (const string &amp;name)</td></tr>
-<tr class="memdesc:ad93b4a983ed45f4c22be8db8222d5d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a type description by name.  <br /></td></tr>
-<tr class="separator:ad93b4a983ed45f4c22be8db8222d5d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740969a09a1f546a6fa1e2debdc66e39" id="r_a740969a09a1f546a6fa1e2debdc66e39"><td class="memItemLeft" align="right" valign="top"><a id="a740969a09a1f546a6fa1e2debdc66e39" name="a740969a09a1f546a6fa1e2debdc66e39"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (const string &amp;name)</td></tr>
-<tr class="memdesc:a740969a09a1f546a6fa1e2debdc66e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a type description by name, if it exists. <br /></td></tr>
-<tr class="separator:a740969a09a1f546a6fa1e2debdc66e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3d1a36e3f5a83edf233dfaf470b4785c" id="r_a3d1a36e3f5a83edf233dfaf470b4785c"><td class="memItemLeft" align="right" valign="top"><a id="a3d1a36e3f5a83edf233dfaf470b4785c" name="a3d1a36e3f5a83edf233dfaf470b4785c"></a>
@@ -250,38 +244,8 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NONE_T
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A type descriptor for MaterialX data types. </p>
-<p>All types need to have a type descriptor registered in order for shader generators to know about the type. It can be used for type comparisons as well as getting more information about the type. Type descriptors for all standard library data types are registered by default and can be accessed from the Type namespace, e.g. Type::FLOAT.</p>
-<p>To register custom types use the macro TYPEDESC_DEFINE_TYPE to define it in a header and the macro TYPEDESC_REGISTER_TYPE to register it in the type registry. Registration must be done in order to access the type's name later using <a class="el" href="#a43f65f5d191c125b0b52028fdbf0f364" title="Return the name of the type.">getName()</a> and to find the type by name using <a class="el" href="#ad93b4a983ed45f4c22be8db8222d5d85" title="Return a type description by name.">TypeDesc::get()</a>.</p>
-<p>The class is a POD type of 64-bits and can efficiently be stored and passed by value. Type compare operations and hash operations are done using a precomputed hash value. </p>
+<p>All types need to have a type descriptor registered in order for shader generators to know about the type. It can be used for type comparisons as well as getting more information about the type. Type descriptors for all standard library data types are defined by default and can be accessed from the Type namespace, e.g. Type::FLOAT. Custom struct types defined through typedef elements in a data library are loaded in and registered by calling the <a class="el" href="class_shader_generator.html#abc5fffb73f451f0383096237ccbd0e72" title="Register type definitions from the document.">ShaderGenerator::registerTypeDefs</a> method. The <a class="el" href="class_type_system.html" title="Class handling registration, storage and query of type descriptions.">TypeSystem</a> class, see below, is used to manage all type descriptions. It can be used to query the registered types. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad93b4a983ed45f4c22be8db8222d5d85" name="ad93b4a983ed45f4c22be8db8222d5d85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad93b4a983ed45f4c22be8db8222d5d85">&#9670;&#160;</a></span>get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="class_type_desc.html">TypeDesc</a> get </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return a type description by name. </p>
-<p>If no type is found Type::NONE is returned. </p>
-
-</div>
-</div>
 <a id="a9be1e4285daa77fe397767c097fbdc66" name="a9be1e4285daa77fe397767c097fbdc66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9be1e4285daa77fe397767c097fbdc66">&#9670;&#160;</a></span>getSize()</h2>
 
@@ -307,6 +271,26 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>NONE_T
 
 <p>Return the number of elements the type is composed of. </p>
 <p>Will return 1 for scalar types and a size greater than 1 for aggregate type. For array types 0 is returned since the number of elements is undefined until an array is instantiated. </p>
+
+</div>
+</div>
+<a id="ad7de4d6ed6b84b36ba15f431f635076b" name="ad7de4d6ed6b84b36ba15f431f635076b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7de4d6ed6b84b36ba15f431f635076b">&#9670;&#160;</a></span>getStructMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StructMemberDescVecPtr getStructMembers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a pointer to the struct member description. </p>
+<p>Will return nullptr if this is not a struct type. </p>
 
 </div>
 </div>

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -129,6 +129,10 @@ Public Member Functions</h2></td></tr>
 const <a class="el" href="class_gen_options.html">GenOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getOptions</b> () const</td></tr>
 <tr class="memdesc:ae3b5ab98f3a0d768515ee8e6541903ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return shader generation options. <br /></td></tr>
 <tr class="separator:ae3b5ab98f3a0d768515ee8e6541903ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5dfbc42eecfa48c1ae9bd4fcdd3419" id="r_aaa5dfbc42eecfa48c1ae9bd4fcdd3419"><td class="memItemLeft" align="right" valign="top"><a id="aaa5dfbc42eecfa48c1ae9bd4fcdd3419" name="aaa5dfbc42eecfa48c1ae9bd4fcdd3419"></a>
+<a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeDesc</b> (const string &amp;name) const</td></tr>
+<tr class="memdesc:aaa5dfbc42eecfa48c1ae9bd4fcdd3419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="class_type_desc.html" title="A type descriptor for MaterialX data types.">TypeDesc</a> for the given type name. <br /></td></tr>
+<tr class="separator:aaa5dfbc42eecfa48c1ae9bd4fcdd3419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0173da6dfc475a565e6732c8dffc621d" id="r_a0173da6dfc475a565e6732c8dffc621d"><td class="memItemLeft" align="right" valign="top"><a id="a0173da6dfc475a565e6732c8dffc621d" name="a0173da6dfc475a565e6732c8dffc621d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>registerSourceCodeSearchPath</b> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;path)</td></tr>
 <tr class="memdesc:a0173da6dfc475a565e6732c8dffc621d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a user search path for finding source code during code generation. <br /></td></tr>
@@ -165,18 +169,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeImplementation
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clearNodeImplementations</b> ()</td></tr>
 <tr class="memdesc:a59a612d9a758e271a376958bd7603f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all cached shader node implementation. <br /></td></tr>
 <tr class="separator:a59a612d9a758e271a376958bd7603f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3f6c3deb838366dda7dc65296ce70f" id="r_a9e3f6c3deb838366dda7dc65296ce70f"><td class="memItemLeft" align="right" valign="top"><a id="a9e3f6c3deb838366dda7dc65296ce70f" name="a9e3f6c3deb838366dda7dc65296ce70f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushClosureContext</b> (<a class="el" href="class_closure_context.html">ClosureContext</a> *cct)</td></tr>
-<tr class="memdesc:a9e3f6c3deb838366dda7dc65296ce70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a new closure context to use for closure evaluation. <br /></td></tr>
-<tr class="separator:a9e3f6c3deb838366dda7dc65296ce70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1541f227a08ef33665b8e3796c60ecc" id="r_ab1541f227a08ef33665b8e3796c60ecc"><td class="memItemLeft" align="right" valign="top"><a id="ab1541f227a08ef33665b8e3796c60ecc" name="ab1541f227a08ef33665b8e3796c60ecc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>popClosureContext</b> ()</td></tr>
-<tr class="memdesc:ab1541f227a08ef33665b8e3796c60ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop the current closure context. <br /></td></tr>
-<tr class="separator:ab1541f227a08ef33665b8e3796c60ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6dafa40e8b876cee9f5c295aeb1e09f" id="r_ad6dafa40e8b876cee9f5c295aeb1e09f"><td class="memItemLeft" align="right" valign="top"><a id="ad6dafa40e8b876cee9f5c295aeb1e09f" name="ad6dafa40e8b876cee9f5c295aeb1e09f"></a>
-<a class="el" href="class_closure_context.html">ClosureContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getClosureContext</b> ()</td></tr>
-<tr class="memdesc:ad6dafa40e8b876cee9f5c295aeb1e09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current closure context. <br /></td></tr>
-<tr class="separator:ad6dafa40e8b876cee9f5c295aeb1e09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f3112020b3dbdb2b4384ae747eecac" id="r_ad5f3112020b3dbdb2b4384ae747eecac"><td class="memItemLeft" align="right" valign="top"><a id="ad5f3112020b3dbdb2b4384ae747eecac" name="ad5f3112020b3dbdb2b4384ae747eecac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pushParentNode</b> (<a class="el" href="_node_8h.html#a6d909e094cae6750ec4597b5f4b22806">ConstNodePtr</a> node)</td></tr>
 <tr class="memdesc:ad5f3112020b3dbdb2b4384ae747eecac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a parent node onto the stack. <br /></td></tr>
@@ -259,9 +251,6 @@ std::unordered_map&lt; const <a class="el" href="class_shader_input.html">Shader
 <tr class="memitem:a5811b2959d8e7231320a57dadea7f1aa" id="r_a5811b2959d8e7231320a57dadea7f1aa"><td class="memItemLeft" align="right" valign="top"><a id="a5811b2959d8e7231320a57dadea7f1aa" name="a5811b2959d8e7231320a57dadea7f1aa"></a>
 std::unordered_map&lt; const <a class="el" href="class_shader_output.html">ShaderOutput</a> *, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_outputSuffix</b></td></tr>
 <tr class="separator:a5811b2959d8e7231320a57dadea7f1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af00fec4fd9265f79745bd25eb7fd7f00" id="r_af00fec4fd9265f79745bd25eb7fd7f00"><td class="memItemLeft" align="right" valign="top"><a id="af00fec4fd9265f79745bd25eb7fd7f00" name="af00fec4fd9265f79745bd25eb7fd7f00"></a>
-vector&lt; <a class="el" href="class_closure_context.html">ClosureContext</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_closureContexts</b></td></tr>
-<tr class="separator:af00fec4fd9265f79745bd25eb7fd7f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6491b7cc9f9d95312a478eee1e36238c" id="r_a6491b7cc9f9d95312a478eee1e36238c"><td class="memItemLeft" align="right" valign="top"><a id="a6491b7cc9f9d95312a478eee1e36238c" name="a6491b7cc9f9d95312a478eee1e36238c"></a>
 vector&lt; <a class="el" href="_node_8h.html#a6d909e094cae6750ec4597b5f4b22806">ConstNodePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_parentNodes</b></td></tr>
 <tr class="separator:a6491b7cc9f9d95312a478eee1e36238c"><td class="memSeparator" colspan="2">&#160;</td></tr>

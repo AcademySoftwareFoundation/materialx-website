@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -118,9 +118,9 @@ $(function(){initNavTree('_vk_syntax_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_vk_syntax.html">   17</a></span><span class="keyword">class </span>MX_GENGLSL_API VkSyntax : <span class="keyword">public</span> GlslSyntax</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    VkSyntax();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    VkSyntax(TypeSystemPtr typeSystem);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> create() { <span class="keywordflow">return</span> std::make_shared&lt;VkSyntax&gt;(); }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> create(TypeSystemPtr typeSystem) { <span class="keywordflow">return</span> std::make_shared&lt;VkSyntax&gt;(typeSystem); }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_vk_syntax.html#a2c645c55f09be5ed8deca223137f7e76">   24</a></span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_function" href="class_vk_syntax.html#a2c645c55f09be5ed8deca223137f7e76">getInputQualifier</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> INPUT_QUALIFIER; }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>

@@ -6,7 +6,7 @@ var class_syntax =
       [ "SQUARE_BRACKETS", "class_syntax.html#a8872c37f73c22239ccc7d871da2a4f8ba0facc533724556c77e0ecbff21a5bed2", null ],
       [ "DOUBLE_SQUARE_BRACKETS", "class_syntax.html#a8872c37f73c22239ccc7d871da2a4f8baff0a799860ea05c117ad7f4f247d109f", null ]
     ] ],
-    [ "Syntax", "class_syntax.html#a5efc5b3a45b62820d97987eb79889814", null ],
+    [ "Syntax", "class_syntax.html#a8f87b6ceaa83c1223ad9e2ba6686533e", null ],
     [ "getArrayTypeSuffix", "class_syntax.html#a0f4c920c269ce549b88d1a0f2f6d2d07", null ],
     [ "getArrayVariableSuffix", "class_syntax.html#a0c86575bb959985b133fa45e4386c723", null ],
     [ "getBeginMultiLineComment", "class_syntax.html#a1458e4ed40cebe876cbdb819315e8401", null ],
@@ -24,6 +24,7 @@ var class_syntax =
     [ "getSingleLineComment", "class_syntax.html#aa66b36e468e995bad676023dc57bc1be", null ],
     [ "getSourceFileExtension", "class_syntax.html#a2aaf762261e6c126f5184d96a22d0d47", null ],
     [ "getStringQuote", "class_syntax.html#a44f5ca215709625cef671a3e8d9cecd4", null ],
+    [ "getType", "class_syntax.html#ab340443dfc44d50d8aa07fe57bb27a2c", null ],
     [ "getTypeAlias", "class_syntax.html#a5077e8718647459c31e75e95b7c9c3f7", null ],
     [ "getTypeDefinition", "class_syntax.html#a547ce4526faecedb1749ef6b41b4d99d", null ],
     [ "getTypeName", "class_syntax.html#ab5ab1460cc69f59fcf6a6deddcc616cd", null ],

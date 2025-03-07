@@ -21,6 +21,7 @@ var _element_8h =
     [ "ElementMap", "_element_8h.html#a39c49b371dc1520558cc77c39a294c33", null ],
     [ "ElementPredicate", "_element_8h.html#abb065f3bc7f45f5799879e9dad1ac0ac", null ],
     [ "ElementPtr", "_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426", null ],
+    [ "ElementVec", "_element_8h.html#ae97e5169bda7667fa811cb0c35d92adb", null ],
     [ "GenericElementPtr", "_element_8h.html#a6805f20cbdaff86fbe29615c780ac31d", null ],
     [ "NewlineElementPtr", "_element_8h.html#a490ae3ec2022f9fd5edd2c2f1be1785e", null ],
     [ "StringResolverPtr", "_element_8h.html#a2c7e67d10050c3c17eb5f86686ab687f", null ],

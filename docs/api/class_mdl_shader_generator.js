@@ -1,5 +1,6 @@
 var class_mdl_shader_generator =
 [
+    [ "MdlShaderGenerator", "class_mdl_shader_generator.html#acc545f5aa33d8dde485abdd7134b09c9", null ],
     [ "emitMdlVersionFilenameSuffix", "class_mdl_shader_generator.html#a8d6577ac4cc9dff109ea824f755adb93", null ],
     [ "emitMdlVersionNumber", "class_mdl_shader_generator.html#a883152545d4520466483a689377a2199", null ],
     [ "generate", "class_mdl_shader_generator.html#a37d9ab6e09bf6d2b00b6fa15ac6ec41a", null ],

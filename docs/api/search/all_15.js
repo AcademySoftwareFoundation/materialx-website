@@ -45,7 +45,7 @@ var searchData=
   ['vkresourcebindingcontext_42',['VkResourceBindingContext',['../class_vk_resource_binding_context.html',1,'']]],
   ['vkresourcebindingcontext_2eh_43',['VkResourceBindingContext.h',['../_vk_resource_binding_context_8h.html',1,'']]],
   ['vkresourcebindingcontextptr_44',['VkResourceBindingContextPtr',['../_vk_resource_binding_context_8h.html#a78a688602350ba10c30c220cc3f40fd0',1,'VkResourceBindingContext.h']]],
-  ['vkshadergenerator_45',['VkShaderGenerator',['../class_vk_shader_generator.html',1,'']]],
+  ['vkshadergenerator_45',['VkShaderGenerator',['../class_vk_shader_generator.html',1,'VkShaderGenerator'],['../class_vk_shader_generator.html#a975d4bacb64df31fa61316f7aa4e8e7d',1,'VkShaderGenerator::VkShaderGenerator()']]],
   ['vkshadergenerator_2eh_46',['VkShaderGenerator.h',['../_vk_shader_generator_8h.html',1,'']]],
   ['vksyntax_47',['VkSyntax',['../class_vk_syntax.html',1,'']]],
   ['vksyntax_2eh_48',['VkSyntax.h',['../_vk_syntax_8h.html',1,'']]],
