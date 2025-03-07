@@ -19,7 +19,7 @@ var searchData=
   ['osl_5fclosure_5fcolor_5fstring_16',['OSL_CLOSURE_COLOR_STRING',['../class_osl_renderer.html#a9275f2ab5fbb52f188150e0c1fa64336',1,'OslRenderer']]],
   ['oslrenderer_17',['OslRenderer',['../class_osl_renderer.html',1,'OslRenderer'],['../class_osl_renderer.html#a5d35c2de5671d05c3a87211f63fc129c',1,'OslRenderer::OslRenderer()']]],
   ['oslrenderer_2eh_18',['OslRenderer.h',['../_osl_renderer_8h.html',1,'']]],
-  ['oslshadergenerator_19',['OslShaderGenerator',['../class_osl_shader_generator.html',1,'']]],
+  ['oslshadergenerator_19',['OslShaderGenerator',['../class_osl_shader_generator.html',1,'OslShaderGenerator'],['../class_osl_shader_generator.html#a5e4c36c2f6d827eb9adfcaf3ad4b6dd3',1,'OslShaderGenerator::OslShaderGenerator()']]],
   ['oslshadergenerator_2eh_20',['OslShaderGenerator.h',['../_osl_shader_generator_8h.html',1,'']]],
   ['oslsyntax_21',['OslSyntax',['../class_osl_syntax.html',1,'']]],
   ['oslsyntax_2eh_22',['OslSyntax.h',['../_osl_syntax_8h.html',1,'']]],

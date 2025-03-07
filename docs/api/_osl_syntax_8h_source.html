@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -117,12 +117,12 @@ $(function(){initNavTree('_osl_syntax_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>MATERIALX_NAMESPACE_BEGIN</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_osl_syntax.html">   20</a></span><span class="keyword">class </span>MX_GENOSL_API OslSyntax : <span class="keyword">public</span> <a class="code hl_function" href="class_syntax.html#a5efc5b3a45b62820d97987eb79889814">Syntax</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_osl_syntax.html">   20</a></span><span class="keyword">class </span>MX_GENOSL_API OslSyntax : <span class="keyword">public</span> <a class="code hl_function" href="class_syntax.html#a8f87b6ceaa83c1223ad9e2ba6686533e">Syntax</a></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    OslSyntax();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    OslSyntax(TypeSystemPtr typeSystem);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> create() { <span class="keywordflow">return</span> std::make_shared&lt;OslSyntax&gt;(); }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> create(TypeSystemPtr typeSystem) { <span class="keywordflow">return</span> std::make_shared&lt;OslSyntax&gt;(typeSystem); }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_osl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">   27</a></span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_function" href="class_osl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">getOutputQualifier</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_osl_syntax.html#a423a82a664945d1837e77a4a36d964ee">   28</a></span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_function" href="class_osl_syntax.html#a423a82a664945d1837e77a4a36d964ee">getConstantQualifier</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> EMPTY_STRING; };</div>
@@ -147,7 +147,7 @@ $(function(){initNavTree('_osl_syntax_8h_source.html',''); initResizable(true); 
 <div class="ttc" id="aclass_osl_syntax_html_a423a82a664945d1837e77a4a36d964ee"><div class="ttname"><a href="class_osl_syntax.html#a423a82a664945d1837e77a4a36d964ee">OslSyntax::getConstantQualifier</a></div><div class="ttdeci">const string &amp; getConstantQualifier() const override</div><div class="ttdoc">Get the qualifier used when declaring constant variables.</div><div class="ttdef"><b>Definition</b> OslSyntax.h:28</div></div>
 <div class="ttc" id="aclass_osl_syntax_html_a8452f0d95a0fb73b3f3696548dfc2750"><div class="ttname"><a href="class_osl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">OslSyntax::getOutputQualifier</a></div><div class="ttdeci">const string &amp; getOutputQualifier() const override</div><div class="ttdoc">Returns a type qualifier to be used when declaring types for output variables.</div></div>
 <div class="ttc" id="aclass_osl_syntax_html_a99f1d24f06070e010ff0a9310f52a9cc"><div class="ttname"><a href="class_osl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">OslSyntax::getSourceFileExtension</a></div><div class="ttdeci">const string &amp; getSourceFileExtension() const override</div><div class="ttdoc">Return the file extension used for source code files in this language.</div><div class="ttdef"><b>Definition</b> OslSyntax.h:29</div></div>
-<div class="ttc" id="aclass_syntax_html_a5efc5b3a45b62820d97987eb79889814"><div class="ttname"><a href="class_syntax.html#a5efc5b3a45b62820d97987eb79889814">Syntax::Syntax</a></div><div class="ttdeci">Syntax()</div><div class="ttdoc">Protected constructor.</div></div>
+<div class="ttc" id="aclass_syntax_html_a8f87b6ceaa83c1223ad9e2ba6686533e"><div class="ttname"><a href="class_syntax.html#a8f87b6ceaa83c1223ad9e2ba6686533e">Syntax::Syntax</a></div><div class="ttdeci">Syntax(TypeSystemPtr typeSystem)</div><div class="ttdoc">Protected constructor.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

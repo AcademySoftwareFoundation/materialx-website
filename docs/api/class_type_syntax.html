@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,7 @@ Inheritance diagram for TypeSyntax:</div>
   <map id="TypeSyntax_map" name="TypeSyntax_map">
 <area href="class_aggregate_type_syntax.html" title="Specialization of TypeSyntax for aggregate types." alt="AggregateTypeSyntax" shape="rect" coords="0,56,137,80"/>
 <area href="class_scalar_type_syntax.html" title="Specialization of TypeSyntax for scalar types." alt="ScalarTypeSyntax" shape="rect" coords="147,56,284,80"/>
-<area href="class_struct_type_syntax.html" title="Specialization of TypeSyntax for aggregate types." alt="StructTypeSyntax" shape="rect" coords="294,56,431,80"/>
+<area href="class_struct_type_syntax.html" title="Specialization of TypeSyntax for struct types." alt="StructTypeSyntax" shape="rect" coords="294,56,431,80"/>
 <area href="class_string_type_syntax.html" title="Specialization of TypeSyntax for string types." alt="StringTypeSyntax" shape="rect" coords="147,112,284,136"/>
 <area href="class_glsl_struct_type_syntax.html" title="Specialization of TypeSyntax for aggregate types." alt="GlslStructTypeSyntax" shape="rect" coords="294,112,431,136"/>
   </map>
@@ -157,13 +157,16 @@ const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2a
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6c707629804fcf46c8e63b811e1178bb" id="r_a6c707629804fcf46c8e63b811e1178bb"><td class="memItemLeft" align="right" valign="top"><a id="a6c707629804fcf46c8e63b811e1178bb" name="a6c707629804fcf46c8e63b811e1178bb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TypeSyntax</b> (const string &amp;name, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition, const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> &amp;members)</td></tr>
-<tr class="memdesc:a6c707629804fcf46c8e63b811e1178bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
-<tr class="separator:a6c707629804fcf46c8e63b811e1178bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3799b39e9c722f828f8ca7e4cacdb3fd" id="r_a3799b39e9c722f828f8ca7e4cacdb3fd"><td class="memItemLeft" align="right" valign="top"><a id="a3799b39e9c722f828f8ca7e4cacdb3fd" name="a3799b39e9c722f828f8ca7e4cacdb3fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TypeSyntax</b> (const <a class="el" href="class_syntax.html">Syntax</a> *parent, const string &amp;name, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition, const <a class="el" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> &amp;members)</td></tr>
+<tr class="memdesc:a3799b39e9c722f828f8ca7e4cacdb3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
+<tr class="separator:a3799b39e9c722f828f8ca7e4cacdb3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:abd53c7f899f5db55b04b8161c549739c" id="r_abd53c7f899f5db55b04b8161c549739c"><td class="memItemLeft" align="right" valign="top"><a id="abd53c7f899f5db55b04b8161c549739c" name="abd53c7f899f5db55b04b8161c549739c"></a>
+const <a class="el" href="class_syntax.html">Syntax</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_parent</b></td></tr>
+<tr class="separator:abd53c7f899f5db55b04b8161c549739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92749b8d4b3ef0c4b1d2a4532db9032e" id="r_a92749b8d4b3ef0c4b1d2a4532db9032e"><td class="memItemLeft" align="right" valign="top"><a id="a92749b8d4b3ef0c4b1d2a4532db9032e" name="a92749b8d4b3ef0c4b1d2a4532db9032e"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
 <tr class="separator:a92749b8d4b3ef0c4b1d2a4532db9032e"><td class="memSeparator" colspan="2">&#160;</td></tr>

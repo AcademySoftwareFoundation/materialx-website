@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,6 @@ $(function(){initNavTree('class_glsl_syntax.html',''); initResizable(true); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_glsl_syntax-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">GlslSyntax Class Reference</div></div>
 </div><!--header-->
@@ -126,6 +125,9 @@ Inheritance diagram for GlslSyntax:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aab53ca256539178a88a87103328b80ba" id="r_aab53ca256539178a88a87103328b80ba"><td class="memItemLeft" align="right" valign="top"><a id="aab53ca256539178a88a87103328b80ba" name="aab53ca256539178a88a87103328b80ba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GlslSyntax</b> (TypeSystemPtr typeSystem)</td></tr>
+<tr class="separator:aab53ca256539178a88a87103328b80ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c645c55f09be5ed8deca223137f7e76" id="r_a2c645c55f09be5ed8deca223137f7e76"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c645c55f09be5ed8deca223137f7e76">getInputQualifier</a> () const override</td></tr>
 <tr class="memdesc:a2c645c55f09be5ed8deca223137f7e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a type qualifier to be used when declaring types for input variables.  <br /></td></tr>
 <tr class="separator:a2c645c55f09be5ed8deca223137f7e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f5c302617c9a17ff061bf7e5a873471" id="r_a1f5c302617c9a17ff061bf7e5a873471"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f5c302617c9a17ff061bf7e5a873471">remapEnumeration</a> (const string &amp;value, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;enumNames, std::pair&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;result) const override</td></tr>
 <tr class="memdesc:a1f5c302617c9a17ff061bf7e5a873471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator.  <br /></td></tr>
 <tr class="separator:a1f5c302617c9a17ff061bf7e5a873471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c001d1f1e0cfb46cf4781eff87655ae" id="r_a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c001d1f1e0cfb46cf4781eff87655ae">createStructSyntax</a> (const string &amp;structTypeName, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition) const override</td></tr>
+<tr class="separator:a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_syntax"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_syntax')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
 <tr class="memitem:a6c2138c8b7ebb75dc3dc411cae5fd796 inherit pub_methods_class_syntax" id="r_a6c2138c8b7ebb75dc3dc411cae5fd796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#a6c2138c8b7ebb75dc3dc411cae5fd796">registerTypeSyntax</a> (<a class="el" href="class_type_desc.html">TypeDesc</a> type, <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> syntax)</td></tr>
 <tr class="memdesc:a6c2138c8b7ebb75dc3dc411cae5fd796 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register syntax handling for a data type.  <br /></td></tr>
@@ -160,9 +164,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerTypeSyntax</b
 <tr class="memitem:aa13ef66037fd6ad119d6189fed46970e inherit pub_methods_class_syntax" id="r_aa13ef66037fd6ad119d6189fed46970e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#aa13ef66037fd6ad119d6189fed46970e">registerInvalidTokens</a> (const <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> &amp;tokens)</td></tr>
 <tr class="memdesc:aa13ef66037fd6ad119d6189fed46970e inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a set string replacements for disallowed tokens for a code generator when naming variables and functions.  <br /></td></tr>
 <tr class="separator:aa13ef66037fd6ad119d6189fed46970e inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeae0856d98bec2c1a214097866b2f5d inherit pub_methods_class_syntax" id="r_abeae0856d98bec2c1a214097866b2f5d"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>registerStructTypeDescSyntax</b> ()</td></tr>
-<tr class="separator:abeae0856d98bec2c1a214097866b2f5d inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4ccb215d9f43bc9cce4f2a5ca4bb02 inherit pub_methods_class_syntax" id="r_afc4ccb215d9f43bc9cce4f2a5ca4bb02"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getReservedWords</b> () const</td></tr>
 <tr class="memdesc:afc4ccb215d9f43bc9cce4f2a5ca4bb02 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a set of names that are reserved words for this language syntax. <br /></td></tr>
@@ -181,6 +182,10 @@ const <a class="el" href="class_type_syntax.html">TypeSyntax</a> &amp;&#160;</td
 const vector&lt; <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeSyntaxes</b> () const</td></tr>
 <tr class="memdesc:a3ee76c8c2885a4bffb36e5981fbac8ea inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of all registered type syntax objects. <br /></td></tr>
 <tr class="separator:a3ee76c8c2885a4bffb36e5981fbac8ea inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab340443dfc44d50d8aa07fe57bb27a2c inherit pub_methods_class_syntax" id="r_ab340443dfc44d50d8aa07fe57bb27a2c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_type_desc.html">TypeDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> (const string &amp;name) const</td></tr>
+<tr class="memdesc:ab340443dfc44d50d8aa07fe57bb27a2c inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a type description for the given type name. <br /></td></tr>
+<tr class="separator:ab340443dfc44d50d8aa07fe57bb27a2c inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ab1460cc69f59fcf6a6deddcc616cd inherit pub_methods_class_syntax" id="r_ab5ab1460cc69f59fcf6a6deddcc616cd"><td class="memItemLeft" align="right" valign="top">
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeName</b> (<a class="el" href="class_type_desc.html">TypeDesc</a> type) const</td></tr>
 <tr class="memdesc:ab5ab1460cc69f59fcf6a6deddcc616cd inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name syntax of the given type. <br /></td></tr>
@@ -281,9 +286,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getVariableName</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1522f4a7be506c79da153020baba4da8" id="r_a1522f4a7be506c79da153020baba4da8"><td class="memItemLeft" align="right" valign="top"><a id="a1522f4a7be506c79da153020baba4da8" name="a1522f4a7be506c79da153020baba4da8"></a>
-static <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> ()</td></tr>
-<tr class="separator:a1522f4a7be506c79da153020baba4da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058e21688fe9dc307a60576ca16e3cc9" id="r_a058e21688fe9dc307a60576ca16e3cc9"><td class="memItemLeft" align="right" valign="top"><a id="a058e21688fe9dc307a60576ca16e3cc9" name="a058e21688fe9dc307a60576ca16e3cc9"></a>
+static <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (TypeSystemPtr typeSystem)</td></tr>
+<tr class="separator:a058e21688fe9dc307a60576ca16e3cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -326,16 +331,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SEMICO
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>COMMA</b></td></tr>
 <tr class="separator:a971ebb45ad419c5c6a04efe850eae26c inherit pub_static_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3c001d1f1e0cfb46cf4781eff87655ae" id="r_a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c001d1f1e0cfb46cf4781eff87655ae">createStructSyntax</a> (const string &amp;structTypeName, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition) const override</td></tr>
-<tr class="separator:a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_syntax"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_syntax')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
-<tr class="memitem:a5efc5b3a45b62820d97987eb79889814 inherit pro_methods_class_syntax" id="r_a5efc5b3a45b62820d97987eb79889814"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>Syntax</b> ()</td></tr>
-<tr class="memdesc:a5efc5b3a45b62820d97987eb79889814 inherit pro_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
-<tr class="separator:a5efc5b3a45b62820d97987eb79889814 inherit pro_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_syntax"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_syntax')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
@@ -346,7 +341,15 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8872c37f73c22239ccc7d871da2a4f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_syntax.html#a8872c37f73c22239ccc7d871da2a4f8b" title="Punctuation types.">Punctuation</a> types. <br /></td></tr>
 <tr class="separator:a8872c37f73c22239ccc7d871da2a4f8b inherit pub_types_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_syntax"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_syntax')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
+<tr class="memitem:a8f87b6ceaa83c1223ad9e2ba6686533e inherit pro_methods_class_syntax" id="r_a8f87b6ceaa83c1223ad9e2ba6686533e"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>Syntax</b> (TypeSystemPtr typeSystem)</td></tr>
+<tr class="memdesc:a8f87b6ceaa83c1223ad9e2ba6686533e inherit pro_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
+<tr class="separator:a8f87b6ceaa83c1223ad9e2ba6686533e inherit pro_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_syntax"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_syntax')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_syntax.html">Syntax</a></td></tr>
+<tr class="memitem:a7a294a56427b14c31d8b52050b7c2cc7 inherit pro_attribs_class_syntax" id="r_a7a294a56427b14c31d8b52050b7c2cc7"><td class="memItemLeft" align="right" valign="top">
+TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSystem</b></td></tr>
+<tr class="separator:a7a294a56427b14c31d8b52050b7c2cc7 inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6842d2a957dffadea0e581a9449cad4e inherit pro_attribs_class_syntax" id="r_a6842d2a957dffadea0e581a9449cad4e"><td class="memItemLeft" align="right" valign="top">
 vector&lt; <a class="el" href="_syntax_8h.html#a354293c58b305ef05a6cfe82a35a8028">TypeSyntaxPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSyntaxes</b></td></tr>
 <tr class="separator:a6842d2a957dffadea0e581a9449cad4e inherit pro_attribs_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -422,7 +425,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

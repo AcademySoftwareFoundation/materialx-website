@@ -15,5 +15,5 @@ var class_graph_element =
     [ "getNodesOfType", "class_graph_element.html#afe7f6f78b3bc3d6348e034c626e97d93", null ],
     [ "removeBackdrop", "class_graph_element.html#aeb20170d06b06b6c082b4eb0b88102c6", null ],
     [ "removeNode", "class_graph_element.html#ad2d7a8a2edad367e84762d644f9049a6", null ],
-    [ "topologicalSort", "class_graph_element.html#a9420060ca77355eb5a5d0e3bc9b92a82", null ]
+    [ "topologicalSort", "class_graph_element.html#ab19ac778547207073f30032b57c98d69", null ]
 ];

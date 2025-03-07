@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.2</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
    </div>
   </td>
  </tr>
@@ -191,8 +191,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionD
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionDefinitions</b> (const <a class="el" href="class_shader_graph.html">ShaderGraph</a> &amp;graph, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
 <tr class="memdesc:ab1edf8bf8533f11e53a50259ab4c2286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all function definitions for a graph. <br /></td></tr>
 <tr class="separator:ab1edf8bf8533f11e53a50259ab4c2286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae966858614aba55af1606b114a965524" id="r_ae966858614aba55af1606b114a965524"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae966858614aba55af1606b114a965524">emitFunctionCall</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
-<tr class="memdesc:ae966858614aba55af1606b114a965524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function call for a single node.  <br /></td></tr>
+<tr class="memitem:ae966858614aba55af1606b114a965524" id="r_ae966858614aba55af1606b114a965524"><td class="memItemLeft" align="right" valign="top"><a id="ae966858614aba55af1606b114a965524" name="ae966858614aba55af1606b114a965524"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionCall</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
+<tr class="memdesc:ae966858614aba55af1606b114a965524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the function call for a single node. <br /></td></tr>
 <tr class="separator:ae966858614aba55af1606b114a965524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec7ce1b6fb711582f12587654dca9df" id="r_a5ec7ce1b6fb711582f12587654dca9df"><td class="memItemLeft" align="right" valign="top"><a id="a5ec7ce1b6fb711582f12587654dca9df" name="a5ec7ce1b6fb711582f12587654dca9df"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionCall</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool checkScope) const</td></tr>
@@ -228,9 +229,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitOutput</b
 <tr class="memitem:a0855538966597da54535123469b4293b" id="r_a0855538966597da54535123469b4293b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0855538966597da54535123469b4293b">emitVariableDeclaration</a> (const <a class="el" href="class_shader_port.html">ShaderPort</a> *variable, const string &amp;qualifier, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool assignValue=true) const</td></tr>
 <tr class="memdesc:a0855538966597da54535123469b4293b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit definition of a single shader variable.  <br /></td></tr>
 <tr class="separator:a0855538966597da54535123469b4293b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43850199c96a58a0bb94f7e61aa6156e" id="r_a43850199c96a58a0bb94f7e61aa6156e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43850199c96a58a0bb94f7e61aa6156e">getClosureContexts</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, vector&lt; <a class="el" href="class_closure_context.html">ClosureContext</a> * &gt; &amp;cct) const</td></tr>
-<tr class="memdesc:a43850199c96a58a0bb94f7e61aa6156e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the closure contexts defined for the given node.  <br /></td></tr>
-<tr class="separator:a43850199c96a58a0bb94f7e61aa6156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e9e143ad0c932c57c2f82ed6b95350" id="r_aa7e9e143ad0c932c57c2f82ed6b95350"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7e9e143ad0c932c57c2f82ed6b95350">nodeNeedsClosureData</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;) const</td></tr>
+<tr class="memdesc:aa7e9e143ad0c932c57c2f82ed6b95350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the node needs the additional ClosureData added.  <br /></td></tr>
+<tr class="separator:aa7e9e143ad0c932c57c2f82ed6b95350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46e6acd167c18775daa2a57f3a1b8bdc" id="r_a46e6acd167c18775daa2a57f3a1b8bdc"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46e6acd167c18775daa2a57f3a1b8bdc">getUpstreamResult</a> (const <a class="el" href="class_shader_input.html">ShaderInput</a> *input, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
 <tr class="memdesc:a46e6acd167c18775daa2a57f3a1b8bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the result of an upstream connection or value for an input.  <br /></td></tr>
 <tr class="separator:a46e6acd167c18775daa2a57f3a1b8bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,28 +270,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setUnitSystem</b> (<a
 <a class="el" href="_unit_system_8h.html#ab9387686ba9357f498d9ae7c870c8ada">UnitSystemPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getUnitSystem</b> () const</td></tr>
 <tr class="memdesc:ad9990864460e1772620c8702d46d3025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unit system. <br /></td></tr>
 <tr class="separator:ad9990864460e1772620c8702d46d3025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d02fe3b1a9921d84da9a84d1647a900" id="r_a7d02fe3b1a9921d84da9a84d1647a900"><td class="memItemLeft" align="right" valign="top"><a id="a7d02fe3b1a9921d84da9a84d1647a900" name="a7d02fe3b1a9921d84da9a84d1647a900"></a>
+TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeSystem</b> () const</td></tr>
+<tr class="memdesc:a7d02fe3b1a9921d84da9a84d1647a900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type system. <br /></td></tr>
+<tr class="separator:a7d02fe3b1a9921d84da9a84d1647a900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438b6cb63f40152962b5f2fc4e90c210" id="r_a438b6cb63f40152962b5f2fc4e90c210"><td class="memItemLeft" align="right" valign="top"><a id="a438b6cb63f40152962b5f2fc4e90c210" name="a438b6cb63f40152962b5f2fc4e90c210"></a>
 const <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTokenSubstitutions</b> () const</td></tr>
 <tr class="memdesc:a438b6cb63f40152962b5f2fc4e90c210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the map of token substitutions used by the generator. <br /></td></tr>
 <tr class="separator:a438b6cb63f40152962b5f2fc4e90c210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfad3ac94171da83542cb2d8d7cbd80" id="r_a7dfad3ac94171da83542cb2d8d7cbd80"><td class="memItemLeft" align="right" valign="top"><a id="a7dfad3ac94171da83542cb2d8d7cbd80" name="a7dfad3ac94171da83542cb2d8d7cbd80"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadStructTypeDefs</b> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc)</td></tr>
-<tr class="memdesc:a7dfad3ac94171da83542cb2d8d7cbd80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load any struct type definitions from the document in to the type cache. <br /></td></tr>
-<tr class="separator:a7dfad3ac94171da83542cb2d8d7cbd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6464bcb810273e5722d8b8605a891922" id="r_a6464bcb810273e5722d8b8605a891922"><td class="memItemLeft" align="right" valign="top"><a id="a6464bcb810273e5722d8b8605a891922" name="a6464bcb810273e5722d8b8605a891922"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearStructTypeDefs</b> ()</td></tr>
-<tr class="memdesc:a6464bcb810273e5722d8b8605a891922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any struct type definitions loaded. <br /></td></tr>
-<tr class="separator:a6464bcb810273e5722d8b8605a891922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5fffb73f451f0383096237ccbd0e72" id="r_abc5fffb73f451f0383096237ccbd0e72"><td class="memItemLeft" align="right" valign="top"><a id="abc5fffb73f451f0383096237ccbd0e72" name="abc5fffb73f451f0383096237ccbd0e72"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>registerTypeDefs</b> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc)</td></tr>
+<tr class="memdesc:abc5fffb73f451f0383096237ccbd0e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register type definitions from the document. <br /></td></tr>
+<tr class="separator:abc5fffb73f451f0383096237ccbd0e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575a30689cc1cc2b575632cfeb4423e8" id="r_a575a30689cc1cc2b575632cfeb4423e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a575a30689cc1cc2b575632cfeb4423e8">registerShaderMetadata</a> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
 <tr class="memdesc:a575a30689cc1cc2b575632cfeb4423e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register metadata that should be exported to the generated shaders.  <br /></td></tr>
 <tr class="separator:a575a30689cc1cc2b575632cfeb4423e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afb4e0502c13932ed0c5100db3633c2a1" id="r_afb4e0502c13932ed0c5100db3633c2a1"><td class="memItemLeft" align="right" valign="top"><a id="afb4e0502c13932ed0c5100db3633c2a1" name="afb4e0502c13932ed0c5100db3633c2a1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b> (<a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> syntax)</td></tr>
-<tr class="memdesc:afb4e0502c13932ed0c5100db3633c2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
-<tr class="separator:afb4e0502c13932ed0c5100db3633c2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68040f10c946d240665111e72847bdec" id="r_a68040f10c946d240665111e72847bdec"><td class="memItemLeft" align="right" valign="top"><a id="a68040f10c946d240665111e72847bdec" name="a68040f10c946d240665111e72847bdec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGenerator</b> (TypeSystemPtr typeSystem, <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a> syntax)</td></tr>
+<tr class="memdesc:a68040f10c946d240665111e72847bdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
+<tr class="separator:a68040f10c946d240665111e72847bdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a766685d2edaaec6217045cf1159fc9f2" id="r_a766685d2edaaec6217045cf1159fc9f2"><td class="memItemLeft" align="right" valign="top"><a id="a766685d2edaaec6217045cf1159fc9f2" name="a766685d2edaaec6217045cf1159fc9f2"></a>
 virtual <a class="el" href="_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87">ShaderStagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createStage</b> (const string &amp;name, <a class="el" href="class_shader.html">Shader</a> &amp;shader) const</td></tr>
 <tr class="memdesc:a766685d2edaaec6217045cf1159fc9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new stage in a shader. <br /></td></tr>
@@ -309,6 +310,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceTokens</b> (co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a7a294a56427b14c31d8b52050b7c2cc7" id="r_a7a294a56427b14c31d8b52050b7c2cc7"><td class="memItemLeft" align="right" valign="top"><a id="a7a294a56427b14c31d8b52050b7c2cc7" name="a7a294a56427b14c31d8b52050b7c2cc7"></a>
+TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSystem</b></td></tr>
+<tr class="separator:a7a294a56427b14c31d8b52050b7c2cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e5b700e3565bb80bb71db34617ee96" id="r_ae2e5b700e3565bb80bb71db34617ee96"><td class="memItemLeft" align="right" valign="top"><a id="ae2e5b700e3565bb80bb71db34617ee96" name="ae2e5b700e3565bb80bb71db34617ee96"></a>
 <a class="el" href="_syntax_8h.html#ad20bf8fbbdaadac468ae643fc003fb66">SyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_syntax</b></td></tr>
 <tr class="separator:ae2e5b700e3565bb80bb71db34617ee96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,44 +461,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE
 <p>Emit code for starting a new function body. </p>
 
 <p>Reimplemented in <a class="el" href="class_osl_shader_generator.html#a313d8f5b8d9d5ea9037372bac82ea9c6">OslShaderGenerator</a>.</p>
-
-</div>
-</div>
-<a id="ae966858614aba55af1606b114a965524" name="ae966858614aba55af1606b114a965524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae966858614aba55af1606b114a965524">&#9670;&#160;</a></span>emitFunctionCall()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void emitFunctionCall </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_gen_context.html">GenContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>stage</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add the function call for a single node. </p>
-
-<p>Reimplemented in <a class="el" href="class_hw_shader_generator.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79">HwShaderGenerator</a>.</p>
 
 </div>
 </div>
@@ -737,39 +703,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE
 
 </div>
 </div>
-<a id="a43850199c96a58a0bb94f7e61aa6156e" name="a43850199c96a58a0bb94f7e61aa6156e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43850199c96a58a0bb94f7e61aa6156e">&#9670;&#160;</a></span>getClosureContexts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void getClosureContexts </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vector&lt; <a class="el" href="class_closure_context.html">ClosureContext</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cct</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the closure contexts defined for the given node. </p>
-
-<p>Reimplemented in <a class="el" href="class_hw_shader_generator.html#aed30dd9398e28f9c74b4365f92dc5f56">HwShaderGenerator</a>.</p>
-
-</div>
-</div>
 <a id="a70f8c6101bd8495d23a5d2efab5c851d" name="a70f8c6101bd8495d23a5d2efab5c851d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70f8c6101bd8495d23a5d2efab5c851d">&#9670;&#160;</a></span>getImplementation()</h2>
 
@@ -862,6 +795,35 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>T_FILE
 <p>Return the result of an upstream connection or value for an input. </p>
 
 <p>Reimplemented in <a class="el" href="class_mdl_shader_generator.html#afcf5602c6f6e64675c9b062a66f4b8da">MdlShaderGenerator</a>.</p>
+
+</div>
+</div>
+<a id="aa7e9e143ad0c932c57c2f82ed6b95350" name="aa7e9e143ad0c932c57c2f82ed6b95350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e9e143ad0c932c57c2f82ed6b95350">&#9670;&#160;</a></span>nodeNeedsClosureData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool nodeNeedsClosureData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the node needs the additional ClosureData added. </p>
+
+<p>Reimplemented in <a class="el" href="class_hw_shader_generator.html#aa43f900cb6bf73f982df92b70129bed3">HwShaderGenerator</a>.</p>
 
 </div>
 </div>

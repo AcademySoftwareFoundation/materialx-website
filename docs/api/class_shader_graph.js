@@ -9,7 +9,7 @@ var class_shader_graph =
     [ "addInputSockets", "class_shader_graph.html#a37d17aee4ea1c1136eb54e6777a46a57", null ],
     [ "addNode", "class_shader_graph.html#ab7476ce3c952c031e6cda6cec1c9ee9f", null ],
     [ "addOutputSocket", "class_shader_graph.html#ac6feaf9e24fd98d54c58fef13f9c6578", null ],
-    [ "addOutputSockets", "class_shader_graph.html#a1ebfd4cf3fdd2f69e8730187eedb3ed7", null ],
+    [ "addOutputSockets", "class_shader_graph.html#a75dc550ef10e2cc9e6d82c870b5ad65f", null ],
     [ "addUnitTransformNode", "class_shader_graph.html#a0cc72b8c936894cb13412035fc082a72", null ],
     [ "addUnitTransformNode", "class_shader_graph.html#a0065a9c84ac00a95d99b412fa021c117", null ],
     [ "addUpstreamDependencies", "class_shader_graph.html#aafa24fe4864dd515eead25b14d6af7f7", null ],

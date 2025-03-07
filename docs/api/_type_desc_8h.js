@@ -1,11 +1,9 @@
 var _type_desc_8h =
 [
     [ "TypeDesc", "class_type_desc.html", "class_type_desc" ],
+    [ "DataBlock", "class_type_desc_1_1_data_block.html", null ],
     [ "Hasher", "struct_type_desc_1_1_hasher.html", null ],
-    [ "TypeDescRegistry", "class_type_desc_registry.html", null ],
-    [ "StructTypeDesc", "class_struct_type_desc.html", "class_struct_type_desc" ],
-    [ "StructMemberTypeDesc", "struct_struct_type_desc_1_1_struct_member_type_desc.html", null ],
-    [ "StructTypeDescRegistry", "class_struct_type_desc_registry.html", null ],
-    [ "TYPEDESC_DEFINE_TYPE", "_type_desc_8h.html#a693abdf1d012ca6dd3461c6dd4e3a40d", null ],
-    [ "TYPEDESC_REGISTER_TYPE", "_type_desc_8h.html#a3073f019dc4d55cae0af37762d8e067e", null ]
+    [ "StructMemberDesc", "class_struct_member_desc.html", null ],
+    [ "TypeSystem", "class_type_system.html", "class_type_system" ],
+    [ "TYPEDESC_DEFINE_TYPE", "_type_desc_8h.html#a693abdf1d012ca6dd3461c6dd4e3a40d", null ]
 ];

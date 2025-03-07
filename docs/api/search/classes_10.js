@@ -10,7 +10,7 @@ var searchData=
   ['typedef_7',['TypeDef',['../class_type_def.html',1,'']]],
   ['typedelement_8',['TypedElement',['../class_typed_element.html',1,'']]],
   ['typedesc_9',['TypeDesc',['../class_type_desc.html',1,'']]],
-  ['typedescregistry_10',['TypeDescRegistry',['../class_type_desc_registry.html',1,'']]],
-  ['typedvalue_11',['TypedValue',['../class_typed_value.html',1,'']]],
-  ['typesyntax_12',['TypeSyntax',['../class_type_syntax.html',1,'']]]
+  ['typedvalue_10',['TypedValue',['../class_typed_value.html',1,'']]],
+  ['typesyntax_11',['TypeSyntax',['../class_type_syntax.html',1,'']]],
+  ['typesystem_12',['TypeSystem',['../class_type_system.html',1,'']]]
 ];

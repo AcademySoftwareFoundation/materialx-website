@@ -1,5 +1,6 @@
 var class_glsl_shader_generator =
 [
+    [ "GlslShaderGenerator", "class_glsl_shader_generator.html#a2fe26a95eda68e60c0bb0f7029dc2492", null ],
     [ "emitLightFunctionDefinitions", "class_glsl_shader_generator.html#a134bb26a807d215679c6a071cc284aa7", null ],
     [ "emitSpecularEnvironment", "class_glsl_shader_generator.html#a712948ec39d32f3d1301d23555eff5db", null ],
     [ "emitTransmissionRender", "class_glsl_shader_generator.html#ab8ac5167c6dd04357a21fe27f1c459c1", null ],

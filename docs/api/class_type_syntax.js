@@ -1,6 +1,6 @@
 var class_type_syntax =
 [
-    [ "TypeSyntax", "class_type_syntax.html#a6c707629804fcf46c8e63b811e1178bb", null ],
+    [ "TypeSyntax", "class_type_syntax.html#a3799b39e9c722f828f8ca7e4cacdb3fd", null ],
     [ "getDefaultValue", "class_type_syntax.html#a0ff962232477669b82b6b12ec093e886", null ],
     [ "getMembers", "class_type_syntax.html#aacd6280e8b1233f0691a9363541b5db4", null ],
     [ "getName", "class_type_syntax.html#a43f65f5d191c125b0b52028fdbf0f364", null ],

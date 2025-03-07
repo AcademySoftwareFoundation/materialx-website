@@ -4,11 +4,11 @@ var hierarchy =
     [ "BakedImage", "class_texture_baker_1_1_baked_image.html", null ],
     [ "Camera", "class_camera.html", null ],
     [ "Classification", "class_shader_node_1_1_classification.html", null ],
-    [ "ClosureContext", "class_closure_context.html", null ],
     [ "ColorManagementSystem", "class_color_management_system.html", [
       [ "DefaultColorManagementSystem", "class_default_color_management_system.html", null ]
     ] ],
     [ "ColorSpaceTransform", "struct_color_space_transform.html", null ],
+    [ "DataBlock", "class_type_desc_1_1_data_block.html", null ],
     [ "Edge", "class_edge.html", null ],
     [ "ElementEquivalenceOptions", "class_element_equivalence_options.html", null ],
     [ "enable_shared_from_this", null, [
@@ -132,7 +132,6 @@ var hierarchy =
     ] ],
     [ "Scope", "struct_shader_stage_1_1_scope.html", null ],
     [ "ScopedFloatFormatting", "class_scoped_float_formatting.html", null ],
-    [ "ScopedSetClosureParams", "class_scoped_set_closure_params.html", null ],
     [ "ScopedSetVariableName", "class_scoped_set_variable_name.html", null ],
     [ "ScopedTimer", "class_scoped_timer.html", null ],
     [ "Shader", "class_shader.html", null ],
@@ -156,25 +155,18 @@ var hierarchy =
       [ "ShaderGraph", "class_shader_graph.html", null ]
     ] ],
     [ "ShaderNodeImpl", "class_shader_node_impl.html", [
-      [ "ClosureAddNode", "class_closure_add_node.html", null ],
-      [ "ClosureLayerNode", "class_closure_layer_node.html", null ],
-      [ "ClosureMixNode", "class_closure_mix_node.html", null ],
-      [ "ClosureMultiplyNode", "class_closure_multiply_node.html", null ],
       [ "CompoundNode", "class_compound_node.html", [
         [ "ClosureCompoundNode", "class_closure_compound_node.html", null ],
         [ "LightCompoundNodeGlsl", "class_light_compound_node_glsl.html", null ]
       ] ],
       [ "ConvolutionNode", "class_convolution_node.html", [
         [ "BlurNode", "class_blur_node.html", [
-          [ "BlurNodeGlsl", "class_blur_node_glsl.html", null ]
+          [ "HwBlurNode", "class_hw_blur_node.html", null ]
         ] ],
-        [ "HeightToNormalNodeGlsl", "class_height_to_normal_node_glsl.html", null ]
+        [ "HwHeightToNormalNode", "class_hw_height_to_normal_node.html", null ]
       ] ],
       [ "HwImplementation", "class_hw_implementation.html", [
         [ "GlslImplementation", "class_glsl_implementation.html", [
-          [ "GeomColorNodeGlsl", "class_geom_color_node_glsl.html", null ],
-          [ "GeomPropValueNodeGlsl", "class_geom_prop_value_node_glsl.html", null ],
-          [ "GeomPropValueNodeGlslAsUniform", "class_geom_prop_value_node_glsl_as_uniform.html", null ],
           [ "LightNodeGlsl", "class_light_node_glsl.html", null ],
           [ "LightSamplerNodeGlsl", "class_light_sampler_node_glsl.html", null ],
           [ "NumLightsNodeGlsl", "class_num_lights_node_glsl.html", null ],
@@ -183,10 +175,12 @@ var hierarchy =
         ] ],
         [ "HwBitangentNode", "class_hw_bitangent_node.html", null ],
         [ "HwFrameNode", "class_hw_frame_node.html", null ],
+        [ "HwGeomColorNode", "class_hw_geom_color_node.html", null ],
+        [ "HwGeomPropValueNode", "class_hw_geom_prop_value_node.html", null ],
+        [ "HwGeomPropValueNodeAsUniform", "class_hw_geom_prop_value_node_as_uniform.html", null ],
         [ "HwNormalNode", "class_hw_normal_node.html", null ],
         [ "HwPositionNode", "class_hw_position_node.html", null ],
         [ "HwTangentNode", "class_hw_tangent_node.html", null ],
-        [ "HwTimeNode", "class_hw_time_node.html", null ],
         [ "HwViewDirectionNode", "class_hw_view_direction_node.html", null ]
       ] ],
       [ "HwTexCoordNode", "class_hw_tex_coord_node.html", null ],
@@ -219,9 +213,7 @@ var hierarchy =
     [ "ShCoeffs< C, B >", "class_sh_coeffs.html", null ],
     [ "SimpleWindow", "class_simple_window.html", null ],
     [ "StringResolver", "class_string_resolver.html", null ],
-    [ "StructMemberTypeDesc", "struct_struct_type_desc_1_1_struct_member_type_desc.html", null ],
-    [ "StructTypeDesc", "class_struct_type_desc.html", null ],
-    [ "StructTypeDescRegistry", "class_struct_type_desc_registry.html", null ],
+    [ "StructMemberDesc", "class_struct_member_desc.html", null ],
     [ "Syntax", "class_syntax.html", [
       [ "GlslSyntax", "class_glsl_syntax.html", [
         [ "EsslSyntax", "class_essl_syntax.html", null ],
@@ -232,7 +224,6 @@ var hierarchy =
     ] ],
     [ "TreeIterator", "class_tree_iterator.html", null ],
     [ "TypeDesc", "class_type_desc.html", null ],
-    [ "TypeDescRegistry", "class_type_desc_registry.html", null ],
     [ "TypeSyntax", "class_type_syntax.html", [
       [ "AggregateTypeSyntax", "class_aggregate_type_syntax.html", null ],
       [ "ScalarTypeSyntax", "class_scalar_type_syntax.html", [
@@ -242,6 +233,7 @@ var hierarchy =
         [ "GlslStructTypeSyntax", "class_glsl_struct_type_syntax.html", null ]
       ] ]
     ] ],
+    [ "TypeSystem", "class_type_system.html", null ],
     [ "UIProperties", "struct_u_i_properties.html", null ],
     [ "UIPropertyItem", "struct_u_i_property_item.html", null ],
     [ "Uninit", "class_uninit.html", null ],
