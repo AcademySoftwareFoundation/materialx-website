@@ -2074,3 +2074,54 @@ ol img {
 .confluence-information-macro .confluence-information-macro-icon.aui-iconfont-approve{color:#14892c;}
 .confluence-information-macro .confluence-information-macro-icon.aui-iconfont-warning{color:#594300;}
 .confluence-information-macro>.confluence-information-macro-body>p:empty{display:none;}
+
+/* Moved from inline styles in HTML files */
+#mainContentContainer {
+  left: 15px;
+  margin-left: 255px;
+}
+
+ul.creatorFooterNav {
+  margin-left: 250px;
+}
+
+.navigation {
+  background-color: #272727;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-Confluence {
+  text-align: center;
+  margin-top: 15px;
+}
+
+  .footer-Confluence hr.footer {
+    display: block;
+    margin-left: -10px;
+    width: 100%;
+  }
+
+  .footer-Confluence img {
+    margin-bottom: 0;
+    max-width: none;
+  }
+
+.copyrightFooter {
+  font-size: 9px;
+  margin-top: 25px;
+  text-align: center;
+  float: none;
+}
+
+  .copyrightFooter a {
+    color: #666666;
+  }
+
+    .copyrightFooter a:hover {
+      color: #fff;
+    }
+
+table.warningMacro, table.noteMacro {
+  margin: 20px 0 20px 0;
+}
