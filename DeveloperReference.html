@@ -2,171 +2,15 @@
 <html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>MaterialX - <a href="DeveloperReference.html">Developer Reference</a></title>
+  <title>MaterialX - Developer Reference</title>
 
   <link rel="icon" href="faviconMX.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style/default.css" type="text/css">
+  <script src="javascript/components.js"></script>
 </head>
 <body>
 
-  <aside class="navigation">
-    <br>
-    <nav class="quickLinks">
-      <div>
-        <a href="index.html"><img alt="<MaterialX Logo>" src="images/MaterialXLogoSmallA.png"></a>
-      </div>
-      <ul>
-        <li>
-          <a href="Specification.html">MaterialX Specification</a>
-          <ul>
-            <li>
-              <a href="Specification.html#CurrentSpec">Current Specification</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="Specification.html#RevisionHistory">Revision History</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="DeveloperReference.html">Developer Reference</a>
-          <ul>
-            <li>
-              <a href="DeveloperReference.html#DeveloperGuide">Developer Guide</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="DeveloperReference.html#ExampleCode">Example Code</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="DeveloperReference.html#ExampleFiles">Example MaterialX Files</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="DeveloperReference.html#Discussion">Discussion Forum</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="DeveloperReference.html#LogoImages">MaterialX Logo Images</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="Tools.html">Rendering and Tools</a>
-          <ul>
-            <li>
-              <a href="Tools.html#ShaderGen">ShaderGen</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="Tools.html#Viewer">MaterialX Viewer</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="Tools.html#GraphEditor">MaterialX Graph Editor</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="Tools.html#WebViewer">MaterialX Web Viewer</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="ThirdPartySupport.html">Third-Party MaterialX Support</a>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#USD">Pixar USD</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Houdini">SideFX Houdini</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Maya">Autodesk Maya</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Max">Autodesk 3ds Max</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#VRED">Autodesk VRED</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Apple">Apple VisionOS</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Unreal">Unreal Engine</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Omniverse">NVIDIA Omniverse</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#Arnold">Autodesk Arnold</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#RenderMan">Pixar RenderMan</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="ThirdPartySupport.html#V-Ray">Chaos V-Ray</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="Contributing.html">Contributing to MaterialX</a>
-          <ul>
-            <li>
-              <a href="Contributing.html#CLA">Contributor License Agreement</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="Contributing.html#Contributors">Current Contributors</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE">License</a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
+  <div id="navigation-container"></div>
 
   <main class="document">
     <h1 class="title">
@@ -176,29 +20,7 @@
     </h1>
 
     <div id="mainContentContainer">
-      <header class="fullWidth headerColor">
-        <div class="center">
-          <nav id="mainSiteNavigation">
-            <ul class="creatorMainNav floatRight" id="menu">
-              <li class="">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="">
-                <a target="_blank" href="docs/api/index.html">Developer Guide</a>
-              </li>
-              <li class="">
-                <a target="_blank" href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/Specification">Specification</a>
-              </li>
-              <li class="">
-                <a class="blueButton" style="font-size:14px" href="https://github.com/AcademySoftwareFoundation/MaterialX">GitHub</a>
-              </li>
-              <a class="iconButton" href="https://fosstodon.org/@MaterialX" rel="me" style="float:right">
-                <img src="images/MastodonLogo.svg" width=20 height=20>
-              </a>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div id="header-container"></div>
 
       <!-- Page Title ---------------------------------------------------------------------- -->
       <div class="clearBoth"></div>
@@ -300,26 +122,10 @@
     </div>
 
     <div class="clearBoth"></div>
-    <div class="center">
-      <br>
-    </div>
 
-    <div class="clearBoth"></div>
-    <div class="center">
-      <footer class="copyrightFooter">
-        <p>
-          <a href="" style="color: #666666">TERMS OF USE</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="" style="color: #666666">PRIVACY POLICY</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="" style="color: #666666">LEGAL NOTICES</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="" style="color: #666666">CHILDREN’S ONLINE PRIVACY POLICY</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="" style="color: #666666">YOUR CALIFORNIA PRIVACY POLICY</a>
-      </footer>
-    </div>
   </main>
+
+  <div id="footer-container"></div>
 
 </body>
 </html>
