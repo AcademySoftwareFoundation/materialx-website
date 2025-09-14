@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,7 @@ $(function(){initNavTree('_shader_stage_8h.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="_syntax_8h_source.html">MaterialXGenShader/Syntax.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_file_8h_source.html">MaterialXFormat/File.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_node_8h_source.html">MaterialXCore/Node.h</a>&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 </div>
 <p><a href="_shader_stage_8h_source.html">Go to the source code of this file.</a></p>
@@ -146,10 +147,9 @@ Typedefs</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>VariableBlockPtr</b> = std::shared_ptr&lt;<a class="el" href="class_variable_block.html">VariableBlock</a>&gt;</td></tr>
 <tr class="memdesc:a0c103de8d815b502201fd339add8f7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to a <a class="el" href="class_variable_block.html" title="A block of variables in a shader stage.">VariableBlock</a>. <br /></td></tr>
 <tr class="separator:a0c103de8d815b502201fd339add8f7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf8b8ac1c96689800d1afb411e19f3ca" id="r_abf8b8ac1c96689800d1afb411e19f3ca"><td class="memItemLeft" align="right" valign="top"><a id="abf8b8ac1c96689800d1afb411e19f3ca" name="abf8b8ac1c96689800d1afb411e19f3ca"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>VariableBlockMap</b> = std::unordered_map&lt;string, <a class="el" href="#a0c103de8d815b502201fd339add8f7d4">VariableBlockPtr</a>&gt;</td></tr>
-<tr class="memdesc:abf8b8ac1c96689800d1afb411e19f3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to a map between string identifiers and VariableBlocks. <br /></td></tr>
-<tr class="separator:abf8b8ac1c96689800d1afb411e19f3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394ae54895d97a582cb038b70e4031b6" id="r_a394ae54895d97a582cb038b70e4031b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a394ae54895d97a582cb038b70e4031b6">VariableBlockMap</a> = std::map&lt;string, <a class="el" href="#a0c103de8d815b502201fd339add8f7d4">VariableBlockPtr</a>&gt;</td></tr>
+<tr class="memdesc:a394ae54895d97a582cb038b70e4031b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to a map between string identifiers and VariableBlocks.  <br /></td></tr>
+<tr class="separator:a394ae54895d97a582cb038b70e4031b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adede5df15fdc613823ff6072ed96a96b" id="r_adede5df15fdc613823ff6072ed96a96b"><td class="memItemLeft" align="right" valign="top"><a id="adede5df15fdc613823ff6072ed96a96b" name="adede5df15fdc613823ff6072ed96a96b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderPortPredicate</b> = std::function&lt;bool(<a class="el" href="class_shader_port.html">ShaderPort</a>*)&gt;</td></tr>
 <tr class="memdesc:adede5df15fdc613823ff6072ed96a96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A standard function predicate taking an <a class="el" href="class_shader_port.html" title="An input or output port on a ShaderNode.">ShaderPort</a> pointer and returning a boolean. <br /></td></tr>
@@ -268,6 +268,24 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a394ae54895d97a582cb038b70e4031b6" name="a394ae54895d97a582cb038b70e4031b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394ae54895d97a582cb038b70e4031b6">&#9670;&#160;</a></span>VariableBlockMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a394ae54895d97a582cb038b70e4031b6">VariableBlockMap</a> = std::map&lt;string, <a class="el" href="#a0c103de8d815b502201fd339add8f7d4">VariableBlockPtr</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shared pointer to a map between string identifiers and VariableBlocks. </p>
+<p>The order may affect the order of the respective definitions in the generated code. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>

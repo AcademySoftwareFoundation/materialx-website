@@ -50,6 +50,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -61,16 +62,16 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_blur_node_8h_source.html",
-"_material_x_core_2_util_8h.html#af38a232ad00117fa61f1704064446851",
-"class_attribute_def.html#a96d5b88563b24f6be1b11fd174a70c2c",
-"class_element.html#ab8d51ac16028b6ec7f53147a4ca3250d",
-"class_glsl_program.html#a16873539a1053d46eebcbf393002ff6b",
-"class_input.html#a0b17e5798b367d7129629234253b0615",
-"class_mesh.html#aff307fa888fce4f40d537e8cc939a746",
-"class_shader_graph.html#a490333966f775a614fba6a4639430ddd",
-"class_surface_node_glsl.html",
-"class_variant_assign.html"
+"_camera_8h_source.html",
+"_material_x_format_2_util_8h.html#a3b454a1ca1307ea78d9437d4727200a9",
+"class_attribute_def.html#a26044f63e9069e534f23b1dde870221a",
+"class_element.html#af1b558186ea36750578984f122e534f8",
+"class_glsl_program.html#ac17047c72a071d5e80e7f75b9f6d7e16",
+"class_interface_element.html#a3d5931d641fbaf7d636fb7d2664e23b6",
+"class_mesh_stream.html#a9be1e4285daa77fe397767c097fbdc66",
+"class_shader_graph.html#ac6feaf9e24fd98d54c58fef13f9c6578",
+"class_syntax.html#a547ce4526faecedb1749ef6b41b4d99d",
+"class_vector_n.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -5,5 +5,6 @@ var searchData=
   ['targetcolorspaceoverride_2',['targetColorSpaceOverride',['../class_gen_options.html#a8e4c555c81472c8b7501845b1d2d1bb5',1,'GenOptions']]],
   ['targetdistanceunit_3',['targetDistanceUnit',['../class_gen_options.html#a781a1edcda94a8f801e12abbddabbc1e',1,'GenOptions']]],
   ['targetversion_4',['targetVersion',['../class_gen_mdl_options.html#a40f9e315b029bff9e27366c02be42ade',1,'GenMdlOptions']]],
-  ['typestring_5',['typeString',['../struct_glsl_program_1_1_input.html#a3ff7f04854e2a9852e786b2c1f168a55',1,'GlslProgram::Input']]]
+  ['tex_5fsampler_5fsampler2d_5',['TEX_SAMPLER_SAMPLER2D',['../namespace_h_w.html#aabee68072b81ef68bc9ef3366f1d0f6c',1,'HW']]],
+  ['typestring_6',['typeString',['../struct_glsl_program_1_1_input.html#a3ff7f04854e2a9852e786b2c1f168a55',1,'GlslProgram::Input']]]
 ];

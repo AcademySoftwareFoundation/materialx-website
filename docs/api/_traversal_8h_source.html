@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,7 @@ $(function(){initNavTree('_traversal_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        _elemUp(elemUp)</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ~Edge() { }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ~Edge() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> Edge&amp; rhs)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">    </span>{</div>
@@ -188,7 +188,7 @@ $(function(){initNavTree('_traversal_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        _holdCount(0)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    ~TreeIterator() { }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    ~TreeIterator() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">using </span>StackFrame = std::pair&lt;ElementPtr, size_t&gt;;</div>
@@ -276,7 +276,7 @@ $(function(){initNavTree('_traversal_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    {</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        _pathElems.insert(elem);</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    ~GraphIterator() { }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    ~GraphIterator() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">using </span>ElementSet = std::set&lt;ElementPtr&gt;;</div>
@@ -403,7 +403,7 @@ $(function(){initNavTree('_traversal_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        _pathElems.insert(elem);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    }</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    ~InheritanceIterator() { }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    ~InheritanceIterator() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keyword">using </span>ConstElementSet = std::set&lt;ConstElementPtr&gt;;</div>

@@ -11,5 +11,6 @@ var _material_x_gen_shader_2_util_8h =
     [ "isTransparentSurface", "_material_x_gen_shader_2_util_8h.html#a58c36facc6cf425cf781483cb2dd7628", null ],
     [ "mapValueToColor", "_material_x_gen_shader_2_util_8h.html#a9c25218899400c1974e1751e26abc656", null ],
     [ "requiresImplementation", "_material_x_gen_shader_2_util_8h.html#ab2df37324d0c5ec96cc078863599a232", null ],
-    [ "tokenSubstitution", "_material_x_gen_shader_2_util_8h.html#a08fd2716d3cea3665b6ddc9efd9e6216", null ]
+    [ "tokenSubstitution", "_material_x_gen_shader_2_util_8h.html#a08fd2716d3cea3665b6ddc9efd9e6216", null ],
+    [ "GAUSSIAN_KERNEL_3", "_material_x_gen_shader_2_util_8h.html#ae3e36ec93f612956bed293ee419a77c9", null ]
 ];

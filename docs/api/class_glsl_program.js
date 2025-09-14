@@ -11,7 +11,7 @@ var class_glsl_program =
     [ "bindMesh", "class_glsl_program.html#a15a0d13ac76ffd8461bccc56d59f4c2f", null ],
     [ "bindPartition", "class_glsl_program.html#a7eff36cba051c1bd69895b6ccd4ec32f", null ],
     [ "bindTextures", "class_glsl_program.html#a2db43544b28c7c35c17b0537ea56acbc", null ],
-    [ "bindTimeAndFrame", "class_glsl_program.html#ae7dd698d3074bd6acee171d1b8a2e0d7", null ],
+    [ "bindTimeAndFrame", "class_glsl_program.html#aac59a247284fdd07474948158e7a2747", null ],
     [ "bindUniform", "class_glsl_program.html#a5edc75d9c500a4060b7b4926d49bf039", null ],
     [ "bindViewInformation", "class_glsl_program.html#add1f665f2decca485d5e7ffa07c13f14", null ],
     [ "build", "class_glsl_program.html#a7740c7ab195c03ac140f1f75f633470f", null ],

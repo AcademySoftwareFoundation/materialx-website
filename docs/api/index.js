@@ -8,10 +8,13 @@ var index =
       [ "Building The MaterialX Viewer", "index.html#autotoc_md6", null ],
       [ "Building API Documentation", "index.html#autotoc_md7", null ]
     ] ],
-    [ "Installing MaterialX", "index.html#autotoc_md8", null ],
-    [ "MaterialX Versioning", "index.html#autotoc_md9", [
-      [ "MaterialX API Changes", "index.html#autotoc_md10", null ],
-      [ "MaterialX Data Library Changes", "index.html#autotoc_md11", null ]
+    [ "Editor Setup", "index.html#autotoc_md8", [
+      [ "CLion", "index.html#autotoc_md9", null ]
     ] ],
-    [ "Additional Links", "index.html#autotoc_md12", null ]
+    [ "Installing MaterialX", "index.html#autotoc_md10", null ],
+    [ "MaterialX Versioning", "index.html#autotoc_md11", [
+      [ "MaterialX API Changes", "index.html#autotoc_md12", null ],
+      [ "MaterialX Data Library Changes", "index.html#autotoc_md13", null ]
+    ] ],
+    [ "Additional Links", "index.html#autotoc_md14", null ]
 ];

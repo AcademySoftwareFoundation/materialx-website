@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,7 @@ $(function(){initNavTree('_material_x_core_2_library_8h.html',''); initResizable
 <p>Library-wide includes and types.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
@@ -182,7 +183,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StringSet</b> = std:
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ((((uint32_t)(major)) &lt;&lt; 22U) | (((uint32_t)(minor)) &lt;&lt; 12U) | ((uint32_t)(build)))</div>
+<b>Value:</b><div class="fragment"><div class="line">(((major) &lt;&lt; 22U) | ((minor) &lt;&lt; 12U) | (build))</div>
 </div><!-- fragment -->
 </div>
 </div>

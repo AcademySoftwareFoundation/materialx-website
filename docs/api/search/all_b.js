@@ -1,7 +1,7 @@
 var searchData=
 [
   ['layer_0',['LAYER',['../class_shader_node_1_1_classification.html#ad11fd995c99d23886e24d07d415331f0',1,'ShaderNode::Classification']]],
-  ['library_20changes_1',['MaterialX Data Library Changes',['../index.html#autotoc_md11',1,'']]],
+  ['library_20changes_1',['MaterialX Data Library Changes',['../index.html#autotoc_md13',1,'']]],
   ['library_2eh_2',['Library.h',['../_material_x_core_2_library_8h.html',1,'(Global Namespace)'],['../_material_x_gen_shader_2_library_8h.html',1,'(Global Namespace)']]],
   ['libraryprefix_3',['libraryPrefix',['../class_gen_options.html#added87e0a84aadf53c89317387c813ac',1,'GenOptions']]],
   ['light_4',['LIGHT',['../class_shader_node_1_1_classification.html#ac9d58ab1c2d5dcc7df401e29b80319ed',1,'ShaderNode::Classification']]],
@@ -16,7 +16,7 @@ var searchData=
   ['lineartosrgb_13',['linearToSrgb',['../class_color3.html#aadc03ab5157beb2081d835e1e10997cc',1,'Color3']]],
   ['linearunitconverter_14',['LinearUnitConverter',['../class_linear_unit_converter.html',1,'']]],
   ['linearunitconverterptr_15',['LinearUnitConverterPtr',['../_unit_8h.html#afd9858f2882672b432442076bd2a581d',1,'Unit.h']]],
-  ['links_16',['Additional Links',['../index.html#autotoc_md12',1,'']]],
+  ['links_16',['Additional Links',['../index.html#autotoc_md14',1,'']]],
   ['load_17',['load',['../class_cgltf_loader.html#a0e93b9ebde3f7c8e3f697908af0ca6f9',1,'CgltfLoader::load()'],['../class_geometry_loader.html#a5870c37bc25e02f53bc1e6ee35b1b770',1,'GeometryLoader::load()'],['../class_tiny_obj_loader.html#a0e93b9ebde3f7c8e3f697908af0ca6f9',1,'TinyObjLoader::load()']]],
   ['loaddocuments_18',['loadDocuments',['../_material_x_format_2_util_8h.html#a7a8f2a039a2d0f4db163ef9c074c47ef',1,'Util.h']]],
   ['loadgeometry_19',['loadGeometry',['../class_geometry_handler.html#a08003c39a417ac5ae5fcf1acbc99b314',1,'GeometryHandler']]],

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,8 @@ $(function(){initNavTree('_material_x_gen_shader_2_util_8h.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Util.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -159,6 +160,18 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>find
 <tr class="memitem:a7a2aa882c23d583eead016db28c46f18" id="r_a7a2aa882c23d583eead016db28c46f18"><td class="memItemLeft" align="right" valign="top"><a id="a7a2aa882c23d583eead016db28c46f18" name="a7a2aa882c23d583eead016db28c46f18"></a>
 MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>findRenderableElements</b> (<a class="el" href="_document_8h.html#a54a924ef0dee4ee2de25d1c9a172c652">ConstDocumentPtr</a> doc, vector&lt; <a class="el" href="_element_8h.html#a2721f976186e43bbc1358cc4fd790356">TypedElementPtr</a> &gt; &amp;elements, bool includeReferencedGraphs=false)</td></tr>
 <tr class="separator:a7a2aa882c23d583eead016db28c46f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae3e36ec93f612956bed293ee419a77c9" id="r_ae3e36ec93f612956bed293ee419a77c9"><td class="memItemLeft" align="right" valign="top">MX_GENSHADER_API const std::array&lt; float, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3e36ec93f612956bed293ee419a77c9">GAUSSIAN_KERNEL_3</a></td></tr>
+<tr class="memdesc:ae3e36ec93f612956bed293ee419a77c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gaussian kernel weights for different kernel sizes.  <br /></td></tr>
+<tr class="separator:ae3e36ec93f612956bed293ee419a77c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2bda709157557bd653b1a66dea4898" id="r_a4c2bda709157557bd653b1a66dea4898"><td class="memItemLeft" align="right" valign="top"><a id="a4c2bda709157557bd653b1a66dea4898" name="a4c2bda709157557bd653b1a66dea4898"></a>
+MX_GENSHADER_API const std::array&lt; float, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GAUSSIAN_KERNEL_5</b></td></tr>
+<tr class="separator:a4c2bda709157557bd653b1a66dea4898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4802daf69da192ae23e39a8cb1c97dcf" id="r_a4802daf69da192ae23e39a8cb1c97dcf"><td class="memItemLeft" align="right" valign="top"><a id="a4802daf69da192ae23e39a8cb1c97dcf" name="a4802daf69da192ae23e39a8cb1c97dcf"></a>
+MX_GENSHADER_API const std::array&lt; float, 7 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GAUSSIAN_KERNEL_7</b></td></tr>
+<tr class="separator:a4802daf69da192ae23e39a8cb1c97dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> generation utility methods. </p>
@@ -385,6 +398,32 @@ MX_GENSHADER_API void&#160;</td><td class="memItemRight" valign="bottom"><b>find
 
 <p>Perform token substitutions on the given source string, using the given substitution map. </p>
 <p>Tokens are required to start with '$' and can only consist of alphanumeric characters. The full token name, including '$' and all following alphanumeric character, will be replaced by the corresponding string in the substitution map, if the token exists in the map. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae3e36ec93f612956bed293ee419a77c9" name="ae3e36ec93f612956bed293ee419a77c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e36ec93f612956bed293ee419a77c9">&#9670;&#160;</a></span>GAUSSIAN_KERNEL_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MX_GENSHADER_API const std::array&lt;float, 3&gt; GAUSSIAN_KERNEL_3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gaussian kernel weights for different kernel sizes. </p>
+<p>Shared between the ConvolutionNode implementation and MaterialXRender::Image </p>
 
 </div>
 </div>

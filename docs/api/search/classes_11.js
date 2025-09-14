@@ -9,6 +9,5 @@ var searchData=
   ['unitdef_6',['UnitDef',['../class_unit_def.html',1,'']]],
   ['unitsystem_7',['UnitSystem',['../class_unit_system.html',1,'']]],
   ['unittransform_8',['UnitTransform',['../struct_unit_transform.html',1,'']]],
-  ['unittypedef_9',['UnitTypeDef',['../class_unit_type_def.html',1,'']]],
-  ['unlitsurfacenodeglsl_10',['UnlitSurfaceNodeGlsl',['../class_unlit_surface_node_glsl.html',1,'']]]
+  ['unittypedef_9',['UnitTypeDef',['../class_unit_type_def.html',1,'']]]
 ];

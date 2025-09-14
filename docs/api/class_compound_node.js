@@ -1,5 +1,6 @@
 var class_compound_node =
 [
+    [ "addClassification", "class_compound_node.html#a31cc45248f02e9cb7a8c5fa7912dc073", null ],
     [ "createVariables", "class_compound_node.html#af93a3ea1c4698f59a21d128471317f62", null ],
     [ "emitFunctionCall", "class_compound_node.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79", null ],
     [ "emitFunctionDefinition", "class_compound_node.html#ab8f2bd24a3e8a82fddb3d83fc0d5d55e", null ],
