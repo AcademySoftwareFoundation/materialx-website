@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -111,60 +111,61 @@ $(function(){initNavTree('_material_x_core_2_library_8h_source.html',''); initRe
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;MaterialXCore/Generated.h&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define MATERIALX_GENERATE_INDEX(major, minor, build) \</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">    ((((uint32_t)(major)) &lt;&lt; 22U) | (((uint32_t)(minor)) &lt;&lt; 12U) | ((uint32_t)(build)))</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define MATERIALX_VERSION_INDEX \</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">    MATERIALX_GENERATE_INDEX(MATERIALX_MAJOR_VERSION, MATERIALX_MINOR_VERSION, MATERIALX_BUILD_VERSION)</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#if defined(MATERIALX_BUILD_SHARED_LIBS)</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    #if defined(_WIN32)</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">        #pragma warning(disable : 4251)</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">        #pragma warning(disable : 4275)</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">        #pragma warning(disable : 4661)</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">        #define MATERIALX_SYMBOL_EXPORT __declspec(dllexport)</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">        #define MATERIALX_SYMBOL_IMPORT __declspec(dllimport)</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">        #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...) template class MATERIALX_SYMBOL_EXPORT __VA_ARGS__</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">        #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...) extern template class MATERIALX_SYMBOL_IMPORT __VA_ARGS__</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">        #define MATERIALX_SYMBOL_EXPORT __attribute__((__visibility__(&quot;default&quot;)))</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">        #define MATERIALX_SYMBOL_IMPORT __attribute__((__visibility__(&quot;default&quot;)))</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">        #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...) template class MATERIALX_SYMBOL_EXPORT __VA_ARGS__</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">        #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...) extern template class MATERIALX_SYMBOL_IMPORT __VA_ARGS__</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a9e0090596e72aecfb9e7670c2a1d8615">   46</a></span><span class="preprocessor">    #define MATERIALX_SYMBOL_EXPORT</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    #define MATERIALX_SYMBOL_IMPORT</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...)</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...)</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>MATERIALX_NAMESPACE_BEGIN</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">using </span>std::string;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">using </span>std::vector;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">using </span>std::shared_ptr;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">using </span>std::weak_ptr;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">   60</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> = vector&lt;string&gt;;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">   62</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> = std::unordered_map&lt;string, string&gt;;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">   64</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> = std::set&lt;string&gt;;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>MATERIALX_NAMESPACE_END</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition</b> Library.h:64</div></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition</b> Library.h:60</div></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a9e4193e26e0d62e4784947fb14d3433b"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a></div><div class="ttdeci">std::unordered_map&lt; string, string &gt; StringMap</div><div class="ttdoc">An unordered map with strings as both keys and values.</div><div class="ttdef"><b>Definition</b> Library.h:62</div></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;MaterialXCore/Generated.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define MATERIALX_GENERATE_INDEX(major, minor, build) (((major) &lt;&lt; 22U) | ((minor) &lt;&lt; 12U) | (build))</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define MATERIALX_VERSION_INDEX \</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">    MATERIALX_GENERATE_INDEX(MATERIALX_MAJOR_VERSION, MATERIALX_MINOR_VERSION, MATERIALX_BUILD_VERSION)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if defined(MATERIALX_BUILD_SHARED_LIBS)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    #if defined(_WIN32)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">        #pragma warning(disable : 4251)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">        #pragma warning(disable : 4275)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">        #pragma warning(disable : 4661)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">        #define MATERIALX_SYMBOL_EXPORT __declspec(dllexport)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">        #define MATERIALX_SYMBOL_IMPORT __declspec(dllimport)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">        #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...) template class MATERIALX_SYMBOL_EXPORT __VA_ARGS__</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">        #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...) extern template class MATERIALX_SYMBOL_IMPORT __VA_ARGS__</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">        #define MATERIALX_SYMBOL_EXPORT __attribute__((__visibility__(&quot;default&quot;)))</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">        #define MATERIALX_SYMBOL_IMPORT __attribute__((__visibility__(&quot;default&quot;)))</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">        #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...) template class MATERIALX_SYMBOL_EXPORT __VA_ARGS__</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">        #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...) extern template class MATERIALX_SYMBOL_IMPORT __VA_ARGS__</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a9e0090596e72aecfb9e7670c2a1d8615">   47</a></span><span class="preprocessor">    #define MATERIALX_SYMBOL_EXPORT</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    #define MATERIALX_SYMBOL_IMPORT</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>MATERIALX_NAMESPACE_BEGIN</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">using </span>std::string;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">using </span>std::vector;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">using </span>std::shared_ptr;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">using </span>std::weak_ptr;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">   61</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a> = vector&lt;string&gt;;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">   63</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> = std::unordered_map&lt;string, string&gt;;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">   65</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a> = std::set&lt;string&gt;;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>MATERIALX_NAMESPACE_END</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition</b> Library.h:65</div></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition</b> Library.h:61</div></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a9e4193e26e0d62e4784947fb14d3433b"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a></div><div class="ttdeci">std::unordered_map&lt; string, string &gt; StringMap</div><div class="ttdoc">An unordered map with strings as both keys and values.</div><div class="ttdef"><b>Definition</b> Library.h:63</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

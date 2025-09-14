@@ -13,5 +13,6 @@ var class_node =
     [ "getUpstreamEdgeCount", "class_node.html#a6e521791f72cc3adc16cf4824639f71c", null ],
     [ "setConnectedNode", "class_node.html#aadadda2e802727c536a3e613fcb3741f", null ],
     [ "setConnectedNodeName", "class_node.html#a2405c6a1d9ed30c2e4d3beee06627f65", null ],
+    [ "setNameGlobal", "class_node.html#a804510d12a06fd8ef009cac3002eb2ce", null ],
     [ "validate", "class_node.html#a488dfe5fda981fdd4f948b278b24e84e", null ]
 ];

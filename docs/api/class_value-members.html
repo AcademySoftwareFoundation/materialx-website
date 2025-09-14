@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -115,16 +115,17 @@ $(function(){initNavTree('class_value.html',''); initResizable(true); });
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FloatFormatDefault</b> enum value (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>FloatFormatFixed</b> enum value (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FloatFormatScientific</b> enum value (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_value.html#a3c37dd257e48e78db0d7603d4ecce055">getFloatFormat</a>()</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_value.html#aec58c12cde5fef2018cedad576f2add0">getFloatPrecision</a>()</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_value.html#a3c37dd257e48e78db0d7603d4ecce055">getFloatFormat</a>()</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_value.html#aec58c12cde5fef2018cedad576f2add0">getFloatPrecision</a>()</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_value.html#a1719934c00b16b53cfe6176ca99d734e">getTypeString</a>() const =0</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_value.html#a2b4a59546ebb945af6206e3f2e24d7b4">getValueString</a>() const =0</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_value.html#a2e0e9c7c2cba12de00169df9fd2c87ff">isA</a>() const</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_value.html#a1b194c339c857a6f2e9fcd7fd646aa6f">setFloatFormat</a>(FloatFormat format)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_value.html#ae36a83a9f06ca9139b8eba857fb58072">setFloatPrecision</a>(int precision)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Value</b>() (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>ValueRegistry</b> (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Value</b>() (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>isEqual</b>(ConstValuePtr other) const =0 (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_value.html#a1b194c339c857a6f2e9fcd7fd646aa6f">setFloatFormat</a>(FloatFormat format)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_value.html#ae36a83a9f06ca9139b8eba857fb58072">setFloatPrecision</a>(int precision)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Value</b>() (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ValueRegistry</b> (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~Value</b>() (defined in <a class="el" href="class_value.html">Value</a>)</td><td class="entry"><a class="el" href="class_value.html">Value</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

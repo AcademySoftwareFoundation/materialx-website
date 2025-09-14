@@ -1,7 +1,7 @@
 var searchData=
 [
   ['data_0',['data',['../class_vector_n.html#ae341cb79cc0b09dec878b95aad41a54d',1,'VectorN::data()'],['../class_vector_n.html#a32912f0bceb526ab37f53105846ca4ca',1,'VectorN::data() const'],['../class_matrix_n.html#ae341cb79cc0b09dec878b95aad41a54d',1,'MatrixN::data()'],['../class_matrix_n.html#a32912f0bceb526ab37f53105846ca4ca',1,'MatrixN::data() const']]],
-  ['data_20library_20changes_1',['MaterialX Data Library Changes',['../index.html#autotoc_md11',1,'']]],
+  ['data_20library_20changes_1',['MaterialX Data Library Changes',['../index.html#autotoc_md13',1,'']]],
   ['datablock_2',['DataBlock',['../class_type_desc_1_1_data_block.html',1,'TypeDesc']]],
   ['defaultcolor_3',['defaultColor',['../class_image_sampling_properties.html#a8e4c582a61e973553bb17e82298dac43',1,'ImageSamplingProperties']]],
   ['defaultcolormanagementsystem_4',['DefaultColorManagementSystem',['../class_default_color_management_system.html',1,'DefaultColorManagementSystem'],['../class_default_color_management_system.html#a6d6e42061b8e62ee60762f18585b7280',1,'DefaultColorManagementSystem::DefaultColorManagementSystem()']]],

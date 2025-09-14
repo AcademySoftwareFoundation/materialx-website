@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa70f131d4f829f049ffdf2661c2f66e1" id="r_aa70f131d4f829f049ffdf2661c2f66e1"><td class="memItemLeft" align="right" valign="top"><a id="aa70f131d4f829f049ffdf2661c2f66e1" name="aa70f131d4f829f049ffdf2661c2f66e1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MdlSyntax</b> (TypeSystemPtr typeSystem)</td></tr>
 <tr class="separator:aa70f131d4f829f049ffdf2661c2f66e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c001d1f1e0cfb46cf4781eff87655ae" id="r_a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c001d1f1e0cfb46cf4781eff87655ae">createStructSyntax</a> (const string &amp;structTypeName, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition) const override</td></tr>
+<tr class="separator:a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423a82a664945d1837e77a4a36d964ee" id="r_a423a82a664945d1837e77a4a36d964ee"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a423a82a664945d1837e77a4a36d964ee">getConstantQualifier</a> () const override</td></tr>
 <tr class="memdesc:a423a82a664945d1837e77a4a36d964ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the qualifier used when declaring constant variables.  <br /></td></tr>
 <tr class="separator:a423a82a664945d1837e77a4a36d964ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,9 +296,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>makeIdentifie
 <tr class="memitem:a8769347757565e5da262248636e3c47b inherit pub_methods_class_syntax" id="r_a8769347757565e5da262248636e3c47b"><td class="memItemLeft" align="right" valign="top">
 string&#160;</td><td class="memItemRight" valign="bottom"><b>getVariableName</b> (const string &amp;name, const <a class="el" href="class_type_desc.html">TypeDesc</a> *type, <a class="el" href="_syntax_8h.html#afa93c3718b430ea2f7d9e604f5cee122">IdentifierMap</a> &amp;identifiers) const</td></tr>
 <tr class="separator:a8769347757565e5da262248636e3c47b inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b96cab4198b0016afe641cc6da7302a inherit pub_methods_class_syntax" id="r_a7b96cab4198b0016afe641cc6da7302a"><td class="memItemLeft" align="right" valign="top">
-virtual <a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createStructSyntax</b> (const string &amp;structTypeName, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition) const</td></tr>
-<tr class="separator:a7b96cab4198b0016afe641cc6da7302a inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -423,6 +422,52 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_syntax.html" title="Base class for syntax objects used by shader generators to emit code with correct syntax for each lan...">Syntax</a> class for MDL (Material Definition Language) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3c001d1f1e0cfb46cf4781eff87655ae" name="a3c001d1f1e0cfb46cf4781eff87655ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c001d1f1e0cfb46cf4781eff87655ae">&#9670;&#160;</a></span>createStructSyntax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a> createStructSyntax </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>structTypeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>defaultValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>uniformDefaultValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeAlias</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeDefinition</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_syntax.html">Syntax</a>.</p>
+
+</div>
+</div>
 <a id="aa7e3b2867770bcdc2c812cf067a1e1f0" name="aa7e3b2867770bcdc2c812cf067a1e1f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7e3b2867770bcdc2c812cf067a1e1f0">&#9670;&#160;</a></span>getArrayTypeSuffix()</h2>
 

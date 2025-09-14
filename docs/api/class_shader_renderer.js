@@ -5,7 +5,7 @@ var class_shader_renderer =
       [ "OpenGL", "class_shader_renderer.html#a782c36bfce6ff989984430100d41e01ca760716b590ee7c0adc25f434f577d8be", null ],
       [ "Metal", "class_shader_renderer.html#a782c36bfce6ff989984430100d41e01caeaa57a9b4248ce3968e718895e1c2f04", null ]
     ] ],
-    [ "captureImage", "class_shader_renderer.html#a0e7f0909c7d5357b8d91c70dfa3aca54", null ],
+    [ "captureImage", "class_shader_renderer.html#a3c6a0c1a116c91a62b6abe09babfeeb4", null ],
     [ "createProgram", "class_shader_renderer.html#a074016caa300719a16efa538dac28dd5", null ],
     [ "createProgram", "class_shader_renderer.html#acc705fbe50dd87df811619a09fcd0a9c", null ],
     [ "getCamera", "class_shader_renderer.html#acd02e141a1924b6f1271573fdba8e1f5", null ],

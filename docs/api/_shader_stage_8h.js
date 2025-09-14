@@ -5,7 +5,7 @@ var _shader_stage_8h =
     [ "Scope", "struct_shader_stage_1_1_scope.html", null ],
     [ "ShaderPortPredicate", "_shader_stage_8h.html#adede5df15fdc613823ff6072ed96a96b", null ],
     [ "ShaderStagePtr", "_shader_stage_8h.html#a002e2fa177595c0454d38b0799b6c5c1", null ],
-    [ "VariableBlockMap", "_shader_stage_8h.html#abf8b8ac1c96689800d1afb411e19f3ca", null ],
+    [ "VariableBlockMap", "_shader_stage_8h.html#a394ae54895d97a582cb038b70e4031b6", null ],
     [ "VariableBlockPtr", "_shader_stage_8h.html#a0c103de8d815b502201fd339add8f7d4", null ],
     [ "addStageConnector", "_shader_stage_8h.html#a7bfb4885a3089d26a4c85ae36c03f50f", null ],
     [ "addStageConnectorBlock", "_shader_stage_8h.html#a131c90af15353a7554bd4d63b969c1a7", null ],

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ $(function(){initNavTree('_mesh_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        _stride(DEFAULT_STRIDE)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    ~MeshStream() { }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    ~MeshStream() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">   57</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_mesh_8h.html#a1b8b5809d7094de22d1b8ac46a729153">MeshStreamPtr</a> <a class="code hl_function" href="class_mesh_stream.html#add64e59aa55af0e414d2b5b856e711cd">create</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; type, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index = 0)</div>
@@ -259,7 +259,7 @@ $(function(){initNavTree('_mesh_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        _faceCount(0)</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    ~MeshPartition() { }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    ~MeshPartition() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span></div>
 <div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">  161</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_mesh_8h.html#aa1fa294260f159ae030e6bb7ecac3490">MeshPartitionPtr</a> <a class="code hl_function" href="class_mesh_partition.html#acd181e4ec276ec4fa154e131f70ea85b">create</a>()</div>
@@ -350,7 +350,7 @@ $(function(){initNavTree('_mesh_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>{</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    Mesh(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    ~Mesh() { }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    ~Mesh() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
 <div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="class_mesh.html#a0a59954b402882e839278d2f546349fa">  247</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="_mesh_8h.html#abb4e7a16c06b8c5ac1ad3b0ea8cd0330">MeshPtr</a> <a class="code hl_function" href="class_mesh.html#a0a59954b402882e839278d2f546349fa">create</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name)</div>
@@ -556,7 +556,7 @@ $(function(){initNavTree('_mesh_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>MATERIALX_NAMESPACE_END</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition</b> Library.h:64</div></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a14c0ba724aa338d760b2caf2800a5c84"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a14c0ba724aa338d760b2caf2800a5c84">StringSet</a></div><div class="ttdeci">std::set&lt; string &gt; StringSet</div><div class="ttdoc">A set of strings.</div><div class="ttdef"><b>Definition</b> Library.h:65</div></div>
 <div class="ttc" id="a_material_x_core_2_types_8h_html"><div class="ttname"><a href="_material_x_core_2_types_8h.html">Types.h</a></div><div class="ttdoc">Data type classes.</div></div>
 <div class="ttc" id="a_material_x_render_2_export_8h_html"><div class="ttname"><a href="_material_x_render_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
 <div class="ttc" id="a_mesh_8h_html_a172addb5cf2c028c609c258b623de350"><div class="ttname"><a href="_mesh_8h.html#a172addb5cf2c028c609c258b623de350">MeshStreamList</a></div><div class="ttdeci">vector&lt; MeshStreamPtr &gt; MeshStreamList</div><div class="ttdoc">List of mesh streams.</div><div class="ttdef"><b>Definition</b> Mesh.h:26</div></div>

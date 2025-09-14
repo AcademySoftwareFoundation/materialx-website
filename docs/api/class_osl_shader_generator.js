@@ -2,8 +2,7 @@ var class_osl_shader_generator =
 [
     [ "OslShaderGenerator", "class_osl_shader_generator.html#a5e4c36c2f6d827eb9adfcaf3ad4b6dd3", null ],
     [ "createShader", "class_osl_shader_generator.html#a37ed207aa136fb2ceac94a7b5cb16e3e", null ],
-    [ "emitFunctionBodyBegin", "class_osl_shader_generator.html#a313d8f5b8d9d5ea9037372bac82ea9c6", null ],
-    [ "emitFunctionCalls", "class_osl_shader_generator.html#a8938182beb0130eab8f7f2fa75c24322", null ],
+    [ "emitAllDependentFunctionCalls", "class_osl_shader_generator.html#aac097579ee84cf054de7c4bc91aa86bb", null ],
     [ "emitLibraryIncludes", "class_osl_shader_generator.html#a45a6466109151321f2f0438bec20f494", null ],
     [ "emitMetadata", "class_osl_shader_generator.html#af718d5ea826d0dba49db60af7df6eb0c", null ],
     [ "emitShaderInputs", "class_osl_shader_generator.html#a84f6dbc728dda9b809f4eda8b8fddf4a", null ],

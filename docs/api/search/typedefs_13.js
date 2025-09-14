@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmlreadfunction_0',['XmlReadFunction',['../_xml_io_8h.html#a3faecf6cff36db585f8dae89af367fdf',1,'XmlIo.h']]]
+  ['wgslresourcebindingcontextptr_0',['WgslResourceBindingContextPtr',['../_wgsl_resource_binding_context_8h.html#a704fde321a60e85703d8cf0fa89cfddb',1,'WgslResourceBindingContext.h']]]
 ];

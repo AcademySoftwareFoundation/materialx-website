@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -133,7 +133,7 @@ $(function(){initNavTree('_xml_io_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    XmlReadOptions();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ~XmlReadOptions() { }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ~XmlReadOptions() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_xml_read_options.html#a92b00937956fc8d9dbbb5cbb79564a6d">   42</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_xml_read_options.html#a92b00937956fc8d9dbbb5cbb79564a6d">readComments</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
@@ -152,7 +152,7 @@ $(function(){initNavTree('_xml_io_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    XmlWriteOptions();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ~XmlWriteOptions() { }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ~XmlWriteOptions() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_xml_write_options.html#a8819e267a25f68b52c72eafc3d1feacc">   71</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_xml_write_options.html#a8819e267a25f68b52c72eafc3d1feacc">writeXIncludeEnable</a>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
@@ -207,7 +207,7 @@ $(function(){initNavTree('_xml_io_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="a_element_8h_html_abb065f3bc7f45f5799879e9dad1ac0ac"><div class="ttname"><a href="_element_8h.html#abb065f3bc7f45f5799879e9dad1ac0ac">ElementPredicate</a></div><div class="ttdeci">std::function&lt; bool(ConstElementPtr)&gt; ElementPredicate</div><div class="ttdoc">A standard function taking an ElementPtr and returning a boolean.</div><div class="ttdef"><b>Definition</b> Element.h:75</div></div>
 <div class="ttc" id="a_file_8h_html"><div class="ttname"><a href="_file_8h.html">File.h</a></div><div class="ttdoc">Cross-platform support for file and search paths.</div></div>
 <div class="ttc" id="a_material_x_core_2_library_8h_html"><div class="ttname"><a href="_material_x_core_2_library_8h.html">Library.h</a></div><div class="ttdoc">Library-wide includes and types.</div></div>
-<div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition</b> Library.h:60</div></div>
+<div class="ttc" id="a_material_x_core_2_library_8h_html_a1ac22e2941bd7f2f2afbde1934181f43"><div class="ttname"><a href="_material_x_core_2_library_8h.html#a1ac22e2941bd7f2f2afbde1934181f43">StringVec</a></div><div class="ttdeci">vector&lt; string &gt; StringVec</div><div class="ttdoc">A vector of strings.</div><div class="ttdef"><b>Definition</b> Library.h:61</div></div>
 <div class="ttc" id="a_material_x_format_2_export_8h_html"><div class="ttname"><a href="_material_x_format_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
 <div class="ttc" id="a_xml_io_8h_html_a3faecf6cff36db585f8dae89af367fdf"><div class="ttname"><a href="_xml_io_8h.html#a3faecf6cff36db585f8dae89af367fdf">XmlReadFunction</a></div><div class="ttdeci">std::function&lt; void(DocumentPtr, const FilePath &amp;, const FileSearchPath &amp;, const XmlReadOptions *)&gt; XmlReadFunction</div><div class="ttdoc">A standard function that reads from an XML file into a Document, with optional search path and read o...</div><div class="ttdef"><b>Definition</b> XmlIo.h:30</div></div>
 <div class="ttc" id="a_xml_io_8h_html_a482a2196ea4d28644e182d6926afe96b"><div class="ttname"><a href="_xml_io_8h.html#a482a2196ea4d28644e182d6926afe96b">readFromXmlStream</a></div><div class="ttdeci">MX_FORMAT_API void readFromXmlStream(DocumentPtr doc, std::istream &amp;stream, FileSearchPath searchPath=FileSearchPath(), const XmlReadOptions *readOptions=nullptr)</div><div class="ttdoc">Read a Document as XML from the given input stream.</div></div>

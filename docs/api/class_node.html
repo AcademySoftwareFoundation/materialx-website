@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -127,6 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7507d44c1d095119cfa2c903cc3ce551" id="r_a7507d44c1d095119cfa2c903cc3ce551"><td class="memItemLeft" align="right" valign="top"><a id="a7507d44c1d095119cfa2c903cc3ce551" name="a7507d44c1d095119cfa2c903cc3ce551"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Node</b> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> parent, const string &amp;name)</td></tr>
 <tr class="separator:a7507d44c1d095119cfa2c903cc3ce551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Name</div></td></tr>
+<tr class="memitem:a804510d12a06fd8ef009cac3002eb2ce" id="r_a804510d12a06fd8ef009cac3002eb2ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a804510d12a06fd8ef009cac3002eb2ce">setNameGlobal</a> (const string &amp;name)</td></tr>
+<tr class="memdesc:a804510d12a06fd8ef009cac3002eb2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name string of this <a class="el" href="class_node.html" title="A node element within a NodeGraph or Document.">Node</a>, propagating the updated name to all downstream ports.  <br /></td></tr>
+<tr class="separator:a804510d12a06fd8ef009cac3002eb2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Connections</div></td></tr>
 <tr class="memitem:aadadda2e802727c536a3e613fcb3741f" id="r_aadadda2e802727c536a3e613fcb3741f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadadda2e802727c536a3e613fcb3741f">setConnectedNode</a> (const string &amp;inputName, <a class="el" href="_node_8h.html#a6d909e094cae6750ec4597b5f4b22806">ConstNodePtr</a> node)</td></tr>
 <tr class="memdesc:aadadda2e802727c536a3e613fcb3741f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the node to which the given input is connected, creating a child input if needed.  <br /></td></tr>
@@ -1056,6 +1060,31 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 
 <p>Set the node to which the given input is connected, creating a child input if needed. </p>
 <p>If the node argument is null, then any existing node connection on the input will be cleared. </p>
+
+</div>
+</div>
+<a id="a804510d12a06fd8ef009cac3002eb2ce" name="a804510d12a06fd8ef009cac3002eb2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804510d12a06fd8ef009cac3002eb2ce">&#9670;&#160;</a></span>setNameGlobal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNameGlobal </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the name string of this <a class="el" href="class_node.html" title="A node element within a NodeGraph or Document.">Node</a>, propagating the updated name to all downstream ports. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_exception.html" title="The base class for exceptions that are propagated from the MaterialX library to the client applicatio...">Exception</a></td><td>if an element at the same scope already possesses the given name. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

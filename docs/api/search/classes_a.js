@@ -9,9 +9,10 @@ var searchData=
   ['matrixn_3c_20matrix33_2c_20float_2c_203_20_3e_6',['MatrixN&lt; Matrix33, float, 3 &gt;',['../class_matrix_n.html',1,'']]],
   ['matrixn_3c_20matrix44_2c_20float_2c_204_20_3e_7',['MatrixN&lt; Matrix44, float, 4 &gt;',['../class_matrix_n.html',1,'']]],
   ['mdlshadergenerator_8',['MdlShaderGenerator',['../class_mdl_shader_generator.html',1,'']]],
-  ['mdlsyntax_9',['MdlSyntax',['../class_mdl_syntax.html',1,'']]],
-  ['member_10',['Member',['../class_member.html',1,'']]],
-  ['mesh_11',['Mesh',['../class_mesh.html',1,'']]],
-  ['meshpartition_12',['MeshPartition',['../class_mesh_partition.html',1,'']]],
-  ['meshstream_13',['MeshStream',['../class_mesh_stream.html',1,'']]]
+  ['mdlstructtypesyntax_9',['MdlStructTypeSyntax',['../class_mdl_struct_type_syntax.html',1,'']]],
+  ['mdlsyntax_10',['MdlSyntax',['../class_mdl_syntax.html',1,'']]],
+  ['member_11',['Member',['../class_member.html',1,'']]],
+  ['mesh_12',['Mesh',['../class_mesh.html',1,'']]],
+  ['meshpartition_13',['MeshPartition',['../class_mesh_partition.html',1,'']]],
+  ['meshstream_14',['MeshStream',['../class_mesh_stream.html',1,'']]]
 ];

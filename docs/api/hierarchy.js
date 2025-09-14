@@ -65,7 +65,9 @@ var hierarchy =
         [ "HwLightShaders", "class_hw_light_shaders.html", null ],
         [ "HwResourceBindingContext", "class_hw_resource_binding_context.html", [
           [ "GlslResourceBindingContext", "class_glsl_resource_binding_context.html", null ],
-          [ "VkResourceBindingContext", "class_vk_resource_binding_context.html", null ]
+          [ "VkResourceBindingContext", "class_vk_resource_binding_context.html", [
+            [ "WgslResourceBindingContext", "class_wgsl_resource_binding_context.html", null ]
+          ] ]
         ] ],
         [ "ShaderMetadataRegistry", "class_shader_metadata_registry.html", null ]
       ] ],
@@ -139,7 +141,9 @@ var hierarchy =
       [ "HwShaderGenerator", "class_hw_shader_generator.html", [
         [ "GlslShaderGenerator", "class_glsl_shader_generator.html", [
           [ "EsslShaderGenerator", "class_essl_shader_generator.html", null ],
-          [ "VkShaderGenerator", "class_vk_shader_generator.html", null ]
+          [ "VkShaderGenerator", "class_vk_shader_generator.html", [
+            [ "WgslShaderGenerator", "class_wgsl_shader_generator.html", null ]
+          ] ]
         ] ]
       ] ],
       [ "MdlShaderGenerator", "class_mdl_shader_generator.html", null ],
@@ -156,23 +160,9 @@ var hierarchy =
     ] ],
     [ "ShaderNodeImpl", "class_shader_node_impl.html", [
       [ "CompoundNode", "class_compound_node.html", [
-        [ "ClosureCompoundNode", "class_closure_compound_node.html", null ],
         [ "LightCompoundNodeGlsl", "class_light_compound_node_glsl.html", null ]
       ] ],
-      [ "ConvolutionNode", "class_convolution_node.html", [
-        [ "BlurNode", "class_blur_node.html", [
-          [ "HwBlurNode", "class_hw_blur_node.html", null ]
-        ] ],
-        [ "HwHeightToNormalNode", "class_hw_height_to_normal_node.html", null ]
-      ] ],
       [ "HwImplementation", "class_hw_implementation.html", [
-        [ "GlslImplementation", "class_glsl_implementation.html", [
-          [ "LightNodeGlsl", "class_light_node_glsl.html", null ],
-          [ "LightSamplerNodeGlsl", "class_light_sampler_node_glsl.html", null ],
-          [ "NumLightsNodeGlsl", "class_num_lights_node_glsl.html", null ],
-          [ "SurfaceNodeGlsl", "class_surface_node_glsl.html", null ],
-          [ "UnlitSurfaceNodeGlsl", "class_unlit_surface_node_glsl.html", null ]
-        ] ],
         [ "HwBitangentNode", "class_hw_bitangent_node.html", null ],
         [ "HwFrameNode", "class_hw_frame_node.html", null ],
         [ "HwGeomColorNode", "class_hw_geom_color_node.html", null ],
@@ -181,7 +171,12 @@ var hierarchy =
         [ "HwNormalNode", "class_hw_normal_node.html", null ],
         [ "HwPositionNode", "class_hw_position_node.html", null ],
         [ "HwTangentNode", "class_hw_tangent_node.html", null ],
-        [ "HwViewDirectionNode", "class_hw_view_direction_node.html", null ]
+        [ "HwTimeNode", "class_hw_time_node.html", null ],
+        [ "HwViewDirectionNode", "class_hw_view_direction_node.html", null ],
+        [ "LightNodeGlsl", "class_light_node_glsl.html", null ],
+        [ "LightSamplerNodeGlsl", "class_light_sampler_node_glsl.html", null ],
+        [ "NumLightsNodeGlsl", "class_num_lights_node_glsl.html", null ],
+        [ "SurfaceNodeGlsl", "class_surface_node_glsl.html", null ]
       ] ],
       [ "HwTexCoordNode", "class_hw_tex_coord_node.html", null ],
       [ "HwTransformNode", "class_hw_transform_node.html", [
@@ -193,7 +188,6 @@ var hierarchy =
       [ "MaterialNode", "class_material_node.html", null ],
       [ "NopNode", "class_nop_node.html", null ],
       [ "SourceCodeNode", "class_source_code_node.html", [
-        [ "ClosureSourceCodeNode", "class_closure_source_code_node.html", null ],
         [ "HwImageNode", "class_hw_image_node.html", null ],
         [ "LightShaderNodeGlsl", "class_light_shader_node_glsl.html", null ]
       ] ]
@@ -217,7 +211,9 @@ var hierarchy =
     [ "Syntax", "class_syntax.html", [
       [ "GlslSyntax", "class_glsl_syntax.html", [
         [ "EsslSyntax", "class_essl_syntax.html", null ],
-        [ "VkSyntax", "class_vk_syntax.html", null ]
+        [ "VkSyntax", "class_vk_syntax.html", [
+          [ "WgslSyntax", "class_wgsl_syntax.html", null ]
+        ] ]
       ] ],
       [ "MdlSyntax", "class_mdl_syntax.html", null ],
       [ "OslSyntax", "class_osl_syntax.html", null ]
@@ -230,7 +226,8 @@ var hierarchy =
         [ "StringTypeSyntax", "class_string_type_syntax.html", null ]
       ] ],
       [ "StructTypeSyntax", "class_struct_type_syntax.html", [
-        [ "GlslStructTypeSyntax", "class_glsl_struct_type_syntax.html", null ]
+        [ "GlslStructTypeSyntax", "class_glsl_struct_type_syntax.html", null ],
+        [ "MdlStructTypeSyntax", "class_mdl_struct_type_syntax.html", null ]
       ] ]
     ] ],
     [ "TypeSystem", "class_type_system.html", null ],

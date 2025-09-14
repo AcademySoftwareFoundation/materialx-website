@@ -25,6 +25,5 @@ var searchData=
   ['oslsyntax_2eh_22',['OslSyntax.h',['../_osl_syntax_8h.html',1,'']]],
   ['output_23',['Output',['../class_output.html',1,'']]],
   ['outputptr_24',['OutputPtr',['../_interface_8h.html#ad35826a76ff731a8f5cfe84117183808',1,'Interface.h']]],
-  ['outputsamplearray_25',['outputSampleArray',['../class_blur_node.html#ac5a970586823edfbf2ad9575cd706788',1,'BlurNode']]],
-  ['overview_26',['MaterialX Overview',['../index.html',1,'']]]
+  ['overview_25',['MaterialX Overview',['../index.html',1,'']]]
 ];

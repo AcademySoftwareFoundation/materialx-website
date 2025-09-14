@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.3</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
    </div>
   </td>
  </tr>
@@ -124,9 +124,6 @@ Inheritance diagram for LightShaderNodeGlsl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b6a1a7ea1d88588b6f49a1005f1c2ab" id="r_a0b6a1a7ea1d88588b6f49a1005f1c2ab"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b6a1a7ea1d88588b6f49a1005f1c2ab">getTarget</a> () const override</td></tr>
-<tr class="memdesc:a0b6a1a7ea1d88588b6f49a1005f1c2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an identifier for the target used by this implementation.  <br /></td></tr>
-<tr class="separator:a0b6a1a7ea1d88588b6f49a1005f1c2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adea738d22eec50422d7393f1831bad59" id="r_adea738d22eec50422d7393f1831bad59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adea738d22eec50422d7393f1831bad59">initialize</a> (const <a class="el" href="class_interface_element.html">InterfaceElement</a> &amp;element, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) override</td></tr>
 <tr class="memdesc:adea738d22eec50422d7393f1831bad59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize with the given implementation element.  <br /></td></tr>
 <tr class="separator:adea738d22eec50422d7393f1831bad59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +191,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a3fb22f28f9df72fddd6695f5b03ae56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_source_code_node"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_source_code_node')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_source_code_node.html">SourceCodeNode</a></td></tr>
 <tr class="memitem:a47e73f5c04b521a246e6187cfba9798d inherit pro_attribs_class_source_code_node" id="r_a47e73f5c04b521a246e6187cfba9798d"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_inlined</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_inlined</b> = false</td></tr>
 <tr class="separator:a47e73f5c04b521a246e6187cfba9798d inherit pro_attribs_class_source_code_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a266a7032891dcb9a457d36a6c236ee90 inherit pro_attribs_class_source_code_node" id="r_a266a7032891dcb9a457d36a6c236ee90"><td class="memItemLeft" align="right" valign="top">
 string&#160;</td><td class="memItemRight" valign="bottom"><b>_functionName</b></td></tr>
@@ -225,6 +222,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveSource
 &#160;</td><td class="memItemRight" valign="bottom"><b>ShaderNodeImpl</b> ()</td></tr>
 <tr class="memdesc:a916ce529f011ff8212734c96556f719c inherit pro_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br /></td></tr>
 <tr class="separator:a916ce529f011ff8212734c96556f719c inherit pro_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe412618d9e4414f01e44be0e8c39a3 inherit pro_methods_class_shader_node_impl" id="r_acbe412618d9e4414f01e44be0e8c39a3"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>nodeOutputIsClosure</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node) const</td></tr>
+<tr class="memdesc:acbe412618d9e4414f01e44be0e8c39a3 inherit pro_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the first output of the node is a closure This is used by <a class="el" href="class_source_code_node.html" title="Implementation for a node using data-driven static source code.">SourceCodeNode</a> and <a class="el" href="class_compound_node.html" title="Compound node implementation.">CompoundNode</a> to generate the appropriate shader code. <br /></td></tr>
+<tr class="separator:acbe412618d9e4414f01e44be0e8c39a3 inherit pro_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LightShader node implementation for GLSL Used for all light shaders implemented in source code. </p>
@@ -303,36 +304,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resolveSource
 <p>Emit the function call or inline source code for given node instance in the given context. </p>
 
 <p>Reimplemented from <a class="el" href="class_shader_node_impl.html#ae966858614aba55af1606b114a965524">ShaderNodeImpl</a>.</p>
-
-</div>
-</div>
-<a id="a0b6a1a7ea1d88588b6f49a1005f1c2ab" name="a0b6a1a7ea1d88588b6f49a1005f1c2ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6a1a7ea1d88588b6f49a1005f1c2ab">&#9670;&#160;</a></span>getTarget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const string &amp; getTarget </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return an identifier for the target used by this implementation. </p>
-<p>By default an empty string is returned, representing all targets. Only override this method if your derived node implementation class is for a specific target. </p>
-
-<p>Reimplemented from <a class="el" href="class_shader_node_impl.html#a692cb100c22c74ebc3dc7feb2ba4f145">ShaderNodeImpl</a>.</p>
 
 </div>
 </div>

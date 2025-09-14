@@ -9,5 +9,8 @@ var dir_5fc0aaf08badac7f0cca7cc1f3851aa0 =
     [ "GlslSyntax.h", "_glsl_syntax_8h.html", "_glsl_syntax_8h" ],
     [ "VkResourceBindingContext.h", "_vk_resource_binding_context_8h.html", "_vk_resource_binding_context_8h" ],
     [ "VkShaderGenerator.h", "_vk_shader_generator_8h.html", "_vk_shader_generator_8h" ],
-    [ "VkSyntax.h", "_vk_syntax_8h.html", "_vk_syntax_8h" ]
+    [ "VkSyntax.h", "_vk_syntax_8h.html", "_vk_syntax_8h" ],
+    [ "WgslResourceBindingContext.h", "_wgsl_resource_binding_context_8h.html", "_wgsl_resource_binding_context_8h" ],
+    [ "WgslShaderGenerator.h", "_wgsl_shader_generator_8h.html", "_wgsl_shader_generator_8h" ],
+    [ "WgslSyntax.h", "_wgsl_syntax_8h.html", "_wgsl_syntax_8h" ]
 ];

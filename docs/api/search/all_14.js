@@ -38,13 +38,12 @@ var searchData=
   ['unittypedef_35',['UnitTypeDef',['../class_unit_type_def.html',1,'']]],
   ['unittypedefptr_36',['UnitTypeDefPtr',['../_definition_8h.html#afd46bbf39caea5fd2467d5df57fb3773',1,'Definition.h']]],
   ['unlit_37',['UNLIT',['../class_shader_node_1_1_classification.html#af9e4ee6813b7723a8848b521ad6d1d9a',1,'ShaderNode::Classification']]],
-  ['unlitsurfacenodeglsl_38',['UnlitSurfaceNodeGlsl',['../class_unlit_surface_node_glsl.html',1,'']]],
-  ['unprojectfromviewport_39',['unprojectFromViewport',['../class_camera.html#a5925337920169369c3446f1381dbe9ef',1,'Camera']]],
-  ['unregisterclass_40',['unregisterClass',['../class_factory.html#a38f809d4ab99f6000b7ab74e8fb89104',1,'Factory']]],
-  ['unsignedintpair_41',['UnsignedIntPair',['../_image_8h.html#a53966b24b40a4480c04398575854a0c1',1,'Image.h']]],
-  ['updateuniform_42',['updateUniform',['../class_shader_renderer.html#adbed4ccfec2cc43f99cd2b575a64bc1b',1,'ShaderRenderer::updateUniform()'],['../class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d',1,'GlslRenderer::updateUniform()']]],
-  ['upgradeversion_43',['upgradeVersion',['../class_xml_read_options.html#afcd3591653bd55e332c485d1e93b3883',1,'XmlReadOptions::upgradeVersion'],['../class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc',1,'Document::upgradeVersion()']]],
-  ['user_5fdata_5flight_5fshaders_44',['USER_DATA_LIGHT_SHADERS',['../namespace_h_w.html#afb4a3c7a32307ce5e6d74c51fa3059a7',1,'HW']]],
-  ['usetestrender_45',['useTestRender',['../class_osl_renderer.html#adbbb4fb74630a04aa1690a467bcf840b',1,'OslRenderer']]],
-  ['util_2eh_46',['Util.h',['../_material_x_core_2_util_8h.html',1,'(Global Namespace)'],['../_material_x_format_2_util_8h.html',1,'(Global Namespace)'],['../_material_x_gen_shader_2_util_8h.html',1,'(Global Namespace)'],['../_material_x_render_2_util_8h.html',1,'(Global Namespace)']]]
+  ['unprojectfromviewport_38',['unprojectFromViewport',['../class_camera.html#a5925337920169369c3446f1381dbe9ef',1,'Camera']]],
+  ['unregisterclass_39',['unregisterClass',['../class_factory.html#a38f809d4ab99f6000b7ab74e8fb89104',1,'Factory']]],
+  ['unsignedintpair_40',['UnsignedIntPair',['../_image_8h.html#a53966b24b40a4480c04398575854a0c1',1,'Image.h']]],
+  ['updateuniform_41',['updateUniform',['../class_shader_renderer.html#adbed4ccfec2cc43f99cd2b575a64bc1b',1,'ShaderRenderer::updateUniform()'],['../class_glsl_renderer.html#a0a13b88d4c78f11a2e381a544a6ef72d',1,'GlslRenderer::updateUniform()']]],
+  ['upgradeversion_42',['upgradeVersion',['../class_xml_read_options.html#afcd3591653bd55e332c485d1e93b3883',1,'XmlReadOptions::upgradeVersion'],['../class_document.html#a9ee56af38f79eac7707fd6b9bf2f2fcc',1,'Document::upgradeVersion()']]],
+  ['user_5fdata_5flight_5fshaders_43',['USER_DATA_LIGHT_SHADERS',['../namespace_h_w.html#afb4a3c7a32307ce5e6d74c51fa3059a7',1,'HW']]],
+  ['usetestrender_44',['useTestRender',['../class_osl_renderer.html#adbbb4fb74630a04aa1690a467bcf840b',1,'OslRenderer']]],
+  ['util_2eh_45',['Util.h',['../_material_x_core_2_util_8h.html',1,'(Global Namespace)'],['../_material_x_format_2_util_8h.html',1,'(Global Namespace)'],['../_material_x_gen_shader_2_util_8h.html',1,'(Global Namespace)'],['../_material_x_render_2_util_8h.html',1,'(Global Namespace)']]]
 ];

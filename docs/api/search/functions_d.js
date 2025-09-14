@@ -17,6 +17,5 @@ var searchData=
   ['optimize_14',['optimize',['../class_shader_graph.html#aa5f96dceae0a01376ab1001f038abf9f',1,'ShaderGraph']]],
   ['optimizebakedtextures_15',['optimizeBakedTextures',['../class_texture_baker.html#a9cffc39ecf05179f30d0dd10193365eb',1,'TextureBaker']]],
   ['oslrenderer_16',['OslRenderer',['../class_osl_renderer.html#a5d35c2de5671d05c3a87211f63fc129c',1,'OslRenderer']]],
-  ['oslshadergenerator_17',['OslShaderGenerator',['../class_osl_shader_generator.html#a5e4c36c2f6d827eb9adfcaf3ad4b6dd3',1,'OslShaderGenerator']]],
-  ['outputsamplearray_18',['outputSampleArray',['../class_blur_node.html#ac5a970586823edfbf2ad9575cd706788',1,'BlurNode']]]
+  ['oslshadergenerator_17',['OslShaderGenerator',['../class_osl_shader_generator.html#a5e4c36c2f6d827eb9adfcaf3ad4b6dd3',1,'OslShaderGenerator']]]
 ];

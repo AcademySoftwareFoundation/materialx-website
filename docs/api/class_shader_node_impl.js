@@ -10,9 +10,9 @@ var class_shader_node_impl =
     [ "getGraph", "class_shader_node_impl.html#aeebf45caa754c4b3958391ffb757831a", null ],
     [ "getHash", "class_shader_node_impl.html#a9d1812e6d521ee14f24fd693c16b7996", null ],
     [ "getName", "class_shader_node_impl.html#a43f65f5d191c125b0b52028fdbf0f364", null ],
-    [ "getTarget", "class_shader_node_impl.html#a692cb100c22c74ebc3dc7feb2ba4f145", null ],
     [ "initialize", "class_shader_node_impl.html#a0864bb357c78d5699c91840a007cf536", null ],
     [ "isEditable", "class_shader_node_impl.html#a43504fb4aff696d0f5722d8742b17e74", null ],
     [ "isEditable", "class_shader_node_impl.html#a25185f82bde9fc2ddaf2310806d18b19", null ],
+    [ "nodeOutputIsClosure", "class_shader_node_impl.html#acbe412618d9e4414f01e44be0e8c39a3", null ],
     [ "setValues", "class_shader_node_impl.html#a66161aff8f113d36bc16351762adcfba", null ]
 ];
