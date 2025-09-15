@@ -301,7 +301,6 @@ h1.title {
     clear: both;
     margin-left: 60px;
     margin-right: 60px;
-    /*float:right;*/
 }
 
 /* assume the first paragraph is a title */
@@ -478,16 +477,6 @@ aside.navigation a:hover {
 
 div.document,
 main.document {
-/*
-    background: rgb(240,240,240);
-    margin-left: 255px;
-    margin-top: 5px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-*/
-    
     border-top-left-radius: 15px;
     -moz-border-top-left-radius: 15px;
     -webkit-border-top-left-radius: 15px;
@@ -512,7 +501,6 @@ main.document a:hover {
 }
 
 div.footer {
-    /* background: #FFF;*/
     margin-left: 255px;
     padding-top: 15px;
     padding-left: 5px;
@@ -1107,19 +1095,13 @@ a.readMore:active {
 }
 .blueButton:hover {
         color: #ccc!important;
-        background: #f8c600;
-        background: -webkit-gradient(linear, left top, left bottom, from(#275d8e), to(#003d72));
-        background: -moz-linear-gradient(bottom, #003d72, #275d8e);
+        background: linear-gradient(to bottom, #275d8e, #003d72);
         cursor:pointer;
 }
 .blueButton:active {
         color:#fff!important;
-        background: #000;
-        background: -webkit-gradient(linear, left top, left bottom, from(#002345), to(#204D79));
-        background: -moz-linear-gradient(bottom, #204D79, #002345);
+        background: linear-gradient(to bottom, #002345, #204D79);
         box-shadow: 0px 1px 0px #444;
-        -webkit-box-shadow: 0px 1px 0px #444;
-        -moz-box-shadow: 0px 1px 0px #444;
 }
 
 
@@ -1211,19 +1193,13 @@ hr {
         text-align: center;
 }
 .blueButton:hover {
-        background: #f8c600; /* for non-css3 browsers */
-        background: -webkit-gradient(linear, left top, left bottom, from(#275d8e), to(#003d72)); /* for webkit browsers */
-        background: -moz-linear-gradient(bottom, #003d72, #275d8e); /* for firefox 3.6+ */
+        background: linear-gradient(to bottom, #275d8e, #003d72);
         cursor:pointer;
 }
 .blueButton:active {
         color:#fff;
-        background: #000; /* for non-css3 browsers */
-        background: -webkit-gradient(linear, left top, left bottom, from(#002345), to(#204D79)); /* for webkit browsers */
-        background: -moz-linear-gradient(bottom, #204D79, #002345); /* for firefox 3.6+ */
+        background: linear-gradient(to bottom, #002345, #204D79);
         box-shadow: 0px 1px 0px #444;
-        -webkit-box-shadow: 0px 1px 0px #444;
-        -moz-box-shadow: 0px 1px 0px #444;
 }
 .margin0 {
         margin:0;
@@ -1543,16 +1519,3 @@ footer.copyrightFooter {
 table.warningMacro, table.noteMacro {
   margin: var(--space-lg) 0 var(--space-lg) 0;
 }
-
-/* ==========================================================================
-   Modernized CSS Architecture Summary
-   ========================================================================== */
-/*
- * CSS has been modernized with:
- * - CSS Custom Properties for consistent theming and spacing
- * - Removed vendor prefixes for widely supported properties
- * - Modern flexbox/grid layouts where appropriate
- * - Consolidated utility classes using design tokens
- * - Modular component organization
- * - Maintained exact visual compatibility with original design
- */
