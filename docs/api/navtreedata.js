@@ -26,13 +26,6 @@ var NAVTREE =
 [
   [ "MaterialX", "index.html", [
     [ "MaterialX Overview", "index.html", "index" ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ]
-      ] ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -63,15 +56,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_camera_8h_source.html",
-"_material_x_format_2_util_8h.html#a3b454a1ca1307ea78d9437d4727200a9",
-"class_attribute_def.html#a26044f63e9069e534f23b1dde870221a",
-"class_element.html#af1b558186ea36750578984f122e534f8",
+"_material_x_gen_shader_2_library_8h.html#a24d99fbff33787002e795e242ad06d87",
+"class_attribute_def.html#aa122e1edc849d62daa3fe31501b3cef8",
+"class_element.html#af69c34f7be572f3008369d4bcbe7d1a5",
 "class_glsl_program.html#ac17047c72a071d5e80e7f75b9f6d7e16",
-"class_interface_element.html#a3d5931d641fbaf7d636fb7d2664e23b6",
-"class_mesh_stream.html#a9be1e4285daa77fe397767c097fbdc66",
-"class_shader_graph.html#ac6feaf9e24fd98d54c58fef13f9c6578",
-"class_syntax.html#a547ce4526faecedb1749ef6b41b4d99d",
-"class_vector_n.html"
+"class_linear_unit_converter.html",
+"class_osl_renderer.html#aba913385d66eda518ddb1ebee75e8c8f",
+"class_shader_metadata_registry.html#a870d428b2684daec3b889f4ccc71836e",
+"class_target_def.html#a648a2dcb41bfb13412a5a1861b8d888b",
+"class_visibility.html#a01697524be9df335f3a02f2e76404252"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -117,8 +117,7 @@ Inheritance diagram for CompoundNode:</div>
  <div class="center">
   <img src="class_compound_node.png" usemap="#CompoundNode_map" alt=""/>
   <map id="CompoundNode_map" name="CompoundNode_map">
-<area href="class_shader_node_impl.html" title="Class handling the shader generation implementation for a node." alt="ShaderNodeImpl" shape="rect" coords="0,0,150,24"/>
-<area href="class_light_compound_node_glsl.html" title="LightCompound node implementation for GLSL." alt="LightCompoundNodeGlsl" shape="rect" coords="0,112,150,136"/>
+<area href="class_shader_node_impl.html" title="Class handling the shader generation implementation for a node." alt="ShaderNodeImpl" shape="rect" coords="0,0,105,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -150,11 +149,13 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName
 <tr class="memitem:a9d1812e6d521ee14f24fd693c16b7996 inherit pub_methods_class_shader_node_impl" id="r_a9d1812e6d521ee14f24fd693c16b7996"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a9d1812e6d521ee14f24fd693c16b7996">getHash</a> () const</td></tr>
 <tr class="memdesc:a9d1812e6d521ee14f24fd693c16b7996 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a hash for this implementation.  <br /></td></tr>
 <tr class="separator:a9d1812e6d521ee14f24fd693c16b7996 inherit pub_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl" id="r_a338258c7c602821739ccafe66163e110"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a338258c7c602821739ccafe66163e110">addInputs</a> (<a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
-<tr class="memdesc:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional inputs on a node.  <br /></td></tr>
+<tr class="memitem:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl" id="r_a338258c7c602821739ccafe66163e110"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addInputs</b> (<a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
+<tr class="memdesc:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional inputs on a node. <br /></td></tr>
 <tr class="separator:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl" id="r_a66161aff8f113d36bc16351762adcfba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a66161aff8f113d36bc16351762adcfba">setValues</a> (const <a class="el" href="class_node.html">Node</a> &amp;node, <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;shaderNode, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
-<tr class="memdesc:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set values for additional inputs on a node.  <br /></td></tr>
+<tr class="memitem:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl" id="r_a66161aff8f113d36bc16351762adcfba"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setValues</b> (const <a class="el" href="class_node.html">Node</a> &amp;node, <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;shaderNode, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
+<tr class="memdesc:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set values for additional inputs on a node. <br /></td></tr>
 <tr class="separator:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a5c9d92b87aedb36acb4fab3395f89d inherit pub_methods_class_shader_node_impl" id="r_a4a5c9d92b87aedb36acb4fab3395f89d"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitOutputVariables</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
@@ -270,8 +271,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>nodeOutputIsClosure</
 
 <p>Reimplemented from <a class="el" href="class_shader_node_impl.html#a37a4e8653421b8f10319633ceede79e2">ShaderNodeImpl</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_light_compound_node_glsl.html#af93a3ea1c4698f59a21d128471317f62">LightCompoundNodeGlsl</a>.</p>
-
 </div>
 </div>
 <a id="ac4f1d2a8bd6f81b7d7b2b58a3c7efa79" name="ac4f1d2a8bd6f81b7d7b2b58a3c7efa79"></a>
@@ -310,8 +309,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>nodeOutputIsClosure</
 
 <p>Reimplemented from <a class="el" href="class_shader_node_impl.html#ae966858614aba55af1606b114a965524">ShaderNodeImpl</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_light_compound_node_glsl.html#ac4f1d2a8bd6f81b7d7b2b58a3c7efa79">LightCompoundNodeGlsl</a>.</p>
-
 </div>
 </div>
 <a id="ab8f2bd24a3e8a82fddb3d83fc0d5d55e" name="ab8f2bd24a3e8a82fddb3d83fc0d5d55e"></a>
@@ -349,8 +346,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>nodeOutputIsClosure</
 <p>Emit function definition for the given node instance. </p>
 
 <p>Reimplemented from <a class="el" href="class_shader_node_impl.html#ab9c388fe6e65886a24bf22577a8f7066">ShaderNodeImpl</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_light_compound_node_glsl.html#ab8f2bd24a3e8a82fddb3d83fc0d5d55e">LightCompoundNodeGlsl</a>.</p>
 
 </div>
 </div>
@@ -414,8 +409,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>nodeOutputIsClosure</
 <p>Initialization must set the name and hash for the implementation, as well as any other data needed to emit code for the node. </p>
 
 <p>Reimplemented from <a class="el" href="class_shader_node_impl.html#a0864bb357c78d5699c91840a007cf536">ShaderNodeImpl</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_light_compound_node_glsl.html#adea738d22eec50422d7393f1831bad59">LightCompoundNodeGlsl</a>.</p>
 
 </div>
 </div>

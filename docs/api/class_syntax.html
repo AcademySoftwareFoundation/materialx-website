@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -120,12 +120,14 @@ Inheritance diagram for Syntax:</div>
  <div class="center">
   <img src="class_syntax.png" usemap="#Syntax_map" alt=""/>
   <map id="Syntax_map" name="Syntax_map">
-<area href="class_glsl_syntax.html" title="Syntax class for GLSL (OpenGL Shading Language)" alt="GlslSyntax" shape="rect" coords="43,56,120,80"/>
-<area href="class_mdl_syntax.html" title="Syntax class for MDL (Material Definition Language)" alt="MdlSyntax" shape="rect" coords="130,56,207,80"/>
-<area href="class_osl_syntax.html" title="Syntax class for OSL (Open Shading Language)" alt="OslSyntax" shape="rect" coords="217,56,294,80"/>
-<area href="class_essl_syntax.html" title="Syntax class for ESSL (OpenGL ES Shading Language)" alt="EsslSyntax" shape="rect" coords="0,112,77,136"/>
-<area href="class_vk_syntax.html" title="Syntax class for Vulkan GLSL." alt="VkSyntax" shape="rect" coords="87,112,164,136"/>
-<area href="class_wgsl_syntax.html" title="Syntax class for Wgsl GLSL." alt="WgslSyntax" shape="rect" coords="87,168,164,192"/>
+<area href="class_glsl_syntax.html" title="Syntax class for GLSL (OpenGL Shading Language)" alt="GlslSyntax" shape="rect" coords="62,56,177,80"/>
+<area href="class_mdl_syntax.html" title="Syntax class for MDL (Material Definition Language)" alt="MdlSyntax" shape="rect" coords="187,56,302,80"/>
+<area href="class_osl_network_syntax.html" title="Syntax class for OSL (Open Shading Language) Network command strings." alt="OslNetworkSyntax" shape="rect" coords="312,56,427,80"/>
+<area href="class_osl_syntax.html" title="Syntax class for OSL (Open Shading Language)" alt="OslSyntax" shape="rect" coords="437,56,552,80"/>
+<area href="class_slang_syntax.html" title="Syntax class for Slang Shading Language." alt="SlangSyntax" shape="rect" coords="562,56,677,80"/>
+<area href="class_essl_syntax.html" title="Syntax class for ESSL (OpenGL ES Shading Language)" alt="EsslSyntax" shape="rect" coords="0,112,115,136"/>
+<area href="class_vk_syntax.html" title="Syntax class for Vulkan GLSL." alt="VkSyntax" shape="rect" coords="125,112,240,136"/>
+<area href="class_wgsl_syntax.html" title="Syntax class for Wgsl GLSL." alt="WgslSyntax" shape="rect" coords="125,168,240,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -454,7 +456,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <p>Get the qualifier used when declaring constant variables. </p>
 <p>Derived classes must define this method. </p>
 
-<p>Implemented in <a class="el" href="class_glsl_syntax.html#a423a82a664945d1837e77a4a36d964ee">GlslSyntax</a>, <a class="el" href="class_mdl_syntax.html#a423a82a664945d1837e77a4a36d964ee">MdlSyntax</a>, and <a class="el" href="class_osl_syntax.html#a423a82a664945d1837e77a4a36d964ee">OslSyntax</a>.</p>
+<p>Implemented in <a class="el" href="class_glsl_syntax.html#a423a82a664945d1837e77a4a36d964ee">GlslSyntax</a>, <a class="el" href="class_mdl_syntax.html#a423a82a664945d1837e77a4a36d964ee">MdlSyntax</a>, <a class="el" href="class_osl_network_syntax.html#a423a82a664945d1837e77a4a36d964ee">OslNetworkSyntax</a>, <a class="el" href="class_osl_syntax.html#a423a82a664945d1837e77a4a36d964ee">OslSyntax</a>, and <a class="el" href="class_slang_syntax.html#a423a82a664945d1837e77a4a36d964ee">SlangSyntax</a>.</p>
 
 </div>
 </div>
@@ -484,7 +486,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <p>Returns a type qualifier to be used when declaring types for input variables. </p>
 <p>Default implementation returns empty string and derived syntax classes should override this method. </p>
 
-<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a2c645c55f09be5ed8deca223137f7e76">GlslSyntax</a>, and <a class="el" href="class_vk_syntax.html#a2c645c55f09be5ed8deca223137f7e76">VkSyntax</a>.</p>
+<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a2c645c55f09be5ed8deca223137f7e76">GlslSyntax</a>, <a class="el" href="class_slang_syntax.html#a2c645c55f09be5ed8deca223137f7e76">SlangSyntax</a>, and <a class="el" href="class_vk_syntax.html#a2c645c55f09be5ed8deca223137f7e76">VkSyntax</a>.</p>
 
 </div>
 </div>
@@ -514,7 +516,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <p>Returns a type qualifier to be used when declaring types for output variables. </p>
 <p>Default implementation returns empty string and derived syntax classes should override this method. </p>
 
-<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">GlslSyntax</a>, and <a class="el" href="class_osl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">OslSyntax</a>.</p>
+<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">GlslSyntax</a>, <a class="el" href="class_osl_network_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">OslNetworkSyntax</a>, <a class="el" href="class_osl_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">OslSyntax</a>, and <a class="el" href="class_slang_syntax.html#a8452f0d95a0fb73b3f3696548dfc2750">SlangSyntax</a>.</p>
 
 </div>
 </div>
@@ -543,7 +545,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 
 <p>Return the file extension used for source code files in this language. </p>
 
-<p>Implemented in <a class="el" href="class_glsl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">GlslSyntax</a>, <a class="el" href="class_mdl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">MdlSyntax</a>, and <a class="el" href="class_osl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">OslSyntax</a>.</p>
+<p>Implemented in <a class="el" href="class_glsl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">GlslSyntax</a>, <a class="el" href="class_mdl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">MdlSyntax</a>, <a class="el" href="class_osl_network_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">OslNetworkSyntax</a>, <a class="el" href="class_osl_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">OslSyntax</a>, and <a class="el" href="class_slang_syntax.html#a99f1d24f06070e010ff0a9310f52a9cc">SlangSyntax</a>.</p>
 
 </div>
 </div>
@@ -633,7 +635,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <p>Get the qualifier used when declaring uniform variables. </p>
 <p>Default implementation returns empty string and derived syntax classes should override this method. </p>
 
-<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a9742417a857875199c83a0eda66a29ff">GlslSyntax</a>, and <a class="el" href="class_mdl_syntax.html#a9742417a857875199c83a0eda66a29ff">MdlSyntax</a>.</p>
+<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a9742417a857875199c83a0eda66a29ff">GlslSyntax</a>, <a class="el" href="class_mdl_syntax.html#a9742417a857875199c83a0eda66a29ff">MdlSyntax</a>, and <a class="el" href="class_slang_syntax.html#a9742417a857875199c83a0eda66a29ff">SlangSyntax</a>.</p>
 
 </div>
 </div>
@@ -699,7 +701,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 
 <p>Modify the given name string to remove any invalid characters or tokens. </p>
 
-<p>Reimplemented in <a class="el" href="class_mdl_syntax.html#ac66ee79aebdf2070982505afeeb18464">MdlSyntax</a>.</p>
+<p>Reimplemented in <a class="el" href="class_mdl_syntax.html#ac66ee79aebdf2070982505afeeb18464">MdlSyntax</a>, and <a class="el" href="class_slang_syntax.html#ac66ee79aebdf2070982505afeeb18464">SlangSyntax</a>.</p>
 
 </div>
 </div>
@@ -816,7 +818,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return true if the remapping was successful. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">GlslSyntax</a>, and <a class="el" href="class_mdl_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">MdlSyntax</a>.</p>
+<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">GlslSyntax</a>, <a class="el" href="class_mdl_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">MdlSyntax</a>, and <a class="el" href="class_slang_syntax.html#a1f5c302617c9a17ff061bf7e5a873471">SlangSyntax</a>.</p>
 
 </div>
 </div>
@@ -846,7 +848,7 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <p>Query if given type is supported in the syntax. </p>
 <p>By default all types are assumed to be supported. </p>
 
-<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#ae346b608de8dd894559bd21fb30f44e1">GlslSyntax</a>.</p>
+<p>Reimplemented in <a class="el" href="class_glsl_syntax.html#ae346b608de8dd894559bd21fb30f44e1">GlslSyntax</a>, and <a class="el" href="class_slang_syntax.html#ae346b608de8dd894559bd21fb30f44e1">SlangSyntax</a>.</p>
 
 </div>
 </div>

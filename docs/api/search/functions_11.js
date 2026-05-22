@@ -18,6 +18,6 @@ var searchData=
   ['trimspaces_15',['trimSpaces',['../_material_x_core_2_util_8h.html#a7121e1097a34dd7ec32cc3e7e3b690a8',1,'Util.h']]],
   ['typedesc_16',['TypeDesc',['../class_type_desc.html#a1c89e82e022b88bf590827ba6b384b47',1,'TypeDesc::TypeDesc() noexcept'],['../class_type_desc.html#a150d45238c0015768884eb7d00a4e351',1,'TypeDesc::TypeDesc(std::string_view name, uint8_t basetype, uint8_t semantic, uint16_t size, const DataBlock *data) noexcept']]],
   ['typeid_17',['typeId',['../class_type_desc.html#af1cb155eee721f4c2e65cbfcea458615',1,'TypeDesc']]],
-  ['typesupported_18',['typeSupported',['../class_syntax.html#a52fef4d311323911570ae854f45ee28b',1,'Syntax::typeSupported()'],['../class_glsl_syntax.html#ae346b608de8dd894559bd21fb30f44e1',1,'GlslSyntax::typeSupported()']]],
+  ['typesupported_18',['typeSupported',['../class_syntax.html#a52fef4d311323911570ae854f45ee28b',1,'Syntax::typeSupported()'],['../class_glsl_syntax.html#ae346b608de8dd894559bd21fb30f44e1',1,'GlslSyntax::typeSupported()'],['../class_slang_syntax.html#ae346b608de8dd894559bd21fb30f44e1',1,'SlangSyntax::typeSupported()']]],
   ['typesyntax_19',['TypeSyntax',['../class_type_syntax.html#a3799b39e9c722f828f8ca7e4cacdb3fd',1,'TypeSyntax']]]
 ];

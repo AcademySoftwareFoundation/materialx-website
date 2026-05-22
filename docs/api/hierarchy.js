@@ -62,13 +62,6 @@ var hierarchy =
       ] ],
       [ "GenUserData", "class_gen_user_data.html", [
         [ "GenMdlOptions", "class_gen_mdl_options.html", null ],
-        [ "HwLightShaders", "class_hw_light_shaders.html", null ],
-        [ "HwResourceBindingContext", "class_hw_resource_binding_context.html", [
-          [ "GlslResourceBindingContext", "class_glsl_resource_binding_context.html", null ],
-          [ "VkResourceBindingContext", "class_vk_resource_binding_context.html", [
-            [ "WgslResourceBindingContext", "class_wgsl_resource_binding_context.html", null ]
-          ] ]
-        ] ],
         [ "ShaderMetadataRegistry", "class_shader_metadata_registry.html", null ]
       ] ],
       [ "ShaderPort", "class_shader_port.html", [
@@ -105,6 +98,21 @@ var hierarchy =
     [ "Half", "class_half.html", null ],
     [ "Hash", "class_vector_n_1_1_hash.html", null ],
     [ "Hasher", "struct_type_desc_1_1_hasher.html", null ],
+    [ "HwResourceBindingContext", null, [
+      [ "GlslResourceBindingContext", "class_glsl_resource_binding_context.html", null ],
+      [ "VkResourceBindingContext", "class_vk_resource_binding_context.html", [
+        [ "WgslResourceBindingContext", "class_wgsl_resource_binding_context.html", null ]
+      ] ]
+    ] ],
+    [ "HwShaderGenerator", null, [
+      [ "GlslShaderGenerator", "class_glsl_shader_generator.html", [
+        [ "EsslShaderGenerator", "class_essl_shader_generator.html", null ],
+        [ "VkShaderGenerator", "class_vk_shader_generator.html", [
+          [ "WgslShaderGenerator", "class_wgsl_shader_generator.html", null ]
+        ] ]
+      ] ],
+      [ "SlangShaderGenerator", "class_slang_shader_generator.html", null ]
+    ] ],
     [ "Image", "class_image.html", null ],
     [ "ImageHandler", "class_image_handler.html", [
       [ "GLTextureHandler", "class_g_l_texture_handler.html", null ]
@@ -138,19 +146,18 @@ var hierarchy =
     [ "ScopedTimer", "class_scoped_timer.html", null ],
     [ "Shader", "class_shader.html", null ],
     [ "ShaderGenerator", "class_shader_generator.html", [
-      [ "HwShaderGenerator", "class_hw_shader_generator.html", [
-        [ "GlslShaderGenerator", "class_glsl_shader_generator.html", [
-          [ "EsslShaderGenerator", "class_essl_shader_generator.html", null ],
-          [ "VkShaderGenerator", "class_vk_shader_generator.html", [
-            [ "WgslShaderGenerator", "class_wgsl_shader_generator.html", null ]
-          ] ]
-        ] ]
-      ] ],
       [ "MdlShaderGenerator", "class_mdl_shader_generator.html", null ],
-      [ "OslShaderGenerator", "class_osl_shader_generator.html", null ]
+      [ "OslShaderGenerator", "class_osl_shader_generator.html", [
+        [ "OslNetworkShaderGenerator", "class_osl_network_shader_generator.html", null ]
+      ] ]
     ] ],
     [ "ShaderGraphEdge", "class_shader_graph_edge.html", null ],
     [ "ShaderGraphEdgeIterator", "class_shader_graph_edge_iterator.html", null ],
+    [ "ShaderGraphRefactor", "class_shader_graph_refactor.html", [
+      [ "DistributeLayerOverMixRefactor", "class_distribute_layer_over_mix_refactor.html", null ],
+      [ "NodeElisionRefactor", "class_node_elision_refactor.html", null ],
+      [ "PremultipliedBsdfAddRefactor", "class_premultiplied_bsdf_add_refactor.html", null ]
+    ] ],
     [ "ShaderMaterial", "class_shader_material.html", [
       [ "GlslMaterial", "class_glsl_material.html", null ]
     ] ],
@@ -159,38 +166,10 @@ var hierarchy =
       [ "ShaderGraph", "class_shader_graph.html", null ]
     ] ],
     [ "ShaderNodeImpl", "class_shader_node_impl.html", [
-      [ "CompoundNode", "class_compound_node.html", [
-        [ "LightCompoundNodeGlsl", "class_light_compound_node_glsl.html", null ]
-      ] ],
-      [ "HwImplementation", "class_hw_implementation.html", [
-        [ "HwBitangentNode", "class_hw_bitangent_node.html", null ],
-        [ "HwFrameNode", "class_hw_frame_node.html", null ],
-        [ "HwGeomColorNode", "class_hw_geom_color_node.html", null ],
-        [ "HwGeomPropValueNode", "class_hw_geom_prop_value_node.html", null ],
-        [ "HwGeomPropValueNodeAsUniform", "class_hw_geom_prop_value_node_as_uniform.html", null ],
-        [ "HwNormalNode", "class_hw_normal_node.html", null ],
-        [ "HwPositionNode", "class_hw_position_node.html", null ],
-        [ "HwTangentNode", "class_hw_tangent_node.html", null ],
-        [ "HwTimeNode", "class_hw_time_node.html", null ],
-        [ "HwViewDirectionNode", "class_hw_view_direction_node.html", null ],
-        [ "LightNodeGlsl", "class_light_node_glsl.html", null ],
-        [ "LightSamplerNodeGlsl", "class_light_sampler_node_glsl.html", null ],
-        [ "NumLightsNodeGlsl", "class_num_lights_node_glsl.html", null ],
-        [ "SurfaceNodeGlsl", "class_surface_node_glsl.html", null ]
-      ] ],
-      [ "HwTexCoordNode", "class_hw_tex_coord_node.html", null ],
-      [ "HwTransformNode", "class_hw_transform_node.html", [
-        [ "HwTransformNormalNode", "class_hw_transform_normal_node.html", null ],
-        [ "HwTransformVectorNode", "class_hw_transform_vector_node.html", [
-          [ "HwTransformPointNode", "class_hw_transform_point_node.html", null ]
-        ] ]
-      ] ],
+      [ "CompoundNode", "class_compound_node.html", null ],
       [ "MaterialNode", "class_material_node.html", null ],
       [ "NopNode", "class_nop_node.html", null ],
-      [ "SourceCodeNode", "class_source_code_node.html", [
-        [ "HwImageNode", "class_hw_image_node.html", null ],
-        [ "LightShaderNodeGlsl", "class_light_shader_node_glsl.html", null ]
-      ] ]
+      [ "SourceCodeNode", "class_source_code_node.html", null ]
     ] ],
     [ "ShaderPortFlag", "class_shader_port_flag.html", null ],
     [ "ShaderRenderer", "class_shader_renderer.html", [
@@ -216,7 +195,9 @@ var hierarchy =
         ] ]
       ] ],
       [ "MdlSyntax", "class_mdl_syntax.html", null ],
-      [ "OslSyntax", "class_osl_syntax.html", null ]
+      [ "OslNetworkSyntax", "class_osl_network_syntax.html", null ],
+      [ "OslSyntax", "class_osl_syntax.html", null ],
+      [ "SlangSyntax", "class_slang_syntax.html", null ]
     ] ],
     [ "TreeIterator", "class_tree_iterator.html", null ],
     [ "TypeDesc", "class_type_desc.html", null ],
@@ -227,7 +208,8 @@ var hierarchy =
       ] ],
       [ "StructTypeSyntax", "class_struct_type_syntax.html", [
         [ "GlslStructTypeSyntax", "class_glsl_struct_type_syntax.html", null ],
-        [ "MdlStructTypeSyntax", "class_mdl_struct_type_syntax.html", null ]
+        [ "MdlStructTypeSyntax", "class_mdl_struct_type_syntax.html", null ],
+        [ "SlangStructTypeSyntax", "class_slang_struct_type_syntax.html", null ]
       ] ]
     ] ],
     [ "TypeSystem", "class_type_system.html", null ],

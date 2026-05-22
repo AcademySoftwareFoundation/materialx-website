@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -134,8 +134,8 @@ $(function(){initNavTree('_material_x_core_2_library_8h_source.html',''); initRe
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">        #pragma warning(disable : 4661)</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">        #define MATERIALX_SYMBOL_EXPORT __declspec(dllexport)</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">        #define MATERIALX_SYMBOL_IMPORT __declspec(dllimport)</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">        #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...) template class MATERIALX_SYMBOL_EXPORT __VA_ARGS__</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">        #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...) extern template class MATERIALX_SYMBOL_IMPORT __VA_ARGS__</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">        #define MATERIALX_EXPORT_EXTERN_TEMPLATE(...) template class __VA_ARGS__</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">        #define MATERIALX_IMPORT_EXTERN_TEMPLATE(...) extern template class __VA_ARGS__</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #else</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">        #define MATERIALX_SYMBOL_EXPORT __attribute__((__visibility__(&quot;default&quot;)))</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">        #define MATERIALX_SYMBOL_IMPORT __attribute__((__visibility__(&quot;default&quot;)))</span></div>

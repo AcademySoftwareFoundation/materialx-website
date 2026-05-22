@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -118,9 +118,7 @@ Inheritance diagram for SourceCodeNode:</div>
  <div class="center">
   <img src="class_source_code_node.png" usemap="#SourceCodeNode_map" alt=""/>
   <map id="SourceCodeNode_map" name="SourceCodeNode_map">
-<area href="class_shader_node_impl.html" title="Class handling the shader generation implementation for a node." alt="ShaderNodeImpl" shape="rect" coords="70,0,201,24"/>
-<area href="class_hw_image_node.html" title="Extending the SourceCodeNode with requirements for image nodes." alt="HwImageNode" shape="rect" coords="0,112,131,136"/>
-<area href="class_light_shader_node_glsl.html" title="LightShader node implementation for GLSL Used for all light shaders implemented in source code." alt="LightShaderNodeGlsl" shape="rect" coords="141,112,272,136"/>
+<area href="class_shader_node_impl.html" title="Class handling the shader generation implementation for a node." alt="ShaderNodeImpl" shape="rect" coords="0,0,113,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -143,11 +141,13 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName
 <tr class="memitem:a9d1812e6d521ee14f24fd693c16b7996 inherit pub_methods_class_shader_node_impl" id="r_a9d1812e6d521ee14f24fd693c16b7996"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a9d1812e6d521ee14f24fd693c16b7996">getHash</a> () const</td></tr>
 <tr class="memdesc:a9d1812e6d521ee14f24fd693c16b7996 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a hash for this implementation.  <br /></td></tr>
 <tr class="separator:a9d1812e6d521ee14f24fd693c16b7996 inherit pub_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl" id="r_a338258c7c602821739ccafe66163e110"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a338258c7c602821739ccafe66163e110">addInputs</a> (<a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
-<tr class="memdesc:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional inputs on a node.  <br /></td></tr>
+<tr class="memitem:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl" id="r_a338258c7c602821739ccafe66163e110"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addInputs</b> (<a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
+<tr class="memdesc:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional inputs on a node. <br /></td></tr>
 <tr class="separator:a338258c7c602821739ccafe66163e110 inherit pub_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl" id="r_a66161aff8f113d36bc16351762adcfba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#a66161aff8f113d36bc16351762adcfba">setValues</a> (const <a class="el" href="class_node.html">Node</a> &amp;node, <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;shaderNode, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
-<tr class="memdesc:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set values for additional inputs on a node.  <br /></td></tr>
+<tr class="memitem:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl" id="r_a66161aff8f113d36bc16351762adcfba"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setValues</b> (const <a class="el" href="class_node.html">Node</a> &amp;node, <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;shaderNode, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
+<tr class="memdesc:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set values for additional inputs on a node. <br /></td></tr>
 <tr class="separator:a66161aff8f113d36bc16351762adcfba inherit pub_methods_class_shader_node_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac911f3b1639d97953cd9948d23cf7d0 inherit pub_methods_class_shader_node_impl" id="r_aac911f3b1639d97953cd9948d23cf7d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_node_impl.html#aac911f3b1639d97953cd9948d23cf7d0">addClassification</a> (<a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node) const</td></tr>
 <tr class="memdesc:aac911f3b1639d97953cd9948d23cf7d0 inherit pub_methods_class_shader_node_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional classifications on a node.  <br /></td></tr>

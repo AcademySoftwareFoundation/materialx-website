@@ -13,12 +13,14 @@ var searchData=
   ['directional_5falbedo_5fmonte_5fcarlo_10',['DIRECTIONAL_ALBEDO_MONTE_CARLO',['../_gen_options_8h.html#a2208b033c82de7580a5b87394810ea10a70247c0caf57f24950dbc6ea4af08ff6',1,'GenOptions.h']]],
   ['directional_5falbedo_5ftable_11',['DIRECTIONAL_ALBEDO_TABLE',['../_gen_options_8h.html#a2208b033c82de7580a5b87394810ea10a3b33a6bdae401efcf8276059e474c77e',1,'GenOptions.h']]],
   ['disconnect_12',['disconnect',['../class_shader_graph.html#a6da12f47199bed1881c71799aed3aeab',1,'ShaderGraph']]],
-  ['document_13',['Document',['../class_document.html',1,'']]],
-  ['document_2eh_14',['Document.h',['../_document_8h.html',1,'']]],
-  ['documentation_15',['Building API Documentation',['../index.html#autotoc_md7',1,'']]],
-  ['documentptr_16',['DocumentPtr',['../_document_8h.html#af7c96a4988168273c63f2f297721adcc',1,'Document.h']]],
-  ['dot_17',['DOT',['../class_shader_node_1_1_classification.html#aac6939e61d4196414b048c790afd595d',1,'ShaderNode::Classification']]],
-  ['dot_18',['dot',['../class_vector_n.html#a9757cd5f30b38dfc10661ce46de9cd28',1,'VectorN']]],
-  ['drawpartition_19',['drawPartition',['../class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e',1,'ShaderMaterial::drawPartition()'],['../class_glsl_material.html#ac944f0a603f46d866647f23aba74e058',1,'GlslMaterial::drawPartition()']]],
-  ['drawscreenspacequad_20',['drawScreenSpaceQuad',['../class_glsl_renderer.html#a1690627b3ee19dbfa1a0a802f3b03dfe',1,'GlslRenderer']]]
+  ['distributelayeroverbsdfmix_13',['distributeLayerOverBsdfMix',['../class_gen_options.html#ab4a6d8a7d2e88d4cb11a3b35bfd6768a',1,'GenOptions']]],
+  ['distributelayerovermixrefactor_14',['DistributeLayerOverMixRefactor',['../class_distribute_layer_over_mix_refactor.html',1,'']]],
+  ['document_15',['Document',['../class_document.html',1,'']]],
+  ['document_2eh_16',['Document.h',['../_document_8h.html',1,'']]],
+  ['documentation_17',['Building API Documentation',['../index.html#autotoc_md7',1,'']]],
+  ['documentptr_18',['DocumentPtr',['../_document_8h.html#af7c96a4988168273c63f2f297721adcc',1,'Document.h']]],
+  ['dot_19',['DOT',['../class_shader_node_1_1_classification.html#aac6939e61d4196414b048c790afd595d',1,'ShaderNode::Classification']]],
+  ['dot_20',['dot',['../class_vector_n.html#a9757cd5f30b38dfc10661ce46de9cd28',1,'VectorN']]],
+  ['drawpartition_21',['drawPartition',['../class_shader_material.html#aebc3322efdaf8245f620d84fd707ea7e',1,'ShaderMaterial::drawPartition()'],['../class_glsl_material.html#ac944f0a603f46d866647f23aba74e058',1,'GlslMaterial::drawPartition()']]],
+  ['drawscreenspacequad_22',['drawScreenSpaceQuad',['../class_glsl_renderer.html#a1690627b3ee19dbfa1a0a802f3b03dfe',1,'GlslRenderer']]]
 ];

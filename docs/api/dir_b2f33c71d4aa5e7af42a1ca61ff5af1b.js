@@ -6,6 +6,7 @@ var dir_b2f33c71d4aa5e7af42a1ca61ff5af1b =
     [ "MaterialXGenMdl", "dir_c1922a18ac14f440d24df22cb59b0056.html", "dir_c1922a18ac14f440d24df22cb59b0056" ],
     [ "MaterialXGenOsl", "dir_d9f81756991d8691d4c8d724e8d889b9.html", "dir_d9f81756991d8691d4c8d724e8d889b9" ],
     [ "MaterialXGenShader", "dir_9e836a3bb50e6d927d8c8af99e7120ba.html", "dir_9e836a3bb50e6d927d8c8af99e7120ba" ],
+    [ "MaterialXGenSlang", "dir_6f6b26c1725e55c0b8de9298d68e5100.html", "dir_6f6b26c1725e55c0b8de9298d68e5100" ],
     [ "MaterialXRender", "dir_b07960269c0943959e50f8c16247d80a.html", "dir_b07960269c0943959e50f8c16247d80a" ],
     [ "MaterialXRenderGlsl", "dir_a85ace03c6f38bda4812118dfd903108.html", "dir_a85ace03c6f38bda4812118dfd903108" ],
     [ "MaterialXRenderHw", "dir_8ca073c3db53ad438a93138c16688008.html", "dir_8ca073c3db53ad438a93138c16688008" ],

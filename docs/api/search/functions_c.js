@@ -1,7 +1,7 @@
 var searchData=
 [
   ['newline_0',['newLine',['../class_shader_stage.html#a24d44c9238b3bd0440c8e28f37616318',1,'ShaderStage']]],
-  ['nodeneedsclosuredata_1',['nodeNeedsClosureData',['../class_hw_shader_generator.html#aa43f900cb6bf73f982df92b70129bed3',1,'HwShaderGenerator::nodeNeedsClosureData()'],['../class_shader_generator.html#aa7e9e143ad0c932c57c2f82ed6b95350',1,'ShaderGenerator::nodeNeedsClosureData()']]],
+  ['nodeneedsclosuredata_1',['nodeNeedsClosureData',['../class_shader_generator.html#aa7e9e143ad0c932c57c2f82ed6b95350',1,'ShaderGenerator']]],
   ['nodeoutputisclosure_2',['nodeOutputIsClosure',['../class_shader_node_impl.html#acbe412618d9e4414f01e44be0e8c39a3',1,'ShaderNodeImpl']]],
   ['normalizeenvironment_3',['normalizeEnvironment',['../_harmonics_8h.html#a91c08d726149ab4eba9a13ebe6953109',1,'Harmonics.h']]],
   ['numcolumns_4',['numColumns',['../class_matrix_n.html#a50e611a9a5a6a315320e0695b5f81611',1,'MatrixN']]],

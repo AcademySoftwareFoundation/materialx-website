@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a07c7190b25ac583d474291e8091e3505" id="r_a07c7190b25ac583d474291e8091e3505"><td class="memItemLeft" align="right" valign="top"><a id="a07c7190b25ac583d474291e8091e3505" name="a07c7190b25ac583d474291e8091e3505"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OslSyntax</b> (TypeSystemPtr typeSystem)</td></tr>
 <tr class="separator:a07c7190b25ac583d474291e8091e3505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c001d1f1e0cfb46cf4781eff87655ae" id="r_a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c001d1f1e0cfb46cf4781eff87655ae">createStructSyntax</a> (const string &amp;structTypeName, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition) const override</td></tr>
+<tr class="separator:a3c001d1f1e0cfb46cf4781eff87655ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8452f0d95a0fb73b3f3696548dfc2750" id="r_a8452f0d95a0fb73b3f3696548dfc2750"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8452f0d95a0fb73b3f3696548dfc2750">getOutputQualifier</a> () const override</td></tr>
 <tr class="memdesc:a8452f0d95a0fb73b3f3696548dfc2750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a type qualifier to be used when declaring types for output variables.  <br /></td></tr>
 <tr class="separator:a8452f0d95a0fb73b3f3696548dfc2750"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,9 +281,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getVariableName</b>
 <tr class="memitem:afc26f067af904b0d2bb7a90813c2b265 inherit pub_methods_class_syntax" id="r_afc26f067af904b0d2bb7a90813c2b265"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_syntax.html#afc26f067af904b0d2bb7a90813c2b265">remapEnumeration</a> (const string &amp;value, <a class="el" href="class_type_desc.html">TypeDesc</a> type, const string &amp;enumNames, std::pair&lt; <a class="el" href="class_type_desc.html">TypeDesc</a>, <a class="el" href="_value_8h.html#a57c93cd6caa19a5d742033c09715b200">ValuePtr</a> &gt; &amp;result) const</td></tr>
 <tr class="memdesc:afc26f067af904b0d2bb7a90813c2b265 inherit pub_methods_class_syntax"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an input specification attempt to remap this to an enumeration which is accepted by the shader generator.  <br /></td></tr>
 <tr class="separator:afc26f067af904b0d2bb7a90813c2b265 inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b96cab4198b0016afe641cc6da7302a inherit pub_methods_class_syntax" id="r_a7b96cab4198b0016afe641cc6da7302a"><td class="memItemLeft" align="right" valign="top">
-virtual <a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createStructSyntax</b> (const string &amp;structTypeName, const string &amp;defaultValue, const string &amp;uniformDefaultValue, const string &amp;typeAlias, const string &amp;typeDefinition) const</td></tr>
-<tr class="separator:a7b96cab4198b0016afe641cc6da7302a inherit pub_methods_class_syntax"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -378,6 +377,52 @@ static const std::unordered_map&lt; char, size_t &gt;&#160;</td><td class="memIt
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_syntax.html" title="Base class for syntax objects used by shader generators to emit code with correct syntax for each lan...">Syntax</a> class for OSL (Open Shading Language) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3c001d1f1e0cfb46cf4781eff87655ae" name="a3c001d1f1e0cfb46cf4781eff87655ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c001d1f1e0cfb46cf4781eff87655ae">&#9670;&#160;</a></span>createStructSyntax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_syntax_8h.html#ac9f39284ae72bfb42fd9e028135f71f1">StructTypeSyntaxPtr</a> createStructSyntax </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>structTypeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>defaultValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>uniformDefaultValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeAlias</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>typeDefinition</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_syntax.html">Syntax</a>.</p>
+
+</div>
+</div>
 <a id="a423a82a664945d1837e77a4a36d964ee" name="a423a82a664945d1837e77a4a36d964ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a423a82a664945d1837e77a4a36d964ee">&#9670;&#160;</a></span>getConstantQualifier()</h2>
 

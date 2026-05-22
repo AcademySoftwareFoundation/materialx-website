@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -112,14 +112,14 @@ $(function(){initNavTree('_vk_resource_binding_context_8h_source.html',''); init
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_material_x_gen_glsl_2_export_8h.html">MaterialXGenGlsl/Export.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_hw_shader_generator_8h.html">MaterialXGenShader/HwShaderGenerator.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;MaterialXGenHw/HwResourceBindingContext.h&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>MATERIALX_NAMESPACE_BEGIN</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_vk_resource_binding_context_8h.html#a78a688602350ba10c30c220cc3f40fd0">   19</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_vk_resource_binding_context_8h.html#a78a688602350ba10c30c220cc3f40fd0">VkResourceBindingContextPtr</a> = shared_ptr&lt;class VkResourceBindingContext&gt;;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_vk_resource_binding_context.html">   23</a></span><span class="keyword">class </span>MX_GENGLSL_API VkResourceBindingContext : <span class="keyword">public</span> <a class="code hl_class" href="class_hw_resource_binding_context.html">HwResourceBindingContext</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_vk_resource_binding_context.html">   23</a></span><span class="keyword">class </span>MX_GENGLSL_API VkResourceBindingContext : <span class="keyword">public</span> HwResourceBindingContext</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    VkResourceBindingContext(<span class="keywordtype">size_t</span> uniformBindingLocation);</div>
@@ -155,13 +155,11 @@ $(function(){initNavTree('_vk_resource_binding_context_8h_source.html',''); init
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>MATERIALX_NAMESPACE_END</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_hw_shader_generator_8h_html"><div class="ttname"><a href="_hw_shader_generator_8h.html">HwShaderGenerator.h</a></div><div class="ttdoc">Hardware shader generator base class.</div></div>
 <div class="ttc" id="a_material_x_gen_glsl_2_export_8h_html"><div class="ttname"><a href="_material_x_gen_glsl_2_export_8h.html">Export.h</a></div><div class="ttdoc">Macros for declaring imported and exported symbols.</div></div>
 <div class="ttc" id="a_vk_resource_binding_context_8h_html_a78a688602350ba10c30c220cc3f40fd0"><div class="ttname"><a href="_vk_resource_binding_context_8h.html#a78a688602350ba10c30c220cc3f40fd0">VkResourceBindingContextPtr</a></div><div class="ttdeci">shared_ptr&lt; class VkResourceBindingContext &gt; VkResourceBindingContextPtr</div><div class="ttdoc">Shared pointer to a VkResourceBindingContext.</div><div class="ttdef"><b>Definition</b> VkResourceBindingContext.h:19</div></div>
 <div class="ttc" id="aclass_gen_context_html"><div class="ttname"><a href="class_gen_context.html">GenContext</a></div><div class="ttdoc">A context class for shader generation.</div><div class="ttdef"><b>Definition</b> GenContext.h:30</div></div>
-<div class="ttc" id="aclass_hw_resource_binding_context_html"><div class="ttname"><a href="class_hw_resource_binding_context.html">HwResourceBindingContext</a></div><div class="ttdoc">Class representing a context for resource binding for hardware resources.</div><div class="ttdef"><b>Definition</b> HwShaderGenerator.h:389</div></div>
-<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition</b> ShaderStage.h:141</div></div>
-<div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition</b> ShaderStage.h:63</div></div>
+<div class="ttc" id="aclass_shader_stage_html"><div class="ttname"><a href="class_shader_stage.html">ShaderStage</a></div><div class="ttdoc">A shader stage, containing the state and resulting source code for the stage.</div><div class="ttdef"><b>Definition</b> ShaderStage.h:145</div></div>
+<div class="ttc" id="aclass_variable_block_html"><div class="ttname"><a href="class_variable_block.html">VariableBlock</a></div><div class="ttdoc">A block of variables in a shader stage.</div><div class="ttdef"><b>Definition</b> ShaderStage.h:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
