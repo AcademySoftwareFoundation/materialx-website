@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(function(){initNavTree('_traversal_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define MATERIALX_TRAVERSAL_H</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_exception_8h.html">MaterialXCore/Exception.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_material_x_core_2_exception_8h.html">MaterialXCore/Exception.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>MATERIALX_NAMESPACE_BEGIN</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
@@ -452,18 +452,18 @@ $(function(){initNavTree('_traversal_8h_source.html',''); initResizable(true); }
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>};</div>
 </div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keyword">extern</span> MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_edge.html">Edge</a> NULL_EDGE;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_edge.html">Edge</a>&amp; getNullEdge();</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="keyword">extern</span> MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_tree_iterator.html">TreeIterator</a> NULL_TREE_ITERATOR;</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="keyword">extern</span> MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_graph_iterator.html">GraphIterator</a> NULL_GRAPH_ITERATOR;</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="keyword">extern</span> MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_inheritance_iterator.html">InheritanceIterator</a> NULL_INHERITANCE_ITERATOR;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_tree_iterator.html">TreeIterator</a>&amp; getNullTreeIterator();</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_graph_iterator.html">GraphIterator</a>&amp; getNullGraphIterator();</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>MX_CORE_API <span class="keyword">const</span> <a class="code hl_class" href="class_inheritance_iterator.html">InheritanceIterator</a>&amp; getNullInheritanceIterator();</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>MATERIALX_NAMESPACE_END</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_element_8h_html_a6cac15657c90466f204f7287c99f20cc"><div class="ttname"><a href="_element_8h.html#a6cac15657c90466f204f7287c99f20cc">ConstElementPtr</a></div><div class="ttdeci">shared_ptr&lt; const Element &gt; ConstElementPtr</div><div class="ttdoc">A shared pointer to a const Element.</div><div class="ttdef"><b>Definition</b> Element.h:33</div></div>
 <div class="ttc" id="a_element_8h_html_a74d91fb8b93d96837a7c900a3f0bb426"><div class="ttname"><a href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a></div><div class="ttdeci">shared_ptr&lt; Element &gt; ElementPtr</div><div class="ttdoc">A shared pointer to an Element.</div><div class="ttdef"><b>Definition</b> Element.h:31</div></div>
-<div class="ttc" id="a_exception_8h_html"><div class="ttname"><a href="_exception_8h.html">Exception.h</a></div><div class="ttdoc">Base exception classes.</div></div>
+<div class="ttc" id="a_material_x_core_2_exception_8h_html"><div class="ttname"><a href="_material_x_core_2_exception_8h.html">Exception.h</a></div><div class="ttdoc">Base exception classes.</div></div>
 <div class="ttc" id="aclass_edge_html"><div class="ttname"><a href="class_edge.html">Edge</a></div><div class="ttdoc">An edge between two connected Elements, returned during graph traversal.</div><div class="ttdef"><b>Definition</b> Traversal.h:30</div></div>
 <div class="ttc" id="aclass_edge_html_a134d85a189d667e7a481614c1aa67860"><div class="ttname"><a href="class_edge.html#a134d85a189d667e7a481614c1aa67860">Edge::getName</a></div><div class="ttdeci">string getName() const</div><div class="ttdoc">Return the name of this edge, if any.</div></div>
 <div class="ttc" id="aclass_edge_html_a2b90649d59b951bc8c1ef2d0c676e4cd"><div class="ttname"><a href="class_edge.html#a2b90649d59b951bc8c1ef2d0c676e4cd">Edge::getDownstreamElement</a></div><div class="ttdeci">ElementPtr getDownstreamElement() const</div><div class="ttdoc">Return the downstream element of the edge.</div><div class="ttdef"><b>Definition</b> Traversal.h:58</div></div>

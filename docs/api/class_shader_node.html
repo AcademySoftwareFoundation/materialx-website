@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -163,6 +163,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasClassification</b>
 const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
 <tr class="memdesc:a43f65f5d191c125b0b52028fdbf0f364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of this node. <br /></td></tr>
 <tr class="separator:a43f65f5d191c125b0b52028fdbf0f364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcb62331ed850b2427f4cea5c700cbb" id="r_a7bcb62331ed850b2427f4cea5c700cbb"><td class="memItemLeft" align="right" valign="top"><a id="a7bcb62331ed850b2427f4cea5c700cbb" name="a7bcb62331ed850b2427f4cea5c700cbb"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getUniqueId</b> () const</td></tr>
+<tr class="memdesc:a7bcb62331ed850b2427f4cea5c700cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the unique identifier for this node, used as its key in the parent graph's node map. <br /></td></tr>
+<tr class="separator:a7bcb62331ed850b2427f4cea5c700cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad483e283206e41d2dc3732dece1c1889" id="r_ad483e283206e41d2dc3732dece1c1889"><td class="memItemLeft" align="right" valign="top"><a id="ad483e283206e41d2dc3732dece1c1889" name="ad483e283206e41d2dc3732dece1c1889"></a>
 const <a class="el" href="class_shader_node_impl.html">ShaderNodeImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getImplementation</b> () const</td></tr>
 <tr class="memdesc:ad483e283206e41d2dc3732dece1c1889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the implementation used for this node. <br /></td></tr>
@@ -265,21 +269,15 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>IMAGE<
 <tr class="memitem:a83291bb4e5939eb0de30e62797098c32" id="r_a83291bb4e5939eb0de30e62797098c32"><td class="memItemLeft" align="right" valign="top"><a id="a83291bb4e5939eb0de30e62797098c32" name="a83291bb4e5939eb0de30e62797098c32"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>SURFACESHADER</b></td></tr>
 <tr class="separator:a83291bb4e5939eb0de30e62797098c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cd3a9fe8fba5ec1175b18afd14dbe1" id="r_a25cd3a9fe8fba5ec1175b18afd14dbe1"><td class="memItemLeft" align="right" valign="top"><a id="a25cd3a9fe8fba5ec1175b18afd14dbe1" name="a25cd3a9fe8fba5ec1175b18afd14dbe1"></a>
+static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BACKSURFACESHADER</b></td></tr>
+<tr class="separator:a25cd3a9fe8fba5ec1175b18afd14dbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84980117957afe47629e5f9e0ebe940d" id="r_a84980117957afe47629e5f9e0ebe940d"><td class="memItemLeft" align="right" valign="top"><a id="a84980117957afe47629e5f9e0ebe940d" name="a84980117957afe47629e5f9e0ebe940d"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BSDF_R</b></td></tr>
 <tr class="separator:a84980117957afe47629e5f9e0ebe940d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495c3aab3c7435b3fb3008e7f7cfbb68" id="r_a495c3aab3c7435b3fb3008e7f7cfbb68"><td class="memItemLeft" align="right" valign="top"><a id="a495c3aab3c7435b3fb3008e7f7cfbb68" name="a495c3aab3c7435b3fb3008e7f7cfbb68"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>BSDF_T</b></td></tr>
 <tr class="separator:a495c3aab3c7435b3fb3008e7f7cfbb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc20bfaf25bdb91c02c39f5fcd9b2a8" id="r_a0fc20bfaf25bdb91c02c39f5fcd9b2a8"><td class="memItemLeft" align="right" valign="top"><a id="a0fc20bfaf25bdb91c02c39f5fcd9b2a8" name="a0fc20bfaf25bdb91c02c39f5fcd9b2a8"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSFORM_POINT</b></td></tr>
-<tr class="separator:a0fc20bfaf25bdb91c02c39f5fcd9b2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac408e0977aa0fa78a4e5f50a1281cb7d" id="r_ac408e0977aa0fa78a4e5f50a1281cb7d"><td class="memItemLeft" align="right" valign="top"><a id="ac408e0977aa0fa78a4e5f50a1281cb7d" name="ac408e0977aa0fa78a4e5f50a1281cb7d"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSFORM_VECTOR</b></td></tr>
-<tr class="separator:ac408e0977aa0fa78a4e5f50a1281cb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5209454dd6b08710c59ebf0df1c54f54" id="r_a5209454dd6b08710c59ebf0df1c54f54"><td class="memItemLeft" align="right" valign="top"><a id="a5209454dd6b08710c59ebf0df1c54f54" name="a5209454dd6b08710c59ebf0df1c54f54"></a>
-static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TRANSFORM_NORMAL</b></td></tr>
-<tr class="separator:a5209454dd6b08710c59ebf0df1c54f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad842429b36ac163f3aac6a29217a1e5e" id="r_ad842429b36ac163f3aac6a29217a1e5e"><td class="memItemLeft" align="right" valign="top"><a id="ad842429b36ac163f3aac6a29217a1e5e" name="ad842429b36ac163f3aac6a29217a1e5e"></a>
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>TEXTURE2D_GROUPNAME</b></td></tr>
 <tr class="separator:ad842429b36ac163f3aac6a29217a1e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,6 +309,9 @@ const <a class="el" href="class_shader_graph.html">ShaderGraph</a> *&#160;</td><
 <tr class="memitem:a92749b8d4b3ef0c4b1d2a4532db9032e" id="r_a92749b8d4b3ef0c4b1d2a4532db9032e"><td class="memItemLeft" align="right" valign="top"><a id="a92749b8d4b3ef0c4b1d2a4532db9032e" name="a92749b8d4b3ef0c4b1d2a4532db9032e"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
 <tr class="separator:a92749b8d4b3ef0c4b1d2a4532db9032e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f28ad0233f7e913d915c938ae0a987" id="r_ab0f28ad0233f7e913d915c938ae0a987"><td class="memItemLeft" align="right" valign="top"><a id="ab0f28ad0233f7e913d915c938ae0a987" name="ab0f28ad0233f7e913d915c938ae0a987"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>_uniqueId</b></td></tr>
+<tr class="separator:ab0f28ad0233f7e913d915c938ae0a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd69a28a1d5f7e9d96fa47a6bc398c41" id="r_acd69a28a1d5f7e9d96fa47a6bc398c41"><td class="memItemLeft" align="right" valign="top"><a id="acd69a28a1d5f7e9d96fa47a6bc398c41" name="acd69a28a1d5f7e9d96fa47a6bc398c41"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_classification</b></td></tr>
 <tr class="separator:acd69a28a1d5f7e9d96fa47a6bc398c41"><td class="memSeparator" colspan="2">&#160;</td></tr>

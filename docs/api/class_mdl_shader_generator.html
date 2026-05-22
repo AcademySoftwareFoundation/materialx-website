@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -131,12 +131,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b6a1a7ea1d88588b6f49a1005f1c2ab" id="r_a0b6a1a7ea1d88588b6f49a1005f1c2ab"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b6a1a7ea1d88588b6f49a1005f1c2ab">getTarget</a> () const override</td></tr>
 <tr class="memdesc:a0b6a1a7ea1d88588b6f49a1005f1c2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a unique identifier for the target this generator is for.  <br /></td></tr>
 <tr class="separator:a0b6a1a7ea1d88588b6f49a1005f1c2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96906ec6cfad26ade4f96844a892315" id="r_ac96906ec6cfad26ade4f96844a892315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac96906ec6cfad26ade4f96844a892315">applyDefaultOptions</a> (<a class="el" href="class_gen_options.html">GenOptions</a> &amp;options) const override</td></tr>
+<tr class="memdesc:ac96906ec6cfad26ade4f96844a892315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the default <a class="el" href="class_gen_options.html" title="Class holding options to configure shader generation.">GenOptions</a> for MDL shader generation.  <br /></td></tr>
+<tr class="separator:ac96906ec6cfad26ade4f96844a892315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d9ab6e09bf6d2b00b6fa15ac6ec41a" id="r_a37d9ab6e09bf6d2b00b6fa15ac6ec41a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_material_x_gen_shader_2_library_8h.html#aacd664a62bf16fc6a92b1d619ad2c031">ShaderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37d9ab6e09bf6d2b00b6fa15ac6ec41a">generate</a> (const string &amp;name, <a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> element, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const override</td></tr>
 <tr class="memdesc:a37d9ab6e09bf6d2b00b6fa15ac6ec41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a shader starting from the given element, translating the element and all dependencies upstream into shader code.  <br /></td></tr>
 <tr class="separator:a37d9ab6e09bf6d2b00b6fa15ac6ec41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1849686eb31e30f5998bb121844f48c" id="r_ad1849686eb31e30f5998bb121844f48c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1849686eb31e30f5998bb121844f48c">getImplementation</a> (const <a class="el" href="class_node_def.html">NodeDef</a> &amp;nodedef, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const override</td></tr>
-<tr class="memdesc:ad1849686eb31e30f5998bb121844f48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a registered shader node implementation given an implementation element.  <br /></td></tr>
-<tr class="separator:ad1849686eb31e30f5998bb121844f48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbd39fa0216f9701019a911639d92ee" id="r_acfbd39fa0216f9701019a911639d92ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfbd39fa0216f9701019a911639d92ee">createShaderNodeImplForNodeGraph</a> (const <a class="el" href="class_node_graph.html">NodeGraph</a> &amp;nodegraph) const override</td></tr>
+<tr class="memdesc:acfbd39fa0216f9701019a911639d92ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the shader node implementation for a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> implementation.  <br /></td></tr>
+<tr class="separator:acfbd39fa0216f9701019a911639d92ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f125241de3b24e022cefe4587fd749f" id="r_a4f125241de3b24e022cefe4587fd749f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f125241de3b24e022cefe4587fd749f">createShaderNodeImplForImplementation</a> (const <a class="el" href="class_implementation.html">Implementation</a> &amp;implementation) const override</td></tr>
+<tr class="memdesc:a4f125241de3b24e022cefe4587fd749f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the shader node implementation for an mplementation implementation.  <br /></td></tr>
+<tr class="separator:a4f125241de3b24e022cefe4587fd749f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf5602c6f6e64675c9b062a66f4b8da" id="r_afcf5602c6f6e64675c9b062a66f4b8da"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf5602c6f6e64675c9b062a66f4b8da">getUpstreamResult</a> (const <a class="el" href="class_shader_input.html">ShaderInput</a> *input, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const override</td></tr>
 <tr class="memdesc:afcf5602c6f6e64675c9b062a66f4b8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the result of an upstream connection or value for an input.  <br /></td></tr>
 <tr class="separator:afcf5602c6f6e64675c9b062a66f4b8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,8 +245,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionB
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitFunctionBodyEnd</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;node, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
 <tr class="memdesc:a4de31f32497f953e9f3a1d605beb14ea inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit code for ending a function body. <br /></td></tr>
 <tr class="separator:a4de31f32497f953e9f3a1d605beb14ea inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc7ed4fe1dde015c4f6544636cfe7d2 inherit pub_methods_class_shader_generator" id="r_abfc7ed4fe1dde015c4f6544636cfe7d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#abfc7ed4fe1dde015c4f6544636cfe7d2">emitInput</a> (const <a class="el" href="class_shader_input.html">ShaderInput</a> *input, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
-<tr class="memdesc:abfc7ed4fe1dde015c4f6544636cfe7d2 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the connected variable name for an input, or constant value if the port is not connected.  <br /></td></tr>
+<tr class="memitem:abfc7ed4fe1dde015c4f6544636cfe7d2 inherit pub_methods_class_shader_generator" id="r_abfc7ed4fe1dde015c4f6544636cfe7d2"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitInput</b> (const <a class="el" href="class_shader_input.html">ShaderInput</a> *input, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
+<tr class="memdesc:abfc7ed4fe1dde015c4f6544636cfe7d2 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the connected variable name for an input, or constant value if the port is not connected. <br /></td></tr>
 <tr class="separator:abfc7ed4fe1dde015c4f6544636cfe7d2 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dc1cc3761f486a58e78c8936fdba48c inherit pub_methods_class_shader_generator" id="r_a2dc1cc3761f486a58e78c8936fdba48c"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitOutput</b> (const <a class="el" href="class_shader_output.html">ShaderOutput</a> *output, bool includeType, bool assignValue, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage) const</td></tr>
@@ -252,9 +259,17 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitOutput</b
 <tr class="memitem:a0855538966597da54535123469b4293b inherit pub_methods_class_shader_generator" id="r_a0855538966597da54535123469b4293b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a0855538966597da54535123469b4293b">emitVariableDeclaration</a> (const <a class="el" href="class_shader_port.html">ShaderPort</a> *variable, const string &amp;qualifier, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;stage, bool assignValue=true) const</td></tr>
 <tr class="memdesc:a0855538966597da54535123469b4293b inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit definition of a single shader variable.  <br /></td></tr>
 <tr class="separator:a0855538966597da54535123469b4293b inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e9e143ad0c932c57c2f82ed6b95350 inherit pub_methods_class_shader_generator" id="r_aa7e9e143ad0c932c57c2f82ed6b95350"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#aa7e9e143ad0c932c57c2f82ed6b95350">nodeNeedsClosureData</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;) const</td></tr>
-<tr class="memdesc:aa7e9e143ad0c932c57c2f82ed6b95350 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the node needs the additional ClosureData added.  <br /></td></tr>
+<tr class="memitem:aa7e9e143ad0c932c57c2f82ed6b95350 inherit pub_methods_class_shader_generator" id="r_aa7e9e143ad0c932c57c2f82ed6b95350"><td class="memItemLeft" align="right" valign="top">
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>nodeNeedsClosureData</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;) const</td></tr>
+<tr class="memdesc:aa7e9e143ad0c932c57c2f82ed6b95350 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the node needs the additional ClosureData added. <br /></td></tr>
 <tr class="separator:aa7e9e143ad0c932c57c2f82ed6b95350 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee3f69a52106393b2c6febe7eb7c85b inherit pub_methods_class_shader_generator" id="r_a2ee3f69a52106393b2c6febe7eb7c85b"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>emitClosureDataArg</b> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;, <a class="el" href="class_gen_context.html">GenContext</a> &amp;, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;) const</td></tr>
+<tr class="memdesc:a2ee3f69a52106393b2c6febe7eb7c85b inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the closure data argument if required Note this is an affordance for HwShaderGenerator. <br /></td></tr>
+<tr class="separator:a2ee3f69a52106393b2c6febe7eb7c85b inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c3ac540954289e6ba34a8e4a6fc9cd inherit pub_methods_class_shader_generator" id="r_a95c3ac540954289e6ba34a8e4a6fc9cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_generator.html#a95c3ac540954289e6ba34a8e4a6fc9cd">emitClosureDataParameter</a> (const <a class="el" href="class_shader_node.html">ShaderNode</a> &amp;, <a class="el" href="class_gen_context.html">GenContext</a> &amp;, <a class="el" href="class_shader_stage.html">ShaderStage</a> &amp;) const</td></tr>
+<tr class="memdesc:a95c3ac540954289e6ba34a8e4a6fc9cd inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the closure data parameter if required.  <br /></td></tr>
+<tr class="separator:a95c3ac540954289e6ba34a8e4a6fc9cd inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa200e4d0ad0480f7fbe42b862bfb597c inherit pub_methods_class_shader_generator" id="r_aa200e4d0ad0480f7fbe42b862bfb597c"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="class_syntax.html">Syntax</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSyntax</b> () const</td></tr>
 <tr class="memdesc:aa200e4d0ad0480f7fbe42b862bfb597c inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the syntax object for the language used by the code generator. <br /></td></tr>
@@ -271,6 +286,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerImplementatio
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>implementationRegistered</b> (const string &amp;name) const</td></tr>
 <tr class="memdesc:a042cb49474a379e4be44b0e1b2ca3885 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a shader node implementation has been registered for a given implementation element name. <br /></td></tr>
 <tr class="separator:a042cb49474a379e4be44b0e1b2ca3885 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f8c6101bd8495d23a5d2efab5c851d inherit pub_methods_class_shader_generator" id="r_a70f8c6101bd8495d23a5d2efab5c851d"><td class="memItemLeft" align="right" valign="top">
+virtual <a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getImplementation</b> (const <a class="el" href="class_node_def.html">NodeDef</a> &amp;nodedef, <a class="el" href="class_gen_context.html">GenContext</a> &amp;context) const</td></tr>
+<tr class="memdesc:a70f8c6101bd8495d23a5d2efab5c851d inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a registered shader node implementation for the given nodedef. <br /></td></tr>
+<tr class="separator:a70f8c6101bd8495d23a5d2efab5c851d inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd00850974336bacd09779e1f8d1c64 inherit pub_methods_class_shader_generator" id="r_a9dd00850974336bacd09779e1f8d1c64"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorManagementSystem</b> (<a class="el" href="_color_management_system_8h.html#a42dd624e5640b62595458a0f86f16429">ColorManagementSystemPtr</a> colorManagementSystem)</td></tr>
 <tr class="memdesc:a9dd00850974336bacd09779e1f8d1c64 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color management system. <br /></td></tr>
@@ -295,6 +314,14 @@ TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getTypeSyste
 const <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTokenSubstitutions</b> () const</td></tr>
 <tr class="memdesc:a438b6cb63f40152962b5f2fc4e90c210 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the map of token substitutions used by the generator. <br /></td></tr>
 <tr class="separator:a438b6cb63f40152962b5f2fc4e90c210 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd8b7442c8c8adbbd8d8cdcb30b4408 inherit pub_methods_class_shader_generator" id="r_a1fd8b7442c8c8adbbd8d8cdcb30b4408"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerRefactor</b> (<a class="el" href="_shader_graph_refactor_8h.html#a0efd13675849f0e72fb85f4dbf32ef16">ShaderGraphRefactorPtr</a> refactor)</td></tr>
+<tr class="memdesc:a1fd8b7442c8c8adbbd8d8cdcb30b4408 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a shader graph refactoring pass. <br /></td></tr>
+<tr class="separator:a1fd8b7442c8c8adbbd8d8cdcb30b4408 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f1e54f59671ae847650cccdca0e4c7 inherit pub_methods_class_shader_generator" id="r_a05f1e54f59671ae847650cccdca0e4c7"><td class="memItemLeft" align="right" valign="top">
+const vector&lt; <a class="el" href="_shader_graph_refactor_8h.html#a0efd13675849f0e72fb85f4dbf32ef16">ShaderGraphRefactorPtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRefactors</b> () const</td></tr>
+<tr class="memdesc:a05f1e54f59671ae847650cccdca0e4c7 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the registered graph refactoring passes. <br /></td></tr>
+<tr class="separator:a05f1e54f59671ae847650cccdca0e4c7 inherit pub_methods_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc5fffb73f451f0383096237ccbd0e72 inherit pub_methods_class_shader_generator" id="r_abc5fffb73f451f0383096237ccbd0e72"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>registerTypeDefs</b> (const <a class="el" href="_document_8h.html#af7c96a4988168273c63f2f297721adcc">DocumentPtr</a> &amp;doc)</td></tr>
 <tr class="memdesc:abc5fffb73f451f0383096237ccbd0e72 inherit pub_methods_class_shader_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register type definitions from the document. <br /></td></tr>
@@ -373,6 +400,9 @@ TypeSystemPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_typeSystem<
 <tr class="memitem:a445df19191b46382aa6f3c569edbda0d inherit pro_attribs_class_shader_generator" id="r_a445df19191b46382aa6f3c569edbda0d"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_tokenSubstitutions</b></td></tr>
 <tr class="separator:a445df19191b46382aa6f3c569edbda0d inherit pro_attribs_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b471a9260a4883b2cbbc8aa8dd077c inherit pro_attribs_class_shader_generator" id="r_a82b471a9260a4883b2cbbc8aa8dd077c"><td class="memItemLeft" align="right" valign="top">
+vector&lt; <a class="el" href="_shader_graph_refactor_8h.html#a0efd13675849f0e72fb85f4dbf32ef16">ShaderGraphRefactorPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_refactors</b></td></tr>
+<tr class="separator:a82b471a9260a4883b2cbbc8aa8dd077c inherit pro_attribs_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95bcf2c7eb505245c1458bc802f4c29 inherit pro_attribs_class_shader_generator" id="r_ac95bcf2c7eb505245c1458bc802f4c29"><td class="memItemLeft" align="right" valign="top">
 friend&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderGraph</b></td></tr>
 <tr class="separator:ac95bcf2c7eb505245c1458bc802f4c29 inherit pro_attribs_class_shader_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,6 +417,35 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>LIGHTD
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_shader.html" title="Class containing all data needed during shader generation.">Shader</a> generator for MDL (Material Definition Language). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac96906ec6cfad26ade4f96844a892315" name="ac96906ec6cfad26ade4f96844a892315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96906ec6cfad26ade4f96844a892315">&#9670;&#160;</a></span>applyDefaultOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void applyDefaultOptions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_gen_options.html">GenOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>options</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply the default <a class="el" href="class_gen_options.html" title="Class holding options to configure shader generation.">GenOptions</a> for MDL shader generation. </p>
+
+<p>Reimplemented from <a class="el" href="class_shader_generator.html#a6dfb7cf559be00e95ad54c52853f2c3d">ShaderGenerator</a>.</p>
+
+</div>
+</div>
 <a id="a24511416e12c030505289c662fe0c732" name="a24511416e12c030505289c662fe0c732"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24511416e12c030505289c662fe0c732">&#9670;&#160;</a></span>create()</h2>
 
@@ -412,6 +471,64 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>LIGHTD
 
 <p>Creator function. </p>
 <p>If a <a class="el" href="class_type_system.html" title="Class handling registration, storage and query of type descriptions.">TypeSystem</a> is not provided it will be created internally. Optionally pass in an externally created <a class="el" href="class_type_system.html" title="Class handling registration, storage and query of type descriptions.">TypeSystem</a> here, if you want to keep type descriptions alive after the lifetime of the shader generator. </p>
+
+</div>
+</div>
+<a id="a4f125241de3b24e022cefe4587fd749f" name="a4f125241de3b24e022cefe4587fd749f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f125241de3b24e022cefe4587fd749f">&#9670;&#160;</a></span>createShaderNodeImplForImplementation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> createShaderNodeImplForImplementation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_implementation.html">Implementation</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>implementation</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create the shader node implementation for an mplementation implementation. </p>
+
+<p>Reimplemented from <a class="el" href="class_shader_generator.html#abfdc7606adaec178c0782e28579cf70c">ShaderGenerator</a>.</p>
+
+</div>
+</div>
+<a id="acfbd39fa0216f9701019a911639d92ee" name="acfbd39fa0216f9701019a911639d92ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbd39fa0216f9701019a911639d92ee">&#9670;&#160;</a></span>createShaderNodeImplForNodeGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> createShaderNodeImplForNodeGraph </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_node_graph.html">NodeGraph</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>nodegraph</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create the shader node implementation for a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> implementation. </p>
+
+<p>Reimplemented from <a class="el" href="class_shader_generator.html#a391f016ca55f6d772be3d568137a337a">ShaderGenerator</a>.</p>
 
 </div>
 </div>
@@ -483,40 +600,6 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>LIGHTD
 <p>Generate a shader starting from the given element, translating the element and all dependencies upstream into shader code. </p>
 
 <p>Reimplemented from <a class="el" href="class_shader_generator.html#afb80d56ca28c16103bcb569527857196">ShaderGenerator</a>.</p>
-
-</div>
-</div>
-<a id="ad1849686eb31e30f5998bb121844f48c" name="ad1849686eb31e30f5998bb121844f48c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1849686eb31e30f5998bb121844f48c">&#9670;&#160;</a></span>getImplementation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_material_x_gen_shader_2_library_8h.html#ad155467af6091077f433b22feb6f2054">ShaderNodeImplPtr</a> getImplementation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_node_def.html">NodeDef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>nodedef</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_gen_context.html">GenContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return a registered shader node implementation given an implementation element. </p>
-<p>The element must be an <a class="el" href="class_implementation.html" title="An implementation element within a Document.">Implementation</a> or a <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> acting as implementation. </p>
-
-<p>Reimplemented from <a class="el" href="class_shader_generator.html#a70f8c6101bd8495d23a5d2efab5c851d">ShaderGenerator</a>.</p>
 
 </div>
 </div>

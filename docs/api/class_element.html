@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -309,9 +309,8 @@ template&lt;class T&gt; </td></tr>
 <tr class="memitem:a3d58b1b9c116a8a01f0437a63e2cf8cf" id="r_a3d58b1b9c116a8a01f0437a63e2cf8cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d58b1b9c116a8a01f0437a63e2cf8cf">changeChildCategory</a> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> child, const string &amp;category)</td></tr>
 <tr class="memdesc:a3d58b1b9c116a8a01f0437a63e2cf8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the category of the given child element.  <br /></td></tr>
 <tr class="separator:a3d58b1b9c116a8a01f0437a63e2cf8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f43f7e3cf2c0ce51aa37c0ff6044f6" id="r_a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="memItemLeft" align="right" valign="top"><a id="a67f43f7e3cf2c0ce51aa37c0ff6044f6" name="a67f43f7e3cf2c0ce51aa37c0ff6044f6"></a>
-<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getChild</b> (const string &amp;name) const</td></tr>
-<tr class="memdesc:a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the child element, if any, with the given name. <br /></td></tr>
+<tr class="memitem:a67f43f7e3cf2c0ce51aa37c0ff6044f6" id="r_a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67f43f7e3cf2c0ce51aa37c0ff6044f6">getChild</a> (const string &amp;name) const</td></tr>
+<tr class="memdesc:a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the child element, if any, with the given name.  <br /></td></tr>
 <tr class="separator:a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1fff65868abc256b8c9355a1b26421" id="r_aab1fff65868abc256b8c9355a1b26421"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
 <tr class="memitem:aab1fff65868abc256b8c9355a1b26421"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aab1fff65868abc256b8c9355a1b26421">getChildOfType</a> (const string &amp;name) const</td></tr>
@@ -811,6 +810,26 @@ template&lt;class T&gt; </div>
 
 <p>Return the element's category string. </p>
 <p>The category of a MaterialX element represents its role within the document, with common examples being "material", "nodegraph", and "image". </p>
+
+</div>
+</div>
+<a id="a67f43f7e3cf2c0ce51aa37c0ff6044f6" name="a67f43f7e3cf2c0ce51aa37c0ff6044f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f43f7e3cf2c0ce51aa37c0ff6044f6">&#9670;&#160;</a></span>getChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> getChild </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the child element, if any, with the given name. </p>
+<p>For a <a class="el" href="class_document.html" title="A MaterialX document, which represents the top-level element in the MaterialX ownership hierarchy.">Document</a> with an attached data library, this also searches the data library when no local child is found, keeping behavior consistent with getChildOfType and getChildrenOfType. </p>
 
 </div>
 </div>

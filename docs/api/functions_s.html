@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,8 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>SAMPLE3D&#160;:&#160;<a class="el" href="class_shader_node_1_1_classification.html#a43c03e605dde6f5cc1be08c7cfe7d69d">ShaderNode::Classification</a></li>
 <li>saveImage()&#160;:&#160;<a class="el" href="class_image_handler.html#afd02ffab9784aaf449221aab531a0eaf">ImageHandler</a>, <a class="el" href="class_image_loader.html#abb56a3c7243510e46fcb08b07c2d8a81">ImageLoader</a>, <a class="el" href="class_stb_image_loader.html#a1668d8e3448f6926bc44af0a7dfd987b">StbImageLoader</a></li>
 <li>ScopedSetVariableName()&#160;:&#160;<a class="el" href="class_scoped_set_variable_name.html#aa6265a0bc9c38cc0e47109ab1777906b">ScopedSetVariableName</a></li>
+<li>setAaLit()&#160;:&#160;<a class="el" href="class_osl_renderer.html#ad41c3bf3675adccc8ac514b64a639f6d">OslRenderer</a></li>
+<li>setAaUnlit()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a9ac86226a298c44dc7d7648a7fd0f19f">OslRenderer</a></li>
 <li>setActiveLook()&#160;:&#160;<a class="el" href="class_look_group.html#a6fcf83fd519ee825e4f8ce08a41c59cf">LookGroup</a></li>
 <li>setAlbedoTable()&#160;:&#160;<a class="el" href="class_light_handler.html#a94c0201f8d11bf0797f7c742ffab3caa">LightHandler</a></li>
 <li>setApplicationVariableHandler()&#160;:&#160;<a class="el" href="class_gen_context.html#a0de1d4bdb2f05a67f37869ac0e85f190">GenContext</a></li>
@@ -131,7 +133,7 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>setContainsString()&#160;:&#160;<a class="el" href="class_backdrop.html#a10ac04790d40c381022fe60035ba05cb">Backdrop</a></li>
 <li>setContext()&#160;:&#160;<a class="el" href="class_type_def.html#a880fb93c5f719d6aba2707c3a4c87225">TypeDef</a></li>
 <li>setCurrentPath()&#160;:&#160;<a class="el" href="class_file_path.html#ae7d3d25e1f6d4908a375a840e1b1ab2c">FilePath</a></li>
-<li>setData()&#160;:&#160;<a class="el" href="class_typed_value.html#aaefd09001586895f24998142efabf2ef">TypedValue&lt; T &gt;</a></li>
+<li>setData()&#160;:&#160;<a class="el" href="class_typed_value.html#a8b1b7edf1d28e1afc782556d81bca0ea">TypedValue&lt; T &gt;</a></li>
 <li>setDataLibrary()&#160;:&#160;<a class="el" href="class_document.html#aebb5529377ec3601af0e8c7dda82dc52">Document</a></li>
 <li>setDefaultGeomPropString()&#160;:&#160;<a class="el" href="class_input.html#a4912b330c84e9a39a40ce27272f2e4ec">Input</a></li>
 <li>setDefaultVersion()&#160;:&#160;<a class="el" href="class_interface_element.html#adb110c0d17d7053a34c48778ea94d114">InterfaceElement</a></li>
@@ -207,6 +209,7 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>setNodeName()&#160;:&#160;<a class="el" href="class_port_element.html#ab7b6e67fcc55760969c842dbfb66973d">PortElement</a></li>
 <li>setNodeString()&#160;:&#160;<a class="el" href="class_node_def.html#a288476d98fef116fb80ea88a723b4df8">NodeDef</a></li>
 <li>setOptimizeConstants()&#160;:&#160;<a class="el" href="class_texture_baker.html#a77c3c0076377003271788a2c318d128f">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
+<li>setOSLCmdStr()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a2625359570461a8f8f24a992eb4cecb5">OslRenderer</a></li>
 <li>setOslCompilerExecutable()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a14e7d55d94b8109ff447088fdb9810e0">OslRenderer</a></li>
 <li>setOslIncludePath()&#160;:&#160;<a class="el" href="class_osl_renderer.html#aa631c6fb1c651fefacd578fe9556628d">OslRenderer</a></li>
 <li>setOslOutputFilePath()&#160;:&#160;<a class="el" href="class_osl_renderer.html#ae07f1df598b85d7b1a246274af3b3553">OslRenderer</a></li>
@@ -228,8 +231,6 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>setPropertyValue()&#160;:&#160;<a class="el" href="class_property_set.html#a1056751bb85fa286b4d6abcc6f2a31ad">PropertySet</a></li>
 <li>setPruneSubgraph()&#160;:&#160;<a class="el" href="class_graph_iterator.html#ad31a05a4ba1c47df5a720d9fd55b3404">GraphIterator</a></li>
 <li>setPruneSubtree()&#160;:&#160;<a class="el" href="class_tree_iterator.html#ac76c1b1b436bbedbee57faf49f2ad711">TreeIterator</a></li>
-<li>setRaysPerPixelLit()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a51e1df03b0d936cf50e864c0440efce8">OslRenderer</a></li>
-<li>setRaysPerPixelUnlit()&#160;:&#160;<a class="el" href="class_osl_renderer.html#a2621cbb7f3f3f2f576af19a9b9094530">OslRenderer</a></li>
 <li>setRefractionTwoSided()&#160;:&#160;<a class="el" href="class_light_handler.html#aed297fee194a2edad52ce0dc53616d9c">LightHandler</a></li>
 <li>setResourceBuffer()&#160;:&#160;<a class="el" href="class_image.html#a9e832f8021daaf4606efca6c739b33df">Image</a></li>
 <li>setResourceBufferDeallocator()&#160;:&#160;<a class="el" href="class_image.html#a0dd32ea0648c504b098e7edf20118d43">Image</a></li>
@@ -265,8 +266,8 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>setupUnitSystem()&#160;:&#160;<a class="el" href="class_texture_baker.html#a8096fff75acf9765ca632edaf88cc517">TextureBaker&lt; Renderer, ShaderGen &gt;</a></li>
 <li>setUsePrefilteredMap()&#160;:&#160;<a class="el" href="class_light_handler.html#a2b6f107e940198087e4365c116d7e859">LightHandler</a></li>
 <li>setUvTileString()&#160;:&#160;<a class="el" href="class_string_resolver.html#a623d70198cdf67587762e3479124b967">StringResolver</a></li>
-<li>setValue()&#160;:&#160;<a class="el" href="class_attribute_def.html#ab5d0750437e1e90d2cf003a29cfaa204">AttributeDef</a>, <a class="el" href="class_shader_port.html#ae0964dd48f6a283b75fe958c10036414">ShaderPort</a>, <a class="el" href="class_value_element.html#ab5d0750437e1e90d2cf003a29cfaa204">ValueElement</a></li>
-<li>setValues()&#160;:&#160;<a class="el" href="class_hw_image_node.html#ab53921168e9fe1dc2f4f2dc13380ec67">HwImageNode</a>, <a class="el" href="class_shader_node_impl.html#a66161aff8f113d36bc16351762adcfba">ShaderNodeImpl</a></li>
+<li>setValue()&#160;:&#160;<a class="el" href="class_attribute_def.html#ab5d0750437e1e90d2cf003a29cfaa204">AttributeDef</a>, <a class="el" href="class_shader_port.html#abc98417537291a95153e8f06f80002da">ShaderPort</a>, <a class="el" href="class_value_element.html#ab5d0750437e1e90d2cf003a29cfaa204">ValueElement</a></li>
+<li>setValues()&#160;:&#160;<a class="el" href="class_shader_node_impl.html#a66161aff8f113d36bc16351762adcfba">ShaderNodeImpl</a></li>
 <li>setValueString()&#160;:&#160;<a class="el" href="class_attribute_def.html#aa122e1edc849d62daa3fe31501b3cef8">AttributeDef</a>, <a class="el" href="class_value_element.html#aa122e1edc849d62daa3fe31501b3cef8">ValueElement</a></li>
 <li>setVariable()&#160;:&#160;<a class="el" href="class_shader_port.html#ae9e4b7c04dabd8e78914dd8d89c3966a">ShaderPort</a></li>
 <li>setVariableNames()&#160;:&#160;<a class="el" href="class_shader_graph.html#a3c716ab663dfca2326c77c2ae2f45fee">ShaderGraph</a></li>
@@ -287,20 +288,20 @@ $(function(){initNavTree('functions_s.html',''); initResizable(true); });
 <li>SHADER&#160;:&#160;<a class="el" href="class_shader_node_1_1_classification.html#a8d212489c31bf51efb3e86f9ff6ec33b">ShaderNode::Classification</a></li>
 <li>Shader()&#160;:&#160;<a class="el" href="class_shader.html#abf8d1b682d3a604ae3198d02a8d0c086">Shader</a></li>
 <li>ShaderGenerator()&#160;:&#160;<a class="el" href="class_shader_generator.html#a68040f10c946d240665111e72847bdec">ShaderGenerator</a></li>
-<li>ShaderGraph()&#160;:&#160;<a class="el" href="class_shader_graph.html#a562dc9c57fb822a7844cccd8b0e1fd15">ShaderGraph</a></li>
+<li>ShaderGraph()&#160;:&#160;<a class="el" href="class_shader_graph.html#a4e5455c302a5dc813f0b2d5d24d77cfa">ShaderGraph</a></li>
 <li>shaderInterfaceType&#160;:&#160;<a class="el" href="class_gen_options.html#abbbf5859103e5fecd0dcd5cfcf927ed7">GenOptions</a></li>
 <li>ShaderNode()&#160;:&#160;<a class="el" href="class_shader_node.html#add10f8dc3be0665b3708747c624e8105">ShaderNode</a></li>
 <li>ShaderNodeImpl()&#160;:&#160;<a class="el" href="class_shader_node_impl.html#a916ce529f011ff8212734c96556f719c">ShaderNodeImpl</a></li>
 <li>ShaderPort()&#160;:&#160;<a class="el" href="class_shader_port.html#ac1c4f6c5b28df00d1e4077a481081a9e">ShaderPort</a></li>
 <li>ShaderStage()&#160;:&#160;<a class="el" href="class_shader_stage.html#a5f2ba563529e20adbaa22f1dabb1ffc2">ShaderStage</a></li>
 <li>size()&#160;:&#160;<a class="el" href="class_file_path.html#a259cb5a711406a8c3e5d937eb9350cca">FilePath</a>, <a class="el" href="class_file_search_path.html#a259cb5a711406a8c3e5d937eb9350cca">FileSearchPath</a>, <a class="el" href="struct_glsl_program_1_1_input.html#a439227feff9d7f55384e8780cfc2eb82">GlslProgram::Input</a>, <a class="el" href="class_variable_block.html#a259cb5a711406a8c3e5d937eb9350cca">VariableBlock</a></li>
-<li>SPACE&#160;:&#160;<a class="el" href="class_hw_implementation.html#a74a268311329928dba00cef2027c1488">HwImplementation</a></li>
+<li>SlangShaderGenerator()&#160;:&#160;<a class="el" href="class_slang_shader_generator.html#a2a3ab86b4a19e2e1a64f026859968bcd">SlangShaderGenerator</a></li>
 <li>splitByLuminance()&#160;:&#160;<a class="el" href="class_image.html#a74b81bc8edf23f51c366d1e5d6a16fe2">Image</a></li>
 <li>splitByUdims()&#160;:&#160;<a class="el" href="class_mesh.html#a3d34848007882ec3f36cf8bd2748bf50">Mesh</a></li>
 <li>srgbToLinear()&#160;:&#160;<a class="el" href="class_color3.html#a53ed2feb13db0bc560e327a77cc79903">Color3</a></li>
 <li>StageMap&#160;:&#160;<a class="el" href="class_shader_renderer.html#af02ee4d51c8927817002da896a473f5c">ShaderRenderer</a></li>
 <li>startTimer()&#160;:&#160;<a class="el" href="class_scoped_timer.html#aec53975ffc59ffaf3080db21af0d2f6e">ScopedTimer</a></li>
-<li>supportedExtensions()&#160;:&#160;<a class="el" href="class_geometry_handler.html#a5a1abcc4aa0686612f96da8c6782319a">GeometryHandler</a>, <a class="el" href="class_geometry_loader.html#a476314a095085c0635f8b597bcafc98e">GeometryLoader</a>, <a class="el" href="class_image_handler.html#adc3a8886f2f44a07e2b2addaa55be5a7">ImageHandler</a>, <a class="el" href="class_image_loader.html#a476314a095085c0635f8b597bcafc98e">ImageLoader</a></li>
+<li>supportedExtensions()&#160;:&#160;<a class="el" href="class_geometry_handler.html#a5a1abcc4aa0686612f96da8c6782319a">GeometryHandler</a>, <a class="el" href="class_geometry_loader.html#a476314a095085c0635f8b597bcafc98e">GeometryLoader</a>, <a class="el" href="class_image_handler.html#adc3a8886f2f44a07e2b2addaa55be5a7">ImageHandler</a>, <a class="el" href="class_image_loader.html#aebc8e5559c03b30e21946ab6a1a3bd8f">ImageLoader</a></li>
 <li>supportsTransform()&#160;:&#160;<a class="el" href="class_color_management_system.html#aa72611f321cb0e5ef312b2dcecec328d">ColorManagementSystem</a>, <a class="el" href="class_unit_system.html#a74dd11472a81af77d4dbf4a9aa7255f2">UnitSystem</a></li>
 <li>SURFACE&#160;:&#160;<a class="el" href="class_shader_node_1_1_classification.html#ab5850493e5aca2d76717f30f3d71008e">ShaderNode::Classification</a></li>
 <li>Syntax()&#160;:&#160;<a class="el" href="class_syntax.html#a8f87b6ceaa83c1223ad9e2ba6686533e">Syntax</a></li>

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -348,7 +348,7 @@ MX_GENSHADER_API const std::array&lt; float, 7 &gt;&#160;</td><td class="memItem
 </div><div class="memdoc">
 
 <p>Returns true if the given element is a surface shader with the potential of being transparent. </p>
-<p>This can be used by <a class="el" href="namespace_h_w.html" title="HW specific identifiers.">HW</a> shader generators to determine if a shader will require transparency handling.</p>
+<p>This can be used by HW shader generators to determine if a shader will require transparency handling.</p>
 <p>Note: This function will check some common cases for how a surface shader can be transparent. It is not covering all possible cases for how transparency can be done and target applications might need to do additional checks to track transparency correctly. For example, custom surface shader nodes implemented in source code will not be tracked by this function and transparency for such nodes must be tracked separately by the target application. </p>
 
 </div>

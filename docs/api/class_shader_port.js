@@ -35,6 +35,6 @@ var class_shader_port =
     [ "setType", "class_shader_port.html#a30c73b008e4359f2f539be955a62b278", null ],
     [ "setUniform", "class_shader_port.html#a95a7626cf92b5038a3007016c2a4c3d8", null ],
     [ "setUnit", "class_shader_port.html#a1d7c6167ddb1cea110577f016884db7a", null ],
-    [ "setValue", "class_shader_port.html#ae0964dd48f6a283b75fe958c10036414", null ],
+    [ "setValue", "class_shader_port.html#abc98417537291a95153e8f06f80002da", null ],
     [ "setVariable", "class_shader_port.html#ae9e4b7c04dabd8e78914dd8d89c3966a", null ]
 ];

@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -157,9 +157,9 @@ const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getNode
 <tr class="memdesc:a8ed1da4dd09379b64baa644d74121f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the node group of the <a class="el" href="class_node_def.html" title="A node definition element within a Document.">NodeDef</a>. <br /></td></tr>
 <tr class="separator:a8ed1da4dd09379b64baa644d74121f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Implementation References</div></td></tr>
-<tr class="memitem:a574f2438d501100d4fe72c81a4995d18" id="r_a574f2438d501100d4fe72c81a4995d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#a553d51f36a159c9f698eb8124ebc0c38">InterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a574f2438d501100d4fe72c81a4995d18">getImplementation</a> (const string &amp;target=EMPTY_STRING) const</td></tr>
-<tr class="memdesc:a574f2438d501100d4fe72c81a4995d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first implementation for this nodedef, optionally filtered by the given target name.  <br /></td></tr>
-<tr class="separator:a574f2438d501100d4fe72c81a4995d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5c64733c86bd1e29a221aac5748410" id="r_aac5c64733c86bd1e29a221aac5748410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_interface_8h.html#a553d51f36a159c9f698eb8124ebc0c38">InterfaceElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac5c64733c86bd1e29a221aac5748410">getImplementation</a> (const string &amp;target=EMPTY_STRING, bool resolveNodeGraph=true) const</td></tr>
+<tr class="memdesc:aac5c64733c86bd1e29a221aac5748410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first implementation for this nodedef, optionally filtered by the given target name.  <br /></td></tr>
+<tr class="separator:aac5c64733c86bd1e29a221aac5748410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Hints</div></td></tr>
 <tr class="memitem:a7b49bdc9dad7871258eeebcbe98606f4" id="r_a7b49bdc9dad7871258eeebcbe98606f4"><td class="memItemLeft" align="right" valign="top"><a id="a7b49bdc9dad7871258eeebcbe98606f4" name="a7b49bdc9dad7871258eeebcbe98606f4"></a>
 <a class="el" href="_material_x_core_2_library_8h.html#a9e4193e26e0d62e4784947fb14d3433b">StringMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getInputHints</b> () const</td></tr>
@@ -522,9 +522,8 @@ template&lt;class T&gt; </td></tr>
 <tr class="memitem:a3d58b1b9c116a8a01f0437a63e2cf8cf inherit pub_methods_class_element" id="r_a3d58b1b9c116a8a01f0437a63e2cf8cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a3d58b1b9c116a8a01f0437a63e2cf8cf">changeChildCategory</a> (<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a> child, const string &amp;category)</td></tr>
 <tr class="memdesc:a3d58b1b9c116a8a01f0437a63e2cf8cf inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the category of the given child element.  <br /></td></tr>
 <tr class="separator:a3d58b1b9c116a8a01f0437a63e2cf8cf inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f43f7e3cf2c0ce51aa37c0ff6044f6 inherit pub_methods_class_element" id="r_a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getChild</b> (const string &amp;name) const</td></tr>
-<tr class="memdesc:a67f43f7e3cf2c0ce51aa37c0ff6044f6 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the child element, if any, with the given name. <br /></td></tr>
+<tr class="memitem:a67f43f7e3cf2c0ce51aa37c0ff6044f6 inherit pub_methods_class_element" id="r_a67f43f7e3cf2c0ce51aa37c0ff6044f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_element_8h.html#a74d91fb8b93d96837a7c900a3f0bb426">ElementPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html#a67f43f7e3cf2c0ce51aa37c0ff6044f6">getChild</a> (const string &amp;name) const</td></tr>
+<tr class="memdesc:a67f43f7e3cf2c0ce51aa37c0ff6044f6 inherit pub_methods_class_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the child element, if any, with the given name.  <br /></td></tr>
 <tr class="separator:a67f43f7e3cf2c0ce51aa37c0ff6044f6 inherit pub_methods_class_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1fff65868abc256b8c9355a1b26421 inherit pub_methods_class_element" id="r_aab1fff65868abc256b8c9355a1b26421"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
 <tr class="memitem:aab1fff65868abc256b8c9355a1b26421 inherit pub_methods_class_element"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_element.html#aab1fff65868abc256b8c9355a1b26421">getChildOfType</a> (const string &amp;name) const</td></tr>
@@ -863,8 +862,8 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
 
 </div>
 </div>
-<a id="a574f2438d501100d4fe72c81a4995d18" name="a574f2438d501100d4fe72c81a4995d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574f2438d501100d4fe72c81a4995d18">&#9670;&#160;</a></span>getImplementation()</h2>
+<a id="aac5c64733c86bd1e29a221aac5748410" name="aac5c64733c86bd1e29a221aac5748410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5c64733c86bd1e29a221aac5748410">&#9670;&#160;</a></span>getImplementation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -872,16 +871,21 @@ weak_ptr&lt; <a class="el" href="class_element.html">Element</a> &gt;&#160;</td>
         <tr>
           <td class="memname"><a class="el" href="_interface_8h.html#a553d51f36a159c9f698eb8124ebc0c38">InterfaceElementPtr</a> getImplementation </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval">EMPTY_STRING</span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval">EMPTY_STRING</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>resolveNodeGraph</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Return the first implementation for this nodedef, optionally filtered by the given target name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Resolving any indirection chain in the implementations. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>An optional target name, which will be used to filter the implementations that are considered. </td></tr>
+    <tr><td class="paramname">resolveNodeGraph</td><td>Allow resolution of <a class="el" href="class_implementation.html" title="An implementation element within a Document.">Implementation</a> elements to their linked <a class="el" href="class_node_graph.html" title="A node graph element within a Document.">NodeGraph</a> elements. Defaults to true. </td></tr>
   </table>
   </dd>
 </dl>

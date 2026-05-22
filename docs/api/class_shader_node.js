@@ -14,6 +14,7 @@ var class_shader_node =
     [ "getMetadata", "class_shader_node.html#a5d9f8ca2accba061f09c53862ba6e3f3", null ],
     [ "getName", "class_shader_node.html#a43f65f5d191c125b0b52028fdbf0f364", null ],
     [ "getParent", "class_shader_node.html#a32fc91409f640989ad93455c5928b869", null ],
+    [ "getUniqueId", "class_shader_node.html#a7bcb62331ed850b2427f4cea5c700cbb", null ],
     [ "hasClassification", "class_shader_node.html#a5a33e8d9e0f2e1376740c5874ab7bfae", null ],
     [ "initialize", "class_shader_node.html#a6f6c953fcc052a153b7a537c80705058", null ],
     [ "isAGraph", "class_shader_node.html#a8896c5b0a07e3b9a2003db54d6d1936d", null ],

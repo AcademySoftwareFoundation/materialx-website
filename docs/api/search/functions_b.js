@@ -3,7 +3,7 @@ var searchData=
   ['makeconnection_0',['makeConnection',['../class_shader_input.html#a92e5040dbc8bdd90075119573f3213f2',1,'ShaderInput::makeConnection()'],['../class_shader_output.html#a19cfe70e5890c4c625ab787efa838f96',1,'ShaderOutput::makeConnection()']]],
   ['makecurrent_1',['makeCurrent',['../class_g_l_context.html#a364d4089b7ff2b8533b2e28a193fcf6a',1,'GLContext']]],
   ['makeidentifier_2',['makeIdentifier',['../class_syntax.html#af91877de409aad92601091338eac47eb',1,'Syntax']]],
-  ['makevalidname_3',['makeValidName',['../class_syntax.html#a43551baa1a68a7f1872ceda9c3bcce1b',1,'Syntax::makeValidName()'],['../class_mdl_syntax.html#ac66ee79aebdf2070982505afeeb18464',1,'MdlSyntax::makeValidName()']]],
+  ['makevalidname_3',['makeValidName',['../class_syntax.html#a43551baa1a68a7f1872ceda9c3bcce1b',1,'Syntax::makeValidName()'],['../class_slang_syntax.html#ac66ee79aebdf2070982505afeeb18464',1,'SlangSyntax::makeValidName()'],['../class_mdl_syntax.html#ac66ee79aebdf2070982505afeeb18464',1,'MdlSyntax::makeValidName()']]],
   ['mapaddressmodetogl_4',['mapAddressModeToGL',['../class_g_l_texture_handler.html#a6ccc98abb759c340bf41b98c04d63671',1,'GLTextureHandler']]],
   ['mapfiltertypetogl_5',['mapFilterTypeToGL',['../class_g_l_texture_handler.html#a076c385bd8bfc434477bade8b1001534',1,'GLTextureHandler']]],
   ['maptextureformattogl_6',['mapTextureFormatToGL',['../class_g_l_texture_handler.html#a6f21287b0e02de5f3b30d6a384fa04cd',1,'GLTextureHandler']]],

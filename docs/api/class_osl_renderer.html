@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -186,17 +186,26 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~OslRenderer</b> (
 <tr class="memitem:a11b548f7ef017e4acab675f5329f2252" id="r_a11b548f7ef017e4acab675f5329f2252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11b548f7ef017e4acab675f5329f2252">setOslUtilityOSOPath</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;dirPath)</td></tr>
 <tr class="memdesc:a11b548f7ef017e4acab675f5329f2252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the search path for dependent shaders (.oso files) which are used when rendering with testrender.  <br /></td></tr>
 <tr class="separator:a11b548f7ef017e4acab675f5329f2252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d5e14dc821ee0f8eee5342fa08a25c" id="r_a51d5e14dc821ee0f8eee5342fa08a25c"><td class="memItemLeft" align="right" valign="top"><a id="a51d5e14dc821ee0f8eee5342fa08a25c" name="a51d5e14dc821ee0f8eee5342fa08a25c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDataLibraryOSOPath</b> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;dirPath)</td></tr>
+<tr class="separator:a51d5e14dc821ee0f8eee5342fa08a25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbbb4fb74630a04aa1690a467bcf840b" id="r_adbbb4fb74630a04aa1690a467bcf840b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbbb4fb74630a04aa1690a467bcf840b">useTestRender</a> (bool useTestRender)</td></tr>
 <tr class="memdesc:adbbb4fb74630a04aa1690a467bcf840b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to toggle to either use testrender or testshade during render validation By default testshade is used.  <br /></td></tr>
 <tr class="separator:adbbb4fb74630a04aa1690a467bcf840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e1df03b0d936cf50e864c0440efce8" id="r_a51e1df03b0d936cf50e864c0440efce8"><td class="memItemLeft" align="right" valign="top"><a id="a51e1df03b0d936cf50e864c0440efce8" name="a51e1df03b0d936cf50e864c0440efce8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRaysPerPixelLit</b> (int rays)</td></tr>
-<tr class="memdesc:a51e1df03b0d936cf50e864c0440efce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of rays per pixel to be used for lit surfaces. <br /></td></tr>
-<tr class="separator:a51e1df03b0d936cf50e864c0440efce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2621cbb7f3f3f2f576af19a9b9094530" id="r_a2621cbb7f3f3f2f576af19a9b9094530"><td class="memItemLeft" align="right" valign="top"><a id="a2621cbb7f3f3f2f576af19a9b9094530" name="a2621cbb7f3f3f2f576af19a9b9094530"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRaysPerPixelUnlit</b> (int rays)</td></tr>
-<tr class="memdesc:a2621cbb7f3f3f2f576af19a9b9094530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of rays per pixel to be used for unlit surfaces. <br /></td></tr>
-<tr class="separator:a2621cbb7f3f3f2f576af19a9b9094530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cfb5b59ea9355a4d02de7c13d4c7d4" id="r_a23cfb5b59ea9355a4d02de7c13d4c7d4"><td class="memItemLeft" align="right" valign="top"><a id="a23cfb5b59ea9355a4d02de7c13d4c7d4" name="a23cfb5b59ea9355a4d02de7c13d4c7d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>useOslCommandString</b> (bool useOslCmdstr)</td></tr>
+<tr class="memdesc:a23cfb5b59ea9355a4d02de7c13d4c7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to switch between testing oso files and osl command strings. <br /></td></tr>
+<tr class="separator:a23cfb5b59ea9355a4d02de7c13d4c7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41c3bf3675adccc8ac514b64a639f6d" id="r_ad41c3bf3675adccc8ac514b64a639f6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad41c3bf3675adccc8ac514b64a639f6d">setAaLit</a> (int aa)</td></tr>
+<tr class="memdesc:ad41c3bf3675adccc8ac514b64a639f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the testrender <code>-aa N</code> value used for lit (closure-color) outputs.  <br /></td></tr>
+<tr class="separator:ad41c3bf3675adccc8ac514b64a639f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac86226a298c44dc7d7648a7fd0f19f" id="r_a9ac86226a298c44dc7d7648a7fd0f19f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ac86226a298c44dc7d7648a7fd0f19f">setAaUnlit</a> (int aa)</td></tr>
+<tr class="memdesc:a9ac86226a298c44dc7d7648a7fd0f19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the testrender <code>-aa N</code> value used for unlit (non-closure) outputs.  <br /></td></tr>
+<tr class="separator:a9ac86226a298c44dc7d7648a7fd0f19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2625359570461a8f8f24a992eb4cecb5" id="r_a2625359570461a8f8f24a992eb4cecb5"><td class="memItemLeft" align="right" valign="top"><a id="a2625359570461a8f8f24a992eb4cecb5" name="a2625359570461a8f8f24a992eb4cecb5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setOSLCmdStr</b> (const string &amp;oslCmd)</td></tr>
+<tr class="memdesc:a2625359570461a8f8f24a992eb4cecb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the osl command string that is to be tested. <br /></td></tr>
+<tr class="separator:a2625359570461a8f8f24a992eb4cecb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb7f5ff653103f341c88b5a34de41dd" id="r_a6eb7f5ff653103f341c88b5a34de41dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eb7f5ff653103f341c88b5a34de41dd">compileOSL</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;oslFilePath)</td></tr>
 <tr class="memdesc:a6eb7f5ff653103f341c88b5a34de41dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile OSL code stored in a file.  <br /></td></tr>
 <tr class="separator:a6eb7f5ff653103f341c88b5a34de41dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +268,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac8763644e2a9fe9a7c0afb17ecc4f2b3" id="r_ac8763644e2a9fe9a7c0afb17ecc4f2b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8763644e2a9fe9a7c0afb17ecc4f2b3">renderOSL</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;dirPath, const string &amp;shaderName, const string &amp;outputName)</td></tr>
 <tr class="memdesc:ac8763644e2a9fe9a7c0afb17ecc4f2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render using OSO input file.  <br /></td></tr>
 <tr class="separator:ac8763644e2a9fe9a7c0afb17ecc4f2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba913385d66eda518ddb1ebee75e8c8f" id="r_aba913385d66eda518ddb1ebee75e8c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba913385d66eda518ddb1ebee75e8c8f">renderOSLNetwork</a> (const <a class="el" href="class_file_path.html">FilePath</a> &amp;dirPath, const string &amp;shaderName)</td></tr>
+<tr class="memdesc:aba913385d66eda518ddb1ebee75e8c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render using OSL command string.  <br /></td></tr>
+<tr class="separator:aba913385d66eda518ddb1ebee75e8c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d35c2de5671d05c3a87211f63fc129c" id="r_a5d35c2de5671d05c3a87211f63fc129c"><td class="memItemLeft" align="right" valign="top"><a id="a5d35c2de5671d05c3a87211f63fc129c" name="a5d35c2de5671d05c3a87211f63fc129c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OslRenderer</b> (unsigned int width, unsigned int height, Image::BaseType baseType)</td></tr>
 <tr class="memdesc:a5d35c2de5671d05c3a87211f63fc129c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
@@ -543,6 +555,100 @@ CameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>_camera</b></td>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aba913385d66eda518ddb1ebee75e8c8f" name="aba913385d66eda518ddb1ebee75e8c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba913385d66eda518ddb1ebee75e8c8f">&#9670;&#160;</a></span>renderOSLNetwork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void renderOSLNetwork </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_file_path.html">FilePath</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dirPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>shaderName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render using OSL command string. </p>
+<p>Will throw an exception if an error occurs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dirPath</td><td>Path to location containing input .oso file. </td></tr>
+    <tr><td class="paramname">shaderName</td><td>Name of OSL shader. A corresponding .oso file is assumed to exist in the output path folder. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad41c3bf3675adccc8ac514b64a639f6d" name="ad41c3bf3675adccc8ac514b64a639f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41c3bf3675adccc8ac514b64a639f6d">&#9670;&#160;</a></span>setAaLit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAaLit </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>aa</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the testrender <code>-aa N</code> value used for lit (closure-color) outputs. </p>
+<p>Note: testrender treats this as the linear AA dimension and traces <code>N * N</code> samples per pixel, so cost scales quadratically. </p>
+
+</div>
+</div>
+<a id="a9ac86226a298c44dc7d7648a7fd0f19f" name="a9ac86226a298c44dc7d7648a7fd0f19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac86226a298c44dc7d7648a7fd0f19f">&#9670;&#160;</a></span>setAaUnlit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAaUnlit </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>aa</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the testrender <code>-aa N</code> value used for unlit (non-closure) outputs. </p>
+<p>Same <code>N * N</code> semantics as setAaLit. </p>
 
 </div>
 </div>

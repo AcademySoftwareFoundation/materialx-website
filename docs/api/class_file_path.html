@@ -29,7 +29,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="MaterialXLogo_200x155.png"/></td>
   <td id="projectalign">
-   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.4</span>
+   <div id="projectname">MaterialX<span id="projectnumber">&#160;1.39.5</span>
    </div>
   </td>
  </tr>
@@ -209,18 +209,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>exists</b> () const</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirectory</b> () const</td></tr>
 <tr class="memdesc:aa202a4bc61612fc6a7fcf7682449c419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the given path is a directory on the file system. <br /></td></tr>
 <tr class="separator:aa202a4bc61612fc6a7fcf7682449c419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa76c43edc9a068c5e2da0424da03169a" id="r_aa76c43edc9a068c5e2da0424da03169a"><td class="memItemLeft" align="right" valign="top"><a id="aa76c43edc9a068c5e2da0424da03169a" name="aa76c43edc9a068c5e2da0424da03169a"></a>
-FilePathVec&#160;</td><td class="memItemRight" valign="bottom"><b>getFilesInDirectory</b> (const string &amp;extension) const</td></tr>
-<tr class="memdesc:aa76c43edc9a068c5e2da0424da03169a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of all files in the given directory with the given extension. <br /></td></tr>
-<tr class="separator:aa76c43edc9a068c5e2da0424da03169a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d4fd8c29fd205d4311d8271bbd7693" id="r_a45d4fd8c29fd205d4311d8271bbd7693"><td class="memItemLeft" align="right" valign="top">FilePathVec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45d4fd8c29fd205d4311d8271bbd7693">getFilesInDirectory</a> (const string &amp;extension=EMPTY_STRING) const</td></tr>
+<tr class="memdesc:a45d4fd8c29fd205d4311d8271bbd7693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of all files in the given directory with the given extension.  <br /></td></tr>
+<tr class="separator:a45d4fd8c29fd205d4311d8271bbd7693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df9c9ac04e1cab269441ab127dedf9b" id="r_a4df9c9ac04e1cab269441ab127dedf9b"><td class="memItemLeft" align="right" valign="top"><a id="a4df9c9ac04e1cab269441ab127dedf9b" name="a4df9c9ac04e1cab269441ab127dedf9b"></a>
 FilePathVec&#160;</td><td class="memItemRight" valign="bottom"><b>getSubDirectories</b> () const</td></tr>
 <tr class="memdesc:a4df9c9ac04e1cab269441ab127dedf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of all directories at or beneath the given path. <br /></td></tr>
 <tr class="separator:a4df9c9ac04e1cab269441ab127dedf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd9572683e4a5b6b22463168f26853d" id="r_a2bd9572683e4a5b6b22463168f26853d"><td class="memItemLeft" align="right" valign="top"><a id="a2bd9572683e4a5b6b22463168f26853d" name="a2bd9572683e4a5b6b22463168f26853d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createDirectory</b> () const</td></tr>
-<tr class="memdesc:a2bd9572683e4a5b6b22463168f26853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a directory on the file system at the given path. <br /></td></tr>
-<tr class="separator:a2bd9572683e4a5b6b22463168f26853d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ee59145f18e2c55bb3c2d8c9a97687" id="r_a26ee59145f18e2c55bb3c2d8c9a97687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26ee59145f18e2c55bb3c2d8c9a97687">createDirectory</a> (bool recursive=false) const</td></tr>
+<tr class="memdesc:a26ee59145f18e2c55bb3c2d8c9a97687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a directory on the file system at the given path.  <br /></td></tr>
+<tr class="separator:a26ee59145f18e2c55bb3c2d8c9a97687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d3d25e1f6d4908a375a840e1b1ab2c" id="r_ae7d3d25e1f6d4908a375a840e1b1ab2c"><td class="memItemLeft" align="right" valign="top"><a id="ae7d3d25e1f6d4908a375a840e1b1ab2c" name="ae7d3d25e1f6d4908a375a840e1b1ab2c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentPath</b> ()</td></tr>
 <tr class="memdesc:ae7d3d25e1f6d4908a375a840e1b1ab2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current working directory of the file system. <br /></td></tr>
@@ -240,6 +238,46 @@ static <a class="el" href="class_file_path.html">FilePath</a>&#160;</td><td clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A generic file path, supporting both syntactic and file system operations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a26ee59145f18e2c55bb3c2d8c9a97687" name="a26ee59145f18e2c55bb3c2d8c9a97687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ee59145f18e2c55bb3c2d8c9a97687">&#9670;&#160;</a></span>createDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void createDirectory </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>recursive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a directory on the file system at the given path. </p>
+<p>If recursive is true, any missing parent directories will be created as well. </p>
+
+</div>
+</div>
+<a id="a45d4fd8c29fd205d4311d8271bbd7693" name="a45d4fd8c29fd205d4311d8271bbd7693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d4fd8c29fd205d4311d8271bbd7693">&#9670;&#160;</a></span>getFilesInDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FilePathVec getFilesInDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>extension</em></span><span class="paramdefsep"> = </span><span class="paramdefval">EMPTY_STRING</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a vector of all files in the given directory with the given extension. </p>
+<p>If extension is empty all files are returned. </p>
+
+</div>
+</div>
 <a id="ad37c91bf6419930734cef1ea43a08392" name="ad37c91bf6419930734cef1ea43a08392"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad37c91bf6419930734cef1ea43a08392">&#9670;&#160;</a></span>getNormalized()</h2>
 
