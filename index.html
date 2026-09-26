@@ -22,22 +22,13 @@
     <div id="mainContentContainer">
       <div id="header-container"></div>
 
-      <!-- Page Title ---------------------------------------------------------------------- -->
-      <!--      <div class="clearBoth"></div>       -->
-      <!--      <h1 class="articleContentTitle">MaterialX Home</h1>       -->
-      <!--      <div class="clearBoth"></div>       -->
-      <!--      <hr>       -->
-      <!-- --------------------------------------------------------------------------------- -->
-
       <div class="clearBoth"></div>
       <section class="coursewareBackground">
         <article class="topicLeftData-MainData">
-          <p style="margin-left: 0px">
-
-          <p style="margin-bottom: 0px; padding-bottom: 0px">
+          <div>
             <img alt="<Open Chess Set Image>" src="images/OpenChessSet_Arnold_01.png" style="margin: 0; padding-bottom: 0px">
             <div class="smtextright">The Open Chess Set (authored by Moeen and Mujtaba Sayed, contributed to MaterialX by SideFX, rendered in Arnold for Maya)</div>
-          </p>
+          </div>
 
           <!-- Page Content -------------------------------------------------------------------- -->
 
@@ -63,15 +54,29 @@
             shading and processing nodes with a precise mechanism for functional extensibility.
           </p>
 
-          <p>The MaterialX library, now at release v1.39.4, is an <a href="https://github.com/AcademySoftwareFoundation/MaterialX" class="external-link" rel="nofollow">Open Source project</a> released under an <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE" class="external-link" rel="nofollow">Apache License Version 2.0</a>.</p>
+          <p>The MaterialX library, now at release v1.39.5, is an <a href="https://github.com/AcademySoftwareFoundation/MaterialX" class="external-link" rel="nofollow">Open Source project</a> released under an <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE" class="external-link" rel="nofollow">Apache License Version 2.0</a>.</p>
 
           <br>
-          <h2><strong>Announcements</strong></h2>
-          <p>
+          <section id="Announcements">
+            <h2><strong>Announcements</strong></h2>
             <div>
               <p>
-                <em>Update September 15th, 2025:</em>
-                <br><strong>MaterialX Library v1.39.4 has been released</strong>.
+                <em>May 22, 2026:</em>
+                <br><strong>MaterialX Library v1.39.5 has been released</strong>.
+                This version adds support for Slang shader generation,
+                flake nodes,
+                retro-reflective BSDFs,
+                graph editor improvements,
+                and much more.
+                Please see the
+                <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.39.5">MaterialX Version 1.39.5 release page</a>
+                on the MaterialX GitHub for further details,
+                and visit the <a href="https://github.com/AcademySoftwareFoundation/MaterialX">MaterialX GitHub repository</a>
+                to download the latest library source code, documentation and examples.
+                <br><br>
+
+                <em>September 15, 2025:</em>
+                MaterialX Library v1.39.4 has been released.
                 This version adds support for WebGPU Shading Language,
                 hex-tiled and lat-long images,
                 NanoColor spaces,
@@ -80,22 +85,20 @@
                 and much more.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.39.4">MaterialX Version 1.39.4 release page</a>
-                on the MaterialX Github for further details,
-                and visit the <a href="https://github.com/AcademySoftwareFoundation/MaterialX">MaterialX GitHub repository</a>
-                to download the latest library source code, documentation and examples.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Update March 7th, 2025:</em>
+                <em>March 7, 2025:</em>
                 MaterialX Library v1.39.3 has been released.
                 This version improves the alignment between MaterialX and OpenUSD,
                 adds support for OSL v1.14 and MDL v1.10,
                 and includes optimizations to ShaderGen and GitHub CI to improve performance for artists and developers.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.39.3">MaterialX Version 1.39.3 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Update January 20th, 2025:</em>
+                <em>January 20, 2025:</em>
                 MaterialX Library v1.39.2 has been released.
                 This version adds support for the Chiang Hair BSDF,
                 Disney Principled shading model,
@@ -105,20 +108,20 @@
                 and much more.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.39.2">MaterialX Version 1.39.2 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Update September 3rd, 2024:</em>
+                <em>September 3, 2024:</em>
                 MaterialX Library v1.39.1 has been released.
                 This version adds initial shader translation graphs between Standard Surface and OpenPBR Surface,
                 aligns the public definitions of the MaterialX Lama nodes with RenderMan,
                 and addresses a number of build issues in OpenUSD integrations.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.39.1">MaterialX Version 1.39.1 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Update July 5th, 2024:</em>
+                <em>July 5, 2024:</em>
                 MaterialX Library v1.39.0 has been released.
                 This version updates the MaterialX specification and codebase to 1.39,
                 bringing a broad set of improvements to its feature set,
@@ -129,26 +132,26 @@
                 shading model.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.39.0">MaterialX Version 1.39.0 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>April 12th, 2024:</em>
+                <em>April 12, 2024:</em>
                 MaterialX Library v1.38.10 has been released.
                 This is primarily a patch build to improve MaterialX integrations in USD,
                 with the one new feature being environment light intensity controls in generated GLSL shaders.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.10">MaterialX Version 1.38.10 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>February 26th, 2024:</em>
+                <em>February 26, 2024:</em>
                 MaterialX Library v1.38.9 has been released.
                 This version adds support for environment prefiltering on the GPU,
                 integrates improvements to the MaterialX Graph Editor and MaterialX Web Viewer from the ASWF Dev Days community,
                 and introduces the first non-photorealistic rendering node library to MaterialX.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.9">MaterialX Version 1.38.9 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
                 <em>September 8, 2023:</em>
@@ -159,7 +162,7 @@
                 and MaterialX Python distribution through PyPI.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.8">MaterialX Version 1.38.8 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
                 <em>April 21, 2023:</em>
@@ -170,7 +173,7 @@
                 and support for the Metal Shading Language in shader generation and rendering.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.7">MaterialX Version 1.38.7 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
                 <em>November 4, 2022:</em>
@@ -180,21 +183,21 @@
                 and support for the MaterialX closures in OSL.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.6">MaterialX Version 1.38.6 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
                 <em>July 9, 2022:</em>
                 MaterialX Library v1.38.5 has been released.
                 This release adds support for Vulkan GLSL generation,
                 improved real-time refraction,
-                the new Open Chess Set example from SideFX.
+                the new Open Chess Set example from SideFX,
                 and more.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.5">MaterialX Version 1.38.5 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Apr 6, 2022:</em>
+                <em>April 6, 2022:</em>
                 MaterialX Library v1.38.4 has been released.
                 This release adds a
                 <a href="https://academysoftwarefoundation.github.io/MaterialX/">Web Viewer</a> example based on
@@ -205,10 +208,10 @@
                 and more.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.4">MaterialX Version 1.38.4 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Dec 14, 2021:</em>
+                <em>December 14, 2021:</em>
                 MaterialX Library v1.38.3 has been released.
                 This release adds
                 refactored BSDF handling in shader generation enabling more flexible and efficient vertical layering,
@@ -220,10 +223,10 @@
                 and initial support for FreeBSD and Xcode 13 as well as other updates and fixes.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.3">MaterialX Version 1.38.3 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Oct 7, 2021:</em>
+                <em>October 7, 2021:</em>
                 MaterialX Library v1.38.2 has been released.
                 This release adds
                 improved accuracy of directional albedo computations for GGX specular and Imageworks sheen,
@@ -234,10 +237,10 @@
                 initial support for GCC 11, and other fixes.
                 Please see the
                 <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.2">MaterialX Version 1.38.2 release page</a>
-                on the MaterialX Github for further details.
+                on the MaterialX GitHub for further details.
                 <br><br>
 
-                <em>Jul 14, 2021:</em>
+                <em>July 14, 2021:</em>
                 We are thrilled to announce that
                 <a href="https://www.aswf.io/blog/materialx-joins-the-academy-software-foundation-as-a-hosted-project/">MaterialX has been accepted into the Academy Software Foundation</a>
                 (ASWF) as a Foundation-hosted project!  Integration into the <a href="https://www.aswf.io/">ASWF</a>
@@ -245,74 +248,23 @@
                 for the project, which will lead to broader communication and alignment with other closely-related
                 standards such as OCIO and OSL, and will provide a strong platform for studios, companies and
                 teams to contribute to MaterialX in the future.
-                <br><br>
-
-                <em>Jun 21, 2021:</em>
-                MaterialX Library v1.38.1 has been released.
-                This release adds support for shared library builds on Windows, 16-bit unsigned integer images
-                in MaterialXRender, and compound nodegraphs with user interfaces is shader and UI generation.
-                It also includes headers for the
-                <a href="https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/blob/master/src/shaders/stdosl.h#L473">newly proposed MaterialX closures in OSL</a>,
-                improved memory efficiency for texture baking, improved compatibility of generated MDL code
-                with Omniverse, and other improvements.
-                Please see the
-                <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.38.1">MaterialX Version 1.38.1 release page</a>
-                on the MaterialX Github for further details, and visit the
-                <a href="https://github.com/AcademySoftwareFoundation/MaterialX">MaterialX GitHub repository</a>
-                to download the latest library source code, documentation and examples.
-                <br><br>
-
-                <em>Mar 2, 2021:</em>
-                MaterialX Library v1.38.0 has been released.
-                This release features support for a generalized "layer" node in Physically Based Shading,
-                user controls for texture baking and wedge rendering in the
-                <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/Viewer.md">MaterialX Viewer</a>,
-                and adds support for
-                Material Nodes, unified Input and Parameter classes, MaterialX code generation for
-                <a href="https://www.nvidia.com/en-us/design-visualization/technologies/material-definition-language/">Nvidia's MDL language</a>,
-                inline source code in Implementation elements, TargetDef elements,
-                and many other improvements and fixes.
-                <br><br>
-
-                <em>Mar 1, 2021:</em>
-                The final draft of MaterialX Specification version 1.38 has been released.
-                MaterialX 1.38 includes support for Material Nodes, formal "target" definition with inheritance,
-                enhancements to vertical PBR node layering, the merging of hemispherical BRDF and BTDF nodes
-                into spherical BSDFs, additional pattern nodes, new methodologies
-                for node organization, grouping and documentation, and other cleanup and streamlining.
-                Please see the <a target="_blank" href="Specification.html">Specification</a> page
-                for PDFs of the Specification documents, Supplemental Notes and a list of changes since
-                the previous version of the Specification.
-                <br><br>
-
-                <em>Dec 18, 2020:</em>
-                MaterialX Library v1.37.4 has been released.
-                This release features additional robustness and testing for MaterialXRenderGlsl in GitHub Actions,
-                and other updates.  This builds upon updates in v1.37.3, which featured additional render
-                options in the viewer, viewer support for partially-transparent mesh partitions, a subsurface
-                scattering approximation in MaterialX GLSL, and other improvements and fixes.
-                Please see the
-                <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.37.4">MaterialX Version 1.37.4 release page</a>
-                on the MaterialX Github for further details.
-                <br><br>
-
-                <em>Jun 9, 2020:</em>
-                MaterialX Library version 1.37.1 has been released.
-                This release features significant improvements to generated GLSL shading including
-                better energy conservation, improved shadowing, more robust tangent frame computation
-                and fixed Burley diffuse, as well as improvements to the
-                <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/Viewer.md">MaterialXView</a>
-                viewer and other updates.  Please see the
-                <a href="https://github.com/AcademySoftwareFoundation/MaterialX/releases/tag/v1.37.1">MaterialX Version 1.37.1 release page</a>
-                on the MaterialX Github for further details.
               </p>
             </div>
-          </p>
+          </section>
 
           <section id="Events">
             <h2><strong>Events</strong></h2>
             <div>
               <p>
+                <em>September 15, 2026 - </em>
+                <a href="https://www.aswf.io/">Academy Software Foundation</a>
+                Virtual Town Halls 2026
+                <br>
+                <strong>MaterialX and OpenPBR Virtual Town Hall</strong>
+                <br>
+                (<a href="assets/ASWF_VTH2026_MaterialX_OpenPBR_Final.pdf">Slide Deck PDF</a>)
+                <br><br>
+
                 <em>August 5, 2025 - </em>
                 <a href="https://www.aswf.io/">Academy Software Foundation</a>
                 Open Source Days 2025
@@ -358,7 +310,7 @@
                 <br>
                 (<a href="assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf">Slide Deck PDF</a>)
                 &nbsp;
-                (<a href="https://www.youtube.com/watch?v=tK9_PLWv4eM">Presentation Video</a>)
+                (<a href="https://www.youtube.com/watch?v=TQVwu7UMIgg">Presentation Video</a>)
                 <br><br>
 
                 <em>August 5, 2021 - </em>
@@ -374,7 +326,7 @@
                 <br><br>
 
                 <em>August 26, 2020 - </em>
-                <a href="https://s2020.siggraph.org/">Siggraph 2020</a>
+                <a href="https://s2020.siggraph.org/">SIGGRAPH 2020</a>
                 Course
                 <br>
                 <strong>Physically Based Shading in Theory and Practice</strong>,
@@ -383,25 +335,6 @@
                 (<a href="https://blog.selfshadow.com/publications/s2020-shading-course/materialx/s2020_pbs_materialx_slides.pdf">Slide Deck PDF</a>)
                 &nbsp;
                 (<a href="https://blog.selfshadow.com/publications/s2020-shading-course/#materialx">Presentation Video</a>)
-                <br><br>
-
-                <em>August 25, 2020 - </em>
-                <a href="https://s2020.siggraph.org/">Siggraph 2020</a>
-                Birds-of-a-Feather Session
-                <br>
-                <strong>MaterialX: An Open Standard for Network-Based CG Object Looks</strong>
-                <br>
-                (<a href="assets/MaterialX_Sig2020_BOF_slides.pdf">Slide Deck PDF</a>)
-                <br><br>
-
-                <em>August 19, 2020 - </em>
-                <a href="https://www.aswf.io/">Academy Software Foundation</a>
-                Open Source Days 2020 Session
-                <br>
-                <a href="https://opensourcedays2020.sched.com/event/dbb5/new-developments-in-materialx?iframe=yes&w=100%&sidebar=yes&bg=no"><strong>New Developments in MaterialX</strong></a>
-                <br>
-                (<a href="https://www.youtube.com/watch?v=kvYHVSkbaoM">Presentation Video</a>)
-                <br><br>
               </p>
             </div>
           </section>
