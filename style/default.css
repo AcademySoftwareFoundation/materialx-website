@@ -1519,3 +1519,27 @@ footer.copyrightFooter {
 table.warningMacro, table.noteMacro {
   margin: var(--space-lg) 0 var(--space-lg) 0;
 }
+
+/* Contributor lists */
+#mainContentContainer li.contributorGroup {
+  font-size: 15px;
+}
+
+.credits {
+  column-count: 3;
+}
+
+#mainContentContainer .credits p {
+  margin: 0;
+}
+
+/* Icon links in the site header */
+#mainSiteNavigation .creatorMainNav li.iconItem {
+  float: right;
+  margin: 0;
+}
+
+/* Spacing between the sections of the site navigation */
+.navigation .quickLinks > ul > li + li {
+  margin-top: 12px;
+}
