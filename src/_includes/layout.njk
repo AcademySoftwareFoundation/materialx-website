@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MaterialX - {{ title }}</title>
 
   <link rel="icon" href="faviconMX.ico">
@@ -11,27 +12,17 @@
 
 {% include "navigation.html" %}
 
-  <main class="document">
-    <div id="mainContentContainer">
+  <div class="page">
 {% include "header.html" %}
 {% if heading %}
-      <div class="clearBoth"></div>
-      <h1 class="articleContentTitle">{{ heading }}</h1>
-      <div class="clearBoth"></div>
-      <hr>
+    <h1 class="page-title">{{ heading }}</h1>
+    <hr>
 {% endif %}
-      <div class="clearBoth"></div>
-      <section class="coursewareBackground">
-        <article class="topicLeftData-MainData">
+    <main class="content">
 
 {{ content | safe }}
-        </article>
-      </section>
-    </div>
-
-    <div class="clearBoth"></div>
-
-  </main>
+    </main>
+  </div>
 
 {% include "footer.html" %}
 
