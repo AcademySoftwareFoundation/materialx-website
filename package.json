@@ -7,10 +7,12 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "docs": "node scripts/build-docs.js"
+    "docs": "node scripts/build-docs.js",
+    "test": "html-validate \"_site/*.html\""
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "html-validate": "^11.16.1",
     "js-yaml": "^4.3.2"
   }
 }

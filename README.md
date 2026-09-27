@@ -25,6 +25,17 @@ npm run build
 npm run docs
 ```
 
+## Testing
+
+The generated pages can be checked for valid HTML:
+
+```
+npm run build
+npm test
+```
+
+Each pull request runs this check, along with a check of the links between pages of the site.  Links to other sites are checked for each pull request as well, and can be checked at any time by running the `main` workflow manually from the Actions tab.
+
 ## Deployment
 
 Each push to the `main` branch builds the site and API documentation and deploys them to GitHub Pages.
