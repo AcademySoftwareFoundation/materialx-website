@@ -1,0 +1,146 @@
+# Announcements on the front page, from newest to oldest.
+#
+# A release announcement has a version and a summary, with the link to its
+# release page generated from the version.  Any other announcement has text.
+
+- date: 2026-05-22
+  version: "1.39.5"
+  summary: >-
+    This version adds support for Slang shader generation,
+    flake nodes,
+    retro-reflective BSDFs,
+    graph editor improvements,
+    and much more.
+
+- date: 2025-09-15
+  version: "1.39.4"
+  summary: >-
+    This version adds support for WebGPU Shading Language,
+    hex-tiled and lat-long images,
+    NanoColor spaces,
+    2D fractals,
+    animated materials,
+    and much more.
+
+- date: 2025-03-07
+  version: "1.39.3"
+  summary: >-
+    This version improves the alignment between MaterialX and OpenUSD,
+    adds support for OSL v1.14 and MDL v1.10,
+    and includes optimizations to ShaderGen and GitHub CI to improve performance for artists and developers.
+
+- date: 2025-01-20
+  version: "1.39.2"
+  summary: >-
+    This version adds support for the Chiang Hair BSDF,
+    Disney Principled shading model,
+    generic color ramps,
+    improved Worley noise,
+    shader generation optimizations,
+    and much more.
+
+- date: 2024-09-03
+  version: "1.39.1"
+  summary: >-
+    This version adds initial shader translation graphs between Standard Surface and OpenPBR Surface,
+    aligns the public definitions of the MaterialX Lama nodes with RenderMan,
+    and addresses a number of build issues in OpenUSD integrations.
+
+- date: 2024-07-05
+  version: "1.39.0"
+  summary: >-
+    This version updates the MaterialX specification and codebase to 1.39,
+    bringing a broad set of improvements to its feature set,
+    pattern nodes,
+    and physically based shading nodes,
+    including support for the
+    <a href="https://github.com/AcademySoftwareFoundation/OpenPBR">OpenPBR Surface</a>
+    shading model.
+
+- date: 2024-04-12
+  version: "1.38.10"
+  summary: >-
+    This is primarily a patch build to improve MaterialX integrations in USD,
+    with the one new feature being environment light intensity controls in generated GLSL shaders.
+
+- date: 2024-02-26
+  version: "1.38.9"
+  summary: >-
+    This version adds support for environment prefiltering on the GPU,
+    integrates improvements to the MaterialX Graph Editor and MaterialX Web Viewer from the ASWF Dev Days community,
+    and introduces the first non-photorealistic rendering node library to MaterialX.
+
+- date: 2023-09-08
+  version: "1.38.8"
+  summary: >-
+    This release adds a rich set of new pattern nodes to the standard,
+    and is the first MaterialX release with support for iOS builds,
+    drag-and-drop loading in the Web Viewer,
+    and MaterialX Python distribution through PyPI.
+
+- date: 2023-04-21
+  version: "1.38.7"
+  summary: >-
+    This release adds the
+    <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/GraphEditor.md">MaterialX Graph Editor</a>,
+    an example application for visualizing, creating, and editing MaterialX graphs,
+    and support for the Metal Shading Language in shader generation and rendering.
+
+- date: 2022-11-04
+  version: "1.38.6"
+  summary: >-
+    This release adds Unified Noise and Color Correct nodes,
+    improved iridescence rendering in GLSL,
+    and support for the MaterialX closures in OSL.
+
+- date: 2022-07-09
+  version: "1.38.5"
+  summary: >-
+    This release adds support for Vulkan GLSL generation,
+    improved real-time refraction,
+    the new Open Chess Set example from SideFX,
+    and more.
+
+- date: 2022-04-06
+  version: "1.38.4"
+  summary: >-
+    This release adds a
+    <a href="https://academysoftwarefoundation.github.io/MaterialX/">Web Viewer</a> example based on
+    <a href="https://github.com/AcademySoftwareFoundation/MaterialX/tree/main/javascript">MaterialX JavaScript</a>,
+    a graph for the <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/v1.38.4/libraries/bxdf/gltf_pbr.mtlx">glTF PBR</a>
+    shading model,
+    new Worley noise nodes,
+    and more.
+
+- date: 2021-12-14
+  version: "1.38.3"
+  summary: >-
+    This release adds
+    refactored BSDF handling in shader generation enabling more flexible and efficient vertical layering,
+    optimized GLSL implementations for GGX specular,
+    a refactoring of the TextureBaker API,
+    versioning and customization support to MaterialX namespaces,
+    an inheritance structure for versions of Autodesk Standard Surface,
+    color transform methods to the Image class,
+    and initial support for FreeBSD and Xcode 13 as well as other updates and fixes.
+
+- date: 2021-10-07
+  version: "1.38.2"
+  summary: >-
+    This release adds
+    improved accuracy of directional albedo computations for GGX specular and Imageworks sheen,
+    an initial shader translation graph from Autodesk Standard Surface to UsdPreviewSurface,
+    graph definitions for the MaterialX Lama node set,
+    an initial ESSL shader generator,
+    support for filename templates in texture baking,
+    initial support for GCC 11, and other fixes.
+
+- date: 2021-07-14
+  text: >-
+    We are thrilled to announce that
+    <a href="https://www.aswf.io/blog/materialx-joins-the-academy-software-foundation-as-a-hosted-project/">MaterialX has been accepted into the Academy Software Foundation</a>
+    (ASWF) as a Foundation-hosted project!  Integration into the <a href="https://www.aswf.io/">ASWF</a>
+    is an important step forward
+    for the project, which will lead to broader communication and alignment with other closely-related
+    standards such as OCIO and OSL, and will provide a strong platform for studios, companies and
+    teams to contribute to MaterialX in the future.

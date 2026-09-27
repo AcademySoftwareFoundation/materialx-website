@@ -1,0 +1,60 @@
+# Events on the front page, from newest to oldest.
+#
+# The slides and video of an event are optional, and a link to slides in
+# this repository is given relative to the root of the site.
+
+- date: 2026-09-15
+  host: Academy Software Foundation
+  host_url: https://www.aswf.io/
+  session: Virtual Town Halls 2026
+  title: MaterialX and OpenPBR Virtual Town Hall
+  slides: assets/ASWF_VTH2026_MaterialX_OpenPBR_Final.pdf
+
+- date: 2025-08-05
+  host: Academy Software Foundation
+  host_url: https://www.aswf.io/
+  session: Open Source Days 2025 Session
+  title: MaterialX and OpenPBR Virtual Town Hall
+  slides: assets/ASWF_OSD2025_MaterialX_Final.pdf
+  video: https://www.youtube.com/watch?v=GTSRNGQNOe4
+
+- date: 2024-07-23
+  host: Academy Software Foundation
+  host_url: https://www.aswf.io/
+  session: Open Source Days 2024 Session
+  title: MaterialX and OpenPBR Virtual Town Hall
+  slides: assets/ASWF_OSD2024_MaterialX_Final.pdf
+  video: https://www.youtube.com/watch?v=hMNQHlbHYHc
+
+- date: 2023-08-02
+  host: Academy Software Foundation
+  host_url: https://www.aswf.io/
+  session: Open Source Days 2023 Session
+  title: MaterialX Virtual Town Hall
+  slides: assets/ASWF_OSD2023_MaterialX_Final.pdf
+  video: https://www.youtube.com/watch?v=PdxArDHRI-c
+
+- date: 2022-08-08
+  host: Academy Software Foundation
+  host_url: https://www.aswf.io/
+  session: Open Source Days 2022 Session
+  title: New Developments in MaterialX and OSL
+  slides: assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf
+  video: https://www.youtube.com/watch?v=TQVwu7UMIgg
+
+- date: 2021-08-05
+  host: Academy Software Foundation
+  host_url: https://www.aswf.io/
+  session: Open Source Days 2021 Session
+  title: MaterialX New Developments
+  slides: assets/ASWF_OSD2021_MaterialX_slides_final.pdf
+  video: https://www.youtube.com/watch?v=tK9_PLWv4eM
+
+- date: 2020-08-26
+  host: SIGGRAPH 2020
+  host_url: https://s2020.siggraph.org/
+  session: Course
+  title: Physically Based Shading in Theory and Practice
+  talk: MaterialX Physically Based Shading Nodes
+  slides: https://blog.selfshadow.com/publications/s2020-shading-course/materialx/s2020_pbs_materialx_slides.pdf
+  video: https://blog.selfshadow.com/publications/s2020-shading-course/#materialx
