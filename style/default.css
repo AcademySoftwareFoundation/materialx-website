@@ -421,35 +421,62 @@ body {
 
   .page {
     margin-left: 10px;
-    padding-top: 10px;
+    padding-bottom: 0;
+    overflow: hidden;
   }
 
   .page-title {
-    margin-top: 10px;
-    padding: 0 15px;
+    margin-top: 20px;
+    padding: 0 16px;
     font-size: 30px;
     line-height: 34px;
   }
 
   .page > hr {
-    margin: 10px 15px 15px;
+    margin: 10px 16px 15px;
   }
 
   .content {
-    margin: 0 10px 10px;
-    padding: 15px 20px;
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    line-height: 1.2;
   }
 
   .content p {
     margin-left: 0;
+    line-height: 1.5;
   }
 
   .content ul {
-    padding-left: 25px;
+    padding-left: 22px;
+  }
+
+  .content li {
+    margin: 10px 0;
+    padding-left: 2px;
+    line-height: 1.35;
+  }
+
+  .content figcaption {
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+  .content li.group {
+    font-size: 17px;
+  }
+
+  .content li.group li {
+    font-size: 16px;
   }
 
   .credits {
-    column-count: 2;
+    columns: 150px 2;
   }
 
   .site-footer {
