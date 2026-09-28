@@ -3,6 +3,12 @@
       <div class="logo">
         <a href="index.html"><img alt="MaterialX" src="images/MaterialXLogoSmallA.png"></a>
       </div>
+      <button class="menu-button" type="button" hidden>
+        <svg aria-hidden="true" width="18" height="14" viewBox="0 0 18 14">
+          <path d="M0 1h18M0 7h18M0 13h18" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Menu
+      </button>
       <ul>
         <li>
           <a href="Specification.html">MaterialX Specification</a>
@@ -105,5 +111,27 @@
           <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/LICENSE">License</a>
         </li>
       </ul>
+      <ul class="site-links">
+{% include "links.html" %}
+      </ul>
     </nav>
   </aside>
+
+  <script>
+    // On small screens, the navigation is a menu that opens from a button.
+    // Without this script the button stays hidden and the menu stays open.
+    {
+      const nav = document.querySelector(".sidebar nav");
+      const button = nav.querySelector(".menu-button");
+      const setOpen = (open) => button.setAttribute("aria-expanded", open);
+
+      setOpen(false);
+      button.hidden = false;
+      button.addEventListener("click", () => setOpen(button.getAttribute("aria-expanded") !== "true"));
+      nav.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          setOpen(false);
+        }
+      });
+    }
+  </script>
