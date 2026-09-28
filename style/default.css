@@ -103,9 +103,32 @@ body {
   margin-top: 12px;
 }
 
+.sidebar .site-links,
+.menu-button {
+  display: none;
+}
+
+.menu-button {
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: none;
+  color: var(--color-text-light);
+  font: 14px var(--font-heading);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.menu-button[aria-expanded="true"] {
+  border-color: var(--color-border-light);
+  color: #fff;
+}
+
 /* Site header */
 
-.site-header ul {
+.site-links {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -115,28 +138,28 @@ body {
   list-style: none;
 }
 
-.site-header li {
+.site-links li {
   margin: 8px 15px;
   font-size: 14px;
   line-height: 15px;
 }
 
-.site-header a {
+.site-links a {
   color: var(--color-text-muted);
   font-family: var(--font-heading);
   letter-spacing: 1px;
   text-decoration: none;
 }
 
-.site-header a:hover {
+.site-links a:hover {
   color: #fff;
 }
 
-.site-header a:active {
+.site-links a:active {
   color: var(--color-primary);
 }
 
-.site-header a.button {
+.site-links a.button {
   padding: 6px;
   border: 1px solid #000;
   border-radius: 5px;
@@ -149,21 +172,21 @@ body {
   text-transform: uppercase;
 }
 
-.site-header a.button:hover {
+.site-links a.button:hover {
   background: linear-gradient(to bottom, #275d8e, #003d72);
 }
 
-.site-header a.button:active {
+.site-links a.button:active {
   background: linear-gradient(to bottom, #002345, #204d79);
   box-shadow: 0 1px 0 #444;
   color: #fff;
 }
 
-.site-header li.icon {
+.site-links li.icon {
   margin: 0;
 }
 
-.site-header li.icon a {
+.site-links li.icon a {
   display: block;
   padding: 6px 6px 6px 5px;
 }
@@ -303,7 +326,8 @@ body {
   }
 }
 
-/* Small screens: the navigation moves above the page. */
+/* Small screens: the navigation becomes a menu above the page, which
+   includes the links of the site header. */
 
 @media (max-width: 800px) {
   .sidebar {
@@ -311,52 +335,97 @@ body {
     width: auto;
     max-height: none;
     margin: 10px 10px 0;
-    padding: 10px 15px;
+    padding: 8px 15px;
   }
 
   .sidebar nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 25px;
   }
 
   .sidebar .logo {
     padding: 0;
   }
 
-  .sidebar img {
-    width: 100px;
+  .sidebar .logo img {
+    width: 70px;
     height: auto;
   }
 
+  .menu-button:not([hidden]) {
+    display: flex;
+  }
+
   .sidebar nav > ul {
-    margin: 0;
-    font-size: 13px;
+    flex-basis: 100%;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+    border-top: 1px solid var(--color-border);
+    list-style: none;
+  }
+
+  .menu-button[aria-expanded="false"] ~ ul {
+    display: none;
   }
 
   .sidebar nav > ul > li + li {
-    margin-top: 8px;
+    margin-top: 0;
+  }
+
+  .sidebar nav > ul > li > a {
+    display: block;
+    padding: 10px 0;
+    color: var(--color-text-light);
+    font-size: 16px;
   }
 
   .sidebar ul ul {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    border-left: 1px solid var(--color-border);
+    list-style: none;
+  }
+
+  .sidebar ul ul a {
+    display: block;
+    padding: 7px 0;
+    font-size: 14px;
+  }
+
+  .sidebar .site-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0 0;
+    border-bottom: 0;
+  }
+
+  .sidebar .site-links li {
+    margin: 0 20px 0 0;
+  }
+
+  .sidebar .site-links li > a {
+    font-size: 14px;
+  }
+
+  .sidebar .site-links li.icon a {
+    padding: 10px 0;
+  }
+
+  .site-header {
     display: none;
   }
 
   .page {
     margin-left: 10px;
-  }
-
-  .site-header ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .site-header li {
-    margin: 8px 10px;
+    padding-top: 10px;
   }
 
   .page-title {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0 15px;
     font-size: 30px;
     line-height: 34px;
