@@ -2,11 +2,13 @@
 title: Third Party Support
 heading: Third-Party MaterialX Support
 ---
-<h2 id="USD">Pixar USD</h2>
+<h2 id="USD">Pixar OpenUSD</h2>
 <p>
-  Pixar's Universal Scene Description (USD) supports MaterialX through a dedicated <a href="https://openusd.org/release/api/usd_mtlx_page_front.html">UsdMtlx</a> library, enabling the referencing of MaterialX documents and composition of MaterialX content in USD stages.
+  Pixar's OpenUSD project supports MaterialX through a dedicated <a href="https://openusd.org/release/api/usd_mtlx_page_front.html">UsdMtlx</a> library, enabling the referencing of MaterialX documents and composition of MaterialX content in USD stages.
   <br><br>
-  The USD Hydra rendering framework supports MaterialX in <a href="https://openusd.org/release/api/_page__material_x__in__hydra__u_s_d.html">HdStorm</a> and HdPrman, using <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGen</a> to generate GLSL and OSL shaders from MaterialX graphs on demand.
+  The USD Hydra rendering framework supports MaterialX in <a href="https://openusd.org/release/api/_page__material_x__in__hydra__u_s_d.html">HdStorm</a> and HdPrman, using <a href="https://github.com/AcademySoftwareFoundation/MaterialX/blob/main/documents/DeveloperGuide/ShaderGeneration.md">ShaderGen</a> to generate GLSL, MSL, and OSL shaders from MaterialX graphs on demand.
+  <br><br>
+  MaterialX 1.39 is the default version in USD as of <a href="https://github.com/PixarAnimationStudios/OpenUSD/releases/tag/v25.05">OpenUSD 25.05</a>, providing access to OpenPBR Surface in USD applications, and MaterialX 1.39.5 is integrated in <a href="https://github.com/PixarAnimationStudios/OpenUSD/releases/tag/v26.08">OpenUSD 26.08</a>.
   <br><br>
   Additional details on MaterialX support in USD and Hydra may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2024_MaterialX_Final.pdf">ASWF Open Source Days 2024</a>.
 </p>
@@ -15,51 +17,36 @@ heading: Third-Party MaterialX Support
 <p>
   SideFX supports MaterialX in <a href="https://www.sidefx.com/docs/houdini/solaris/materialx.html">Houdini 19 and beyond</a>, including the authoring and exporting of MaterialX graphs through the Solaris framework, and rendering of MaterialX content in Karma CPU/XPU.
   <br><br>
+  Support for OpenPBR Surface was introduced in <a href="https://www.sidefx.com/docs/houdini/news/21/karma.html">Houdini 21</a>, and MaterialX 1.39.5 is integrated in <a href="https://www.sidefx.com/docs/houdini/news/22/karma.html">Houdini 22</a>, adding new nodes for flakes, fractals, and hex-tiled images.
+  <br><br>
   <a href="https://www.sidefx.com/tutorials/karma-a-beautiful-game/">Karma, A Beautiful Game</a> by Moeen Sayed provides a useful tutorial on look development in Houdini/Solaris, including an overview of using MaterialX to construct surface and volume materials.
   <br><br>
-  Additional details on MaterialX BSDF graphs in Houdini may be found in the <a href="https://www.youtube.com/watch?v=b3OyLypfc1I">Solaris Essentials</a> tutorial series.
+  Additional details on MaterialX and OpenPBR in Houdini 22 may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_VTH2026_MaterialX_OpenPBR_Final.pdf">ASWF Virtual Town Halls 2026</a>.
 </p>
 
 <h2 id="Maya">Autodesk Maya</h2>
 <p>
   Autodesk supports MaterialX in Maya 2024 and beyond through the <a href="https://help.autodesk.com/view/MAYAUL/2025/ENU/?guid=GUID-BCF8E14C-6347-4CF8-9CD4-FA3E6CAFD8BA">LookdevX</a> framework, enabling the creation, editing, and rendering of MaterialX graphs.
   <br><br>
-  Additional details on LookdevX in Maya may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2024_MaterialX_Final.pdf">ASWF Open Source Days 2024</a>.
+  OpenPBR Surface is the default surface shader as of <a href="https://help.autodesk.com/view/MAYAUL/2026/ENU/?guid=GUID-BAF59B47-E24F-4F87-9B77-ABE78D3F8268">Maya 2026</a>, and MaterialX 1.39.4 is integrated in <a href="https://help.autodesk.com/view/MAYAUL/2027/ENU/?guid=GUID-6DA3C115-C004-48DB-9D84-90D19E42E358">Maya 2027</a>.
+  <br><br>
+  Additional details on LookdevX in Maya may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a>.
 </p>
 
 <h2 id="Max">Autodesk 3ds Max</h2>
 <p>
-  Autodesk supports MaterialX in 3ds Max 2024 and beyond through a bundled <a href="https://help.autodesk.com/view/3DSMAX/2025/CHS/?guid=GUID-CC8C2874-1F7C-45A3-B21A-6F8FE85516D5">MaterialX</a> plug-in, enabling the authoring, import, and export of MaterialX content.
+  Autodesk supports MaterialX in 3ds Max 2024 and beyond through a bundled <a href="https://help.autodesk.com/view/3DSMAX/2027/ENU/?guid=GUID-CC8C2874-1F7C-45A3-B21A-6F8FE85516D5">MaterialX</a> plug-in, enabling the authoring, import, and export of MaterialX content.
   <br><br>
   The MaterialX and USD plug-ins in 3ds Max are integrated, allowing USD content to reference MaterialX documents in a combined USD/MaterialX workflow.
+  <br><br>
+  OpenPBR Surface is the default material as of <a href="https://help.autodesk.com/view/3DSMAX/2026/ENU/?guid=GUID-5E7810B6-59DF-434E-AB24-BC2A452C715C">3ds Max 2026</a>.
 </p>
 
 <h2 id="VRED">Autodesk VRED</h2>
 <p>
-  Autodesk supports import of MaterialX documents in <a href="https://help.autodesk.com/view/VREDPRODUCTS/2025/ENU/?guid=VRED_Truelight_Materials_MaterialX">VRED 2024 and beyond</a>, providing access to external libraries of MaterialX content in the application.
-</p>
-
-<h2 id="Apple">Apple VisionOS</h2>
-<p>
-  Apple has adopted MaterialX as the material representation for its <a href="https://developer.apple.com/visionos/">VisionOS</a> platform, including a pathway for translating <a href="https://developer.apple.com/videos/play/wwdc2023/10088/">Unity Shader Graph</a> content to MaterialX.
+  Autodesk supports import of MaterialX documents in <a href="https://help.autodesk.com/view/VREDPRODUCTS/2026/ENU/?guid=VRED_Truelight_Materials_MaterialX">VRED 2024 and beyond</a>, providing access to external libraries of MaterialX content in the application.
   <br><br>
-  Additional details on MaterialX in Apple VisionOS may be found in the video presentations for <a href="https://developer.apple.com/videos/play/wwdc2024/10106/">WWDC 2024</a>.
-</p>
-
-<h2 id="Unreal">Unreal Engine</h2>
-<p>
-  Epic Games supports MaterialX in <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/interchange-materialx-reference-in-unreal-engine">Unreal Engine 5.1 and beyond</a>, allowing the import of MaterialX documents based on open shading models such as Standard Surface and OpenPBR Surface.
-  <br><br>
-  As of <a href="https://docs.unrealengine.com/5.3/en-US/unreal-engine-5.3-release-notes/">Unreal Engine 5.3</a>, MaterialX content may additionally be referenced in USD workflows within Unreal.
-  <br><br>
-  For now, only a subset of the MaterialX standard data types and nodes is supported, and Epic plans to extend this supported set in future releases.
-</p>
-
-<h2 id="Omniverse">NVIDIA Omniverse</h2>
-<p>
-  NVIDIA supports MaterialX in <a href="https://docs.omniverse.nvidia.com/kit/docs/omni.materialx.libs/latest/Overview.html">Omniverse Kit 1.0.1 and beyond</a>, allowing MaterialX documents to be imported and rendered through MDL shader generation.
-  <br><br>
-  Additional details on the roadmap for MaterialX in Omniverse may be found on the <a href="https://developer.nvidia.com/blog/unlock-seamless-material-interchange-for-virtual-worlds-with-openusd-materialx-and-openpbr/">NVIDIA developer site</a> and in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a>.
+  Support for OpenPBR Surface was introduced in <a href="https://help.autodesk.com/view/VREDPRODUCTS/2026/ENU/?guid=VRED_Truelight_Materials_MaterialX">VRED 2026.1</a>, which integrates MaterialX 1.39.3, and <a href="https://blogs.autodesk.com/design-studio/2026/08/07/whats-new-in-vred-2027-1/">VRED 2027.1</a> extends this support to additional MaterialX nodes and render modes.
 </p>
 
 <h2 id="Arnold">Autodesk Arnold</h2>
@@ -68,19 +55,61 @@ heading: Third-Party MaterialX Support
   <br><br>
   MaterialX content can be exported from Arnold implementations in tools such as <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_for_maya_lookdev_am_Working_With_MaterialX_html">Maya</a> and <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_for_cinema_4d_ci_Utilities_ci_Material_Export_html">Cinema 4D</a>.
   <br><br>
-  Additional details on MaterialX support in Arnold may be found in the slides from the MaterialX and OSL session at <a href="assets/ASWF_OSD2022_MaterialX_OSL_Final.pdf">ASWF Open Source Days 2022</a>.
+  Support for OpenPBR Surface was introduced in <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_core_7330_html">Arnold 7.3.3</a>, and MaterialX 1.39.5 is integrated in <a href="https://help.autodesk.com/view/ARNOL/ENU/?guid=arnold_core_7520_html">Arnold 7.5.2</a>.
+  <br><br>
+  Additional details on MaterialX and OpenPBR in Arnold may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a>.
 </p>
 
 <h2 id="RenderMan">Pixar RenderMan</h2>
 <p>
-  Pixar supports MaterialX in <a href="https://rmanwiki-26.pixar.com/space/REN26/19662341/MaterialX">RenderMan 24 and beyond</a>, rendering MaterialX pattern nodes through USD HdPrman, and rendering Physically Based Shading features through a custom implementation of the <a href="https://rmanwiki-26.pixar.com/space/REN26/19661457/MaterialX+Lama">MaterialX Lama</a> nodes.
+  Pixar supports MaterialX in <a href="https://rmanwiki-27.pixar.com/space/REN27/542220715/MaterialX">RenderMan 24 and beyond</a>, rendering MaterialX pattern nodes through USD HdPrman, and rendering layered materials through the <a href="https://rmanwiki-27.pixar.com/space/REN27/542218994/MaterialX+Lama">MaterialX Lama</a> nodes.
   <br><br>
-  Early details on MaterialX BSDF support in RenderMan XPU may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a>.
+  As of <a href="https://rmanwiki-27.pixar.com/space/REN27/857702405">RenderMan 27.3</a>, the MaterialX BSDF nodes are additionally supported in RenderMan XPU, allowing custom BSDF graphs and standard shading models such as Standard Surface and OpenPBR Surface to be used in Hydra workflows.
+  <br><br>
+  Additional details on MaterialX BSDF support in RenderMan XPU may be found in the slides from the MaterialX Virtual Town Halls at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a> and <a href="assets/ASWF_VTH2026_MaterialX_OpenPBR_Final.pdf">ASWF Virtual Town Halls 2026</a>.
 </p>
 
 <h2 id="V-Ray">Chaos V-Ray</h2>
 <p>
-  Chaos Group supports MaterialX in <a href="https://docs.chaos.com/display/VRAYHOUDINI/MaterialX+Support">V-Ray 6 and beyond</a>, rendering MaterialX pattern nodes through VRayScene-USD.
+  Chaos supports MaterialX in <a href="https://documentation.chaos.com/space/VMAYA/111740125/MaterialX">V-Ray 6 and beyond</a>, rendering MaterialX content in USD workflows for Maya and <a href="https://documentation.chaos.com/space/VRAYHOUDINI/113279844/MaterialX+Support">Houdini</a>.
+  <br><br>
+  Support for OpenPBR Surface was introduced in <a href="https://documentation.chaos.com/space/VMAYA/111738897/V-Ray+7">V-Ray 7</a>.
   <br><br>
   Additional details on MaterialX support in V-Ray may be found in the <a href="https://www.youtube.com/watch?v=iHWOBcyxyPE">ChaosTV</a> video series.
+</p>
+
+<h2 id="Octane">OTOY OctaneRender</h2>
+<p>
+  OTOY supports MaterialX in <a href="https://docs.otoy.com/standaloneSE/MaterialX.html">OctaneRender 2026.1 and beyond</a>, providing native implementations of the MaterialX pattern nodes, and allowing MaterialX content to be imported from MaterialX documents and USD scenes.
+  <br><br>
+  OpenPBR Surface is supported as a native material in OctaneRender, and its MaterialX nodes are aligned with MaterialX 1.39.4 as of <a href="https://home.otoy.com/octane2026/">OctaneRender 2026.1</a>.
+  <br><br>
+  Additional details on MaterialX and OpenPBR in OctaneRender, including upcoming support for the MaterialX BSDF nodes, may be found in the slides from the MaterialX Virtual Town Halls at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a> and <a href="assets/ASWF_VTH2026_MaterialX_OpenPBR_Final.pdf">ASWF Virtual Town Halls 2026</a>.
+</p>
+
+<h2 id="Unreal">Unreal Engine</h2>
+<p>
+  Epic Games supports MaterialX in <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/interchange-materialx-reference-in-unreal-engine">Unreal Engine 5.1 and beyond</a>, allowing the import of MaterialX documents based on open shading models such as Standard Surface, OpenPBR Surface, glTF PBR, and UsdPreviewSurface, and the referencing of MaterialX content in USD workflows.
+  <br><br>
+  In projects where Substrate is enabled, MaterialX content is <a href="https://dev.epicgames.com/documentation/unreal-engine/importing-materialx-files-in-unreal-engine">imported</a> as native Substrate materials, providing a closer match to the original MaterialX description.
+  <br><br>
+  MaterialX 1.39.4 is integrated in Unreal Engine 5.8, which supports the majority of the MaterialX standard data types and nodes, with the remaining exceptions listed in the <a href="https://dev.epicgames.com/documentation/unreal-engine/materialx-support-in-unreal-engine">Unreal Engine documentation</a>.
+</p>
+
+<h2 id="Omniverse">NVIDIA Omniverse</h2>
+<p>
+  NVIDIA supports MaterialX in Omniverse through the <a href="https://docs.omniverse.nvidia.com/kit/docs/omni.materialx.libs/latest/Overview.html">MaterialX Libraries</a> extension, allowing MaterialX documents to be imported and rendered through MDL shader generation.
+  <br><br>
+  OpenPBR Surface is supported as a <a href="https://docs.omniverse.nvidia.com/materials-and-rendering/latest/templates/OpenPBR.html">material template</a> in Omniverse, and MaterialX 1.39.3 is integrated in <a href="https://docs.omniverse.nvidia.com/dev-guide/latest/release-notes/110_0.html">Omniverse Kit 110</a>.
+  <br><br>
+  Additional details on MaterialX and OpenPBR in Omniverse may be found in the slides from the MaterialX Virtual Town Hall at <a href="assets/ASWF_OSD2025_MaterialX_Final.pdf">ASWF Open Source Days 2025</a>.
+</p>
+
+<h2 id="Apple">Apple Platforms</h2>
+<p>
+  Apple has adopted MaterialX as the material representation for its <a href="https://developer.apple.com/visionos/">VisionOS</a> platform, including a pathway for translating <a href="https://developer.apple.com/videos/play/wwdc2023/10088/">Unity Shader Graph</a> content to MaterialX.
+  <br><br>
+  Additional details on MaterialX in Apple VisionOS may be found in the video presentations for <a href="https://developer.apple.com/videos/play/wwdc2024/10106/">WWDC 2024</a>.
+  <br><br>
+  Details on updates to MaterialX and OpenPBR across Apple platforms may be found in the video presentations for <a href="https://developer.apple.com/videos/play/wwdc2026/285/">WWDC 2026</a>.
 </p>
