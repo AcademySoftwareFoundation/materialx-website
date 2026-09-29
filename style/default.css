@@ -255,7 +255,7 @@ body {
 
 .content figure img {
   display: block;
-  width: 776px;
+  width: 100%;
 }
 
 .content figcaption {
@@ -275,6 +275,7 @@ body {
 }
 
 .credits {
+  margin: 1em 0 15px 15px;
   column-count: 3;
 }
 
@@ -286,9 +287,8 @@ body {
 
 .site-footer {
   box-sizing: border-box;
-  width: var(--page-width);
-  max-width: 100%;
-  margin: 43px auto 0;
+  width: calc(var(--page-width) + 2px);
+  margin: 43px 0 0 270px;
   padding-bottom: 9px;
   font: 9px Helvetica, Arial, sans-serif;
   text-align: center;
@@ -320,7 +320,8 @@ body {
 /* Narrow windows: the page fills the space beside the navigation. */
 
 @media (max-width: 1235px) {
-  .page {
+  .page,
+  .site-footer {
     width: auto;
     margin-right: 10px;
   }
@@ -476,11 +477,12 @@ body {
   }
 
   .credits {
+    margin-left: 0;
     columns: 150px 2;
   }
 
   .site-footer {
-    margin-top: 20px;
+    margin: 20px 0 0;
     padding: 0 10px 9px;
     line-height: 2;
   }
